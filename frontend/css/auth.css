@@ -132,9 +132,11 @@
 /* Form Side */
 #auth-screen .form-side {
   position: relative;
-  padding: 38px 42px;
-  overflow: hidden;
-  background: rgba(15, 23, 42, 0.5);
+  padding: 32px 38px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(15, 23, 42, 0.6);
+  min-height: 100%;
 }
 
 #auth-screen .logo {
@@ -144,9 +146,11 @@
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   color: #FFFFFF;
   letter-spacing: -0.3px;
+  position: relative;
+  z-index: 5;
 }
 
 #auth-screen .logo svg {
@@ -166,34 +170,36 @@
 }
 
 #auth-screen .panel-auth {
-  position: absolute;
-  inset: 0;
-  padding: 38px 42px;
+  position: relative;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  transition: opacity 0.4s ease, transform 0.45s ease;
+  transition: opacity 0.35s ease, transform 0.35s ease;
 }
 
 #auth-screen #panel-login {
-  transform: translateX(0);
+  display: flex;
   opacity: 1;
+  transform: translateX(0);
 }
 
 #auth-screen #panel-register {
-  transform: translateX(24px);
+  display: none;
   opacity: 0;
+  transform: translateX(24px);
   pointer-events: none;
 }
 
 #auth-screen .card.is-register #panel-login {
-  transform: translateX(-24px);
+  display: none;
   opacity: 0;
   pointer-events: none;
 }
 
 #auth-screen .card.is-register #panel-register {
-  transform: translateX(0);
+  display: flex;
   opacity: 1;
+  transform: translateX(0);
   pointer-events: auto;
 }
 

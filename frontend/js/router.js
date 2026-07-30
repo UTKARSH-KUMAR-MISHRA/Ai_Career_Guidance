@@ -383,12 +383,8 @@ function setupAuthListeners() {
                 
                 localStorage.setItem("career_user", JSON.stringify(data.user));
                 setTimeout(() => {
-                    if (!data.user.is_profile_setup) {
-                        showProfileSetupWizard();
-                    } else {
-                        navigateTo("dashboard");
-                    }
-                }, 800);
+                    navigateTo("dashboard");
+                }, 300);
             } catch (err) {
                 setLoading(btn, false, "Sign in");
                 toast("error", "Could not reach the server. Is the Flask backend running?");
@@ -475,15 +471,11 @@ function setupAuthListeners() {
                 setDone(btn, "Account created!");
                 toast("success", "Welcome, " + data.user.name + "!");
                 
-                // Immediately save user session and proceed to setup wizard or dashboard
+                // Immediately save user session and proceed to dashboard
                 localStorage.setItem("career_user", JSON.stringify(data.user));
                 setTimeout(() => {
-                    if (!data.user.is_profile_setup) {
-                        showProfileSetupWizard();
-                    } else {
-                        navigateTo("dashboard");
-                    }
-                }, 500);
+                    navigateTo("dashboard");
+                }, 300);
             } catch (err) {
                 setLoading(btn, false, "Create account");
                 toast("error", "Could not reach the server. Is the Flask backend running?");

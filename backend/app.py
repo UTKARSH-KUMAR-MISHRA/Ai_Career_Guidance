@@ -53,6 +53,7 @@ def serve_index():
     return send_from_directory(FRONTEND_DIR, 'index.html')
 
 def get_db_connection():
+    os.makedirs(DATA_DIR, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     return conn
@@ -68,7 +69,7 @@ def init_chat_history_db():
                 email TEXT UNIQUE NOT NULL,
                 password_hash TEXT NOT NULL,
                 name TEXT NOT NULL,
-                is_profile_setup INTEGER DEFAULT 0,
+                is_profile_setup INTEGER DEFAULT 1,
                 created_at DATETIME DEFAULT CURRENT_TIMESTAMP
             )
         """)
@@ -242,8 +243,13 @@ def register():
             return jsonify({'error': 'An account with this email already exists', 'field': 'email'}), 400
             
         password_hash = generate_password_hash(password)
-        cursor.execute("INSERT INTO users (email, password_hash, name, is_profile_setup) VALUES (?, ?, ?, 0)",
+        cursor.execute("INSERT INTO users (email, password_hash, name, is_profile_setup) VALUES (?, ?, ?, 1)",
                        (email, password_hash, name))
+        cursor.execute("""
+            INSERT OR IGNORE INTO user_profiles (
+                email, name, degree, branch, year_of_study, career_goal
+            ) VALUES (?, ?, 'B.Tech', 'Computer Science', 3, 'ROLE001')
+        """, (email, name))
         conn.commit()
         
         session['user_email'] = email
@@ -253,7 +259,7 @@ def register():
             'user': {
                 'email': email,
                 'name': name,
-                'is_profile_setup': False
+                'is_profile_setup': True
             }
         })
     except Exception as e:

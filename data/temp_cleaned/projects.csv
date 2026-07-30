@@ -1,0 +1,401 @@
+project_id,project_name,project_domain,difficulty,estimated_duration,description,required_skills,github_available,dataset_required,portfolio_value,related_role
+PROJ0001,AI Project 1,AI,Beginner,2 Weeks,Industry-inspired AI project to build practical skills.,"SK001, SK006, SK016",Yes,Yes,High,ROLE001
+PROJ0002,Data Science Project 2,Data Science,Intermediate,1 Month,Industry-inspired Data Science project to build practical skills.,"SK002, SK007, SK017",Yes,Yes,Very High,ROLE002
+PROJ0003,Web Development Project 3,Web Development,Advanced,2 Months,Industry-inspired Web Development project to build practical skills.,"SK003, SK008, SK018",Yes,No,Medium,ROLE003
+PROJ0004,Cloud Project 4,Cloud,Beginner,2 Weeks,Industry-inspired Cloud project to build practical skills.,"SK004, SK009, SK019",Yes,No,High,ROLE004
+PROJ0005,Cyber Security Project 5,Cyber Security,Intermediate,1 Month,Industry-inspired Cyber Security project to build practical skills.,"SK005, SK010, SK020",Yes,No,Very High,ROLE005
+PROJ0006,Mobile Project 6,Mobile,Advanced,2 Months,Industry-inspired Mobile project to build practical skills.,"SK006, SK011, SK021",Yes,No,Medium,ROLE006
+PROJ0007,DevOps Project 7,DevOps,Beginner,2 Weeks,Industry-inspired DevOps project to build practical skills.,"SK007, SK012, SK022",Yes,No,High,ROLE007
+PROJ0008,IoT Project 8,IoT,Intermediate,1 Month,Industry-inspired IoT project to build practical skills.,"SK008, SK013, SK023",Yes,No,Very High,ROLE008
+PROJ0009,Blockchain Project 9,Blockchain,Advanced,2 Months,Industry-inspired Blockchain project to build practical skills.,"SK009, SK014, SK024",Yes,No,Medium,ROLE009
+PROJ0010,UI/UX Project 10,UI/UX,Beginner,2 Weeks,Industry-inspired UI/UX project to build practical skills.,"SK010, SK015, SK025",Yes,No,High,ROLE010
+PROJ0011,AI Project 11,AI,Intermediate,1 Month,Industry-inspired AI project to build practical skills.,"SK011, SK016, SK026",Yes,Yes,Very High,ROLE011
+PROJ0012,Data Science Project 12,Data Science,Advanced,2 Months,Industry-inspired Data Science project to build practical skills.,"SK012, SK017, SK027",Yes,Yes,Medium,ROLE012
+PROJ0013,Web Development Project 13,Web Development,Beginner,2 Weeks,Industry-inspired Web Development project to build practical skills.,"SK013, SK018, SK028",Yes,No,High,ROLE013
+PROJ0014,Cloud Project 14,Cloud,Intermediate,1 Month,Industry-inspired Cloud project to build practical skills.,"SK014, SK019, SK029",Yes,No,Very High,ROLE014
+PROJ0015,Cyber Security Project 15,Cyber Security,Advanced,2 Months,Industry-inspired Cyber Security project to build practical skills.,"SK015, SK020, SK030",Yes,No,Medium,ROLE015
+PROJ0016,Mobile Project 16,Mobile,Beginner,2 Weeks,Industry-inspired Mobile project to build practical skills.,"SK016, SK021, SK031",Yes,No,High,ROLE016
+PROJ0017,DevOps Project 17,DevOps,Intermediate,1 Month,Industry-inspired DevOps project to build practical skills.,"SK017, SK022, SK032",Yes,No,Very High,ROLE017
+PROJ0018,IoT Project 18,IoT,Advanced,2 Months,Industry-inspired IoT project to build practical skills.,"SK018, SK023, SK033",Yes,No,Medium,ROLE018
+PROJ0019,Blockchain Project 19,Blockchain,Beginner,2 Weeks,Industry-inspired Blockchain project to build practical skills.,"SK019, SK024, SK034",Yes,No,High,ROLE019
+PROJ0020,UI/UX Project 20,UI/UX,Intermediate,1 Month,Industry-inspired UI/UX project to build practical skills.,"SK020, SK025, SK035",Yes,No,Very High,ROLE020
+PROJ0021,AI Project 21,AI,Advanced,2 Months,Industry-inspired AI project to build practical skills.,"SK021, SK026, SK036",Yes,Yes,Medium,ROLE021
+PROJ0022,Data Science Project 22,Data Science,Beginner,2 Weeks,Industry-inspired Data Science project to build practical skills.,"SK022, SK027, SK037",Yes,Yes,High,ROLE022
+PROJ0023,Web Development Project 23,Web Development,Intermediate,1 Month,Industry-inspired Web Development project to build practical skills.,"SK023, SK028, SK038",Yes,No,Very High,ROLE023
+PROJ0024,Cloud Project 24,Cloud,Advanced,2 Months,Industry-inspired Cloud project to build practical skills.,"SK024, SK029, SK039",Yes,No,Medium,ROLE024
+PROJ0025,Cyber Security Project 25,Cyber Security,Beginner,2 Weeks,Industry-inspired Cyber Security project to build practical skills.,"SK025, SK030, SK040",Yes,No,High,ROLE025
+PROJ0026,Mobile Project 26,Mobile,Intermediate,1 Month,Industry-inspired Mobile project to build practical skills.,"SK026, SK031, SK041",Yes,No,Very High,ROLE026
+PROJ0027,DevOps Project 27,DevOps,Advanced,2 Months,Industry-inspired DevOps project to build practical skills.,"SK027, SK032, SK042",Yes,No,Medium,ROLE027
+PROJ0028,IoT Project 28,IoT,Beginner,2 Weeks,Industry-inspired IoT project to build practical skills.,"SK028, SK033, SK043",Yes,No,High,ROLE028
+PROJ0029,Blockchain Project 29,Blockchain,Intermediate,1 Month,Industry-inspired Blockchain project to build practical skills.,"SK029, SK034, SK044",Yes,No,Very High,ROLE029
+PROJ0030,UI/UX Project 30,UI/UX,Advanced,2 Months,Industry-inspired UI/UX project to build practical skills.,"SK030, SK035, SK045",Yes,No,Medium,ROLE030
+PROJ0031,AI Project 31,AI,Beginner,2 Weeks,Industry-inspired AI project to build practical skills.,"SK031, SK036, SK046",Yes,Yes,High,ROLE031
+PROJ0032,Data Science Project 32,Data Science,Intermediate,1 Month,Industry-inspired Data Science project to build practical skills.,"SK032, SK037, SK047",Yes,Yes,Very High,ROLE032
+PROJ0033,Web Development Project 33,Web Development,Advanced,2 Months,Industry-inspired Web Development project to build practical skills.,"SK033, SK038, SK048",Yes,No,Medium,ROLE033
+PROJ0034,Cloud Project 34,Cloud,Beginner,2 Weeks,Industry-inspired Cloud project to build practical skills.,"SK034, SK039, SK049",Yes,No,High,ROLE034
+PROJ0035,Cyber Security Project 35,Cyber Security,Intermediate,1 Month,Industry-inspired Cyber Security project to build practical skills.,"SK035, SK040, SK050",Yes,No,Very High,ROLE035
+PROJ0036,Mobile Project 36,Mobile,Advanced,2 Months,Industry-inspired Mobile project to build practical skills.,"SK036, SK041, SK051",Yes,No,Medium,ROLE036
+PROJ0037,DevOps Project 37,DevOps,Beginner,2 Weeks,Industry-inspired DevOps project to build practical skills.,"SK037, SK042, SK052",Yes,No,High,ROLE037
+PROJ0038,IoT Project 38,IoT,Intermediate,1 Month,Industry-inspired IoT project to build practical skills.,"SK038, SK043, SK053",Yes,No,Very High,ROLE038
+PROJ0039,Blockchain Project 39,Blockchain,Advanced,2 Months,Industry-inspired Blockchain project to build practical skills.,"SK039, SK044, SK054",Yes,No,Medium,ROLE039
+PROJ0040,UI/UX Project 40,UI/UX,Beginner,2 Weeks,Industry-inspired UI/UX project to build practical skills.,"SK040, SK045, SK055",Yes,No,High,ROLE040
+PROJ0041,AI Project 41,AI,Intermediate,1 Month,Industry-inspired AI project to build practical skills.,"SK041, SK046, SK056",Yes,Yes,Very High,ROLE041
+PROJ0042,Data Science Project 42,Data Science,Advanced,2 Months,Industry-inspired Data Science project to build practical skills.,"SK042, SK047, SK057",Yes,Yes,Medium,ROLE042
+PROJ0043,Web Development Project 43,Web Development,Beginner,2 Weeks,Industry-inspired Web Development project to build practical skills.,"SK043, SK048, SK058",Yes,No,High,ROLE043
+PROJ0044,Cloud Project 44,Cloud,Intermediate,1 Month,Industry-inspired Cloud project to build practical skills.,"SK044, SK049, SK059",Yes,No,Very High,ROLE044
+PROJ0045,Cyber Security Project 45,Cyber Security,Advanced,2 Months,Industry-inspired Cyber Security project to build practical skills.,"SK045, SK050, SK060",Yes,No,Medium,ROLE045
+PROJ0046,Mobile Project 46,Mobile,Beginner,2 Weeks,Industry-inspired Mobile project to build practical skills.,"SK046, SK051, SK061",Yes,No,High,ROLE046
+PROJ0047,DevOps Project 47,DevOps,Intermediate,1 Month,Industry-inspired DevOps project to build practical skills.,"SK047, SK052, SK062",Yes,No,Very High,ROLE047
+PROJ0048,IoT Project 48,IoT,Advanced,2 Months,Industry-inspired IoT project to build practical skills.,"SK048, SK053, SK063",Yes,No,Medium,ROLE048
+PROJ0049,Blockchain Project 49,Blockchain,Beginner,2 Weeks,Industry-inspired Blockchain project to build practical skills.,"SK049, SK054, SK064",Yes,No,High,ROLE049
+PROJ0050,UI/UX Project 50,UI/UX,Intermediate,1 Month,Industry-inspired UI/UX project to build practical skills.,"SK050, SK055, SK065",Yes,No,Very High,ROLE050
+PROJ0051,AI Project 51,AI,Advanced,2 Months,Industry-inspired AI project to build practical skills.,"SK051, SK056, SK066",Yes,Yes,Medium,ROLE051
+PROJ0052,Data Science Project 52,Data Science,Beginner,2 Weeks,Industry-inspired Data Science project to build practical skills.,"SK052, SK057, SK067",Yes,Yes,High,ROLE052
+PROJ0053,Web Development Project 53,Web Development,Intermediate,1 Month,Industry-inspired Web Development project to build practical skills.,"SK053, SK058, SK068",Yes,No,Very High,ROLE053
+PROJ0054,Cloud Project 54,Cloud,Advanced,2 Months,Industry-inspired Cloud project to build practical skills.,"SK054, SK059, SK069",Yes,No,Medium,ROLE054
+PROJ0055,Cyber Security Project 55,Cyber Security,Beginner,2 Weeks,Industry-inspired Cyber Security project to build practical skills.,"SK055, SK060, SK070",Yes,No,High,ROLE055
+PROJ0056,Mobile Project 56,Mobile,Intermediate,1 Month,Industry-inspired Mobile project to build practical skills.,"SK056, SK061, SK071",Yes,No,Very High,ROLE056
+PROJ0057,DevOps Project 57,DevOps,Advanced,2 Months,Industry-inspired DevOps project to build practical skills.,"SK057, SK062, SK072",Yes,No,Medium,ROLE057
+PROJ0058,IoT Project 58,IoT,Beginner,2 Weeks,Industry-inspired IoT project to build practical skills.,"SK058, SK063, SK073",Yes,No,High,ROLE058
+PROJ0059,Blockchain Project 59,Blockchain,Intermediate,1 Month,Industry-inspired Blockchain project to build practical skills.,"SK059, SK064, SK074",Yes,No,Very High,ROLE059
+PROJ0060,UI/UX Project 60,UI/UX,Advanced,2 Months,Industry-inspired UI/UX project to build practical skills.,"SK060, SK065, SK075",Yes,No,Medium,ROLE060
+PROJ0061,AI Project 61,AI,Beginner,2 Weeks,Industry-inspired AI project to build practical skills.,"SK061, SK066, SK076",Yes,Yes,High,ROLE001
+PROJ0062,Data Science Project 62,Data Science,Intermediate,1 Month,Industry-inspired Data Science project to build practical skills.,"SK062, SK067, SK077",Yes,Yes,Very High,ROLE002
+PROJ0063,Web Development Project 63,Web Development,Advanced,2 Months,Industry-inspired Web Development project to build practical skills.,"SK063, SK068, SK078",Yes,No,Medium,ROLE003
+PROJ0064,Cloud Project 64,Cloud,Beginner,2 Weeks,Industry-inspired Cloud project to build practical skills.,"SK064, SK069, SK079",Yes,No,High,ROLE004
+PROJ0065,Cyber Security Project 65,Cyber Security,Intermediate,1 Month,Industry-inspired Cyber Security project to build practical skills.,"SK065, SK070, SK080",Yes,No,Very High,ROLE005
+PROJ0066,Mobile Project 66,Mobile,Advanced,2 Months,Industry-inspired Mobile project to build practical skills.,"SK066, SK071, SK081",Yes,No,Medium,ROLE006
+PROJ0067,DevOps Project 67,DevOps,Beginner,2 Weeks,Industry-inspired DevOps project to build practical skills.,"SK067, SK072, SK082",Yes,No,High,ROLE007
+PROJ0068,IoT Project 68,IoT,Intermediate,1 Month,Industry-inspired IoT project to build practical skills.,"SK068, SK073, SK083",Yes,No,Very High,ROLE008
+PROJ0069,Blockchain Project 69,Blockchain,Advanced,2 Months,Industry-inspired Blockchain project to build practical skills.,"SK069, SK074, SK084",Yes,No,Medium,ROLE009
+PROJ0070,UI/UX Project 70,UI/UX,Beginner,2 Weeks,Industry-inspired UI/UX project to build practical skills.,"SK070, SK075, SK085",Yes,No,High,ROLE010
+PROJ0071,AI Project 71,AI,Intermediate,1 Month,Industry-inspired AI project to build practical skills.,"SK071, SK076, SK086",Yes,Yes,Very High,ROLE011
+PROJ0072,Data Science Project 72,Data Science,Advanced,2 Months,Industry-inspired Data Science project to build practical skills.,"SK072, SK077, SK087",Yes,Yes,Medium,ROLE012
+PROJ0073,Web Development Project 73,Web Development,Beginner,2 Weeks,Industry-inspired Web Development project to build practical skills.,"SK073, SK078, SK088",Yes,No,High,ROLE013
+PROJ0074,Cloud Project 74,Cloud,Intermediate,1 Month,Industry-inspired Cloud project to build practical skills.,"SK074, SK079, SK089",Yes,No,Very High,ROLE014
+PROJ0075,Cyber Security Project 75,Cyber Security,Advanced,2 Months,Industry-inspired Cyber Security project to build practical skills.,"SK075, SK080, SK090",Yes,No,Medium,ROLE015
+PROJ0076,Mobile Project 76,Mobile,Beginner,2 Weeks,Industry-inspired Mobile project to build practical skills.,"SK076, SK081, SK091",Yes,No,High,ROLE016
+PROJ0077,DevOps Project 77,DevOps,Intermediate,1 Month,Industry-inspired DevOps project to build practical skills.,"SK077, SK082, SK092",Yes,No,Very High,ROLE017
+PROJ0078,IoT Project 78,IoT,Advanced,2 Months,Industry-inspired IoT project to build practical skills.,"SK078, SK083, SK093",Yes,No,Medium,ROLE018
+PROJ0079,Blockchain Project 79,Blockchain,Beginner,2 Weeks,Industry-inspired Blockchain project to build practical skills.,"SK079, SK084, SK094",Yes,No,High,ROLE019
+PROJ0080,UI/UX Project 80,UI/UX,Intermediate,1 Month,Industry-inspired UI/UX project to build practical skills.,"SK080, SK085, SK095",Yes,No,Very High,ROLE020
+PROJ0081,AI Project 81,AI,Advanced,2 Months,Industry-inspired AI project to build practical skills.,"SK081, SK086, SK096",Yes,Yes,Medium,ROLE021
+PROJ0082,Data Science Project 82,Data Science,Beginner,2 Weeks,Industry-inspired Data Science project to build practical skills.,"SK082, SK087, SK097",Yes,Yes,High,ROLE022
+PROJ0083,Web Development Project 83,Web Development,Intermediate,1 Month,Industry-inspired Web Development project to build practical skills.,"SK083, SK088, SK098",Yes,No,Very High,ROLE023
+PROJ0084,Cloud Project 84,Cloud,Advanced,2 Months,Industry-inspired Cloud project to build practical skills.,"SK084, SK089, SK099",Yes,No,Medium,ROLE024
+PROJ0085,Cyber Security Project 85,Cyber Security,Beginner,2 Weeks,Industry-inspired Cyber Security project to build practical skills.,"SK085, SK090, SK100",Yes,No,High,ROLE025
+PROJ0086,Mobile Project 86,Mobile,Intermediate,1 Month,Industry-inspired Mobile project to build practical skills.,"SK086, SK091, SK101",Yes,No,Very High,ROLE026
+PROJ0087,DevOps Project 87,DevOps,Advanced,2 Months,Industry-inspired DevOps project to build practical skills.,"SK087, SK092, SK102",Yes,No,Medium,ROLE027
+PROJ0088,IoT Project 88,IoT,Beginner,2 Weeks,Industry-inspired IoT project to build practical skills.,"SK088, SK093, SK103",Yes,No,High,ROLE028
+PROJ0089,Blockchain Project 89,Blockchain,Intermediate,1 Month,Industry-inspired Blockchain project to build practical skills.,"SK089, SK094, SK104",Yes,No,Very High,ROLE029
+PROJ0090,UI/UX Project 90,UI/UX,Advanced,2 Months,Industry-inspired UI/UX project to build practical skills.,"SK090, SK095, SK105",Yes,No,Medium,ROLE030
+PROJ0091,AI Project 91,AI,Beginner,2 Weeks,Industry-inspired AI project to build practical skills.,"SK091, SK096, SK106",Yes,Yes,High,ROLE031
+PROJ0092,Data Science Project 92,Data Science,Intermediate,1 Month,Industry-inspired Data Science project to build practical skills.,"SK092, SK097, SK107",Yes,Yes,Very High,ROLE032
+PROJ0093,Web Development Project 93,Web Development,Advanced,2 Months,Industry-inspired Web Development project to build practical skills.,"SK093, SK098, SK108",Yes,No,Medium,ROLE033
+PROJ0094,Cloud Project 94,Cloud,Beginner,2 Weeks,Industry-inspired Cloud project to build practical skills.,"SK094, SK099, SK109",Yes,No,High,ROLE034
+PROJ0095,Cyber Security Project 95,Cyber Security,Intermediate,1 Month,Industry-inspired Cyber Security project to build practical skills.,"SK095, SK100, SK110",Yes,No,Very High,ROLE035
+PROJ0096,Mobile Project 96,Mobile,Advanced,2 Months,Industry-inspired Mobile project to build practical skills.,"SK096, SK101, SK111",Yes,No,Medium,ROLE036
+PROJ0097,DevOps Project 97,DevOps,Beginner,2 Weeks,Industry-inspired DevOps project to build practical skills.,"SK097, SK102, SK112",Yes,No,High,ROLE037
+PROJ0098,IoT Project 98,IoT,Intermediate,1 Month,Industry-inspired IoT project to build practical skills.,"SK098, SK103, SK113",Yes,No,Very High,ROLE038
+PROJ0099,Blockchain Project 99,Blockchain,Advanced,2 Months,Industry-inspired Blockchain project to build practical skills.,"SK099, SK104, SK114",Yes,No,Medium,ROLE039
+PROJ0100,UI/UX Project 100,UI/UX,Beginner,2 Weeks,Industry-inspired UI/UX project to build practical skills.,"SK100, SK105, SK115",Yes,No,High,ROLE040
+PROJ0101,AI Project 101,AI,Intermediate,1 Month,Industry-inspired AI project to build practical skills.,"SK101, SK106, SK116",Yes,Yes,Very High,ROLE041
+PROJ0102,Data Science Project 102,Data Science,Advanced,2 Months,Industry-inspired Data Science project to build practical skills.,"SK102, SK107, SK117",Yes,Yes,Medium,ROLE042
+PROJ0103,Web Development Project 103,Web Development,Beginner,2 Weeks,Industry-inspired Web Development project to build practical skills.,"SK103, SK108, SK118",Yes,No,High,ROLE043
+PROJ0104,Cloud Project 104,Cloud,Intermediate,1 Month,Industry-inspired Cloud project to build practical skills.,"SK104, SK109, SK119",Yes,No,Very High,ROLE044
+PROJ0105,Cyber Security Project 105,Cyber Security,Advanced,2 Months,Industry-inspired Cyber Security project to build practical skills.,"SK105, SK110, SK120",Yes,No,Medium,ROLE045
+PROJ0106,Mobile Project 106,Mobile,Beginner,2 Weeks,Industry-inspired Mobile project to build practical skills.,"SK106, SK111, SK121",Yes,No,High,ROLE046
+PROJ0107,DevOps Project 107,DevOps,Intermediate,1 Month,Industry-inspired DevOps project to build practical skills.,"SK107, SK112, SK122",Yes,No,Very High,ROLE047
+PROJ0108,IoT Project 108,IoT,Advanced,2 Months,Industry-inspired IoT project to build practical skills.,"SK108, SK113, SK123",Yes,No,Medium,ROLE048
+PROJ0109,Blockchain Project 109,Blockchain,Beginner,2 Weeks,Industry-inspired Blockchain project to build practical skills.,"SK109, SK114, SK124",Yes,No,High,ROLE049
+PROJ0110,UI/UX Project 110,UI/UX,Intermediate,1 Month,Industry-inspired UI/UX project to build practical skills.,"SK110, SK115, SK125",Yes,No,Very High,ROLE050
+PROJ0111,AI Project 111,AI,Advanced,2 Months,Industry-inspired AI project to build practical skills.,"SK111, SK116, SK126",Yes,Yes,Medium,ROLE051
+PROJ0112,Data Science Project 112,Data Science,Beginner,2 Weeks,Industry-inspired Data Science project to build practical skills.,"SK112, SK117, SK127",Yes,Yes,High,ROLE052
+PROJ0113,Web Development Project 113,Web Development,Intermediate,1 Month,Industry-inspired Web Development project to build practical skills.,"SK113, SK118, SK128",Yes,No,Very High,ROLE053
+PROJ0114,Cloud Project 114,Cloud,Advanced,2 Months,Industry-inspired Cloud project to build practical skills.,"SK114, SK119, SK129",Yes,No,Medium,ROLE054
+PROJ0115,Cyber Security Project 115,Cyber Security,Beginner,2 Weeks,Industry-inspired Cyber Security project to build practical skills.,"SK115, SK120, SK130",Yes,No,High,ROLE055
+PROJ0116,Mobile Project 116,Mobile,Intermediate,1 Month,Industry-inspired Mobile project to build practical skills.,"SK116, SK121, SK131",Yes,No,Very High,ROLE056
+PROJ0117,DevOps Project 117,DevOps,Advanced,2 Months,Industry-inspired DevOps project to build practical skills.,"SK117, SK122, SK132",Yes,No,Medium,ROLE057
+PROJ0118,IoT Project 118,IoT,Beginner,2 Weeks,Industry-inspired IoT project to build practical skills.,"SK118, SK123, SK133",Yes,No,High,ROLE058
+PROJ0119,Blockchain Project 119,Blockchain,Intermediate,1 Month,Industry-inspired Blockchain project to build practical skills.,"SK119, SK124, SK134",Yes,No,Very High,ROLE059
+PROJ0120,UI/UX Project 120,UI/UX,Advanced,2 Months,Industry-inspired UI/UX project to build practical skills.,"SK120, SK125, SK135",Yes,No,Medium,ROLE060
+PROJ0121,AI Project 121,AI,Beginner,2 Weeks,Industry-inspired AI project to build practical skills.,"SK121, SK126, SK136",Yes,Yes,High,ROLE001
+PROJ0122,Data Science Project 122,Data Science,Intermediate,1 Month,Industry-inspired Data Science project to build practical skills.,"SK122, SK127, SK137",Yes,Yes,Very High,ROLE002
+PROJ0123,Web Development Project 123,Web Development,Advanced,2 Months,Industry-inspired Web Development project to build practical skills.,"SK123, SK128, SK138",Yes,No,Medium,ROLE003
+PROJ0124,Cloud Project 124,Cloud,Beginner,2 Weeks,Industry-inspired Cloud project to build practical skills.,"SK124, SK129, SK139",Yes,No,High,ROLE004
+PROJ0125,Cyber Security Project 125,Cyber Security,Intermediate,1 Month,Industry-inspired Cyber Security project to build practical skills.,"SK125, SK130, SK140",Yes,No,Very High,ROLE005
+PROJ0126,Mobile Project 126,Mobile,Advanced,2 Months,Industry-inspired Mobile project to build practical skills.,"SK126, SK131, SK141",Yes,No,Medium,ROLE006
+PROJ0127,DevOps Project 127,DevOps,Beginner,2 Weeks,Industry-inspired DevOps project to build practical skills.,"SK127, SK132, SK142",Yes,No,High,ROLE007
+PROJ0128,IoT Project 128,IoT,Intermediate,1 Month,Industry-inspired IoT project to build practical skills.,"SK128, SK133, SK143",Yes,No,Very High,ROLE008
+PROJ0129,Blockchain Project 129,Blockchain,Advanced,2 Months,Industry-inspired Blockchain project to build practical skills.,"SK129, SK134, SK144",Yes,No,Medium,ROLE009
+PROJ0130,UI/UX Project 130,UI/UX,Beginner,2 Weeks,Industry-inspired UI/UX project to build practical skills.,"SK130, SK135, SK145",Yes,No,High,ROLE010
+PROJ0131,AI Project 131,AI,Intermediate,1 Month,Industry-inspired AI project to build practical skills.,"SK131, SK136, SK146",Yes,Yes,Very High,ROLE011
+PROJ0132,Data Science Project 132,Data Science,Advanced,2 Months,Industry-inspired Data Science project to build practical skills.,"SK132, SK137, SK147",Yes,Yes,Medium,ROLE012
+PROJ0133,Web Development Project 133,Web Development,Beginner,2 Weeks,Industry-inspired Web Development project to build practical skills.,"SK133, SK138, SK148",Yes,No,High,ROLE013
+PROJ0134,Cloud Project 134,Cloud,Intermediate,1 Month,Industry-inspired Cloud project to build practical skills.,"SK134, SK139, SK149",Yes,No,Very High,ROLE014
+PROJ0135,Cyber Security Project 135,Cyber Security,Advanced,2 Months,Industry-inspired Cyber Security project to build practical skills.,"SK135, SK140, SK150",Yes,No,Medium,ROLE015
+PROJ0136,Mobile Project 136,Mobile,Beginner,2 Weeks,Industry-inspired Mobile project to build practical skills.,"SK136, SK141, SK151",Yes,No,High,ROLE016
+PROJ0137,DevOps Project 137,DevOps,Intermediate,1 Month,Industry-inspired DevOps project to build practical skills.,"SK137, SK142, SK152",Yes,No,Very High,ROLE017
+PROJ0138,IoT Project 138,IoT,Advanced,2 Months,Industry-inspired IoT project to build practical skills.,"SK138, SK143, SK153",Yes,No,Medium,ROLE018
+PROJ0139,Blockchain Project 139,Blockchain,Beginner,2 Weeks,Industry-inspired Blockchain project to build practical skills.,"SK139, SK144, SK154",Yes,No,High,ROLE019
+PROJ0140,UI/UX Project 140,UI/UX,Intermediate,1 Month,Industry-inspired UI/UX project to build practical skills.,"SK140, SK145, SK155",Yes,No,Very High,ROLE020
+PROJ0141,AI Project 141,AI,Advanced,2 Months,Industry-inspired AI project to build practical skills.,"SK141, SK146, SK156",Yes,Yes,Medium,ROLE021
+PROJ0142,Data Science Project 142,Data Science,Beginner,2 Weeks,Industry-inspired Data Science project to build practical skills.,"SK142, SK147, SK157",Yes,Yes,High,ROLE022
+PROJ0143,Web Development Project 143,Web Development,Intermediate,1 Month,Industry-inspired Web Development project to build practical skills.,"SK143, SK148, SK158",Yes,No,Very High,ROLE023
+PROJ0144,Cloud Project 144,Cloud,Advanced,2 Months,Industry-inspired Cloud project to build practical skills.,"SK144, SK149, SK159",Yes,No,Medium,ROLE024
+PROJ0145,Cyber Security Project 145,Cyber Security,Beginner,2 Weeks,Industry-inspired Cyber Security project to build practical skills.,"SK145, SK150, SK160",Yes,No,High,ROLE025
+PROJ0146,Mobile Project 146,Mobile,Intermediate,1 Month,Industry-inspired Mobile project to build practical skills.,"SK146, SK151, SK161",Yes,No,Very High,ROLE026
+PROJ0147,DevOps Project 147,DevOps,Advanced,2 Months,Industry-inspired DevOps project to build practical skills.,"SK147, SK152, SK162",Yes,No,Medium,ROLE027
+PROJ0148,IoT Project 148,IoT,Beginner,2 Weeks,Industry-inspired IoT project to build practical skills.,"SK148, SK153, SK163",Yes,No,High,ROLE028
+PROJ0149,Blockchain Project 149,Blockchain,Intermediate,1 Month,Industry-inspired Blockchain project to build practical skills.,"SK149, SK154, SK164",Yes,No,Very High,ROLE029
+PROJ0150,UI/UX Project 150,UI/UX,Advanced,2 Months,Industry-inspired UI/UX project to build practical skills.,"SK150, SK155, SK165",Yes,No,Medium,ROLE030
+PROJ0151,AI Project 151,AI,Beginner,2 Weeks,Industry-inspired AI project to build practical skills.,"SK151, SK156, SK166",Yes,Yes,High,ROLE031
+PROJ0152,Data Science Project 152,Data Science,Intermediate,1 Month,Industry-inspired Data Science project to build practical skills.,"SK152, SK157, SK167",Yes,Yes,Very High,ROLE032
+PROJ0153,Web Development Project 153,Web Development,Advanced,2 Months,Industry-inspired Web Development project to build practical skills.,"SK153, SK158, SK168",Yes,No,Medium,ROLE033
+PROJ0154,Cloud Project 154,Cloud,Beginner,2 Weeks,Industry-inspired Cloud project to build practical skills.,"SK154, SK159, SK169",Yes,No,High,ROLE034
+PROJ0155,Cyber Security Project 155,Cyber Security,Intermediate,1 Month,Industry-inspired Cyber Security project to build practical skills.,"SK155, SK160, SK170",Yes,No,Very High,ROLE035
+PROJ0156,Mobile Project 156,Mobile,Advanced,2 Months,Industry-inspired Mobile project to build practical skills.,"SK156, SK161, SK171",Yes,No,Medium,ROLE036
+PROJ0157,DevOps Project 157,DevOps,Beginner,2 Weeks,Industry-inspired DevOps project to build practical skills.,"SK157, SK162, SK172",Yes,No,High,ROLE037
+PROJ0158,IoT Project 158,IoT,Intermediate,1 Month,Industry-inspired IoT project to build practical skills.,"SK158, SK163, SK173",Yes,No,Very High,ROLE038
+PROJ0159,Blockchain Project 159,Blockchain,Advanced,2 Months,Industry-inspired Blockchain project to build practical skills.,"SK159, SK164, SK174",Yes,No,Medium,ROLE039
+PROJ0160,UI/UX Project 160,UI/UX,Beginner,2 Weeks,Industry-inspired UI/UX project to build practical skills.,"SK160, SK165, SK175",Yes,No,High,ROLE040
+PROJ0161,AI Project 161,AI,Intermediate,1 Month,Industry-inspired AI project to build practical skills.,"SK161, SK166, SK176",Yes,Yes,Very High,ROLE041
+PROJ0162,Data Science Project 162,Data Science,Advanced,2 Months,Industry-inspired Data Science project to build practical skills.,"SK162, SK167, SK177",Yes,Yes,Medium,ROLE042
+PROJ0163,Web Development Project 163,Web Development,Beginner,2 Weeks,Industry-inspired Web Development project to build practical skills.,"SK163, SK168, SK178",Yes,No,High,ROLE043
+PROJ0164,Cloud Project 164,Cloud,Intermediate,1 Month,Industry-inspired Cloud project to build practical skills.,"SK164, SK169, SK179",Yes,No,Very High,ROLE044
+PROJ0165,Cyber Security Project 165,Cyber Security,Advanced,2 Months,Industry-inspired Cyber Security project to build practical skills.,"SK165, SK170, SK180",Yes,No,Medium,ROLE045
+PROJ0166,Mobile Project 166,Mobile,Beginner,2 Weeks,Industry-inspired Mobile project to build practical skills.,"SK166, SK171, SK181",Yes,No,High,ROLE046
+PROJ0167,DevOps Project 167,DevOps,Intermediate,1 Month,Industry-inspired DevOps project to build practical skills.,"SK167, SK172, SK182",Yes,No,Very High,ROLE047
+PROJ0168,IoT Project 168,IoT,Advanced,2 Months,Industry-inspired IoT project to build practical skills.,"SK168, SK173, SK183",Yes,No,Medium,ROLE048
+PROJ0169,Blockchain Project 169,Blockchain,Beginner,2 Weeks,Industry-inspired Blockchain project to build practical skills.,"SK169, SK174, SK184",Yes,No,High,ROLE049
+PROJ0170,UI/UX Project 170,UI/UX,Intermediate,1 Month,Industry-inspired UI/UX project to build practical skills.,"SK170, SK175, SK185",Yes,No,Very High,ROLE050
+PROJ0171,AI Project 171,AI,Advanced,2 Months,Industry-inspired AI project to build practical skills.,"SK171, SK176, SK186",Yes,Yes,Medium,ROLE051
+PROJ0172,Data Science Project 172,Data Science,Beginner,2 Weeks,Industry-inspired Data Science project to build practical skills.,"SK172, SK177, SK187",Yes,Yes,High,ROLE052
+PROJ0173,Web Development Project 173,Web Development,Intermediate,1 Month,Industry-inspired Web Development project to build practical skills.,"SK173, SK178, SK188",Yes,No,Very High,ROLE053
+PROJ0174,Cloud Project 174,Cloud,Advanced,2 Months,Industry-inspired Cloud project to build practical skills.,"SK174, SK179, SK189",Yes,No,Medium,ROLE054
+PROJ0175,Cyber Security Project 175,Cyber Security,Beginner,2 Weeks,Industry-inspired Cyber Security project to build practical skills.,"SK175, SK180, SK190",Yes,No,High,ROLE055
+PROJ0176,Mobile Project 176,Mobile,Intermediate,1 Month,Industry-inspired Mobile project to build practical skills.,"SK176, SK181, SK191",Yes,No,Very High,ROLE056
+PROJ0177,DevOps Project 177,DevOps,Advanced,2 Months,Industry-inspired DevOps project to build practical skills.,"SK177, SK182, SK192",Yes,No,Medium,ROLE057
+PROJ0178,IoT Project 178,IoT,Beginner,2 Weeks,Industry-inspired IoT project to build practical skills.,"SK178, SK183, SK193",Yes,No,High,ROLE058
+PROJ0179,Blockchain Project 179,Blockchain,Intermediate,1 Month,Industry-inspired Blockchain project to build practical skills.,"SK179, SK184, SK194",Yes,No,Very High,ROLE059
+PROJ0180,UI/UX Project 180,UI/UX,Advanced,2 Months,Industry-inspired UI/UX project to build practical skills.,"SK180, SK185, SK195",Yes,No,Medium,ROLE060
+PROJ0181,AI Project 181,AI,Beginner,2 Weeks,Industry-inspired AI project to build practical skills.,"SK181, SK186, SK196",Yes,Yes,High,ROLE001
+PROJ0182,Data Science Project 182,Data Science,Intermediate,1 Month,Industry-inspired Data Science project to build practical skills.,"SK182, SK187, SK197",Yes,Yes,Very High,ROLE002
+PROJ0183,Web Development Project 183,Web Development,Advanced,2 Months,Industry-inspired Web Development project to build practical skills.,"SK183, SK188, SK198",Yes,No,Medium,ROLE003
+PROJ0184,Cloud Project 184,Cloud,Beginner,2 Weeks,Industry-inspired Cloud project to build practical skills.,"SK184, SK189, SK199",Yes,No,High,ROLE004
+PROJ0185,Cyber Security Project 185,Cyber Security,Intermediate,1 Month,Industry-inspired Cyber Security project to build practical skills.,"SK185, SK190, SK200",Yes,No,Very High,ROLE005
+PROJ0186,Mobile Project 186,Mobile,Advanced,2 Months,Industry-inspired Mobile project to build practical skills.,"SK186, SK191, SK201",Yes,No,Medium,ROLE006
+PROJ0187,DevOps Project 187,DevOps,Beginner,2 Weeks,Industry-inspired DevOps project to build practical skills.,"SK187, SK192, SK202",Yes,No,High,ROLE007
+PROJ0188,IoT Project 188,IoT,Intermediate,1 Month,Industry-inspired IoT project to build practical skills.,"SK188, SK193, SK203",Yes,No,Very High,ROLE008
+PROJ0189,Blockchain Project 189,Blockchain,Advanced,2 Months,Industry-inspired Blockchain project to build practical skills.,"SK189, SK194, SK204",Yes,No,Medium,ROLE009
+PROJ0190,UI/UX Project 190,UI/UX,Beginner,2 Weeks,Industry-inspired UI/UX project to build practical skills.,"SK190, SK195, SK205",Yes,No,High,ROLE010
+PROJ0191,AI Project 191,AI,Intermediate,1 Month,Industry-inspired AI project to build practical skills.,"SK191, SK196, SK206",Yes,Yes,Very High,ROLE011
+PROJ0192,Data Science Project 192,Data Science,Advanced,2 Months,Industry-inspired Data Science project to build practical skills.,"SK192, SK197, SK207",Yes,Yes,Medium,ROLE012
+PROJ0193,Web Development Project 193,Web Development,Beginner,2 Weeks,Industry-inspired Web Development project to build practical skills.,"SK193, SK198, SK208",Yes,No,High,ROLE013
+PROJ0194,Cloud Project 194,Cloud,Intermediate,1 Month,Industry-inspired Cloud project to build practical skills.,"SK194, SK199, SK209",Yes,No,Very High,ROLE014
+PROJ0195,Cyber Security Project 195,Cyber Security,Advanced,2 Months,Industry-inspired Cyber Security project to build practical skills.,"SK195, SK200, SK210",Yes,No,Medium,ROLE015
+PROJ0196,Mobile Project 196,Mobile,Beginner,2 Weeks,Industry-inspired Mobile project to build practical skills.,"SK196, SK201, SK211",Yes,No,High,ROLE016
+PROJ0197,DevOps Project 197,DevOps,Intermediate,1 Month,Industry-inspired DevOps project to build practical skills.,"SK197, SK202, SK212",Yes,No,Very High,ROLE017
+PROJ0198,IoT Project 198,IoT,Advanced,2 Months,Industry-inspired IoT project to build practical skills.,"SK198, SK203, SK213",Yes,No,Medium,ROLE018
+PROJ0199,Blockchain Project 199,Blockchain,Beginner,2 Weeks,Industry-inspired Blockchain project to build practical skills.,"SK199, SK204, SK214",Yes,No,High,ROLE019
+PROJ0200,UI/UX Project 200,UI/UX,Intermediate,1 Month,Industry-inspired UI/UX project to build practical skills.,"SK200, SK205, SK215",Yes,No,Very High,ROLE020
+PROJ0201,AI Project 201,AI,Advanced,2 Months,Industry-inspired AI project to build practical skills.,"SK201, SK206, SK216",Yes,Yes,Medium,ROLE021
+PROJ0202,Data Science Project 202,Data Science,Beginner,2 Weeks,Industry-inspired Data Science project to build practical skills.,"SK202, SK207, SK217",Yes,Yes,High,ROLE022
+PROJ0203,Web Development Project 203,Web Development,Intermediate,1 Month,Industry-inspired Web Development project to build practical skills.,"SK203, SK208, SK218",Yes,No,Very High,ROLE023
+PROJ0204,Cloud Project 204,Cloud,Advanced,2 Months,Industry-inspired Cloud project to build practical skills.,"SK204, SK209, SK219",Yes,No,Medium,ROLE024
+PROJ0205,Cyber Security Project 205,Cyber Security,Beginner,2 Weeks,Industry-inspired Cyber Security project to build practical skills.,"SK205, SK210, SK220",Yes,No,High,ROLE025
+PROJ0206,Mobile Project 206,Mobile,Intermediate,1 Month,Industry-inspired Mobile project to build practical skills.,"SK206, SK211, SK221",Yes,No,Very High,ROLE026
+PROJ0207,DevOps Project 207,DevOps,Advanced,2 Months,Industry-inspired DevOps project to build practical skills.,"SK207, SK212, SK222",Yes,No,Medium,ROLE027
+PROJ0208,IoT Project 208,IoT,Beginner,2 Weeks,Industry-inspired IoT project to build practical skills.,"SK208, SK213, SK223",Yes,No,High,ROLE028
+PROJ0209,Blockchain Project 209,Blockchain,Intermediate,1 Month,Industry-inspired Blockchain project to build practical skills.,"SK209, SK214, SK224",Yes,No,Very High,ROLE029
+PROJ0210,UI/UX Project 210,UI/UX,Advanced,2 Months,Industry-inspired UI/UX project to build practical skills.,"SK210, SK215, SK225",Yes,No,Medium,ROLE030
+PROJ0211,AI Project 211,AI,Beginner,2 Weeks,Industry-inspired AI project to build practical skills.,"SK211, SK216, SK226",Yes,Yes,High,ROLE031
+PROJ0212,Data Science Project 212,Data Science,Intermediate,1 Month,Industry-inspired Data Science project to build practical skills.,"SK212, SK217, SK227",Yes,Yes,Very High,ROLE032
+PROJ0213,Web Development Project 213,Web Development,Advanced,2 Months,Industry-inspired Web Development project to build practical skills.,"SK213, SK218, SK228",Yes,No,Medium,ROLE033
+PROJ0214,Cloud Project 214,Cloud,Beginner,2 Weeks,Industry-inspired Cloud project to build practical skills.,"SK214, SK219, SK229",Yes,No,High,ROLE034
+PROJ0215,Cyber Security Project 215,Cyber Security,Intermediate,1 Month,Industry-inspired Cyber Security project to build practical skills.,"SK215, SK220, SK230",Yes,No,Very High,ROLE035
+PROJ0216,Mobile Project 216,Mobile,Advanced,2 Months,Industry-inspired Mobile project to build practical skills.,"SK216, SK221, SK231",Yes,No,Medium,ROLE036
+PROJ0217,DevOps Project 217,DevOps,Beginner,2 Weeks,Industry-inspired DevOps project to build practical skills.,"SK217, SK222, SK232",Yes,No,High,ROLE037
+PROJ0218,IoT Project 218,IoT,Intermediate,1 Month,Industry-inspired IoT project to build practical skills.,"SK218, SK223, SK233",Yes,No,Very High,ROLE038
+PROJ0219,Blockchain Project 219,Blockchain,Advanced,2 Months,Industry-inspired Blockchain project to build practical skills.,"SK219, SK224, SK234",Yes,No,Medium,ROLE039
+PROJ0220,UI/UX Project 220,UI/UX,Beginner,2 Weeks,Industry-inspired UI/UX project to build practical skills.,"SK220, SK225, SK235",Yes,No,High,ROLE040
+PROJ0221,AI Project 221,AI,Intermediate,1 Month,Industry-inspired AI project to build practical skills.,"SK221, SK226, SK236",Yes,Yes,Very High,ROLE041
+PROJ0222,Data Science Project 222,Data Science,Advanced,2 Months,Industry-inspired Data Science project to build practical skills.,"SK222, SK227, SK237",Yes,Yes,Medium,ROLE042
+PROJ0223,Web Development Project 223,Web Development,Beginner,2 Weeks,Industry-inspired Web Development project to build practical skills.,"SK223, SK228, SK238",Yes,No,High,ROLE043
+PROJ0224,Cloud Project 224,Cloud,Intermediate,1 Month,Industry-inspired Cloud project to build practical skills.,"SK224, SK229, SK239",Yes,No,Very High,ROLE044
+PROJ0225,Cyber Security Project 225,Cyber Security,Advanced,2 Months,Industry-inspired Cyber Security project to build practical skills.,"SK225, SK230, SK240",Yes,No,Medium,ROLE045
+PROJ0226,Mobile Project 226,Mobile,Beginner,2 Weeks,Industry-inspired Mobile project to build practical skills.,"SK226, SK231, SK241",Yes,No,High,ROLE046
+PROJ0227,DevOps Project 227,DevOps,Intermediate,1 Month,Industry-inspired DevOps project to build practical skills.,"SK227, SK232, SK242",Yes,No,Very High,ROLE047
+PROJ0228,IoT Project 228,IoT,Advanced,2 Months,Industry-inspired IoT project to build practical skills.,"SK228, SK233, SK243",Yes,No,Medium,ROLE048
+PROJ0229,Blockchain Project 229,Blockchain,Beginner,2 Weeks,Industry-inspired Blockchain project to build practical skills.,"SK229, SK234, SK244",Yes,No,High,ROLE049
+PROJ0230,UI/UX Project 230,UI/UX,Intermediate,1 Month,Industry-inspired UI/UX project to build practical skills.,"SK230, SK235, SK245",Yes,No,Very High,ROLE050
+PROJ0231,AI Project 231,AI,Advanced,2 Months,Industry-inspired AI project to build practical skills.,"SK231, SK236, SK246",Yes,Yes,Medium,ROLE051
+PROJ0232,Data Science Project 232,Data Science,Beginner,2 Weeks,Industry-inspired Data Science project to build practical skills.,"SK232, SK237, SK247",Yes,Yes,High,ROLE052
+PROJ0233,Web Development Project 233,Web Development,Intermediate,1 Month,Industry-inspired Web Development project to build practical skills.,"SK233, SK238, SK248",Yes,No,Very High,ROLE053
+PROJ0234,Cloud Project 234,Cloud,Advanced,2 Months,Industry-inspired Cloud project to build practical skills.,"SK234, SK239, SK249",Yes,No,Medium,ROLE054
+PROJ0235,Cyber Security Project 235,Cyber Security,Beginner,2 Weeks,Industry-inspired Cyber Security project to build practical skills.,"SK235, SK240, SK250",Yes,No,High,ROLE055
+PROJ0236,Mobile Project 236,Mobile,Intermediate,1 Month,Industry-inspired Mobile project to build practical skills.,"SK236, SK241, SK251",Yes,No,Very High,ROLE056
+PROJ0237,DevOps Project 237,DevOps,Advanced,2 Months,Industry-inspired DevOps project to build practical skills.,"SK237, SK242, SK252",Yes,No,Medium,ROLE057
+PROJ0238,IoT Project 238,IoT,Beginner,2 Weeks,Industry-inspired IoT project to build practical skills.,"SK238, SK243, SK253",Yes,No,High,ROLE058
+PROJ0239,Blockchain Project 239,Blockchain,Intermediate,1 Month,Industry-inspired Blockchain project to build practical skills.,"SK239, SK244, SK254",Yes,No,Very High,ROLE059
+PROJ0240,UI/UX Project 240,UI/UX,Advanced,2 Months,Industry-inspired UI/UX project to build practical skills.,"SK240, SK245, SK255",Yes,No,Medium,ROLE060
+PROJ0241,AI Project 241,AI,Beginner,2 Weeks,Industry-inspired AI project to build practical skills.,"SK241, SK246, SK256",Yes,Yes,High,ROLE001
+PROJ0242,Data Science Project 242,Data Science,Intermediate,1 Month,Industry-inspired Data Science project to build practical skills.,"SK242, SK247, SK257",Yes,Yes,Very High,ROLE002
+PROJ0243,Web Development Project 243,Web Development,Advanced,2 Months,Industry-inspired Web Development project to build practical skills.,"SK243, SK248, SK258",Yes,No,Medium,ROLE003
+PROJ0244,Cloud Project 244,Cloud,Beginner,2 Weeks,Industry-inspired Cloud project to build practical skills.,"SK244, SK249, SK259",Yes,No,High,ROLE004
+PROJ0245,Cyber Security Project 245,Cyber Security,Intermediate,1 Month,Industry-inspired Cyber Security project to build practical skills.,"SK245, SK250, SK260",Yes,No,Very High,ROLE005
+PROJ0246,Mobile Project 246,Mobile,Advanced,2 Months,Industry-inspired Mobile project to build practical skills.,"SK246, SK251, SK261",Yes,No,Medium,ROLE006
+PROJ0247,DevOps Project 247,DevOps,Beginner,2 Weeks,Industry-inspired DevOps project to build practical skills.,"SK247, SK252, SK262",Yes,No,High,ROLE007
+PROJ0248,IoT Project 248,IoT,Intermediate,1 Month,Industry-inspired IoT project to build practical skills.,"SK248, SK253, SK263",Yes,No,Very High,ROLE008
+PROJ0249,Blockchain Project 249,Blockchain,Advanced,2 Months,Industry-inspired Blockchain project to build practical skills.,"SK249, SK254, SK264",Yes,No,Medium,ROLE009
+PROJ0250,UI/UX Project 250,UI/UX,Beginner,2 Weeks,Industry-inspired UI/UX project to build practical skills.,"SK250, SK255, SK265",Yes,No,High,ROLE010
+PROJ0251,AI Project 251,AI,Intermediate,1 Month,Industry-inspired AI project to build practical skills.,"SK251, SK256, SK266",Yes,Yes,Very High,ROLE011
+PROJ0252,Data Science Project 252,Data Science,Advanced,2 Months,Industry-inspired Data Science project to build practical skills.,"SK252, SK257, SK267",Yes,Yes,Medium,ROLE012
+PROJ0253,Web Development Project 253,Web Development,Beginner,2 Weeks,Industry-inspired Web Development project to build practical skills.,"SK253, SK258, SK268",Yes,No,High,ROLE013
+PROJ0254,Cloud Project 254,Cloud,Intermediate,1 Month,Industry-inspired Cloud project to build practical skills.,"SK254, SK259, SK269",Yes,No,Very High,ROLE014
+PROJ0255,Cyber Security Project 255,Cyber Security,Advanced,2 Months,Industry-inspired Cyber Security project to build practical skills.,"SK255, SK260, SK270",Yes,No,Medium,ROLE015
+PROJ0256,Mobile Project 256,Mobile,Beginner,2 Weeks,Industry-inspired Mobile project to build practical skills.,"SK256, SK261, SK271",Yes,No,High,ROLE016
+PROJ0257,DevOps Project 257,DevOps,Intermediate,1 Month,Industry-inspired DevOps project to build practical skills.,"SK257, SK262, SK272",Yes,No,Very High,ROLE017
+PROJ0258,IoT Project 258,IoT,Advanced,2 Months,Industry-inspired IoT project to build practical skills.,"SK258, SK263, SK273",Yes,No,Medium,ROLE018
+PROJ0259,Blockchain Project 259,Blockchain,Beginner,2 Weeks,Industry-inspired Blockchain project to build practical skills.,"SK259, SK264, SK274",Yes,No,High,ROLE019
+PROJ0260,UI/UX Project 260,UI/UX,Intermediate,1 Month,Industry-inspired UI/UX project to build practical skills.,"SK260, SK265, SK275",Yes,No,Very High,ROLE020
+PROJ0261,AI Project 261,AI,Advanced,2 Months,Industry-inspired AI project to build practical skills.,"SK261, SK266, SK276",Yes,Yes,Medium,ROLE021
+PROJ0262,Data Science Project 262,Data Science,Beginner,2 Weeks,Industry-inspired Data Science project to build practical skills.,"SK262, SK267, SK277",Yes,Yes,High,ROLE022
+PROJ0263,Web Development Project 263,Web Development,Intermediate,1 Month,Industry-inspired Web Development project to build practical skills.,"SK263, SK268, SK278",Yes,No,Very High,ROLE023
+PROJ0264,Cloud Project 264,Cloud,Advanced,2 Months,Industry-inspired Cloud project to build practical skills.,"SK264, SK269, SK279",Yes,No,Medium,ROLE024
+PROJ0265,Cyber Security Project 265,Cyber Security,Beginner,2 Weeks,Industry-inspired Cyber Security project to build practical skills.,"SK265, SK270, SK001",Yes,No,High,ROLE025
+PROJ0266,Mobile Project 266,Mobile,Intermediate,1 Month,Industry-inspired Mobile project to build practical skills.,"SK266, SK271, SK002",Yes,No,Very High,ROLE026
+PROJ0267,DevOps Project 267,DevOps,Advanced,2 Months,Industry-inspired DevOps project to build practical skills.,"SK267, SK272, SK003",Yes,No,Medium,ROLE027
+PROJ0268,IoT Project 268,IoT,Beginner,2 Weeks,Industry-inspired IoT project to build practical skills.,"SK268, SK273, SK004",Yes,No,High,ROLE028
+PROJ0269,Blockchain Project 269,Blockchain,Intermediate,1 Month,Industry-inspired Blockchain project to build practical skills.,"SK269, SK274, SK005",Yes,No,Very High,ROLE029
+PROJ0270,UI/UX Project 270,UI/UX,Advanced,2 Months,Industry-inspired UI/UX project to build practical skills.,"SK270, SK275, SK006",Yes,No,Medium,ROLE030
+PROJ0271,AI Project 271,AI,Beginner,2 Weeks,Industry-inspired AI project to build practical skills.,"SK271, SK276, SK007",Yes,Yes,High,ROLE031
+PROJ0272,Data Science Project 272,Data Science,Intermediate,1 Month,Industry-inspired Data Science project to build practical skills.,"SK272, SK277, SK008",Yes,Yes,Very High,ROLE032
+PROJ0273,Web Development Project 273,Web Development,Advanced,2 Months,Industry-inspired Web Development project to build practical skills.,"SK273, SK278, SK009",Yes,No,Medium,ROLE033
+PROJ0274,Cloud Project 274,Cloud,Beginner,2 Weeks,Industry-inspired Cloud project to build practical skills.,"SK274, SK279, SK010",Yes,No,High,ROLE034
+PROJ0275,Cyber Security Project 275,Cyber Security,Intermediate,1 Month,Industry-inspired Cyber Security project to build practical skills.,"SK275, SK001, SK011",Yes,No,Very High,ROLE035
+PROJ0276,Mobile Project 276,Mobile,Advanced,2 Months,Industry-inspired Mobile project to build practical skills.,"SK276, SK002, SK012",Yes,No,Medium,ROLE036
+PROJ0277,DevOps Project 277,DevOps,Beginner,2 Weeks,Industry-inspired DevOps project to build practical skills.,"SK277, SK003, SK013",Yes,No,High,ROLE037
+PROJ0278,IoT Project 278,IoT,Intermediate,1 Month,Industry-inspired IoT project to build practical skills.,"SK278, SK004, SK014",Yes,No,Very High,ROLE038
+PROJ0279,Blockchain Project 279,Blockchain,Advanced,2 Months,Industry-inspired Blockchain project to build practical skills.,"SK279, SK005, SK015",Yes,No,Medium,ROLE039
+PROJ0280,UI/UX Project 280,UI/UX,Beginner,2 Weeks,Industry-inspired UI/UX project to build practical skills.,"SK001, SK006, SK016",Yes,No,High,ROLE040
+PROJ0281,AI Project 281,AI,Intermediate,1 Month,Industry-inspired AI project to build practical skills.,"SK002, SK007, SK017",Yes,Yes,Very High,ROLE041
+PROJ0282,Data Science Project 282,Data Science,Advanced,2 Months,Industry-inspired Data Science project to build practical skills.,"SK003, SK008, SK018",Yes,Yes,Medium,ROLE042
+PROJ0283,Web Development Project 283,Web Development,Beginner,2 Weeks,Industry-inspired Web Development project to build practical skills.,"SK004, SK009, SK019",Yes,No,High,ROLE043
+PROJ0284,Cloud Project 284,Cloud,Intermediate,1 Month,Industry-inspired Cloud project to build practical skills.,"SK005, SK010, SK020",Yes,No,Very High,ROLE044
+PROJ0285,Cyber Security Project 285,Cyber Security,Advanced,2 Months,Industry-inspired Cyber Security project to build practical skills.,"SK006, SK011, SK021",Yes,No,Medium,ROLE045
+PROJ0286,Mobile Project 286,Mobile,Beginner,2 Weeks,Industry-inspired Mobile project to build practical skills.,"SK007, SK012, SK022",Yes,No,High,ROLE046
+PROJ0287,DevOps Project 287,DevOps,Intermediate,1 Month,Industry-inspired DevOps project to build practical skills.,"SK008, SK013, SK023",Yes,No,Very High,ROLE047
+PROJ0288,IoT Project 288,IoT,Advanced,2 Months,Industry-inspired IoT project to build practical skills.,"SK009, SK014, SK024",Yes,No,Medium,ROLE048
+PROJ0289,Blockchain Project 289,Blockchain,Beginner,2 Weeks,Industry-inspired Blockchain project to build practical skills.,"SK010, SK015, SK025",Yes,No,High,ROLE049
+PROJ0290,UI/UX Project 290,UI/UX,Intermediate,1 Month,Industry-inspired UI/UX project to build practical skills.,"SK011, SK016, SK026",Yes,No,Very High,ROLE050
+PROJ0291,AI Project 291,AI,Advanced,2 Months,Industry-inspired AI project to build practical skills.,"SK012, SK017, SK027",Yes,Yes,Medium,ROLE051
+PROJ0292,Data Science Project 292,Data Science,Beginner,2 Weeks,Industry-inspired Data Science project to build practical skills.,"SK013, SK018, SK028",Yes,Yes,High,ROLE052
+PROJ0293,Web Development Project 293,Web Development,Intermediate,1 Month,Industry-inspired Web Development project to build practical skills.,"SK014, SK019, SK029",Yes,No,Very High,ROLE053
+PROJ0294,Cloud Project 294,Cloud,Advanced,2 Months,Industry-inspired Cloud project to build practical skills.,"SK015, SK020, SK030",Yes,No,Medium,ROLE054
+PROJ0295,Cyber Security Project 295,Cyber Security,Beginner,2 Weeks,Industry-inspired Cyber Security project to build practical skills.,"SK016, SK021, SK031",Yes,No,High,ROLE055
+PROJ0296,Mobile Project 296,Mobile,Intermediate,1 Month,Industry-inspired Mobile project to build practical skills.,"SK017, SK022, SK032",Yes,No,Very High,ROLE056
+PROJ0297,DevOps Project 297,DevOps,Advanced,2 Months,Industry-inspired DevOps project to build practical skills.,"SK018, SK023, SK033",Yes,No,Medium,ROLE057
+PROJ0298,IoT Project 298,IoT,Beginner,2 Weeks,Industry-inspired IoT project to build practical skills.,"SK019, SK024, SK034",Yes,No,High,ROLE058
+PROJ0299,Blockchain Project 299,Blockchain,Intermediate,1 Month,Industry-inspired Blockchain project to build practical skills.,"SK020, SK025, SK035",Yes,No,Very High,ROLE059
+PROJ0300,UI/UX Project 300,UI/UX,Advanced,2 Months,Industry-inspired UI/UX project to build practical skills.,"SK021, SK026, SK036",Yes,No,Medium,ROLE060
+PROJ0301,AI Project 301,AI,Beginner,2 Weeks,Industry-inspired AI project to build practical skills.,"SK022, SK027, SK037",Yes,Yes,High,ROLE001
+PROJ0302,Data Science Project 302,Data Science,Intermediate,1 Month,Industry-inspired Data Science project to build practical skills.,"SK023, SK028, SK038",Yes,Yes,Very High,ROLE002
+PROJ0303,Web Development Project 303,Web Development,Advanced,2 Months,Industry-inspired Web Development project to build practical skills.,"SK024, SK029, SK039",Yes,No,Medium,ROLE003
+PROJ0304,Cloud Project 304,Cloud,Beginner,2 Weeks,Industry-inspired Cloud project to build practical skills.,"SK025, SK030, SK040",Yes,No,High,ROLE004
+PROJ0305,Cyber Security Project 305,Cyber Security,Intermediate,1 Month,Industry-inspired Cyber Security project to build practical skills.,"SK026, SK031, SK041",Yes,No,Very High,ROLE005
+PROJ0306,Mobile Project 306,Mobile,Advanced,2 Months,Industry-inspired Mobile project to build practical skills.,"SK027, SK032, SK042",Yes,No,Medium,ROLE006
+PROJ0307,DevOps Project 307,DevOps,Beginner,2 Weeks,Industry-inspired DevOps project to build practical skills.,"SK028, SK033, SK043",Yes,No,High,ROLE007
+PROJ0308,IoT Project 308,IoT,Intermediate,1 Month,Industry-inspired IoT project to build practical skills.,"SK029, SK034, SK044",Yes,No,Very High,ROLE008
+PROJ0309,Blockchain Project 309,Blockchain,Advanced,2 Months,Industry-inspired Blockchain project to build practical skills.,"SK030, SK035, SK045",Yes,No,Medium,ROLE009
+PROJ0310,UI/UX Project 310,UI/UX,Beginner,2 Weeks,Industry-inspired UI/UX project to build practical skills.,"SK031, SK036, SK046",Yes,No,High,ROLE010
+PROJ0311,AI Project 311,AI,Intermediate,1 Month,Industry-inspired AI project to build practical skills.,"SK032, SK037, SK047",Yes,Yes,Very High,ROLE011
+PROJ0312,Data Science Project 312,Data Science,Advanced,2 Months,Industry-inspired Data Science project to build practical skills.,"SK033, SK038, SK048",Yes,Yes,Medium,ROLE012
+PROJ0313,Web Development Project 313,Web Development,Beginner,2 Weeks,Industry-inspired Web Development project to build practical skills.,"SK034, SK039, SK049",Yes,No,High,ROLE013
+PROJ0314,Cloud Project 314,Cloud,Intermediate,1 Month,Industry-inspired Cloud project to build practical skills.,"SK035, SK040, SK050",Yes,No,Very High,ROLE014
+PROJ0315,Cyber Security Project 315,Cyber Security,Advanced,2 Months,Industry-inspired Cyber Security project to build practical skills.,"SK036, SK041, SK051",Yes,No,Medium,ROLE015
+PROJ0316,Mobile Project 316,Mobile,Beginner,2 Weeks,Industry-inspired Mobile project to build practical skills.,"SK037, SK042, SK052",Yes,No,High,ROLE016
+PROJ0317,DevOps Project 317,DevOps,Intermediate,1 Month,Industry-inspired DevOps project to build practical skills.,"SK038, SK043, SK053",Yes,No,Very High,ROLE017
+PROJ0318,IoT Project 318,IoT,Advanced,2 Months,Industry-inspired IoT project to build practical skills.,"SK039, SK044, SK054",Yes,No,Medium,ROLE018
+PROJ0319,Blockchain Project 319,Blockchain,Beginner,2 Weeks,Industry-inspired Blockchain project to build practical skills.,"SK040, SK045, SK055",Yes,No,High,ROLE019
+PROJ0320,UI/UX Project 320,UI/UX,Intermediate,1 Month,Industry-inspired UI/UX project to build practical skills.,"SK041, SK046, SK056",Yes,No,Very High,ROLE020
+PROJ0321,AI Project 321,AI,Advanced,2 Months,Industry-inspired AI project to build practical skills.,"SK042, SK047, SK057",Yes,Yes,Medium,ROLE021
+PROJ0322,Data Science Project 322,Data Science,Beginner,2 Weeks,Industry-inspired Data Science project to build practical skills.,"SK043, SK048, SK058",Yes,Yes,High,ROLE022
+PROJ0323,Web Development Project 323,Web Development,Intermediate,1 Month,Industry-inspired Web Development project to build practical skills.,"SK044, SK049, SK059",Yes,No,Very High,ROLE023
+PROJ0324,Cloud Project 324,Cloud,Advanced,2 Months,Industry-inspired Cloud project to build practical skills.,"SK045, SK050, SK060",Yes,No,Medium,ROLE024
+PROJ0325,Cyber Security Project 325,Cyber Security,Beginner,2 Weeks,Industry-inspired Cyber Security project to build practical skills.,"SK046, SK051, SK061",Yes,No,High,ROLE025
+PROJ0326,Mobile Project 326,Mobile,Intermediate,1 Month,Industry-inspired Mobile project to build practical skills.,"SK047, SK052, SK062",Yes,No,Very High,ROLE026
+PROJ0327,DevOps Project 327,DevOps,Advanced,2 Months,Industry-inspired DevOps project to build practical skills.,"SK048, SK053, SK063",Yes,No,Medium,ROLE027
+PROJ0328,IoT Project 328,IoT,Beginner,2 Weeks,Industry-inspired IoT project to build practical skills.,"SK049, SK054, SK064",Yes,No,High,ROLE028
+PROJ0329,Blockchain Project 329,Blockchain,Intermediate,1 Month,Industry-inspired Blockchain project to build practical skills.,"SK050, SK055, SK065",Yes,No,Very High,ROLE029
+PROJ0330,UI/UX Project 330,UI/UX,Advanced,2 Months,Industry-inspired UI/UX project to build practical skills.,"SK051, SK056, SK066",Yes,No,Medium,ROLE030
+PROJ0331,AI Project 331,AI,Beginner,2 Weeks,Industry-inspired AI project to build practical skills.,"SK052, SK057, SK067",Yes,Yes,High,ROLE031
+PROJ0332,Data Science Project 332,Data Science,Intermediate,1 Month,Industry-inspired Data Science project to build practical skills.,"SK053, SK058, SK068",Yes,Yes,Very High,ROLE032
+PROJ0333,Web Development Project 333,Web Development,Advanced,2 Months,Industry-inspired Web Development project to build practical skills.,"SK054, SK059, SK069",Yes,No,Medium,ROLE033
+PROJ0334,Cloud Project 334,Cloud,Beginner,2 Weeks,Industry-inspired Cloud project to build practical skills.,"SK055, SK060, SK070",Yes,No,High,ROLE034
+PROJ0335,Cyber Security Project 335,Cyber Security,Intermediate,1 Month,Industry-inspired Cyber Security project to build practical skills.,"SK056, SK061, SK071",Yes,No,Very High,ROLE035
+PROJ0336,Mobile Project 336,Mobile,Advanced,2 Months,Industry-inspired Mobile project to build practical skills.,"SK057, SK062, SK072",Yes,No,Medium,ROLE036
+PROJ0337,DevOps Project 337,DevOps,Beginner,2 Weeks,Industry-inspired DevOps project to build practical skills.,"SK058, SK063, SK073",Yes,No,High,ROLE037
+PROJ0338,IoT Project 338,IoT,Intermediate,1 Month,Industry-inspired IoT project to build practical skills.,"SK059, SK064, SK074",Yes,No,Very High,ROLE038
+PROJ0339,Blockchain Project 339,Blockchain,Advanced,2 Months,Industry-inspired Blockchain project to build practical skills.,"SK060, SK065, SK075",Yes,No,Medium,ROLE039
+PROJ0340,UI/UX Project 340,UI/UX,Beginner,2 Weeks,Industry-inspired UI/UX project to build practical skills.,"SK061, SK066, SK076",Yes,No,High,ROLE040
+PROJ0341,AI Project 341,AI,Intermediate,1 Month,Industry-inspired AI project to build practical skills.,"SK062, SK067, SK077",Yes,Yes,Very High,ROLE041
+PROJ0342,Data Science Project 342,Data Science,Advanced,2 Months,Industry-inspired Data Science project to build practical skills.,"SK063, SK068, SK078",Yes,Yes,Medium,ROLE042
+PROJ0343,Web Development Project 343,Web Development,Beginner,2 Weeks,Industry-inspired Web Development project to build practical skills.,"SK064, SK069, SK079",Yes,No,High,ROLE043
+PROJ0344,Cloud Project 344,Cloud,Intermediate,1 Month,Industry-inspired Cloud project to build practical skills.,"SK065, SK070, SK080",Yes,No,Very High,ROLE044
+PROJ0345,Cyber Security Project 345,Cyber Security,Advanced,2 Months,Industry-inspired Cyber Security project to build practical skills.,"SK066, SK071, SK081",Yes,No,Medium,ROLE045
+PROJ0346,Mobile Project 346,Mobile,Beginner,2 Weeks,Industry-inspired Mobile project to build practical skills.,"SK067, SK072, SK082",Yes,No,High,ROLE046
+PROJ0347,DevOps Project 347,DevOps,Intermediate,1 Month,Industry-inspired DevOps project to build practical skills.,"SK068, SK073, SK083",Yes,No,Very High,ROLE047
+PROJ0348,IoT Project 348,IoT,Advanced,2 Months,Industry-inspired IoT project to build practical skills.,"SK069, SK074, SK084",Yes,No,Medium,ROLE048
+PROJ0349,Blockchain Project 349,Blockchain,Beginner,2 Weeks,Industry-inspired Blockchain project to build practical skills.,"SK070, SK075, SK085",Yes,No,High,ROLE049
+PROJ0350,UI/UX Project 350,UI/UX,Intermediate,1 Month,Industry-inspired UI/UX project to build practical skills.,"SK071, SK076, SK086",Yes,No,Very High,ROLE050
+PROJ0351,AI Project 351,AI,Advanced,2 Months,Industry-inspired AI project to build practical skills.,"SK072, SK077, SK087",Yes,Yes,Medium,ROLE051
+PROJ0352,Data Science Project 352,Data Science,Beginner,2 Weeks,Industry-inspired Data Science project to build practical skills.,"SK073, SK078, SK088",Yes,Yes,High,ROLE052
+PROJ0353,Web Development Project 353,Web Development,Intermediate,1 Month,Industry-inspired Web Development project to build practical skills.,"SK074, SK079, SK089",Yes,No,Very High,ROLE053
+PROJ0354,Cloud Project 354,Cloud,Advanced,2 Months,Industry-inspired Cloud project to build practical skills.,"SK075, SK080, SK090",Yes,No,Medium,ROLE054
+PROJ0355,Cyber Security Project 355,Cyber Security,Beginner,2 Weeks,Industry-inspired Cyber Security project to build practical skills.,"SK076, SK081, SK091",Yes,No,High,ROLE055
+PROJ0356,Mobile Project 356,Mobile,Intermediate,1 Month,Industry-inspired Mobile project to build practical skills.,"SK077, SK082, SK092",Yes,No,Very High,ROLE056
+PROJ0357,DevOps Project 357,DevOps,Advanced,2 Months,Industry-inspired DevOps project to build practical skills.,"SK078, SK083, SK093",Yes,No,Medium,ROLE057
+PROJ0358,IoT Project 358,IoT,Beginner,2 Weeks,Industry-inspired IoT project to build practical skills.,"SK079, SK084, SK094",Yes,No,High,ROLE058
+PROJ0359,Blockchain Project 359,Blockchain,Intermediate,1 Month,Industry-inspired Blockchain project to build practical skills.,"SK080, SK085, SK095",Yes,No,Very High,ROLE059
+PROJ0360,UI/UX Project 360,UI/UX,Advanced,2 Months,Industry-inspired UI/UX project to build practical skills.,"SK081, SK086, SK096",Yes,No,Medium,ROLE060
+PROJ0361,AI Project 361,AI,Beginner,2 Weeks,Industry-inspired AI project to build practical skills.,"SK082, SK087, SK097",Yes,Yes,High,ROLE001
+PROJ0362,Data Science Project 362,Data Science,Intermediate,1 Month,Industry-inspired Data Science project to build practical skills.,"SK083, SK088, SK098",Yes,Yes,Very High,ROLE002
+PROJ0363,Web Development Project 363,Web Development,Advanced,2 Months,Industry-inspired Web Development project to build practical skills.,"SK084, SK089, SK099",Yes,No,Medium,ROLE003
+PROJ0364,Cloud Project 364,Cloud,Beginner,2 Weeks,Industry-inspired Cloud project to build practical skills.,"SK085, SK090, SK100",Yes,No,High,ROLE004
+PROJ0365,Cyber Security Project 365,Cyber Security,Intermediate,1 Month,Industry-inspired Cyber Security project to build practical skills.,"SK086, SK091, SK101",Yes,No,Very High,ROLE005
+PROJ0366,Mobile Project 366,Mobile,Advanced,2 Months,Industry-inspired Mobile project to build practical skills.,"SK087, SK092, SK102",Yes,No,Medium,ROLE006
+PROJ0367,DevOps Project 367,DevOps,Beginner,2 Weeks,Industry-inspired DevOps project to build practical skills.,"SK088, SK093, SK103",Yes,No,High,ROLE007
+PROJ0368,IoT Project 368,IoT,Intermediate,1 Month,Industry-inspired IoT project to build practical skills.,"SK089, SK094, SK104",Yes,No,Very High,ROLE008
+PROJ0369,Blockchain Project 369,Blockchain,Advanced,2 Months,Industry-inspired Blockchain project to build practical skills.,"SK090, SK095, SK105",Yes,No,Medium,ROLE009
+PROJ0370,UI/UX Project 370,UI/UX,Beginner,2 Weeks,Industry-inspired UI/UX project to build practical skills.,"SK091, SK096, SK106",Yes,No,High,ROLE010
+PROJ0371,AI Project 371,AI,Intermediate,1 Month,Industry-inspired AI project to build practical skills.,"SK092, SK097, SK107",Yes,Yes,Very High,ROLE011
+PROJ0372,Data Science Project 372,Data Science,Advanced,2 Months,Industry-inspired Data Science project to build practical skills.,"SK093, SK098, SK108",Yes,Yes,Medium,ROLE012
+PROJ0373,Web Development Project 373,Web Development,Beginner,2 Weeks,Industry-inspired Web Development project to build practical skills.,"SK094, SK099, SK109",Yes,No,High,ROLE013
+PROJ0374,Cloud Project 374,Cloud,Intermediate,1 Month,Industry-inspired Cloud project to build practical skills.,"SK095, SK100, SK110",Yes,No,Very High,ROLE014
+PROJ0375,Cyber Security Project 375,Cyber Security,Advanced,2 Months,Industry-inspired Cyber Security project to build practical skills.,"SK096, SK101, SK111",Yes,No,Medium,ROLE015
+PROJ0376,Mobile Project 376,Mobile,Beginner,2 Weeks,Industry-inspired Mobile project to build practical skills.,"SK097, SK102, SK112",Yes,No,High,ROLE016
+PROJ0377,DevOps Project 377,DevOps,Intermediate,1 Month,Industry-inspired DevOps project to build practical skills.,"SK098, SK103, SK113",Yes,No,Very High,ROLE017
+PROJ0378,IoT Project 378,IoT,Advanced,2 Months,Industry-inspired IoT project to build practical skills.,"SK099, SK104, SK114",Yes,No,Medium,ROLE018
+PROJ0379,Blockchain Project 379,Blockchain,Beginner,2 Weeks,Industry-inspired Blockchain project to build practical skills.,"SK100, SK105, SK115",Yes,No,High,ROLE019
+PROJ0380,UI/UX Project 380,UI/UX,Intermediate,1 Month,Industry-inspired UI/UX project to build practical skills.,"SK101, SK106, SK116",Yes,No,Very High,ROLE020
+PROJ0381,AI Project 381,AI,Advanced,2 Months,Industry-inspired AI project to build practical skills.,"SK102, SK107, SK117",Yes,Yes,Medium,ROLE021
+PROJ0382,Data Science Project 382,Data Science,Beginner,2 Weeks,Industry-inspired Data Science project to build practical skills.,"SK103, SK108, SK118",Yes,Yes,High,ROLE022
+PROJ0383,Web Development Project 383,Web Development,Intermediate,1 Month,Industry-inspired Web Development project to build practical skills.,"SK104, SK109, SK119",Yes,No,Very High,ROLE023
+PROJ0384,Cloud Project 384,Cloud,Advanced,2 Months,Industry-inspired Cloud project to build practical skills.,"SK105, SK110, SK120",Yes,No,Medium,ROLE024
+PROJ0385,Cyber Security Project 385,Cyber Security,Beginner,2 Weeks,Industry-inspired Cyber Security project to build practical skills.,"SK106, SK111, SK121",Yes,No,High,ROLE025
+PROJ0386,Mobile Project 386,Mobile,Intermediate,1 Month,Industry-inspired Mobile project to build practical skills.,"SK107, SK112, SK122",Yes,No,Very High,ROLE026
+PROJ0387,DevOps Project 387,DevOps,Advanced,2 Months,Industry-inspired DevOps project to build practical skills.,"SK108, SK113, SK123",Yes,No,Medium,ROLE027
+PROJ0388,IoT Project 388,IoT,Beginner,2 Weeks,Industry-inspired IoT project to build practical skills.,"SK109, SK114, SK124",Yes,No,High,ROLE028
+PROJ0389,Blockchain Project 389,Blockchain,Intermediate,1 Month,Industry-inspired Blockchain project to build practical skills.,"SK110, SK115, SK125",Yes,No,Very High,ROLE029
+PROJ0390,UI/UX Project 390,UI/UX,Advanced,2 Months,Industry-inspired UI/UX project to build practical skills.,"SK111, SK116, SK126",Yes,No,Medium,ROLE030
+PROJ0391,AI Project 391,AI,Beginner,2 Weeks,Industry-inspired AI project to build practical skills.,"SK112, SK117, SK127",Yes,Yes,High,ROLE031
+PROJ0392,Data Science Project 392,Data Science,Intermediate,1 Month,Industry-inspired Data Science project to build practical skills.,"SK113, SK118, SK128",Yes,Yes,Very High,ROLE032
+PROJ0393,Web Development Project 393,Web Development,Advanced,2 Months,Industry-inspired Web Development project to build practical skills.,"SK114, SK119, SK129",Yes,No,Medium,ROLE033
+PROJ0394,Cloud Project 394,Cloud,Beginner,2 Weeks,Industry-inspired Cloud project to build practical skills.,"SK115, SK120, SK130",Yes,No,High,ROLE034
+PROJ0395,Cyber Security Project 395,Cyber Security,Intermediate,1 Month,Industry-inspired Cyber Security project to build practical skills.,"SK116, SK121, SK131",Yes,No,Very High,ROLE035
+PROJ0396,Mobile Project 396,Mobile,Advanced,2 Months,Industry-inspired Mobile project to build practical skills.,"SK117, SK122, SK132",Yes,No,Medium,ROLE036
+PROJ0397,DevOps Project 397,DevOps,Beginner,2 Weeks,Industry-inspired DevOps project to build practical skills.,"SK118, SK123, SK133",Yes,No,High,ROLE037
+PROJ0398,IoT Project 398,IoT,Intermediate,1 Month,Industry-inspired IoT project to build practical skills.,"SK119, SK124, SK134",Yes,No,Very High,ROLE038
+PROJ0399,Blockchain Project 399,Blockchain,Advanced,2 Months,Industry-inspired Blockchain project to build practical skills.,"SK120, SK125, SK135",Yes,No,Medium,ROLE039
+PROJ0400,UI/UX Project 400,UI/UX,Beginner,2 Weeks,Industry-inspired UI/UX project to build practical skills.,"SK121, SK126, SK136",Yes,No,High,ROLE040

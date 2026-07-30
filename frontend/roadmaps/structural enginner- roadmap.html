@@ -1,0 +1,375 @@
+
+
+Structural engineer roadmap · HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Structural Engineer Roadmap</title>
+<style>
+  :root{
+    --bg:#0f172a; --panel:#0b1220; --line:#2b78e4; --yellow:#fdff00;
+    --sub:#ffe599; --card:#ffffff; --ink:#111827; --muted:#64748b;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#f8fafc;color:var(--ink);}
+  header{background:#0f172a;color:#fff;padding:22px 28px;}
+  header h1{margin:0;font-size:28px;}
+  header p{margin:6px 0 0;color:#94a3b8;font-size:14px;}
+  .toolbar{display:flex;gap:8px;padding:10px 16px;background:#fff;border-bottom:1px solid #e2e8f0;align-items:center;position:sticky;top:0;z-index:50;}
+  .toolbar button{border:1px solid #cbd5e1;background:#f1f5f9;border-radius:6px;padding:6px 12px;cursor:pointer;font-size:13px;}
+  .toolbar button:hover{background:#e2e8f0;}
+  .toolbar .hint{margin-left:auto;color:#64748b;font-size:12px;}
+  #viewport{width:100%;height:calc(100vh - 108px);overflow:hidden;position:relative;background:
+     radial-gradient(circle,#e2e8f0 1px,transparent 1px) 0 0/22px 22px, #f8fafc;
+     cursor:grab;}
+  #viewport.dragging{cursor:grabbing;}
+  #canvas{position:absolute;top:0;left:0;transform-origin:0 0;}
+  svg#edges{position:absolute;top:0;left:0;overflow:visible;pointer-events:none;}
+  .node{
+     position:absolute;border:2px solid #111;border-radius:6px;padding:10px 14px;
+     font-size:14px;font-weight:600;cursor:pointer;background:var(--sub);
+     box-shadow:1px 2px 0 rgba(0,0,0,.15);user-select:none;white-space:nowrap;
+  }
+  .node.title{background:var(--yellow);font-size:16px;}
+  .node.section{background:#fff;border-color:#94a3b8;font-weight:700;color:#334155;font-size:13px;padding:6px 10px;}
+  .node:hover{filter:brightness(0.95);transform:translateY(-1px);}
+  .node.expanded{outline:3px solid var(--line);}
+  .label{position:absolute;font-size:13px;font-weight:700;color:#334155;}
+  #overlay{display:none;position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:100;align-items:center;justify-content:center;}
+  #overlay.show{display:flex;}
+  #modal{background:#fff;border-radius:10px;max-width:560px;width:90%;max-height:80vh;overflow:auto;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.3);}
+  #modal h2{margin:0 0 6px;font-size:20px;}
+  #modal h4{margin:16px 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);}
+  #modal p{margin:0;font-size:14px;line-height:1.5;color:#334155;}
+  #modal ul{margin:4px 0;padding-left:18px;font-size:14px;color:#334155;}
+  #modal a{color:#2563eb;text-decoration:none;}
+  #modal a:hover{text-decoration:underline;}
+  #modal .close{float:right;border:none;background:none;font-size:20px;cursor:pointer;color:#64748b;}
+  footer{padding:26px 28px 60px;background:#0f172a;color:#cbd5e1;}
+  footer h2{color:#fff;font-size:20px;margin-top:0;}
+  footer h3{color:#fff;font-size:15px;margin-bottom:6px;}
+  footer ol{font-size:13px;line-height:1.7;padding-left:20px;}
+  footer a{color:#93c5fd;}
+</style>
+</head>
+<body>
+ 
+<header>
+  <h1>🏗️ Structural Engineer Roadmap</h1>
+  <p>An interactive, pan &amp; zoom guide — beginner to advanced — for becoming a Structural Engineer</p>
+</header>
+ 
+<div class="toolbar">
+  <button id="zoomIn">➕ Zoom In</button>
+  <button id="zoomOut">➖ Zoom Out</button>
+  <button id="reset">⤢ Reset View</button>
+  <span class="hint">Drag to pan · Scroll to zoom · Click any node for details</span>
+</div>
+ 
+<div id="viewport">
+  <div id="canvas">
+    <svg id="edges" width="2000" height="3600"></svg>
+  </div>
+</div>
+ 
+<div id="overlay">
+  <div id="modal">
+    <button class="close" onclick="closeModal()">✕</button>
+    <h2 id="mTitle"></h2>
+    <p id="mDesc"></p>
+    <h4>Prerequisites</h4>
+    <ul id="mPre"></ul>
+    <h4>Learning Resources</h4>
+    <ul id="mRes"></ul>
+  </div>
+</div>
+ 
+<footer>
+  <h2>📚 Bibliography &amp; References</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;">
+    <div>
+      <h3>ASCE</h3>
+      <ol>
+        <li>ASCE 7 — Minimum Design Loads and Associated Criteria for Buildings</li>
+        <li>Journal of Structural Engineering</li>
+        <li>ASCE Standards catalog</li>
+      </ol>
+    </div>
+    <div>
+      <h3>NPTEL</h3>
+      <ol>
+        <li>NPTEL — Design of Steel Structures (IIT Madras/Roorkee)</li>
+        <li>NPTEL — Structural Analysis</li>
+        <li>NPTEL — Earthquake Engineering</li>
+      </ol>
+    </div>
+    <div>
+      <h3>MIT OpenCourseWare</h3>
+      <ol>
+        <li>1.050 Solid Mechanics</li>
+        <li>1.054 Mechanics and Design of Concrete Structures</li>
+        <li>1.561 Structural Steel Design</li>
+      </ol>
+    </div>
+    <div>
+      <h3>Standard Textbooks</h3>
+      <ol>
+        <li>Hibbeler — <i>Structural Analysis</i></li>
+        <li>McCormac & Brown — <i>Design of Reinforced Concrete</i></li>
+        <li>Segui — <i>Steel Design</i></li>
+        <li>Chopra — <i>Dynamics of Structures</i></li>
+      </ol>
+    </div>
+  </div>
+</footer>
+ 
+<script>
+// ---------- DATA ----------
+const sections = [
+  {id:"sec1", title:"1. Math & Physics Foundations", items:[
+    {id:"calculus", title:"Calculus & Differential Equations",
+      desc:"Multivariable calculus and ODEs — the mathematical basis for structural analysis and dynamics.",
+      pre:[], res:["MIT 18.03 Differential Equations"]},
+    {id:"statics", title:"Statics",
+      desc:"Force equilibrium and free-body diagrams — the starting point of all structural analysis.",
+      pre:["Calculus & Differential Equations"], res:["MIT 2.001 Mechanics & Materials I"]},
+    {id:"mom", title:"Mechanics of Materials",
+      desc:"Stress, strain, bending, and torsion behavior of structural members.",
+      pre:["Statics"], res:["Beer et al. — Mechanics of Materials"]},
+    {id:"structdynbasics", title:"Structural Dynamics Basics",
+      desc:"Natural frequencies and dynamic response of structures to loading.",
+      pre:["Mechanics of Materials"], res:["Chopra — Dynamics of Structures"]},
+  ]},
+  {id:"sec2", title:"2. Engineering Drawing & CAD", items:[
+    {id:"sketching", title:"Technical Sketching",
+      desc:"Freehand sketching to quickly explore and communicate structural concepts.",
+      pre:["Structural Dynamics Basics"], res:["Engineering Design Graphics (textbook)"]},
+    {id:"drawingstd", title:"Engineering Drawing Standards",
+      desc:"Orthographic projections and drafting conventions used in structural drawings.",
+      pre:["Technical Sketching"], res:["ASME Y14.5 GD&T standard"]},
+    {id:"structcad", title:"Structural CAD (AutoCAD/Revit Structure)",
+      desc:"Drafting and modeling structural framing plans, sections, and details.",
+      pre:["Engineering Drawing Standards"], res:["Autodesk Revit Structure documentation"]},
+    {id:"bim", title:"BIM for Structural Engineering",
+      desc:"Building information modeling workflows for coordinated structural design.",
+      pre:["Structural CAD (AutoCAD/Revit Structure)"], res:["Autodesk BIM 360 documentation"]},
+  ]},
+  {id:"sec3", title:"3. Structural Analysis", items:[
+    {id:"determinate", title:"Determinate & Indeterminate Structures",
+      desc:"Classical methods for analyzing beams, trusses, and frames.",
+      pre:["BIM for Structural Engineering"], res:["Hibbeler — Structural Analysis"]},
+    {id:"matrixfea", title:"Matrix/Finite Element Structural Analysis",
+      desc:"Stiffness-method and FEA approaches for analyzing complex structural systems.",
+      pre:["Determinate & Indeterminate Structures"], res:["McGuire, Gallagher & Ziemian — Matrix Structural Analysis"]},
+    {id:"analysissoftware", title:"Structural Analysis Software (SAP2000/ETABS)",
+      desc:"Industry-standard software for modeling and analyzing building and bridge structures.",
+      pre:["Matrix/Finite Element Structural Analysis"], res:["CSI SAP2000/ETABS documentation"]},
+    {id:"seismicwind", title:"Seismic & Wind Load Analysis",
+      desc:"Determining lateral loads from earthquakes and wind for structural design.",
+      pre:["Structural Analysis Software (SAP2000/ETABS)"], res:["ASCE 7 Ch. 12 & 26-31"]},
+  ]},
+  {id:"sec4", title:"4. Design of Structural Elements", items:[
+    {id:"rcdesign", title:"Reinforced Concrete Design",
+      desc:"Designing beams, columns, and slabs in reinforced concrete per code provisions.",
+      pre:["Seismic & Wind Load Analysis"], res:["McCormac & Brown — Design of Reinforced Concrete"]},
+    {id:"steeldesign", title:"Steel Structure Design",
+      desc:"Designing steel beams, columns, and connections per AISC provisions.",
+      pre:["Reinforced Concrete Design"], res:["Segui — Steel Design"]},
+    {id:"timbermasonry", title:"Timber & Masonry Design",
+      desc:"Design principles for wood-framed and masonry structural systems.",
+      pre:["Steel Structure Design"], res:["Breyer — Design of Wood Structures"]},
+    {id:"founddesignbasics", title:"Foundation Design Basics",
+      desc:"Sizing footings and foundations to transfer structural loads to the ground.",
+      pre:["Timber & Masonry Design"], res:["Bowles — Foundation Analysis and Design"]},
+  ]},
+  {id:"sec5", title:"5. Loads & Codes", items:[
+    {id:"loadstandards", title:"Building Codes & Load Standards (ASCE 7/IS 875)",
+      desc:"The governing standards that define design loads for buildings and structures.",
+      pre:["Foundation Design Basics"], res:["ASCE 7 — Minimum Design Loads"]},
+    {id:"seismiccodes", title:"Seismic Design Codes",
+      desc:"Code provisions specifically governing earthquake-resistant structural design.",
+      pre:["Building Codes & Load Standards (ASCE 7/IS 875)"], res:["ASCE 7 Ch. 11-23 / IBC Seismic Provisions"]},
+    {id:"loadcombos", title:"Load Combinations & Serviceability",
+      desc:"Combining loads per code and checking deflection and vibration serviceability limits.",
+      pre:["Seismic Design Codes"], res:["ASCE 7 Ch. 2"]},
+    {id:"structsafety", title:"Structural Safety & Reliability",
+      desc:"Probabilistic reliability concepts underlying modern structural safety factors.",
+      pre:["Load Combinations & Serviceability"], res:["Nowak & Collins — Reliability of Structures"]},
+  ]},
+  {id:"sec6", title:"6. Advanced Analysis & Specialty Structures", items:[
+    {id:"advfea", title:"Finite Element Analysis (Advanced)",
+      desc:"Nonlinear and dynamic FEA for complex or performance-based structural design.",
+      pre:["Structural Safety & Reliability"], res:["ANSYS/Abaqus structural documentation"]},
+    {id:"bridgeeng", title:"Bridge Engineering",
+      desc:"Design principles specific to highway and pedestrian bridge structures.",
+      pre:["Finite Element Analysis (Advanced)"], res:["AASHTO LRFD Bridge Design Specifications"]},
+    {id:"highrise", title:"High-Rise & Long-Span Structures",
+      desc:"Lateral system design and stability considerations for tall and long-span buildings.",
+      pre:["Bridge Engineering"], res:["CTBUH high-rise design resources"]},
+    {id:"shm", title:"Structural Health Monitoring",
+      desc:"Sensor-based systems for monitoring structural performance and detecting damage over time.",
+      pre:["High-Rise & Long-Span Structures"], res:["ISHMII structural health monitoring resources"]},
+  ]},
+  {id:"sec7", title:"7. Construction & Project Delivery", items:[
+    {id:"constrmaterials", title:"Construction Materials & Methods",
+      desc:"Understanding how structural elements are actually built and assembled on site.",
+      pre:["Structural Health Monitoring"], res:["Illingworth — Construction Methods and Planning"]},
+    {id:"structdetailing", title:"Structural Detailing",
+      desc:"Producing rebar and connection details that are buildable and code-compliant.",
+      pre:["Construction Materials & Methods"], res:["CRSI reinforcement detailing manual"]},
+    {id:"constrsequencing", title:"Construction Sequencing & Temporary Works",
+      desc:"Planning erection sequences, shoring, and formwork to keep structures stable during construction.",
+      pre:["Structural Detailing"], res:["ASCE temporary structures guidelines"]},
+    {id:"contractorcoord", title:"Project Coordination with Contractors",
+      desc:"Reviewing RFIs and shop drawings, and coordinating design intent with builders.",
+      pre:["Construction Sequencing & Temporary Works"], res:["AIA/ASCE construction administration guides"]},
+  ]},
+  {id:"sec8", title:"8. Career & Certifications", items:[
+    {id:"projects", title:"Portfolio Projects",
+      desc:"Design a complete structural system for a building or bridge as a showcase project.",
+      pre:["Project Coordination with Contractors"], res:["ASCE student design competitions"]},
+    {id:"certs", title:"Certifications (PE, SE, IStructE)",
+      desc:"Licensure and certifications that validate structural engineering competence.",
+      pre:["Portfolio Projects"], res:["NCEES PE/SE exam / IStructE chartership"]},
+    {id:"interview", title:"Interview Preparation",
+      desc:"Technical interviews on structural analysis, design codes, and load-path reasoning.",
+      pre:["Certifications (PE, SE, IStructE)"], res:["Structural engineering interview guides"]},
+    {id:"careers", title:"Career Paths",
+      desc:"Structural Design Engineer, Bridge Engineer, Seismic Specialist, Forensic Structural Engineer.",
+      pre:["Interview Preparation"], res:["ASCE career pathways"]},
+  ]},
+];
+ 
+// ---------- LAYOUT ENGINE (balanced 2-column grid) ----------
+const COL_W = 300, COL_GAP = 60, ROW_H = 54, ROW_GAP = 10;
+const LEFT_X = 70, RIGHT_X = LEFT_X + COL_W + COL_GAP;
+const CANVAS_CENTER = LEFT_X + (COL_W*2 + COL_GAP)/2;
+const SECTION_GAP = 46;
+ 
+const nodes = [];
+const edges = [];
+let cursorY = 90;
+ 
+nodes.push({id:"title", x:CANVAS_CENTER-140, y:20, w:280, h:50, type:"title", title:"Structural Engineer"});
+let prevSectionLastId = "title";
+ 
+sections.forEach(sec=>{
+  nodes.push({id:sec.id, x:LEFT_X, y:cursorY, w:COL_W*2+COL_GAP, h:28, type:"section", title:sec.title});
+  edges.push([prevSectionLastId, sec.id]);
+  cursorY += 28 + 14;
+ 
+  let prevInSection = sec.id;
+  sec.items.forEach((item, i)=>{
+    const col = i % 2;
+    const row = Math.floor(i / 2);
+    const x = col===0 ? LEFT_X : RIGHT_X;
+    const y = cursorY + row*(ROW_H+ROW_GAP);
+    nodes.push({id:item.id, x, y, w:COL_W, h:ROW_H, type:"node",
+      title:item.title, desc:item.desc, pre:item.pre, res:item.res});
+    edges.push([prevInSection, item.id]);
+    prevInSection = item.id;
+  });
+ 
+  const rows = Math.ceil(sec.items.length/2);
+  cursorY += rows*(ROW_H+ROW_GAP) + SECTION_GAP;
+  prevSectionLastId = prevInSection;
+});
+ 
+// ---------- RENDER ----------
+const canvas = document.getElementById('canvas');
+const svg = document.getElementById('edges');
+ 
+function centerY(n){ return n.y + n.h/2; }
+function centerX(n){ return n.x + n.w/2; }
+function byId(id){ return nodes.find(n=>n.id===id); }
+ 
+nodes.forEach(n=>{
+  const div = document.createElement('div');
+  div.className = 'node ' + (n.type||'node');
+  div.style.left = n.x+'px';
+  div.style.top = n.y+'px';
+  div.style.width = n.w+'px';
+  div.style.minHeight = n.h+'px';
+  div.style.display='flex';
+  div.style.alignItems='center';
+  div.style.justifyContent = n.type==='section' ? 'flex-start' : 'center';
+  div.textContent = n.title;
+  div.dataset.id = n.id;
+  if(n.type!=='section' && n.type!=='title'){
+    div.addEventListener('click', ()=>openModal(n));
+  }
+  canvas.appendChild(div);
+});
+ 
+let svgHtml = '';
+edges.forEach(([a,b])=>{
+  const A = byId(a), B = byId(b);
+  if(!A||!B) return;
+  const x1 = centerX(A), y1 = A.y+A.h, x2 = centerX(B), y2 = B.y;
+  const midY = (y1+y2)/2;
+  svgHtml += `<path d="M ${x1} ${y1} C ${x1} ${midY}, ${x2} ${midY}, ${x2} ${y2}" fill="none" stroke="#2b78e4" stroke-width="2.5" stroke-dasharray="0.8 6" stroke-linecap="round"/>`;
+});
+svg.innerHTML = svgHtml;
+ 
+let maxX=0, maxY=0;
+nodes.forEach(n=>{ maxX=Math.max(maxX,n.x+n.w+80); maxY=Math.max(maxY,n.y+n.h+80); });
+svg.setAttribute('width', maxX);
+svg.setAttribute('height', maxY);
+canvas.style.width = maxX+'px';
+canvas.style.height = maxY+'px';
+ 
+// ---------- PAN & ZOOM ----------
+const viewport = document.getElementById('viewport');
+let scale = 0.85, panX = 40, panY = 20;
+let isDragging=false, startX=0, startY=0, startPanX=0, startPanY=0;
+ 
+function applyTransform(){
+  canvas.style.transform = `translate(${panX}px,${panY}px) scale(${scale})`;
+}
+applyTransform();
+ 
+viewport.addEventListener('mousedown', e=>{
+  isDragging = true;
+  viewport.classList.add('dragging');
+  startX = e.clientX; startY = e.clientY;
+  startPanX = panX; startPanY = panY;
+});
+window.addEventListener('mousemove', e=>{
+  if(!isDragging) return;
+  panX = startPanX + (e.clientX - startX);
+  panY = startPanY + (e.clientY - startY);
+  applyTransform();
+});
+window.addEventListener('mouseup', ()=>{ isDragging=false; viewport.classList.remove('dragging'); });
+ 
+viewport.addEventListener('wheel', e=>{
+  e.preventDefault();
+  const delta = e.deltaY > 0 ? -0.08 : 0.08;
+  const newScale = Math.min(2.2, Math.max(0.3, scale + delta));
+  scale = newScale;
+  applyTransform();
+}, {passive:false});
+ 
+document.getElementById('zoomIn').onclick = ()=>{ scale = Math.min(2.2, scale+0.15); applyTransform(); };
+document.getElementById('zoomOut').onclick = ()=>{ scale = Math.max(0.3, scale-0.15); applyTransform(); };
+document.getElementById('reset').onclick = ()=>{ scale=0.85; panX=40; panY=20; applyTransform(); };
+ 
+// ---------- MODAL ----------
+function openModal(n){
+  document.getElementById('mTitle').textContent = n.title;
+  document.getElementById('mDesc').textContent = n.desc || '';
+  const pre = document.getElementById('mPre');
+  pre.innerHTML = (n.pre&&n.pre.length) ? n.pre.map(p=>`<li>${p}</li>`).join('') : '<li>None</li>';
+  const res = document.getElementById('mRes');
+  res.innerHTML = (n.res&&n.res.length) ? n.res.map(r=>`<li>${r}</li>`).join('') : '<li>—</li>';
+  document.getElementById('overlay').classList.add('show');
+}
+function closeModal(){ document.getElementById('overlay').classList.remove('show'); }
+document.getElementById('overlay').addEventListener('click', e=>{
+  if(e.target.id==='overlay') closeModal();
+});
+</script>
+</body>
+</html>
+ 

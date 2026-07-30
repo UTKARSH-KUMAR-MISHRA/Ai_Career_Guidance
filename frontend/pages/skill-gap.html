@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Career Guidance — Skill Gap Analysis</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="../css/main.css">
+<style>
+  .gap-container {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 14px;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .left-gap-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 0;
+    overflow-y: auto;
+  }
+  .right-gap-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 0;
+    overflow-y: auto;
+    padding-bottom: 20px;
+  }
+  .skill-list-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .skill-item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: #F9FAFB;
+    font-size: 11.5px;
+    border: 1px solid #ECEDF3;
+  }
+  .skill-item-row.match {
+    border-left: 3px solid #16A34A;
+  }
+  .skill-item-row.gap {
+    border-left: 3px solid #EF4444;
+  }
+  .badge-mandatory {
+    font-size: 9px;
+    font-weight: 700;
+    background: #FDECEC;
+    color: #EF4444;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  .timeline-banner {
+    background: linear-gradient(135deg, #EEF0FF, #E2E0FF);
+    border: 1px solid #D8D6FF;
+    border-radius: 12px;
+    padding: 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+  .timeline-banner i {
+    font-size: 24px;
+    color: #4F46E5;
+    margin-top: 2px;
+  }
+  .timeline-banner h4 {
+    margin: 0 0 4px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #1F2937;
+  }
+  .timeline-banner p {
+    margin: 0;
+    font-size: 11.5px;
+    line-height: 1.4;
+    color: #4B5563;
+  }
+  .resource-card-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 12px;
+    background: #fff;
+    border: 1px solid #ECEDF3;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    transition: border-color .2s;
+  }
+  .resource-card-row:hover {
+    border-color: #D8D6FF;
+  }
+  .res-info h5 {
+    margin: 0 0 3px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .res-info p {
+    margin: 0;
+    font-size: 10.5px;
+    color: #6B7280;
+  }
+  .circle-progress-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- SIDEBAR (Dynamic) -->
+  <div class="sidebar"></div>
+
+  <!-- MAIN Shell -->
+  <div class="main">
+    <!-- TOPBAR (Dynamic) -->
+    <div class="topbar">
+      <div>
+        <h1>Skill Gap Analysis</h1>
+        <p>Loading active profile comparison...</p>
+      </div>
+    </div>
+
+    <!-- Skill Gap Workspace -->
+    <div class="gap-container reveal">
+      
+      <!-- Left Column: Core Skill matchups -->
+      <div class="left-gap-col">
+        <div class="panel">
+          <div class="panel-head"><h3>Job Skill Match</h3></div>
+          <div class="circle-progress-wrap">
+            <svg width="100" height="100" viewBox="0 0 100 100" id="gapCircleSvg">
+              <circle cx="50" cy="50" r="40" fill="none" stroke="#EEF0F5" stroke-width="10"/>
+              <circle cx="50" cy="50" r="40" fill="none" stroke="#4F46E5" stroke-width="10" stroke-dasharray="0 251.2" stroke-linecap="round" transform="rotate(-90 50 50)" id="gapCirclePath"/>
+            </svg>
+            <div id="gapMatchPct" style="font-size:24px; font-weight:800; margin-top:-64px; margin-bottom:40px;">0%</div>
+            <p id="gapTargetRoleName" style="font-size:13px; font-weight:700; margin:0 0 4px;"></p>
+            <p style="font-size:11px; color:#6B7280;">Required Skill Proficiency</p>
+          </div>
+        </div>
+
+        <div class="panel" style="flex:1; min-height:0;">
+          <div class="panel-head"><h3>Skills Checklist</h3></div>
+          <div style="overflow-y:auto; min-height:0;">
+            <div class="skill-list-box" id="skillsChecklist">
+              <!-- Filled Dynamically -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Study Plans and Recommendations -->
+      <div class="right-gap-col">
+        <!-- Personalized Study Timeline Banner -->
+        <div class="timeline-banner" id="timelineBanner">
+          <i class="ti ti-hourglass"></i>
+          <div>
+            <h4>Personalized Study Timeline</h4>
+            <p>Select a target role to view your custom roadmap.</p>
+          </div>
+        </div>
+
+        <!-- Mapped Courses -->
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Recommended Courses</h3>
+            <span class="view-all" onclick="window.navigateTo('courses')">View courses <i class="ti ti-arrow-right"></i></span>
+          </div>
+          <div id="gapCoursesList">
+            <!-- Filled Dynamically -->
+          </div>
+        </div>
+
+        <!-- Mapped Projects -->
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Bridging Projects</h3>
+          </div>
+          <div id="gapProjectsList">
+            <!-- Filled Dynamically -->
+          </div>
+        </div>
+
+        <!-- Professional Certifications -->
+        <div class="panel">
+          <div class="panel-head">
+            <h3>Professional Certifications</h3>
+          </div>
+          <div id="gapCertificationsList">
+            <!-- Filled Dynamically -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"><i class="ti ti-circle-check"></i><span id="toastMsg">Saved</span></div>
+
+<script src="../js/navigation.js"></script>
+<script src="../js/setting.js"></script>
+</body>
+</html>

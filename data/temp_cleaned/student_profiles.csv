@@ -1,0 +1,1001 @@
+student_id,branch,year,cgpa,known_skills,projects_completed,internship_status,preferred_domain,preferred_role,coding_level,communication_level,english_level,daily_learning_hours,career_goal
+STU0001,Civil,1,6.14,"SK217, SK105, SK102, SK133, SK049",7,No,Data Science,ROLE027,Intermediate,Beginner,Fluent,2,AI Engineer
+STU0002,EEE,4,6.17,"SK103, SK125, SK109, SK266, SK196",2,No,Data Science,ROLE013,Intermediate,Beginner,Fluent,2,Software Engineer
+STU0003,Mechanical,2,9.0,"SK159, SK010, SK059, SK161, SK119",1,No,DevOps,ROLE047,Intermediate,Intermediate,Fluent,2,AI Engineer
+STU0004,IT,4,6.07,"SK056, SK147, SK225, SK152, SK164",7,Yes,Cyber Security,ROLE036,Beginner,Intermediate,Intermediate,3,Cyber Security Analyst
+STU0005,ECE,1,7.12,"SK059, SK069, SK166, SK253, SK021",6,No,Web Development,ROLE034,Intermediate,Beginner,Basic,4,Full Stack Developer
+STU0006,ECE,2,6.5,"SK251, SK079, SK053, SK104, SK218",5,No,Mobile,ROLE033,Intermediate,Intermediate,Intermediate,6,AI Engineer
+STU0007,Mechanical,4,7.21,"SK199, SK088, SK123, SK051, SK191",5,No,Data Science,ROLE046,Beginner,Beginner,Intermediate,3,Cloud Engineer
+STU0008,IT,4,7.54,"SK189, SK170, SK222, SK135, SK153",7,No,Web Development,ROLE034,Beginner,Intermediate,Fluent,2,AI Engineer
+STU0009,Civil,1,8.0,"SK068, SK078, SK269, SK239, SK145",1,Yes,Web Development,ROLE044,Beginner,Intermediate,Intermediate,2,Cloud Engineer
+STU0010,IT,2,9.72,"SK214, SK130, SK018, SK194, SK088",7,No,AI,ROLE011,Beginner,Beginner,Fluent,2,Cyber Security Analyst
+STU0011,Mechanical,1,9.39,"SK121, SK017, SK097, SK152, SK267",2,No,DevOps,ROLE049,Beginner,Advanced,Intermediate,6,Data Scientist
+STU0012,CSE,3,8.42,"SK079, SK252, SK156, SK260, SK021",1,No,DevOps,ROLE020,Intermediate,Intermediate,Basic,5,Software Engineer
+STU0013,Civil,2,9.65,"SK020, SK075, SK267, SK172, SK041",8,No,DevOps,ROLE011,Advanced,Intermediate,Intermediate,5,Data Scientist
+STU0014,Civil,2,6.9,"SK029, SK150, SK045, SK046, SK070",3,Yes,Web Development,ROLE029,Advanced,Advanced,Basic,1,Data Scientist
+STU0015,Civil,1,6.84,"SK070, SK108, SK224, SK217, SK250",7,No,Mobile,ROLE004,Intermediate,Intermediate,Fluent,2,AI Engineer
+STU0016,CSE,4,8.91,"SK214, SK199, SK171, SK244, SK056",7,Yes,AI,ROLE049,Intermediate,Intermediate,Basic,5,Full Stack Developer
+STU0017,Mechanical,4,7.67,"SK128, SK257, SK232, SK039, SK081",2,Yes,Data Science,ROLE027,Beginner,Beginner,Fluent,3,Cloud Engineer
+STU0018,IT,4,8.08,"SK274, SK058, SK217, SK031, SK123",1,Yes,DevOps,ROLE032,Advanced,Beginner,Intermediate,6,Cloud Engineer
+STU0019,CSE,1,9.72,"SK061, SK027, SK063, SK008, SK091",4,No,AI,ROLE024,Intermediate,Beginner,Basic,5,Software Engineer
+STU0020,ECE,1,9.61,"SK078, SK002, SK173, SK255, SK234",6,Yes,AI,ROLE015,Advanced,Intermediate,Basic,1,Cloud Engineer
+STU0021,Mechanical,3,7.24,"SK044, SK193, SK051, SK265, SK250",7,No,Web Development,ROLE039,Intermediate,Intermediate,Fluent,2,Data Scientist
+STU0022,EEE,4,9.37,"SK099, SK214, SK003, SK145, SK110",7,Yes,Cyber Security,ROLE031,Intermediate,Intermediate,Basic,2,Cloud Engineer
+STU0023,Civil,4,9.37,"SK130, SK055, SK148, SK146, SK026",3,Yes,DevOps,ROLE016,Beginner,Intermediate,Fluent,2,Cloud Engineer
+STU0024,ECE,3,7.54,"SK138, SK166, SK115, SK189, SK109",4,No,Mobile,ROLE051,Beginner,Beginner,Intermediate,5,Data Scientist
+STU0025,Mechanical,1,7.57,"SK241, SK036, SK261, SK210, SK120",1,No,Mobile,ROLE050,Intermediate,Beginner,Fluent,4,Cyber Security Analyst
+STU0026,EEE,1,9.04,"SK234, SK030, SK048, SK278, SK277",8,Yes,Mobile,ROLE034,Beginner,Advanced,Intermediate,5,AI Engineer
+STU0027,Mechanical,3,7.01,"SK092, SK123, SK054, SK240, SK001",8,No,Mobile,ROLE054,Advanced,Intermediate,Intermediate,3,Cyber Security Analyst
+STU0028,CSE,4,7.51,"SK164, SK251, SK248, SK153, SK143",2,Yes,DevOps,ROLE027,Advanced,Intermediate,Intermediate,1,Software Engineer
+STU0029,CSE,4,8.54,"SK275, SK210, SK248, SK265, SK188",6,No,Cyber Security,ROLE016,Advanced,Beginner,Fluent,1,Cyber Security Analyst
+STU0030,IT,2,9.29,"SK089, SK256, SK099, SK145, SK156",4,Yes,Cloud,ROLE041,Beginner,Intermediate,Basic,5,Cyber Security Analyst
+STU0031,IT,1,9.72,"SK205, SK042, SK084, SK102, SK013",7,Yes,Data Science,ROLE059,Advanced,Advanced,Intermediate,5,Software Engineer
+STU0032,Mechanical,1,9.78,"SK274, SK225, SK146, SK003, SK249",8,Yes,Data Science,ROLE042,Advanced,Advanced,Basic,1,Cloud Engineer
+STU0033,ECE,4,8.26,"SK114, SK274, SK001, SK154, SK090",5,Yes,AI,ROLE060,Intermediate,Advanced,Fluent,4,Cyber Security Analyst
+STU0034,IT,3,7.58,"SK076, SK265, SK028, SK236, SK086",8,No,Data Science,ROLE003,Beginner,Advanced,Fluent,6,AI Engineer
+STU0035,Mechanical,3,6.32,"SK066, SK198, SK087, SK151, SK143",2,No,Mobile,ROLE016,Advanced,Beginner,Basic,4,Cyber Security Analyst
+STU0036,IT,2,6.08,"SK145, SK219, SK206, SK273, SK061",7,No,Cloud,ROLE002,Beginner,Beginner,Fluent,1,Cyber Security Analyst
+STU0037,IT,1,6.49,"SK114, SK227, SK113, SK141, SK193",0,No,Web Development,ROLE013,Beginner,Advanced,Basic,4,Cloud Engineer
+STU0038,Civil,2,7.49,"SK179, SK121, SK236, SK078, SK197",3,No,AI,ROLE029,Advanced,Intermediate,Basic,6,Software Engineer
+STU0039,CSE,4,8.57,"SK122, SK121, SK207, SK081, SK193",7,Yes,Cyber Security,ROLE003,Beginner,Beginner,Intermediate,6,Software Engineer
+STU0040,Mechanical,4,8.56,"SK116, SK005, SK196, SK199, SK032",3,No,Cloud,ROLE059,Advanced,Advanced,Intermediate,5,Full Stack Developer
+STU0041,CSE,2,8.49,"SK042, SK056, SK195, SK278, SK199",6,No,Data Science,ROLE042,Advanced,Intermediate,Basic,1,Software Engineer
+STU0042,ECE,3,8.47,"SK070, SK098, SK039, SK270, SK135",3,Yes,Mobile,ROLE017,Intermediate,Advanced,Intermediate,4,Software Engineer
+STU0043,ECE,2,6.58,"SK269, SK197, SK210, SK206, SK064",5,Yes,Mobile,ROLE052,Intermediate,Intermediate,Basic,4,Data Scientist
+STU0044,IT,4,6.28,"SK135, SK087, SK161, SK012, SK103",4,Yes,Web Development,ROLE039,Beginner,Advanced,Intermediate,5,AI Engineer
+STU0045,Mechanical,4,6.1,"SK225, SK183, SK005, SK028, SK079",7,Yes,AI,ROLE036,Advanced,Intermediate,Basic,5,Cloud Engineer
+STU0046,Mechanical,3,8.04,"SK242, SK180, SK230, SK103, SK221",8,No,Web Development,ROLE047,Beginner,Advanced,Basic,2,Software Engineer
+STU0047,EEE,2,6.4,"SK013, SK060, SK198, SK039, SK003",7,Yes,Data Science,ROLE035,Beginner,Advanced,Intermediate,2,Cloud Engineer
+STU0048,Civil,1,7.94,"SK033, SK194, SK024, SK209, SK180",8,No,Data Science,ROLE027,Intermediate,Intermediate,Intermediate,5,Cloud Engineer
+STU0049,IT,2,9.54,"SK111, SK050, SK203, SK111, SK046",0,No,Cloud,ROLE006,Intermediate,Beginner,Fluent,4,AI Engineer
+STU0050,CSE,3,9.39,"SK018, SK215, SK073, SK068, SK116",1,Yes,Cloud,ROLE013,Beginner,Intermediate,Fluent,2,Cloud Engineer
+STU0051,ECE,3,8.34,"SK147, SK111, SK188, SK133, SK254",5,Yes,Web Development,ROLE052,Beginner,Intermediate,Basic,4,Data Scientist
+STU0052,Mechanical,3,6.19,"SK011, SK260, SK214, SK172, SK015",7,No,AI,ROLE025,Advanced,Intermediate,Basic,2,Full Stack Developer
+STU0053,ECE,4,8.35,"SK220, SK155, SK147, SK165, SK224",7,No,AI,ROLE035,Beginner,Intermediate,Basic,1,Cloud Engineer
+STU0054,IT,2,8.48,"SK200, SK079, SK075, SK066, SK248",3,Yes,Cyber Security,ROLE016,Beginner,Beginner,Basic,4,AI Engineer
+STU0055,CSE,1,8.98,"SK063, SK174, SK046, SK210, SK213",7,No,Mobile,ROLE032,Beginner,Beginner,Intermediate,6,AI Engineer
+STU0056,ECE,4,7.89,"SK271, SK220, SK174, SK180, SK160",5,Yes,Cloud,ROLE029,Intermediate,Intermediate,Fluent,3,Data Scientist
+STU0057,Civil,3,8.92,"SK011, SK002, SK168, SK017, SK147",2,No,Web Development,ROLE011,Advanced,Beginner,Intermediate,3,Data Scientist
+STU0058,IT,3,9.58,"SK007, SK005, SK083, SK053, SK227",1,No,Cyber Security,ROLE034,Advanced,Intermediate,Intermediate,5,Full Stack Developer
+STU0059,IT,3,6.38,"SK260, SK210, SK266, SK139, SK077",2,No,Data Science,ROLE020,Intermediate,Beginner,Intermediate,6,AI Engineer
+STU0060,IT,2,6.86,"SK130, SK251, SK226, SK037, SK153",4,No,Mobile,ROLE051,Advanced,Beginner,Fluent,3,Cloud Engineer
+STU0061,CSE,4,6.33,"SK273, SK238, SK034, SK061, SK277",6,Yes,Cyber Security,ROLE040,Beginner,Advanced,Intermediate,6,Data Scientist
+STU0062,IT,2,8.32,"SK261, SK097, SK027, SK075, SK246",2,Yes,AI,ROLE043,Beginner,Advanced,Fluent,2,Cyber Security Analyst
+STU0063,EEE,2,7.4,"SK164, SK086, SK003, SK173, SK103",6,Yes,DevOps,ROLE044,Advanced,Intermediate,Fluent,1,Full Stack Developer
+STU0064,ECE,4,8.44,"SK112, SK226, SK021, SK278, SK045",1,Yes,Cloud,ROLE057,Advanced,Intermediate,Basic,6,Cyber Security Analyst
+STU0065,ECE,1,7.38,"SK028, SK037, SK070, SK090, SK011",2,Yes,Cloud,ROLE008,Advanced,Intermediate,Basic,6,Data Scientist
+STU0066,ECE,2,7.13,"SK128, SK111, SK023, SK150, SK018",6,Yes,Data Science,ROLE051,Intermediate,Advanced,Intermediate,1,Cyber Security Analyst
+STU0067,IT,2,6.65,"SK250, SK179, SK248, SK202, SK112",7,No,Mobile,ROLE053,Intermediate,Advanced,Fluent,2,Data Scientist
+STU0068,Civil,1,7.62,"SK096, SK231, SK183, SK142, SK167",3,No,Data Science,ROLE036,Beginner,Beginner,Basic,2,AI Engineer
+STU0069,CSE,1,7.4,"SK194, SK108, SK022, SK170, SK147",7,No,Web Development,ROLE007,Beginner,Intermediate,Fluent,4,AI Engineer
+STU0070,ECE,2,6.36,"SK074, SK190, SK051, SK227, SK095",7,No,Cloud,ROLE053,Beginner,Beginner,Basic,1,Full Stack Developer
+STU0071,Civil,3,9.21,"SK151, SK143, SK036, SK084, SK233",3,No,Cloud,ROLE042,Intermediate,Advanced,Fluent,6,Full Stack Developer
+STU0072,Mechanical,2,7.1,"SK148, SK136, SK073, SK023, SK092",7,No,Mobile,ROLE043,Intermediate,Beginner,Fluent,6,Full Stack Developer
+STU0073,CSE,2,6.85,"SK148, SK267, SK054, SK205, SK181",4,Yes,DevOps,ROLE030,Beginner,Beginner,Fluent,4,Cloud Engineer
+STU0074,CSE,4,8.56,"SK068, SK054, SK041, SK066, SK279",8,No,DevOps,ROLE016,Beginner,Beginner,Basic,2,Data Scientist
+STU0075,Mechanical,2,7.39,"SK212, SK161, SK022, SK238, SK271",6,No,Data Science,ROLE038,Advanced,Advanced,Intermediate,3,Cloud Engineer
+STU0076,IT,4,7.39,"SK027, SK025, SK161, SK074, SK202",5,Yes,Cyber Security,ROLE044,Advanced,Advanced,Fluent,4,Software Engineer
+STU0077,Mechanical,3,7.53,"SK144, SK043, SK119, SK232, SK007",7,No,Cyber Security,ROLE032,Advanced,Intermediate,Basic,6,AI Engineer
+STU0078,Mechanical,4,6.99,"SK205, SK045, SK072, SK222, SK057",1,Yes,AI,ROLE047,Beginner,Intermediate,Fluent,5,Data Scientist
+STU0079,Civil,3,9.35,"SK228, SK097, SK149, SK236, SK130",6,Yes,DevOps,ROLE050,Advanced,Intermediate,Basic,5,Software Engineer
+STU0080,EEE,4,9.24,"SK020, SK133, SK070, SK229, SK067",2,Yes,Web Development,ROLE021,Advanced,Advanced,Fluent,5,Full Stack Developer
+STU0081,CSE,2,8.61,"SK277, SK233, SK131, SK167, SK185",5,No,DevOps,ROLE006,Advanced,Advanced,Basic,5,Software Engineer
+STU0082,Mechanical,4,9.66,"SK170, SK008, SK078, SK126, SK094",2,Yes,Mobile,ROLE007,Advanced,Beginner,Intermediate,5,Data Scientist
+STU0083,CSE,1,7.73,"SK264, SK030, SK004, SK207, SK112",0,No,DevOps,ROLE057,Beginner,Intermediate,Intermediate,3,Cloud Engineer
+STU0084,IT,3,6.65,"SK018, SK010, SK098, SK083, SK212",1,No,Cyber Security,ROLE035,Advanced,Intermediate,Basic,5,Data Scientist
+STU0085,Civil,4,6.71,"SK177, SK278, SK101, SK122, SK103",0,No,Data Science,ROLE016,Intermediate,Intermediate,Basic,3,Cyber Security Analyst
+STU0086,Mechanical,4,9.11,"SK170, SK197, SK263, SK187, SK002",7,No,DevOps,ROLE014,Beginner,Intermediate,Intermediate,3,Cyber Security Analyst
+STU0087,CSE,1,7.07,"SK127, SK276, SK064, SK245, SK101",3,No,Mobile,ROLE030,Advanced,Beginner,Fluent,4,Data Scientist
+STU0088,Civil,4,9.24,"SK242, SK248, SK102, SK162, SK238",2,Yes,Data Science,ROLE060,Advanced,Beginner,Basic,5,AI Engineer
+STU0089,CSE,2,9.4,"SK183, SK182, SK139, SK084, SK132",2,Yes,AI,ROLE013,Intermediate,Beginner,Intermediate,2,Data Scientist
+STU0090,Mechanical,1,7.87,"SK125, SK043, SK248, SK102, SK138",7,Yes,Mobile,ROLE018,Advanced,Intermediate,Intermediate,6,Software Engineer
+STU0091,EEE,3,6.3,"SK029, SK085, SK194, SK084, SK242",6,No,Cyber Security,ROLE037,Beginner,Beginner,Fluent,6,Software Engineer
+STU0092,ECE,3,7.02,"SK267, SK111, SK241, SK178, SK181",1,Yes,Web Development,ROLE040,Advanced,Advanced,Fluent,6,Cyber Security Analyst
+STU0093,Mechanical,3,9.46,"SK208, SK164, SK175, SK116, SK143",4,No,AI,ROLE032,Advanced,Advanced,Basic,1,Cloud Engineer
+STU0094,EEE,4,9.57,"SK272, SK049, SK031, SK270, SK221",8,No,Mobile,ROLE005,Beginner,Intermediate,Fluent,3,Cloud Engineer
+STU0095,EEE,3,8.23,"SK213, SK045, SK171, SK122, SK222",8,No,Cloud,ROLE037,Beginner,Advanced,Intermediate,1,Cloud Engineer
+STU0096,Mechanical,2,8.95,"SK125, SK100, SK096, SK111, SK269",7,Yes,Cloud,ROLE045,Advanced,Beginner,Fluent,1,AI Engineer
+STU0097,CSE,1,6.53,"SK232, SK246, SK241, SK108, SK035",0,No,DevOps,ROLE024,Advanced,Beginner,Fluent,5,Full Stack Developer
+STU0098,IT,4,9.71,"SK056, SK229, SK032, SK164, SK036",7,No,Data Science,ROLE016,Advanced,Advanced,Basic,6,Cloud Engineer
+STU0099,CSE,2,7.85,"SK159, SK002, SK132, SK173, SK041",4,No,Mobile,ROLE057,Intermediate,Advanced,Intermediate,1,Cloud Engineer
+STU0100,Civil,3,6.66,"SK168, SK093, SK051, SK026, SK014",7,Yes,Data Science,ROLE027,Beginner,Intermediate,Basic,2,Cyber Security Analyst
+STU0101,Mechanical,3,8.83,"SK166, SK258, SK259, SK245, SK116",3,Yes,DevOps,ROLE038,Advanced,Intermediate,Intermediate,3,Cloud Engineer
+STU0102,IT,4,7.29,"SK228, SK118, SK015, SK038, SK045",6,No,Cloud,ROLE028,Beginner,Advanced,Fluent,1,Data Scientist
+STU0103,Civil,4,8.25,"SK040, SK202, SK089, SK018, SK038",3,Yes,AI,ROLE056,Advanced,Beginner,Intermediate,3,AI Engineer
+STU0104,Civil,3,6.56,"SK235, SK054, SK207, SK101, SK080",4,Yes,Cloud,ROLE032,Intermediate,Beginner,Basic,2,Software Engineer
+STU0105,Mechanical,4,8.21,"SK219, SK224, SK018, SK195, SK053",3,Yes,AI,ROLE060,Intermediate,Intermediate,Intermediate,5,Full Stack Developer
+STU0106,IT,4,8.65,"SK069, SK218, SK025, SK001, SK080",0,Yes,AI,ROLE041,Advanced,Advanced,Intermediate,2,Cloud Engineer
+STU0107,ECE,2,9.7,"SK061, SK125, SK165, SK023, SK188",4,No,DevOps,ROLE025,Advanced,Beginner,Intermediate,2,AI Engineer
+STU0108,ECE,3,6.58,"SK130, SK183, SK027, SK171, SK214",4,Yes,Cloud,ROLE041,Advanced,Intermediate,Fluent,4,AI Engineer
+STU0109,EEE,4,6.98,"SK241, SK024, SK084, SK079, SK110",4,Yes,Cloud,ROLE052,Beginner,Beginner,Basic,5,Data Scientist
+STU0110,ECE,1,7.19,"SK078, SK179, SK149, SK034, SK040",2,No,AI,ROLE047,Advanced,Intermediate,Intermediate,3,Full Stack Developer
+STU0111,Mechanical,3,7.25,"SK040, SK235, SK038, SK167, SK049",5,No,Cyber Security,ROLE058,Advanced,Advanced,Fluent,1,Data Scientist
+STU0112,CSE,3,8.89,"SK035, SK112, SK010, SK070, SK250",6,Yes,Cyber Security,ROLE041,Beginner,Intermediate,Fluent,6,Full Stack Developer
+STU0113,ECE,3,8.75,"SK015, SK075, SK215, SK257, SK278",3,Yes,DevOps,ROLE060,Beginner,Beginner,Basic,2,Data Scientist
+STU0114,ECE,3,6.93,"SK080, SK186, SK041, SK213, SK264",4,Yes,Data Science,ROLE022,Advanced,Intermediate,Intermediate,4,Full Stack Developer
+STU0115,Civil,2,7.98,"SK097, SK265, SK243, SK268, SK188",0,Yes,DevOps,ROLE044,Intermediate,Intermediate,Fluent,6,Cloud Engineer
+STU0116,Mechanical,2,9.7,"SK113, SK039, SK078, SK252, SK251",6,Yes,Web Development,ROLE033,Intermediate,Beginner,Fluent,6,Data Scientist
+STU0117,EEE,3,8.45,"SK071, SK048, SK197, SK016, SK011",7,Yes,Mobile,ROLE013,Intermediate,Intermediate,Intermediate,6,Cyber Security Analyst
+STU0118,IT,4,6.66,"SK184, SK241, SK101, SK154, SK052",8,No,DevOps,ROLE057,Beginner,Advanced,Fluent,1,Data Scientist
+STU0119,ECE,3,8.82,"SK114, SK145, SK152, SK177, SK212",4,No,Mobile,ROLE041,Intermediate,Intermediate,Fluent,3,Cloud Engineer
+STU0120,IT,1,7.25,"SK186, SK238, SK115, SK102, SK180",7,No,Mobile,ROLE032,Intermediate,Intermediate,Basic,5,Full Stack Developer
+STU0121,ECE,1,7.33,"SK278, SK203, SK199, SK262, SK250",7,Yes,Cloud,ROLE011,Intermediate,Intermediate,Basic,2,Software Engineer
+STU0122,IT,3,8.86,"SK137, SK175, SK214, SK109, SK152",3,Yes,Cyber Security,ROLE060,Advanced,Beginner,Fluent,2,Cyber Security Analyst
+STU0123,EEE,2,7.63,"SK147, SK151, SK248, SK082, SK069",3,No,Web Development,ROLE049,Advanced,Advanced,Fluent,2,AI Engineer
+STU0124,Mechanical,3,9.59,"SK076, SK048, SK086, SK181, SK262",4,No,DevOps,ROLE055,Beginner,Beginner,Basic,2,Data Scientist
+STU0125,EEE,3,7.34,"SK020, SK064, SK121, SK270, SK024",8,Yes,Web Development,ROLE037,Advanced,Advanced,Fluent,3,AI Engineer
+STU0126,Mechanical,3,9.52,"SK005, SK107, SK258, SK072, SK060",4,No,Cloud,ROLE035,Beginner,Advanced,Basic,2,Data Scientist
+STU0127,Civil,1,7.53,"SK088, SK060, SK100, SK046, SK148",1,Yes,Mobile,ROLE045,Advanced,Beginner,Basic,3,AI Engineer
+STU0128,IT,1,6.65,"SK074, SK089, SK237, SK155, SK197",6,No,AI,ROLE026,Advanced,Beginner,Basic,6,Cloud Engineer
+STU0129,IT,2,7.73,"SK275, SK065, SK207, SK062, SK110",6,Yes,AI,ROLE031,Advanced,Beginner,Intermediate,4,Data Scientist
+STU0130,Mechanical,2,6.2,"SK047, SK160, SK271, SK257, SK217",8,No,Web Development,ROLE012,Beginner,Beginner,Basic,6,Cyber Security Analyst
+STU0131,CSE,4,6.88,"SK069, SK061, SK068, SK088, SK041",6,No,Cloud,ROLE034,Intermediate,Beginner,Fluent,5,Cyber Security Analyst
+STU0132,EEE,4,6.49,"SK119, SK041, SK127, SK213, SK195",3,No,Web Development,ROLE044,Intermediate,Beginner,Intermediate,5,Data Scientist
+STU0133,CSE,2,9.11,"SK221, SK074, SK225, SK063, SK193",5,Yes,Data Science,ROLE045,Intermediate,Intermediate,Fluent,4,Software Engineer
+STU0134,Civil,4,6.15,"SK054, SK180, SK226, SK259, SK150",0,No,DevOps,ROLE019,Advanced,Beginner,Basic,2,Software Engineer
+STU0135,IT,1,7.5,"SK060, SK211, SK156, SK206, SK241",0,No,Web Development,ROLE038,Intermediate,Advanced,Fluent,1,Software Engineer
+STU0136,IT,4,8.83,"SK213, SK234, SK037, SK223, SK190",0,No,AI,ROLE016,Beginner,Intermediate,Basic,4,Full Stack Developer
+STU0137,EEE,3,8.69,"SK068, SK092, SK022, SK052, SK094",1,Yes,AI,ROLE017,Advanced,Advanced,Fluent,6,Data Scientist
+STU0138,IT,3,8.76,"SK002, SK003, SK032, SK177, SK279",1,No,AI,ROLE014,Intermediate,Beginner,Fluent,4,AI Engineer
+STU0139,Civil,4,7.72,"SK209, SK211, SK198, SK033, SK216",0,No,Web Development,ROLE044,Advanced,Intermediate,Intermediate,5,AI Engineer
+STU0140,ECE,3,8.88,"SK187, SK025, SK021, SK100, SK066",1,Yes,AI,ROLE056,Advanced,Advanced,Basic,6,Cyber Security Analyst
+STU0141,CSE,3,6.19,"SK192, SK172, SK185, SK127, SK208",8,Yes,Data Science,ROLE042,Advanced,Intermediate,Fluent,6,Cloud Engineer
+STU0142,EEE,1,6.97,"SK160, SK152, SK114, SK019, SK214",0,No,Data Science,ROLE009,Beginner,Advanced,Basic,2,Cloud Engineer
+STU0143,Civil,3,7.59,"SK183, SK140, SK070, SK250, SK111",1,Yes,Web Development,ROLE013,Beginner,Advanced,Basic,5,AI Engineer
+STU0144,IT,2,8.07,"SK155, SK184, SK166, SK170, SK245",3,No,Mobile,ROLE040,Advanced,Intermediate,Fluent,2,Full Stack Developer
+STU0145,EEE,3,6.88,"SK243, SK077, SK244, SK102, SK264",5,Yes,Web Development,ROLE038,Beginner,Beginner,Basic,3,Cyber Security Analyst
+STU0146,IT,4,6.75,"SK274, SK008, SK225, SK049, SK254",4,No,Data Science,ROLE001,Advanced,Beginner,Basic,2,Data Scientist
+STU0147,IT,2,7.61,"SK244, SK103, SK103, SK099, SK184",2,No,Mobile,ROLE024,Advanced,Intermediate,Fluent,2,Software Engineer
+STU0148,Civil,1,8.84,"SK154, SK228, SK271, SK265, SK197",4,No,Mobile,ROLE053,Advanced,Advanced,Basic,3,Cloud Engineer
+STU0149,Civil,2,8.82,"SK199, SK135, SK151, SK259, SK097",7,No,Cyber Security,ROLE053,Beginner,Intermediate,Intermediate,1,Cyber Security Analyst
+STU0150,Mechanical,3,9.28,"SK244, SK141, SK118, SK028, SK259",2,No,Cloud,ROLE042,Intermediate,Advanced,Intermediate,1,Cyber Security Analyst
+STU0151,Mechanical,1,8.38,"SK026, SK084, SK173, SK133, SK262",4,No,Cyber Security,ROLE013,Advanced,Intermediate,Basic,5,Cloud Engineer
+STU0152,IT,2,8.31,"SK257, SK219, SK257, SK240, SK084",3,Yes,Cloud,ROLE009,Advanced,Beginner,Intermediate,2,Cyber Security Analyst
+STU0153,IT,3,9.31,"SK052, SK160, SK133, SK087, SK129",8,No,Web Development,ROLE048,Beginner,Beginner,Intermediate,1,Cyber Security Analyst
+STU0154,Mechanical,1,7.45,"SK099, SK082, SK163, SK194, SK200",0,Yes,Web Development,ROLE016,Advanced,Advanced,Fluent,3,Cyber Security Analyst
+STU0155,IT,3,6.9,"SK147, SK067, SK153, SK234, SK151",2,No,AI,ROLE058,Beginner,Advanced,Intermediate,4,Cyber Security Analyst
+STU0156,EEE,2,9.75,"SK106, SK267, SK035, SK265, SK002",0,Yes,Mobile,ROLE058,Intermediate,Advanced,Intermediate,6,Full Stack Developer
+STU0157,Mechanical,1,6.7,"SK150, SK247, SK100, SK188, SK264",0,Yes,Data Science,ROLE039,Advanced,Intermediate,Intermediate,2,AI Engineer
+STU0158,EEE,1,9.37,"SK239, SK074, SK138, SK035, SK214",7,No,Mobile,ROLE049,Intermediate,Advanced,Fluent,2,Full Stack Developer
+STU0159,Civil,1,8.26,"SK263, SK227, SK044, SK203, SK015",8,Yes,DevOps,ROLE016,Beginner,Beginner,Basic,3,Full Stack Developer
+STU0160,CSE,3,8.63,"SK022, SK026, SK271, SK054, SK126",5,Yes,DevOps,ROLE042,Beginner,Beginner,Fluent,5,Software Engineer
+STU0161,ECE,1,9.07,"SK034, SK215, SK052, SK083, SK105",8,No,Data Science,ROLE057,Intermediate,Intermediate,Basic,2,Cyber Security Analyst
+STU0162,IT,1,7.56,"SK070, SK029, SK267, SK096, SK034",7,Yes,Cloud,ROLE060,Beginner,Advanced,Basic,6,Full Stack Developer
+STU0163,Civil,2,6.98,"SK037, SK179, SK205, SK073, SK112",6,Yes,Cyber Security,ROLE011,Beginner,Intermediate,Fluent,4,Data Scientist
+STU0164,IT,1,6.55,"SK164, SK131, SK146, SK135, SK011",6,No,Mobile,ROLE024,Intermediate,Beginner,Basic,3,Full Stack Developer
+STU0165,CSE,1,7.85,"SK135, SK077, SK219, SK195, SK274",4,No,Mobile,ROLE030,Beginner,Advanced,Fluent,1,Cyber Security Analyst
+STU0166,EEE,1,7.63,"SK217, SK029, SK109, SK189, SK109",6,No,DevOps,ROLE059,Advanced,Beginner,Fluent,4,Software Engineer
+STU0167,Mechanical,4,9.55,"SK146, SK166, SK256, SK094, SK109",4,Yes,Cloud,ROLE015,Advanced,Advanced,Basic,5,Data Scientist
+STU0168,CSE,3,9.31,"SK073, SK264, SK139, SK157, SK191",8,No,Cyber Security,ROLE032,Intermediate,Intermediate,Intermediate,1,Cyber Security Analyst
+STU0169,ECE,2,7.36,"SK021, SK239, SK110, SK080, SK242",6,No,AI,ROLE005,Intermediate,Intermediate,Fluent,1,Cyber Security Analyst
+STU0170,EEE,4,6.69,"SK230, SK052, SK054, SK235, SK081",5,No,Cyber Security,ROLE057,Advanced,Intermediate,Fluent,1,AI Engineer
+STU0171,IT,2,7.12,"SK167, SK046, SK268, SK163, SK006",7,Yes,Cloud,ROLE018,Intermediate,Advanced,Fluent,4,Data Scientist
+STU0172,EEE,1,7.24,"SK141, SK061, SK132, SK130, SK128",4,Yes,DevOps,ROLE046,Beginner,Beginner,Intermediate,1,Data Scientist
+STU0173,Mechanical,1,8.13,"SK020, SK194, SK126, SK187, SK177",1,No,Cloud,ROLE013,Intermediate,Beginner,Fluent,2,Full Stack Developer
+STU0174,ECE,3,8.67,"SK006, SK120, SK182, SK262, SK043",1,Yes,Cyber Security,ROLE022,Beginner,Beginner,Fluent,3,Software Engineer
+STU0175,Mechanical,4,9.33,"SK170, SK169, SK186, SK096, SK103",4,No,Mobile,ROLE013,Beginner,Advanced,Fluent,4,Data Scientist
+STU0176,EEE,4,9.77,"SK231, SK116, SK034, SK150, SK133",0,Yes,DevOps,ROLE042,Beginner,Beginner,Intermediate,6,Cyber Security Analyst
+STU0177,Civil,1,7.02,"SK070, SK255, SK069, SK106, SK160",2,Yes,Data Science,ROLE002,Advanced,Advanced,Fluent,1,Software Engineer
+STU0178,ECE,3,9.41,"SK177, SK196, SK143, SK074, SK277",6,Yes,Cloud,ROLE027,Advanced,Advanced,Basic,6,Cyber Security Analyst
+STU0179,Mechanical,3,6.42,"SK024, SK273, SK059, SK052, SK066",6,Yes,Mobile,ROLE027,Intermediate,Beginner,Fluent,6,Data Scientist
+STU0180,Mechanical,1,6.24,"SK217, SK166, SK011, SK013, SK146",8,No,DevOps,ROLE012,Beginner,Beginner,Fluent,4,AI Engineer
+STU0181,ECE,1,9.36,"SK245, SK203, SK277, SK206, SK125",2,Yes,Mobile,ROLE053,Intermediate,Advanced,Fluent,2,Data Scientist
+STU0182,IT,4,6.03,"SK015, SK027, SK252, SK003, SK109",5,Yes,Data Science,ROLE051,Beginner,Beginner,Fluent,4,Data Scientist
+STU0183,EEE,3,7.26,"SK054, SK006, SK023, SK165, SK047",4,No,AI,ROLE046,Beginner,Beginner,Basic,5,AI Engineer
+STU0184,Mechanical,4,7.4,"SK110, SK264, SK273, SK083, SK049",0,Yes,Data Science,ROLE031,Intermediate,Advanced,Basic,5,Cloud Engineer
+STU0185,ECE,4,8.17,"SK150, SK253, SK117, SK247, SK265",6,Yes,Data Science,ROLE012,Advanced,Intermediate,Fluent,3,Cyber Security Analyst
+STU0186,EEE,4,6.07,"SK234, SK076, SK274, SK121, SK134",4,No,AI,ROLE052,Advanced,Beginner,Intermediate,1,Software Engineer
+STU0187,EEE,1,8.88,"SK089, SK142, SK007, SK026, SK083",2,Yes,Data Science,ROLE027,Intermediate,Intermediate,Intermediate,2,Cloud Engineer
+STU0188,EEE,2,8.87,"SK118, SK109, SK023, SK027, SK256",0,No,Mobile,ROLE024,Beginner,Advanced,Basic,5,Software Engineer
+STU0189,ECE,3,6.44,"SK278, SK028, SK168, SK073, SK183",3,No,AI,ROLE049,Intermediate,Advanced,Basic,1,Cloud Engineer
+STU0190,CSE,1,8.84,"SK158, SK089, SK183, SK115, SK146",8,No,AI,ROLE012,Intermediate,Advanced,Fluent,3,Full Stack Developer
+STU0191,Civil,3,7.21,"SK043, SK211, SK210, SK140, SK161",1,Yes,Cyber Security,ROLE021,Intermediate,Intermediate,Basic,1,Data Scientist
+STU0192,Mechanical,4,6.4,"SK181, SK071, SK117, SK048, SK096",3,No,Mobile,ROLE003,Advanced,Intermediate,Basic,3,Software Engineer
+STU0193,Mechanical,1,8.99,"SK235, SK265, SK140, SK229, SK107",5,No,DevOps,ROLE007,Beginner,Advanced,Fluent,1,Cyber Security Analyst
+STU0194,IT,3,6.09,"SK235, SK089, SK204, SK274, SK163",0,Yes,AI,ROLE035,Beginner,Beginner,Basic,4,Data Scientist
+STU0195,EEE,4,6.92,"SK272, SK035, SK050, SK043, SK081",6,Yes,Mobile,ROLE005,Advanced,Intermediate,Fluent,4,Cyber Security Analyst
+STU0196,Civil,1,6.28,"SK023, SK163, SK191, SK169, SK017",1,No,AI,ROLE051,Advanced,Beginner,Fluent,4,Full Stack Developer
+STU0197,Mechanical,2,8.56,"SK199, SK016, SK202, SK204, SK051",3,Yes,Data Science,ROLE038,Beginner,Intermediate,Fluent,5,AI Engineer
+STU0198,IT,2,8.51,"SK205, SK161, SK136, SK229, SK132",5,Yes,Data Science,ROLE029,Beginner,Intermediate,Fluent,1,AI Engineer
+STU0199,IT,4,6.64,"SK061, SK012, SK035, SK036, SK093",2,Yes,Cyber Security,ROLE019,Beginner,Advanced,Fluent,2,Software Engineer
+STU0200,Civil,2,7.34,"SK052, SK088, SK207, SK193, SK186",4,Yes,AI,ROLE020,Intermediate,Beginner,Intermediate,1,Full Stack Developer
+STU0201,ECE,3,7.82,"SK033, SK229, SK266, SK068, SK050",1,Yes,Web Development,ROLE038,Advanced,Advanced,Intermediate,1,Cloud Engineer
+STU0202,EEE,3,6.92,"SK267, SK038, SK019, SK199, SK173",6,Yes,Web Development,ROLE011,Intermediate,Intermediate,Fluent,1,AI Engineer
+STU0203,Civil,3,8.93,"SK256, SK042, SK106, SK074, SK088",8,Yes,Web Development,ROLE047,Beginner,Advanced,Intermediate,5,Software Engineer
+STU0204,EEE,2,6.42,"SK172, SK076, SK148, SK015, SK074",1,Yes,Data Science,ROLE033,Advanced,Intermediate,Fluent,1,Full Stack Developer
+STU0205,Civil,4,9.16,"SK200, SK182, SK187, SK088, SK195",7,No,Cyber Security,ROLE047,Beginner,Intermediate,Fluent,6,Software Engineer
+STU0206,IT,1,6.57,"SK265, SK219, SK041, SK090, SK094",8,Yes,Mobile,ROLE020,Beginner,Intermediate,Fluent,1,Cloud Engineer
+STU0207,Mechanical,2,7.73,"SK185, SK135, SK062, SK180, SK120",1,No,Data Science,ROLE051,Advanced,Advanced,Basic,5,AI Engineer
+STU0208,EEE,2,9.73,"SK182, SK133, SK032, SK019, SK177",1,No,AI,ROLE002,Beginner,Advanced,Intermediate,5,Software Engineer
+STU0209,EEE,4,6.21,"SK048, SK228, SK137, SK032, SK206",3,No,Cloud,ROLE056,Intermediate,Advanced,Fluent,6,Full Stack Developer
+STU0210,IT,1,9.6,"SK098, SK113, SK007, SK229, SK182",7,No,Cyber Security,ROLE033,Advanced,Intermediate,Intermediate,4,AI Engineer
+STU0211,Mechanical,2,8.5,"SK162, SK044, SK241, SK007, SK277",8,No,AI,ROLE054,Advanced,Intermediate,Basic,4,Cloud Engineer
+STU0212,ECE,1,6.35,"SK088, SK126, SK263, SK144, SK137",5,No,AI,ROLE020,Intermediate,Intermediate,Fluent,2,Software Engineer
+STU0213,EEE,2,9.38,"SK173, SK268, SK216, SK154, SK022",7,Yes,Cyber Security,ROLE004,Intermediate,Advanced,Fluent,4,AI Engineer
+STU0214,IT,4,6.33,"SK103, SK252, SK205, SK167, SK072",5,No,Mobile,ROLE007,Advanced,Beginner,Intermediate,1,Software Engineer
+STU0215,CSE,3,6.85,"SK234, SK075, SK135, SK238, SK084",2,Yes,Cloud,ROLE043,Beginner,Beginner,Fluent,5,AI Engineer
+STU0216,EEE,3,8.41,"SK146, SK162, SK198, SK235, SK187",4,Yes,Web Development,ROLE006,Beginner,Beginner,Intermediate,3,Full Stack Developer
+STU0217,CSE,2,6.9,"SK246, SK100, SK212, SK204, SK172",4,No,Cyber Security,ROLE036,Advanced,Advanced,Basic,4,AI Engineer
+STU0218,ECE,3,8.83,"SK168, SK209, SK263, SK155, SK153",8,No,Web Development,ROLE038,Beginner,Intermediate,Basic,1,Full Stack Developer
+STU0219,ECE,4,6.3,"SK103, SK241, SK203, SK177, SK139",8,Yes,AI,ROLE056,Beginner,Advanced,Fluent,2,Full Stack Developer
+STU0220,EEE,2,6.61,"SK164, SK132, SK001, SK135, SK154",0,No,Web Development,ROLE051,Beginner,Advanced,Basic,1,Full Stack Developer
+STU0221,Mechanical,3,8.2,"SK051, SK175, SK042, SK057, SK060",4,No,Cloud,ROLE049,Intermediate,Beginner,Intermediate,5,AI Engineer
+STU0222,IT,4,7.23,"SK105, SK061, SK140, SK256, SK027",6,Yes,Cyber Security,ROLE044,Advanced,Intermediate,Fluent,4,AI Engineer
+STU0223,ECE,2,7.45,"SK045, SK240, SK229, SK236, SK279",2,No,Data Science,ROLE032,Advanced,Beginner,Intermediate,6,Software Engineer
+STU0224,IT,4,6.52,"SK191, SK109, SK151, SK128, SK058",3,Yes,Cloud,ROLE036,Advanced,Advanced,Basic,2,Cyber Security Analyst
+STU0225,IT,4,6.29,"SK187, SK024, SK234, SK128, SK133",5,Yes,Cyber Security,ROLE032,Intermediate,Beginner,Basic,6,Cyber Security Analyst
+STU0226,Mechanical,2,7.37,"SK143, SK264, SK150, SK010, SK025",8,No,AI,ROLE028,Beginner,Beginner,Basic,2,Software Engineer
+STU0227,IT,1,6.8,"SK150, SK101, SK143, SK170, SK258",7,No,Web Development,ROLE004,Beginner,Beginner,Fluent,5,Full Stack Developer
+STU0228,Mechanical,4,8.58,"SK186, SK255, SK063, SK026, SK088",7,Yes,Web Development,ROLE008,Intermediate,Beginner,Fluent,5,Cloud Engineer
+STU0229,IT,4,7.43,"SK022, SK243, SK204, SK048, SK039",8,Yes,Data Science,ROLE038,Intermediate,Intermediate,Basic,5,Cyber Security Analyst
+STU0230,ECE,4,8.0,"SK228, SK267, SK191, SK181, SK083",3,Yes,Mobile,ROLE047,Beginner,Intermediate,Fluent,1,Full Stack Developer
+STU0231,Civil,1,9.26,"SK131, SK056, SK099, SK197, SK169",3,No,AI,ROLE022,Intermediate,Beginner,Basic,6,Data Scientist
+STU0232,ECE,4,8.44,"SK138, SK258, SK065, SK117, SK212",5,No,Data Science,ROLE005,Intermediate,Advanced,Intermediate,1,Cyber Security Analyst
+STU0233,Mechanical,4,9.3,"SK039, SK074, SK206, SK229, SK183",7,Yes,Cloud,ROLE001,Beginner,Beginner,Fluent,4,Cyber Security Analyst
+STU0234,IT,4,6.48,"SK056, SK196, SK234, SK259, SK231",5,No,Web Development,ROLE012,Beginner,Intermediate,Intermediate,4,Full Stack Developer
+STU0235,CSE,1,8.92,"SK040, SK258, SK028, SK032, SK216",7,No,AI,ROLE018,Beginner,Advanced,Basic,6,Cloud Engineer
+STU0236,CSE,1,6.54,"SK093, SK231, SK229, SK080, SK268",3,Yes,AI,ROLE042,Beginner,Advanced,Basic,1,Data Scientist
+STU0237,ECE,3,8.48,"SK009, SK027, SK250, SK034, SK272",1,Yes,Data Science,ROLE040,Intermediate,Advanced,Basic,5,Full Stack Developer
+STU0238,IT,2,7.02,"SK225, SK047, SK171, SK118, SK126",5,No,Cyber Security,ROLE002,Beginner,Beginner,Fluent,4,Full Stack Developer
+STU0239,IT,1,6.72,"SK222, SK214, SK220, SK140, SK003",4,No,Web Development,ROLE042,Intermediate,Intermediate,Intermediate,3,Software Engineer
+STU0240,ECE,2,6.18,"SK180, SK016, SK261, SK103, SK274",5,Yes,Mobile,ROLE017,Intermediate,Beginner,Fluent,3,Cyber Security Analyst
+STU0241,Civil,1,8.44,"SK002, SK108, SK157, SK103, SK002",8,Yes,Cloud,ROLE046,Beginner,Advanced,Intermediate,3,Software Engineer
+STU0242,CSE,1,9.26,"SK094, SK082, SK125, SK103, SK089",5,No,Cloud,ROLE053,Advanced,Advanced,Fluent,3,AI Engineer
+STU0243,Civil,2,8.83,"SK168, SK100, SK083, SK041, SK113",0,No,Web Development,ROLE019,Beginner,Advanced,Basic,3,Cloud Engineer
+STU0244,ECE,2,6.68,"SK087, SK120, SK062, SK190, SK199",0,Yes,Mobile,ROLE016,Advanced,Beginner,Intermediate,4,Cyber Security Analyst
+STU0245,IT,4,8.3,"SK142, SK268, SK224, SK007, SK072",8,Yes,Data Science,ROLE036,Intermediate,Intermediate,Basic,6,Full Stack Developer
+STU0246,CSE,2,7.71,"SK221, SK216, SK251, SK145, SK240",8,No,Data Science,ROLE049,Beginner,Intermediate,Fluent,3,AI Engineer
+STU0247,ECE,3,7.45,"SK211, SK170, SK098, SK006, SK010",5,No,Web Development,ROLE027,Intermediate,Intermediate,Basic,1,Software Engineer
+STU0248,ECE,3,9.11,"SK006, SK222, SK144, SK042, SK206",1,No,Web Development,ROLE039,Beginner,Intermediate,Fluent,1,AI Engineer
+STU0249,EEE,4,7.54,"SK098, SK106, SK083, SK205, SK225",6,No,DevOps,ROLE010,Beginner,Advanced,Fluent,5,Full Stack Developer
+STU0250,ECE,2,6.8,"SK155, SK021, SK236, SK277, SK204",2,Yes,Cloud,ROLE053,Beginner,Advanced,Fluent,4,Software Engineer
+STU0251,Civil,3,7.5,"SK080, SK192, SK201, SK035, SK235",8,Yes,Mobile,ROLE028,Advanced,Intermediate,Basic,5,Cyber Security Analyst
+STU0252,EEE,3,8.92,"SK098, SK127, SK158, SK250, SK259",1,Yes,Data Science,ROLE039,Beginner,Beginner,Basic,2,Software Engineer
+STU0253,Mechanical,1,7.96,"SK146, SK061, SK034, SK276, SK032",2,Yes,Cloud,ROLE045,Advanced,Intermediate,Fluent,2,Software Engineer
+STU0254,Mechanical,2,7.72,"SK108, SK139, SK167, SK266, SK232",1,No,Data Science,ROLE005,Intermediate,Intermediate,Fluent,4,Software Engineer
+STU0255,ECE,4,6.35,"SK039, SK034, SK064, SK121, SK263",5,Yes,Cyber Security,ROLE021,Beginner,Intermediate,Basic,3,Data Scientist
+STU0256,CSE,4,9.73,"SK184, SK257, SK140, SK261, SK081",4,Yes,Data Science,ROLE029,Beginner,Advanced,Basic,3,Cloud Engineer
+STU0257,Mechanical,3,6.7,"SK070, SK144, SK198, SK077, SK275",2,Yes,Web Development,ROLE009,Advanced,Intermediate,Fluent,2,Full Stack Developer
+STU0258,CSE,1,7.94,"SK024, SK040, SK141, SK010, SK268",3,No,Cloud,ROLE037,Advanced,Advanced,Intermediate,6,AI Engineer
+STU0259,Civil,3,7.11,"SK113, SK077, SK158, SK063, SK082",5,Yes,AI,ROLE048,Beginner,Intermediate,Fluent,3,Software Engineer
+STU0260,IT,1,7.76,"SK224, SK076, SK155, SK174, SK011",5,Yes,Mobile,ROLE028,Beginner,Advanced,Fluent,5,Cyber Security Analyst
+STU0261,EEE,2,7.78,"SK246, SK030, SK117, SK169, SK257",8,Yes,Cyber Security,ROLE057,Beginner,Intermediate,Basic,3,Software Engineer
+STU0262,IT,1,8.48,"SK221, SK129, SK070, SK214, SK252",5,No,Cloud,ROLE045,Intermediate,Intermediate,Basic,3,Cyber Security Analyst
+STU0263,EEE,2,8.69,"SK170, SK037, SK037, SK215, SK191",6,Yes,Mobile,ROLE030,Intermediate,Beginner,Intermediate,3,Software Engineer
+STU0264,ECE,3,9.2,"SK267, SK103, SK155, SK034, SK164",5,No,DevOps,ROLE041,Beginner,Beginner,Basic,3,Cyber Security Analyst
+STU0265,Mechanical,2,8.13,"SK205, SK070, SK115, SK273, SK209",0,Yes,Cyber Security,ROLE020,Advanced,Beginner,Intermediate,1,Software Engineer
+STU0266,Civil,3,9.2,"SK275, SK086, SK134, SK049, SK242",5,Yes,Data Science,ROLE045,Advanced,Advanced,Basic,4,Full Stack Developer
+STU0267,Civil,1,6.36,"SK233, SK009, SK130, SK128, SK101",2,Yes,Cyber Security,ROLE054,Beginner,Beginner,Basic,1,Data Scientist
+STU0268,CSE,1,9.77,"SK104, SK074, SK106, SK177, SK215",6,No,Cloud,ROLE036,Advanced,Beginner,Basic,5,AI Engineer
+STU0269,EEE,2,6.96,"SK234, SK160, SK093, SK130, SK129",3,No,AI,ROLE027,Beginner,Intermediate,Basic,2,AI Engineer
+STU0270,CSE,3,6.49,"SK220, SK010, SK080, SK149, SK179",8,Yes,Cyber Security,ROLE005,Intermediate,Advanced,Intermediate,3,Data Scientist
+STU0271,Mechanical,2,7.78,"SK202, SK158, SK004, SK145, SK009",3,Yes,Web Development,ROLE011,Advanced,Intermediate,Fluent,4,Software Engineer
+STU0272,ECE,3,9.77,"SK125, SK094, SK128, SK212, SK175",8,Yes,AI,ROLE031,Advanced,Advanced,Fluent,6,Cloud Engineer
+STU0273,Civil,4,8.89,"SK268, SK184, SK215, SK218, SK149",2,Yes,Mobile,ROLE014,Intermediate,Intermediate,Intermediate,6,Cloud Engineer
+STU0274,ECE,3,7.44,"SK125, SK029, SK142, SK015, SK246",3,No,Cloud,ROLE015,Beginner,Advanced,Fluent,1,Full Stack Developer
+STU0275,ECE,1,8.23,"SK115, SK153, SK156, SK032, SK275",0,No,Data Science,ROLE055,Beginner,Beginner,Basic,2,Data Scientist
+STU0276,CSE,3,6.4,"SK046, SK048, SK131, SK222, SK272",2,Yes,Data Science,ROLE055,Advanced,Intermediate,Basic,3,Cyber Security Analyst
+STU0277,IT,4,9.75,"SK049, SK155, SK099, SK141, SK167",8,No,Cloud,ROLE005,Beginner,Beginner,Intermediate,4,Full Stack Developer
+STU0278,ECE,4,6.27,"SK243, SK230, SK037, SK152, SK120",5,No,DevOps,ROLE057,Advanced,Advanced,Basic,6,Data Scientist
+STU0279,Mechanical,2,6.02,"SK126, SK047, SK167, SK128, SK124",0,No,Cyber Security,ROLE030,Intermediate,Beginner,Intermediate,1,Full Stack Developer
+STU0280,IT,1,9.38,"SK207, SK272, SK160, SK104, SK004",3,Yes,Cloud,ROLE013,Intermediate,Beginner,Intermediate,1,Cyber Security Analyst
+STU0281,ECE,1,8.84,"SK107, SK156, SK101, SK201, SK276",5,No,Web Development,ROLE007,Advanced,Advanced,Intermediate,6,Software Engineer
+STU0282,IT,4,8.99,"SK209, SK067, SK098, SK252, SK159",1,Yes,Web Development,ROLE012,Beginner,Advanced,Intermediate,3,Cloud Engineer
+STU0283,EEE,2,7.6,"SK265, SK036, SK199, SK279, SK158",0,No,DevOps,ROLE025,Advanced,Beginner,Basic,6,AI Engineer
+STU0284,ECE,1,8.0,"SK009, SK078, SK067, SK160, SK167",1,No,DevOps,ROLE060,Advanced,Beginner,Intermediate,1,Data Scientist
+STU0285,Civil,2,8.78,"SK167, SK235, SK167, SK063, SK264",0,No,Mobile,ROLE035,Intermediate,Intermediate,Basic,3,Data Scientist
+STU0286,Mechanical,2,6.99,"SK247, SK048, SK101, SK118, SK068",0,No,Mobile,ROLE030,Advanced,Advanced,Intermediate,4,Full Stack Developer
+STU0287,EEE,3,8.49,"SK270, SK180, SK055, SK201, SK062",4,Yes,AI,ROLE007,Intermediate,Intermediate,Basic,6,Cloud Engineer
+STU0288,IT,3,6.9,"SK007, SK242, SK010, SK033, SK245",0,No,DevOps,ROLE015,Beginner,Intermediate,Fluent,4,Cloud Engineer
+STU0289,CSE,1,7.94,"SK251, SK149, SK023, SK108, SK194",1,No,AI,ROLE025,Intermediate,Beginner,Fluent,5,Cyber Security Analyst
+STU0290,IT,4,9.7,"SK146, SK265, SK076, SK162, SK069",2,No,Cloud,ROLE058,Beginner,Advanced,Fluent,5,Data Scientist
+STU0291,ECE,4,9.56,"SK164, SK038, SK067, SK031, SK149",4,No,Mobile,ROLE016,Beginner,Intermediate,Basic,6,Cyber Security Analyst
+STU0292,Mechanical,4,6.07,"SK075, SK128, SK039, SK071, SK034",0,No,AI,ROLE033,Intermediate,Intermediate,Fluent,5,Cyber Security Analyst
+STU0293,Civil,2,6.66,"SK073, SK210, SK058, SK100, SK044",3,No,Web Development,ROLE027,Beginner,Beginner,Fluent,3,Full Stack Developer
+STU0294,Civil,4,8.06,"SK197, SK119, SK013, SK208, SK224",8,Yes,DevOps,ROLE019,Beginner,Advanced,Intermediate,1,Data Scientist
+STU0295,CSE,4,9.11,"SK179, SK272, SK027, SK146, SK148",5,No,Mobile,ROLE041,Beginner,Intermediate,Basic,2,Software Engineer
+STU0296,ECE,3,7.33,"SK158, SK017, SK059, SK168, SK226",5,No,Cyber Security,ROLE001,Advanced,Beginner,Basic,3,Software Engineer
+STU0297,EEE,4,7.51,"SK226, SK146, SK027, SK194, SK210",6,Yes,Cyber Security,ROLE059,Advanced,Beginner,Intermediate,3,Full Stack Developer
+STU0298,Civil,1,6.83,"SK100, SK134, SK247, SK250, SK230",1,No,AI,ROLE021,Beginner,Beginner,Fluent,4,Data Scientist
+STU0299,IT,2,8.86,"SK092, SK244, SK245, SK151, SK244",1,No,Web Development,ROLE055,Beginner,Beginner,Basic,5,Full Stack Developer
+STU0300,IT,1,7.57,"SK261, SK023, SK028, SK251, SK127",7,No,Cloud,ROLE039,Intermediate,Advanced,Basic,4,Full Stack Developer
+STU0301,Civil,1,6.75,"SK252, SK260, SK152, SK035, SK032",8,Yes,Web Development,ROLE044,Beginner,Intermediate,Basic,6,Full Stack Developer
+STU0302,IT,1,8.65,"SK087, SK247, SK193, SK116, SK271",4,No,Mobile,ROLE024,Beginner,Advanced,Intermediate,4,Cyber Security Analyst
+STU0303,Mechanical,1,7.43,"SK175, SK083, SK251, SK206, SK078",0,Yes,Mobile,ROLE037,Beginner,Advanced,Basic,2,Cloud Engineer
+STU0304,EEE,1,8.05,"SK022, SK252, SK258, SK206, SK221",3,Yes,DevOps,ROLE005,Beginner,Advanced,Basic,6,Software Engineer
+STU0305,IT,2,9.3,"SK196, SK216, SK059, SK191, SK162",6,Yes,Web Development,ROLE022,Advanced,Intermediate,Intermediate,3,Software Engineer
+STU0306,ECE,4,8.55,"SK189, SK243, SK241, SK043, SK025",2,Yes,AI,ROLE017,Intermediate,Beginner,Intermediate,2,Cloud Engineer
+STU0307,Mechanical,1,9.18,"SK014, SK066, SK273, SK127, SK076",6,No,Web Development,ROLE055,Intermediate,Advanced,Fluent,4,Cyber Security Analyst
+STU0308,IT,4,9.71,"SK199, SK108, SK045, SK212, SK200",2,Yes,Web Development,ROLE001,Advanced,Beginner,Basic,1,Full Stack Developer
+STU0309,ECE,3,8.89,"SK223, SK009, SK035, SK154, SK205",0,No,AI,ROLE055,Intermediate,Advanced,Fluent,1,Software Engineer
+STU0310,CSE,4,9.13,"SK189, SK185, SK275, SK234, SK133",3,No,DevOps,ROLE019,Beginner,Intermediate,Basic,6,AI Engineer
+STU0311,Mechanical,2,7.53,"SK147, SK122, SK094, SK185, SK241",8,No,Mobile,ROLE021,Advanced,Advanced,Basic,4,Data Scientist
+STU0312,Mechanical,2,6.72,"SK066, SK251, SK023, SK249, SK014",6,Yes,Cyber Security,ROLE011,Advanced,Advanced,Intermediate,3,Cyber Security Analyst
+STU0313,EEE,2,6.58,"SK118, SK192, SK114, SK026, SK177",7,Yes,DevOps,ROLE017,Beginner,Advanced,Intermediate,2,AI Engineer
+STU0314,EEE,2,9.1,"SK201, SK193, SK243, SK142, SK259",8,No,Cyber Security,ROLE024,Advanced,Beginner,Basic,4,Cloud Engineer
+STU0315,Civil,1,6.17,"SK115, SK239, SK134, SK195, SK022",5,Yes,Cloud,ROLE033,Intermediate,Beginner,Intermediate,1,Software Engineer
+STU0316,Civil,3,9.69,"SK227, SK142, SK267, SK178, SK227",5,No,Web Development,ROLE017,Beginner,Beginner,Basic,3,AI Engineer
+STU0317,CSE,1,9.32,"SK024, SK133, SK180, SK058, SK196",3,No,AI,ROLE020,Advanced,Intermediate,Fluent,3,Software Engineer
+STU0318,IT,4,8.38,"SK159, SK224, SK051, SK012, SK199",2,No,Cyber Security,ROLE018,Beginner,Beginner,Intermediate,2,AI Engineer
+STU0319,ECE,1,6.66,"SK268, SK085, SK028, SK211, SK250",2,No,Cloud,ROLE048,Beginner,Intermediate,Intermediate,6,AI Engineer
+STU0320,CSE,1,7.91,"SK154, SK212, SK192, SK113, SK186",1,No,Mobile,ROLE016,Advanced,Advanced,Intermediate,5,Software Engineer
+STU0321,ECE,1,7.76,"SK037, SK254, SK212, SK175, SK003",2,Yes,Mobile,ROLE036,Beginner,Beginner,Fluent,1,Full Stack Developer
+STU0322,CSE,3,9.1,"SK143, SK097, SK003, SK192, SK260",3,Yes,AI,ROLE055,Intermediate,Advanced,Basic,1,AI Engineer
+STU0323,ECE,3,8.96,"SK112, SK066, SK077, SK093, SK224",6,Yes,Mobile,ROLE046,Intermediate,Beginner,Fluent,1,Cloud Engineer
+STU0324,IT,1,9.07,"SK189, SK178, SK055, SK020, SK269",5,No,DevOps,ROLE006,Advanced,Beginner,Intermediate,2,Cyber Security Analyst
+STU0325,ECE,4,9.46,"SK196, SK226, SK164, SK025, SK160",2,No,Cloud,ROLE009,Advanced,Beginner,Basic,5,Cloud Engineer
+STU0326,EEE,3,8.72,"SK099, SK029, SK113, SK270, SK086",2,No,Mobile,ROLE019,Advanced,Beginner,Intermediate,3,AI Engineer
+STU0327,CSE,3,9.27,"SK018, SK240, SK213, SK059, SK203",8,No,Cloud,ROLE020,Intermediate,Intermediate,Fluent,6,Software Engineer
+STU0328,ECE,2,6.65,"SK109, SK059, SK114, SK207, SK058",7,No,Mobile,ROLE027,Intermediate,Beginner,Intermediate,3,Full Stack Developer
+STU0329,ECE,4,6.55,"SK158, SK262, SK158, SK177, SK227",4,Yes,AI,ROLE032,Advanced,Advanced,Basic,6,AI Engineer
+STU0330,ECE,2,7.11,"SK074, SK138, SK149, SK172, SK149",0,No,Mobile,ROLE033,Advanced,Advanced,Intermediate,2,Data Scientist
+STU0331,CSE,2,7.86,"SK279, SK055, SK117, SK126, SK049",7,Yes,Cloud,ROLE051,Advanced,Advanced,Basic,4,AI Engineer
+STU0332,Civil,1,9.2,"SK035, SK206, SK017, SK129, SK104",8,No,DevOps,ROLE025,Intermediate,Beginner,Intermediate,4,Cyber Security Analyst
+STU0333,IT,1,7.75,"SK093, SK097, SK226, SK172, SK111",0,No,AI,ROLE034,Intermediate,Beginner,Basic,3,AI Engineer
+STU0334,IT,3,6.68,"SK210, SK254, SK085, SK272, SK160",0,Yes,DevOps,ROLE042,Beginner,Advanced,Fluent,6,Cyber Security Analyst
+STU0335,IT,4,9.33,"SK231, SK131, SK062, SK136, SK162",3,No,Data Science,ROLE030,Intermediate,Advanced,Basic,1,Full Stack Developer
+STU0336,ECE,1,6.32,"SK241, SK207, SK058, SK027, SK109",3,No,Data Science,ROLE001,Beginner,Advanced,Intermediate,1,Data Scientist
+STU0337,CSE,3,8.24,"SK012, SK072, SK030, SK010, SK044",4,No,Data Science,ROLE037,Advanced,Advanced,Fluent,2,Cyber Security Analyst
+STU0338,EEE,1,9.41,"SK066, SK061, SK137, SK259, SK273",3,Yes,AI,ROLE010,Intermediate,Beginner,Fluent,2,Cloud Engineer
+STU0339,EEE,1,8.4,"SK049, SK260, SK037, SK234, SK055",2,No,Mobile,ROLE034,Advanced,Intermediate,Basic,3,AI Engineer
+STU0340,EEE,3,9.05,"SK198, SK076, SK188, SK239, SK036",5,Yes,DevOps,ROLE047,Intermediate,Intermediate,Intermediate,6,Software Engineer
+STU0341,IT,1,7.67,"SK075, SK072, SK276, SK169, SK062",4,Yes,Mobile,ROLE003,Beginner,Beginner,Fluent,6,Full Stack Developer
+STU0342,ECE,2,9.04,"SK247, SK059, SK119, SK153, SK230",7,No,Cyber Security,ROLE032,Advanced,Advanced,Fluent,4,Cloud Engineer
+STU0343,IT,4,9.38,"SK197, SK129, SK240, SK254, SK203",8,Yes,Mobile,ROLE006,Intermediate,Intermediate,Fluent,3,AI Engineer
+STU0344,ECE,4,8.0,"SK137, SK182, SK083, SK111, SK237",3,Yes,Cloud,ROLE015,Intermediate,Intermediate,Fluent,4,AI Engineer
+STU0345,Civil,1,9.45,"SK172, SK128, SK172, SK174, SK221",6,Yes,Data Science,ROLE049,Advanced,Intermediate,Fluent,5,Data Scientist
+STU0346,Mechanical,4,9.55,"SK113, SK159, SK034, SK252, SK274",4,Yes,Mobile,ROLE012,Intermediate,Intermediate,Basic,2,Data Scientist
+STU0347,ECE,3,7.86,"SK138, SK025, SK149, SK107, SK022",8,Yes,Data Science,ROLE036,Beginner,Advanced,Intermediate,3,Data Scientist
+STU0348,Civil,4,9.68,"SK145, SK029, SK258, SK008, SK027",8,Yes,Cloud,ROLE030,Advanced,Intermediate,Fluent,5,Cloud Engineer
+STU0349,CSE,2,8.18,"SK093, SK152, SK066, SK055, SK219",5,No,Data Science,ROLE004,Beginner,Advanced,Basic,1,Full Stack Developer
+STU0350,ECE,4,9.38,"SK254, SK040, SK194, SK022, SK200",7,Yes,Web Development,ROLE002,Beginner,Beginner,Fluent,3,Cloud Engineer
+STU0351,ECE,4,7.87,"SK237, SK191, SK166, SK220, SK271",6,No,DevOps,ROLE009,Intermediate,Advanced,Basic,1,Full Stack Developer
+STU0352,Mechanical,1,6.08,"SK228, SK117, SK262, SK072, SK173",3,Yes,Cloud,ROLE006,Intermediate,Intermediate,Fluent,6,Full Stack Developer
+STU0353,CSE,2,9.68,"SK211, SK112, SK019, SK159, SK259",4,No,Cyber Security,ROLE054,Intermediate,Beginner,Fluent,5,Full Stack Developer
+STU0354,ECE,3,6.01,"SK151, SK246, SK094, SK099, SK227",6,Yes,Web Development,ROLE031,Intermediate,Beginner,Intermediate,2,Cyber Security Analyst
+STU0355,IT,4,6.56,"SK199, SK005, SK115, SK129, SK109",4,Yes,DevOps,ROLE050,Advanced,Beginner,Fluent,3,Cloud Engineer
+STU0356,CSE,4,7.02,"SK076, SK011, SK225, SK065, SK089",5,Yes,AI,ROLE018,Intermediate,Intermediate,Fluent,3,Full Stack Developer
+STU0357,Civil,3,7.1,"SK102, SK089, SK101, SK102, SK035",8,Yes,AI,ROLE006,Intermediate,Intermediate,Intermediate,5,Cyber Security Analyst
+STU0358,Mechanical,2,6.93,"SK061, SK276, SK059, SK139, SK086",7,Yes,AI,ROLE056,Advanced,Intermediate,Intermediate,6,Data Scientist
+STU0359,EEE,2,7.62,"SK206, SK028, SK058, SK202, SK220",6,No,Data Science,ROLE057,Beginner,Advanced,Fluent,5,AI Engineer
+STU0360,EEE,2,8.25,"SK207, SK058, SK119, SK258, SK259",1,Yes,AI,ROLE041,Beginner,Intermediate,Fluent,1,Cyber Security Analyst
+STU0361,ECE,4,9.11,"SK127, SK118, SK230, SK186, SK131",6,No,DevOps,ROLE054,Intermediate,Advanced,Intermediate,5,Data Scientist
+STU0362,Civil,2,6.75,"SK030, SK120, SK070, SK232, SK059",7,Yes,Web Development,ROLE029,Beginner,Beginner,Fluent,5,AI Engineer
+STU0363,IT,4,8.99,"SK184, SK242, SK135, SK091, SK226",3,Yes,Web Development,ROLE046,Beginner,Intermediate,Fluent,6,Software Engineer
+STU0364,CSE,2,8.39,"SK165, SK265, SK084, SK205, SK015",0,Yes,Cyber Security,ROLE057,Beginner,Intermediate,Intermediate,4,AI Engineer
+STU0365,CSE,4,9.37,"SK245, SK218, SK130, SK056, SK021",6,No,Mobile,ROLE042,Intermediate,Advanced,Fluent,2,Cloud Engineer
+STU0366,ECE,3,8.68,"SK088, SK134, SK013, SK089, SK274",0,No,Data Science,ROLE002,Intermediate,Beginner,Intermediate,4,Full Stack Developer
+STU0367,CSE,3,6.16,"SK097, SK069, SK077, SK145, SK063",1,No,Web Development,ROLE003,Intermediate,Beginner,Intermediate,2,Cyber Security Analyst
+STU0368,EEE,4,6.29,"SK185, SK241, SK182, SK150, SK153",7,Yes,Cyber Security,ROLE009,Beginner,Beginner,Fluent,3,Data Scientist
+STU0369,CSE,4,7.89,"SK275, SK156, SK126, SK151, SK172",5,Yes,Mobile,ROLE024,Intermediate,Advanced,Basic,6,Full Stack Developer
+STU0370,Mechanical,2,8.52,"SK017, SK011, SK031, SK175, SK084",5,Yes,Web Development,ROLE013,Advanced,Intermediate,Intermediate,2,Cloud Engineer
+STU0371,Mechanical,4,8.68,"SK173, SK015, SK195, SK208, SK223",3,Yes,Cloud,ROLE054,Beginner,Advanced,Intermediate,5,Cloud Engineer
+STU0372,Mechanical,1,8.04,"SK166, SK137, SK203, SK034, SK224",8,Yes,DevOps,ROLE060,Advanced,Beginner,Basic,6,Full Stack Developer
+STU0373,CSE,4,7.6,"SK121, SK047, SK115, SK096, SK062",0,No,DevOps,ROLE035,Beginner,Beginner,Basic,3,Cloud Engineer
+STU0374,CSE,2,8.63,"SK276, SK133, SK161, SK044, SK011",6,No,Web Development,ROLE045,Intermediate,Intermediate,Intermediate,5,Data Scientist
+STU0375,CSE,3,9.21,"SK270, SK020, SK018, SK171, SK122",6,Yes,Data Science,ROLE032,Advanced,Beginner,Intermediate,5,Cloud Engineer
+STU0376,ECE,4,9.4,"SK122, SK105, SK122, SK238, SK106",3,Yes,Data Science,ROLE054,Intermediate,Beginner,Intermediate,3,Software Engineer
+STU0377,Civil,2,6.58,"SK208, SK204, SK231, SK081, SK115",0,Yes,Mobile,ROLE002,Advanced,Advanced,Basic,2,Cyber Security Analyst
+STU0378,Civil,2,9.54,"SK222, SK070, SK204, SK011, SK256",8,No,Cyber Security,ROLE058,Intermediate,Intermediate,Fluent,1,AI Engineer
+STU0379,Mechanical,2,7.96,"SK122, SK025, SK031, SK194, SK098",8,No,Web Development,ROLE033,Beginner,Beginner,Basic,4,Data Scientist
+STU0380,IT,1,6.89,"SK062, SK263, SK026, SK161, SK061",7,No,Mobile,ROLE050,Beginner,Advanced,Basic,1,Full Stack Developer
+STU0381,ECE,3,7.51,"SK205, SK199, SK238, SK028, SK087",5,Yes,Cyber Security,ROLE026,Intermediate,Intermediate,Fluent,5,Cloud Engineer
+STU0382,CSE,1,7.6,"SK014, SK141, SK068, SK042, SK014",0,Yes,AI,ROLE038,Beginner,Intermediate,Basic,3,Data Scientist
+STU0383,CSE,2,7.73,"SK032, SK173, SK198, SK191, SK185",1,Yes,Data Science,ROLE015,Advanced,Advanced,Intermediate,1,Cloud Engineer
+STU0384,Civil,1,7.12,"SK244, SK026, SK231, SK171, SK141",5,No,Mobile,ROLE051,Advanced,Beginner,Basic,1,Data Scientist
+STU0385,Civil,4,9.71,"SK124, SK073, SK221, SK205, SK186",0,Yes,AI,ROLE007,Intermediate,Advanced,Intermediate,1,Cloud Engineer
+STU0386,CSE,4,7.77,"SK108, SK053, SK176, SK224, SK019",0,Yes,DevOps,ROLE034,Intermediate,Intermediate,Intermediate,2,Cyber Security Analyst
+STU0387,Mechanical,4,8.34,"SK100, SK166, SK250, SK044, SK229",5,Yes,AI,ROLE023,Beginner,Beginner,Basic,1,Data Scientist
+STU0388,Civil,1,6.69,"SK017, SK152, SK172, SK204, SK254",1,Yes,Data Science,ROLE036,Beginner,Advanced,Fluent,1,Cloud Engineer
+STU0389,CSE,4,9.57,"SK125, SK202, SK171, SK224, SK193",7,Yes,DevOps,ROLE005,Advanced,Beginner,Fluent,6,Data Scientist
+STU0390,Mechanical,3,9.46,"SK020, SK191, SK130, SK191, SK257",4,Yes,Data Science,ROLE013,Beginner,Beginner,Fluent,5,Data Scientist
+STU0391,CSE,2,8.53,"SK116, SK209, SK091, SK247, SK221",3,Yes,Data Science,ROLE031,Advanced,Beginner,Intermediate,5,Full Stack Developer
+STU0392,Civil,4,7.77,"SK210, SK244, SK151, SK031, SK087",2,No,Web Development,ROLE014,Beginner,Intermediate,Fluent,5,Full Stack Developer
+STU0393,Civil,4,7.62,"SK043, SK261, SK150, SK012, SK036",1,No,AI,ROLE047,Beginner,Advanced,Fluent,1,Cloud Engineer
+STU0394,CSE,1,8.28,"SK172, SK080, SK237, SK157, SK032",2,No,Mobile,ROLE005,Intermediate,Intermediate,Basic,6,Cyber Security Analyst
+STU0395,Civil,2,6.72,"SK273, SK035, SK062, SK232, SK129",2,Yes,DevOps,ROLE008,Beginner,Intermediate,Intermediate,4,Cloud Engineer
+STU0396,IT,3,9.54,"SK060, SK060, SK036, SK092, SK192",5,Yes,Cyber Security,ROLE024,Advanced,Advanced,Intermediate,6,Cloud Engineer
+STU0397,EEE,3,7.02,"SK187, SK002, SK001, SK175, SK177",5,Yes,DevOps,ROLE034,Advanced,Advanced,Fluent,3,Cloud Engineer
+STU0398,IT,2,8.4,"SK106, SK225, SK110, SK090, SK119",2,No,Cloud,ROLE021,Beginner,Beginner,Intermediate,6,Cyber Security Analyst
+STU0399,CSE,2,7.19,"SK064, SK109, SK249, SK071, SK124",7,Yes,Data Science,ROLE041,Advanced,Advanced,Intermediate,6,Data Scientist
+STU0400,IT,3,8.27,"SK269, SK202, SK128, SK189, SK002",8,No,DevOps,ROLE050,Beginner,Intermediate,Fluent,6,Data Scientist
+STU0401,Mechanical,4,6.07,"SK107, SK115, SK047, SK221, SK067",0,No,Cloud,ROLE009,Intermediate,Beginner,Fluent,1,Software Engineer
+STU0402,EEE,3,7.21,"SK191, SK077, SK250, SK057, SK236",6,No,Web Development,ROLE051,Advanced,Intermediate,Basic,2,Data Scientist
+STU0403,CSE,3,8.82,"SK120, SK155, SK192, SK211, SK259",1,No,DevOps,ROLE055,Intermediate,Beginner,Basic,6,Data Scientist
+STU0404,IT,2,9.07,"SK229, SK013, SK183, SK097, SK249",7,Yes,Data Science,ROLE017,Beginner,Advanced,Intermediate,1,AI Engineer
+STU0405,IT,1,9.71,"SK019, SK103, SK264, SK060, SK099",5,No,Cloud,ROLE024,Intermediate,Intermediate,Fluent,3,Cyber Security Analyst
+STU0406,ECE,2,7.73,"SK196, SK153, SK164, SK259, SK067",8,No,Cloud,ROLE003,Advanced,Advanced,Intermediate,4,Cyber Security Analyst
+STU0407,ECE,3,8.81,"SK252, SK211, SK147, SK019, SK038",1,No,Mobile,ROLE050,Beginner,Intermediate,Basic,3,Software Engineer
+STU0408,EEE,4,9.16,"SK235, SK076, SK043, SK179, SK181",4,No,AI,ROLE007,Advanced,Beginner,Basic,2,Full Stack Developer
+STU0409,EEE,1,7.56,"SK260, SK234, SK197, SK056, SK007",3,No,Web Development,ROLE034,Beginner,Beginner,Fluent,3,AI Engineer
+STU0410,Mechanical,3,6.76,"SK268, SK188, SK072, SK188, SK151",4,No,Data Science,ROLE027,Intermediate,Advanced,Fluent,3,AI Engineer
+STU0411,EEE,1,7.74,"SK168, SK021, SK180, SK097, SK248",8,No,AI,ROLE053,Beginner,Intermediate,Basic,5,AI Engineer
+STU0412,IT,4,8.65,"SK248, SK102, SK187, SK204, SK258",5,No,Data Science,ROLE023,Beginner,Beginner,Intermediate,5,Cloud Engineer
+STU0413,CSE,4,6.57,"SK128, SK018, SK061, SK216, SK106",0,Yes,Cyber Security,ROLE007,Intermediate,Beginner,Basic,2,Data Scientist
+STU0414,ECE,4,8.41,"SK089, SK188, SK191, SK011, SK123",8,No,Web Development,ROLE029,Advanced,Intermediate,Intermediate,4,AI Engineer
+STU0415,Mechanical,1,6.69,"SK021, SK223, SK093, SK069, SK076",4,No,Data Science,ROLE049,Beginner,Beginner,Intermediate,4,Cloud Engineer
+STU0416,CSE,2,7.9,"SK033, SK020, SK158, SK017, SK189",3,No,Cloud,ROLE037,Beginner,Intermediate,Fluent,2,AI Engineer
+STU0417,ECE,1,7.47,"SK234, SK124, SK066, SK096, SK125",0,Yes,Web Development,ROLE007,Intermediate,Intermediate,Basic,3,Software Engineer
+STU0418,ECE,2,6.23,"SK144, SK093, SK127, SK087, SK249",3,No,Cyber Security,ROLE024,Advanced,Advanced,Basic,2,AI Engineer
+STU0419,Civil,1,8.11,"SK245, SK224, SK078, SK139, SK083",0,Yes,Mobile,ROLE046,Advanced,Advanced,Fluent,6,Software Engineer
+STU0420,IT,1,9.53,"SK038, SK113, SK015, SK026, SK052",1,Yes,Web Development,ROLE010,Advanced,Advanced,Fluent,2,AI Engineer
+STU0421,EEE,3,6.18,"SK099, SK072, SK020, SK246, SK050",7,Yes,DevOps,ROLE050,Intermediate,Intermediate,Intermediate,6,AI Engineer
+STU0422,EEE,1,7.97,"SK048, SK183, SK240, SK270, SK198",5,No,Mobile,ROLE034,Beginner,Intermediate,Intermediate,5,Full Stack Developer
+STU0423,ECE,4,9.54,"SK230, SK182, SK088, SK279, SK165",3,Yes,Data Science,ROLE008,Advanced,Advanced,Intermediate,2,Software Engineer
+STU0424,CSE,4,7.04,"SK219, SK141, SK123, SK250, SK273",4,Yes,AI,ROLE056,Beginner,Advanced,Fluent,3,AI Engineer
+STU0425,Civil,1,6.5,"SK140, SK258, SK230, SK123, SK171",6,No,Data Science,ROLE006,Advanced,Advanced,Basic,2,Full Stack Developer
+STU0426,Civil,3,6.05,"SK064, SK109, SK224, SK123, SK146",3,Yes,AI,ROLE019,Beginner,Advanced,Intermediate,5,Data Scientist
+STU0427,CSE,2,8.37,"SK027, SK149, SK226, SK076, SK258",1,No,DevOps,ROLE008,Advanced,Beginner,Basic,1,Software Engineer
+STU0428,ECE,3,9.54,"SK142, SK044, SK267, SK047, SK066",5,Yes,Data Science,ROLE026,Advanced,Advanced,Fluent,5,Full Stack Developer
+STU0429,Civil,3,9.4,"SK142, SK059, SK036, SK192, SK171",5,Yes,Mobile,ROLE008,Advanced,Intermediate,Fluent,5,Cyber Security Analyst
+STU0430,ECE,1,8.66,"SK081, SK027, SK062, SK183, SK236",7,Yes,DevOps,ROLE051,Advanced,Intermediate,Fluent,4,Cloud Engineer
+STU0431,IT,1,9.11,"SK188, SK070, SK135, SK029, SK010",6,No,Cyber Security,ROLE027,Beginner,Intermediate,Fluent,1,Cloud Engineer
+STU0432,CSE,4,6.09,"SK205, SK222, SK025, SK014, SK127",1,Yes,Mobile,ROLE036,Intermediate,Intermediate,Intermediate,2,Full Stack Developer
+STU0433,EEE,1,6.33,"SK236, SK030, SK142, SK107, SK263",1,Yes,Data Science,ROLE006,Intermediate,Advanced,Fluent,3,Cloud Engineer
+STU0434,Mechanical,1,6.28,"SK088, SK120, SK096, SK228, SK260",5,No,AI,ROLE034,Advanced,Beginner,Intermediate,5,AI Engineer
+STU0435,IT,1,6.61,"SK047, SK001, SK195, SK164, SK177",4,No,DevOps,ROLE023,Beginner,Beginner,Basic,3,Full Stack Developer
+STU0436,EEE,1,8.13,"SK198, SK139, SK259, SK014, SK008",4,No,Cloud,ROLE028,Intermediate,Intermediate,Basic,4,Cyber Security Analyst
+STU0437,EEE,2,6.72,"SK091, SK197, SK046, SK042, SK098",0,No,Web Development,ROLE040,Advanced,Beginner,Basic,5,Cyber Security Analyst
+STU0438,IT,3,8.87,"SK167, SK242, SK117, SK215, SK144",1,Yes,DevOps,ROLE034,Intermediate,Beginner,Basic,1,Full Stack Developer
+STU0439,Mechanical,2,6.15,"SK071, SK124, SK040, SK230, SK199",6,No,Cyber Security,ROLE006,Advanced,Intermediate,Fluent,3,Data Scientist
+STU0440,Civil,4,6.27,"SK064, SK034, SK243, SK160, SK220",7,Yes,AI,ROLE018,Beginner,Advanced,Fluent,5,Software Engineer
+STU0441,EEE,1,7.17,"SK081, SK229, SK139, SK092, SK023",5,No,Cloud,ROLE022,Advanced,Advanced,Intermediate,2,AI Engineer
+STU0442,Civil,3,8.42,"SK064, SK159, SK253, SK257, SK037",7,No,Mobile,ROLE041,Advanced,Beginner,Basic,6,AI Engineer
+STU0443,IT,1,8.74,"SK078, SK109, SK088, SK219, SK021",6,Yes,Mobile,ROLE013,Advanced,Beginner,Fluent,5,Cyber Security Analyst
+STU0444,ECE,4,6.83,"SK148, SK054, SK161, SK128, SK093",0,Yes,Data Science,ROLE057,Advanced,Beginner,Fluent,4,Full Stack Developer
+STU0445,IT,4,7.39,"SK263, SK086, SK252, SK278, SK226",6,No,AI,ROLE039,Beginner,Beginner,Fluent,2,Cyber Security Analyst
+STU0446,IT,1,9.26,"SK028, SK231, SK202, SK128, SK043",3,No,Cloud,ROLE002,Intermediate,Intermediate,Basic,3,Data Scientist
+STU0447,Civil,2,7.06,"SK030, SK011, SK090, SK039, SK124",4,Yes,Mobile,ROLE053,Intermediate,Advanced,Basic,2,Full Stack Developer
+STU0448,EEE,2,7.1,"SK054, SK096, SK151, SK063, SK025",5,No,Cloud,ROLE035,Intermediate,Advanced,Fluent,1,AI Engineer
+STU0449,IT,3,9.12,"SK015, SK260, SK253, SK068, SK033",2,No,Cyber Security,ROLE047,Beginner,Advanced,Fluent,3,Cyber Security Analyst
+STU0450,ECE,4,8.43,"SK230, SK151, SK040, SK245, SK269",5,Yes,DevOps,ROLE042,Advanced,Intermediate,Intermediate,5,Cyber Security Analyst
+STU0451,EEE,3,7.71,"SK052, SK058, SK231, SK089, SK189",7,No,AI,ROLE047,Intermediate,Beginner,Intermediate,1,Cyber Security Analyst
+STU0452,ECE,2,9.72,"SK067, SK142, SK120, SK136, SK154",2,Yes,Cyber Security,ROLE007,Beginner,Beginner,Basic,3,Software Engineer
+STU0453,Mechanical,3,8.91,"SK259, SK139, SK085, SK066, SK063",3,No,AI,ROLE011,Advanced,Beginner,Basic,2,Cyber Security Analyst
+STU0454,EEE,1,6.32,"SK038, SK268, SK159, SK167, SK179",0,Yes,AI,ROLE012,Intermediate,Advanced,Fluent,2,AI Engineer
+STU0455,Civil,1,7.01,"SK133, SK124, SK046, SK255, SK266",6,Yes,AI,ROLE041,Intermediate,Advanced,Intermediate,1,Data Scientist
+STU0456,Mechanical,3,6.19,"SK217, SK165, SK183, SK166, SK197",0,Yes,Web Development,ROLE021,Beginner,Advanced,Fluent,4,Software Engineer
+STU0457,CSE,2,9.75,"SK008, SK111, SK007, SK067, SK195",7,Yes,Web Development,ROLE054,Intermediate,Intermediate,Intermediate,1,Full Stack Developer
+STU0458,ECE,1,8.25,"SK048, SK116, SK267, SK146, SK040",6,No,Cloud,ROLE051,Intermediate,Beginner,Fluent,1,Cyber Security Analyst
+STU0459,ECE,3,6.35,"SK004, SK194, SK036, SK241, SK084",7,Yes,Data Science,ROLE008,Advanced,Intermediate,Basic,3,AI Engineer
+STU0460,CSE,2,8.14,"SK146, SK006, SK202, SK069, SK228",7,No,AI,ROLE007,Intermediate,Advanced,Fluent,5,Full Stack Developer
+STU0461,CSE,1,6.19,"SK028, SK245, SK224, SK080, SK265",8,No,DevOps,ROLE046,Intermediate,Beginner,Basic,6,Software Engineer
+STU0462,CSE,1,9.06,"SK087, SK149, SK067, SK199, SK064",1,Yes,Web Development,ROLE017,Advanced,Advanced,Fluent,4,Data Scientist
+STU0463,CSE,1,6.36,"SK135, SK206, SK244, SK258, SK102",0,No,Cyber Security,ROLE059,Advanced,Beginner,Intermediate,6,Data Scientist
+STU0464,EEE,2,6.47,"SK017, SK241, SK145, SK175, SK041",7,Yes,DevOps,ROLE019,Advanced,Advanced,Fluent,1,Full Stack Developer
+STU0465,Civil,4,9.2,"SK276, SK009, SK091, SK075, SK113",6,Yes,Mobile,ROLE055,Beginner,Intermediate,Intermediate,1,Cyber Security Analyst
+STU0466,EEE,4,7.99,"SK044, SK231, SK090, SK033, SK263",6,No,Cloud,ROLE035,Intermediate,Beginner,Intermediate,5,Cloud Engineer
+STU0467,ECE,3,7.63,"SK226, SK072, SK061, SK260, SK272",3,No,DevOps,ROLE045,Advanced,Advanced,Basic,4,Full Stack Developer
+STU0468,Mechanical,3,9.11,"SK049, SK272, SK119, SK114, SK161",3,No,Data Science,ROLE046,Beginner,Intermediate,Fluent,2,Cloud Engineer
+STU0469,ECE,2,8.16,"SK233, SK091, SK034, SK185, SK186",3,No,Mobile,ROLE046,Advanced,Intermediate,Fluent,2,Software Engineer
+STU0470,ECE,3,6.58,"SK226, SK110, SK201, SK143, SK173",6,No,Cloud,ROLE041,Beginner,Advanced,Basic,2,AI Engineer
+STU0471,EEE,2,6.52,"SK124, SK260, SK202, SK219, SK229",4,Yes,Cyber Security,ROLE017,Advanced,Intermediate,Basic,5,Data Scientist
+STU0472,Mechanical,2,7.0,"SK099, SK279, SK049, SK056, SK021",1,Yes,Data Science,ROLE043,Advanced,Intermediate,Basic,3,Data Scientist
+STU0473,Mechanical,3,8.91,"SK047, SK195, SK137, SK053, SK035",5,No,Cyber Security,ROLE031,Intermediate,Advanced,Fluent,3,Software Engineer
+STU0474,Civil,1,8.69,"SK032, SK115, SK065, SK015, SK216",2,Yes,DevOps,ROLE038,Intermediate,Intermediate,Intermediate,2,Software Engineer
+STU0475,IT,2,9.24,"SK240, SK241, SK088, SK273, SK255",0,Yes,DevOps,ROLE008,Intermediate,Advanced,Intermediate,1,Cyber Security Analyst
+STU0476,IT,2,6.77,"SK267, SK255, SK277, SK188, SK060",6,No,Data Science,ROLE059,Beginner,Beginner,Intermediate,5,Cloud Engineer
+STU0477,CSE,1,9.67,"SK229, SK229, SK219, SK022, SK142",3,Yes,Cyber Security,ROLE007,Intermediate,Beginner,Fluent,1,Data Scientist
+STU0478,EEE,3,6.48,"SK011, SK250, SK142, SK046, SK265",6,No,Web Development,ROLE013,Intermediate,Intermediate,Intermediate,5,Full Stack Developer
+STU0479,IT,3,6.18,"SK117, SK198, SK207, SK009, SK038",7,No,AI,ROLE022,Advanced,Advanced,Fluent,6,Cloud Engineer
+STU0480,EEE,1,8.35,"SK221, SK065, SK259, SK034, SK015",1,No,Cloud,ROLE004,Intermediate,Advanced,Basic,5,Cloud Engineer
+STU0481,ECE,2,9.17,"SK248, SK071, SK070, SK117, SK176",8,Yes,Web Development,ROLE037,Beginner,Advanced,Fluent,3,Cloud Engineer
+STU0482,Mechanical,1,8.01,"SK045, SK181, SK214, SK179, SK051",5,No,Cloud,ROLE016,Intermediate,Advanced,Fluent,4,Cyber Security Analyst
+STU0483,IT,3,7.56,"SK206, SK103, SK100, SK261, SK026",0,Yes,Data Science,ROLE052,Advanced,Beginner,Intermediate,1,Cyber Security Analyst
+STU0484,Civil,1,7.08,"SK126, SK123, SK212, SK027, SK110",8,No,Cloud,ROLE044,Beginner,Beginner,Basic,5,Data Scientist
+STU0485,Civil,2,9.29,"SK061, SK199, SK142, SK027, SK262",2,Yes,Mobile,ROLE039,Advanced,Beginner,Intermediate,6,Data Scientist
+STU0486,CSE,1,6.33,"SK223, SK049, SK149, SK144, SK211",8,No,DevOps,ROLE005,Beginner,Intermediate,Basic,5,Full Stack Developer
+STU0487,Civil,2,6.47,"SK267, SK241, SK021, SK103, SK242",6,No,Cyber Security,ROLE042,Intermediate,Advanced,Basic,6,Data Scientist
+STU0488,CSE,3,9.01,"SK035, SK239, SK197, SK220, SK220",6,Yes,Cloud,ROLE016,Advanced,Beginner,Basic,4,Data Scientist
+STU0489,CSE,3,8.28,"SK083, SK194, SK006, SK199, SK134",7,Yes,Data Science,ROLE039,Intermediate,Beginner,Basic,6,Data Scientist
+STU0490,Mechanical,4,7.2,"SK108, SK154, SK124, SK239, SK126",4,Yes,Web Development,ROLE009,Advanced,Beginner,Fluent,1,Cyber Security Analyst
+STU0491,Mechanical,1,8.6,"SK094, SK003, SK105, SK238, SK109",1,Yes,Mobile,ROLE027,Beginner,Intermediate,Basic,3,Software Engineer
+STU0492,Mechanical,2,8.26,"SK175, SK241, SK178, SK047, SK171",2,Yes,AI,ROLE028,Advanced,Intermediate,Basic,5,Full Stack Developer
+STU0493,Mechanical,1,8.84,"SK123, SK200, SK183, SK084, SK068",7,No,Web Development,ROLE041,Beginner,Intermediate,Intermediate,6,Cyber Security Analyst
+STU0494,Civil,1,7.75,"SK096, SK175, SK005, SK233, SK224",8,No,Cyber Security,ROLE019,Advanced,Beginner,Fluent,3,Cyber Security Analyst
+STU0495,Mechanical,1,8.11,"SK080, SK146, SK148, SK127, SK262",1,Yes,Data Science,ROLE027,Intermediate,Intermediate,Basic,1,Software Engineer
+STU0496,EEE,1,7.8,"SK116, SK222, SK272, SK206, SK067",1,No,Data Science,ROLE001,Advanced,Advanced,Intermediate,1,Data Scientist
+STU0497,Civil,3,7.96,"SK065, SK101, SK271, SK200, SK175",8,Yes,Mobile,ROLE057,Advanced,Advanced,Fluent,3,Full Stack Developer
+STU0498,Civil,2,7.88,"SK071, SK012, SK210, SK190, SK143",0,No,Web Development,ROLE017,Advanced,Beginner,Basic,5,AI Engineer
+STU0499,EEE,2,6.08,"SK064, SK137, SK069, SK231, SK027",5,Yes,Cloud,ROLE011,Beginner,Advanced,Fluent,6,Full Stack Developer
+STU0500,Mechanical,4,6.87,"SK157, SK067, SK043, SK061, SK006",3,No,Web Development,ROLE004,Advanced,Advanced,Fluent,2,Data Scientist
+STU0501,Mechanical,1,9.69,"SK123, SK050, SK170, SK210, SK094",3,Yes,Data Science,ROLE011,Advanced,Intermediate,Intermediate,4,AI Engineer
+STU0502,CSE,4,7.35,"SK233, SK242, SK053, SK026, SK117",8,No,Cloud,ROLE029,Intermediate,Beginner,Intermediate,1,Software Engineer
+STU0503,Civil,3,7.88,"SK094, SK218, SK074, SK057, SK142",0,Yes,Cloud,ROLE009,Beginner,Advanced,Fluent,6,Data Scientist
+STU0504,IT,3,8.92,"SK121, SK009, SK119, SK182, SK008",2,No,Cyber Security,ROLE052,Beginner,Beginner,Fluent,2,Full Stack Developer
+STU0505,Civil,4,6.58,"SK193, SK031, SK275, SK161, SK256",7,No,Data Science,ROLE021,Advanced,Beginner,Fluent,5,AI Engineer
+STU0506,CSE,1,8.38,"SK160, SK163, SK257, SK213, SK246",1,No,AI,ROLE019,Intermediate,Advanced,Fluent,1,Software Engineer
+STU0507,Mechanical,4,7.25,"SK155, SK061, SK128, SK201, SK109",6,Yes,AI,ROLE015,Intermediate,Advanced,Intermediate,1,Cloud Engineer
+STU0508,CSE,2,9.3,"SK183, SK025, SK008, SK081, SK174",0,No,Data Science,ROLE030,Advanced,Advanced,Basic,1,Data Scientist
+STU0509,Mechanical,1,6.34,"SK041, SK218, SK158, SK074, SK167",4,No,AI,ROLE003,Advanced,Beginner,Fluent,4,Data Scientist
+STU0510,Mechanical,1,6.31,"SK017, SK222, SK084, SK199, SK247",7,Yes,AI,ROLE001,Beginner,Beginner,Intermediate,1,Cyber Security Analyst
+STU0511,CSE,1,8.11,"SK227, SK155, SK250, SK043, SK086",2,Yes,AI,ROLE007,Intermediate,Intermediate,Intermediate,1,Software Engineer
+STU0512,CSE,2,6.23,"SK216, SK021, SK131, SK028, SK018",3,Yes,DevOps,ROLE010,Advanced,Intermediate,Basic,3,Full Stack Developer
+STU0513,IT,1,8.36,"SK195, SK071, SK183, SK069, SK116",0,No,Mobile,ROLE039,Intermediate,Advanced,Fluent,1,AI Engineer
+STU0514,ECE,1,8.24,"SK086, SK040, SK240, SK139, SK026",2,No,DevOps,ROLE005,Intermediate,Advanced,Intermediate,3,Data Scientist
+STU0515,EEE,1,8.04,"SK096, SK063, SK242, SK211, SK087",2,No,Web Development,ROLE011,Beginner,Advanced,Intermediate,2,Cloud Engineer
+STU0516,Civil,1,8.37,"SK197, SK024, SK024, SK170, SK008",0,Yes,Cyber Security,ROLE003,Advanced,Intermediate,Intermediate,4,Cyber Security Analyst
+STU0517,IT,4,7.74,"SK082, SK011, SK069, SK177, SK208",0,Yes,Mobile,ROLE031,Beginner,Beginner,Basic,4,AI Engineer
+STU0518,ECE,2,7.44,"SK044, SK139, SK033, SK196, SK120",4,Yes,Cyber Security,ROLE019,Intermediate,Beginner,Basic,4,Full Stack Developer
+STU0519,EEE,2,9.41,"SK026, SK242, SK247, SK061, SK083",5,Yes,Cyber Security,ROLE011,Advanced,Intermediate,Intermediate,4,AI Engineer
+STU0520,CSE,1,7.25,"SK075, SK191, SK088, SK179, SK156",3,No,Mobile,ROLE020,Beginner,Beginner,Basic,1,Software Engineer
+STU0521,ECE,2,8.64,"SK067, SK161, SK256, SK068, SK198",1,Yes,Cyber Security,ROLE043,Intermediate,Beginner,Intermediate,5,Full Stack Developer
+STU0522,Civil,2,7.83,"SK058, SK028, SK080, SK177, SK031",2,Yes,Web Development,ROLE054,Advanced,Beginner,Intermediate,6,Data Scientist
+STU0523,EEE,1,8.48,"SK212, SK123, SK060, SK038, SK225",4,Yes,DevOps,ROLE032,Beginner,Intermediate,Intermediate,3,Cyber Security Analyst
+STU0524,CSE,2,8.82,"SK211, SK018, SK209, SK234, SK125",0,No,Cyber Security,ROLE005,Beginner,Advanced,Fluent,2,AI Engineer
+STU0525,Civil,3,7.63,"SK077, SK250, SK262, SK028, SK272",1,No,Mobile,ROLE039,Intermediate,Advanced,Fluent,2,Data Scientist
+STU0526,ECE,4,9.69,"SK171, SK246, SK147, SK120, SK225",6,No,Cyber Security,ROLE010,Advanced,Beginner,Basic,3,AI Engineer
+STU0527,Mechanical,3,7.71,"SK086, SK051, SK191, SK219, SK223",1,No,Data Science,ROLE036,Intermediate,Intermediate,Fluent,5,Full Stack Developer
+STU0528,Civil,1,8.07,"SK094, SK271, SK023, SK258, SK246",0,No,Mobile,ROLE038,Advanced,Beginner,Fluent,3,Software Engineer
+STU0529,Civil,1,8.0,"SK140, SK119, SK094, SK225, SK123",0,No,Cloud,ROLE005,Intermediate,Beginner,Fluent,4,Cyber Security Analyst
+STU0530,ECE,4,6.8,"SK212, SK257, SK247, SK192, SK277",1,No,DevOps,ROLE051,Beginner,Intermediate,Intermediate,1,Full Stack Developer
+STU0531,Civil,1,6.68,"SK100, SK210, SK155, SK259, SK110",1,No,Mobile,ROLE044,Beginner,Beginner,Fluent,1,Data Scientist
+STU0532,EEE,3,7.68,"SK186, SK020, SK159, SK085, SK047",8,No,Cloud,ROLE020,Beginner,Beginner,Intermediate,4,Cloud Engineer
+STU0533,Mechanical,4,9.75,"SK180, SK131, SK110, SK099, SK054",3,Yes,Mobile,ROLE027,Beginner,Intermediate,Intermediate,5,Cyber Security Analyst
+STU0534,Civil,3,6.39,"SK178, SK145, SK122, SK225, SK006",8,No,Data Science,ROLE057,Intermediate,Beginner,Basic,6,Full Stack Developer
+STU0535,ECE,2,7.81,"SK206, SK034, SK271, SK067, SK238",3,No,AI,ROLE044,Advanced,Intermediate,Intermediate,3,Cloud Engineer
+STU0536,CSE,2,7.83,"SK200, SK174, SK252, SK196, SK155",6,Yes,Data Science,ROLE015,Intermediate,Intermediate,Basic,4,Software Engineer
+STU0537,Mechanical,2,9.41,"SK076, SK087, SK197, SK094, SK005",0,Yes,AI,ROLE011,Intermediate,Advanced,Fluent,2,Data Scientist
+STU0538,CSE,1,6.08,"SK106, SK107, SK059, SK219, SK247",3,Yes,Cyber Security,ROLE022,Intermediate,Beginner,Intermediate,1,Cyber Security Analyst
+STU0539,EEE,4,8.94,"SK065, SK184, SK192, SK123, SK083",2,No,Cloud,ROLE028,Beginner,Beginner,Basic,2,Full Stack Developer
+STU0540,ECE,1,7.89,"SK079, SK106, SK001, SK035, SK155",7,No,DevOps,ROLE057,Advanced,Beginner,Intermediate,4,Data Scientist
+STU0541,Mechanical,4,7.44,"SK238, SK039, SK079, SK100, SK042",0,Yes,Mobile,ROLE050,Intermediate,Intermediate,Fluent,2,Data Scientist
+STU0542,IT,3,6.94,"SK096, SK276, SK248, SK275, SK045",0,Yes,DevOps,ROLE015,Advanced,Advanced,Intermediate,6,Full Stack Developer
+STU0543,CSE,2,8.38,"SK183, SK268, SK067, SK244, SK277",0,Yes,AI,ROLE060,Advanced,Beginner,Basic,4,Software Engineer
+STU0544,Civil,4,6.66,"SK175, SK092, SK105, SK150, SK019",3,No,DevOps,ROLE051,Advanced,Intermediate,Intermediate,4,Cloud Engineer
+STU0545,IT,4,7.43,"SK092, SK192, SK244, SK051, SK127",1,Yes,Mobile,ROLE035,Beginner,Beginner,Fluent,6,Data Scientist
+STU0546,EEE,4,6.7,"SK010, SK001, SK014, SK192, SK248",8,No,AI,ROLE002,Advanced,Beginner,Basic,4,Cloud Engineer
+STU0547,CSE,3,6.89,"SK066, SK069, SK137, SK260, SK191",2,No,Cyber Security,ROLE014,Intermediate,Advanced,Basic,3,Data Scientist
+STU0548,ECE,3,6.33,"SK160, SK202, SK222, SK161, SK129",0,Yes,Data Science,ROLE052,Advanced,Beginner,Fluent,2,Cloud Engineer
+STU0549,EEE,1,7.54,"SK237, SK194, SK040, SK022, SK109",3,Yes,Web Development,ROLE031,Advanced,Intermediate,Fluent,5,Cyber Security Analyst
+STU0550,IT,4,7.11,"SK049, SK224, SK073, SK003, SK266",8,Yes,Cloud,ROLE008,Intermediate,Intermediate,Fluent,1,Full Stack Developer
+STU0551,IT,4,6.35,"SK216, SK152, SK253, SK132, SK041",5,No,Cloud,ROLE042,Intermediate,Intermediate,Intermediate,3,AI Engineer
+STU0552,IT,1,8.21,"SK218, SK010, SK091, SK097, SK037",8,No,Data Science,ROLE033,Intermediate,Beginner,Fluent,5,Full Stack Developer
+STU0553,CSE,2,9.05,"SK158, SK155, SK116, SK129, SK015",5,Yes,Cyber Security,ROLE030,Beginner,Intermediate,Basic,4,Software Engineer
+STU0554,EEE,2,8.78,"SK252, SK109, SK128, SK141, SK166",5,No,DevOps,ROLE045,Advanced,Beginner,Fluent,4,Full Stack Developer
+STU0555,IT,3,7.2,"SK020, SK074, SK267, SK111, SK022",1,No,AI,ROLE044,Intermediate,Advanced,Basic,6,Full Stack Developer
+STU0556,IT,2,8.77,"SK256, SK087, SK056, SK246, SK083",0,Yes,Cloud,ROLE009,Advanced,Beginner,Basic,2,Cyber Security Analyst
+STU0557,Mechanical,3,7.82,"SK129, SK100, SK164, SK226, SK049",0,Yes,AI,ROLE025,Beginner,Intermediate,Intermediate,3,Software Engineer
+STU0558,CSE,1,7.08,"SK269, SK004, SK051, SK009, SK145",5,Yes,Mobile,ROLE040,Intermediate,Advanced,Basic,5,AI Engineer
+STU0559,CSE,2,7.84,"SK077, SK036, SK233, SK012, SK015",1,No,DevOps,ROLE051,Beginner,Intermediate,Basic,6,Cyber Security Analyst
+STU0560,Mechanical,3,9.7,"SK136, SK008, SK004, SK275, SK041",8,Yes,Cloud,ROLE030,Advanced,Beginner,Intermediate,5,Full Stack Developer
+STU0561,ECE,1,7.41,"SK229, SK080, SK129, SK193, SK048",6,No,Data Science,ROLE057,Intermediate,Advanced,Fluent,1,Full Stack Developer
+STU0562,Mechanical,2,9.58,"SK189, SK237, SK007, SK229, SK233",3,No,DevOps,ROLE020,Advanced,Intermediate,Fluent,2,Software Engineer
+STU0563,Civil,4,9.62,"SK240, SK016, SK108, SK006, SK091",5,No,AI,ROLE012,Intermediate,Intermediate,Basic,5,Software Engineer
+STU0564,ECE,3,8.06,"SK247, SK106, SK170, SK250, SK089",6,Yes,Cyber Security,ROLE040,Beginner,Advanced,Intermediate,3,Data Scientist
+STU0565,ECE,1,6.65,"SK024, SK124, SK197, SK050, SK192",5,No,Cyber Security,ROLE026,Advanced,Advanced,Basic,1,Software Engineer
+STU0566,EEE,2,7.87,"SK099, SK150, SK101, SK078, SK230",5,No,Web Development,ROLE036,Advanced,Intermediate,Fluent,2,Cloud Engineer
+STU0567,CSE,2,7.17,"SK004, SK254, SK150, SK037, SK009",2,Yes,Data Science,ROLE041,Advanced,Beginner,Intermediate,5,Full Stack Developer
+STU0568,ECE,2,6.88,"SK276, SK199, SK228, SK154, SK016",8,No,Cyber Security,ROLE015,Intermediate,Intermediate,Fluent,5,Full Stack Developer
+STU0569,Civil,2,8.11,"SK154, SK132, SK241, SK146, SK275",1,Yes,DevOps,ROLE019,Beginner,Advanced,Fluent,3,Cloud Engineer
+STU0570,EEE,1,8.25,"SK279, SK212, SK252, SK126, SK124",6,Yes,Cloud,ROLE037,Intermediate,Beginner,Fluent,1,Cloud Engineer
+STU0571,EEE,3,9.49,"SK237, SK251, SK033, SK101, SK180",8,Yes,Data Science,ROLE014,Advanced,Intermediate,Basic,3,Data Scientist
+STU0572,Civil,2,6.4,"SK141, SK085, SK070, SK141, SK183",5,Yes,Cloud,ROLE042,Beginner,Advanced,Intermediate,3,Cyber Security Analyst
+STU0573,IT,4,6.12,"SK105, SK088, SK259, SK138, SK132",0,Yes,Cloud,ROLE003,Beginner,Beginner,Fluent,6,Cyber Security Analyst
+STU0574,IT,3,7.88,"SK041, SK003, SK159, SK013, SK030",0,Yes,Cyber Security,ROLE009,Beginner,Advanced,Fluent,1,Data Scientist
+STU0575,EEE,3,8.87,"SK235, SK196, SK062, SK117, SK011",0,No,DevOps,ROLE016,Advanced,Advanced,Fluent,2,Cyber Security Analyst
+STU0576,Civil,4,6.4,"SK110, SK014, SK024, SK157, SK092",5,Yes,Mobile,ROLE032,Advanced,Beginner,Basic,3,Cyber Security Analyst
+STU0577,Mechanical,4,9.79,"SK254, SK077, SK134, SK066, SK032",0,Yes,Mobile,ROLE022,Beginner,Beginner,Basic,5,Data Scientist
+STU0578,ECE,1,7.17,"SK037, SK217, SK215, SK153, SK220",6,No,Data Science,ROLE039,Beginner,Advanced,Intermediate,1,Full Stack Developer
+STU0579,CSE,4,8.88,"SK199, SK225, SK266, SK174, SK177",6,No,AI,ROLE024,Beginner,Beginner,Basic,4,Full Stack Developer
+STU0580,IT,3,9.43,"SK179, SK191, SK009, SK044, SK135",4,Yes,Cyber Security,ROLE019,Advanced,Beginner,Fluent,3,Cyber Security Analyst
+STU0581,CSE,1,8.63,"SK189, SK264, SK027, SK085, SK112",3,No,Cloud,ROLE019,Intermediate,Intermediate,Fluent,1,Cyber Security Analyst
+STU0582,ECE,2,6.61,"SK018, SK240, SK075, SK071, SK113",7,Yes,DevOps,ROLE036,Beginner,Advanced,Fluent,2,Cloud Engineer
+STU0583,CSE,3,9.11,"SK263, SK064, SK195, SK211, SK229",4,Yes,Web Development,ROLE005,Intermediate,Intermediate,Basic,5,Data Scientist
+STU0584,IT,3,8.5,"SK205, SK210, SK269, SK089, SK106",1,No,Cyber Security,ROLE058,Advanced,Beginner,Intermediate,1,Cloud Engineer
+STU0585,Civil,2,6.8,"SK071, SK212, SK250, SK023, SK078",8,No,DevOps,ROLE037,Intermediate,Intermediate,Fluent,1,Software Engineer
+STU0586,EEE,2,7.27,"SK192, SK271, SK002, SK157, SK190",2,Yes,Cloud,ROLE014,Advanced,Advanced,Fluent,4,Cyber Security Analyst
+STU0587,IT,1,6.17,"SK142, SK274, SK052, SK189, SK052",0,No,Web Development,ROLE004,Beginner,Advanced,Basic,6,Software Engineer
+STU0588,IT,1,6.1,"SK268, SK220, SK004, SK279, SK169",6,Yes,Data Science,ROLE003,Beginner,Beginner,Fluent,4,Data Scientist
+STU0589,CSE,4,8.45,"SK123, SK003, SK108, SK271, SK079",4,Yes,Data Science,ROLE014,Intermediate,Beginner,Basic,1,Software Engineer
+STU0590,EEE,2,9.15,"SK066, SK196, SK238, SK271, SK170",2,No,Cloud,ROLE047,Beginner,Intermediate,Intermediate,1,Full Stack Developer
+STU0591,ECE,1,6.4,"SK063, SK203, SK213, SK274, SK273",0,Yes,Cloud,ROLE046,Beginner,Advanced,Basic,5,Cyber Security Analyst
+STU0592,Mechanical,2,8.31,"SK172, SK026, SK259, SK244, SK054",3,Yes,Mobile,ROLE032,Beginner,Intermediate,Fluent,6,Software Engineer
+STU0593,IT,4,6.97,"SK111, SK250, SK026, SK093, SK226",7,Yes,Cyber Security,ROLE032,Beginner,Intermediate,Basic,3,Software Engineer
+STU0594,IT,3,8.81,"SK048, SK096, SK061, SK208, SK113",7,No,Data Science,ROLE054,Beginner,Beginner,Basic,1,Data Scientist
+STU0595,EEE,2,7.21,"SK200, SK264, SK235, SK110, SK184",6,Yes,DevOps,ROLE007,Advanced,Beginner,Basic,5,Cyber Security Analyst
+STU0596,Mechanical,3,7.21,"SK211, SK069, SK137, SK272, SK170",8,No,Cyber Security,ROLE036,Intermediate,Advanced,Fluent,1,Software Engineer
+STU0597,EEE,3,9.6,"SK023, SK221, SK267, SK115, SK277",7,Yes,DevOps,ROLE044,Beginner,Intermediate,Intermediate,5,Full Stack Developer
+STU0598,CSE,4,6.54,"SK149, SK168, SK200, SK241, SK246",7,No,DevOps,ROLE046,Beginner,Advanced,Intermediate,1,Full Stack Developer
+STU0599,ECE,4,6.72,"SK055, SK152, SK160, SK004, SK188",3,No,Web Development,ROLE038,Intermediate,Advanced,Intermediate,3,Software Engineer
+STU0600,CSE,1,6.43,"SK031, SK113, SK032, SK043, SK246",7,No,Data Science,ROLE041,Beginner,Advanced,Basic,5,Data Scientist
+STU0601,EEE,2,6.22,"SK233, SK103, SK265, SK140, SK129",2,Yes,AI,ROLE038,Advanced,Intermediate,Intermediate,1,Cyber Security Analyst
+STU0602,ECE,4,7.66,"SK052, SK169, SK221, SK234, SK146",0,Yes,AI,ROLE032,Beginner,Beginner,Basic,5,AI Engineer
+STU0603,ECE,1,7.44,"SK089, SK125, SK131, SK277, SK114",1,Yes,Web Development,ROLE054,Intermediate,Advanced,Fluent,5,Full Stack Developer
+STU0604,CSE,3,9.77,"SK015, SK096, SK211, SK015, SK203",2,No,Data Science,ROLE048,Intermediate,Intermediate,Basic,4,Cloud Engineer
+STU0605,Mechanical,2,8.45,"SK201, SK195, SK091, SK211, SK254",6,Yes,Data Science,ROLE041,Advanced,Beginner,Basic,6,Full Stack Developer
+STU0606,IT,4,7.1,"SK213, SK264, SK272, SK060, SK179",2,Yes,DevOps,ROLE023,Intermediate,Beginner,Intermediate,3,Data Scientist
+STU0607,ECE,4,6.78,"SK146, SK109, SK231, SK188, SK149",6,Yes,AI,ROLE009,Intermediate,Beginner,Fluent,3,Data Scientist
+STU0608,CSE,1,7.82,"SK053, SK016, SK012, SK070, SK186",4,Yes,AI,ROLE009,Advanced,Advanced,Basic,2,Full Stack Developer
+STU0609,Mechanical,1,7.87,"SK109, SK157, SK265, SK053, SK233",0,Yes,Data Science,ROLE047,Intermediate,Intermediate,Fluent,6,Full Stack Developer
+STU0610,EEE,3,8.25,"SK035, SK248, SK074, SK008, SK028",2,No,Cloud,ROLE006,Intermediate,Beginner,Intermediate,5,Cyber Security Analyst
+STU0611,IT,2,8.66,"SK004, SK044, SK069, SK008, SK081",3,Yes,AI,ROLE056,Beginner,Intermediate,Intermediate,6,Full Stack Developer
+STU0612,IT,1,9.61,"SK110, SK134, SK187, SK090, SK140",5,No,Web Development,ROLE053,Intermediate,Intermediate,Basic,5,Full Stack Developer
+STU0613,CSE,4,8.5,"SK238, SK198, SK065, SK148, SK182",0,Yes,Cloud,ROLE030,Advanced,Beginner,Basic,5,Cyber Security Analyst
+STU0614,Civil,4,8.98,"SK222, SK200, SK166, SK088, SK096",2,Yes,AI,ROLE002,Advanced,Advanced,Intermediate,3,Software Engineer
+STU0615,Civil,3,6.95,"SK032, SK116, SK236, SK229, SK201",7,No,Cyber Security,ROLE059,Intermediate,Beginner,Basic,3,Cloud Engineer
+STU0616,IT,4,6.42,"SK080, SK027, SK164, SK105, SK254",4,Yes,Cyber Security,ROLE049,Intermediate,Beginner,Intermediate,4,Software Engineer
+STU0617,EEE,2,8.9,"SK173, SK174, SK093, SK005, SK087",8,No,Cyber Security,ROLE019,Beginner,Beginner,Intermediate,6,Cyber Security Analyst
+STU0618,Civil,1,9.48,"SK050, SK025, SK042, SK154, SK208",7,Yes,Cloud,ROLE023,Beginner,Advanced,Basic,4,Data Scientist
+STU0619,EEE,1,6.39,"SK270, SK172, SK195, SK256, SK212",4,Yes,AI,ROLE060,Beginner,Intermediate,Intermediate,6,Cloud Engineer
+STU0620,Mechanical,1,9.1,"SK071, SK068, SK132, SK087, SK075",0,Yes,Mobile,ROLE004,Beginner,Intermediate,Intermediate,6,Cloud Engineer
+STU0621,Civil,4,9.37,"SK146, SK121, SK265, SK108, SK005",0,No,Cyber Security,ROLE002,Beginner,Advanced,Intermediate,4,Full Stack Developer
+STU0622,Civil,2,8.74,"SK202, SK036, SK022, SK009, SK126",8,No,DevOps,ROLE043,Intermediate,Intermediate,Intermediate,1,Cloud Engineer
+STU0623,IT,3,7.11,"SK236, SK272, SK139, SK112, SK015",2,No,Cloud,ROLE060,Intermediate,Advanced,Intermediate,2,AI Engineer
+STU0624,Civil,3,8.51,"SK044, SK137, SK076, SK158, SK231",3,No,DevOps,ROLE026,Advanced,Intermediate,Basic,1,Cloud Engineer
+STU0625,Civil,4,7.61,"SK179, SK154, SK124, SK040, SK203",0,Yes,Cyber Security,ROLE018,Beginner,Intermediate,Basic,1,Cyber Security Analyst
+STU0626,IT,4,9.76,"SK191, SK192, SK148, SK186, SK091",4,No,Data Science,ROLE015,Advanced,Advanced,Basic,3,Data Scientist
+STU0627,Mechanical,2,9.53,"SK121, SK243, SK208, SK091, SK184",6,No,Mobile,ROLE031,Advanced,Intermediate,Intermediate,5,Cloud Engineer
+STU0628,CSE,2,8.73,"SK199, SK113, SK065, SK098, SK055",6,No,Cloud,ROLE060,Beginner,Intermediate,Fluent,1,Full Stack Developer
+STU0629,ECE,1,8.14,"SK262, SK083, SK170, SK120, SK131",1,No,Cyber Security,ROLE011,Intermediate,Beginner,Fluent,2,Data Scientist
+STU0630,EEE,2,9.1,"SK113, SK103, SK168, SK096, SK054",8,No,Cyber Security,ROLE054,Advanced,Beginner,Intermediate,5,AI Engineer
+STU0631,EEE,2,7.91,"SK101, SK172, SK242, SK116, SK090",5,No,Data Science,ROLE013,Beginner,Advanced,Intermediate,5,Cloud Engineer
+STU0632,Mechanical,1,6.2,"SK103, SK055, SK275, SK242, SK276",7,Yes,Cloud,ROLE014,Beginner,Beginner,Fluent,6,Cloud Engineer
+STU0633,Civil,3,7.13,"SK272, SK173, SK157, SK172, SK143",0,No,AI,ROLE042,Beginner,Advanced,Basic,5,Data Scientist
+STU0634,CSE,3,8.05,"SK228, SK064, SK166, SK012, SK062",3,No,AI,ROLE028,Beginner,Beginner,Basic,1,Data Scientist
+STU0635,CSE,2,7.46,"SK236, SK239, SK244, SK042, SK101",0,Yes,Data Science,ROLE028,Advanced,Intermediate,Intermediate,2,AI Engineer
+STU0636,Mechanical,3,6.48,"SK114, SK128, SK211, SK078, SK192",1,No,DevOps,ROLE003,Advanced,Beginner,Basic,2,Full Stack Developer
+STU0637,Civil,2,7.31,"SK175, SK205, SK255, SK036, SK226",6,No,Cloud,ROLE015,Intermediate,Advanced,Basic,1,Cloud Engineer
+STU0638,Civil,3,8.34,"SK272, SK188, SK169, SK184, SK079",6,Yes,Web Development,ROLE003,Advanced,Advanced,Intermediate,4,Data Scientist
+STU0639,CSE,2,9.58,"SK205, SK025, SK215, SK177, SK084",5,No,DevOps,ROLE060,Advanced,Beginner,Basic,1,AI Engineer
+STU0640,IT,3,9.23,"SK013, SK150, SK278, SK128, SK032",2,No,Web Development,ROLE012,Advanced,Advanced,Fluent,5,Cloud Engineer
+STU0641,ECE,3,6.41,"SK117, SK260, SK270, SK007, SK019",0,No,Mobile,ROLE023,Advanced,Beginner,Intermediate,1,Cloud Engineer
+STU0642,ECE,2,7.09,"SK216, SK067, SK100, SK042, SK242",4,No,Data Science,ROLE051,Advanced,Advanced,Basic,1,Full Stack Developer
+STU0643,IT,4,8.8,"SK086, SK009, SK029, SK237, SK039",1,Yes,Cloud,ROLE057,Beginner,Beginner,Intermediate,4,Software Engineer
+STU0644,IT,3,8.58,"SK178, SK135, SK239, SK122, SK248",8,No,DevOps,ROLE031,Advanced,Advanced,Intermediate,1,Data Scientist
+STU0645,Civil,4,7.68,"SK225, SK258, SK028, SK073, SK072",1,No,DevOps,ROLE036,Intermediate,Beginner,Intermediate,3,Full Stack Developer
+STU0646,Mechanical,2,6.12,"SK229, SK238, SK068, SK039, SK116",2,No,Mobile,ROLE003,Beginner,Intermediate,Intermediate,5,Cloud Engineer
+STU0647,Mechanical,3,9.52,"SK155, SK235, SK277, SK196, SK276",0,Yes,AI,ROLE026,Intermediate,Beginner,Basic,6,Full Stack Developer
+STU0648,Mechanical,4,7.24,"SK246, SK183, SK012, SK211, SK061",1,No,Mobile,ROLE004,Advanced,Intermediate,Fluent,2,Cyber Security Analyst
+STU0649,ECE,1,8.5,"SK266, SK063, SK224, SK158, SK236",6,No,DevOps,ROLE039,Advanced,Beginner,Basic,4,Software Engineer
+STU0650,ECE,1,9.47,"SK050, SK140, SK237, SK180, SK214",4,No,Cloud,ROLE008,Advanced,Beginner,Basic,6,AI Engineer
+STU0651,IT,1,7.99,"SK015, SK113, SK072, SK091, SK207",6,Yes,Data Science,ROLE045,Intermediate,Advanced,Fluent,3,Full Stack Developer
+STU0652,EEE,3,8.64,"SK210, SK184, SK044, SK097, SK198",7,No,DevOps,ROLE053,Beginner,Intermediate,Basic,3,Cloud Engineer
+STU0653,EEE,2,8.5,"SK269, SK182, SK222, SK229, SK015",6,No,Cloud,ROLE035,Beginner,Advanced,Fluent,1,Full Stack Developer
+STU0654,EEE,1,7.15,"SK044, SK220, SK087, SK251, SK073",1,No,AI,ROLE050,Intermediate,Intermediate,Intermediate,5,AI Engineer
+STU0655,ECE,4,7.33,"SK056, SK250, SK183, SK202, SK269",4,Yes,Cyber Security,ROLE023,Intermediate,Beginner,Fluent,3,AI Engineer
+STU0656,IT,4,9.8,"SK060, SK155, SK045, SK254, SK127",2,Yes,AI,ROLE026,Intermediate,Beginner,Intermediate,1,Software Engineer
+STU0657,Mechanical,2,7.52,"SK184, SK144, SK166, SK176, SK203",3,No,Web Development,ROLE039,Intermediate,Beginner,Intermediate,1,Software Engineer
+STU0658,IT,3,9.57,"SK009, SK087, SK060, SK244, SK197",6,Yes,Mobile,ROLE029,Advanced,Advanced,Basic,6,Full Stack Developer
+STU0659,Mechanical,4,7.15,"SK045, SK224, SK040, SK216, SK153",5,Yes,Web Development,ROLE023,Intermediate,Intermediate,Fluent,2,Cloud Engineer
+STU0660,IT,2,6.34,"SK008, SK199, SK222, SK201, SK060",5,Yes,Data Science,ROLE054,Beginner,Advanced,Intermediate,4,AI Engineer
+STU0661,Mechanical,1,6.09,"SK135, SK011, SK095, SK184, SK099",0,No,Cloud,ROLE048,Beginner,Intermediate,Basic,5,Cyber Security Analyst
+STU0662,Civil,2,6.05,"SK179, SK225, SK038, SK248, SK027",0,Yes,DevOps,ROLE022,Advanced,Intermediate,Basic,5,Data Scientist
+STU0663,EEE,1,8.7,"SK032, SK071, SK254, SK189, SK104",4,No,Mobile,ROLE010,Intermediate,Beginner,Fluent,1,Cloud Engineer
+STU0664,Civil,1,8.91,"SK127, SK162, SK072, SK240, SK147",3,No,Mobile,ROLE003,Intermediate,Advanced,Basic,3,AI Engineer
+STU0665,ECE,3,6.58,"SK020, SK275, SK002, SK015, SK200",1,No,Cyber Security,ROLE022,Beginner,Advanced,Basic,4,Full Stack Developer
+STU0666,EEE,1,9.41,"SK114, SK005, SK279, SK010, SK019",0,No,Web Development,ROLE011,Advanced,Beginner,Fluent,6,Software Engineer
+STU0667,CSE,2,8.95,"SK191, SK136, SK110, SK089, SK247",6,No,Web Development,ROLE031,Intermediate,Intermediate,Intermediate,3,AI Engineer
+STU0668,EEE,2,6.32,"SK217, SK156, SK271, SK263, SK040",1,Yes,DevOps,ROLE056,Intermediate,Intermediate,Intermediate,5,AI Engineer
+STU0669,Civil,1,7.26,"SK249, SK165, SK148, SK221, SK119",1,Yes,AI,ROLE021,Advanced,Beginner,Intermediate,1,AI Engineer
+STU0670,Mechanical,1,9.55,"SK196, SK048, SK142, SK028, SK038",3,No,Data Science,ROLE030,Advanced,Advanced,Fluent,3,Software Engineer
+STU0671,Civil,4,7.11,"SK129, SK056, SK016, SK187, SK232",0,No,Web Development,ROLE060,Beginner,Beginner,Basic,5,Cloud Engineer
+STU0672,EEE,1,7.42,"SK026, SK030, SK256, SK144, SK235",1,No,DevOps,ROLE021,Intermediate,Intermediate,Basic,2,Software Engineer
+STU0673,CSE,3,7.17,"SK166, SK246, SK245, SK243, SK093",7,Yes,DevOps,ROLE032,Beginner,Intermediate,Fluent,5,AI Engineer
+STU0674,Civil,3,8.16,"SK127, SK045, SK085, SK277, SK204",0,No,DevOps,ROLE059,Beginner,Beginner,Basic,5,Full Stack Developer
+STU0675,CSE,4,6.5,"SK265, SK259, SK162, SK277, SK242",7,Yes,Cloud,ROLE002,Intermediate,Advanced,Basic,5,Data Scientist
+STU0676,IT,1,7.45,"SK192, SK118, SK060, SK129, SK002",5,Yes,Mobile,ROLE020,Intermediate,Beginner,Intermediate,2,AI Engineer
+STU0677,EEE,3,8.3,"SK271, SK097, SK017, SK224, SK022",5,No,Cloud,ROLE008,Advanced,Intermediate,Intermediate,1,AI Engineer
+STU0678,EEE,4,7.76,"SK197, SK229, SK150, SK092, SK039",8,No,AI,ROLE008,Beginner,Intermediate,Fluent,5,Full Stack Developer
+STU0679,ECE,2,7.97,"SK209, SK059, SK148, SK253, SK113",5,Yes,DevOps,ROLE059,Beginner,Advanced,Intermediate,6,Software Engineer
+STU0680,EEE,4,8.93,"SK232, SK087, SK260, SK156, SK029",8,Yes,DevOps,ROLE002,Beginner,Intermediate,Intermediate,4,AI Engineer
+STU0681,ECE,4,9.24,"SK218, SK098, SK279, SK025, SK107",2,No,AI,ROLE008,Advanced,Beginner,Fluent,1,Full Stack Developer
+STU0682,Civil,2,9.31,"SK103, SK179, SK235, SK226, SK200",7,No,DevOps,ROLE029,Beginner,Advanced,Intermediate,3,Software Engineer
+STU0683,EEE,3,9.37,"SK043, SK211, SK087, SK123, SK233",8,Yes,Cloud,ROLE057,Advanced,Intermediate,Fluent,4,AI Engineer
+STU0684,CSE,1,8.93,"SK005, SK230, SK095, SK124, SK266",3,No,DevOps,ROLE043,Beginner,Advanced,Intermediate,6,Cyber Security Analyst
+STU0685,Mechanical,3,9.1,"SK254, SK107, SK214, SK045, SK252",3,Yes,Data Science,ROLE015,Advanced,Advanced,Intermediate,2,Cyber Security Analyst
+STU0686,IT,4,8.11,"SK133, SK242, SK216, SK168, SK221",8,No,Cloud,ROLE033,Intermediate,Intermediate,Intermediate,2,Full Stack Developer
+STU0687,CSE,4,9.37,"SK016, SK149, SK200, SK094, SK071",3,No,Mobile,ROLE046,Intermediate,Beginner,Fluent,1,AI Engineer
+STU0688,CSE,1,6.47,"SK191, SK156, SK143, SK231, SK196",5,No,DevOps,ROLE028,Advanced,Beginner,Fluent,5,Cloud Engineer
+STU0689,ECE,1,8.49,"SK190, SK274, SK099, SK254, SK248",4,Yes,DevOps,ROLE057,Beginner,Intermediate,Basic,6,Full Stack Developer
+STU0690,Civil,1,9.14,"SK083, SK245, SK127, SK229, SK162",5,Yes,Data Science,ROLE050,Intermediate,Intermediate,Fluent,1,Data Scientist
+STU0691,Mechanical,1,9.19,"SK275, SK192, SK069, SK091, SK263",3,Yes,Cyber Security,ROLE050,Beginner,Intermediate,Fluent,6,Cloud Engineer
+STU0692,IT,1,7.94,"SK119, SK061, SK277, SK142, SK114",2,No,Cyber Security,ROLE051,Advanced,Beginner,Basic,2,AI Engineer
+STU0693,EEE,3,8.11,"SK068, SK104, SK110, SK249, SK012",4,No,DevOps,ROLE041,Advanced,Intermediate,Fluent,1,Cloud Engineer
+STU0694,EEE,2,7.53,"SK068, SK252, SK276, SK096, SK154",2,Yes,Cloud,ROLE043,Intermediate,Intermediate,Intermediate,5,Cloud Engineer
+STU0695,IT,1,6.79,"SK222, SK164, SK175, SK022, SK072",3,Yes,Mobile,ROLE047,Advanced,Intermediate,Intermediate,2,Data Scientist
+STU0696,ECE,3,8.87,"SK083, SK030, SK265, SK200, SK278",6,Yes,Cloud,ROLE012,Advanced,Advanced,Intermediate,1,Full Stack Developer
+STU0697,Civil,4,7.59,"SK090, SK168, SK278, SK146, SK020",0,Yes,Data Science,ROLE011,Intermediate,Beginner,Fluent,6,AI Engineer
+STU0698,ECE,1,7.36,"SK065, SK231, SK199, SK128, SK045",1,Yes,AI,ROLE030,Beginner,Advanced,Intermediate,1,Cyber Security Analyst
+STU0699,Mechanical,1,9.76,"SK172, SK141, SK205, SK021, SK151",1,No,AI,ROLE045,Beginner,Advanced,Intermediate,4,AI Engineer
+STU0700,CSE,3,9.57,"SK192, SK172, SK041, SK123, SK022",6,Yes,Mobile,ROLE058,Beginner,Advanced,Fluent,6,Data Scientist
+STU0701,IT,3,9.03,"SK087, SK081, SK151, SK267, SK239",3,Yes,Cloud,ROLE003,Advanced,Advanced,Intermediate,2,Full Stack Developer
+STU0702,EEE,3,6.97,"SK004, SK253, SK111, SK044, SK154",0,No,DevOps,ROLE022,Advanced,Advanced,Basic,6,Cloud Engineer
+STU0703,Civil,3,8.52,"SK192, SK144, SK266, SK012, SK042",7,No,AI,ROLE007,Advanced,Advanced,Basic,1,AI Engineer
+STU0704,CSE,3,7.95,"SK029, SK246, SK174, SK004, SK133",2,No,DevOps,ROLE054,Advanced,Beginner,Fluent,1,Cloud Engineer
+STU0705,CSE,4,7.73,"SK166, SK203, SK009, SK230, SK187",8,No,Cloud,ROLE060,Advanced,Advanced,Basic,5,Cyber Security Analyst
+STU0706,Mechanical,3,6.01,"SK224, SK212, SK121, SK131, SK279",6,Yes,AI,ROLE001,Advanced,Advanced,Intermediate,6,Software Engineer
+STU0707,Civil,3,8.05,"SK198, SK182, SK223, SK058, SK091",1,Yes,DevOps,ROLE060,Intermediate,Beginner,Basic,2,AI Engineer
+STU0708,IT,1,9.36,"SK273, SK106, SK048, SK098, SK081",0,No,DevOps,ROLE057,Intermediate,Advanced,Basic,1,Full Stack Developer
+STU0709,Mechanical,1,6.77,"SK164, SK141, SK263, SK160, SK276",1,Yes,Mobile,ROLE052,Intermediate,Intermediate,Intermediate,4,Cloud Engineer
+STU0710,IT,4,9.71,"SK159, SK278, SK252, SK214, SK131",1,Yes,Cyber Security,ROLE056,Advanced,Beginner,Basic,6,AI Engineer
+STU0711,ECE,3,7.09,"SK094, SK201, SK048, SK106, SK120",5,Yes,Mobile,ROLE001,Intermediate,Advanced,Fluent,2,Cyber Security Analyst
+STU0712,Mechanical,1,9.62,"SK163, SK182, SK074, SK032, SK258",1,No,Mobile,ROLE054,Beginner,Advanced,Fluent,6,Cloud Engineer
+STU0713,IT,3,9.39,"SK225, SK197, SK078, SK087, SK182",2,Yes,Mobile,ROLE003,Intermediate,Beginner,Intermediate,6,Cloud Engineer
+STU0714,CSE,1,7.08,"SK209, SK015, SK013, SK129, SK171",4,No,Cyber Security,ROLE052,Advanced,Intermediate,Intermediate,5,Software Engineer
+STU0715,EEE,4,8.43,"SK142, SK146, SK209, SK244, SK170",2,Yes,Mobile,ROLE037,Beginner,Beginner,Basic,4,AI Engineer
+STU0716,Mechanical,2,8.11,"SK008, SK103, SK037, SK201, SK118",0,No,Web Development,ROLE015,Intermediate,Advanced,Intermediate,2,Software Engineer
+STU0717,Civil,4,7.29,"SK157, SK047, SK216, SK060, SK188",4,Yes,Mobile,ROLE015,Beginner,Beginner,Fluent,4,Software Engineer
+STU0718,CSE,4,6.23,"SK182, SK210, SK262, SK208, SK163",1,Yes,Cloud,ROLE036,Beginner,Beginner,Basic,1,Cloud Engineer
+STU0719,Civil,1,7.19,"SK186, SK080, SK234, SK190, SK271",8,No,Mobile,ROLE049,Beginner,Intermediate,Basic,1,Cloud Engineer
+STU0720,ECE,2,9.51,"SK256, SK125, SK010, SK144, SK075",2,Yes,DevOps,ROLE017,Intermediate,Intermediate,Intermediate,6,Cloud Engineer
+STU0721,ECE,2,9.33,"SK176, SK102, SK097, SK068, SK192",5,Yes,AI,ROLE013,Beginner,Beginner,Fluent,4,Cyber Security Analyst
+STU0722,EEE,3,7.22,"SK108, SK227, SK015, SK135, SK227",6,Yes,Web Development,ROLE002,Beginner,Intermediate,Basic,3,Data Scientist
+STU0723,CSE,3,7.92,"SK105, SK111, SK230, SK213, SK014",1,No,Web Development,ROLE050,Beginner,Beginner,Basic,5,Cyber Security Analyst
+STU0724,CSE,1,7.07,"SK109, SK109, SK045, SK050, SK160",0,No,Mobile,ROLE041,Intermediate,Advanced,Basic,4,Software Engineer
+STU0725,CSE,2,9.64,"SK089, SK202, SK036, SK239, SK247",4,Yes,DevOps,ROLE034,Intermediate,Intermediate,Basic,5,Cyber Security Analyst
+STU0726,IT,4,6.82,"SK124, SK250, SK162, SK196, SK039",1,No,Data Science,ROLE019,Advanced,Advanced,Intermediate,4,Full Stack Developer
+STU0727,IT,2,9.75,"SK153, SK180, SK120, SK025, SK183",2,Yes,Mobile,ROLE055,Intermediate,Intermediate,Intermediate,2,Cyber Security Analyst
+STU0728,Mechanical,2,7.16,"SK249, SK182, SK052, SK081, SK014",7,Yes,Cloud,ROLE042,Advanced,Beginner,Intermediate,2,Full Stack Developer
+STU0729,Mechanical,1,7.87,"SK257, SK048, SK020, SK100, SK187",7,No,Web Development,ROLE056,Beginner,Intermediate,Basic,3,Data Scientist
+STU0730,Civil,1,9.11,"SK152, SK026, SK094, SK150, SK081",6,Yes,Web Development,ROLE041,Advanced,Advanced,Basic,2,Cyber Security Analyst
+STU0731,EEE,4,6.19,"SK238, SK154, SK041, SK150, SK223",8,No,DevOps,ROLE054,Advanced,Intermediate,Intermediate,3,Full Stack Developer
+STU0732,IT,3,8.16,"SK087, SK149, SK073, SK105, SK114",6,No,Cyber Security,ROLE046,Advanced,Advanced,Intermediate,4,AI Engineer
+STU0733,Civil,4,9.18,"SK102, SK019, SK229, SK192, SK086",8,Yes,Mobile,ROLE043,Intermediate,Advanced,Intermediate,1,Full Stack Developer
+STU0734,Mechanical,3,9.13,"SK112, SK265, SK047, SK126, SK194",2,Yes,DevOps,ROLE039,Advanced,Beginner,Basic,2,Full Stack Developer
+STU0735,Mechanical,4,6.34,"SK116, SK043, SK261, SK214, SK137",6,Yes,Data Science,ROLE050,Advanced,Advanced,Intermediate,2,Cloud Engineer
+STU0736,CSE,2,7.78,"SK069, SK106, SK087, SK038, SK265",8,No,Web Development,ROLE046,Beginner,Intermediate,Fluent,4,Software Engineer
+STU0737,CSE,4,6.41,"SK255, SK171, SK245, SK258, SK259",3,Yes,Data Science,ROLE005,Beginner,Beginner,Basic,5,Cyber Security Analyst
+STU0738,Civil,1,6.81,"SK002, SK118, SK032, SK103, SK203",1,Yes,Cyber Security,ROLE011,Intermediate,Intermediate,Basic,1,Software Engineer
+STU0739,Mechanical,3,9.35,"SK156, SK071, SK227, SK117, SK131",1,Yes,AI,ROLE028,Intermediate,Beginner,Basic,4,Cloud Engineer
+STU0740,CSE,3,9.06,"SK052, SK233, SK244, SK094, SK101",8,Yes,DevOps,ROLE056,Advanced,Advanced,Fluent,5,Cyber Security Analyst
+STU0741,Mechanical,1,9.52,"SK047, SK032, SK028, SK126, SK202",7,Yes,Data Science,ROLE032,Beginner,Advanced,Intermediate,5,Cyber Security Analyst
+STU0742,EEE,1,9.63,"SK265, SK279, SK250, SK020, SK109",6,Yes,DevOps,ROLE012,Advanced,Beginner,Intermediate,5,Software Engineer
+STU0743,Civil,2,7.32,"SK066, SK038, SK266, SK077, SK269",4,Yes,DevOps,ROLE003,Beginner,Advanced,Basic,2,Cyber Security Analyst
+STU0744,IT,2,9.36,"SK236, SK270, SK105, SK039, SK010",7,Yes,DevOps,ROLE007,Advanced,Beginner,Basic,1,Cyber Security Analyst
+STU0745,Civil,2,7.07,"SK141, SK175, SK179, SK184, SK140",4,No,Cyber Security,ROLE059,Intermediate,Intermediate,Basic,4,Cloud Engineer
+STU0746,EEE,3,7.93,"SK074, SK175, SK216, SK029, SK274",6,Yes,DevOps,ROLE015,Beginner,Intermediate,Fluent,4,Software Engineer
+STU0747,ECE,2,8.79,"SK117, SK094, SK101, SK121, SK154",6,Yes,DevOps,ROLE050,Intermediate,Intermediate,Fluent,4,Cloud Engineer
+STU0748,ECE,4,8.8,"SK152, SK218, SK031, SK119, SK016",2,Yes,Data Science,ROLE060,Intermediate,Advanced,Fluent,6,Full Stack Developer
+STU0749,CSE,2,7.39,"SK225, SK050, SK085, SK162, SK162",1,Yes,Data Science,ROLE053,Beginner,Beginner,Intermediate,1,Software Engineer
+STU0750,Mechanical,1,7.24,"SK103, SK205, SK245, SK251, SK075",7,No,AI,ROLE031,Advanced,Intermediate,Basic,4,Software Engineer
+STU0751,EEE,2,9.74,"SK261, SK246, SK107, SK230, SK010",4,Yes,Web Development,ROLE021,Intermediate,Advanced,Intermediate,5,Cloud Engineer
+STU0752,IT,4,7.34,"SK081, SK229, SK179, SK076, SK128",2,No,Cyber Security,ROLE042,Beginner,Intermediate,Fluent,3,Full Stack Developer
+STU0753,EEE,2,8.83,"SK239, SK111, SK130, SK014, SK087",3,No,Data Science,ROLE032,Intermediate,Advanced,Fluent,1,Cloud Engineer
+STU0754,Mechanical,3,6.66,"SK055, SK152, SK139, SK230, SK222",6,Yes,Cyber Security,ROLE027,Advanced,Advanced,Basic,2,Cloud Engineer
+STU0755,ECE,3,6.47,"SK097, SK012, SK253, SK097, SK247",7,Yes,Cyber Security,ROLE031,Beginner,Beginner,Fluent,2,Full Stack Developer
+STU0756,EEE,3,6.56,"SK074, SK132, SK161, SK248, SK107",8,Yes,Web Development,ROLE012,Advanced,Intermediate,Intermediate,6,Software Engineer
+STU0757,CSE,4,9.42,"SK069, SK115, SK027, SK171, SK057",1,Yes,DevOps,ROLE006,Beginner,Advanced,Fluent,3,Software Engineer
+STU0758,Mechanical,2,7.86,"SK045, SK242, SK222, SK179, SK029",8,No,Cyber Security,ROLE013,Intermediate,Intermediate,Fluent,4,Cyber Security Analyst
+STU0759,ECE,1,9.4,"SK008, SK163, SK026, SK099, SK120",1,No,AI,ROLE017,Intermediate,Advanced,Fluent,1,Full Stack Developer
+STU0760,EEE,4,6.43,"SK068, SK142, SK249, SK117, SK243",4,Yes,Web Development,ROLE022,Advanced,Advanced,Basic,2,Software Engineer
+STU0761,Civil,4,7.81,"SK044, SK229, SK225, SK089, SK236",8,No,Cyber Security,ROLE010,Advanced,Advanced,Basic,5,Cloud Engineer
+STU0762,IT,2,7.86,"SK122, SK141, SK221, SK117, SK204",3,No,Cyber Security,ROLE050,Beginner,Beginner,Basic,6,Data Scientist
+STU0763,EEE,1,7.52,"SK244, SK135, SK141, SK176, SK026",2,Yes,Mobile,ROLE023,Advanced,Advanced,Intermediate,4,Software Engineer
+STU0764,Mechanical,1,7.52,"SK088, SK004, SK230, SK079, SK168",2,No,DevOps,ROLE043,Intermediate,Advanced,Fluent,5,Software Engineer
+STU0765,EEE,1,9.19,"SK262, SK091, SK016, SK144, SK152",3,Yes,AI,ROLE009,Intermediate,Advanced,Intermediate,4,AI Engineer
+STU0766,Mechanical,2,6.61,"SK249, SK245, SK254, SK072, SK011",5,No,Web Development,ROLE051,Intermediate,Intermediate,Fluent,3,AI Engineer
+STU0767,Mechanical,3,6.63,"SK258, SK154, SK169, SK198, SK186",8,Yes,Web Development,ROLE027,Advanced,Intermediate,Basic,2,Full Stack Developer
+STU0768,CSE,3,9.03,"SK207, SK148, SK019, SK201, SK115",5,No,DevOps,ROLE011,Advanced,Advanced,Fluent,3,Cloud Engineer
+STU0769,IT,2,9.68,"SK087, SK041, SK158, SK141, SK075",3,Yes,Web Development,ROLE016,Intermediate,Intermediate,Basic,1,Software Engineer
+STU0770,IT,3,6.11,"SK185, SK246, SK223, SK254, SK078",5,Yes,Cyber Security,ROLE059,Intermediate,Advanced,Basic,3,AI Engineer
+STU0771,Mechanical,3,9.15,"SK050, SK134, SK278, SK149, SK268",0,Yes,Web Development,ROLE058,Advanced,Beginner,Fluent,4,Cyber Security Analyst
+STU0772,EEE,4,8.36,"SK210, SK093, SK014, SK235, SK106",5,Yes,Data Science,ROLE059,Advanced,Intermediate,Fluent,2,AI Engineer
+STU0773,Mechanical,1,7.03,"SK215, SK279, SK071, SK064, SK146",1,Yes,Cloud,ROLE021,Advanced,Advanced,Intermediate,4,Cyber Security Analyst
+STU0774,CSE,1,8.06,"SK196, SK180, SK160, SK051, SK166",1,Yes,Cloud,ROLE034,Advanced,Intermediate,Basic,3,Data Scientist
+STU0775,Civil,3,6.28,"SK260, SK274, SK260, SK068, SK122",5,No,DevOps,ROLE013,Beginner,Intermediate,Intermediate,1,Cyber Security Analyst
+STU0776,EEE,4,9.72,"SK028, SK105, SK020, SK259, SK085",6,Yes,DevOps,ROLE044,Advanced,Advanced,Fluent,4,Data Scientist
+STU0777,EEE,3,6.02,"SK278, SK011, SK013, SK147, SK015",8,No,Web Development,ROLE006,Advanced,Intermediate,Basic,3,Full Stack Developer
+STU0778,EEE,1,7.04,"SK277, SK101, SK079, SK088, SK038",4,No,DevOps,ROLE031,Advanced,Beginner,Fluent,1,Software Engineer
+STU0779,Mechanical,3,8.47,"SK068, SK190, SK022, SK029, SK216",4,Yes,Cloud,ROLE050,Intermediate,Beginner,Fluent,2,Cloud Engineer
+STU0780,Civil,2,9.69,"SK062, SK001, SK264, SK229, SK173",7,Yes,Data Science,ROLE040,Intermediate,Intermediate,Intermediate,6,Cloud Engineer
+STU0781,EEE,2,7.66,"SK181, SK062, SK258, SK116, SK025",2,No,Mobile,ROLE039,Advanced,Beginner,Intermediate,3,Cyber Security Analyst
+STU0782,CSE,3,6.38,"SK103, SK032, SK263, SK024, SK155",6,Yes,AI,ROLE037,Intermediate,Intermediate,Fluent,4,Cloud Engineer
+STU0783,Mechanical,2,9.2,"SK105, SK235, SK272, SK090, SK224",1,No,DevOps,ROLE054,Advanced,Advanced,Basic,3,Cloud Engineer
+STU0784,Mechanical,4,7.81,"SK256, SK002, SK153, SK222, SK161",8,No,Mobile,ROLE057,Intermediate,Beginner,Basic,4,AI Engineer
+STU0785,Civil,2,6.01,"SK170, SK122, SK171, SK174, SK166",8,No,Mobile,ROLE011,Advanced,Beginner,Fluent,5,Software Engineer
+STU0786,IT,1,7.49,"SK014, SK266, SK254, SK235, SK213",1,No,Cloud,ROLE033,Intermediate,Intermediate,Basic,6,AI Engineer
+STU0787,Mechanical,2,6.95,"SK022, SK194, SK104, SK264, SK033",3,Yes,DevOps,ROLE021,Advanced,Intermediate,Basic,5,Data Scientist
+STU0788,IT,2,6.84,"SK228, SK166, SK146, SK006, SK103",6,No,Mobile,ROLE053,Intermediate,Advanced,Basic,4,Cyber Security Analyst
+STU0789,IT,3,7.35,"SK089, SK276, SK004, SK091, SK216",1,No,Data Science,ROLE013,Intermediate,Beginner,Fluent,4,AI Engineer
+STU0790,ECE,4,7.95,"SK178, SK216, SK223, SK257, SK123",0,Yes,Cyber Security,ROLE002,Intermediate,Beginner,Intermediate,3,Cloud Engineer
+STU0791,EEE,2,9.7,"SK081, SK125, SK118, SK084, SK091",5,Yes,Cloud,ROLE009,Intermediate,Advanced,Fluent,2,Cloud Engineer
+STU0792,EEE,4,9.15,"SK023, SK049, SK213, SK230, SK254",6,Yes,Mobile,ROLE032,Intermediate,Intermediate,Basic,1,Full Stack Developer
+STU0793,ECE,1,7.29,"SK192, SK146, SK026, SK119, SK233",6,No,Web Development,ROLE055,Intermediate,Advanced,Basic,3,Cyber Security Analyst
+STU0794,ECE,1,7.08,"SK181, SK016, SK014, SK273, SK004",6,No,AI,ROLE051,Intermediate,Advanced,Fluent,3,AI Engineer
+STU0795,Mechanical,1,8.26,"SK178, SK055, SK125, SK247, SK203",5,Yes,DevOps,ROLE056,Intermediate,Beginner,Intermediate,4,Software Engineer
+STU0796,EEE,3,8.03,"SK171, SK233, SK019, SK239, SK083",7,No,Mobile,ROLE006,Intermediate,Intermediate,Intermediate,4,Software Engineer
+STU0797,CSE,2,6.64,"SK017, SK006, SK002, SK273, SK214",3,No,Cloud,ROLE060,Advanced,Advanced,Fluent,3,AI Engineer
+STU0798,CSE,2,8.82,"SK264, SK274, SK183, SK194, SK181",5,No,DevOps,ROLE005,Intermediate,Beginner,Basic,6,Data Scientist
+STU0799,EEE,4,6.08,"SK126, SK255, SK192, SK076, SK085",3,No,Cyber Security,ROLE003,Advanced,Advanced,Fluent,3,Cloud Engineer
+STU0800,Mechanical,2,8.88,"SK086, SK247, SK067, SK199, SK192",4,No,Web Development,ROLE030,Intermediate,Intermediate,Basic,2,Cyber Security Analyst
+STU0801,EEE,1,8.27,"SK028, SK210, SK190, SK223, SK065",3,Yes,Mobile,ROLE041,Beginner,Intermediate,Fluent,5,AI Engineer
+STU0802,EEE,4,9.58,"SK075, SK199, SK045, SK128, SK201",3,Yes,Cloud,ROLE045,Beginner,Intermediate,Intermediate,3,Cyber Security Analyst
+STU0803,EEE,3,9.21,"SK203, SK236, SK138, SK176, SK162",5,No,Cyber Security,ROLE032,Advanced,Advanced,Basic,1,Cyber Security Analyst
+STU0804,EEE,2,9.13,"SK087, SK228, SK122, SK010, SK112",5,No,Mobile,ROLE054,Intermediate,Intermediate,Basic,3,Cloud Engineer
+STU0805,Mechanical,3,9.19,"SK141, SK143, SK173, SK063, SK081",3,No,AI,ROLE040,Advanced,Beginner,Fluent,5,Full Stack Developer
+STU0806,ECE,1,6.61,"SK238, SK248, SK037, SK012, SK097",8,No,Mobile,ROLE015,Beginner,Advanced,Fluent,1,Full Stack Developer
+STU0807,CSE,1,9.21,"SK045, SK251, SK195, SK177, SK212",6,No,Data Science,ROLE041,Beginner,Advanced,Intermediate,5,Full Stack Developer
+STU0808,Civil,3,9.8,"SK252, SK123, SK139, SK176, SK033",4,No,Cloud,ROLE040,Beginner,Beginner,Fluent,5,AI Engineer
+STU0809,ECE,1,6.49,"SK199, SK227, SK108, SK055, SK251",8,Yes,Cyber Security,ROLE059,Intermediate,Advanced,Basic,5,AI Engineer
+STU0810,CSE,1,7.27,"SK104, SK103, SK021, SK055, SK056",4,No,DevOps,ROLE049,Intermediate,Beginner,Intermediate,3,Data Scientist
+STU0811,IT,2,6.34,"SK104, SK186, SK184, SK118, SK048",5,No,Cyber Security,ROLE048,Advanced,Beginner,Intermediate,4,Full Stack Developer
+STU0812,Civil,4,8.27,"SK055, SK092, SK229, SK194, SK148",5,No,Cyber Security,ROLE026,Intermediate,Advanced,Intermediate,4,Data Scientist
+STU0813,EEE,4,9.28,"SK135, SK123, SK167, SK115, SK071",5,Yes,Web Development,ROLE019,Advanced,Advanced,Fluent,1,Data Scientist
+STU0814,Civil,4,7.03,"SK038, SK208, SK046, SK141, SK143",3,Yes,Web Development,ROLE012,Advanced,Intermediate,Fluent,1,Software Engineer
+STU0815,CSE,2,7.64,"SK277, SK099, SK018, SK001, SK052",0,No,Web Development,ROLE011,Advanced,Advanced,Intermediate,5,Cyber Security Analyst
+STU0816,EEE,4,9.16,"SK097, SK056, SK036, SK228, SK220",7,No,Cyber Security,ROLE048,Advanced,Advanced,Basic,2,Data Scientist
+STU0817,CSE,4,9.6,"SK219, SK132, SK067, SK251, SK145",7,Yes,Cloud,ROLE005,Advanced,Beginner,Basic,5,Data Scientist
+STU0818,IT,3,6.67,"SK247, SK080, SK094, SK170, SK214",5,Yes,Data Science,ROLE012,Intermediate,Advanced,Basic,6,Cyber Security Analyst
+STU0819,Civil,2,8.77,"SK101, SK192, SK189, SK034, SK240",8,Yes,DevOps,ROLE035,Beginner,Intermediate,Basic,4,Cloud Engineer
+STU0820,EEE,4,6.83,"SK202, SK204, SK027, SK189, SK110",5,No,Mobile,ROLE002,Intermediate,Beginner,Intermediate,1,AI Engineer
+STU0821,EEE,2,9.31,"SK262, SK204, SK013, SK138, SK143",4,Yes,Cyber Security,ROLE003,Beginner,Advanced,Basic,4,Data Scientist
+STU0822,Civil,4,7.77,"SK188, SK266, SK219, SK093, SK058",1,No,Cyber Security,ROLE034,Intermediate,Advanced,Basic,5,Data Scientist
+STU0823,ECE,1,6.39,"SK139, SK046, SK105, SK119, SK223",0,Yes,Cyber Security,ROLE041,Beginner,Intermediate,Intermediate,5,Full Stack Developer
+STU0824,EEE,3,9.1,"SK250, SK006, SK028, SK076, SK241",2,No,AI,ROLE003,Advanced,Intermediate,Basic,1,Cloud Engineer
+STU0825,Civil,2,8.32,"SK223, SK189, SK149, SK011, SK144",2,Yes,DevOps,ROLE007,Beginner,Advanced,Fluent,6,Software Engineer
+STU0826,ECE,2,8.36,"SK123, SK058, SK089, SK094, SK201",1,No,Mobile,ROLE021,Beginner,Intermediate,Basic,4,Full Stack Developer
+STU0827,EEE,1,8.3,"SK099, SK124, SK011, SK068, SK036",5,No,AI,ROLE026,Intermediate,Beginner,Basic,1,Full Stack Developer
+STU0828,CSE,3,6.3,"SK121, SK045, SK230, SK043, SK107",8,Yes,Cloud,ROLE004,Intermediate,Advanced,Fluent,6,Software Engineer
+STU0829,Civil,2,6.67,"SK041, SK061, SK200, SK012, SK065",8,Yes,Mobile,ROLE023,Intermediate,Beginner,Basic,2,AI Engineer
+STU0830,CSE,1,6.06,"SK069, SK018, SK047, SK017, SK087",6,Yes,Cloud,ROLE042,Intermediate,Intermediate,Intermediate,5,Cyber Security Analyst
+STU0831,Civil,4,7.12,"SK184, SK025, SK214, SK224, SK126",2,Yes,Web Development,ROLE008,Advanced,Intermediate,Basic,6,Data Scientist
+STU0832,IT,1,8.65,"SK180, SK117, SK154, SK215, SK172",7,Yes,AI,ROLE022,Advanced,Advanced,Basic,6,AI Engineer
+STU0833,ECE,4,9.44,"SK141, SK054, SK004, SK058, SK276",5,Yes,Cyber Security,ROLE040,Intermediate,Beginner,Fluent,2,Cloud Engineer
+STU0834,CSE,1,7.13,"SK025, SK229, SK126, SK069, SK137",2,No,Web Development,ROLE044,Advanced,Intermediate,Fluent,2,Data Scientist
+STU0835,ECE,2,7.6,"SK102, SK044, SK278, SK118, SK120",2,Yes,Mobile,ROLE054,Advanced,Beginner,Intermediate,2,Full Stack Developer
+STU0836,Civil,2,6.69,"SK025, SK034, SK016, SK122, SK133",0,Yes,AI,ROLE036,Beginner,Beginner,Basic,6,Software Engineer
+STU0837,IT,2,7.1,"SK197, SK266, SK228, SK112, SK258",4,No,DevOps,ROLE004,Intermediate,Beginner,Intermediate,4,Software Engineer
+STU0838,ECE,1,8.76,"SK094, SK136, SK088, SK116, SK084",6,Yes,Web Development,ROLE028,Beginner,Intermediate,Basic,3,Software Engineer
+STU0839,IT,3,8.59,"SK084, SK132, SK147, SK171, SK119",1,No,Cyber Security,ROLE042,Intermediate,Advanced,Basic,4,Software Engineer
+STU0840,ECE,2,8.91,"SK101, SK230, SK257, SK035, SK148",8,Yes,Mobile,ROLE026,Advanced,Intermediate,Fluent,5,Cloud Engineer
+STU0841,Mechanical,4,8.3,"SK092, SK093, SK106, SK066, SK119",5,Yes,DevOps,ROLE042,Beginner,Beginner,Basic,6,Cyber Security Analyst
+STU0842,IT,1,6.49,"SK132, SK195, SK129, SK264, SK037",2,No,Cloud,ROLE008,Beginner,Advanced,Intermediate,3,Cloud Engineer
+STU0843,Civil,1,6.34,"SK267, SK051, SK153, SK242, SK134",1,No,AI,ROLE017,Intermediate,Intermediate,Intermediate,6,Software Engineer
+STU0844,Civil,2,6.52,"SK171, SK141, SK254, SK065, SK112",6,Yes,AI,ROLE022,Intermediate,Intermediate,Fluent,1,AI Engineer
+STU0845,ECE,2,7.62,"SK003, SK151, SK155, SK265, SK145",2,Yes,DevOps,ROLE001,Advanced,Beginner,Fluent,1,Full Stack Developer
+STU0846,Civil,4,8.29,"SK108, SK203, SK109, SK023, SK177",1,No,AI,ROLE023,Intermediate,Intermediate,Intermediate,1,Cyber Security Analyst
+STU0847,CSE,2,7.94,"SK189, SK141, SK084, SK026, SK111",8,No,Mobile,ROLE044,Beginner,Intermediate,Basic,4,Cyber Security Analyst
+STU0848,Mechanical,1,8.57,"SK027, SK149, SK237, SK167, SK238",5,No,Cloud,ROLE060,Intermediate,Beginner,Basic,4,AI Engineer
+STU0849,CSE,3,8.15,"SK085, SK126, SK018, SK124, SK279",0,No,DevOps,ROLE053,Advanced,Beginner,Intermediate,2,Cyber Security Analyst
+STU0850,Civil,1,8.68,"SK195, SK242, SK212, SK111, SK155",2,Yes,Mobile,ROLE014,Advanced,Intermediate,Basic,1,Cloud Engineer
+STU0851,EEE,2,9.77,"SK104, SK078, SK003, SK262, SK089",3,No,Web Development,ROLE057,Beginner,Advanced,Fluent,3,Software Engineer
+STU0852,Mechanical,3,6.6,"SK166, SK001, SK203, SK124, SK148",1,Yes,AI,ROLE059,Advanced,Intermediate,Intermediate,3,Full Stack Developer
+STU0853,Civil,1,9.19,"SK060, SK048, SK144, SK258, SK265",2,Yes,Data Science,ROLE032,Advanced,Beginner,Fluent,6,Cloud Engineer
+STU0854,ECE,4,8.64,"SK053, SK261, SK095, SK211, SK191",1,No,Cloud,ROLE027,Advanced,Intermediate,Fluent,5,AI Engineer
+STU0855,ECE,4,9.38,"SK274, SK034, SK052, SK278, SK170",8,Yes,Cloud,ROLE011,Advanced,Advanced,Fluent,2,Data Scientist
+STU0856,Mechanical,1,6.42,"SK067, SK038, SK152, SK047, SK212",1,No,Web Development,ROLE037,Beginner,Advanced,Intermediate,3,Data Scientist
+STU0857,ECE,3,8.38,"SK067, SK151, SK136, SK225, SK196",0,Yes,Data Science,ROLE010,Advanced,Intermediate,Basic,4,Data Scientist
+STU0858,Civil,1,9.01,"SK112, SK230, SK096, SK233, SK045",8,No,DevOps,ROLE006,Advanced,Intermediate,Fluent,1,Cloud Engineer
+STU0859,ECE,4,9.27,"SK272, SK184, SK143, SK004, SK114",1,No,Cyber Security,ROLE057,Intermediate,Intermediate,Basic,2,Data Scientist
+STU0860,Civil,2,6.53,"SK238, SK200, SK115, SK255, SK026",8,No,AI,ROLE041,Intermediate,Advanced,Basic,4,Cyber Security Analyst
+STU0861,ECE,3,6.29,"SK261, SK108, SK214, SK124, SK232",4,Yes,Web Development,ROLE028,Intermediate,Beginner,Fluent,1,Data Scientist
+STU0862,EEE,3,8.07,"SK031, SK039, SK277, SK226, SK088",7,Yes,AI,ROLE034,Beginner,Advanced,Basic,4,Data Scientist
+STU0863,IT,3,8.94,"SK102, SK019, SK270, SK107, SK276",4,No,Web Development,ROLE052,Advanced,Advanced,Basic,3,Software Engineer
+STU0864,EEE,4,7.06,"SK070, SK066, SK144, SK247, SK105",2,No,Data Science,ROLE031,Intermediate,Advanced,Basic,3,Cloud Engineer
+STU0865,ECE,3,8.26,"SK214, SK279, SK184, SK071, SK200",8,Yes,AI,ROLE052,Advanced,Intermediate,Basic,2,Data Scientist
+STU0866,Mechanical,2,9.8,"SK195, SK147, SK061, SK197, SK049",3,No,Web Development,ROLE041,Intermediate,Intermediate,Fluent,3,Cloud Engineer
+STU0867,Mechanical,1,7.44,"SK144, SK265, SK008, SK187, SK165",3,Yes,Cyber Security,ROLE039,Advanced,Intermediate,Intermediate,6,Software Engineer
+STU0868,Mechanical,4,7.98,"SK065, SK085, SK022, SK119, SK138",3,Yes,AI,ROLE025,Beginner,Advanced,Intermediate,2,Full Stack Developer
+STU0869,ECE,4,8.5,"SK241, SK241, SK140, SK248, SK277",3,No,Web Development,ROLE022,Beginner,Beginner,Basic,2,Software Engineer
+STU0870,Mechanical,1,6.91,"SK033, SK117, SK058, SK025, SK126",6,No,DevOps,ROLE008,Advanced,Beginner,Fluent,4,Software Engineer
+STU0871,EEE,3,7.17,"SK191, SK122, SK228, SK137, SK154",4,Yes,Cloud,ROLE051,Beginner,Advanced,Basic,3,Cloud Engineer
+STU0872,IT,1,8.62,"SK002, SK207, SK174, SK136, SK038",2,No,Mobile,ROLE011,Intermediate,Intermediate,Basic,4,Cyber Security Analyst
+STU0873,Civil,2,7.28,"SK109, SK165, SK210, SK220, SK277",5,Yes,Cloud,ROLE012,Beginner,Advanced,Intermediate,5,AI Engineer
+STU0874,CSE,3,6.73,"SK130, SK140, SK189, SK273, SK110",6,Yes,Mobile,ROLE024,Advanced,Intermediate,Intermediate,4,Cyber Security Analyst
+STU0875,Civil,4,7.93,"SK058, SK114, SK132, SK047, SK192",8,Yes,Data Science,ROLE001,Advanced,Intermediate,Fluent,3,Cyber Security Analyst
+STU0876,Civil,2,6.79,"SK086, SK235, SK040, SK132, SK146",1,Yes,AI,ROLE020,Advanced,Advanced,Fluent,2,Cloud Engineer
+STU0877,IT,1,9.2,"SK067, SK006, SK116, SK042, SK187",6,Yes,AI,ROLE048,Advanced,Intermediate,Basic,5,Cloud Engineer
+STU0878,EEE,1,8.52,"SK185, SK046, SK080, SK125, SK197",0,Yes,Data Science,ROLE016,Advanced,Beginner,Fluent,5,Cyber Security Analyst
+STU0879,Mechanical,2,9.17,"SK066, SK259, SK235, SK233, SK088",4,No,DevOps,ROLE056,Intermediate,Advanced,Fluent,6,AI Engineer
+STU0880,Mechanical,2,9.73,"SK268, SK089, SK104, SK166, SK160",3,Yes,Web Development,ROLE021,Advanced,Advanced,Basic,5,Cloud Engineer
+STU0881,EEE,2,6.75,"SK176, SK238, SK235, SK026, SK204",0,No,Cloud,ROLE051,Intermediate,Advanced,Fluent,5,Cyber Security Analyst
+STU0882,CSE,4,8.94,"SK057, SK272, SK235, SK055, SK270",6,Yes,DevOps,ROLE041,Beginner,Intermediate,Fluent,5,Cloud Engineer
+STU0883,IT,4,6.89,"SK133, SK011, SK008, SK278, SK203",4,Yes,DevOps,ROLE009,Intermediate,Beginner,Basic,2,Full Stack Developer
+STU0884,Civil,3,9.48,"SK268, SK131, SK266, SK037, SK084",0,No,Data Science,ROLE022,Advanced,Beginner,Intermediate,6,Cloud Engineer
+STU0885,ECE,4,7.39,"SK212, SK015, SK054, SK124, SK187",5,Yes,Cloud,ROLE025,Beginner,Beginner,Basic,1,Data Scientist
+STU0886,EEE,3,9.49,"SK186, SK249, SK102, SK024, SK111",2,Yes,Mobile,ROLE009,Intermediate,Intermediate,Basic,6,Full Stack Developer
+STU0887,ECE,4,9.36,"SK054, SK101, SK015, SK264, SK246",3,No,DevOps,ROLE024,Advanced,Beginner,Basic,4,Cloud Engineer
+STU0888,Civil,1,9.24,"SK016, SK227, SK239, SK059, SK161",6,No,Cloud,ROLE035,Advanced,Intermediate,Intermediate,6,Data Scientist
+STU0889,EEE,2,6.92,"SK023, SK101, SK272, SK175, SK190",7,Yes,AI,ROLE044,Advanced,Beginner,Basic,4,Data Scientist
+STU0890,Civil,1,8.27,"SK191, SK106, SK243, SK102, SK152",1,Yes,Data Science,ROLE020,Intermediate,Intermediate,Intermediate,5,Cloud Engineer
+STU0891,ECE,3,7.79,"SK095, SK249, SK048, SK037, SK062",0,No,Web Development,ROLE029,Intermediate,Beginner,Basic,1,Data Scientist
+STU0892,IT,4,7.06,"SK019, SK064, SK064, SK270, SK104",1,No,Cyber Security,ROLE024,Intermediate,Beginner,Basic,3,Cyber Security Analyst
+STU0893,Mechanical,3,7.47,"SK154, SK234, SK171, SK247, SK128",2,No,DevOps,ROLE044,Advanced,Beginner,Fluent,4,Cloud Engineer
+STU0894,CSE,2,6.33,"SK180, SK253, SK178, SK017, SK099",1,Yes,Cyber Security,ROLE050,Beginner,Beginner,Fluent,4,Cyber Security Analyst
+STU0895,Mechanical,4,7.27,"SK083, SK278, SK216, SK210, SK276",8,No,Data Science,ROLE019,Beginner,Advanced,Fluent,4,Data Scientist
+STU0896,Mechanical,1,6.67,"SK164, SK235, SK071, SK013, SK026",2,No,DevOps,ROLE031,Beginner,Beginner,Intermediate,4,AI Engineer
+STU0897,CSE,4,6.26,"SK221, SK127, SK122, SK195, SK133",7,No,Data Science,ROLE049,Beginner,Intermediate,Fluent,5,Data Scientist
+STU0898,ECE,4,8.38,"SK028, SK209, SK104, SK014, SK276",5,No,DevOps,ROLE020,Beginner,Intermediate,Intermediate,6,Software Engineer
+STU0899,Civil,4,9.1,"SK144, SK220, SK193, SK077, SK029",7,Yes,Cloud,ROLE052,Intermediate,Advanced,Fluent,5,Software Engineer
+STU0900,CSE,1,6.93,"SK203, SK220, SK273, SK257, SK083",5,No,DevOps,ROLE057,Advanced,Intermediate,Basic,3,Cyber Security Analyst
+STU0901,Civil,2,8.59,"SK176, SK204, SK017, SK114, SK155",0,Yes,Cloud,ROLE015,Intermediate,Beginner,Intermediate,3,Software Engineer
+STU0902,IT,4,8.35,"SK082, SK099, SK211, SK074, SK031",3,No,DevOps,ROLE029,Intermediate,Intermediate,Intermediate,3,Cyber Security Analyst
+STU0903,Mechanical,1,9.08,"SK061, SK214, SK169, SK186, SK032",5,No,Web Development,ROLE014,Beginner,Advanced,Intermediate,3,Full Stack Developer
+STU0904,Mechanical,1,8.85,"SK093, SK147, SK231, SK077, SK259",6,Yes,Mobile,ROLE024,Beginner,Intermediate,Intermediate,5,Full Stack Developer
+STU0905,CSE,2,8.81,"SK123, SK013, SK229, SK143, SK067",7,No,Web Development,ROLE026,Beginner,Beginner,Fluent,5,Full Stack Developer
+STU0906,IT,2,7.22,"SK094, SK240, SK050, SK098, SK089",0,No,Cyber Security,ROLE032,Advanced,Advanced,Intermediate,2,Data Scientist
+STU0907,IT,3,7.25,"SK175, SK224, SK089, SK197, SK108",1,No,Cloud,ROLE055,Intermediate,Beginner,Basic,4,Cyber Security Analyst
+STU0908,Mechanical,1,8.56,"SK266, SK165, SK054, SK182, SK264",5,Yes,Web Development,ROLE011,Beginner,Advanced,Fluent,5,Data Scientist
+STU0909,Civil,3,8.53,"SK009, SK277, SK022, SK189, SK034",0,Yes,Cyber Security,ROLE013,Intermediate,Beginner,Fluent,6,Software Engineer
+STU0910,Mechanical,1,8.35,"SK110, SK132, SK165, SK245, SK172",3,Yes,DevOps,ROLE034,Beginner,Intermediate,Basic,5,Full Stack Developer
+STU0911,IT,1,8.82,"SK190, SK251, SK049, SK201, SK138",6,Yes,Cloud,ROLE034,Beginner,Advanced,Basic,3,Full Stack Developer
+STU0912,CSE,3,8.22,"SK266, SK066, SK056, SK166, SK123",7,Yes,Mobile,ROLE052,Intermediate,Beginner,Fluent,5,Cyber Security Analyst
+STU0913,CSE,3,7.94,"SK102, SK041, SK102, SK277, SK262",4,Yes,Data Science,ROLE027,Advanced,Advanced,Fluent,4,Data Scientist
+STU0914,Civil,1,6.56,"SK060, SK181, SK226, SK195, SK106",3,No,Cloud,ROLE024,Intermediate,Beginner,Fluent,2,AI Engineer
+STU0915,Mechanical,4,9.78,"SK116, SK185, SK183, SK142, SK036",3,No,Cloud,ROLE046,Intermediate,Intermediate,Intermediate,1,Full Stack Developer
+STU0916,CSE,4,8.9,"SK118, SK003, SK186, SK116, SK223",3,No,Cloud,ROLE038,Intermediate,Advanced,Fluent,3,AI Engineer
+STU0917,IT,4,9.53,"SK150, SK214, SK263, SK028, SK134",3,Yes,AI,ROLE040,Intermediate,Beginner,Basic,4,Cloud Engineer
+STU0918,CSE,1,7.02,"SK132, SK038, SK155, SK140, SK175",1,No,Data Science,ROLE015,Beginner,Beginner,Intermediate,5,Full Stack Developer
+STU0919,Mechanical,4,8.15,"SK186, SK240, SK267, SK079, SK191",5,Yes,Web Development,ROLE007,Beginner,Advanced,Basic,6,Software Engineer
+STU0920,Civil,2,8.15,"SK200, SK127, SK012, SK023, SK241",1,Yes,Cyber Security,ROLE023,Intermediate,Intermediate,Fluent,5,Cyber Security Analyst
+STU0921,EEE,2,8.22,"SK155, SK065, SK095, SK108, SK243",0,No,Web Development,ROLE023,Beginner,Beginner,Intermediate,3,Cloud Engineer
+STU0922,ECE,1,9.33,"SK276, SK079, SK088, SK095, SK083",3,No,DevOps,ROLE057,Beginner,Advanced,Intermediate,4,Software Engineer
+STU0923,EEE,3,7.08,"SK093, SK057, SK171, SK218, SK163",8,No,DevOps,ROLE036,Advanced,Advanced,Fluent,5,Software Engineer
+STU0924,Mechanical,1,7.77,"SK126, SK008, SK110, SK218, SK254",8,No,Web Development,ROLE011,Intermediate,Advanced,Basic,6,Cyber Security Analyst
+STU0925,CSE,2,9.61,"SK214, SK183, SK091, SK160, SK128",4,Yes,Web Development,ROLE038,Beginner,Intermediate,Fluent,4,Cyber Security Analyst
+STU0926,ECE,1,7.65,"SK134, SK237, SK041, SK031, SK043",3,No,Data Science,ROLE057,Beginner,Beginner,Fluent,5,Data Scientist
+STU0927,CSE,2,8.23,"SK206, SK080, SK197, SK221, SK236",1,Yes,Data Science,ROLE046,Beginner,Beginner,Intermediate,6,Cloud Engineer
+STU0928,EEE,2,6.17,"SK065, SK137, SK068, SK062, SK147",2,No,Data Science,ROLE007,Beginner,Beginner,Basic,1,Full Stack Developer
+STU0929,Mechanical,1,8.33,"SK109, SK230, SK208, SK227, SK234",2,No,Mobile,ROLE048,Advanced,Beginner,Basic,4,Data Scientist
+STU0930,EEE,1,6.64,"SK147, SK156, SK234, SK051, SK085",8,Yes,DevOps,ROLE025,Advanced,Intermediate,Fluent,4,Data Scientist
+STU0931,Civil,3,6.49,"SK232, SK141, SK107, SK272, SK258",8,Yes,Cloud,ROLE023,Intermediate,Advanced,Basic,1,Full Stack Developer
+STU0932,CSE,4,8.31,"SK279, SK065, SK267, SK201, SK111",5,No,Mobile,ROLE044,Advanced,Advanced,Basic,4,Software Engineer
+STU0933,Mechanical,2,7.31,"SK167, SK273, SK020, SK103, SK162",6,No,DevOps,ROLE018,Intermediate,Beginner,Basic,3,Data Scientist
+STU0934,EEE,1,7.26,"SK108, SK033, SK264, SK198, SK144",8,No,Cloud,ROLE038,Intermediate,Advanced,Basic,1,Software Engineer
+STU0935,EEE,4,9.33,"SK015, SK204, SK225, SK211, SK026",2,No,Mobile,ROLE058,Advanced,Intermediate,Basic,2,Cloud Engineer
+STU0936,ECE,3,7.18,"SK156, SK260, SK108, SK135, SK185",2,No,Data Science,ROLE040,Beginner,Beginner,Fluent,6,AI Engineer
+STU0937,Civil,4,8.65,"SK113, SK272, SK205, SK215, SK149",0,No,Mobile,ROLE060,Advanced,Intermediate,Intermediate,1,Software Engineer
+STU0938,Civil,4,9.08,"SK188, SK108, SK135, SK091, SK247",5,Yes,Web Development,ROLE013,Beginner,Advanced,Fluent,4,Full Stack Developer
+STU0939,CSE,3,8.27,"SK157, SK227, SK241, SK170, SK113",0,No,Data Science,ROLE005,Advanced,Advanced,Intermediate,6,Full Stack Developer
+STU0940,ECE,3,7.64,"SK231, SK199, SK039, SK020, SK131",6,Yes,Mobile,ROLE015,Intermediate,Beginner,Fluent,5,Data Scientist
+STU0941,IT,4,8.98,"SK187, SK242, SK077, SK068, SK234",7,No,Mobile,ROLE020,Advanced,Advanced,Fluent,2,Cloud Engineer
+STU0942,EEE,1,9.41,"SK102, SK199, SK150, SK103, SK058",7,No,AI,ROLE003,Beginner,Advanced,Fluent,3,Cyber Security Analyst
+STU0943,ECE,3,9.66,"SK037, SK138, SK219, SK079, SK030",1,No,DevOps,ROLE016,Intermediate,Intermediate,Basic,6,AI Engineer
+STU0944,IT,1,7.88,"SK083, SK111, SK205, SK135, SK018",8,Yes,AI,ROLE018,Beginner,Beginner,Basic,1,Cloud Engineer
+STU0945,Civil,3,8.04,"SK117, SK146, SK181, SK068, SK037",8,Yes,Web Development,ROLE032,Intermediate,Intermediate,Fluent,3,Data Scientist
+STU0946,CSE,2,9.61,"SK003, SK155, SK064, SK027, SK260",8,Yes,Web Development,ROLE024,Intermediate,Beginner,Basic,4,Data Scientist
+STU0947,IT,2,8.09,"SK195, SK223, SK040, SK086, SK033",3,No,AI,ROLE048,Intermediate,Beginner,Intermediate,2,AI Engineer
+STU0948,CSE,2,8.39,"SK230, SK068, SK275, SK010, SK154",3,Yes,Cyber Security,ROLE055,Beginner,Beginner,Fluent,4,Data Scientist
+STU0949,Civil,4,7.59,"SK130, SK202, SK141, SK206, SK189",4,Yes,Data Science,ROLE018,Beginner,Intermediate,Basic,1,Cyber Security Analyst
+STU0950,EEE,2,6.83,"SK121, SK260, SK204, SK119, SK264",5,No,Cloud,ROLE022,Advanced,Intermediate,Intermediate,3,Software Engineer
+STU0951,ECE,2,9.12,"SK125, SK107, SK205, SK119, SK256",1,No,DevOps,ROLE020,Advanced,Intermediate,Intermediate,1,Cyber Security Analyst
+STU0952,Mechanical,2,7.98,"SK166, SK169, SK057, SK096, SK159",2,Yes,Web Development,ROLE006,Intermediate,Beginner,Basic,2,Data Scientist
+STU0953,IT,2,6.47,"SK201, SK197, SK141, SK133, SK123",2,Yes,Cyber Security,ROLE057,Advanced,Intermediate,Basic,2,Cyber Security Analyst
+STU0954,EEE,4,9.09,"SK276, SK173, SK164, SK057, SK050",4,No,Cloud,ROLE043,Advanced,Intermediate,Basic,6,Cloud Engineer
+STU0955,EEE,1,6.04,"SK048, SK160, SK144, SK034, SK105",4,No,Mobile,ROLE003,Beginner,Beginner,Fluent,2,AI Engineer
+STU0956,Mechanical,1,7.96,"SK212, SK050, SK227, SK221, SK120",6,No,Cloud,ROLE028,Beginner,Beginner,Intermediate,5,Cloud Engineer
+STU0957,Civil,1,7.85,"SK272, SK262, SK069, SK204, SK020",5,Yes,Cyber Security,ROLE044,Beginner,Advanced,Intermediate,5,Cloud Engineer
+STU0958,EEE,1,8.5,"SK053, SK216, SK235, SK142, SK074",5,Yes,Data Science,ROLE010,Intermediate,Beginner,Intermediate,6,Data Scientist
+STU0959,EEE,4,6.88,"SK149, SK205, SK201, SK011, SK276",3,Yes,Cloud,ROLE017,Advanced,Intermediate,Basic,5,Full Stack Developer
+STU0960,ECE,3,9.52,"SK040, SK152, SK219, SK216, SK184",2,No,Web Development,ROLE022,Beginner,Intermediate,Intermediate,2,Cyber Security Analyst
+STU0961,Mechanical,4,9.67,"SK114, SK275, SK040, SK277, SK028",4,Yes,DevOps,ROLE060,Beginner,Intermediate,Intermediate,1,Data Scientist
+STU0962,ECE,3,8.85,"SK248, SK247, SK075, SK111, SK078",6,No,Web Development,ROLE012,Advanced,Advanced,Fluent,2,Data Scientist
+STU0963,CSE,2,6.05,"SK068, SK168, SK001, SK189, SK026",1,Yes,DevOps,ROLE013,Advanced,Advanced,Basic,6,AI Engineer
+STU0964,ECE,4,9.09,"SK148, SK125, SK157, SK174, SK004",1,Yes,Mobile,ROLE038,Beginner,Advanced,Basic,4,Full Stack Developer
+STU0965,Civil,1,6.35,"SK152, SK146, SK245, SK063, SK034",0,Yes,AI,ROLE006,Intermediate,Intermediate,Fluent,1,AI Engineer
+STU0966,ECE,2,6.77,"SK089, SK094, SK252, SK033, SK194",3,Yes,Web Development,ROLE019,Advanced,Intermediate,Intermediate,6,Cloud Engineer
+STU0967,Civil,4,8.05,"SK148, SK008, SK272, SK125, SK069",8,Yes,Web Development,ROLE029,Beginner,Advanced,Basic,4,Cyber Security Analyst
+STU0968,ECE,3,6.16,"SK173, SK077, SK233, SK169, SK229",2,No,Cyber Security,ROLE028,Advanced,Beginner,Basic,2,Cyber Security Analyst
+STU0969,EEE,4,8.05,"SK271, SK005, SK136, SK034, SK062",1,Yes,Cyber Security,ROLE048,Beginner,Beginner,Intermediate,1,Cyber Security Analyst
+STU0970,EEE,3,9.3,"SK146, SK216, SK093, SK170, SK169",6,No,Cloud,ROLE040,Advanced,Intermediate,Basic,1,Cloud Engineer
+STU0971,Civil,4,7.9,"SK060, SK109, SK155, SK060, SK192",0,Yes,DevOps,ROLE016,Intermediate,Intermediate,Basic,3,Cyber Security Analyst
+STU0972,Civil,4,8.28,"SK034, SK156, SK116, SK139, SK180",4,Yes,Cloud,ROLE029,Intermediate,Intermediate,Fluent,6,Cyber Security Analyst
+STU0973,IT,4,6.58,"SK100, SK152, SK094, SK125, SK278",3,No,Cyber Security,ROLE027,Beginner,Beginner,Fluent,2,Cloud Engineer
+STU0974,IT,1,9.42,"SK155, SK059, SK189, SK160, SK140",4,Yes,Mobile,ROLE006,Intermediate,Advanced,Fluent,2,Data Scientist
+STU0975,Mechanical,1,7.24,"SK010, SK122, SK041, SK270, SK106",4,Yes,Cloud,ROLE003,Advanced,Beginner,Intermediate,4,Cloud Engineer
+STU0976,CSE,2,7.51,"SK080, SK240, SK105, SK265, SK073",0,No,DevOps,ROLE014,Beginner,Beginner,Basic,5,AI Engineer
+STU0977,IT,2,8.8,"SK099, SK185, SK022, SK033, SK261",6,No,Data Science,ROLE015,Advanced,Beginner,Basic,5,Data Scientist
+STU0978,Civil,1,8.84,"SK077, SK232, SK007, SK138, SK010",0,Yes,Data Science,ROLE037,Intermediate,Intermediate,Intermediate,2,Cloud Engineer
+STU0979,ECE,3,7.95,"SK032, SK217, SK167, SK205, SK109",6,Yes,Cloud,ROLE017,Beginner,Advanced,Intermediate,6,Cloud Engineer
+STU0980,EEE,3,6.85,"SK130, SK199, SK060, SK050, SK185",3,Yes,Data Science,ROLE034,Beginner,Beginner,Intermediate,1,Data Scientist
+STU0981,EEE,3,8.24,"SK048, SK249, SK131, SK051, SK081",3,Yes,Cloud,ROLE030,Beginner,Intermediate,Intermediate,3,Cloud Engineer
+STU0982,EEE,2,9.49,"SK008, SK270, SK141, SK216, SK168",4,Yes,DevOps,ROLE012,Intermediate,Intermediate,Fluent,4,Data Scientist
+STU0983,CSE,1,6.06,"SK076, SK105, SK254, SK097, SK242",1,Yes,Cloud,ROLE023,Advanced,Advanced,Fluent,3,AI Engineer
+STU0984,ECE,2,9.04,"SK277, SK140, SK152, SK183, SK040",0,No,Cloud,ROLE049,Intermediate,Beginner,Intermediate,1,AI Engineer
+STU0985,Civil,2,7.12,"SK270, SK252, SK024, SK209, SK058",8,No,DevOps,ROLE011,Intermediate,Advanced,Intermediate,5,Software Engineer
+STU0986,IT,2,6.23,"SK071, SK211, SK031, SK116, SK234",3,No,Data Science,ROLE051,Advanced,Beginner,Fluent,4,AI Engineer
+STU0987,Mechanical,3,9.44,"SK035, SK072, SK149, SK122, SK173",8,No,AI,ROLE037,Advanced,Beginner,Basic,6,Software Engineer
+STU0988,ECE,3,6.75,"SK211, SK252, SK091, SK115, SK193",7,Yes,Mobile,ROLE033,Intermediate,Beginner,Fluent,6,Full Stack Developer
+STU0989,IT,3,6.56,"SK079, SK271, SK119, SK102, SK039",8,Yes,Mobile,ROLE006,Beginner,Advanced,Intermediate,4,Data Scientist
+STU0990,EEE,3,7.64,"SK173, SK040, SK257, SK136, SK057",3,No,Mobile,ROLE060,Intermediate,Intermediate,Fluent,4,Cyber Security Analyst
+STU0991,ECE,1,7.18,"SK110, SK008, SK051, SK261, SK020",3,Yes,Cyber Security,ROLE060,Beginner,Advanced,Fluent,2,Software Engineer
+STU0992,ECE,1,7.53,"SK153, SK227, SK239, SK171, SK212",4,No,DevOps,ROLE014,Beginner,Beginner,Basic,5,Cloud Engineer
+STU0993,Mechanical,4,6.61,"SK005, SK197, SK069, SK059, SK167",1,No,DevOps,ROLE037,Beginner,Advanced,Fluent,4,Full Stack Developer
+STU0994,EEE,3,6.51,"SK240, SK018, SK255, SK163, SK080",0,No,Web Development,ROLE022,Advanced,Advanced,Fluent,4,AI Engineer
+STU0995,Mechanical,3,9.45,"SK191, SK116, SK062, SK056, SK218",1,No,DevOps,ROLE035,Intermediate,Beginner,Intermediate,1,AI Engineer
+STU0996,EEE,4,6.2,"SK051, SK040, SK020, SK012, SK194",0,No,DevOps,ROLE022,Beginner,Beginner,Intermediate,5,Software Engineer
+STU0997,Mechanical,1,7.99,"SK264, SK133, SK081, SK250, SK126",4,Yes,Web Development,ROLE001,Intermediate,Advanced,Fluent,3,Data Scientist
+STU0998,EEE,1,8.06,"SK252, SK057, SK110, SK278, SK139",8,No,Cyber Security,ROLE015,Intermediate,Intermediate,Fluent,4,Cloud Engineer
+STU0999,Civil,3,7.78,"SK192, SK153, SK088, SK200, SK213",1,No,Mobile,ROLE040,Intermediate,Beginner,Fluent,3,Cloud Engineer
+STU1000,EEE,4,6.72,"SK267, SK043, SK070, SK002, SK095",0,No,Data Science,ROLE012,Intermediate,Beginner,Fluent,6,AI Engineer

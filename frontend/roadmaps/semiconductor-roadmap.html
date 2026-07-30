@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Semiconductor Engineering Roadmap — Career Path 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root{
+    --bg:#f7f7f5;
+    --panel:#ffffff;
+    --ink:#111318;
+    --sub:#5b616e;
+    --line:#2b78e4;
+    --border:#000000;
+    --accent:#0a33ff;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background:var(--bg); color:var(--ink);
+  }
+  header{
+    background:#0f1115; color:#fff; padding:22px 28px;
+    display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;
+  }
+  header h1{margin:0; font-size:22px; font-weight:700; letter-spacing:.2px;}
+  header p{margin:2px 0 0; color:#9aa0ab; font-size:13px;}
+  .toolbar{display:flex; gap:8px; flex-wrap:wrap;}
+  .toolbar button{
+    background:#1c2029; color:#e7e9ee; border:1px solid #33394a; border-radius:8px;
+    padding:8px 12px; font-size:13px; cursor:pointer; transition:.15s;
+  }
+  .toolbar button:hover{background:#2a3040;}
+  #stage-wrap{
+    position:relative; height:calc(100vh - 92px); overflow:hidden; background:
+      radial-gradient(circle at 1px 1px, #e3e3e0 1px, transparent 1px) 0 0/22px 22px, var(--bg);
+    cursor:grab;
+  }
+  #stage-wrap.grabbing{cursor:grabbing;}
+  #canvas{
+    position:absolute; top:0; left:0; transform-origin:0 0;
+  }
+  .node rect{
+    stroke:var(--border); stroke-width:2.2; rx:6; cursor:pointer;
+    transition: filter .12s, transform .12s;
+  }
+  .node:hover rect{filter:brightness(0.94);}
+  .node text{
+    font-size:15px; pointer-events:none; font-weight:600; fill:#000;
+  }
+  .subtopic text{font-weight:500; font-size:14px;}
+  .section-label text{font-size:19px; font-weight:800; fill:#111;}
+  .title-label text{font-size:30px; font-weight:800; fill:#111;}
+  .edge{fill:none; stroke:var(--line); stroke-width:3; stroke-linecap:round;}
+  .edge.dashed{stroke-dasharray:1 8;}
+  .legend rect{fill:#fff; stroke:#000; stroke-width:2;}
+  .legend text{font-size:15px; fill:#111;}
+
+  /* Side panel */
+  #panel{
+    position:fixed; top:0; right:-420px; width:400px; height:100%;
+    background:var(--panel); box-shadow:-8px 0 24px rgba(0,0,0,.15);
+    transition:right .25s ease; z-index:50; overflow-y:auto; padding:22px;
+    border-left:1px solid #e5e5e5;
+  }
+  #panel.open{right:0;}
+  #panel h2{margin:0 0 4px; font-size:20px;}
+  #panel .badge{
+    display:inline-block; font-size:11px; text-transform:uppercase; letter-spacing:.06em;
+    background:#111; color:#fff; padding:3px 8px; border-radius:20px; margin-bottom:10px;
+  }
+  #panel h3{font-size:13px; text-transform:uppercase; color:var(--sub); margin:18px 0 6px; letter-spacing:.05em;}
+  #panel p{font-size:14.5px; line-height:1.55; color:#222; margin:0 0 8px;}
+  #panel ul{margin:4px 0 0; padding-left:18px;}
+  #panel li{font-size:14px; line-height:1.6; margin-bottom:4px;}
+  #panel a{color:var(--accent); text-decoration:underline;}
+  #panel .close{
+    position:absolute; top:16px; right:16px; background:#eee; border:none; border-radius:50%;
+    width:28px; height:28px; cursor:pointer; font-size:16px; color:#555;
+  }
+  #panel .close:hover{background:#ddd;}
+
+  #bib{
+    background:#fff; border-top:3px solid #111; padding:40px 8vw 80px;
+  }
+  #bib h2{font-size:26px; margin-bottom:6px;}
+  #bib p.sub{color:var(--sub); margin-top:0; margin-bottom:28px;}
+  .bib-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:22px;}
+  .bib-card{border:1px solid #e2e2e2; border-radius:10px; padding:18px 20px; background:#fbfbfa;}
+  .bib-card h3{margin:0 0 10px; font-size:15px; display:flex; align-items:center; gap:8px;}
+  .bib-card h3 .tag{font-size:10px; background:#111; color:#fff; padding:2px 7px; border-radius:20px; text-transform:uppercase;}
+  .bib-card ul{margin:0; padding-left:18px;}
+  .bib-card li{font-size:13.3px; line-height:1.6; margin-bottom:7px; color:#333;}
+  .bib-card a{color:var(--accent);}
+  #hint{
+    position:fixed; bottom:14px; left:50%; transform:translateX(-50%);
+    background:#111; color:#fff; padding:8px 16px; border-radius:20px; font-size:12.5px;
+    opacity:.85; z-index:20; pointer-events:none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>🔬 Semiconductor Engineering Roadmap</h1>
+    <p>Step-by-step guide to becoming a Semiconductor Engineer — 2026</p>
+  </div>
+  <div class="toolbar">
+    <button onclick="zoomBy(1.15)">＋ Zoom in</button>
+    <button onclick="zoomBy(0.87)">－ Zoom out</button>
+    <button onclick="resetView()">Reset view</button>
+    <button onclick="document.getElementById('bib').scrollIntoView({behavior:'smooth'})">Bibliography ↓</button>
+  </div>
+</header>
+
+<div id="stage-wrap">
+  <div id="canvas">
+    <svg id="svgroot" xmlns="http://www.w3.org/2000/svg" width="1700" height="4600" viewBox="0 0 1700 4600">
+      <g id="edges-layer"></g>
+      <g id="nodes-layer"></g>
+    </svg>
+  </div>
+</div>
+
+<div id="hint">Scroll / pinch to zoom · Drag to pan · Click a box for details</div>
+
+<div id="panel">
+  <button class="close" onclick="closePanel()">✕</button>
+  <div id="panel-body"></div>
+</div>
+
+<section id="bib">
+  <h2>📚 Bibliography &amp; References</h2>
+  <p class="sub">Curated references spanning device physics, fabrication, materials science, and the modern semiconductor supply chain — from standards bodies to the textbooks fab and process engineers keep on their desks.</p>
+  <div class="bib-grid">
+
+    <div class="bib-card">
+      <h3><span class="tag">IEEE</span> Standards &amp; Papers</h3>
+      <ul>
+        <li>IEEE Electron Device Society (EDS) publications</li>
+        <li>IEEE Transactions on Electron Devices (T-ED)</li>
+        <li>IEEE Transactions on Semiconductor Manufacturing (TSM)</li>
+        <li>IEEE Std 1076/1364/1800 — HDLs (used downstream in chip design)</li>
+        <li>IEEE Xplore Digital Library — <a href="https://ieeexplore.ieee.org" target="_blank">ieeexplore.ieee.org</a> (search "CMOS scaling", "EUV lithography", "FinFET")</li>
+        <li>International Electron Devices Meeting (IEDM) proceedings</li>
+        <li>International Roadmap for Devices and Systems (IRDS) — <a href="https://irds.ieee.org" target="_blank">irds.ieee.org</a></li>
+      </ul>
+    </div>
+
+    <div class="bib-card">
+      <h3><span class="tag">NPTEL</span> Free Courses (IIT Faculty)</h3>
+      <ul>
+        <li>Semiconductor Devices — Prof. Sanjay Banerjee, IIT/IISc series</li>
+        <li>Semiconductor Fabrication Technology — IIT Kharagpur/Delhi</li>
+        <li>MOS Devices and Technology — IIT Bombay</li>
+        <li>Fundamentals of Nanoelectronics — IIT Madras</li>
+        <li>Solid State Physics — IIT Kanpur</li>
+        <li>Materials Science and Engineering — IIT Kharagpur</li>
+        <li>All courses free at <a href="https://nptel.ac.in" target="_blank">nptel.ac.in</a>, certification optional</li>
+      </ul>
+    </div>
+
+    <div class="bib-card">
+      <h3><span class="tag">MIT OCW</span> Open Courseware</h3>
+      <ul>
+        <li>6.012 Microelectronic Devices and Circuits</li>
+        <li>3.014 Materials Laboratory (semiconductor processing labs)</li>
+        <li>6.630 Electromagnetics for Electrical Engineers</li>
+        <li>3.044 Materials Processing</li>
+        <li>6.775 VLSI: From Microprocessors to Nanometers</li>
+        <li>All available free at <a href="https://ocw.mit.edu" target="_blank">ocw.mit.edu</a> with lecture notes, problem sets and exams</li>
+      </ul>
+    </div>
+
+    <div class="bib-card">
+      <h3><span class="tag">Textbook</span> Device Physics</h3>
+      <ul>
+        <li>Donald A. Neamen — <em>Semiconductor Physics and Devices</em></li>
+        <li>Ben G. Streetman &amp; Sanjay Banerjee — <em>Solid State Electronic Devices</em></li>
+        <li>Robert F. Pierret — <em>Semiconductor Device Fundamentals</em></li>
+        <li>Simon M. Sze &amp; Kwok K. Ng — <em>Physics of Semiconductor Devices</em></li>
+      </ul>
+    </div>
+
+    <div class="bib-card">
+      <h3><span class="tag">Textbook</span> Fabrication &amp; Process</h3>
+      <ul>
+        <li>Simon M. Sze — <em>VLSI Technology</em></li>
+        <li>James D. Plummer, Michael D. Deal &amp; Peter B. Griffin — <em>Silicon VLSI Technology</em></li>
+        <li>Stephen A. Campbell — <em>Fabrication Engineering at the Micro and Nanoscale</em></li>
+        <li>Marc J. Madou — <em>Fundamentals of Microfabrication</em></li>
+      </ul>
+    </div>
+
+    <div class="bib-card">
+      <h3><span class="tag">Textbook</span> Materials &amp; Crystal Growth</h3>
+      <ul>
+        <li>William D. Callister &amp; David G. Rethwisch — <em>Materials Science and Engineering: An Introduction</em></li>
+        <li>Charles Kittel — <em>Introduction to Solid State Physics</em></li>
+        <li>Rockett — <em>The Materials Science of Semiconductors</em></li>
+      </ul>
+    </div>
+
+    <div class="bib-card">
+      <h3><span class="tag">Textbook</span> Packaging, Test &amp; Reliability</h3>
+      <ul>
+        <li>Rao R. Tummala — <em>Fundamentals of Microsystems Packaging</em></li>
+        <li>M.L. Bushnell &amp; V.D. Agrawal — <em>Essentials of Electronic Testing for Digital, Memory and Mixed-Signal VLSI Circuits</em></li>
+        <li>JEDEC standards for reliability qualification (JESD22, JESD47)</li>
+      </ul>
+    </div>
+
+    <div class="bib-card">
+      <h3><span class="tag">GATE</span> Exam Preparation</h3>
+      <ul>
+        <li>GATE EC/EE official syllabus &amp; previous papers — <a href="https://gate2027.iisc.ac.in" target="_blank">GATE official site</a></li>
+        <li>R.K. Kanodia — <em>GATE Electronics &amp; Communication</em> (Electronic Devices volume)</li>
+        <li>Made Easy / ACE Academy GATE handbooks (Electronic Devices &amp; Circuits)</li>
+        <li>NPTEL GATE-aligned playlists for Electronic Devices, Signals &amp; Systems</li>
+      </ul>
+    </div>
+
+    <div class="bib-card">
+      <h3><span class="tag">Industry</span> Foundry &amp; Equipment Docs</h3>
+      <ul>
+        <li>TSMC / Samsung Foundry / Intel Foundry Services — process design kits (PDKs) &amp; design rule manuals</li>
+        <li>Applied Materials, Lam Research, ASML — equipment &amp; process application notes</li>
+        <li>SEMI standards (semiconductor equipment &amp; materials international) — <a href="https://www.semi.org" target="_blank">semi.org</a></li>
+        <li>SkyWater Sky130 open-source PDK documentation (for hands-on learning)</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<script>
+/* ===================== DATA MODEL ===================== */
+const nodes = [];
+const edges = [];
+let nid = 0;
+function N(o){ o.id = 'n'+(nid++); nodes.push(o); return o.id; }
+function E(a,b,dashed=true){ edges.push({a,b,dashed}); }
+
+const TOPIC_W = 240, TOPIC_H = 48;
+const SUB_W = 300, SUB_H = 48;
+
+function stack(items, x, startY, w, h, gap, type, extra){
+  let y = startY;
+  const ids = [];
+  for(const it of items){
+    ids.push(N(Object.assign({type, x, y, w, h, title:it.title, desc:it.desc,
+      prereq:it.prereq, resources:it.resources}, extra||{})));
+    y += h + gap;
+  }
+  return {ids, endY:y - gap};
+}
+
+/* ============ TITLE ============ */
+N({type:'title', x:60, y:20, title:'Semiconductor Engineering'});
+
+/* ============ SECTION 1: FOUNDATIONS ============ */
+N({type:'section-label', x:60, y:100, title:'1 · Foundations'});
+const foundations = stack([
+  {title:'Solid State Physics',
+   desc:'Crystal structure, band theory, energy bands — the quantum-mechanical basis of semiconductor behavior.',
+   prereq:'Modern physics / quantum mechanics basics',
+   resources:['NPTEL: Solid State Physics — IIT Kanpur','Charles Kittel — Introduction to Solid State Physics']},
+  {title:'Semiconductor Physics',
+   desc:'Carrier statistics, doping, drift-diffusion, generation-recombination in Si, Ge, and compound semiconductors.',
+   prereq:'Solid state physics',
+   resources:['Donald Neamen — Semiconductor Physics and Devices','MIT OCW 6.012']},
+  {title:'Materials Science Basics',
+   desc:'Crystal defects, phase diagrams, thin-film properties that determine device and process behavior.',
+   prereq:'Basic chemistry',
+   resources:['Callister & Rethwisch — Materials Science and Engineering','NPTEL: Materials Science — IIT Kgp']},
+  {title:'PN Junctions & Diodes',
+   desc:'Depletion region, built-in potential, I-V characteristics — the simplest semiconductor device.',
+   prereq:'Semiconductor physics',
+   resources:['Streetman & Banerjee — Solid State Electronic Devices']},
+  {title:'BJT & MOSFET Fundamentals',
+   desc:'Bipolar and MOS transistor operation, threshold voltage, scaling trends (Moore\'s Law context).',
+   prereq:'PN junctions',
+   resources:['Sze & Ng — Physics of Semiconductor Devices','MIT OCW 6.012']},
+], 60, 150, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<foundations.ids.length-1;i++) E(foundations.ids[i], foundations.ids[i+1], false);
+
+/* ============ SECTION 2: MATERIALS & CRYSTAL GROWTH ============ */
+let y2 = foundations.endY + 90;
+N({type:'section-label', x:60, y:y2, title:'2 · Materials & Crystal Growth'});
+y2 += 50;
+const materials = stack([
+  {title:'Silicon Crystal Growth (Czochralski)',
+   desc:'Pulling single-crystal ingots from molten silicon — the starting point of every wafer.',
+   prereq:'Materials science basics',
+   resources:['Plummer, Deal, Griffin — Silicon VLSI Technology, Ch.1']},
+  {title:'Wafer Preparation & Slicing',
+   desc:'Ingot slicing, lapping, polishing to produce atomically flat, defect-free wafers.',
+   prereq:'Crystal growth',
+   resources:['Sze — VLSI Technology']},
+  {title:'Compound Semiconductors (GaAs, GaN, SiC)',
+   desc:'Wide-bandgap and III-V materials used in RF, power, and optoelectronic devices.',
+   prereq:'Semiconductor physics',
+   resources:['Rockett — The Materials Science of Semiconductors']},
+  {title:'Doping & Diffusion',
+   desc:'Introducing dopants (B, P, As) via diffusion or implantation to control carrier concentration.',
+   prereq:'Wafer preparation',
+   resources:['Plummer, Deal, Griffin — Silicon VLSI Technology']},
+  {title:'Ion Implantation',
+   desc:'Precise, controllable dopant introduction using accelerated ion beams; annealing to repair lattice damage.',
+   prereq:'Doping & diffusion',
+   resources:['Campbell — Fabrication Engineering at the Micro and Nanoscale']},
+], 60, y2, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<materials.ids.length-1;i++) E(materials.ids[i], materials.ids[i+1], false);
+
+/* ============ SECTION 3: FABRICATION PROCESS ============ */
+let y3 = materials.endY + 90;
+N({type:'section-label', x:60, y:y3, title:'3 · Wafer Fabrication (Front-End)'});
+y3 += 50;
+const fab = stack([
+  {title:'Oxidation',
+   desc:'Growing SiO2 layers (thermal oxidation) for gate dielectrics, isolation, and masking.',
+   prereq:'Doping & diffusion',
+   resources:['Plummer, Deal, Griffin — Silicon VLSI Technology']},
+  {title:'Photolithography',
+   desc:'Patterning circuit geometry onto wafers using photoresist, masks, and UV/EUV light exposure.',
+   prereq:'Oxidation basics',
+   resources:['Sze — VLSI Technology, Ch.4']},
+  {title:'EUV Lithography',
+   desc:'Extreme ultraviolet (13.5nm) lithography enabling sub-7nm node patterning — the cutting edge of Moore\'s Law.',
+   prereq:'Photolithography',
+   resources:['IEDM/IRDS proceedings on EUV']},
+  {title:'Etching (Wet & Dry/Plasma)',
+   desc:'Selectively removing material to transfer the lithographic pattern into the wafer/thin films.',
+   prereq:'Photolithography',
+   resources:['Campbell — Fabrication Engineering at the Micro and Nanoscale']},
+  {title:'Chemical Vapor Deposition (CVD/ALD)',
+   desc:'Depositing thin films (poly-Si, dielectrics, metals) layer by layer with atomic-level control.',
+   prereq:'Etching',
+   resources:['Madou — Fundamentals of Microfabrication']},
+  {title:'Chemical-Mechanical Polishing (CMP)',
+   desc:'Planarizing wafer surfaces between process layers for multi-level interconnect stacks.',
+   prereq:'CVD/ALD',
+   resources:['Sze — VLSI Technology']},
+  {title:'Metallization & Interconnect',
+   desc:'Copper/aluminum interconnect formation, damascene process, multi-level metal stacks.',
+   prereq:'CMP',
+   resources:['Plummer, Deal, Griffin — Silicon VLSI Technology']},
+], 60, y3, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<fab.ids.length-1;i++) E(fab.ids[i], fab.ids[i+1], false);
+
+/* ---- Advanced transistor architectures branch ---- */
+const finfetId = N({type:'subtopic', x:400, y:nodeById2(fab.ids[fab.ids.length-1]).y, w:SUB_W, h:SUB_H,
+  title:'FinFET & Gate-All-Around (GAA)',
+  desc:'3D transistor architectures that replace planar MOSFETs below ~22nm to control short-channel effects.',
+  prereq:'Full front-end fab flow',
+  resources:['IRDS device roadmap','IEDM papers on FinFET/GAA scaling']});
+E(fab.ids[fab.ids.length-1], finfetId);
+
+function nodeById2(id){ return nodes.find(n=>n.id===id); }
+
+/* ============ SECTION 4: DEVICE MODELING & CHARACTERIZATION ============ */
+let y4 = fab.endY + 90;
+N({type:'section-label', x:60, y:y4, title:'4 · Device Modeling & Characterization'});
+y4 += 50;
+const device = stack([
+  {title:'SPICE-Compatible Device Models (BSIM)',
+   desc:'Compact models (e.g., BSIM-CMG, BSIM4) that represent transistor behavior for circuit simulation.',
+   prereq:'MOSFET fundamentals',
+   resources:['UC Berkeley BSIM model documentation']},
+  {title:'TCAD Simulation',
+   desc:'Technology CAD tools (Sentaurus, Silvaco) that simulate process and device physics before fabrication.',
+   prereq:'Device physics',
+   resources:['Synopsys Sentaurus TCAD docs']},
+  {title:'Parametric Testing & Wafer Probe',
+   desc:'Electrical testing of test structures on wafer to verify process health before dicing.',
+   prereq:'Device models',
+   resources:['SEMI standards for wafer test']},
+  {title:'Reliability Physics',
+   desc:'Electromigration, NBTI/PBTI, hot-carrier injection, TDDB — failure mechanisms that limit device lifetime.',
+   prereq:'Device characterization',
+   resources:['JEDEC JESD reliability standards']},
+], 60, y4, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<device.ids.length-1;i++) E(device.ids[i], device.ids[i+1], false);
+
+/* ============ SECTION 5: BACK-END (PACKAGING & ASSEMBLY) ============ */
+let y5 = device.endY + 90;
+N({type:'section-label', x:60, y:y5, title:'5 · Back-End: Packaging & Assembly'});
+y5 += 50;
+const backend = stack([
+  {title:'Wafer Dicing & Die Sort',
+   desc:'Cutting the finished wafer into individual dies and binning by test results.',
+   prereq:'Parametric testing',
+   resources:['Tummala — Fundamentals of Microsystems Packaging']},
+  {title:'Wire Bonding & Flip-Chip',
+   desc:'Electrically connecting the die to the package substrate — two dominant interconnection methods.',
+   prereq:'Wafer dicing',
+   resources:['Tummala — Fundamentals of Microsystems Packaging']},
+  {title:'Advanced Packaging (2.5D/3D, Chiplets)',
+   desc:'Interposers, through-silicon-vias (TSVs), and chiplet integration — the modern answer to slowing transistor scaling.',
+   prereq:'Wire bonding & flip-chip',
+   resources:['IEEE ECTC conference proceedings']},
+  {title:'Final Test & Burn-in',
+   desc:'Post-packaging electrical test and accelerated aging to screen out early-life failures.',
+   prereq:'Packaging complete',
+   resources:['JEDEC burn-in standards']},
+], 60, y5, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<backend.ids.length-1;i++) E(backend.ids[i], backend.ids[i+1], false);
+
+/* ============ SECTION 6: FAB OPERATIONS & YIELD ============ */
+let y6 = backend.endY + 90;
+N({type:'section-label', x:60, y:y6, title:'6 · Fab Operations & Yield Engineering'});
+y6 += 50;
+const fabops = stack([
+  {title:'Cleanroom Protocols & Contamination Control',
+   desc:'Particle control, gowning procedures, and cleanroom classifications (ISO 1-9) essential to fab work.',
+   prereq:'None',
+   resources:['SEMI cleanroom standards']},
+  {title:'Statistical Process Control (SPC)',
+   desc:'Control charts and process capability analysis to keep fab processes within spec.',
+   prereq:'Basic statistics',
+   resources:['SEMI standards on SPC']},
+  {title:'Yield Analysis & Defect Metrology',
+   desc:'Identifying and classifying wafer defects (SEM, optical inspection) to improve die yield.',
+   prereq:'SPC basics',
+   resources:['KLA-Tencor / Applied Materials metrology app notes']},
+  {title:'Equipment Maintenance & Automation',
+   desc:'Preventive maintenance and fab automation (AMHS, MES) that keeps a 24/7 fab running.',
+   prereq:'Cleanroom protocols',
+   resources:['SEMI equipment standards']},
+], 60, y6, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<fabops.ids.length-1;i++) E(fabops.ids[i], fabops.ids[i+1], false);
+
+/* ============ SECTION 7: EDA & FAB TOOLS (side column) ============ */
+let y7 = 150;
+N({type:'section-label', x:760, y:y7-40, title:'7 · Industry Tools & Software'});
+const tools = stack([
+  {title:'Synopsys Sentaurus TCAD', desc:'Process and device simulation suite for modeling fabrication steps and transistor behavior.', prereq:'Device physics', resources:['Synopsys Sentaurus documentation']},
+  {title:'Cadence Virtuoso (PDK use)', desc:'Schematic/layout tool used with foundry Process Design Kits for circuit design.', prereq:'Device modeling basics', resources:['Cadence Virtuoso docs']},
+  {title:'KLA / Applied Materials Metrology Tools', desc:'Defect inspection and metrology equipment used on the fab floor for yield monitoring.', prereq:'Yield analysis basics', resources:['KLA / AMAT application notes']},
+  {title:'MATLAB / Python for Data Analysis', desc:'Statistical analysis of fab data, yield modeling, and SPC charting.', prereq:'Basic programming', resources:['MathWorks MATLAB docs']},
+  {title:'SEMI / JEDEC Standards Portals', desc:'Industry-standard specs governing equipment, materials, and reliability qualification.', prereq:'None', resources:['semi.org','jedec.org']},
+], 760, y7, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<tools.ids.length-1;i++) E(tools.ids[i], tools.ids[i+1], false);
+
+/* ============ SECTION 8: CAREER PATHS (side column) ============ */
+let y8 = tools.endY + 90;
+N({type:'section-label', x:760, y:y8, title:'8 · Career Paths'});
+y8 += 50;
+const careers = stack([
+  {title:'Process Engineer', desc:'Owns a specific fab process step (litho, etch, deposition) and drives process improvement.', prereq:'Fabrication process knowledge', resources:['Sze — VLSI Technology']},
+  {title:'Device Engineer', desc:'Designs and characterizes transistor structures, works closely with TCAD models.', prereq:'Device physics + TCAD', resources:['Sze & Ng — Physics of Semiconductor Devices']},
+  {title:'Yield Engineer', desc:'Analyzes wafer defect data to improve die yield and root-cause fab issues.', prereq:'SPC + metrology basics', resources:['KLA / AMAT yield app notes']},
+  {title:'Packaging Engineer', desc:'Designs and qualifies die packaging, from wire bonding to advanced 2.5D/3D integration.', prereq:'Backend packaging knowledge', resources:['Tummala — Fundamentals of Microsystems Packaging']},
+  {title:'Test Engineer', desc:'Develops wafer probe and final test programs to screen defective parts.', prereq:'Device characterization', resources:['SEMI test standards']},
+  {title:'Equipment/Automation Engineer', desc:'Maintains and optimizes fab tools and automation systems (AMHS, MES).', prereq:'Fab operations basics', resources:['SEMI equipment standards']},
+  {title:'Reliability Engineer', desc:'Studies failure mechanisms and qualifies products for long-term field reliability.', prereq:'Reliability physics', resources:['JEDEC JESD22/47 standards']},
+], 760, y8, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<careers.ids.length-1;i++) E(careers.ids[i], careers.ids[i+1], false);
+
+/* ============ SECTION 9: HANDS-ON PROJECTS (side column) ============ */
+let y9 = careers.endY + 90;
+N({type:'section-label', x:760, y:y9, title:'9 · Hands-on Projects'});
+y9 += 50;
+const projects = stack([
+  {title:'TCAD Simulation of a MOSFET', desc:'Simulate the fabrication and I-V behavior of a simple MOSFET using Sentaurus or Silvaco.', prereq:'Device physics + TCAD basics', resources:['Sentaurus TCAD tutorials']},
+  {title:'SPICE Model Extraction', desc:'Extract BSIM parameters from measured or simulated transistor data and validate against SPICE.', prereq:'Device modeling', resources:['UC Berkeley BSIM docs']},
+  {title:'Open-Source PDK Design (Sky130)', desc:'Design and simulate a basic circuit using the SkyWater Sky130 open-source PDK.', prereq:'Basic circuit design', resources:['SkyWater Sky130 PDK docs, OpenLane flow']},
+  {title:'Yield/Defect Data Analysis Project', desc:'Analyze a sample wafer defect dataset with Python/MATLAB to identify yield-limiting patterns.', prereq:'Basic statistics + Python', resources:['Public semiconductor yield datasets (Kaggle, UCI)']},
+  {title:'Reliability Stress Test Report', desc:'Design a simple accelerated-life test plan (temperature/voltage stress) and analyze failure data.', prereq:'Reliability physics basics', resources:['JEDEC reliability qualification standards']},
+], 760, y9, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<projects.ids.length-1;i++) E(projects.ids[i], projects.ids[i+1], false);
+
+/* ============ SECTION 10: GATE PREP (side column) ============ */
+let y10 = projects.endY + 90;
+N({type:'section-label', x:760, y:y10, title:'10 · GATE Preparation (EC/EE)'});
+y10 += 50;
+const gate = stack([
+  {title:'GATE Syllabus Mapping', desc:'Align this roadmap with GATE EC/EE syllabus sections: Electronic Devices, Signals & Systems, Analog Circuits.', prereq:'Foundations complete', resources:['GATE official syllabus']},
+  {title:'Previous Year Papers', desc:'Solve 15+ years of previous GATE papers topic-wise, focused on Electronic Devices questions.', prereq:'Syllabus mapping', resources:['GATE Overflow (community solutions)']},
+  {title:'Mock Tests & Time Management', desc:'Full-length timed mocks to build exam stamina and question-selection strategy.', prereq:'Syllabus coverage', resources:['Made Easy / ACE Academy test series']},
+  {title:'Standard GATE Books', desc:'R.K. Kanodia series (Electronic Devices volume), Made Easy handbooks.', prereq:'None', resources:['R.K. Kanodia — GATE ECE volumes']},
+], 760, y10, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<gate.ids.length-1;i++) E(gate.ids[i], gate.ids[i+1], false);
+
+/* ============ SECTION 11: INTERNSHIPS & INDUSTRY SKILLS ============ */
+let y11 = gate.endY + 90;
+N({type:'section-label', x:760, y:y11, title:'11 · Internships & Industry Skills'});
+y11 += 50;
+const intern = stack([
+  {title:'Finding Semiconductor Internships', desc:'Target foundries (TSMC, GlobalFoundries, Samsung), IDMs (Intel, Texas Instruments, Micron), and equipment makers (Applied Materials, Lam Research, ASML).', prereq:'Fabrication + device fundamentals', resources:['LinkedIn, company career pages, campus placement cells']},
+  {title:'Cleanroom Safety Certification', desc:'Many fab internships require basic cleanroom safety/gowning training before floor access.', prereq:'None', resources:['University/employer cleanroom safety courses']},
+  {title:'Resume & Portfolio Building', desc:'Showcase TCAD simulations, process projects, and data-analysis work with clear documentation.', prereq:'At least 1-2 completed projects', resources:['GitHub / personal portfolio site']},
+  {title:'Technical Interview Prep', desc:'Practice common semiconductor interview questions: device physics, process flow ordering, yield/statistics reasoning.', prereq:'Core knowledge across sections', resources:['Semiconductor Engineering (site), EE Times interview guides']},
+  {title:'Staying Current', desc:'Follow industry trends: EUV/High-NA lithography, GAA transistors, chiplets, advanced packaging, CHIPS Act investments.', prereq:'Core knowledge', resources:['IEEE Spectrum, SemiWiki, EE Times, Semiconductor Engineering']},
+], 760, y11, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<intern.ids.length-1;i++) E(intern.ids[i], intern.ids[i+1], false);
+
+/* Cross-links between major sections */
+E(foundations.ids[4], materials.ids[0]);   // MOSFET -> Crystal growth (foundation to real fab material)
+E(materials.ids[4], fab.ids[0]);           // Ion implantation -> Oxidation
+E(fab.ids[6], device.ids[0]);              // Metallization -> BSIM models
+E(device.ids[2], backend.ids[0]);          // Parametric testing -> Wafer dicing
+E(fab.ids[1], tools.ids[0]);               // Photolithography -> Sentaurus TCAD
+E(device.ids[1], tools.ids[0]);            // TCAD sim -> Sentaurus tool
+E(fabops.ids[2], tools.ids[2]);            // Yield analysis -> KLA/AMAT tools
+
+/* Legend */
+N({type:'legend', x:60, y:y11 + intern.ids.length*(TOPIC_H+22) + 60});
+
+/* ============ RENDER ============ */
+const edgesLayer = document.getElementById('edges-layer');
+const nodesLayer = document.getElementById('nodes-layer');
+const svgroot = document.getElementById('svgroot');
+
+function nodeById(id){ return nodes.find(n=>n.id===id); }
+
+function drawEdges(){
+  for(const e of edges){
+    const a = nodeById(e.a), b = nodeById(e.b);
+    if(!a || !b) continue;
+    const ax = a.x + a.w, ay = a.y + a.h/2;
+    const bx = b.x, by = b.y + b.h/2;
+    const midx = (ax+bx)/2;
+    const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+    const d = ax === bx && ay !== by
+      ? `M${ax} ${ay} L${bx} ${by}`
+      : `M${ax} ${ay} C${midx} ${ay}, ${midx} ${by}, ${bx} ${by}`;
+    path.setAttribute('d', d);
+    path.setAttribute('class', 'edge' + (e.dashed ? ' dashed' : ''));
+    edgesLayer.appendChild(path);
+  }
+}
+
+function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+
+function drawNodes(){
+  let maxY = 0, maxX = 0;
+  for(const n of nodes){
+    const g = document.createElementNS('http://www.w3.org/2000/svg','g');
+    g.setAttribute('class','node ' + n.type);
+    g.setAttribute('data-id', n.id);
+
+    if(n.type === 'title'){
+      const t = document.createElementNS('http://www.w3.org/2000/svg','text');
+      t.setAttribute('x', n.x); t.setAttribute('y', n.y+30);
+      t.textContent = n.title;
+      g.setAttribute('class','node title-label');
+      g.appendChild(t);
+    } else if(n.type === 'section-label'){
+      const t = document.createElementNS('http://www.w3.org/2000/svg','text');
+      t.setAttribute('x', n.x); t.setAttribute('y', n.y+18);
+      t.textContent = n.title;
+      g.setAttribute('class','node section-label');
+      g.appendChild(t);
+    } else if(n.type === 'legend'){
+      const items = [
+        ['#fdff00','Topic — core subject / competency'],
+        ['#ffe599','Sub-topic — specific skill or technology'],
+      ];
+      const rect = document.createElementNS('http://www.w3.org/2000/svg','rect');
+      rect.setAttribute('x', n.x); rect.setAttribute('y', n.y);
+      rect.setAttribute('width', 380); rect.setAttribute('height', items.length*32+22);
+      rect.setAttribute('rx',6);
+      g.appendChild(rect);
+      items.forEach((it,i)=>{
+        const c = document.createElementNS('http://www.w3.org/2000/svg','rect');
+        c.setAttribute('x', n.x+16); c.setAttribute('y', n.y+16+i*32);
+        c.setAttribute('width',18); c.setAttribute('height',18); c.setAttribute('rx',4);
+        c.setAttribute('fill', it[0]); c.setAttribute('stroke','#000'); c.setAttribute('stroke-width','1.5');
+        g.appendChild(c);
+        const t = document.createElementNS('http://www.w3.org/2000/svg','text');
+        t.setAttribute('x', n.x+44); t.setAttribute('y', n.y+30+i*32);
+        t.textContent = it[1];
+        g.appendChild(t);
+      });
+    } else {
+      const rect = document.createElementNS('http://www.w3.org/2000/svg','rect');
+      rect.setAttribute('x', n.x); rect.setAttribute('y', n.y);
+      rect.setAttribute('width', n.w); rect.setAttribute('height', n.h);
+      rect.setAttribute('rx', 6);
+      rect.setAttribute('fill', n.type === 'subtopic' ? '#ffe599' : '#fdff00');
+      g.appendChild(rect);
+
+      const t = document.createElementNS('http://www.w3.org/2000/svg','text');
+      t.setAttribute('x', n.x + n.w/2); t.setAttribute('y', n.y + n.h/2 + 5);
+      t.setAttribute('text-anchor','middle');
+      t.textContent = n.title;
+      g.appendChild(t);
+
+      g.style.cursor='pointer';
+      g.addEventListener('click', ()=> openPanel(n));
+      maxY = Math.max(maxY, n.y + n.h);
+      maxX = Math.max(maxX, n.x + n.w);
+    }
+    nodesLayer.appendChild(g);
+  }
+  svgroot.setAttribute('height', Math.max(4600, maxY + 400));
+  svgroot.setAttribute('viewBox', `0 0 1700 ${Math.max(4600, maxY + 400)}`);
+}
+
+drawEdges();
+drawNodes();
+
+/* ===================== PANEL ===================== */
+function openPanel(n){
+  const body = document.getElementById('panel-body');
+  const typeLabel = n.type === 'subtopic' ? 'Sub-topic' : 'Topic';
+  body.innerHTML = `
+    <span class="badge">${typeLabel}</span>
+    <h2>${esc(n.title)}</h2>
+    <h3>Description</h3>
+    <p>${esc(n.desc || 'No description available yet.')}</p>
+    <h3>Prerequisites</h3>
+    <p>${esc(n.prereq || 'None — good starting point.')}</p>
+    <h3>Learning Resources</h3>
+    <ul>${(n.resources||[]).map(r=>`<li>${esc(r)}</li>`).join('')}</ul>
+  `;
+  document.getElementById('panel').classList.add('open');
+}
+function closePanel(){ document.getElementById('panel').classList.remove('open'); }
+
+/* ===================== PAN & ZOOM ===================== */
+const wrap = document.getElementById('stage-wrap');
+const canvas = document.getElementById('canvas');
+let scale = 0.62, panX = 20, panY = 20;
+let isPanning = false, startX, startY;
+
+function applyTransform(){
+  canvas.style.transform = `translate(${panX}px, ${panY}px) scale(${scale})`;
+}
+function zoomBy(f, cx, cy){
+  const rect = wrap.getBoundingClientRect();
+  cx = cx ?? rect.width/2; cy = cy ?? rect.height/2;
+  const wx = (cx - panX) / scale, wy = (cy - panY) / scale;
+  scale = Math.min(2.2, Math.max(0.25, scale * f));
+  panX = cx - wx*scale; panY = cy - wy*scale;
+  applyTransform();
+}
+function resetView(){ scale = 0.62; panX = 20; panY = 20; applyTransform(); }
+
+wrap.addEventListener('wheel', (e)=>{
+  e.preventDefault();
+  const rect = wrap.getBoundingClientRect();
+  const cx = e.clientX - rect.left, cy = e.clientY - rect.top;
+  zoomBy(e.deltaY < 0 ? 1.08 : 0.93, cx, cy);
+}, {passive:false});
+
+wrap.addEventListener('mousedown', (e)=>{
+  if(e.target.closest('.node') && e.target.closest('.node').classList.contains('legend')) return;
+  isPanning = true; startX = e.clientX - panX; startY = e.clientY - panY;
+  wrap.classList.add('grabbing');
+});
+window.addEventListener('mousemove', (e)=>{
+  if(!isPanning) return;
+  panX = e.clientX - startX; panY = e.clientY - startY;
+  applyTransform();
+});
+window.addEventListener('mouseup', ()=>{ isPanning=false; wrap.classList.remove('grabbing'); });
+
+/* touch support */
+let lastTouchDist = null, lastTouch = null;
+wrap.addEventListener('touchstart', (e)=>{
+  if(e.touches.length===1){ lastTouch = {x:e.touches[0].clientX-panX, y:e.touches[0].clientY-panY}; }
+  else if(e.touches.length===2){ lastTouchDist = dist(e.touches); }
+}, {passive:true});
+wrap.addEventListener('touchmove', (e)=>{
+  if(e.touches.length===1 && lastTouch){
+    panX = e.touches[0].clientX - lastTouch.x; panY = e.touches[0].clientY - lastTouch.y;
+    applyTransform();
+  } else if(e.touches.length===2){
+    const d = dist(e.touches);
+    if(lastTouchDist){ zoomBy(d/lastTouchDist); }
+    lastTouchDist = d;
+  }
+}, {passive:true});
+function dist(t){ const dx=t[0].clientX-t[1].clientX, dy=t[0].clientY-t[1].clientY; return Math.sqrt(dx*dx+dy*dy); }
+
+applyTransform();
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closePanel(); });
+</script>
+</body>
+</html>

@@ -1,0 +1,559 @@
+course_id,course_name,platform,provider,difficulty,duration_hours,language,certificate,price,rating,skill_id,role_id,course_url
+COURSE0001,Python Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK001,ROLE001,https://example.com/course/1
+COURSE0002,Python Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK001,ROLE001,https://example.com/course/2
+COURSE0003,Java Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK002,ROLE002,https://example.com/course/3
+COURSE0004,Java Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK002,ROLE002,https://example.com/course/4
+COURSE0005,C Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK003,ROLE003,https://example.com/course/5
+COURSE0006,C Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK003,ROLE003,https://example.com/course/6
+COURSE0007,C++ Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK004,ROLE004,https://example.com/course/7
+COURSE0008,C++ Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK004,ROLE004,https://example.com/course/8
+COURSE0009,C# Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK005,ROLE005,https://example.com/course/9
+COURSE0010,C# Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK005,ROLE005,https://example.com/course/10
+COURSE0011,JavaScript Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK006,ROLE006,https://example.com/course/11
+COURSE0012,JavaScript Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK006,ROLE006,https://example.com/course/12
+COURSE0013,TypeScript Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK007,ROLE007,https://example.com/course/13
+COURSE0014,TypeScript Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK007,ROLE007,https://example.com/course/14
+COURSE0015,Go Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK008,ROLE008,https://example.com/course/15
+COURSE0016,Go Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK008,ROLE008,https://example.com/course/16
+COURSE0017,Rust Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK009,ROLE009,https://example.com/course/17
+COURSE0018,Rust Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK009,ROLE009,https://example.com/course/18
+COURSE0019,PHP Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK010,ROLE010,https://example.com/course/19
+COURSE0020,PHP Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK010,ROLE010,https://example.com/course/20
+COURSE0021,Kotlin Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK011,ROLE011,https://example.com/course/21
+COURSE0022,Kotlin Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK011,ROLE011,https://example.com/course/22
+COURSE0023,Swift Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK012,ROLE012,https://example.com/course/23
+COURSE0024,Swift Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK012,ROLE012,https://example.com/course/24
+COURSE0025,R Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK013,ROLE013,https://example.com/course/25
+COURSE0026,R Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK013,ROLE013,https://example.com/course/26
+COURSE0027,MATLAB Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK014,ROLE014,https://example.com/course/27
+COURSE0028,MATLAB Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK014,ROLE014,https://example.com/course/28
+COURSE0029,Scala Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK015,ROLE015,https://example.com/course/29
+COURSE0030,Scala Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK015,ROLE015,https://example.com/course/30
+COURSE0031,Dart Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK016,ROLE016,https://example.com/course/31
+COURSE0032,Dart Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK016,ROLE016,https://example.com/course/32
+COURSE0033,Ruby Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK017,ROLE017,https://example.com/course/33
+COURSE0034,Ruby Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK017,ROLE017,https://example.com/course/34
+COURSE0035,Perl Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK018,ROLE018,https://example.com/course/35
+COURSE0036,Perl Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK018,ROLE018,https://example.com/course/36
+COURSE0037,Shell Scripting Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK019,ROLE019,https://example.com/course/37
+COURSE0038,Shell Scripting Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK019,ROLE019,https://example.com/course/38
+COURSE0039,Bash Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK020,ROLE020,https://example.com/course/39
+COURSE0040,Bash Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK020,ROLE020,https://example.com/course/40
+COURSE0041,HTML Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK021,ROLE021,https://example.com/course/41
+COURSE0042,HTML Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK021,ROLE021,https://example.com/course/42
+COURSE0043,CSS Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK022,ROLE022,https://example.com/course/43
+COURSE0044,CSS Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK022,ROLE022,https://example.com/course/44
+COURSE0045,Bootstrap Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK023,ROLE023,https://example.com/course/45
+COURSE0046,Bootstrap Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK023,ROLE023,https://example.com/course/46
+COURSE0047,Tailwind CSS Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK024,ROLE024,https://example.com/course/47
+COURSE0048,Tailwind CSS Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK024,ROLE024,https://example.com/course/48
+COURSE0049,React Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK025,ROLE025,https://example.com/course/49
+COURSE0050,React Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK025,ROLE025,https://example.com/course/50
+COURSE0051,Angular Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK026,ROLE026,https://example.com/course/51
+COURSE0052,Angular Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK026,ROLE026,https://example.com/course/52
+COURSE0053,Vue.js Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK027,ROLE027,https://example.com/course/53
+COURSE0054,Vue.js Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK027,ROLE027,https://example.com/course/54
+COURSE0055,Next.js Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK028,ROLE028,https://example.com/course/55
+COURSE0056,Next.js Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK028,ROLE028,https://example.com/course/56
+COURSE0057,Express.js Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK029,ROLE029,https://example.com/course/57
+COURSE0058,Express.js Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK029,ROLE029,https://example.com/course/58
+COURSE0059,Node.js Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK030,ROLE030,https://example.com/course/59
+COURSE0060,Node.js Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK030,ROLE030,https://example.com/course/60
+COURSE0061,REST API Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK031,ROLE031,https://example.com/course/61
+COURSE0062,REST API Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK031,ROLE031,https://example.com/course/62
+COURSE0063,GraphQL Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK032,ROLE032,https://example.com/course/63
+COURSE0064,GraphQL Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK032,ROLE032,https://example.com/course/64
+COURSE0065,AJAX Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK033,ROLE033,https://example.com/course/65
+COURSE0066,AJAX Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK033,ROLE033,https://example.com/course/66
+COURSE0067,JSON Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK034,ROLE034,https://example.com/course/67
+COURSE0068,JSON Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK034,ROLE034,https://example.com/course/68
+COURSE0069,XML Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK035,ROLE035,https://example.com/course/69
+COURSE0070,XML Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK035,ROLE035,https://example.com/course/70
+COURSE0071,JWT Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK036,ROLE036,https://example.com/course/71
+COURSE0072,JWT Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK036,ROLE036,https://example.com/course/72
+COURSE0073,OAuth Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK037,ROLE037,https://example.com/course/73
+COURSE0074,OAuth Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK037,ROLE037,https://example.com/course/74
+COURSE0075,Redux Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK038,ROLE038,https://example.com/course/75
+COURSE0076,Redux Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK038,ROLE038,https://example.com/course/76
+COURSE0077,Webpack Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK039,ROLE039,https://example.com/course/77
+COURSE0078,Webpack Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK039,ROLE039,https://example.com/course/78
+COURSE0079,Vite Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK040,ROLE040,https://example.com/course/79
+COURSE0080,Vite Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK040,ROLE040,https://example.com/course/80
+COURSE0081,Responsive Design Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK041,ROLE041,https://example.com/course/81
+COURSE0082,Responsive Design Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK041,ROLE041,https://example.com/course/82
+COURSE0083,Web Security Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK042,ROLE042,https://example.com/course/83
+COURSE0084,Web Security Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK042,ROLE042,https://example.com/course/84
+COURSE0085,Authentication Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK043,ROLE043,https://example.com/course/85
+COURSE0086,Authentication Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK043,ROLE043,https://example.com/course/86
+COURSE0087,Authorization Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK044,ROLE044,https://example.com/course/87
+COURSE0088,Authorization Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK044,ROLE044,https://example.com/course/88
+COURSE0089,SSR Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK045,ROLE045,https://example.com/course/89
+COURSE0090,SSR Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK045,ROLE045,https://example.com/course/90
+COURSE0091,SPA Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK046,ROLE046,https://example.com/course/91
+COURSE0092,SPA Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK046,ROLE046,https://example.com/course/92
+COURSE0093,Micro Frontends Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK047,ROLE047,https://example.com/course/93
+COURSE0094,Micro Frontends Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK047,ROLE047,https://example.com/course/94
+COURSE0095,PWA Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK048,ROLE048,https://example.com/course/95
+COURSE0096,PWA Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK048,ROLE048,https://example.com/course/96
+COURSE0097,Nginx Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK049,ROLE049,https://example.com/course/97
+COURSE0098,Nginx Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK049,ROLE049,https://example.com/course/98
+COURSE0099,Apache Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK050,ROLE050,https://example.com/course/99
+COURSE0100,Apache Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK050,ROLE050,https://example.com/course/100
+COURSE0101,Machine Learning Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK051,ROLE051,https://example.com/course/101
+COURSE0102,Machine Learning Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK051,ROLE051,https://example.com/course/102
+COURSE0103,Deep Learning Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK052,ROLE052,https://example.com/course/103
+COURSE0104,Deep Learning Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK052,ROLE052,https://example.com/course/104
+COURSE0105,NLP Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK053,ROLE053,https://example.com/course/105
+COURSE0106,NLP Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK053,ROLE053,https://example.com/course/106
+COURSE0107,Computer Vision Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK054,ROLE054,https://example.com/course/107
+COURSE0108,Computer Vision Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK054,ROLE054,https://example.com/course/108
+COURSE0109,Generative AI Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK055,ROLE055,https://example.com/course/109
+COURSE0110,Generative AI Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK055,ROLE055,https://example.com/course/110
+COURSE0111,Prompt Engineering Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK056,ROLE056,https://example.com/course/111
+COURSE0112,Prompt Engineering Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK056,ROLE056,https://example.com/course/112
+COURSE0113,LLMs Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK057,ROLE057,https://example.com/course/113
+COURSE0114,LLMs Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK057,ROLE057,https://example.com/course/114
+COURSE0115,RAG Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK058,ROLE058,https://example.com/course/115
+COURSE0116,RAG Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK058,ROLE058,https://example.com/course/116
+COURSE0117,LangChain Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK059,ROLE059,https://example.com/course/117
+COURSE0118,LangChain Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK059,ROLE059,https://example.com/course/118
+COURSE0119,LlamaIndex Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK060,ROLE060,https://example.com/course/119
+COURSE0120,LlamaIndex Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK060,ROLE060,https://example.com/course/120
+COURSE0121,Vector Database Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK061,ROLE001,https://example.com/course/121
+COURSE0122,Vector Database Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK061,ROLE001,https://example.com/course/122
+COURSE0123,Embeddings Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK062,ROLE002,https://example.com/course/123
+COURSE0124,Embeddings Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK062,ROLE002,https://example.com/course/124
+COURSE0125,Neural Networks Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK063,ROLE003,https://example.com/course/125
+COURSE0126,Neural Networks Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK063,ROLE003,https://example.com/course/126
+COURSE0127,TensorFlow Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK064,ROLE004,https://example.com/course/127
+COURSE0128,TensorFlow Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK064,ROLE004,https://example.com/course/128
+COURSE0129,PyTorch Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK065,ROLE005,https://example.com/course/129
+COURSE0130,PyTorch Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK065,ROLE005,https://example.com/course/130
+COURSE0131,Keras Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK066,ROLE006,https://example.com/course/131
+COURSE0132,Keras Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK066,ROLE006,https://example.com/course/132
+COURSE0133,Scikit-learn Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK067,ROLE007,https://example.com/course/133
+COURSE0134,Scikit-learn Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK067,ROLE007,https://example.com/course/134
+COURSE0135,XGBoost Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK068,ROLE008,https://example.com/course/135
+COURSE0136,XGBoost Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK068,ROLE008,https://example.com/course/136
+COURSE0137,LightGBM Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK069,ROLE009,https://example.com/course/137
+COURSE0138,LightGBM Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK069,ROLE009,https://example.com/course/138
+COURSE0139,OpenCV Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK070,ROLE010,https://example.com/course/139
+COURSE0140,OpenCV Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK070,ROLE010,https://example.com/course/140
+COURSE0141,Hugging Face Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK071,ROLE011,https://example.com/course/141
+COURSE0142,Hugging Face Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK071,ROLE011,https://example.com/course/142
+COURSE0143,Transformers Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK072,ROLE012,https://example.com/course/143
+COURSE0144,Transformers Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK072,ROLE012,https://example.com/course/144
+COURSE0145,Model Fine-tuning Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK073,ROLE013,https://example.com/course/145
+COURSE0146,Model Fine-tuning Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK073,ROLE013,https://example.com/course/146
+COURSE0147,RLHF Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK074,ROLE014,https://example.com/course/147
+COURSE0148,RLHF Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK074,ROLE014,https://example.com/course/148
+COURSE0149,Diffusion Models Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK075,ROLE015,https://example.com/course/149
+COURSE0150,Diffusion Models Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK075,ROLE015,https://example.com/course/150
+COURSE0151,GAN Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK076,ROLE016,https://example.com/course/151
+COURSE0152,GAN Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK076,ROLE016,https://example.com/course/152
+COURSE0153,Recommendation Systems Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK077,ROLE017,https://example.com/course/153
+COURSE0154,Recommendation Systems Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK077,ROLE017,https://example.com/course/154
+COURSE0155,Time Series Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK078,ROLE018,https://example.com/course/155
+COURSE0156,Time Series Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK078,ROLE018,https://example.com/course/156
+COURSE0157,Feature Engineering Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK079,ROLE019,https://example.com/course/157
+COURSE0158,Feature Engineering Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK079,ROLE019,https://example.com/course/158
+COURSE0159,Model Evaluation Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK080,ROLE020,https://example.com/course/159
+COURSE0160,Model Evaluation Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK080,ROLE020,https://example.com/course/160
+COURSE0161,Hyperparameter Tuning Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK081,ROLE021,https://example.com/course/161
+COURSE0162,Hyperparameter Tuning Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK081,ROLE021,https://example.com/course/162
+COURSE0163,MLOps Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK082,ROLE022,https://example.com/course/163
+COURSE0164,MLOps Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK082,ROLE022,https://example.com/course/164
+COURSE0165,MLflow Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK083,ROLE023,https://example.com/course/165
+COURSE0166,MLflow Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK083,ROLE023,https://example.com/course/166
+COURSE0167,FastAPI Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK084,ROLE024,https://example.com/course/167
+COURSE0168,FastAPI Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK084,ROLE024,https://example.com/course/168
+COURSE0169,ONNX Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK085,ROLE025,https://example.com/course/169
+COURSE0170,ONNX Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK085,ROLE025,https://example.com/course/170
+COURSE0171,AI Ethics Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK086,ROLE026,https://example.com/course/171
+COURSE0172,AI Ethics Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK086,ROLE026,https://example.com/course/172
+COURSE0173,Responsible AI Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK087,ROLE027,https://example.com/course/173
+COURSE0174,Responsible AI Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK087,ROLE027,https://example.com/course/174
+COURSE0175,Explainable AI Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK088,ROLE028,https://example.com/course/175
+COURSE0176,Explainable AI Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK088,ROLE028,https://example.com/course/176
+COURSE0177,Speech Recognition Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK089,ROLE029,https://example.com/course/177
+COURSE0178,Speech Recognition Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK089,ROLE029,https://example.com/course/178
+COURSE0179,OCR Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK090,ROLE030,https://example.com/course/179
+COURSE0180,OCR Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK090,ROLE030,https://example.com/course/180
+COURSE0181,NumPy Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK091,ROLE031,https://example.com/course/181
+COURSE0182,NumPy Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK091,ROLE031,https://example.com/course/182
+COURSE0183,Pandas Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK092,ROLE032,https://example.com/course/183
+COURSE0184,Pandas Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK092,ROLE032,https://example.com/course/184
+COURSE0185,Matplotlib Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK093,ROLE033,https://example.com/course/185
+COURSE0186,Matplotlib Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK093,ROLE033,https://example.com/course/186
+COURSE0187,Seaborn Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK094,ROLE034,https://example.com/course/187
+COURSE0188,Seaborn Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK094,ROLE034,https://example.com/course/188
+COURSE0189,Power BI Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK095,ROLE035,https://example.com/course/189
+COURSE0190,Power BI Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK095,ROLE035,https://example.com/course/190
+COURSE0191,Tableau Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK096,ROLE036,https://example.com/course/191
+COURSE0192,Tableau Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK096,ROLE036,https://example.com/course/192
+COURSE0193,Excel Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK097,ROLE037,https://example.com/course/193
+COURSE0194,Excel Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK097,ROLE037,https://example.com/course/194
+COURSE0195,Statistics Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK098,ROLE038,https://example.com/course/195
+COURSE0196,Statistics Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK098,ROLE038,https://example.com/course/196
+COURSE0197,Probability Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK099,ROLE039,https://example.com/course/197
+COURSE0198,Probability Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK099,ROLE039,https://example.com/course/198
+COURSE0199,Linear Algebra Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK100,ROLE040,https://example.com/course/199
+COURSE0200,Linear Algebra Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK100,ROLE040,https://example.com/course/200
+COURSE0201,Calculus Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK101,ROLE041,https://example.com/course/201
+COURSE0202,Calculus Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK101,ROLE041,https://example.com/course/202
+COURSE0203,Data Cleaning Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK102,ROLE042,https://example.com/course/203
+COURSE0204,Data Cleaning Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK102,ROLE042,https://example.com/course/204
+COURSE0205,EDA Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK103,ROLE043,https://example.com/course/205
+COURSE0206,EDA Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK103,ROLE043,https://example.com/course/206
+COURSE0207,Feature Selection Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK104,ROLE044,https://example.com/course/207
+COURSE0208,Feature Selection Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK104,ROLE044,https://example.com/course/208
+COURSE0209,Data Visualization Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK105,ROLE045,https://example.com/course/209
+COURSE0210,Data Visualization Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK105,ROLE045,https://example.com/course/210
+COURSE0211,Hypothesis Testing Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK106,ROLE046,https://example.com/course/211
+COURSE0212,Hypothesis Testing Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK106,ROLE046,https://example.com/course/212
+COURSE0213,Regression Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK107,ROLE047,https://example.com/course/213
+COURSE0214,Regression Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK107,ROLE047,https://example.com/course/214
+COURSE0215,Classification Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK108,ROLE048,https://example.com/course/215
+COURSE0216,Classification Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK108,ROLE048,https://example.com/course/216
+COURSE0217,Clustering Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK109,ROLE049,https://example.com/course/217
+COURSE0218,Clustering Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK109,ROLE049,https://example.com/course/218
+COURSE0219,Dimensionality Reduction Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK110,ROLE050,https://example.com/course/219
+COURSE0220,Dimensionality Reduction Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK110,ROLE050,https://example.com/course/220
+COURSE0221,Big Data Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK111,ROLE051,https://example.com/course/221
+COURSE0222,Big Data Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK111,ROLE051,https://example.com/course/222
+COURSE0223,Spark Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK112,ROLE052,https://example.com/course/223
+COURSE0224,Spark Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK112,ROLE052,https://example.com/course/224
+COURSE0225,Hadoop Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK113,ROLE053,https://example.com/course/225
+COURSE0226,Hadoop Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK113,ROLE053,https://example.com/course/226
+COURSE0227,Airflow Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK114,ROLE054,https://example.com/course/227
+COURSE0228,Airflow Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK114,ROLE054,https://example.com/course/228
+COURSE0229,Snowflake Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK115,ROLE055,https://example.com/course/229
+COURSE0230,Snowflake Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK115,ROLE055,https://example.com/course/230
+COURSE0231,Redshift Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK116,ROLE056,https://example.com/course/231
+COURSE0232,Redshift Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK116,ROLE056,https://example.com/course/232
+COURSE0233,ETL Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK117,ROLE057,https://example.com/course/233
+COURSE0234,ETL Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK117,ROLE057,https://example.com/course/234
+COURSE0235,Data Warehouse Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK118,ROLE058,https://example.com/course/235
+COURSE0236,Data Warehouse Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK118,ROLE058,https://example.com/course/236
+COURSE0237,Data Mining Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK119,ROLE059,https://example.com/course/237
+COURSE0238,Data Mining Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK119,ROLE059,https://example.com/course/238
+COURSE0239,Business Analytics Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK120,ROLE060,https://example.com/course/239
+COURSE0240,Business Analytics Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK120,ROLE060,https://example.com/course/240
+COURSE0241,AWS Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK121,ROLE001,https://example.com/course/241
+COURSE0242,AWS Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK121,ROLE001,https://example.com/course/242
+COURSE0243,Azure Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK122,ROLE002,https://example.com/course/243
+COURSE0244,Azure Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK122,ROLE002,https://example.com/course/244
+COURSE0245,Google Cloud Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK123,ROLE003,https://example.com/course/245
+COURSE0246,Google Cloud Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK123,ROLE003,https://example.com/course/246
+COURSE0247,Docker Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK124,ROLE004,https://example.com/course/247
+COURSE0248,Docker Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK124,ROLE004,https://example.com/course/248
+COURSE0249,Kubernetes Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK125,ROLE005,https://example.com/course/249
+COURSE0250,Kubernetes Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK125,ROLE005,https://example.com/course/250
+COURSE0251,Jenkins Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK126,ROLE006,https://example.com/course/251
+COURSE0252,Jenkins Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK126,ROLE006,https://example.com/course/252
+COURSE0253,GitHub Actions Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK127,ROLE007,https://example.com/course/253
+COURSE0254,GitHub Actions Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK127,ROLE007,https://example.com/course/254
+COURSE0255,Terraform Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK128,ROLE008,https://example.com/course/255
+COURSE0256,Terraform Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK128,ROLE008,https://example.com/course/256
+COURSE0257,Ansible Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK129,ROLE009,https://example.com/course/257
+COURSE0258,Ansible Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK129,ROLE009,https://example.com/course/258
+COURSE0259,Linux Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK130,ROLE010,https://example.com/course/259
+COURSE0260,Linux Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK130,ROLE010,https://example.com/course/260
+COURSE0261,Ubuntu Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK131,ROLE011,https://example.com/course/261
+COURSE0262,Ubuntu Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK131,ROLE011,https://example.com/course/262
+COURSE0263,CentOS Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK132,ROLE012,https://example.com/course/263
+COURSE0264,CentOS Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK132,ROLE012,https://example.com/course/264
+COURSE0265,CI/CD Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK133,ROLE013,https://example.com/course/265
+COURSE0266,CI/CD Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK133,ROLE013,https://example.com/course/266
+COURSE0267,Cloud Security Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK134,ROLE014,https://example.com/course/267
+COURSE0268,Cloud Security Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK134,ROLE014,https://example.com/course/268
+COURSE0269,Load Balancing Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK135,ROLE015,https://example.com/course/269
+COURSE0270,Load Balancing Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK135,ROLE015,https://example.com/course/270
+COURSE0271,Virtualization Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK136,ROLE016,https://example.com/course/271
+COURSE0272,Virtualization Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK136,ROLE016,https://example.com/course/272
+COURSE0273,EC2 Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK137,ROLE017,https://example.com/course/273
+COURSE0274,EC2 Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK137,ROLE017,https://example.com/course/274
+COURSE0275,S3 Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK138,ROLE018,https://example.com/course/275
+COURSE0276,S3 Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK138,ROLE018,https://example.com/course/276
+COURSE0277,Lambda Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK139,ROLE019,https://example.com/course/277
+COURSE0278,Lambda Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK139,ROLE019,https://example.com/course/278
+COURSE0279,CloudFormation Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK140,ROLE020,https://example.com/course/279
+COURSE0280,CloudFormation Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK140,ROLE020,https://example.com/course/280
+COURSE0281,Prometheus Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK141,ROLE021,https://example.com/course/281
+COURSE0282,Prometheus Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK141,ROLE021,https://example.com/course/282
+COURSE0283,Grafana Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK142,ROLE022,https://example.com/course/283
+COURSE0284,Grafana Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK142,ROLE022,https://example.com/course/284
+COURSE0285,ELK Stack Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK143,ROLE023,https://example.com/course/285
+COURSE0286,ELK Stack Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK143,ROLE023,https://example.com/course/286
+COURSE0287,Kafka Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK144,ROLE024,https://example.com/course/287
+COURSE0288,Kafka Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK144,ROLE024,https://example.com/course/288
+COURSE0289,RabbitMQ Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK145,ROLE025,https://example.com/course/289
+COURSE0290,RabbitMQ Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK145,ROLE025,https://example.com/course/290
+COURSE0291,Redis Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK146,ROLE026,https://example.com/course/291
+COURSE0292,Redis Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK146,ROLE026,https://example.com/course/292
+COURSE0293,MongoDB Atlas Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK147,ROLE027,https://example.com/course/293
+COURSE0294,MongoDB Atlas Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK147,ROLE027,https://example.com/course/294
+COURSE0295,Helm Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK148,ROLE028,https://example.com/course/295
+COURSE0296,Helm Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK148,ROLE028,https://example.com/course/296
+COURSE0297,Istio Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK149,ROLE029,https://example.com/course/297
+COURSE0298,Istio Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK149,ROLE029,https://example.com/course/298
+COURSE0299,OpenShift Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK150,ROLE030,https://example.com/course/299
+COURSE0300,OpenShift Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK150,ROLE030,https://example.com/course/300
+COURSE0301,HAProxy Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK151,ROLE031,https://example.com/course/301
+COURSE0302,HAProxy Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK151,ROLE031,https://example.com/course/302
+COURSE0303,Vault Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK152,ROLE032,https://example.com/course/303
+COURSE0304,Vault Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK152,ROLE032,https://example.com/course/304
+COURSE0305,IAM Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK153,ROLE033,https://example.com/course/305
+COURSE0306,IAM Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK153,ROLE033,https://example.com/course/306
+COURSE0307,Cloud Monitoring Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK154,ROLE034,https://example.com/course/307
+COURSE0308,Cloud Monitoring Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK154,ROLE034,https://example.com/course/308
+COURSE0309,Autoscaling Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK155,ROLE035,https://example.com/course/309
+COURSE0310,Autoscaling Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK155,ROLE035,https://example.com/course/310
+COURSE0311,Disaster Recovery Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK156,ROLE036,https://example.com/course/311
+COURSE0312,Disaster Recovery Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK156,ROLE036,https://example.com/course/312
+COURSE0313,Container Security Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK157,ROLE037,https://example.com/course/313
+COURSE0314,Container Security Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK157,ROLE037,https://example.com/course/314
+COURSE0315,DevSecOps Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK158,ROLE038,https://example.com/course/315
+COURSE0316,DevSecOps Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK158,ROLE038,https://example.com/course/316
+COURSE0317,ArgoCD Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK159,ROLE039,https://example.com/course/317
+COURSE0318,ArgoCD Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK159,ROLE039,https://example.com/course/318
+COURSE0319,SQL Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK160,ROLE040,https://example.com/course/319
+COURSE0320,SQL Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK160,ROLE040,https://example.com/course/320
+COURSE0321,MySQL Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK161,ROLE041,https://example.com/course/321
+COURSE0322,MySQL Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK161,ROLE041,https://example.com/course/322
+COURSE0323,PostgreSQL Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK162,ROLE042,https://example.com/course/323
+COURSE0324,PostgreSQL Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK162,ROLE042,https://example.com/course/324
+COURSE0325,Oracle Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK163,ROLE043,https://example.com/course/325
+COURSE0326,Oracle Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK163,ROLE043,https://example.com/course/326
+COURSE0327,SQLite Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK164,ROLE044,https://example.com/course/327
+COURSE0328,SQLite Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK164,ROLE044,https://example.com/course/328
+COURSE0329,MongoDB Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK165,ROLE045,https://example.com/course/329
+COURSE0330,MongoDB Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK165,ROLE045,https://example.com/course/330
+COURSE0331,Redis DB Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK166,ROLE046,https://example.com/course/331
+COURSE0332,Redis DB Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK166,ROLE046,https://example.com/course/332
+COURSE0333,Cassandra Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK167,ROLE047,https://example.com/course/333
+COURSE0334,Cassandra Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK167,ROLE047,https://example.com/course/334
+COURSE0335,Neo4j Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK168,ROLE048,https://example.com/course/335
+COURSE0336,Neo4j Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK168,ROLE048,https://example.com/course/336
+COURSE0337,Firebase Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK169,ROLE049,https://example.com/course/337
+COURSE0338,Firebase Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK169,ROLE049,https://example.com/course/338
+COURSE0339,Supabase Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK170,ROLE050,https://example.com/course/339
+COURSE0340,Supabase Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK170,ROLE050,https://example.com/course/340
+COURSE0341,DynamoDB Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK171,ROLE051,https://example.com/course/341
+COURSE0342,DynamoDB Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK171,ROLE051,https://example.com/course/342
+COURSE0343,ElasticSearch Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK172,ROLE052,https://example.com/course/343
+COURSE0344,ElasticSearch Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK172,ROLE052,https://example.com/course/344
+COURSE0345,MariaDB Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK173,ROLE053,https://example.com/course/345
+COURSE0346,MariaDB Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK173,ROLE053,https://example.com/course/346
+COURSE0347,SQL Server Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK174,ROLE054,https://example.com/course/347
+COURSE0348,SQL Server Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK174,ROLE054,https://example.com/course/348
+COURSE0349,InfluxDB Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK175,ROLE055,https://example.com/course/349
+COURSE0350,InfluxDB Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK175,ROLE055,https://example.com/course/350
+COURSE0351,ClickHouse Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK176,ROLE056,https://example.com/course/351
+COURSE0352,ClickHouse Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK176,ROLE056,https://example.com/course/352
+COURSE0353,BigQuery Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK177,ROLE057,https://example.com/course/353
+COURSE0354,BigQuery Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK177,ROLE057,https://example.com/course/354
+COURSE0355,Hive Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK178,ROLE058,https://example.com/course/355
+COURSE0356,Hive Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK178,ROLE058,https://example.com/course/356
+COURSE0357,HBase Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK179,ROLE059,https://example.com/course/357
+COURSE0358,HBase Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK179,ROLE059,https://example.com/course/358
+COURSE0359,Ethical Hacking Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK180,ROLE060,https://example.com/course/359
+COURSE0360,Ethical Hacking Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK180,ROLE060,https://example.com/course/360
+COURSE0361,Penetration Testing Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK181,ROLE001,https://example.com/course/361
+COURSE0362,Penetration Testing Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK181,ROLE001,https://example.com/course/362
+COURSE0363,Network Security Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK182,ROLE002,https://example.com/course/363
+COURSE0364,Network Security Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK182,ROLE002,https://example.com/course/364
+COURSE0365,Cryptography Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK183,ROLE003,https://example.com/course/365
+COURSE0366,Cryptography Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK183,ROLE003,https://example.com/course/366
+COURSE0367,Firewalls Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK184,ROLE004,https://example.com/course/367
+COURSE0368,Firewalls Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK184,ROLE004,https://example.com/course/368
+COURSE0369,SIEM Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK185,ROLE005,https://example.com/course/369
+COURSE0370,SIEM Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK185,ROLE005,https://example.com/course/370
+COURSE0371,SOC Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK186,ROLE006,https://example.com/course/371
+COURSE0372,SOC Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK186,ROLE006,https://example.com/course/372
+COURSE0373,Burp Suite Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK187,ROLE007,https://example.com/course/373
+COURSE0374,Burp Suite Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK187,ROLE007,https://example.com/course/374
+COURSE0375,Metasploit Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK188,ROLE008,https://example.com/course/375
+COURSE0376,Metasploit Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK188,ROLE008,https://example.com/course/376
+COURSE0377,Nmap Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK189,ROLE009,https://example.com/course/377
+COURSE0378,Nmap Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK189,ROLE009,https://example.com/course/378
+COURSE0379,Wireshark Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK190,ROLE010,https://example.com/course/379
+COURSE0380,Wireshark Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK190,ROLE010,https://example.com/course/380
+COURSE0381,OWASP Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK191,ROLE011,https://example.com/course/381
+COURSE0382,OWASP Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK191,ROLE011,https://example.com/course/382
+COURSE0383,Linux Security Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK192,ROLE012,https://example.com/course/383
+COURSE0384,Linux Security Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK192,ROLE012,https://example.com/course/384
+COURSE0385,IAM Security Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK193,ROLE013,https://example.com/course/385
+COURSE0386,IAM Security Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK193,ROLE013,https://example.com/course/386
+COURSE0387,Zero Trust Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK194,ROLE014,https://example.com/course/387
+COURSE0388,Zero Trust Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK194,ROLE014,https://example.com/course/388
+COURSE0389,Incident Response Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK195,ROLE015,https://example.com/course/389
+COURSE0390,Incident Response Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK195,ROLE015,https://example.com/course/390
+COURSE0391,Malware Analysis Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK196,ROLE016,https://example.com/course/391
+COURSE0392,Malware Analysis Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK196,ROLE016,https://example.com/course/392
+COURSE0393,Digital Forensics Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK197,ROLE017,https://example.com/course/393
+COURSE0394,Digital Forensics Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK197,ROLE017,https://example.com/course/394
+COURSE0395,Threat Hunting Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK198,ROLE018,https://example.com/course/395
+COURSE0396,Threat Hunting Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK198,ROLE018,https://example.com/course/396
+COURSE0397,Security Auditing Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK199,ROLE019,https://example.com/course/397
+COURSE0398,Security Auditing Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK199,ROLE019,https://example.com/course/398
+COURSE0399,Risk Assessment Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK200,ROLE020,https://example.com/course/399
+COURSE0400,Risk Assessment Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK200,ROLE020,https://example.com/course/400
+COURSE0401,Compliance Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK201,ROLE021,https://example.com/course/401
+COURSE0402,Compliance Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK201,ROLE021,https://example.com/course/402
+COURSE0403,Vulnerability Assessment Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK202,ROLE022,https://example.com/course/403
+COURSE0404,Vulnerability Assessment Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK202,ROLE022,https://example.com/course/404
+COURSE0405,PKI Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK203,ROLE023,https://example.com/course/405
+COURSE0406,PKI Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK203,ROLE023,https://example.com/course/406
+COURSE0407,SSL/TLS Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK204,ROLE024,https://example.com/course/407
+COURSE0408,SSL/TLS Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK204,ROLE024,https://example.com/course/408
+COURSE0409,Flutter Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK205,ROLE025,https://example.com/course/409
+COURSE0410,Flutter Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK205,ROLE025,https://example.com/course/410
+COURSE0411,React Native Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK206,ROLE026,https://example.com/course/411
+COURSE0412,React Native Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK206,ROLE026,https://example.com/course/412
+COURSE0413,Android Studio Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK207,ROLE027,https://example.com/course/413
+COURSE0414,Android Studio Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK207,ROLE027,https://example.com/course/414
+COURSE0415,SwiftUI Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK208,ROLE028,https://example.com/course/415
+COURSE0416,SwiftUI Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK208,ROLE028,https://example.com/course/416
+COURSE0417,Jetpack Compose Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK209,ROLE029,https://example.com/course/417
+COURSE0418,Jetpack Compose Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK209,ROLE029,https://example.com/course/418
+COURSE0419,Firebase Mobile Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK210,ROLE030,https://example.com/course/419
+COURSE0420,Firebase Mobile Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK210,ROLE030,https://example.com/course/420
+COURSE0421,Room Database Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK211,ROLE031,https://example.com/course/421
+COURSE0422,Room Database Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK211,ROLE031,https://example.com/course/422
+COURSE0423,SQLite Mobile Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK212,ROLE032,https://example.com/course/423
+COURSE0424,SQLite Mobile Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK212,ROLE032,https://example.com/course/424
+COURSE0425,Push Notifications Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK213,ROLE033,https://example.com/course/425
+COURSE0426,Push Notifications Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK213,ROLE033,https://example.com/course/426
+COURSE0427,Google Maps API Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK214,ROLE034,https://example.com/course/427
+COURSE0428,Google Maps API Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK214,ROLE034,https://example.com/course/428
+COURSE0429,REST API Integration Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK215,ROLE035,https://example.com/course/429
+COURSE0430,REST API Integration Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK215,ROLE035,https://example.com/course/430
+COURSE0431,Material Design Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK216,ROLE036,https://example.com/course/431
+COURSE0432,Material Design Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK216,ROLE036,https://example.com/course/432
+COURSE0433,App Publishing Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK217,ROLE037,https://example.com/course/433
+COURSE0434,App Publishing Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK217,ROLE037,https://example.com/course/434
+COURSE0435,Play Store Deployment Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK218,ROLE038,https://example.com/course/435
+COURSE0436,Play Store Deployment Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK218,ROLE038,https://example.com/course/436
+COURSE0437,State Management Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK219,ROLE039,https://example.com/course/437
+COURSE0438,State Management Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK219,ROLE039,https://example.com/course/438
+COURSE0439,Selenium Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK220,ROLE040,https://example.com/course/439
+COURSE0440,Selenium Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK220,ROLE040,https://example.com/course/440
+COURSE0441,JUnit Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK221,ROLE041,https://example.com/course/441
+COURSE0442,JUnit Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK221,ROLE041,https://example.com/course/442
+COURSE0443,PyTest Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK222,ROLE042,https://example.com/course/443
+COURSE0444,PyTest Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK222,ROLE042,https://example.com/course/444
+COURSE0445,Cypress Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK223,ROLE043,https://example.com/course/445
+COURSE0446,Cypress Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK223,ROLE043,https://example.com/course/446
+COURSE0447,Playwright Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK224,ROLE044,https://example.com/course/447
+COURSE0448,Playwright Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK224,ROLE044,https://example.com/course/448
+COURSE0449,Manual Testing Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK225,ROLE045,https://example.com/course/449
+COURSE0450,Manual Testing Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK225,ROLE045,https://example.com/course/450
+COURSE0451,Automation Testing Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK226,ROLE046,https://example.com/course/451
+COURSE0452,Automation Testing Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK226,ROLE046,https://example.com/course/452
+COURSE0453,API Testing Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK227,ROLE047,https://example.com/course/453
+COURSE0454,API Testing Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK227,ROLE047,https://example.com/course/454
+COURSE0455,Performance Testing Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK228,ROLE048,https://example.com/course/455
+COURSE0456,Performance Testing Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK228,ROLE048,https://example.com/course/456
+COURSE0457,Load Testing Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK229,ROLE049,https://example.com/course/457
+COURSE0458,Load Testing Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK229,ROLE049,https://example.com/course/458
+COURSE0459,JMeter Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK230,ROLE050,https://example.com/course/459
+COURSE0460,JMeter Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK230,ROLE050,https://example.com/course/460
+COURSE0461,Postman Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK231,ROLE051,https://example.com/course/461
+COURSE0462,Postman Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK231,ROLE051,https://example.com/course/462
+COURSE0463,Unit Testing Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK232,ROLE052,https://example.com/course/463
+COURSE0464,Unit Testing Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK232,ROLE052,https://example.com/course/464
+COURSE0465,Integration Testing Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK233,ROLE053,https://example.com/course/465
+COURSE0466,Integration Testing Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK233,ROLE053,https://example.com/course/466
+COURSE0467,Regression Testing Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK234,ROLE054,https://example.com/course/467
+COURSE0468,Regression Testing Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK234,ROLE054,https://example.com/course/468
+COURSE0469,Communication Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK235,ROLE055,https://example.com/course/469
+COURSE0470,Communication Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK235,ROLE055,https://example.com/course/470
+COURSE0471,Leadership Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK236,ROLE056,https://example.com/course/471
+COURSE0472,Leadership Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK236,ROLE056,https://example.com/course/472
+COURSE0473,Problem Solving Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK237,ROLE057,https://example.com/course/473
+COURSE0474,Problem Solving Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK237,ROLE057,https://example.com/course/474
+COURSE0475,Critical Thinking Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK238,ROLE058,https://example.com/course/475
+COURSE0476,Critical Thinking Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK238,ROLE058,https://example.com/course/476
+COURSE0477,Analytical Thinking Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK239,ROLE059,https://example.com/course/477
+COURSE0478,Analytical Thinking Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK239,ROLE059,https://example.com/course/478
+COURSE0479,Teamwork Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK240,ROLE060,https://example.com/course/479
+COURSE0480,Teamwork Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK240,ROLE060,https://example.com/course/480
+COURSE0481,Presentation Skills Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK241,ROLE001,https://example.com/course/481
+COURSE0482,Presentation Skills Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK241,ROLE001,https://example.com/course/482
+COURSE0483,Negotiation Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK242,ROLE002,https://example.com/course/483
+COURSE0484,Negotiation Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK242,ROLE002,https://example.com/course/484
+COURSE0485,Public Speaking Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK243,ROLE003,https://example.com/course/485
+COURSE0486,Public Speaking Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK243,ROLE003,https://example.com/course/486
+COURSE0487,Time Management Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK244,ROLE004,https://example.com/course/487
+COURSE0488,Time Management Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK244,ROLE004,https://example.com/course/488
+COURSE0489,Adaptability Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK245,ROLE005,https://example.com/course/489
+COURSE0490,Adaptability Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK245,ROLE005,https://example.com/course/490
+COURSE0491,Creativity Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK246,ROLE006,https://example.com/course/491
+COURSE0492,Creativity Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK246,ROLE006,https://example.com/course/492
+COURSE0493,Decision Making Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK247,ROLE007,https://example.com/course/493
+COURSE0494,Decision Making Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK247,ROLE007,https://example.com/course/494
+COURSE0495,Conflict Resolution Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK248,ROLE008,https://example.com/course/495
+COURSE0496,Conflict Resolution Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK248,ROLE008,https://example.com/course/496
+COURSE0497,Emotional Intelligence Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK249,ROLE009,https://example.com/course/497
+COURSE0498,Emotional Intelligence Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK249,ROLE009,https://example.com/course/498
+COURSE0499,Active Listening Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK250,ROLE010,https://example.com/course/499
+COURSE0500,Active Listening Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK250,ROLE010,https://example.com/course/500
+COURSE0501,Documentation Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK251,ROLE011,https://example.com/course/501
+COURSE0502,Documentation Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK251,ROLE011,https://example.com/course/502
+COURSE0503,Research Skills Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK252,ROLE012,https://example.com/course/503
+COURSE0504,Research Skills Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK252,ROLE012,https://example.com/course/504
+COURSE0505,Mentoring Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK253,ROLE013,https://example.com/course/505
+COURSE0506,Mentoring Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK253,ROLE013,https://example.com/course/506
+COURSE0507,Networking Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK254,ROLE014,https://example.com/course/507
+COURSE0508,Networking Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK254,ROLE014,https://example.com/course/508
+COURSE0509,Customer Handling Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK255,ROLE015,https://example.com/course/509
+COURSE0510,Customer Handling Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK255,ROLE015,https://example.com/course/510
+COURSE0511,Business Communication Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK256,ROLE016,https://example.com/course/511
+COURSE0512,Business Communication Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK256,ROLE016,https://example.com/course/512
+COURSE0513,Professional Ethics Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK257,ROLE017,https://example.com/course/513
+COURSE0514,Professional Ethics Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK257,ROLE017,https://example.com/course/514
+COURSE0515,Project Planning Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK258,ROLE018,https://example.com/course/515
+COURSE0516,Project Planning Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK258,ROLE018,https://example.com/course/516
+COURSE0517,Agile Mindset Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK259,ROLE019,https://example.com/course/517
+COURSE0518,Agile Mindset Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK259,ROLE019,https://example.com/course/518
+COURSE0519,Figma Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK260,ROLE020,https://example.com/course/519
+COURSE0520,Figma Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK260,ROLE020,https://example.com/course/520
+COURSE0521,Adobe XD Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK261,ROLE021,https://example.com/course/521
+COURSE0522,Adobe XD Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK261,ROLE021,https://example.com/course/522
+COURSE0523,Photoshop Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK262,ROLE022,https://example.com/course/523
+COURSE0524,Photoshop Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK262,ROLE022,https://example.com/course/524
+COURSE0525,Illustrator Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK263,ROLE023,https://example.com/course/525
+COURSE0526,Illustrator Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK263,ROLE023,https://example.com/course/526
+COURSE0527,Canva Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK264,ROLE024,https://example.com/course/527
+COURSE0528,Canva Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK264,ROLE024,https://example.com/course/528
+COURSE0529,Wireframing Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK265,ROLE025,https://example.com/course/529
+COURSE0530,Wireframing Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK265,ROLE025,https://example.com/course/530
+COURSE0531,Prototyping Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK266,ROLE026,https://example.com/course/531
+COURSE0532,Prototyping Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK266,ROLE026,https://example.com/course/532
+COURSE0533,UX Research Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK267,ROLE027,https://example.com/course/533
+COURSE0534,UX Research Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK267,ROLE027,https://example.com/course/534
+COURSE0535,UI Design Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK268,ROLE028,https://example.com/course/535
+COURSE0536,UI Design Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK268,ROLE028,https://example.com/course/536
+COURSE0537,Design Systems Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK269,ROLE029,https://example.com/course/537
+COURSE0538,Design Systems Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK269,ROLE029,https://example.com/course/538
+COURSE0539,Color Theory Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK270,ROLE030,https://example.com/course/539
+COURSE0540,Color Theory Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK270,ROLE030,https://example.com/course/540
+COURSE0541,Typography Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK271,ROLE031,https://example.com/course/541
+COURSE0542,Typography Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK271,ROLE031,https://example.com/course/542
+COURSE0543,Accessibility Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK272,ROLE032,https://example.com/course/543
+COURSE0544,Accessibility Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK272,ROLE032,https://example.com/course/544
+COURSE0545,Responsive Design Design Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK273,ROLE033,https://example.com/course/545
+COURSE0546,Responsive Design Design Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK273,ROLE033,https://example.com/course/546
+COURSE0547,Animation Fundamentals,YouTube,Microsoft,Beginner,20,English,Yes,Free,4.5,SK274,ROLE034,https://example.com/course/547
+COURSE0548,Animation Advanced,freeCodeCamp,DeepLearning.AI,Intermediate,40,English,Yes,Paid,4.5,SK274,ROLE034,https://example.com/course/548
+COURSE0549,Motion Design Fundamentals,freeCodeCamp,DeepLearning.AI,Beginner,20,English,Yes,Free,4.5,SK275,ROLE035,https://example.com/course/549
+COURSE0550,Motion Design Advanced,Google,NPTEL,Intermediate,40,English,Yes,Paid,4.5,SK275,ROLE035,https://example.com/course/550
+COURSE0551,User Journey Mapping Fundamentals,Google,NPTEL,Beginner,20,English,Yes,Free,4.5,SK276,ROLE036,https://example.com/course/551
+COURSE0552,User Journey Mapping Advanced,Coursera,Google,Intermediate,40,English,Yes,Paid,4.5,SK276,ROLE036,https://example.com/course/552
+COURSE0553,Usability Testing Fundamentals,Coursera,Google,Beginner,20,English,Yes,Free,4.5,SK277,ROLE037,https://example.com/course/553
+COURSE0554,Usability Testing Advanced,Udemy,IBM,Intermediate,40,English,Yes,Paid,4.5,SK277,ROLE037,https://example.com/course/554
+COURSE0555,Information Architecture Fundamentals,Udemy,IBM,Beginner,20,English,Yes,Free,4.5,SK278,ROLE038,https://example.com/course/555
+COURSE0556,Information Architecture Advanced,NPTEL,Meta,Intermediate,40,English,Yes,Paid,4.5,SK278,ROLE038,https://example.com/course/556
+COURSE0557,Interaction Design Fundamentals,NPTEL,Meta,Beginner,20,English,Yes,Free,4.5,SK279,ROLE039,https://example.com/course/557
+COURSE0558,Interaction Design Advanced,YouTube,Microsoft,Intermediate,40,English,Yes,Paid,4.5,SK279,ROLE039,https://example.com/course/558

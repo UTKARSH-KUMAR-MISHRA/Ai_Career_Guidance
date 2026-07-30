@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Career Guidance — Learning Roadmap</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="../css/main.css">
+<style>
+  .roadmap-shell {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: auto;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .roadmap-controls {
+    background: #fff;
+    border: 1px solid #ECEDF3;
+    border-radius: 12px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .tabs {
+    display: flex;
+    gap: 8px;
+  }
+  .tab-btn {
+    border: 1px solid #ECEDF3;
+    background: #fff;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 11.5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .2s, color .2s;
+  }
+  .tab-btn:hover {
+    background: #F9FAFB;
+  }
+  .tab-btn.active {
+    background: #4F46E5;
+    color: #fff;
+    border-color: #4F46E5;
+  }
+  .roadmap-list {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 0;
+  }
+  .week-card {
+    background: #fff;
+    border: 1px solid #ECEDF3;
+    border-radius: 14px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: 80px 1fr 140px;
+    gap: 16px;
+    align-items: center;
+    transition: transform .2s, border-color .2s;
+  }
+  .week-card:hover {
+    transform: translateY(-1px);
+    border-color: #D8D6FF;
+  }
+  .week-num-badge {
+    text-align: center;
+    background: #EEF0FF;
+    border-radius: 10px;
+    padding: 10px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+  }
+  .week-num-badge h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 800;
+    color: #4F46E5;
+  }
+  .week-num-badge span {
+    font-size: 9px;
+    color: #6B7280;
+    margin-top: 2px;
+  }
+  .week-content h4 {
+    margin: 0 0 6px;
+    font-size: 13.5px;
+    font-weight: 700;
+  }
+  .week-resources {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  .res-badge {
+    font-size: 9.5px;
+    background: #F3F4F6;
+    color: #4B5563;
+    padding: 3px 8px;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .week-action-col {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+  }
+  .status-tag {
+    font-size: 10.5px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+    display: inline-block;
+  }
+  .status-tag.completed {
+    background: #E9F9EF;
+    color: #16A34A;
+  }
+  .status-tag.todo {
+    background: #F1F1F5;
+    color: #6B7280;
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- SIDEBAR (Dynamic) -->
+  <div class="sidebar"></div>
+
+  <!-- MAIN Shell -->
+  <div class="main">
+    <!-- TOPBAR (Dynamic) -->
+    <div class="topbar">
+      <div>
+        <h1>Learning Roadmap</h1>
+        <p>Loading personalized weekly syllabus...</p>
+      </div>
+    </div>
+
+    <!-- Roadmap Workspace -->
+    <div class="roadmap-shell reveal">
+      
+      <!-- Controls -->
+      <div class="roadmap-controls">
+        <div style="display:flex; align-items:center; gap:8px;">
+          <span style="font-size:12px; font-weight:700; color:#4B5563;">Target Role:</span>
+          <strong id="roadmapTargetName" style="font-size:12.5px; color:#111827;">Loading...</strong>
+        </div>
+        <div class="tabs">
+          <button class="tab-btn" onclick="switchRoadmapType('30-Day', this)">30-Day</button>
+          <button class="tab-btn" onclick="switchRoadmapType('60-Day', this)">60-Day</button>
+          <button class="tab-btn active" onclick="switchRoadmapType('90-Day', this)">90-Day</button>
+        </div>
+      </div>
+
+      <!-- Roadmap Cards list -->
+      <div class="roadmap-list" id="roadmapList">
+        <div style="text-align: center; padding: 40px; color: #9CA3AF;">
+          <i class="ti ti-loader" style="font-size: 32px; animation: spin 1s linear infinite;"></i>
+          <p style="margin-top: 10px;">Generating dynamic curriculum structure...</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"><i class="ti ti-circle-check"></i><span id="toastMsg">Saved</span></div>
+
+<script src="../js/navigation.js"></script>
+<script src="../js/roadmap.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<div class="topbar">
+  <div><h1>Industry Trends & Market Outlook</h1><div class="sub">Stay ahead with the latest hiring demands and technology shifts.</div></div>
+</div>
+
+<div class="content" style="display: flex; flex-direction: column; gap: 20px;">
+  <!-- Filters Bar -->
+  <div class="panel reveal" style="padding: 15px 25px; display: flex; align-items: center; justify-content: space-between; gap: 15px; flex-wrap: wrap;">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <label for="trendRoleFilter" style="font-weight: 600; font-size: 13.5px; color: var(--text-2);">Filter by Role:</label>
+      <select id="trendRoleFilter" class="form-input form-select" style="min-width: 250px; background-color: var(--bg-page); color: var(--text);" onchange="filterTrends(this.value)">
+        <option value="">All Tech Careers</option>
+        <option value="ROLE001">Data Scientist</option>
+        <option value="ROLE002">Software Development Engineer (SDE)</option>
+        <option value="ROLE003">Full Stack Developer</option>
+        <option value="ROLE004">Cloud Engineer</option>
+        <option value="ROLE005">AI / ML Engineer</option>
+      </select>
+    </div>
+    <div id="trendsSummaryText" style="font-size: 13px; color: var(--text-2);">Showing latest active industry trends</div>
+  </div>
+
+  <!-- Trends Grid -->
+  <div id="trendsContainer" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 20px;">
+    <!-- Filled Dynamically by JS -->
+  </div>
+</div>

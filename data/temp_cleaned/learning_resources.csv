@@ -1,0 +1,501 @@
+resource_id,resource_name,resource_type,platform,topic,difficulty,language,duration,free_paid,skill_id,role_id,url
+RES0001,Learning Resource 1,Book,O'Reilly,Skill SK001,Beginner,English,2 Hours,Free,SK001,ROLE001,https://example.com/resource/1
+RES0002,Learning Resource 2,YouTube,YouTube,Skill SK002,Intermediate,English,3 Hours,Paid,SK002,ROLE002,https://example.com/resource/2
+RES0003,Learning Resource 3,Documentation,MDN,Skill SK003,Advanced,English,4 Hours,Free,SK003,ROLE003,https://example.com/resource/3
+RES0004,Learning Resource 4,Blog,Medium,Skill SK004,Beginner,English,5 Hours,Paid,SK004,ROLE004,https://example.com/resource/4
+RES0005,Learning Resource 5,GitHub,GitHub,Skill SK005,Intermediate,English,6 Hours,Free,SK005,ROLE005,https://example.com/resource/5
+RES0006,Learning Resource 6,Research Paper,arXiv,Skill SK006,Advanced,English,7 Hours,Paid,SK006,ROLE006,https://example.com/resource/6
+RES0007,Learning Resource 7,Course,Coursera,Skill SK007,Beginner,English,8 Hours,Free,SK007,ROLE007,https://example.com/resource/7
+RES0008,Learning Resource 8,Cheat Sheet,freeCodeCamp,Skill SK008,Intermediate,English,9 Hours,Paid,SK008,ROLE008,https://example.com/resource/8
+RES0009,Learning Resource 9,Book,O'Reilly,Skill SK009,Advanced,English,10 Hours,Free,SK009,ROLE009,https://example.com/resource/9
+RES0010,Learning Resource 10,YouTube,YouTube,Skill SK010,Beginner,English,11 Hours,Paid,SK010,ROLE010,https://example.com/resource/10
+RES0011,Learning Resource 11,Documentation,MDN,Skill SK011,Intermediate,English,12 Hours,Free,SK011,ROLE011,https://example.com/resource/11
+RES0012,Learning Resource 12,Blog,Medium,Skill SK012,Advanced,English,13 Hours,Paid,SK012,ROLE012,https://example.com/resource/12
+RES0013,Learning Resource 13,GitHub,GitHub,Skill SK013,Beginner,English,14 Hours,Free,SK013,ROLE013,https://example.com/resource/13
+RES0014,Learning Resource 14,Research Paper,arXiv,Skill SK014,Intermediate,English,15 Hours,Paid,SK014,ROLE014,https://example.com/resource/14
+RES0015,Learning Resource 15,Course,Coursera,Skill SK015,Advanced,English,16 Hours,Free,SK015,ROLE015,https://example.com/resource/15
+RES0016,Learning Resource 16,Cheat Sheet,freeCodeCamp,Skill SK016,Beginner,English,17 Hours,Paid,SK016,ROLE016,https://example.com/resource/16
+RES0017,Learning Resource 17,Book,O'Reilly,Skill SK017,Intermediate,English,18 Hours,Free,SK017,ROLE017,https://example.com/resource/17
+RES0018,Learning Resource 18,YouTube,YouTube,Skill SK018,Advanced,English,19 Hours,Paid,SK018,ROLE018,https://example.com/resource/18
+RES0019,Learning Resource 19,Documentation,MDN,Skill SK019,Beginner,English,2 Hours,Free,SK019,ROLE019,https://example.com/resource/19
+RES0020,Learning Resource 20,Blog,Medium,Skill SK020,Intermediate,English,3 Hours,Paid,SK020,ROLE020,https://example.com/resource/20
+RES0021,Learning Resource 21,GitHub,GitHub,Skill SK021,Advanced,English,4 Hours,Free,SK021,ROLE021,https://example.com/resource/21
+RES0022,Learning Resource 22,Research Paper,arXiv,Skill SK022,Beginner,English,5 Hours,Paid,SK022,ROLE022,https://example.com/resource/22
+RES0023,Learning Resource 23,Course,Coursera,Skill SK023,Intermediate,English,6 Hours,Free,SK023,ROLE023,https://example.com/resource/23
+RES0024,Learning Resource 24,Cheat Sheet,freeCodeCamp,Skill SK024,Advanced,English,7 Hours,Paid,SK024,ROLE024,https://example.com/resource/24
+RES0025,Learning Resource 25,Book,O'Reilly,Skill SK025,Beginner,English,8 Hours,Free,SK025,ROLE025,https://example.com/resource/25
+RES0026,Learning Resource 26,YouTube,YouTube,Skill SK026,Intermediate,English,9 Hours,Paid,SK026,ROLE026,https://example.com/resource/26
+RES0027,Learning Resource 27,Documentation,MDN,Skill SK027,Advanced,English,10 Hours,Free,SK027,ROLE027,https://example.com/resource/27
+RES0028,Learning Resource 28,Blog,Medium,Skill SK028,Beginner,English,11 Hours,Paid,SK028,ROLE028,https://example.com/resource/28
+RES0029,Learning Resource 29,GitHub,GitHub,Skill SK029,Intermediate,English,12 Hours,Free,SK029,ROLE029,https://example.com/resource/29
+RES0030,Learning Resource 30,Research Paper,arXiv,Skill SK030,Advanced,English,13 Hours,Paid,SK030,ROLE030,https://example.com/resource/30
+RES0031,Learning Resource 31,Course,Coursera,Skill SK031,Beginner,English,14 Hours,Free,SK031,ROLE031,https://example.com/resource/31
+RES0032,Learning Resource 32,Cheat Sheet,freeCodeCamp,Skill SK032,Intermediate,English,15 Hours,Paid,SK032,ROLE032,https://example.com/resource/32
+RES0033,Learning Resource 33,Book,O'Reilly,Skill SK033,Advanced,English,16 Hours,Free,SK033,ROLE033,https://example.com/resource/33
+RES0034,Learning Resource 34,YouTube,YouTube,Skill SK034,Beginner,English,17 Hours,Paid,SK034,ROLE034,https://example.com/resource/34
+RES0035,Learning Resource 35,Documentation,MDN,Skill SK035,Intermediate,English,18 Hours,Free,SK035,ROLE035,https://example.com/resource/35
+RES0036,Learning Resource 36,Blog,Medium,Skill SK036,Advanced,English,19 Hours,Paid,SK036,ROLE036,https://example.com/resource/36
+RES0037,Learning Resource 37,GitHub,GitHub,Skill SK037,Beginner,English,2 Hours,Free,SK037,ROLE037,https://example.com/resource/37
+RES0038,Learning Resource 38,Research Paper,arXiv,Skill SK038,Intermediate,English,3 Hours,Paid,SK038,ROLE038,https://example.com/resource/38
+RES0039,Learning Resource 39,Course,Coursera,Skill SK039,Advanced,English,4 Hours,Free,SK039,ROLE039,https://example.com/resource/39
+RES0040,Learning Resource 40,Cheat Sheet,freeCodeCamp,Skill SK040,Beginner,English,5 Hours,Paid,SK040,ROLE040,https://example.com/resource/40
+RES0041,Learning Resource 41,Book,O'Reilly,Skill SK041,Intermediate,English,6 Hours,Free,SK041,ROLE041,https://example.com/resource/41
+RES0042,Learning Resource 42,YouTube,YouTube,Skill SK042,Advanced,English,7 Hours,Paid,SK042,ROLE042,https://example.com/resource/42
+RES0043,Learning Resource 43,Documentation,MDN,Skill SK043,Beginner,English,8 Hours,Free,SK043,ROLE043,https://example.com/resource/43
+RES0044,Learning Resource 44,Blog,Medium,Skill SK044,Intermediate,English,9 Hours,Paid,SK044,ROLE044,https://example.com/resource/44
+RES0045,Learning Resource 45,GitHub,GitHub,Skill SK045,Advanced,English,10 Hours,Free,SK045,ROLE045,https://example.com/resource/45
+RES0046,Learning Resource 46,Research Paper,arXiv,Skill SK046,Beginner,English,11 Hours,Paid,SK046,ROLE046,https://example.com/resource/46
+RES0047,Learning Resource 47,Course,Coursera,Skill SK047,Intermediate,English,12 Hours,Free,SK047,ROLE047,https://example.com/resource/47
+RES0048,Learning Resource 48,Cheat Sheet,freeCodeCamp,Skill SK048,Advanced,English,13 Hours,Paid,SK048,ROLE048,https://example.com/resource/48
+RES0049,Learning Resource 49,Book,O'Reilly,Skill SK049,Beginner,English,14 Hours,Free,SK049,ROLE049,https://example.com/resource/49
+RES0050,Learning Resource 50,YouTube,YouTube,Skill SK050,Intermediate,English,15 Hours,Paid,SK050,ROLE050,https://example.com/resource/50
+RES0051,Learning Resource 51,Documentation,MDN,Skill SK051,Advanced,English,16 Hours,Free,SK051,ROLE051,https://example.com/resource/51
+RES0052,Learning Resource 52,Blog,Medium,Skill SK052,Beginner,English,17 Hours,Paid,SK052,ROLE052,https://example.com/resource/52
+RES0053,Learning Resource 53,GitHub,GitHub,Skill SK053,Intermediate,English,18 Hours,Free,SK053,ROLE053,https://example.com/resource/53
+RES0054,Learning Resource 54,Research Paper,arXiv,Skill SK054,Advanced,English,19 Hours,Paid,SK054,ROLE054,https://example.com/resource/54
+RES0055,Learning Resource 55,Course,Coursera,Skill SK055,Beginner,English,2 Hours,Free,SK055,ROLE055,https://example.com/resource/55
+RES0056,Learning Resource 56,Cheat Sheet,freeCodeCamp,Skill SK056,Intermediate,English,3 Hours,Paid,SK056,ROLE056,https://example.com/resource/56
+RES0057,Learning Resource 57,Book,O'Reilly,Skill SK057,Advanced,English,4 Hours,Free,SK057,ROLE057,https://example.com/resource/57
+RES0058,Learning Resource 58,YouTube,YouTube,Skill SK058,Beginner,English,5 Hours,Paid,SK058,ROLE058,https://example.com/resource/58
+RES0059,Learning Resource 59,Documentation,MDN,Skill SK059,Intermediate,English,6 Hours,Free,SK059,ROLE059,https://example.com/resource/59
+RES0060,Learning Resource 60,Blog,Medium,Skill SK060,Advanced,English,7 Hours,Paid,SK060,ROLE060,https://example.com/resource/60
+RES0061,Learning Resource 61,GitHub,GitHub,Skill SK061,Beginner,English,8 Hours,Free,SK061,ROLE001,https://example.com/resource/61
+RES0062,Learning Resource 62,Research Paper,arXiv,Skill SK062,Intermediate,English,9 Hours,Paid,SK062,ROLE002,https://example.com/resource/62
+RES0063,Learning Resource 63,Course,Coursera,Skill SK063,Advanced,English,10 Hours,Free,SK063,ROLE003,https://example.com/resource/63
+RES0064,Learning Resource 64,Cheat Sheet,freeCodeCamp,Skill SK064,Beginner,English,11 Hours,Paid,SK064,ROLE004,https://example.com/resource/64
+RES0065,Learning Resource 65,Book,O'Reilly,Skill SK065,Intermediate,English,12 Hours,Free,SK065,ROLE005,https://example.com/resource/65
+RES0066,Learning Resource 66,YouTube,YouTube,Skill SK066,Advanced,English,13 Hours,Paid,SK066,ROLE006,https://example.com/resource/66
+RES0067,Learning Resource 67,Documentation,MDN,Skill SK067,Beginner,English,14 Hours,Free,SK067,ROLE007,https://example.com/resource/67
+RES0068,Learning Resource 68,Blog,Medium,Skill SK068,Intermediate,English,15 Hours,Paid,SK068,ROLE008,https://example.com/resource/68
+RES0069,Learning Resource 69,GitHub,GitHub,Skill SK069,Advanced,English,16 Hours,Free,SK069,ROLE009,https://example.com/resource/69
+RES0070,Learning Resource 70,Research Paper,arXiv,Skill SK070,Beginner,English,17 Hours,Paid,SK070,ROLE010,https://example.com/resource/70
+RES0071,Learning Resource 71,Course,Coursera,Skill SK071,Intermediate,English,18 Hours,Free,SK071,ROLE011,https://example.com/resource/71
+RES0072,Learning Resource 72,Cheat Sheet,freeCodeCamp,Skill SK072,Advanced,English,19 Hours,Paid,SK072,ROLE012,https://example.com/resource/72
+RES0073,Learning Resource 73,Book,O'Reilly,Skill SK073,Beginner,English,2 Hours,Free,SK073,ROLE013,https://example.com/resource/73
+RES0074,Learning Resource 74,YouTube,YouTube,Skill SK074,Intermediate,English,3 Hours,Paid,SK074,ROLE014,https://example.com/resource/74
+RES0075,Learning Resource 75,Documentation,MDN,Skill SK075,Advanced,English,4 Hours,Free,SK075,ROLE015,https://example.com/resource/75
+RES0076,Learning Resource 76,Blog,Medium,Skill SK076,Beginner,English,5 Hours,Paid,SK076,ROLE016,https://example.com/resource/76
+RES0077,Learning Resource 77,GitHub,GitHub,Skill SK077,Intermediate,English,6 Hours,Free,SK077,ROLE017,https://example.com/resource/77
+RES0078,Learning Resource 78,Research Paper,arXiv,Skill SK078,Advanced,English,7 Hours,Paid,SK078,ROLE018,https://example.com/resource/78
+RES0079,Learning Resource 79,Course,Coursera,Skill SK079,Beginner,English,8 Hours,Free,SK079,ROLE019,https://example.com/resource/79
+RES0080,Learning Resource 80,Cheat Sheet,freeCodeCamp,Skill SK080,Intermediate,English,9 Hours,Paid,SK080,ROLE020,https://example.com/resource/80
+RES0081,Learning Resource 81,Book,O'Reilly,Skill SK081,Advanced,English,10 Hours,Free,SK081,ROLE021,https://example.com/resource/81
+RES0082,Learning Resource 82,YouTube,YouTube,Skill SK082,Beginner,English,11 Hours,Paid,SK082,ROLE022,https://example.com/resource/82
+RES0083,Learning Resource 83,Documentation,MDN,Skill SK083,Intermediate,English,12 Hours,Free,SK083,ROLE023,https://example.com/resource/83
+RES0084,Learning Resource 84,Blog,Medium,Skill SK084,Advanced,English,13 Hours,Paid,SK084,ROLE024,https://example.com/resource/84
+RES0085,Learning Resource 85,GitHub,GitHub,Skill SK085,Beginner,English,14 Hours,Free,SK085,ROLE025,https://example.com/resource/85
+RES0086,Learning Resource 86,Research Paper,arXiv,Skill SK086,Intermediate,English,15 Hours,Paid,SK086,ROLE026,https://example.com/resource/86
+RES0087,Learning Resource 87,Course,Coursera,Skill SK087,Advanced,English,16 Hours,Free,SK087,ROLE027,https://example.com/resource/87
+RES0088,Learning Resource 88,Cheat Sheet,freeCodeCamp,Skill SK088,Beginner,English,17 Hours,Paid,SK088,ROLE028,https://example.com/resource/88
+RES0089,Learning Resource 89,Book,O'Reilly,Skill SK089,Intermediate,English,18 Hours,Free,SK089,ROLE029,https://example.com/resource/89
+RES0090,Learning Resource 90,YouTube,YouTube,Skill SK090,Advanced,English,19 Hours,Paid,SK090,ROLE030,https://example.com/resource/90
+RES0091,Learning Resource 91,Documentation,MDN,Skill SK091,Beginner,English,2 Hours,Free,SK091,ROLE031,https://example.com/resource/91
+RES0092,Learning Resource 92,Blog,Medium,Skill SK092,Intermediate,English,3 Hours,Paid,SK092,ROLE032,https://example.com/resource/92
+RES0093,Learning Resource 93,GitHub,GitHub,Skill SK093,Advanced,English,4 Hours,Free,SK093,ROLE033,https://example.com/resource/93
+RES0094,Learning Resource 94,Research Paper,arXiv,Skill SK094,Beginner,English,5 Hours,Paid,SK094,ROLE034,https://example.com/resource/94
+RES0095,Learning Resource 95,Course,Coursera,Skill SK095,Intermediate,English,6 Hours,Free,SK095,ROLE035,https://example.com/resource/95
+RES0096,Learning Resource 96,Cheat Sheet,freeCodeCamp,Skill SK096,Advanced,English,7 Hours,Paid,SK096,ROLE036,https://example.com/resource/96
+RES0097,Learning Resource 97,Book,O'Reilly,Skill SK097,Beginner,English,8 Hours,Free,SK097,ROLE037,https://example.com/resource/97
+RES0098,Learning Resource 98,YouTube,YouTube,Skill SK098,Intermediate,English,9 Hours,Paid,SK098,ROLE038,https://example.com/resource/98
+RES0099,Learning Resource 99,Documentation,MDN,Skill SK099,Advanced,English,10 Hours,Free,SK099,ROLE039,https://example.com/resource/99
+RES0100,Learning Resource 100,Blog,Medium,Skill SK100,Beginner,English,11 Hours,Paid,SK100,ROLE040,https://example.com/resource/100
+RES0101,Learning Resource 101,GitHub,GitHub,Skill SK101,Intermediate,English,12 Hours,Free,SK101,ROLE041,https://example.com/resource/101
+RES0102,Learning Resource 102,Research Paper,arXiv,Skill SK102,Advanced,English,13 Hours,Paid,SK102,ROLE042,https://example.com/resource/102
+RES0103,Learning Resource 103,Course,Coursera,Skill SK103,Beginner,English,14 Hours,Free,SK103,ROLE043,https://example.com/resource/103
+RES0104,Learning Resource 104,Cheat Sheet,freeCodeCamp,Skill SK104,Intermediate,English,15 Hours,Paid,SK104,ROLE044,https://example.com/resource/104
+RES0105,Learning Resource 105,Book,O'Reilly,Skill SK105,Advanced,English,16 Hours,Free,SK105,ROLE045,https://example.com/resource/105
+RES0106,Learning Resource 106,YouTube,YouTube,Skill SK106,Beginner,English,17 Hours,Paid,SK106,ROLE046,https://example.com/resource/106
+RES0107,Learning Resource 107,Documentation,MDN,Skill SK107,Intermediate,English,18 Hours,Free,SK107,ROLE047,https://example.com/resource/107
+RES0108,Learning Resource 108,Blog,Medium,Skill SK108,Advanced,English,19 Hours,Paid,SK108,ROLE048,https://example.com/resource/108
+RES0109,Learning Resource 109,GitHub,GitHub,Skill SK109,Beginner,English,2 Hours,Free,SK109,ROLE049,https://example.com/resource/109
+RES0110,Learning Resource 110,Research Paper,arXiv,Skill SK110,Intermediate,English,3 Hours,Paid,SK110,ROLE050,https://example.com/resource/110
+RES0111,Learning Resource 111,Course,Coursera,Skill SK111,Advanced,English,4 Hours,Free,SK111,ROLE051,https://example.com/resource/111
+RES0112,Learning Resource 112,Cheat Sheet,freeCodeCamp,Skill SK112,Beginner,English,5 Hours,Paid,SK112,ROLE052,https://example.com/resource/112
+RES0113,Learning Resource 113,Book,O'Reilly,Skill SK113,Intermediate,English,6 Hours,Free,SK113,ROLE053,https://example.com/resource/113
+RES0114,Learning Resource 114,YouTube,YouTube,Skill SK114,Advanced,English,7 Hours,Paid,SK114,ROLE054,https://example.com/resource/114
+RES0115,Learning Resource 115,Documentation,MDN,Skill SK115,Beginner,English,8 Hours,Free,SK115,ROLE055,https://example.com/resource/115
+RES0116,Learning Resource 116,Blog,Medium,Skill SK116,Intermediate,English,9 Hours,Paid,SK116,ROLE056,https://example.com/resource/116
+RES0117,Learning Resource 117,GitHub,GitHub,Skill SK117,Advanced,English,10 Hours,Free,SK117,ROLE057,https://example.com/resource/117
+RES0118,Learning Resource 118,Research Paper,arXiv,Skill SK118,Beginner,English,11 Hours,Paid,SK118,ROLE058,https://example.com/resource/118
+RES0119,Learning Resource 119,Course,Coursera,Skill SK119,Intermediate,English,12 Hours,Free,SK119,ROLE059,https://example.com/resource/119
+RES0120,Learning Resource 120,Cheat Sheet,freeCodeCamp,Skill SK120,Advanced,English,13 Hours,Paid,SK120,ROLE060,https://example.com/resource/120
+RES0121,Learning Resource 121,Book,O'Reilly,Skill SK121,Beginner,English,14 Hours,Free,SK121,ROLE001,https://example.com/resource/121
+RES0122,Learning Resource 122,YouTube,YouTube,Skill SK122,Intermediate,English,15 Hours,Paid,SK122,ROLE002,https://example.com/resource/122
+RES0123,Learning Resource 123,Documentation,MDN,Skill SK123,Advanced,English,16 Hours,Free,SK123,ROLE003,https://example.com/resource/123
+RES0124,Learning Resource 124,Blog,Medium,Skill SK124,Beginner,English,17 Hours,Paid,SK124,ROLE004,https://example.com/resource/124
+RES0125,Learning Resource 125,GitHub,GitHub,Skill SK125,Intermediate,English,18 Hours,Free,SK125,ROLE005,https://example.com/resource/125
+RES0126,Learning Resource 126,Research Paper,arXiv,Skill SK126,Advanced,English,19 Hours,Paid,SK126,ROLE006,https://example.com/resource/126
+RES0127,Learning Resource 127,Course,Coursera,Skill SK127,Beginner,English,2 Hours,Free,SK127,ROLE007,https://example.com/resource/127
+RES0128,Learning Resource 128,Cheat Sheet,freeCodeCamp,Skill SK128,Intermediate,English,3 Hours,Paid,SK128,ROLE008,https://example.com/resource/128
+RES0129,Learning Resource 129,Book,O'Reilly,Skill SK129,Advanced,English,4 Hours,Free,SK129,ROLE009,https://example.com/resource/129
+RES0130,Learning Resource 130,YouTube,YouTube,Skill SK130,Beginner,English,5 Hours,Paid,SK130,ROLE010,https://example.com/resource/130
+RES0131,Learning Resource 131,Documentation,MDN,Skill SK131,Intermediate,English,6 Hours,Free,SK131,ROLE011,https://example.com/resource/131
+RES0132,Learning Resource 132,Blog,Medium,Skill SK132,Advanced,English,7 Hours,Paid,SK132,ROLE012,https://example.com/resource/132
+RES0133,Learning Resource 133,GitHub,GitHub,Skill SK133,Beginner,English,8 Hours,Free,SK133,ROLE013,https://example.com/resource/133
+RES0134,Learning Resource 134,Research Paper,arXiv,Skill SK134,Intermediate,English,9 Hours,Paid,SK134,ROLE014,https://example.com/resource/134
+RES0135,Learning Resource 135,Course,Coursera,Skill SK135,Advanced,English,10 Hours,Free,SK135,ROLE015,https://example.com/resource/135
+RES0136,Learning Resource 136,Cheat Sheet,freeCodeCamp,Skill SK136,Beginner,English,11 Hours,Paid,SK136,ROLE016,https://example.com/resource/136
+RES0137,Learning Resource 137,Book,O'Reilly,Skill SK137,Intermediate,English,12 Hours,Free,SK137,ROLE017,https://example.com/resource/137
+RES0138,Learning Resource 138,YouTube,YouTube,Skill SK138,Advanced,English,13 Hours,Paid,SK138,ROLE018,https://example.com/resource/138
+RES0139,Learning Resource 139,Documentation,MDN,Skill SK139,Beginner,English,14 Hours,Free,SK139,ROLE019,https://example.com/resource/139
+RES0140,Learning Resource 140,Blog,Medium,Skill SK140,Intermediate,English,15 Hours,Paid,SK140,ROLE020,https://example.com/resource/140
+RES0141,Learning Resource 141,GitHub,GitHub,Skill SK141,Advanced,English,16 Hours,Free,SK141,ROLE021,https://example.com/resource/141
+RES0142,Learning Resource 142,Research Paper,arXiv,Skill SK142,Beginner,English,17 Hours,Paid,SK142,ROLE022,https://example.com/resource/142
+RES0143,Learning Resource 143,Course,Coursera,Skill SK143,Intermediate,English,18 Hours,Free,SK143,ROLE023,https://example.com/resource/143
+RES0144,Learning Resource 144,Cheat Sheet,freeCodeCamp,Skill SK144,Advanced,English,19 Hours,Paid,SK144,ROLE024,https://example.com/resource/144
+RES0145,Learning Resource 145,Book,O'Reilly,Skill SK145,Beginner,English,2 Hours,Free,SK145,ROLE025,https://example.com/resource/145
+RES0146,Learning Resource 146,YouTube,YouTube,Skill SK146,Intermediate,English,3 Hours,Paid,SK146,ROLE026,https://example.com/resource/146
+RES0147,Learning Resource 147,Documentation,MDN,Skill SK147,Advanced,English,4 Hours,Free,SK147,ROLE027,https://example.com/resource/147
+RES0148,Learning Resource 148,Blog,Medium,Skill SK148,Beginner,English,5 Hours,Paid,SK148,ROLE028,https://example.com/resource/148
+RES0149,Learning Resource 149,GitHub,GitHub,Skill SK149,Intermediate,English,6 Hours,Free,SK149,ROLE029,https://example.com/resource/149
+RES0150,Learning Resource 150,Research Paper,arXiv,Skill SK150,Advanced,English,7 Hours,Paid,SK150,ROLE030,https://example.com/resource/150
+RES0151,Learning Resource 151,Course,Coursera,Skill SK151,Beginner,English,8 Hours,Free,SK151,ROLE031,https://example.com/resource/151
+RES0152,Learning Resource 152,Cheat Sheet,freeCodeCamp,Skill SK152,Intermediate,English,9 Hours,Paid,SK152,ROLE032,https://example.com/resource/152
+RES0153,Learning Resource 153,Book,O'Reilly,Skill SK153,Advanced,English,10 Hours,Free,SK153,ROLE033,https://example.com/resource/153
+RES0154,Learning Resource 154,YouTube,YouTube,Skill SK154,Beginner,English,11 Hours,Paid,SK154,ROLE034,https://example.com/resource/154
+RES0155,Learning Resource 155,Documentation,MDN,Skill SK155,Intermediate,English,12 Hours,Free,SK155,ROLE035,https://example.com/resource/155
+RES0156,Learning Resource 156,Blog,Medium,Skill SK156,Advanced,English,13 Hours,Paid,SK156,ROLE036,https://example.com/resource/156
+RES0157,Learning Resource 157,GitHub,GitHub,Skill SK157,Beginner,English,14 Hours,Free,SK157,ROLE037,https://example.com/resource/157
+RES0158,Learning Resource 158,Research Paper,arXiv,Skill SK158,Intermediate,English,15 Hours,Paid,SK158,ROLE038,https://example.com/resource/158
+RES0159,Learning Resource 159,Course,Coursera,Skill SK159,Advanced,English,16 Hours,Free,SK159,ROLE039,https://example.com/resource/159
+RES0160,Learning Resource 160,Cheat Sheet,freeCodeCamp,Skill SK160,Beginner,English,17 Hours,Paid,SK160,ROLE040,https://example.com/resource/160
+RES0161,Learning Resource 161,Book,O'Reilly,Skill SK161,Intermediate,English,18 Hours,Free,SK161,ROLE041,https://example.com/resource/161
+RES0162,Learning Resource 162,YouTube,YouTube,Skill SK162,Advanced,English,19 Hours,Paid,SK162,ROLE042,https://example.com/resource/162
+RES0163,Learning Resource 163,Documentation,MDN,Skill SK163,Beginner,English,2 Hours,Free,SK163,ROLE043,https://example.com/resource/163
+RES0164,Learning Resource 164,Blog,Medium,Skill SK164,Intermediate,English,3 Hours,Paid,SK164,ROLE044,https://example.com/resource/164
+RES0165,Learning Resource 165,GitHub,GitHub,Skill SK165,Advanced,English,4 Hours,Free,SK165,ROLE045,https://example.com/resource/165
+RES0166,Learning Resource 166,Research Paper,arXiv,Skill SK166,Beginner,English,5 Hours,Paid,SK166,ROLE046,https://example.com/resource/166
+RES0167,Learning Resource 167,Course,Coursera,Skill SK167,Intermediate,English,6 Hours,Free,SK167,ROLE047,https://example.com/resource/167
+RES0168,Learning Resource 168,Cheat Sheet,freeCodeCamp,Skill SK168,Advanced,English,7 Hours,Paid,SK168,ROLE048,https://example.com/resource/168
+RES0169,Learning Resource 169,Book,O'Reilly,Skill SK169,Beginner,English,8 Hours,Free,SK169,ROLE049,https://example.com/resource/169
+RES0170,Learning Resource 170,YouTube,YouTube,Skill SK170,Intermediate,English,9 Hours,Paid,SK170,ROLE050,https://example.com/resource/170
+RES0171,Learning Resource 171,Documentation,MDN,Skill SK171,Advanced,English,10 Hours,Free,SK171,ROLE051,https://example.com/resource/171
+RES0172,Learning Resource 172,Blog,Medium,Skill SK172,Beginner,English,11 Hours,Paid,SK172,ROLE052,https://example.com/resource/172
+RES0173,Learning Resource 173,GitHub,GitHub,Skill SK173,Intermediate,English,12 Hours,Free,SK173,ROLE053,https://example.com/resource/173
+RES0174,Learning Resource 174,Research Paper,arXiv,Skill SK174,Advanced,English,13 Hours,Paid,SK174,ROLE054,https://example.com/resource/174
+RES0175,Learning Resource 175,Course,Coursera,Skill SK175,Beginner,English,14 Hours,Free,SK175,ROLE055,https://example.com/resource/175
+RES0176,Learning Resource 176,Cheat Sheet,freeCodeCamp,Skill SK176,Intermediate,English,15 Hours,Paid,SK176,ROLE056,https://example.com/resource/176
+RES0177,Learning Resource 177,Book,O'Reilly,Skill SK177,Advanced,English,16 Hours,Free,SK177,ROLE057,https://example.com/resource/177
+RES0178,Learning Resource 178,YouTube,YouTube,Skill SK178,Beginner,English,17 Hours,Paid,SK178,ROLE058,https://example.com/resource/178
+RES0179,Learning Resource 179,Documentation,MDN,Skill SK179,Intermediate,English,18 Hours,Free,SK179,ROLE059,https://example.com/resource/179
+RES0180,Learning Resource 180,Blog,Medium,Skill SK180,Advanced,English,19 Hours,Paid,SK180,ROLE060,https://example.com/resource/180
+RES0181,Learning Resource 181,GitHub,GitHub,Skill SK181,Beginner,English,2 Hours,Free,SK181,ROLE001,https://example.com/resource/181
+RES0182,Learning Resource 182,Research Paper,arXiv,Skill SK182,Intermediate,English,3 Hours,Paid,SK182,ROLE002,https://example.com/resource/182
+RES0183,Learning Resource 183,Course,Coursera,Skill SK183,Advanced,English,4 Hours,Free,SK183,ROLE003,https://example.com/resource/183
+RES0184,Learning Resource 184,Cheat Sheet,freeCodeCamp,Skill SK184,Beginner,English,5 Hours,Paid,SK184,ROLE004,https://example.com/resource/184
+RES0185,Learning Resource 185,Book,O'Reilly,Skill SK185,Intermediate,English,6 Hours,Free,SK185,ROLE005,https://example.com/resource/185
+RES0186,Learning Resource 186,YouTube,YouTube,Skill SK186,Advanced,English,7 Hours,Paid,SK186,ROLE006,https://example.com/resource/186
+RES0187,Learning Resource 187,Documentation,MDN,Skill SK187,Beginner,English,8 Hours,Free,SK187,ROLE007,https://example.com/resource/187
+RES0188,Learning Resource 188,Blog,Medium,Skill SK188,Intermediate,English,9 Hours,Paid,SK188,ROLE008,https://example.com/resource/188
+RES0189,Learning Resource 189,GitHub,GitHub,Skill SK189,Advanced,English,10 Hours,Free,SK189,ROLE009,https://example.com/resource/189
+RES0190,Learning Resource 190,Research Paper,arXiv,Skill SK190,Beginner,English,11 Hours,Paid,SK190,ROLE010,https://example.com/resource/190
+RES0191,Learning Resource 191,Course,Coursera,Skill SK191,Intermediate,English,12 Hours,Free,SK191,ROLE011,https://example.com/resource/191
+RES0192,Learning Resource 192,Cheat Sheet,freeCodeCamp,Skill SK192,Advanced,English,13 Hours,Paid,SK192,ROLE012,https://example.com/resource/192
+RES0193,Learning Resource 193,Book,O'Reilly,Skill SK193,Beginner,English,14 Hours,Free,SK193,ROLE013,https://example.com/resource/193
+RES0194,Learning Resource 194,YouTube,YouTube,Skill SK194,Intermediate,English,15 Hours,Paid,SK194,ROLE014,https://example.com/resource/194
+RES0195,Learning Resource 195,Documentation,MDN,Skill SK195,Advanced,English,16 Hours,Free,SK195,ROLE015,https://example.com/resource/195
+RES0196,Learning Resource 196,Blog,Medium,Skill SK196,Beginner,English,17 Hours,Paid,SK196,ROLE016,https://example.com/resource/196
+RES0197,Learning Resource 197,GitHub,GitHub,Skill SK197,Intermediate,English,18 Hours,Free,SK197,ROLE017,https://example.com/resource/197
+RES0198,Learning Resource 198,Research Paper,arXiv,Skill SK198,Advanced,English,19 Hours,Paid,SK198,ROLE018,https://example.com/resource/198
+RES0199,Learning Resource 199,Course,Coursera,Skill SK199,Beginner,English,2 Hours,Free,SK199,ROLE019,https://example.com/resource/199
+RES0200,Learning Resource 200,Cheat Sheet,freeCodeCamp,Skill SK200,Intermediate,English,3 Hours,Paid,SK200,ROLE020,https://example.com/resource/200
+RES0201,Learning Resource 201,Book,O'Reilly,Skill SK201,Advanced,English,4 Hours,Free,SK201,ROLE021,https://example.com/resource/201
+RES0202,Learning Resource 202,YouTube,YouTube,Skill SK202,Beginner,English,5 Hours,Paid,SK202,ROLE022,https://example.com/resource/202
+RES0203,Learning Resource 203,Documentation,MDN,Skill SK203,Intermediate,English,6 Hours,Free,SK203,ROLE023,https://example.com/resource/203
+RES0204,Learning Resource 204,Blog,Medium,Skill SK204,Advanced,English,7 Hours,Paid,SK204,ROLE024,https://example.com/resource/204
+RES0205,Learning Resource 205,GitHub,GitHub,Skill SK205,Beginner,English,8 Hours,Free,SK205,ROLE025,https://example.com/resource/205
+RES0206,Learning Resource 206,Research Paper,arXiv,Skill SK206,Intermediate,English,9 Hours,Paid,SK206,ROLE026,https://example.com/resource/206
+RES0207,Learning Resource 207,Course,Coursera,Skill SK207,Advanced,English,10 Hours,Free,SK207,ROLE027,https://example.com/resource/207
+RES0208,Learning Resource 208,Cheat Sheet,freeCodeCamp,Skill SK208,Beginner,English,11 Hours,Paid,SK208,ROLE028,https://example.com/resource/208
+RES0209,Learning Resource 209,Book,O'Reilly,Skill SK209,Intermediate,English,12 Hours,Free,SK209,ROLE029,https://example.com/resource/209
+RES0210,Learning Resource 210,YouTube,YouTube,Skill SK210,Advanced,English,13 Hours,Paid,SK210,ROLE030,https://example.com/resource/210
+RES0211,Learning Resource 211,Documentation,MDN,Skill SK211,Beginner,English,14 Hours,Free,SK211,ROLE031,https://example.com/resource/211
+RES0212,Learning Resource 212,Blog,Medium,Skill SK212,Intermediate,English,15 Hours,Paid,SK212,ROLE032,https://example.com/resource/212
+RES0213,Learning Resource 213,GitHub,GitHub,Skill SK213,Advanced,English,16 Hours,Free,SK213,ROLE033,https://example.com/resource/213
+RES0214,Learning Resource 214,Research Paper,arXiv,Skill SK214,Beginner,English,17 Hours,Paid,SK214,ROLE034,https://example.com/resource/214
+RES0215,Learning Resource 215,Course,Coursera,Skill SK215,Intermediate,English,18 Hours,Free,SK215,ROLE035,https://example.com/resource/215
+RES0216,Learning Resource 216,Cheat Sheet,freeCodeCamp,Skill SK216,Advanced,English,19 Hours,Paid,SK216,ROLE036,https://example.com/resource/216
+RES0217,Learning Resource 217,Book,O'Reilly,Skill SK217,Beginner,English,2 Hours,Free,SK217,ROLE037,https://example.com/resource/217
+RES0218,Learning Resource 218,YouTube,YouTube,Skill SK218,Intermediate,English,3 Hours,Paid,SK218,ROLE038,https://example.com/resource/218
+RES0219,Learning Resource 219,Documentation,MDN,Skill SK219,Advanced,English,4 Hours,Free,SK219,ROLE039,https://example.com/resource/219
+RES0220,Learning Resource 220,Blog,Medium,Skill SK220,Beginner,English,5 Hours,Paid,SK220,ROLE040,https://example.com/resource/220
+RES0221,Learning Resource 221,GitHub,GitHub,Skill SK221,Intermediate,English,6 Hours,Free,SK221,ROLE041,https://example.com/resource/221
+RES0222,Learning Resource 222,Research Paper,arXiv,Skill SK222,Advanced,English,7 Hours,Paid,SK222,ROLE042,https://example.com/resource/222
+RES0223,Learning Resource 223,Course,Coursera,Skill SK223,Beginner,English,8 Hours,Free,SK223,ROLE043,https://example.com/resource/223
+RES0224,Learning Resource 224,Cheat Sheet,freeCodeCamp,Skill SK224,Intermediate,English,9 Hours,Paid,SK224,ROLE044,https://example.com/resource/224
+RES0225,Learning Resource 225,Book,O'Reilly,Skill SK225,Advanced,English,10 Hours,Free,SK225,ROLE045,https://example.com/resource/225
+RES0226,Learning Resource 226,YouTube,YouTube,Skill SK226,Beginner,English,11 Hours,Paid,SK226,ROLE046,https://example.com/resource/226
+RES0227,Learning Resource 227,Documentation,MDN,Skill SK227,Intermediate,English,12 Hours,Free,SK227,ROLE047,https://example.com/resource/227
+RES0228,Learning Resource 228,Blog,Medium,Skill SK228,Advanced,English,13 Hours,Paid,SK228,ROLE048,https://example.com/resource/228
+RES0229,Learning Resource 229,GitHub,GitHub,Skill SK229,Beginner,English,14 Hours,Free,SK229,ROLE049,https://example.com/resource/229
+RES0230,Learning Resource 230,Research Paper,arXiv,Skill SK230,Intermediate,English,15 Hours,Paid,SK230,ROLE050,https://example.com/resource/230
+RES0231,Learning Resource 231,Course,Coursera,Skill SK231,Advanced,English,16 Hours,Free,SK231,ROLE051,https://example.com/resource/231
+RES0232,Learning Resource 232,Cheat Sheet,freeCodeCamp,Skill SK232,Beginner,English,17 Hours,Paid,SK232,ROLE052,https://example.com/resource/232
+RES0233,Learning Resource 233,Book,O'Reilly,Skill SK233,Intermediate,English,18 Hours,Free,SK233,ROLE053,https://example.com/resource/233
+RES0234,Learning Resource 234,YouTube,YouTube,Skill SK234,Advanced,English,19 Hours,Paid,SK234,ROLE054,https://example.com/resource/234
+RES0235,Learning Resource 235,Documentation,MDN,Skill SK235,Beginner,English,2 Hours,Free,SK235,ROLE055,https://example.com/resource/235
+RES0236,Learning Resource 236,Blog,Medium,Skill SK236,Intermediate,English,3 Hours,Paid,SK236,ROLE056,https://example.com/resource/236
+RES0237,Learning Resource 237,GitHub,GitHub,Skill SK237,Advanced,English,4 Hours,Free,SK237,ROLE057,https://example.com/resource/237
+RES0238,Learning Resource 238,Research Paper,arXiv,Skill SK238,Beginner,English,5 Hours,Paid,SK238,ROLE058,https://example.com/resource/238
+RES0239,Learning Resource 239,Course,Coursera,Skill SK239,Intermediate,English,6 Hours,Free,SK239,ROLE059,https://example.com/resource/239
+RES0240,Learning Resource 240,Cheat Sheet,freeCodeCamp,Skill SK240,Advanced,English,7 Hours,Paid,SK240,ROLE060,https://example.com/resource/240
+RES0241,Learning Resource 241,Book,O'Reilly,Skill SK241,Beginner,English,8 Hours,Free,SK241,ROLE001,https://example.com/resource/241
+RES0242,Learning Resource 242,YouTube,YouTube,Skill SK242,Intermediate,English,9 Hours,Paid,SK242,ROLE002,https://example.com/resource/242
+RES0243,Learning Resource 243,Documentation,MDN,Skill SK243,Advanced,English,10 Hours,Free,SK243,ROLE003,https://example.com/resource/243
+RES0244,Learning Resource 244,Blog,Medium,Skill SK244,Beginner,English,11 Hours,Paid,SK244,ROLE004,https://example.com/resource/244
+RES0245,Learning Resource 245,GitHub,GitHub,Skill SK245,Intermediate,English,12 Hours,Free,SK245,ROLE005,https://example.com/resource/245
+RES0246,Learning Resource 246,Research Paper,arXiv,Skill SK246,Advanced,English,13 Hours,Paid,SK246,ROLE006,https://example.com/resource/246
+RES0247,Learning Resource 247,Course,Coursera,Skill SK247,Beginner,English,14 Hours,Free,SK247,ROLE007,https://example.com/resource/247
+RES0248,Learning Resource 248,Cheat Sheet,freeCodeCamp,Skill SK248,Intermediate,English,15 Hours,Paid,SK248,ROLE008,https://example.com/resource/248
+RES0249,Learning Resource 249,Book,O'Reilly,Skill SK249,Advanced,English,16 Hours,Free,SK249,ROLE009,https://example.com/resource/249
+RES0250,Learning Resource 250,YouTube,YouTube,Skill SK250,Beginner,English,17 Hours,Paid,SK250,ROLE010,https://example.com/resource/250
+RES0251,Learning Resource 251,Documentation,MDN,Skill SK251,Intermediate,English,18 Hours,Free,SK251,ROLE011,https://example.com/resource/251
+RES0252,Learning Resource 252,Blog,Medium,Skill SK252,Advanced,English,19 Hours,Paid,SK252,ROLE012,https://example.com/resource/252
+RES0253,Learning Resource 253,GitHub,GitHub,Skill SK253,Beginner,English,2 Hours,Free,SK253,ROLE013,https://example.com/resource/253
+RES0254,Learning Resource 254,Research Paper,arXiv,Skill SK254,Intermediate,English,3 Hours,Paid,SK254,ROLE014,https://example.com/resource/254
+RES0255,Learning Resource 255,Course,Coursera,Skill SK255,Advanced,English,4 Hours,Free,SK255,ROLE015,https://example.com/resource/255
+RES0256,Learning Resource 256,Cheat Sheet,freeCodeCamp,Skill SK256,Beginner,English,5 Hours,Paid,SK256,ROLE016,https://example.com/resource/256
+RES0257,Learning Resource 257,Book,O'Reilly,Skill SK257,Intermediate,English,6 Hours,Free,SK257,ROLE017,https://example.com/resource/257
+RES0258,Learning Resource 258,YouTube,YouTube,Skill SK258,Advanced,English,7 Hours,Paid,SK258,ROLE018,https://example.com/resource/258
+RES0259,Learning Resource 259,Documentation,MDN,Skill SK259,Beginner,English,8 Hours,Free,SK259,ROLE019,https://example.com/resource/259
+RES0260,Learning Resource 260,Blog,Medium,Skill SK260,Intermediate,English,9 Hours,Paid,SK260,ROLE020,https://example.com/resource/260
+RES0261,Learning Resource 261,GitHub,GitHub,Skill SK261,Advanced,English,10 Hours,Free,SK261,ROLE021,https://example.com/resource/261
+RES0262,Learning Resource 262,Research Paper,arXiv,Skill SK262,Beginner,English,11 Hours,Paid,SK262,ROLE022,https://example.com/resource/262
+RES0263,Learning Resource 263,Course,Coursera,Skill SK263,Intermediate,English,12 Hours,Free,SK263,ROLE023,https://example.com/resource/263
+RES0264,Learning Resource 264,Cheat Sheet,freeCodeCamp,Skill SK264,Advanced,English,13 Hours,Paid,SK264,ROLE024,https://example.com/resource/264
+RES0265,Learning Resource 265,Book,O'Reilly,Skill SK265,Beginner,English,14 Hours,Free,SK265,ROLE025,https://example.com/resource/265
+RES0266,Learning Resource 266,YouTube,YouTube,Skill SK266,Intermediate,English,15 Hours,Paid,SK266,ROLE026,https://example.com/resource/266
+RES0267,Learning Resource 267,Documentation,MDN,Skill SK267,Advanced,English,16 Hours,Free,SK267,ROLE027,https://example.com/resource/267
+RES0268,Learning Resource 268,Blog,Medium,Skill SK268,Beginner,English,17 Hours,Paid,SK268,ROLE028,https://example.com/resource/268
+RES0269,Learning Resource 269,GitHub,GitHub,Skill SK269,Intermediate,English,18 Hours,Free,SK269,ROLE029,https://example.com/resource/269
+RES0270,Learning Resource 270,Research Paper,arXiv,Skill SK270,Advanced,English,19 Hours,Paid,SK270,ROLE030,https://example.com/resource/270
+RES0271,Learning Resource 271,Course,Coursera,Skill SK271,Beginner,English,2 Hours,Free,SK271,ROLE031,https://example.com/resource/271
+RES0272,Learning Resource 272,Cheat Sheet,freeCodeCamp,Skill SK272,Intermediate,English,3 Hours,Paid,SK272,ROLE032,https://example.com/resource/272
+RES0273,Learning Resource 273,Book,O'Reilly,Skill SK273,Advanced,English,4 Hours,Free,SK273,ROLE033,https://example.com/resource/273
+RES0274,Learning Resource 274,YouTube,YouTube,Skill SK274,Beginner,English,5 Hours,Paid,SK274,ROLE034,https://example.com/resource/274
+RES0275,Learning Resource 275,Documentation,MDN,Skill SK275,Intermediate,English,6 Hours,Free,SK275,ROLE035,https://example.com/resource/275
+RES0276,Learning Resource 276,Blog,Medium,Skill SK276,Advanced,English,7 Hours,Paid,SK276,ROLE036,https://example.com/resource/276
+RES0277,Learning Resource 277,GitHub,GitHub,Skill SK277,Beginner,English,8 Hours,Free,SK277,ROLE037,https://example.com/resource/277
+RES0278,Learning Resource 278,Research Paper,arXiv,Skill SK278,Intermediate,English,9 Hours,Paid,SK278,ROLE038,https://example.com/resource/278
+RES0279,Learning Resource 279,Course,Coursera,Skill SK279,Advanced,English,10 Hours,Free,SK279,ROLE039,https://example.com/resource/279
+RES0280,Learning Resource 280,Cheat Sheet,freeCodeCamp,Skill SK001,Beginner,English,11 Hours,Paid,SK001,ROLE040,https://example.com/resource/280
+RES0281,Learning Resource 281,Book,O'Reilly,Skill SK002,Intermediate,English,12 Hours,Free,SK002,ROLE041,https://example.com/resource/281
+RES0282,Learning Resource 282,YouTube,YouTube,Skill SK003,Advanced,English,13 Hours,Paid,SK003,ROLE042,https://example.com/resource/282
+RES0283,Learning Resource 283,Documentation,MDN,Skill SK004,Beginner,English,14 Hours,Free,SK004,ROLE043,https://example.com/resource/283
+RES0284,Learning Resource 284,Blog,Medium,Skill SK005,Intermediate,English,15 Hours,Paid,SK005,ROLE044,https://example.com/resource/284
+RES0285,Learning Resource 285,GitHub,GitHub,Skill SK006,Advanced,English,16 Hours,Free,SK006,ROLE045,https://example.com/resource/285
+RES0286,Learning Resource 286,Research Paper,arXiv,Skill SK007,Beginner,English,17 Hours,Paid,SK007,ROLE046,https://example.com/resource/286
+RES0287,Learning Resource 287,Course,Coursera,Skill SK008,Intermediate,English,18 Hours,Free,SK008,ROLE047,https://example.com/resource/287
+RES0288,Learning Resource 288,Cheat Sheet,freeCodeCamp,Skill SK009,Advanced,English,19 Hours,Paid,SK009,ROLE048,https://example.com/resource/288
+RES0289,Learning Resource 289,Book,O'Reilly,Skill SK010,Beginner,English,2 Hours,Free,SK010,ROLE049,https://example.com/resource/289
+RES0290,Learning Resource 290,YouTube,YouTube,Skill SK011,Intermediate,English,3 Hours,Paid,SK011,ROLE050,https://example.com/resource/290
+RES0291,Learning Resource 291,Documentation,MDN,Skill SK012,Advanced,English,4 Hours,Free,SK012,ROLE051,https://example.com/resource/291
+RES0292,Learning Resource 292,Blog,Medium,Skill SK013,Beginner,English,5 Hours,Paid,SK013,ROLE052,https://example.com/resource/292
+RES0293,Learning Resource 293,GitHub,GitHub,Skill SK014,Intermediate,English,6 Hours,Free,SK014,ROLE053,https://example.com/resource/293
+RES0294,Learning Resource 294,Research Paper,arXiv,Skill SK015,Advanced,English,7 Hours,Paid,SK015,ROLE054,https://example.com/resource/294
+RES0295,Learning Resource 295,Course,Coursera,Skill SK016,Beginner,English,8 Hours,Free,SK016,ROLE055,https://example.com/resource/295
+RES0296,Learning Resource 296,Cheat Sheet,freeCodeCamp,Skill SK017,Intermediate,English,9 Hours,Paid,SK017,ROLE056,https://example.com/resource/296
+RES0297,Learning Resource 297,Book,O'Reilly,Skill SK018,Advanced,English,10 Hours,Free,SK018,ROLE057,https://example.com/resource/297
+RES0298,Learning Resource 298,YouTube,YouTube,Skill SK019,Beginner,English,11 Hours,Paid,SK019,ROLE058,https://example.com/resource/298
+RES0299,Learning Resource 299,Documentation,MDN,Skill SK020,Intermediate,English,12 Hours,Free,SK020,ROLE059,https://example.com/resource/299
+RES0300,Learning Resource 300,Blog,Medium,Skill SK021,Advanced,English,13 Hours,Paid,SK021,ROLE060,https://example.com/resource/300
+RES0301,Learning Resource 301,GitHub,GitHub,Skill SK022,Beginner,English,14 Hours,Free,SK022,ROLE001,https://example.com/resource/301
+RES0302,Learning Resource 302,Research Paper,arXiv,Skill SK023,Intermediate,English,15 Hours,Paid,SK023,ROLE002,https://example.com/resource/302
+RES0303,Learning Resource 303,Course,Coursera,Skill SK024,Advanced,English,16 Hours,Free,SK024,ROLE003,https://example.com/resource/303
+RES0304,Learning Resource 304,Cheat Sheet,freeCodeCamp,Skill SK025,Beginner,English,17 Hours,Paid,SK025,ROLE004,https://example.com/resource/304
+RES0305,Learning Resource 305,Book,O'Reilly,Skill SK026,Intermediate,English,18 Hours,Free,SK026,ROLE005,https://example.com/resource/305
+RES0306,Learning Resource 306,YouTube,YouTube,Skill SK027,Advanced,English,19 Hours,Paid,SK027,ROLE006,https://example.com/resource/306
+RES0307,Learning Resource 307,Documentation,MDN,Skill SK028,Beginner,English,2 Hours,Free,SK028,ROLE007,https://example.com/resource/307
+RES0308,Learning Resource 308,Blog,Medium,Skill SK029,Intermediate,English,3 Hours,Paid,SK029,ROLE008,https://example.com/resource/308
+RES0309,Learning Resource 309,GitHub,GitHub,Skill SK030,Advanced,English,4 Hours,Free,SK030,ROLE009,https://example.com/resource/309
+RES0310,Learning Resource 310,Research Paper,arXiv,Skill SK031,Beginner,English,5 Hours,Paid,SK031,ROLE010,https://example.com/resource/310
+RES0311,Learning Resource 311,Course,Coursera,Skill SK032,Intermediate,English,6 Hours,Free,SK032,ROLE011,https://example.com/resource/311
+RES0312,Learning Resource 312,Cheat Sheet,freeCodeCamp,Skill SK033,Advanced,English,7 Hours,Paid,SK033,ROLE012,https://example.com/resource/312
+RES0313,Learning Resource 313,Book,O'Reilly,Skill SK034,Beginner,English,8 Hours,Free,SK034,ROLE013,https://example.com/resource/313
+RES0314,Learning Resource 314,YouTube,YouTube,Skill SK035,Intermediate,English,9 Hours,Paid,SK035,ROLE014,https://example.com/resource/314
+RES0315,Learning Resource 315,Documentation,MDN,Skill SK036,Advanced,English,10 Hours,Free,SK036,ROLE015,https://example.com/resource/315
+RES0316,Learning Resource 316,Blog,Medium,Skill SK037,Beginner,English,11 Hours,Paid,SK037,ROLE016,https://example.com/resource/316
+RES0317,Learning Resource 317,GitHub,GitHub,Skill SK038,Intermediate,English,12 Hours,Free,SK038,ROLE017,https://example.com/resource/317
+RES0318,Learning Resource 318,Research Paper,arXiv,Skill SK039,Advanced,English,13 Hours,Paid,SK039,ROLE018,https://example.com/resource/318
+RES0319,Learning Resource 319,Course,Coursera,Skill SK040,Beginner,English,14 Hours,Free,SK040,ROLE019,https://example.com/resource/319
+RES0320,Learning Resource 320,Cheat Sheet,freeCodeCamp,Skill SK041,Intermediate,English,15 Hours,Paid,SK041,ROLE020,https://example.com/resource/320
+RES0321,Learning Resource 321,Book,O'Reilly,Skill SK042,Advanced,English,16 Hours,Free,SK042,ROLE021,https://example.com/resource/321
+RES0322,Learning Resource 322,YouTube,YouTube,Skill SK043,Beginner,English,17 Hours,Paid,SK043,ROLE022,https://example.com/resource/322
+RES0323,Learning Resource 323,Documentation,MDN,Skill SK044,Intermediate,English,18 Hours,Free,SK044,ROLE023,https://example.com/resource/323
+RES0324,Learning Resource 324,Blog,Medium,Skill SK045,Advanced,English,19 Hours,Paid,SK045,ROLE024,https://example.com/resource/324
+RES0325,Learning Resource 325,GitHub,GitHub,Skill SK046,Beginner,English,2 Hours,Free,SK046,ROLE025,https://example.com/resource/325
+RES0326,Learning Resource 326,Research Paper,arXiv,Skill SK047,Intermediate,English,3 Hours,Paid,SK047,ROLE026,https://example.com/resource/326
+RES0327,Learning Resource 327,Course,Coursera,Skill SK048,Advanced,English,4 Hours,Free,SK048,ROLE027,https://example.com/resource/327
+RES0328,Learning Resource 328,Cheat Sheet,freeCodeCamp,Skill SK049,Beginner,English,5 Hours,Paid,SK049,ROLE028,https://example.com/resource/328
+RES0329,Learning Resource 329,Book,O'Reilly,Skill SK050,Intermediate,English,6 Hours,Free,SK050,ROLE029,https://example.com/resource/329
+RES0330,Learning Resource 330,YouTube,YouTube,Skill SK051,Advanced,English,7 Hours,Paid,SK051,ROLE030,https://example.com/resource/330
+RES0331,Learning Resource 331,Documentation,MDN,Skill SK052,Beginner,English,8 Hours,Free,SK052,ROLE031,https://example.com/resource/331
+RES0332,Learning Resource 332,Blog,Medium,Skill SK053,Intermediate,English,9 Hours,Paid,SK053,ROLE032,https://example.com/resource/332
+RES0333,Learning Resource 333,GitHub,GitHub,Skill SK054,Advanced,English,10 Hours,Free,SK054,ROLE033,https://example.com/resource/333
+RES0334,Learning Resource 334,Research Paper,arXiv,Skill SK055,Beginner,English,11 Hours,Paid,SK055,ROLE034,https://example.com/resource/334
+RES0335,Learning Resource 335,Course,Coursera,Skill SK056,Intermediate,English,12 Hours,Free,SK056,ROLE035,https://example.com/resource/335
+RES0336,Learning Resource 336,Cheat Sheet,freeCodeCamp,Skill SK057,Advanced,English,13 Hours,Paid,SK057,ROLE036,https://example.com/resource/336
+RES0337,Learning Resource 337,Book,O'Reilly,Skill SK058,Beginner,English,14 Hours,Free,SK058,ROLE037,https://example.com/resource/337
+RES0338,Learning Resource 338,YouTube,YouTube,Skill SK059,Intermediate,English,15 Hours,Paid,SK059,ROLE038,https://example.com/resource/338
+RES0339,Learning Resource 339,Documentation,MDN,Skill SK060,Advanced,English,16 Hours,Free,SK060,ROLE039,https://example.com/resource/339
+RES0340,Learning Resource 340,Blog,Medium,Skill SK061,Beginner,English,17 Hours,Paid,SK061,ROLE040,https://example.com/resource/340
+RES0341,Learning Resource 341,GitHub,GitHub,Skill SK062,Intermediate,English,18 Hours,Free,SK062,ROLE041,https://example.com/resource/341
+RES0342,Learning Resource 342,Research Paper,arXiv,Skill SK063,Advanced,English,19 Hours,Paid,SK063,ROLE042,https://example.com/resource/342
+RES0343,Learning Resource 343,Course,Coursera,Skill SK064,Beginner,English,2 Hours,Free,SK064,ROLE043,https://example.com/resource/343
+RES0344,Learning Resource 344,Cheat Sheet,freeCodeCamp,Skill SK065,Intermediate,English,3 Hours,Paid,SK065,ROLE044,https://example.com/resource/344
+RES0345,Learning Resource 345,Book,O'Reilly,Skill SK066,Advanced,English,4 Hours,Free,SK066,ROLE045,https://example.com/resource/345
+RES0346,Learning Resource 346,YouTube,YouTube,Skill SK067,Beginner,English,5 Hours,Paid,SK067,ROLE046,https://example.com/resource/346
+RES0347,Learning Resource 347,Documentation,MDN,Skill SK068,Intermediate,English,6 Hours,Free,SK068,ROLE047,https://example.com/resource/347
+RES0348,Learning Resource 348,Blog,Medium,Skill SK069,Advanced,English,7 Hours,Paid,SK069,ROLE048,https://example.com/resource/348
+RES0349,Learning Resource 349,GitHub,GitHub,Skill SK070,Beginner,English,8 Hours,Free,SK070,ROLE049,https://example.com/resource/349
+RES0350,Learning Resource 350,Research Paper,arXiv,Skill SK071,Intermediate,English,9 Hours,Paid,SK071,ROLE050,https://example.com/resource/350
+RES0351,Learning Resource 351,Course,Coursera,Skill SK072,Advanced,English,10 Hours,Free,SK072,ROLE051,https://example.com/resource/351
+RES0352,Learning Resource 352,Cheat Sheet,freeCodeCamp,Skill SK073,Beginner,English,11 Hours,Paid,SK073,ROLE052,https://example.com/resource/352
+RES0353,Learning Resource 353,Book,O'Reilly,Skill SK074,Intermediate,English,12 Hours,Free,SK074,ROLE053,https://example.com/resource/353
+RES0354,Learning Resource 354,YouTube,YouTube,Skill SK075,Advanced,English,13 Hours,Paid,SK075,ROLE054,https://example.com/resource/354
+RES0355,Learning Resource 355,Documentation,MDN,Skill SK076,Beginner,English,14 Hours,Free,SK076,ROLE055,https://example.com/resource/355
+RES0356,Learning Resource 356,Blog,Medium,Skill SK077,Intermediate,English,15 Hours,Paid,SK077,ROLE056,https://example.com/resource/356
+RES0357,Learning Resource 357,GitHub,GitHub,Skill SK078,Advanced,English,16 Hours,Free,SK078,ROLE057,https://example.com/resource/357
+RES0358,Learning Resource 358,Research Paper,arXiv,Skill SK079,Beginner,English,17 Hours,Paid,SK079,ROLE058,https://example.com/resource/358
+RES0359,Learning Resource 359,Course,Coursera,Skill SK080,Intermediate,English,18 Hours,Free,SK080,ROLE059,https://example.com/resource/359
+RES0360,Learning Resource 360,Cheat Sheet,freeCodeCamp,Skill SK081,Advanced,English,19 Hours,Paid,SK081,ROLE060,https://example.com/resource/360
+RES0361,Learning Resource 361,Book,O'Reilly,Skill SK082,Beginner,English,2 Hours,Free,SK082,ROLE001,https://example.com/resource/361
+RES0362,Learning Resource 362,YouTube,YouTube,Skill SK083,Intermediate,English,3 Hours,Paid,SK083,ROLE002,https://example.com/resource/362
+RES0363,Learning Resource 363,Documentation,MDN,Skill SK084,Advanced,English,4 Hours,Free,SK084,ROLE003,https://example.com/resource/363
+RES0364,Learning Resource 364,Blog,Medium,Skill SK085,Beginner,English,5 Hours,Paid,SK085,ROLE004,https://example.com/resource/364
+RES0365,Learning Resource 365,GitHub,GitHub,Skill SK086,Intermediate,English,6 Hours,Free,SK086,ROLE005,https://example.com/resource/365
+RES0366,Learning Resource 366,Research Paper,arXiv,Skill SK087,Advanced,English,7 Hours,Paid,SK087,ROLE006,https://example.com/resource/366
+RES0367,Learning Resource 367,Course,Coursera,Skill SK088,Beginner,English,8 Hours,Free,SK088,ROLE007,https://example.com/resource/367
+RES0368,Learning Resource 368,Cheat Sheet,freeCodeCamp,Skill SK089,Intermediate,English,9 Hours,Paid,SK089,ROLE008,https://example.com/resource/368
+RES0369,Learning Resource 369,Book,O'Reilly,Skill SK090,Advanced,English,10 Hours,Free,SK090,ROLE009,https://example.com/resource/369
+RES0370,Learning Resource 370,YouTube,YouTube,Skill SK091,Beginner,English,11 Hours,Paid,SK091,ROLE010,https://example.com/resource/370
+RES0371,Learning Resource 371,Documentation,MDN,Skill SK092,Intermediate,English,12 Hours,Free,SK092,ROLE011,https://example.com/resource/371
+RES0372,Learning Resource 372,Blog,Medium,Skill SK093,Advanced,English,13 Hours,Paid,SK093,ROLE012,https://example.com/resource/372
+RES0373,Learning Resource 373,GitHub,GitHub,Skill SK094,Beginner,English,14 Hours,Free,SK094,ROLE013,https://example.com/resource/373
+RES0374,Learning Resource 374,Research Paper,arXiv,Skill SK095,Intermediate,English,15 Hours,Paid,SK095,ROLE014,https://example.com/resource/374
+RES0375,Learning Resource 375,Course,Coursera,Skill SK096,Advanced,English,16 Hours,Free,SK096,ROLE015,https://example.com/resource/375
+RES0376,Learning Resource 376,Cheat Sheet,freeCodeCamp,Skill SK097,Beginner,English,17 Hours,Paid,SK097,ROLE016,https://example.com/resource/376
+RES0377,Learning Resource 377,Book,O'Reilly,Skill SK098,Intermediate,English,18 Hours,Free,SK098,ROLE017,https://example.com/resource/377
+RES0378,Learning Resource 378,YouTube,YouTube,Skill SK099,Advanced,English,19 Hours,Paid,SK099,ROLE018,https://example.com/resource/378
+RES0379,Learning Resource 379,Documentation,MDN,Skill SK100,Beginner,English,2 Hours,Free,SK100,ROLE019,https://example.com/resource/379
+RES0380,Learning Resource 380,Blog,Medium,Skill SK101,Intermediate,English,3 Hours,Paid,SK101,ROLE020,https://example.com/resource/380
+RES0381,Learning Resource 381,GitHub,GitHub,Skill SK102,Advanced,English,4 Hours,Free,SK102,ROLE021,https://example.com/resource/381
+RES0382,Learning Resource 382,Research Paper,arXiv,Skill SK103,Beginner,English,5 Hours,Paid,SK103,ROLE022,https://example.com/resource/382
+RES0383,Learning Resource 383,Course,Coursera,Skill SK104,Intermediate,English,6 Hours,Free,SK104,ROLE023,https://example.com/resource/383
+RES0384,Learning Resource 384,Cheat Sheet,freeCodeCamp,Skill SK105,Advanced,English,7 Hours,Paid,SK105,ROLE024,https://example.com/resource/384
+RES0385,Learning Resource 385,Book,O'Reilly,Skill SK106,Beginner,English,8 Hours,Free,SK106,ROLE025,https://example.com/resource/385
+RES0386,Learning Resource 386,YouTube,YouTube,Skill SK107,Intermediate,English,9 Hours,Paid,SK107,ROLE026,https://example.com/resource/386
+RES0387,Learning Resource 387,Documentation,MDN,Skill SK108,Advanced,English,10 Hours,Free,SK108,ROLE027,https://example.com/resource/387
+RES0388,Learning Resource 388,Blog,Medium,Skill SK109,Beginner,English,11 Hours,Paid,SK109,ROLE028,https://example.com/resource/388
+RES0389,Learning Resource 389,GitHub,GitHub,Skill SK110,Intermediate,English,12 Hours,Free,SK110,ROLE029,https://example.com/resource/389
+RES0390,Learning Resource 390,Research Paper,arXiv,Skill SK111,Advanced,English,13 Hours,Paid,SK111,ROLE030,https://example.com/resource/390
+RES0391,Learning Resource 391,Course,Coursera,Skill SK112,Beginner,English,14 Hours,Free,SK112,ROLE031,https://example.com/resource/391
+RES0392,Learning Resource 392,Cheat Sheet,freeCodeCamp,Skill SK113,Intermediate,English,15 Hours,Paid,SK113,ROLE032,https://example.com/resource/392
+RES0393,Learning Resource 393,Book,O'Reilly,Skill SK114,Advanced,English,16 Hours,Free,SK114,ROLE033,https://example.com/resource/393
+RES0394,Learning Resource 394,YouTube,YouTube,Skill SK115,Beginner,English,17 Hours,Paid,SK115,ROLE034,https://example.com/resource/394
+RES0395,Learning Resource 395,Documentation,MDN,Skill SK116,Intermediate,English,18 Hours,Free,SK116,ROLE035,https://example.com/resource/395
+RES0396,Learning Resource 396,Blog,Medium,Skill SK117,Advanced,English,19 Hours,Paid,SK117,ROLE036,https://example.com/resource/396
+RES0397,Learning Resource 397,GitHub,GitHub,Skill SK118,Beginner,English,2 Hours,Free,SK118,ROLE037,https://example.com/resource/397
+RES0398,Learning Resource 398,Research Paper,arXiv,Skill SK119,Intermediate,English,3 Hours,Paid,SK119,ROLE038,https://example.com/resource/398
+RES0399,Learning Resource 399,Course,Coursera,Skill SK120,Advanced,English,4 Hours,Free,SK120,ROLE039,https://example.com/resource/399
+RES0400,Learning Resource 400,Cheat Sheet,freeCodeCamp,Skill SK121,Beginner,English,5 Hours,Paid,SK121,ROLE040,https://example.com/resource/400
+RES0401,Learning Resource 401,Book,O'Reilly,Skill SK122,Intermediate,English,6 Hours,Free,SK122,ROLE041,https://example.com/resource/401
+RES0402,Learning Resource 402,YouTube,YouTube,Skill SK123,Advanced,English,7 Hours,Paid,SK123,ROLE042,https://example.com/resource/402
+RES0403,Learning Resource 403,Documentation,MDN,Skill SK124,Beginner,English,8 Hours,Free,SK124,ROLE043,https://example.com/resource/403
+RES0404,Learning Resource 404,Blog,Medium,Skill SK125,Intermediate,English,9 Hours,Paid,SK125,ROLE044,https://example.com/resource/404
+RES0405,Learning Resource 405,GitHub,GitHub,Skill SK126,Advanced,English,10 Hours,Free,SK126,ROLE045,https://example.com/resource/405
+RES0406,Learning Resource 406,Research Paper,arXiv,Skill SK127,Beginner,English,11 Hours,Paid,SK127,ROLE046,https://example.com/resource/406
+RES0407,Learning Resource 407,Course,Coursera,Skill SK128,Intermediate,English,12 Hours,Free,SK128,ROLE047,https://example.com/resource/407
+RES0408,Learning Resource 408,Cheat Sheet,freeCodeCamp,Skill SK129,Advanced,English,13 Hours,Paid,SK129,ROLE048,https://example.com/resource/408
+RES0409,Learning Resource 409,Book,O'Reilly,Skill SK130,Beginner,English,14 Hours,Free,SK130,ROLE049,https://example.com/resource/409
+RES0410,Learning Resource 410,YouTube,YouTube,Skill SK131,Intermediate,English,15 Hours,Paid,SK131,ROLE050,https://example.com/resource/410
+RES0411,Learning Resource 411,Documentation,MDN,Skill SK132,Advanced,English,16 Hours,Free,SK132,ROLE051,https://example.com/resource/411
+RES0412,Learning Resource 412,Blog,Medium,Skill SK133,Beginner,English,17 Hours,Paid,SK133,ROLE052,https://example.com/resource/412
+RES0413,Learning Resource 413,GitHub,GitHub,Skill SK134,Intermediate,English,18 Hours,Free,SK134,ROLE053,https://example.com/resource/413
+RES0414,Learning Resource 414,Research Paper,arXiv,Skill SK135,Advanced,English,19 Hours,Paid,SK135,ROLE054,https://example.com/resource/414
+RES0415,Learning Resource 415,Course,Coursera,Skill SK136,Beginner,English,2 Hours,Free,SK136,ROLE055,https://example.com/resource/415
+RES0416,Learning Resource 416,Cheat Sheet,freeCodeCamp,Skill SK137,Intermediate,English,3 Hours,Paid,SK137,ROLE056,https://example.com/resource/416
+RES0417,Learning Resource 417,Book,O'Reilly,Skill SK138,Advanced,English,4 Hours,Free,SK138,ROLE057,https://example.com/resource/417
+RES0418,Learning Resource 418,YouTube,YouTube,Skill SK139,Beginner,English,5 Hours,Paid,SK139,ROLE058,https://example.com/resource/418
+RES0419,Learning Resource 419,Documentation,MDN,Skill SK140,Intermediate,English,6 Hours,Free,SK140,ROLE059,https://example.com/resource/419
+RES0420,Learning Resource 420,Blog,Medium,Skill SK141,Advanced,English,7 Hours,Paid,SK141,ROLE060,https://example.com/resource/420
+RES0421,Learning Resource 421,GitHub,GitHub,Skill SK142,Beginner,English,8 Hours,Free,SK142,ROLE001,https://example.com/resource/421
+RES0422,Learning Resource 422,Research Paper,arXiv,Skill SK143,Intermediate,English,9 Hours,Paid,SK143,ROLE002,https://example.com/resource/422
+RES0423,Learning Resource 423,Course,Coursera,Skill SK144,Advanced,English,10 Hours,Free,SK144,ROLE003,https://example.com/resource/423
+RES0424,Learning Resource 424,Cheat Sheet,freeCodeCamp,Skill SK145,Beginner,English,11 Hours,Paid,SK145,ROLE004,https://example.com/resource/424
+RES0425,Learning Resource 425,Book,O'Reilly,Skill SK146,Intermediate,English,12 Hours,Free,SK146,ROLE005,https://example.com/resource/425
+RES0426,Learning Resource 426,YouTube,YouTube,Skill SK147,Advanced,English,13 Hours,Paid,SK147,ROLE006,https://example.com/resource/426
+RES0427,Learning Resource 427,Documentation,MDN,Skill SK148,Beginner,English,14 Hours,Free,SK148,ROLE007,https://example.com/resource/427
+RES0428,Learning Resource 428,Blog,Medium,Skill SK149,Intermediate,English,15 Hours,Paid,SK149,ROLE008,https://example.com/resource/428
+RES0429,Learning Resource 429,GitHub,GitHub,Skill SK150,Advanced,English,16 Hours,Free,SK150,ROLE009,https://example.com/resource/429
+RES0430,Learning Resource 430,Research Paper,arXiv,Skill SK151,Beginner,English,17 Hours,Paid,SK151,ROLE010,https://example.com/resource/430
+RES0431,Learning Resource 431,Course,Coursera,Skill SK152,Intermediate,English,18 Hours,Free,SK152,ROLE011,https://example.com/resource/431
+RES0432,Learning Resource 432,Cheat Sheet,freeCodeCamp,Skill SK153,Advanced,English,19 Hours,Paid,SK153,ROLE012,https://example.com/resource/432
+RES0433,Learning Resource 433,Book,O'Reilly,Skill SK154,Beginner,English,2 Hours,Free,SK154,ROLE013,https://example.com/resource/433
+RES0434,Learning Resource 434,YouTube,YouTube,Skill SK155,Intermediate,English,3 Hours,Paid,SK155,ROLE014,https://example.com/resource/434
+RES0435,Learning Resource 435,Documentation,MDN,Skill SK156,Advanced,English,4 Hours,Free,SK156,ROLE015,https://example.com/resource/435
+RES0436,Learning Resource 436,Blog,Medium,Skill SK157,Beginner,English,5 Hours,Paid,SK157,ROLE016,https://example.com/resource/436
+RES0437,Learning Resource 437,GitHub,GitHub,Skill SK158,Intermediate,English,6 Hours,Free,SK158,ROLE017,https://example.com/resource/437
+RES0438,Learning Resource 438,Research Paper,arXiv,Skill SK159,Advanced,English,7 Hours,Paid,SK159,ROLE018,https://example.com/resource/438
+RES0439,Learning Resource 439,Course,Coursera,Skill SK160,Beginner,English,8 Hours,Free,SK160,ROLE019,https://example.com/resource/439
+RES0440,Learning Resource 440,Cheat Sheet,freeCodeCamp,Skill SK161,Intermediate,English,9 Hours,Paid,SK161,ROLE020,https://example.com/resource/440
+RES0441,Learning Resource 441,Book,O'Reilly,Skill SK162,Advanced,English,10 Hours,Free,SK162,ROLE021,https://example.com/resource/441
+RES0442,Learning Resource 442,YouTube,YouTube,Skill SK163,Beginner,English,11 Hours,Paid,SK163,ROLE022,https://example.com/resource/442
+RES0443,Learning Resource 443,Documentation,MDN,Skill SK164,Intermediate,English,12 Hours,Free,SK164,ROLE023,https://example.com/resource/443
+RES0444,Learning Resource 444,Blog,Medium,Skill SK165,Advanced,English,13 Hours,Paid,SK165,ROLE024,https://example.com/resource/444
+RES0445,Learning Resource 445,GitHub,GitHub,Skill SK166,Beginner,English,14 Hours,Free,SK166,ROLE025,https://example.com/resource/445
+RES0446,Learning Resource 446,Research Paper,arXiv,Skill SK167,Intermediate,English,15 Hours,Paid,SK167,ROLE026,https://example.com/resource/446
+RES0447,Learning Resource 447,Course,Coursera,Skill SK168,Advanced,English,16 Hours,Free,SK168,ROLE027,https://example.com/resource/447
+RES0448,Learning Resource 448,Cheat Sheet,freeCodeCamp,Skill SK169,Beginner,English,17 Hours,Paid,SK169,ROLE028,https://example.com/resource/448
+RES0449,Learning Resource 449,Book,O'Reilly,Skill SK170,Intermediate,English,18 Hours,Free,SK170,ROLE029,https://example.com/resource/449
+RES0450,Learning Resource 450,YouTube,YouTube,Skill SK171,Advanced,English,19 Hours,Paid,SK171,ROLE030,https://example.com/resource/450
+RES0451,Learning Resource 451,Documentation,MDN,Skill SK172,Beginner,English,2 Hours,Free,SK172,ROLE031,https://example.com/resource/451
+RES0452,Learning Resource 452,Blog,Medium,Skill SK173,Intermediate,English,3 Hours,Paid,SK173,ROLE032,https://example.com/resource/452
+RES0453,Learning Resource 453,GitHub,GitHub,Skill SK174,Advanced,English,4 Hours,Free,SK174,ROLE033,https://example.com/resource/453
+RES0454,Learning Resource 454,Research Paper,arXiv,Skill SK175,Beginner,English,5 Hours,Paid,SK175,ROLE034,https://example.com/resource/454
+RES0455,Learning Resource 455,Course,Coursera,Skill SK176,Intermediate,English,6 Hours,Free,SK176,ROLE035,https://example.com/resource/455
+RES0456,Learning Resource 456,Cheat Sheet,freeCodeCamp,Skill SK177,Advanced,English,7 Hours,Paid,SK177,ROLE036,https://example.com/resource/456
+RES0457,Learning Resource 457,Book,O'Reilly,Skill SK178,Beginner,English,8 Hours,Free,SK178,ROLE037,https://example.com/resource/457
+RES0458,Learning Resource 458,YouTube,YouTube,Skill SK179,Intermediate,English,9 Hours,Paid,SK179,ROLE038,https://example.com/resource/458
+RES0459,Learning Resource 459,Documentation,MDN,Skill SK180,Advanced,English,10 Hours,Free,SK180,ROLE039,https://example.com/resource/459
+RES0460,Learning Resource 460,Blog,Medium,Skill SK181,Beginner,English,11 Hours,Paid,SK181,ROLE040,https://example.com/resource/460
+RES0461,Learning Resource 461,GitHub,GitHub,Skill SK182,Intermediate,English,12 Hours,Free,SK182,ROLE041,https://example.com/resource/461
+RES0462,Learning Resource 462,Research Paper,arXiv,Skill SK183,Advanced,English,13 Hours,Paid,SK183,ROLE042,https://example.com/resource/462
+RES0463,Learning Resource 463,Course,Coursera,Skill SK184,Beginner,English,14 Hours,Free,SK184,ROLE043,https://example.com/resource/463
+RES0464,Learning Resource 464,Cheat Sheet,freeCodeCamp,Skill SK185,Intermediate,English,15 Hours,Paid,SK185,ROLE044,https://example.com/resource/464
+RES0465,Learning Resource 465,Book,O'Reilly,Skill SK186,Advanced,English,16 Hours,Free,SK186,ROLE045,https://example.com/resource/465
+RES0466,Learning Resource 466,YouTube,YouTube,Skill SK187,Beginner,English,17 Hours,Paid,SK187,ROLE046,https://example.com/resource/466
+RES0467,Learning Resource 467,Documentation,MDN,Skill SK188,Intermediate,English,18 Hours,Free,SK188,ROLE047,https://example.com/resource/467
+RES0468,Learning Resource 468,Blog,Medium,Skill SK189,Advanced,English,19 Hours,Paid,SK189,ROLE048,https://example.com/resource/468
+RES0469,Learning Resource 469,GitHub,GitHub,Skill SK190,Beginner,English,2 Hours,Free,SK190,ROLE049,https://example.com/resource/469
+RES0470,Learning Resource 470,Research Paper,arXiv,Skill SK191,Intermediate,English,3 Hours,Paid,SK191,ROLE050,https://example.com/resource/470
+RES0471,Learning Resource 471,Course,Coursera,Skill SK192,Advanced,English,4 Hours,Free,SK192,ROLE051,https://example.com/resource/471
+RES0472,Learning Resource 472,Cheat Sheet,freeCodeCamp,Skill SK193,Beginner,English,5 Hours,Paid,SK193,ROLE052,https://example.com/resource/472
+RES0473,Learning Resource 473,Book,O'Reilly,Skill SK194,Intermediate,English,6 Hours,Free,SK194,ROLE053,https://example.com/resource/473
+RES0474,Learning Resource 474,YouTube,YouTube,Skill SK195,Advanced,English,7 Hours,Paid,SK195,ROLE054,https://example.com/resource/474
+RES0475,Learning Resource 475,Documentation,MDN,Skill SK196,Beginner,English,8 Hours,Free,SK196,ROLE055,https://example.com/resource/475
+RES0476,Learning Resource 476,Blog,Medium,Skill SK197,Intermediate,English,9 Hours,Paid,SK197,ROLE056,https://example.com/resource/476
+RES0477,Learning Resource 477,GitHub,GitHub,Skill SK198,Advanced,English,10 Hours,Free,SK198,ROLE057,https://example.com/resource/477
+RES0478,Learning Resource 478,Research Paper,arXiv,Skill SK199,Beginner,English,11 Hours,Paid,SK199,ROLE058,https://example.com/resource/478
+RES0479,Learning Resource 479,Course,Coursera,Skill SK200,Intermediate,English,12 Hours,Free,SK200,ROLE059,https://example.com/resource/479
+RES0480,Learning Resource 480,Cheat Sheet,freeCodeCamp,Skill SK201,Advanced,English,13 Hours,Paid,SK201,ROLE060,https://example.com/resource/480
+RES0481,Learning Resource 481,Book,O'Reilly,Skill SK202,Beginner,English,14 Hours,Free,SK202,ROLE001,https://example.com/resource/481
+RES0482,Learning Resource 482,YouTube,YouTube,Skill SK203,Intermediate,English,15 Hours,Paid,SK203,ROLE002,https://example.com/resource/482
+RES0483,Learning Resource 483,Documentation,MDN,Skill SK204,Advanced,English,16 Hours,Free,SK204,ROLE003,https://example.com/resource/483
+RES0484,Learning Resource 484,Blog,Medium,Skill SK205,Beginner,English,17 Hours,Paid,SK205,ROLE004,https://example.com/resource/484
+RES0485,Learning Resource 485,GitHub,GitHub,Skill SK206,Intermediate,English,18 Hours,Free,SK206,ROLE005,https://example.com/resource/485
+RES0486,Learning Resource 486,Research Paper,arXiv,Skill SK207,Advanced,English,19 Hours,Paid,SK207,ROLE006,https://example.com/resource/486
+RES0487,Learning Resource 487,Course,Coursera,Skill SK208,Beginner,English,2 Hours,Free,SK208,ROLE007,https://example.com/resource/487
+RES0488,Learning Resource 488,Cheat Sheet,freeCodeCamp,Skill SK209,Intermediate,English,3 Hours,Paid,SK209,ROLE008,https://example.com/resource/488
+RES0489,Learning Resource 489,Book,O'Reilly,Skill SK210,Advanced,English,4 Hours,Free,SK210,ROLE009,https://example.com/resource/489
+RES0490,Learning Resource 490,YouTube,YouTube,Skill SK211,Beginner,English,5 Hours,Paid,SK211,ROLE010,https://example.com/resource/490
+RES0491,Learning Resource 491,Documentation,MDN,Skill SK212,Intermediate,English,6 Hours,Free,SK212,ROLE011,https://example.com/resource/491
+RES0492,Learning Resource 492,Blog,Medium,Skill SK213,Advanced,English,7 Hours,Paid,SK213,ROLE012,https://example.com/resource/492
+RES0493,Learning Resource 493,GitHub,GitHub,Skill SK214,Beginner,English,8 Hours,Free,SK214,ROLE013,https://example.com/resource/493
+RES0494,Learning Resource 494,Research Paper,arXiv,Skill SK215,Intermediate,English,9 Hours,Paid,SK215,ROLE014,https://example.com/resource/494
+RES0495,Learning Resource 495,Course,Coursera,Skill SK216,Advanced,English,10 Hours,Free,SK216,ROLE015,https://example.com/resource/495
+RES0496,Learning Resource 496,Cheat Sheet,freeCodeCamp,Skill SK217,Beginner,English,11 Hours,Paid,SK217,ROLE016,https://example.com/resource/496
+RES0497,Learning Resource 497,Book,O'Reilly,Skill SK218,Intermediate,English,12 Hours,Free,SK218,ROLE017,https://example.com/resource/497
+RES0498,Learning Resource 498,YouTube,YouTube,Skill SK219,Advanced,English,13 Hours,Paid,SK219,ROLE018,https://example.com/resource/498
+RES0499,Learning Resource 499,Documentation,MDN,Skill SK220,Beginner,English,14 Hours,Free,SK220,ROLE019,https://example.com/resource/499
+RES0500,Learning Resource 500,Blog,Medium,Skill SK221,Intermediate,English,15 Hours,Paid,SK221,ROLE020,https://example.com/resource/500

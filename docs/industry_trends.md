@@ -1,0 +1,2102 @@
+# Industry Trends & Demand
+
+## TR001
+- **trend_id:** TR001
+- **role_id:** ROLE037
+- **industry:** EdTech
+- **technology:** Generative AI
+- **trend_title:** Generative AI Innovation 1
+- **trend_description:** Generative AI adoption is transforming the edtech sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Moderate
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 35
+- **average_salary_global_usd:** 126807
+- **top_companies:** OpenAI;Microsoft;Oracle;NVIDIA
+- **required_skills:** Linux;RAG;Git;React;Deep Learning;Docker
+- **recommended_certifications:** Microsoft Azure Administrator;Google Professional Data Engineer;TensorFlow Developer
+- **remote_opportunities:** Moderate
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 34103
+- **market_outlook:** Booming
+- **last_updated:** 2025-02-27
+
+## TR002
+- **trend_id:** TR002
+- **role_id:** ROLE035
+- **industry:** EdTech
+- **technology:** Machine Learning
+- **trend_title:** Machine Learning Innovation 2
+- **trend_description:** Machine Learning adoption is transforming the edtech sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Excellent
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 26
+- **average_salary_global_usd:** 206160
+- **top_companies:** Cisco;Infosys;Google;Deloitte
+- **required_skills:** Java;SQL;LangChain;Power BI;React;RAG
+- **recommended_certifications:** Microsoft Azure Administrator;AWS Certified Solutions Architect;Google Professional Data Engineer
+- **remote_opportunities:** Moderate
+- **experience_level:** Fresher
+- **job_openings_estimate:** 42908
+- **market_outlook:** Booming
+- **last_updated:** 2026-04-21
+
+## TR003
+- **trend_id:** TR003
+- **role_id:** ROLE010
+- **industry:** Data Analytics
+- **technology:** Deep Learning
+- **trend_title:** Deep Learning Innovation 3
+- **trend_description:** Deep Learning adoption is transforming the data analytics sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Very Good
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 29
+- **average_salary_global_usd:** 161868
+- **top_companies:** TCS;Cisco;Accenture;NVIDIA
+- **required_skills:** TensorFlow;AWS;Kubernetes;Java;Python;Git
+- **recommended_certifications:** Google Professional Data Engineer;TensorFlow Developer;Oracle Java SE
+- **remote_opportunities:** Moderate
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 39187
+- **market_outlook:** Growing
+- **last_updated:** 2026-10-17
+
+## TR004
+- **trend_id:** TR004
+- **role_id:** ROLE020
+- **industry:** Finance
+- **technology:** AWS
+- **trend_title:** AWS Innovation 4
+- **trend_description:** AWS adoption is transforming the finance sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Excellent
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 10
+- **average_salary_global_usd:** 123045
+- **top_companies:** IBM;Oracle;Cisco;NVIDIA
+- **required_skills:** Python;Power BI;LangChain;Java;Linux;Node.js
+- **recommended_certifications:** Microsoft Azure Administrator;Oracle Java SE;IBM AI Engineering
+- **remote_opportunities:** Limited
+- **experience_level:** Fresher
+- **job_openings_estimate:** 20837
+- **market_outlook:** Growing
+- **last_updated:** 2025-04-10
+
+## TR005
+- **trend_id:** TR005
+- **role_id:** ROLE046
+- **industry:** Data Analytics
+- **technology:** Azure
+- **trend_title:** Azure Innovation 5
+- **trend_description:** Azure adoption is transforming the data analytics sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Moderate
+- **automation_risk:** High
+- **average_salary_india_lpa:** 24
+- **average_salary_global_usd:** 124266
+- **top_companies:** Infosys;Wipro;Cisco;TCS
+- **required_skills:** TensorFlow;Cybersecurity;React;Python;Azure;Machine Learning
+- **recommended_certifications:** CompTIA Security+;IBM AI Engineering;Oracle Java SE
+- **remote_opportunities:** Moderate
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 8949
+- **market_outlook:** Emerging
+- **last_updated:** 2025-04-03
+
+## TR006
+- **trend_id:** TR006
+- **role_id:** ROLE019
+- **industry:** Data Analytics
+- **technology:** Docker
+- **trend_title:** Docker Innovation 6
+- **trend_description:** Docker adoption is transforming the data analytics sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Excellent
+- **automation_risk:** High
+- **average_salary_india_lpa:** 16
+- **average_salary_global_usd:** 149856
+- **top_companies:** Wipro;Infosys;Google;IBM
+- **required_skills:** React;Git;LangChain;Power BI;Cybersecurity;Node.js
+- **recommended_certifications:** TensorFlow Developer;Cisco CCNA;Oracle Java SE
+- **remote_opportunities:** Limited
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 69872
+- **market_outlook:** Emerging
+- **last_updated:** 2026-02-03
+
+## TR007
+- **trend_id:** TR007
+- **role_id:** ROLE006
+- **industry:** Data Analytics
+- **technology:** Kubernetes
+- **trend_title:** Kubernetes Innovation 7
+- **trend_description:** Kubernetes adoption is transforming the data analytics sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 21
+- **average_salary_global_usd:** 77472
+- **top_companies:** Wipro;OpenAI;Oracle;IBM
+- **required_skills:** SQL;Python;AWS;React;LangChain;Git
+- **recommended_certifications:** Oracle Java SE;CompTIA Security+;IBM AI Engineering
+- **remote_opportunities:** Limited
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 53141
+- **market_outlook:** Growing
+- **last_updated:** 2025-06-26
+
+## TR008
+- **trend_id:** TR008
+- **role_id:** ROLE001
+- **industry:** Gaming
+- **technology:** Python
+- **trend_title:** Python Innovation 8
+- **trend_description:** Python adoption is transforming the gaming sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Excellent
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 35
+- **average_salary_global_usd:** 176202
+- **top_companies:** Infosys;OpenAI;Google;Microsoft
+- **required_skills:** Power BI;Docker;React;Linux;RAG;TensorFlow
+- **recommended_certifications:** CompTIA Security+;AWS Certified Solutions Architect;Microsoft Azure Administrator
+- **remote_opportunities:** Limited
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 3718
+- **market_outlook:** Booming
+- **last_updated:** 2025-05-14
+
+## TR009
+- **trend_id:** TR009
+- **role_id:** ROLE022
+- **industry:** Artificial Intelligence
+- **technology:** Java
+- **trend_title:** Java Innovation 9
+- **trend_description:** Java adoption is transforming the artificial intelligence sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 8
+- **average_salary_global_usd:** 69792
+- **top_companies:** Accenture;Microsoft;Wipro;Infosys
+- **required_skills:** Kubernetes;Cybersecurity;Node.js;Azure;LangChain;Deep Learning
+- **recommended_certifications:** IBM AI Engineering;AWS Certified Solutions Architect;TensorFlow Developer
+- **remote_opportunities:** Moderate
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 63366
+- **market_outlook:** Growing
+- **last_updated:** 2026-03-06
+
+## TR010
+- **trend_id:** TR010
+- **role_id:** ROLE003
+- **industry:** Healthcare
+- **technology:** React
+- **trend_title:** React Innovation 10
+- **trend_description:** React adoption is transforming the healthcare sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Good
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 20
+- **average_salary_global_usd:** 172121
+- **top_companies:** Oracle;Amazon;Wipro;Google
+- **required_skills:** Deep Learning;LangChain;Cybersecurity;SQL;AWS;RAG
+- **recommended_certifications:** IBM AI Engineering;Oracle Java SE;Microsoft Azure Administrator
+- **remote_opportunities:** High
+- **experience_level:** Fresher
+- **job_openings_estimate:** 23717
+- **market_outlook:** Growing
+- **last_updated:** 2025-04-03
+
+## TR011
+- **trend_id:** TR011
+- **role_id:** ROLE038
+- **industry:** Gaming
+- **technology:** Node.js
+- **trend_title:** Node.js Innovation 11
+- **trend_description:** Node.js adoption is transforming the gaming sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Very Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 15
+- **average_salary_global_usd:** 186469
+- **top_companies:** Google;OpenAI;Cisco;Deloitte
+- **required_skills:** React;TensorFlow;RAG;AWS;Deep Learning;SQL
+- **recommended_certifications:** TensorFlow Developer;AWS Certified Solutions Architect;Microsoft Azure Administrator
+- **remote_opportunities:** Limited
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 66243
+- **market_outlook:** Booming
+- **last_updated:** 2025-06-27
+
+## TR012
+- **trend_id:** TR012
+- **role_id:** ROLE015
+- **industry:** Data Analytics
+- **technology:** DevOps
+- **trend_title:** DevOps Innovation 12
+- **trend_description:** DevOps adoption is transforming the data analytics sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Excellent
+- **automation_risk:** High
+- **average_salary_india_lpa:** 24
+- **average_salary_global_usd:** 58701
+- **top_companies:** Wipro;Oracle;TCS;Cisco
+- **required_skills:** TensorFlow;Java;Docker;Kubernetes;Azure;Python
+- **recommended_certifications:** Cisco CCNA;Microsoft Azure Administrator;Google Professional Data Engineer
+- **remote_opportunities:** Limited
+- **experience_level:** Fresher
+- **job_openings_estimate:** 23374
+- **market_outlook:** Booming
+- **last_updated:** 2026-06-26
+
+## TR013
+- **trend_id:** TR013
+- **role_id:** ROLE060
+- **industry:** Manufacturing
+- **technology:** MLOps
+- **trend_title:** MLOps Innovation 13
+- **trend_description:** MLOps adoption is transforming the manufacturing sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Excellent
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 34
+- **average_salary_global_usd:** 86709
+- **top_companies:** Google;Microsoft;Amazon;IBM
+- **required_skills:** AWS;Python;React;Machine Learning;Cybersecurity;LangChain
+- **recommended_certifications:** Cisco CCNA;CompTIA Security+;Microsoft Azure Administrator
+- **remote_opportunities:** Limited
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 45843
+- **market_outlook:** Emerging
+- **last_updated:** 2026-05-21
+
+## TR014
+- **trend_id:** TR014
+- **role_id:** ROLE055
+- **industry:** Cybersecurity
+- **technology:** Blockchain
+- **trend_title:** Blockchain Innovation 14
+- **trend_description:** Blockchain adoption is transforming the cybersecurity sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Moderate
+- **future_growth:** Very Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 17
+- **average_salary_global_usd:** 215150
+- **top_companies:** Infosys;Google;Amazon;Microsoft
+- **required_skills:** AWS;Git;React;TensorFlow;Java;Node.js
+- **recommended_certifications:** AWS Certified Solutions Architect;Cisco CCNA;Google Professional Data Engineer
+- **remote_opportunities:** Limited
+- **experience_level:** Fresher
+- **job_openings_estimate:** 63085
+- **market_outlook:** Booming
+- **last_updated:** 2026-03-04
+
+## TR015
+- **trend_id:** TR015
+- **role_id:** ROLE001
+- **industry:** Finance
+- **technology:** RAG
+- **trend_title:** RAG Innovation 15
+- **trend_description:** RAG adoption is transforming the finance sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Excellent
+- **automation_risk:** High
+- **average_salary_india_lpa:** 20
+- **average_salary_global_usd:** 176415
+- **top_companies:** Capgemini;Amazon;Google;Oracle
+- **required_skills:** Docker;Python;LangChain;Machine Learning;SQL;Cybersecurity
+- **recommended_certifications:** AWS Certified Solutions Architect;Oracle Java SE;Google Professional Data Engineer
+- **remote_opportunities:** Limited
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 23604
+- **market_outlook:** Growing
+- **last_updated:** 2025-02-26
+
+## TR016
+- **trend_id:** TR016
+- **role_id:** ROLE032
+- **industry:** EdTech
+- **technology:** LangChain
+- **trend_title:** LangChain Innovation 16
+- **trend_description:** LangChain adoption is transforming the edtech sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Very Good
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 17
+- **average_salary_global_usd:** 82549
+- **top_companies:** TCS;OpenAI;Google;Microsoft
+- **required_skills:** AWS;React;Power BI;Cybersecurity;RAG;Machine Learning
+- **recommended_certifications:** Google Professional Data Engineer;TensorFlow Developer;CompTIA Security+
+- **remote_opportunities:** Moderate
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 31147
+- **market_outlook:** Growing
+- **last_updated:** 2026-01-04
+
+## TR017
+- **trend_id:** TR017
+- **role_id:** ROLE035
+- **industry:** Manufacturing
+- **technology:** Power BI
+- **trend_title:** Power BI Innovation 17
+- **trend_description:** Power BI adoption is transforming the manufacturing sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Good
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 32
+- **average_salary_global_usd:** 105629
+- **top_companies:** Deloitte;Accenture;IBM;OpenAI
+- **required_skills:** Kubernetes;SQL;Docker;Linux;React;Azure
+- **recommended_certifications:** CompTIA Security+;Google Professional Data Engineer;IBM AI Engineering
+- **remote_opportunities:** Limited
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 54566
+- **market_outlook:** Emerging
+- **last_updated:** 2025-08-14
+
+## TR018
+- **trend_id:** TR018
+- **role_id:** ROLE010
+- **industry:** Artificial Intelligence
+- **technology:** SQL
+- **trend_title:** SQL Innovation 18
+- **trend_description:** SQL adoption is transforming the artificial intelligence sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Very Good
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 35
+- **average_salary_global_usd:** 169778
+- **top_companies:** Wipro;Capgemini;IBM;Google
+- **required_skills:** Cybersecurity;Azure;LangChain;React;RAG;Python
+- **recommended_certifications:** Google Professional Data Engineer;Cisco CCNA;Microsoft Azure Administrator
+- **remote_opportunities:** Limited
+- **experience_level:** Fresher
+- **job_openings_estimate:** 33035
+- **market_outlook:** Booming
+- **last_updated:** 2026-08-11
+
+## TR019
+- **trend_id:** TR019
+- **role_id:** ROLE008
+- **industry:** E-commerce
+- **technology:** IoT
+- **trend_title:** IoT Innovation 19
+- **trend_description:** IoT adoption is transforming the e-commerce sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Excellent
+- **automation_risk:** High
+- **average_salary_india_lpa:** 20
+- **average_salary_global_usd:** 59846
+- **top_companies:** Infosys;Wipro;Cisco;Accenture
+- **required_skills:** TensorFlow;AWS;Python;Kubernetes;SQL;Java
+- **recommended_certifications:** Cisco CCNA;Google Professional Data Engineer;Oracle Java SE
+- **remote_opportunities:** High
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 69796
+- **market_outlook:** Growing
+- **last_updated:** 2025-02-13
+
+## TR020
+- **trend_id:** TR020
+- **role_id:** ROLE018
+- **industry:** Finance
+- **technology:** Big Data
+- **trend_title:** Big Data Innovation 20
+- **trend_description:** Big Data adoption is transforming the finance sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Good
+- **automation_risk:** High
+- **average_salary_india_lpa:** 35
+- **average_salary_global_usd:** 142771
+- **top_companies:** OpenAI;Capgemini;Microsoft;TCS
+- **required_skills:** Python;Deep Learning;Cybersecurity;Machine Learning;Azure;Node.js
+- **recommended_certifications:** IBM AI Engineering;CompTIA Security+;AWS Certified Solutions Architect
+- **remote_opportunities:** Moderate
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 53793
+- **market_outlook:** Emerging
+- **last_updated:** 2026-09-22
+
+## TR021
+- **trend_id:** TR021
+- **role_id:** ROLE026
+- **industry:** Artificial Intelligence
+- **technology:** Generative AI
+- **trend_title:** Generative AI Innovation 21
+- **trend_description:** Generative AI adoption is transforming the artificial intelligence sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Very Good
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 17
+- **average_salary_global_usd:** 171143
+- **top_companies:** Microsoft;Amazon;Google;TCS
+- **required_skills:** Git;LangChain;Python;Java;React;Linux
+- **recommended_certifications:** Microsoft Azure Administrator;AWS Certified Solutions Architect;IBM AI Engineering
+- **remote_opportunities:** Limited
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 36504
+- **market_outlook:** Growing
+- **last_updated:** 2025-11-11
+
+## TR022
+- **trend_id:** TR022
+- **role_id:** ROLE048
+- **industry:** E-commerce
+- **technology:** Machine Learning
+- **trend_title:** Machine Learning Innovation 22
+- **trend_description:** Machine Learning adoption is transforming the e-commerce sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Excellent
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 23
+- **average_salary_global_usd:** 215047
+- **top_companies:** TCS;OpenAI;Cisco;Deloitte
+- **required_skills:** Node.js;LangChain;Azure;Kubernetes;React;Power BI
+- **recommended_certifications:** CompTIA Security+;Oracle Java SE;IBM AI Engineering
+- **remote_opportunities:** High
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 54611
+- **market_outlook:** Booming
+- **last_updated:** 2026-12-10
+
+## TR023
+- **trend_id:** TR023
+- **role_id:** ROLE013
+- **industry:** Gaming
+- **technology:** Deep Learning
+- **trend_title:** Deep Learning Innovation 23
+- **trend_description:** Deep Learning adoption is transforming the gaming sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Moderate
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 30
+- **average_salary_global_usd:** 187229
+- **top_companies:** OpenAI;Amazon;Cisco;Microsoft
+- **required_skills:** React;Deep Learning;Git;Power BI;Machine Learning;Java
+- **recommended_certifications:** CompTIA Security+;IBM AI Engineering;Google Professional Data Engineer
+- **remote_opportunities:** High
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 45520
+- **market_outlook:** Growing
+- **last_updated:** 2025-08-10
+
+## TR024
+- **trend_id:** TR024
+- **role_id:** ROLE021
+- **industry:** Cybersecurity
+- **technology:** AWS
+- **trend_title:** AWS Innovation 24
+- **trend_description:** AWS adoption is transforming the cybersecurity sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Moderate
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 18
+- **average_salary_global_usd:** 81444
+- **top_companies:** Oracle;IBM;Cisco;Google
+- **required_skills:** LangChain;Docker;Machine Learning;Git;Deep Learning;SQL
+- **recommended_certifications:** Google Professional Data Engineer;CompTIA Security+;IBM AI Engineering
+- **remote_opportunities:** Moderate
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 2682
+- **market_outlook:** Growing
+- **last_updated:** 2025-10-05
+
+## TR025
+- **trend_id:** TR025
+- **role_id:** ROLE026
+- **industry:** Cybersecurity
+- **technology:** Azure
+- **trend_title:** Azure Innovation 25
+- **trend_description:** Azure adoption is transforming the cybersecurity sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Excellent
+- **automation_risk:** High
+- **average_salary_india_lpa:** 35
+- **average_salary_global_usd:** 93314
+- **top_companies:** Amazon;Capgemini;Wipro;Deloitte
+- **required_skills:** SQL;React;Docker;Linux;Power BI;Git
+- **recommended_certifications:** Oracle Java SE;AWS Certified Solutions Architect;CompTIA Security+
+- **remote_opportunities:** Limited
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 24043
+- **market_outlook:** Growing
+- **last_updated:** 2026-08-29
+
+## TR026
+- **trend_id:** TR026
+- **role_id:** ROLE048
+- **industry:** Cybersecurity
+- **technology:** Docker
+- **trend_title:** Docker Innovation 26
+- **trend_description:** Docker adoption is transforming the cybersecurity sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Excellent
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 13
+- **average_salary_global_usd:** 166993
+- **top_companies:** OpenAI;IBM;Google;Microsoft
+- **required_skills:** RAG;Linux;Git;Java;Azure;LangChain
+- **recommended_certifications:** Oracle Java SE;Cisco CCNA;IBM AI Engineering
+- **remote_opportunities:** High
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 9677
+- **market_outlook:** Emerging
+- **last_updated:** 2026-11-14
+
+## TR027
+- **trend_id:** TR027
+- **role_id:** ROLE058
+- **industry:** E-commerce
+- **technology:** Kubernetes
+- **trend_title:** Kubernetes Innovation 27
+- **trend_description:** Kubernetes adoption is transforming the e-commerce sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Very Good
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 8
+- **average_salary_global_usd:** 83262
+- **top_companies:** Wipro;Oracle;Deloitte;TCS
+- **required_skills:** Java;Linux;AWS;Azure;Cybersecurity;Node.js
+- **recommended_certifications:** TensorFlow Developer;Microsoft Azure Administrator;IBM AI Engineering
+- **remote_opportunities:** Limited
+- **experience_level:** Fresher
+- **job_openings_estimate:** 43712
+- **market_outlook:** Emerging
+- **last_updated:** 2025-01-12
+
+## TR028
+- **trend_id:** TR028
+- **role_id:** ROLE022
+- **industry:** Artificial Intelligence
+- **technology:** Python
+- **trend_title:** Python Innovation 28
+- **trend_description:** Python adoption is transforming the artificial intelligence sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Good
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 19
+- **average_salary_global_usd:** 198493
+- **top_companies:** Capgemini;Deloitte;Wipro;Infosys
+- **required_skills:** Azure;RAG;Java;React;Deep Learning;Git
+- **recommended_certifications:** Microsoft Azure Administrator;AWS Certified Solutions Architect;IBM AI Engineering
+- **remote_opportunities:** High
+- **experience_level:** Fresher
+- **job_openings_estimate:** 73771
+- **market_outlook:** Stable
+- **last_updated:** 2026-12-18
+
+## TR029
+- **trend_id:** TR029
+- **role_id:** ROLE008
+- **industry:** Manufacturing
+- **technology:** Java
+- **trend_title:** Java Innovation 29
+- **trend_description:** Java adoption is transforming the manufacturing sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Moderate
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 28
+- **average_salary_global_usd:** 160994
+- **top_companies:** Capgemini;Deloitte;Google;Oracle
+- **required_skills:** Deep Learning;Cybersecurity;Kubernetes;AWS;React;TensorFlow
+- **recommended_certifications:** Google Professional Data Engineer;AWS Certified Solutions Architect;CompTIA Security+
+- **remote_opportunities:** Moderate
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 71378
+- **market_outlook:** Stable
+- **last_updated:** 2025-11-30
+
+## TR030
+- **trend_id:** TR030
+- **role_id:** ROLE055
+- **industry:** E-commerce
+- **technology:** React
+- **trend_title:** React Innovation 30
+- **trend_description:** React adoption is transforming the e-commerce sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Good
+- **automation_risk:** High
+- **average_salary_india_lpa:** 8
+- **average_salary_global_usd:** 125708
+- **top_companies:** Capgemini;Accenture;Oracle;TCS
+- **required_skills:** Node.js;Deep Learning;Git;Linux;LangChain;Power BI
+- **recommended_certifications:** Microsoft Azure Administrator;Google Professional Data Engineer;AWS Certified Solutions Architect
+- **remote_opportunities:** Limited
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 56865
+- **market_outlook:** Booming
+- **last_updated:** 2025-11-24
+
+## TR031
+- **trend_id:** TR031
+- **role_id:** ROLE025
+- **industry:** Healthcare
+- **technology:** Node.js
+- **trend_title:** Node.js Innovation 31
+- **trend_description:** Node.js adoption is transforming the healthcare sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Good
+- **automation_risk:** High
+- **average_salary_india_lpa:** 23
+- **average_salary_global_usd:** 95098
+- **top_companies:** Google;Capgemini;Wipro;TCS
+- **required_skills:** Machine Learning;Java;AWS;Kubernetes;Docker;LangChain
+- **recommended_certifications:** Cisco CCNA;Oracle Java SE;Microsoft Azure Administrator
+- **remote_opportunities:** Moderate
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 62275
+- **market_outlook:** Emerging
+- **last_updated:** 2025-04-18
+
+## TR032
+- **trend_id:** TR032
+- **role_id:** ROLE004
+- **industry:** Manufacturing
+- **technology:** DevOps
+- **trend_title:** DevOps Innovation 32
+- **trend_description:** DevOps adoption is transforming the manufacturing sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Very Good
+- **automation_risk:** High
+- **average_salary_india_lpa:** 16
+- **average_salary_global_usd:** 180788
+- **top_companies:** OpenAI;Deloitte;NVIDIA;Amazon
+- **required_skills:** Git;AWS;React;Deep Learning;Power BI;TensorFlow
+- **recommended_certifications:** TensorFlow Developer;AWS Certified Solutions Architect;Oracle Java SE
+- **remote_opportunities:** Moderate
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 43608
+- **market_outlook:** Growing
+- **last_updated:** 2026-06-09
+
+## TR033
+- **trend_id:** TR033
+- **role_id:** ROLE007
+- **industry:** Artificial Intelligence
+- **technology:** MLOps
+- **trend_title:** MLOps Innovation 33
+- **trend_description:** MLOps adoption is transforming the artificial intelligence sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Very Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 10
+- **average_salary_global_usd:** 174153
+- **top_companies:** Amazon;NVIDIA;Accenture;Microsoft
+- **required_skills:** Git;Cybersecurity;Python;Machine Learning;Java;Deep Learning
+- **recommended_certifications:** Microsoft Azure Administrator;TensorFlow Developer;Google Professional Data Engineer
+- **remote_opportunities:** High
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 32471
+- **market_outlook:** Growing
+- **last_updated:** 2025-10-28
+
+## TR034
+- **trend_id:** TR034
+- **role_id:** ROLE025
+- **industry:** Gaming
+- **technology:** Blockchain
+- **trend_title:** Blockchain Innovation 34
+- **trend_description:** Blockchain adoption is transforming the gaming sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Excellent
+- **automation_risk:** High
+- **average_salary_india_lpa:** 18
+- **average_salary_global_usd:** 55747
+- **top_companies:** IBM;Oracle;Infosys;Cisco
+- **required_skills:** Java;Azure;Machine Learning;Kubernetes;Node.js;Docker
+- **recommended_certifications:** TensorFlow Developer;AWS Certified Solutions Architect;Google Professional Data Engineer
+- **remote_opportunities:** Moderate
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 58435
+- **market_outlook:** Emerging
+- **last_updated:** 2025-03-27
+
+## TR035
+- **trend_id:** TR035
+- **role_id:** ROLE025
+- **industry:** Healthcare
+- **technology:** RAG
+- **trend_title:** RAG Innovation 35
+- **trend_description:** RAG adoption is transforming the healthcare sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Moderate
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 29
+- **average_salary_global_usd:** 219155
+- **top_companies:** Deloitte;Wipro;Infosys;Cisco
+- **required_skills:** React;Azure;Kubernetes;Docker;Linux;LangChain
+- **recommended_certifications:** IBM AI Engineering;Microsoft Azure Administrator;Google Professional Data Engineer
+- **remote_opportunities:** High
+- **experience_level:** Fresher
+- **job_openings_estimate:** 38163
+- **market_outlook:** Emerging
+- **last_updated:** 2025-08-22
+
+## TR036
+- **trend_id:** TR036
+- **role_id:** ROLE020
+- **industry:** Data Analytics
+- **technology:** LangChain
+- **trend_title:** LangChain Innovation 36
+- **trend_description:** LangChain adoption is transforming the data analytics sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Moderate
+- **future_growth:** Moderate
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 4
+- **average_salary_global_usd:** 97850
+- **top_companies:** Amazon;Deloitte;TCS;IBM
+- **required_skills:** Cybersecurity;Node.js;RAG;Python;React;Java
+- **recommended_certifications:** CompTIA Security+;Oracle Java SE;Cisco CCNA
+- **remote_opportunities:** Moderate
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 59104
+- **market_outlook:** Emerging
+- **last_updated:** 2025-04-09
+
+## TR037
+- **trend_id:** TR037
+- **role_id:** ROLE028
+- **industry:** Cybersecurity
+- **technology:** Power BI
+- **trend_title:** Power BI Innovation 37
+- **trend_description:** Power BI adoption is transforming the cybersecurity sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Moderate
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 10
+- **average_salary_global_usd:** 103961
+- **top_companies:** Infosys;Deloitte;Microsoft;Cisco
+- **required_skills:** RAG;TensorFlow;Node.js;AWS;Machine Learning;Python
+- **recommended_certifications:** Cisco CCNA;Google Professional Data Engineer;CompTIA Security+
+- **remote_opportunities:** High
+- **experience_level:** Fresher
+- **job_openings_estimate:** 12226
+- **market_outlook:** Growing
+- **last_updated:** 2025-02-23
+
+## TR038
+- **trend_id:** TR038
+- **role_id:** ROLE014
+- **industry:** E-commerce
+- **technology:** SQL
+- **trend_title:** SQL Innovation 38
+- **trend_description:** SQL adoption is transforming the e-commerce sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Moderate
+- **future_growth:** Moderate
+- **automation_risk:** High
+- **average_salary_india_lpa:** 12
+- **average_salary_global_usd:** 214997
+- **top_companies:** Infosys;IBM;Cisco;NVIDIA
+- **required_skills:** Azure;Node.js;Linux;Docker;Java;Python
+- **recommended_certifications:** TensorFlow Developer;Oracle Java SE;CompTIA Security+
+- **remote_opportunities:** High
+- **experience_level:** Fresher
+- **job_openings_estimate:** 26839
+- **market_outlook:** Booming
+- **last_updated:** 2026-09-04
+
+## TR039
+- **trend_id:** TR039
+- **role_id:** ROLE009
+- **industry:** E-commerce
+- **technology:** IoT
+- **trend_title:** IoT Innovation 39
+- **trend_description:** IoT adoption is transforming the e-commerce sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Moderate
+- **future_growth:** Very Good
+- **automation_risk:** High
+- **average_salary_india_lpa:** 9
+- **average_salary_global_usd:** 205984
+- **top_companies:** Google;Amazon;Cisco;Accenture
+- **required_skills:** RAG;Git;Azure;Linux;Docker;AWS
+- **recommended_certifications:** CompTIA Security+;IBM AI Engineering;Cisco CCNA
+- **remote_opportunities:** Moderate
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 15110
+- **market_outlook:** Emerging
+- **last_updated:** 2025-10-31
+
+## TR040
+- **trend_id:** TR040
+- **role_id:** ROLE002
+- **industry:** E-commerce
+- **technology:** Big Data
+- **trend_title:** Big Data Innovation 40
+- **trend_description:** Big Data adoption is transforming the e-commerce sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Excellent
+- **automation_risk:** High
+- **average_salary_india_lpa:** 6
+- **average_salary_global_usd:** 208764
+- **top_companies:** Deloitte;Google;NVIDIA;Oracle
+- **required_skills:** Kubernetes;SQL;Cybersecurity;Git;Node.js;React
+- **recommended_certifications:** CompTIA Security+;Oracle Java SE;Cisco CCNA
+- **remote_opportunities:** High
+- **experience_level:** Fresher
+- **job_openings_estimate:** 47160
+- **market_outlook:** Booming
+- **last_updated:** 2025-08-16
+
+## TR041
+- **trend_id:** TR041
+- **role_id:** ROLE047
+- **industry:** Gaming
+- **technology:** Generative AI
+- **trend_title:** Generative AI Innovation 41
+- **trend_description:** Generative AI adoption is transforming the gaming sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Very Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 19
+- **average_salary_global_usd:** 74655
+- **top_companies:** Wipro;OpenAI;Accenture;NVIDIA
+- **required_skills:** TensorFlow;Java;React;Power BI;Node.js;Git
+- **recommended_certifications:** IBM AI Engineering;Microsoft Azure Administrator;Google Professional Data Engineer
+- **remote_opportunities:** Moderate
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 60166
+- **market_outlook:** Stable
+- **last_updated:** 2025-03-09
+
+## TR042
+- **trend_id:** TR042
+- **role_id:** ROLE025
+- **industry:** Cybersecurity
+- **technology:** Machine Learning
+- **trend_title:** Machine Learning Innovation 42
+- **trend_description:** Machine Learning adoption is transforming the cybersecurity sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Moderate
+- **automation_risk:** High
+- **average_salary_india_lpa:** 27
+- **average_salary_global_usd:** 123813
+- **top_companies:** TCS;Infosys;Oracle;Amazon
+- **required_skills:** AWS;Node.js;Python;SQL;Deep Learning;Power BI
+- **recommended_certifications:** Oracle Java SE;Google Professional Data Engineer;Cisco CCNA
+- **remote_opportunities:** Moderate
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 33519
+- **market_outlook:** Booming
+- **last_updated:** 2026-06-12
+
+## TR043
+- **trend_id:** TR043
+- **role_id:** ROLE046
+- **industry:** Cybersecurity
+- **technology:** Deep Learning
+- **trend_title:** Deep Learning Innovation 43
+- **trend_description:** Deep Learning adoption is transforming the cybersecurity sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Moderate
+- **automation_risk:** High
+- **average_salary_india_lpa:** 24
+- **average_salary_global_usd:** 83309
+- **top_companies:** Capgemini;Accenture;Google;TCS
+- **required_skills:** Power BI;Java;LangChain;Deep Learning;Cybersecurity;Docker
+- **recommended_certifications:** Cisco CCNA;Oracle Java SE;Microsoft Azure Administrator
+- **remote_opportunities:** High
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 42553
+- **market_outlook:** Growing
+- **last_updated:** 2025-05-02
+
+## TR044
+- **trend_id:** TR044
+- **role_id:** ROLE003
+- **industry:** E-commerce
+- **technology:** AWS
+- **trend_title:** AWS Innovation 44
+- **trend_description:** AWS adoption is transforming the e-commerce sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Excellent
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 26
+- **average_salary_global_usd:** 169480
+- **top_companies:** Microsoft;Amazon;Cisco;IBM
+- **required_skills:** AWS;Power BI;Machine Learning;Deep Learning;TensorFlow;Azure
+- **recommended_certifications:** CompTIA Security+;Oracle Java SE;Cisco CCNA
+- **remote_opportunities:** High
+- **experience_level:** Fresher
+- **job_openings_estimate:** 7287
+- **market_outlook:** Emerging
+- **last_updated:** 2026-08-17
+
+## TR045
+- **trend_id:** TR045
+- **role_id:** ROLE003
+- **industry:** Manufacturing
+- **technology:** Azure
+- **trend_title:** Azure Innovation 45
+- **trend_description:** Azure adoption is transforming the manufacturing sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Excellent
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 21
+- **average_salary_global_usd:** 82387
+- **top_companies:** Google;Capgemini;Accenture;Amazon
+- **required_skills:** LangChain;SQL;Azure;Node.js;Power BI;React
+- **recommended_certifications:** Google Professional Data Engineer;CompTIA Security+;Cisco CCNA
+- **remote_opportunities:** Limited
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 20463
+- **market_outlook:** Growing
+- **last_updated:** 2025-07-01
+
+## TR046
+- **trend_id:** TR046
+- **role_id:** ROLE021
+- **industry:** Cybersecurity
+- **technology:** Docker
+- **trend_title:** Docker Innovation 46
+- **trend_description:** Docker adoption is transforming the cybersecurity sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Moderate
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 28
+- **average_salary_global_usd:** 126431
+- **top_companies:** Microsoft;Deloitte;Capgemini;Infosys
+- **required_skills:** SQL;RAG;Linux;React;AWS;Kubernetes
+- **recommended_certifications:** TensorFlow Developer;Oracle Java SE;CompTIA Security+
+- **remote_opportunities:** Limited
+- **experience_level:** Fresher
+- **job_openings_estimate:** 44731
+- **market_outlook:** Booming
+- **last_updated:** 2025-01-27
+
+## TR047
+- **trend_id:** TR047
+- **role_id:** ROLE046
+- **industry:** Artificial Intelligence
+- **technology:** Kubernetes
+- **trend_title:** Kubernetes Innovation 47
+- **trend_description:** Kubernetes adoption is transforming the artificial intelligence sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Excellent
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 6
+- **average_salary_global_usd:** 193685
+- **top_companies:** Infosys;TCS;Capgemini;Google
+- **required_skills:** Power BI;React;AWS;Cybersecurity;Python;Azure
+- **recommended_certifications:** CompTIA Security+;IBM AI Engineering;Cisco CCNA
+- **remote_opportunities:** Moderate
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 33771
+- **market_outlook:** Stable
+- **last_updated:** 2026-11-14
+
+## TR048
+- **trend_id:** TR048
+- **role_id:** ROLE060
+- **industry:** Finance
+- **technology:** Python
+- **trend_title:** Python Innovation 48
+- **trend_description:** Python adoption is transforming the finance sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Moderate
+- **automation_risk:** High
+- **average_salary_india_lpa:** 18
+- **average_salary_global_usd:** 167460
+- **top_companies:** Infosys;Microsoft;IBM;Cisco
+- **required_skills:** Python;Docker;LangChain;AWS;RAG;Kubernetes
+- **recommended_certifications:** Microsoft Azure Administrator;Cisco CCNA;AWS Certified Solutions Architect
+- **remote_opportunities:** High
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 60119
+- **market_outlook:** Emerging
+- **last_updated:** 2025-06-10
+
+## TR049
+- **trend_id:** TR049
+- **role_id:** ROLE044
+- **industry:** E-commerce
+- **technology:** Java
+- **trend_title:** Java Innovation 49
+- **trend_description:** Java adoption is transforming the e-commerce sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Moderate
+- **future_growth:** Excellent
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 4
+- **average_salary_global_usd:** 135653
+- **top_companies:** Amazon;TCS;NVIDIA;Deloitte
+- **required_skills:** Java;RAG;Cybersecurity;Linux;Python;AWS
+- **recommended_certifications:** Google Professional Data Engineer;CompTIA Security+;AWS Certified Solutions Architect
+- **remote_opportunities:** Moderate
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 33082
+- **market_outlook:** Stable
+- **last_updated:** 2025-04-12
+
+## TR050
+- **trend_id:** TR050
+- **role_id:** ROLE058
+- **industry:** Artificial Intelligence
+- **technology:** React
+- **trend_title:** React Innovation 50
+- **trend_description:** React adoption is transforming the artificial intelligence sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Good
+- **automation_risk:** High
+- **average_salary_india_lpa:** 29
+- **average_salary_global_usd:** 94338
+- **top_companies:** Google;IBM;Microsoft;NVIDIA
+- **required_skills:** Linux;Azure;LangChain;Docker;TensorFlow;Python
+- **recommended_certifications:** Cisco CCNA;Oracle Java SE;AWS Certified Solutions Architect
+- **remote_opportunities:** High
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 38034
+- **market_outlook:** Booming
+- **last_updated:** 2025-12-06
+
+## TR051
+- **trend_id:** TR051
+- **role_id:** ROLE040
+- **industry:** Manufacturing
+- **technology:** Node.js
+- **trend_title:** Node.js Innovation 51
+- **trend_description:** Node.js adoption is transforming the manufacturing sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Good
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 33
+- **average_salary_global_usd:** 218549
+- **top_companies:** Oracle;Capgemini;NVIDIA;Accenture
+- **required_skills:** Azure;Docker;Node.js;TensorFlow;RAG;Power BI
+- **recommended_certifications:** Oracle Java SE;AWS Certified Solutions Architect;IBM AI Engineering
+- **remote_opportunities:** Moderate
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 18297
+- **market_outlook:** Growing
+- **last_updated:** 2026-09-18
+
+## TR052
+- **trend_id:** TR052
+- **role_id:** ROLE029
+- **industry:** Cloud Computing
+- **technology:** DevOps
+- **trend_title:** DevOps Innovation 52
+- **trend_description:** DevOps adoption is transforming the cloud computing sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Good
+- **automation_risk:** High
+- **average_salary_india_lpa:** 18
+- **average_salary_global_usd:** 94379
+- **top_companies:** Oracle;Capgemini;Accenture;Infosys
+- **required_skills:** RAG;Git;Node.js;Java;SQL;Python
+- **recommended_certifications:** Oracle Java SE;Microsoft Azure Administrator;IBM AI Engineering
+- **remote_opportunities:** Moderate
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 20579
+- **market_outlook:** Growing
+- **last_updated:** 2025-03-13
+
+## TR053
+- **trend_id:** TR053
+- **role_id:** ROLE029
+- **industry:** EdTech
+- **technology:** MLOps
+- **trend_title:** MLOps Innovation 53
+- **trend_description:** MLOps adoption is transforming the edtech sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Very Good
+- **automation_risk:** High
+- **average_salary_india_lpa:** 7
+- **average_salary_global_usd:** 160880
+- **top_companies:** Capgemini;Accenture;NVIDIA;Amazon
+- **required_skills:** Docker;TensorFlow;Python;Azure;AWS;LangChain
+- **recommended_certifications:** Oracle Java SE;Google Professional Data Engineer;TensorFlow Developer
+- **remote_opportunities:** Moderate
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 49333
+- **market_outlook:** Emerging
+- **last_updated:** 2026-05-31
+
+## TR054
+- **trend_id:** TR054
+- **role_id:** ROLE007
+- **industry:** EdTech
+- **technology:** Blockchain
+- **trend_title:** Blockchain Innovation 54
+- **trend_description:** Blockchain adoption is transforming the edtech sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 30
+- **average_salary_global_usd:** 206946
+- **top_companies:** Infosys;Oracle;Capgemini;Wipro
+- **required_skills:** LangChain;SQL;Git;Azure;Python;Linux
+- **recommended_certifications:** Google Professional Data Engineer;AWS Certified Solutions Architect;TensorFlow Developer
+- **remote_opportunities:** Moderate
+- **experience_level:** Fresher
+- **job_openings_estimate:** 2063
+- **market_outlook:** Growing
+- **last_updated:** 2025-05-16
+
+## TR055
+- **trend_id:** TR055
+- **role_id:** ROLE007
+- **industry:** Manufacturing
+- **technology:** RAG
+- **trend_title:** RAG Innovation 55
+- **trend_description:** RAG adoption is transforming the manufacturing sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Moderate
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 30
+- **average_salary_global_usd:** 209349
+- **top_companies:** Microsoft;Cisco;IBM;Oracle
+- **required_skills:** RAG;Deep Learning;Java;Linux;Power BI;Python
+- **recommended_certifications:** Microsoft Azure Administrator;CompTIA Security+;IBM AI Engineering
+- **remote_opportunities:** Limited
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 19747
+- **market_outlook:** Booming
+- **last_updated:** 2026-01-18
+
+## TR056
+- **trend_id:** TR056
+- **role_id:** ROLE031
+- **industry:** Finance
+- **technology:** LangChain
+- **trend_title:** LangChain Innovation 56
+- **trend_description:** LangChain adoption is transforming the finance sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Moderate
+- **future_growth:** Very Good
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 28
+- **average_salary_global_usd:** 203886
+- **top_companies:** Accenture;Capgemini;Wipro;Cisco
+- **required_skills:** Power BI;Git;TensorFlow;RAG;SQL;Azure
+- **recommended_certifications:** TensorFlow Developer;CompTIA Security+;AWS Certified Solutions Architect
+- **remote_opportunities:** Moderate
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 15723
+- **market_outlook:** Growing
+- **last_updated:** 2026-09-16
+
+## TR057
+- **trend_id:** TR057
+- **role_id:** ROLE050
+- **industry:** E-commerce
+- **technology:** Power BI
+- **trend_title:** Power BI Innovation 57
+- **trend_description:** Power BI adoption is transforming the e-commerce sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Excellent
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 7
+- **average_salary_global_usd:** 99992
+- **top_companies:** Capgemini;Wipro;Microsoft;OpenAI
+- **required_skills:** TensorFlow;Node.js;LangChain;Docker;AWS;Azure
+- **recommended_certifications:** IBM AI Engineering;TensorFlow Developer;Oracle Java SE
+- **remote_opportunities:** Limited
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 28216
+- **market_outlook:** Growing
+- **last_updated:** 2025-02-07
+
+## TR058
+- **trend_id:** TR058
+- **role_id:** ROLE026
+- **industry:** Healthcare
+- **technology:** SQL
+- **trend_title:** SQL Innovation 58
+- **trend_description:** SQL adoption is transforming the healthcare sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Moderate
+- **future_growth:** Excellent
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 16
+- **average_salary_global_usd:** 216195
+- **top_companies:** Cisco;Google;TCS;NVIDIA
+- **required_skills:** AWS;RAG;Linux;Git;Python;SQL
+- **recommended_certifications:** Oracle Java SE;TensorFlow Developer;Microsoft Azure Administrator
+- **remote_opportunities:** Limited
+- **experience_level:** Fresher
+- **job_openings_estimate:** 10859
+- **market_outlook:** Stable
+- **last_updated:** 2026-07-26
+
+## TR059
+- **trend_id:** TR059
+- **role_id:** ROLE041
+- **industry:** Finance
+- **technology:** IoT
+- **trend_title:** IoT Innovation 59
+- **trend_description:** IoT adoption is transforming the finance sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Excellent
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 18
+- **average_salary_global_usd:** 160828
+- **top_companies:** Oracle;Accenture;TCS;Cisco
+- **required_skills:** Deep Learning;Docker;Node.js;Machine Learning;Java;Azure
+- **recommended_certifications:** Microsoft Azure Administrator;CompTIA Security+;Oracle Java SE
+- **remote_opportunities:** Limited
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 65908
+- **market_outlook:** Emerging
+- **last_updated:** 2025-06-01
+
+## TR060
+- **trend_id:** TR060
+- **role_id:** ROLE040
+- **industry:** Manufacturing
+- **technology:** Big Data
+- **trend_title:** Big Data Innovation 60
+- **trend_description:** Big Data adoption is transforming the manufacturing sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Very Good
+- **automation_risk:** High
+- **average_salary_india_lpa:** 9
+- **average_salary_global_usd:** 217214
+- **top_companies:** Deloitte;Amazon;Microsoft;Capgemini
+- **required_skills:** AWS;Power BI;Docker;Java;RAG;React
+- **recommended_certifications:** Oracle Java SE;IBM AI Engineering;Google Professional Data Engineer
+- **remote_opportunities:** Limited
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 31385
+- **market_outlook:** Emerging
+- **last_updated:** 2025-12-12
+
+## TR061
+- **trend_id:** TR061
+- **role_id:** ROLE015
+- **industry:** Artificial Intelligence
+- **technology:** Generative AI
+- **trend_title:** Generative AI Innovation 61
+- **trend_description:** Generative AI adoption is transforming the artificial intelligence sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Very Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 33
+- **average_salary_global_usd:** 181987
+- **top_companies:** Deloitte;Google;IBM;Accenture
+- **required_skills:** AWS;Git;LangChain;Python;Deep Learning;SQL
+- **recommended_certifications:** Oracle Java SE;Google Professional Data Engineer;Cisco CCNA
+- **remote_opportunities:** Moderate
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 39403
+- **market_outlook:** Booming
+- **last_updated:** 2026-09-20
+
+## TR062
+- **trend_id:** TR062
+- **role_id:** ROLE045
+- **industry:** Artificial Intelligence
+- **technology:** Machine Learning
+- **trend_title:** Machine Learning Innovation 62
+- **trend_description:** Machine Learning adoption is transforming the artificial intelligence sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Excellent
+- **automation_risk:** High
+- **average_salary_india_lpa:** 9
+- **average_salary_global_usd:** 142191
+- **top_companies:** Cisco;Microsoft;TCS;Capgemini
+- **required_skills:** Power BI;Docker;Cybersecurity;Azure;Java;Kubernetes
+- **recommended_certifications:** IBM AI Engineering;Google Professional Data Engineer;AWS Certified Solutions Architect
+- **remote_opportunities:** High
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 2159
+- **market_outlook:** Stable
+- **last_updated:** 2025-06-24
+
+## TR063
+- **trend_id:** TR063
+- **role_id:** ROLE059
+- **industry:** Cybersecurity
+- **technology:** Deep Learning
+- **trend_title:** Deep Learning Innovation 63
+- **trend_description:** Deep Learning adoption is transforming the cybersecurity sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Moderate
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 25
+- **average_salary_global_usd:** 114099
+- **top_companies:** Oracle;Microsoft;OpenAI;Wipro
+- **required_skills:** Azure;Node.js;Deep Learning;Docker;Cybersecurity;Machine Learning
+- **recommended_certifications:** Microsoft Azure Administrator;CompTIA Security+;IBM AI Engineering
+- **remote_opportunities:** Moderate
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 37877
+- **market_outlook:** Stable
+- **last_updated:** 2025-11-05
+
+## TR064
+- **trend_id:** TR064
+- **role_id:** ROLE049
+- **industry:** Artificial Intelligence
+- **technology:** AWS
+- **trend_title:** AWS Innovation 64
+- **trend_description:** AWS adoption is transforming the artificial intelligence sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Very Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 17
+- **average_salary_global_usd:** 191834
+- **top_companies:** Cisco;Oracle;OpenAI;Amazon
+- **required_skills:** Azure;Power BI;Kubernetes;Python;Java;Docker
+- **recommended_certifications:** CompTIA Security+;Oracle Java SE;IBM AI Engineering
+- **remote_opportunities:** Limited
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 63282
+- **market_outlook:** Growing
+- **last_updated:** 2026-07-04
+
+## TR065
+- **trend_id:** TR065
+- **role_id:** ROLE010
+- **industry:** Artificial Intelligence
+- **technology:** Azure
+- **trend_title:** Azure Innovation 65
+- **trend_description:** Azure adoption is transforming the artificial intelligence sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Excellent
+- **automation_risk:** High
+- **average_salary_india_lpa:** 23
+- **average_salary_global_usd:** 217038
+- **top_companies:** Infosys;Microsoft;IBM;Deloitte
+- **required_skills:** Cybersecurity;LangChain;Node.js;Java;Linux;Azure
+- **recommended_certifications:** AWS Certified Solutions Architect;CompTIA Security+;Cisco CCNA
+- **remote_opportunities:** Moderate
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 30653
+- **market_outlook:** Stable
+- **last_updated:** 2025-12-15
+
+## TR066
+- **trend_id:** TR066
+- **role_id:** ROLE030
+- **industry:** Finance
+- **technology:** Docker
+- **trend_title:** Docker Innovation 66
+- **trend_description:** Docker adoption is transforming the finance sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Excellent
+- **automation_risk:** High
+- **average_salary_india_lpa:** 12
+- **average_salary_global_usd:** 109922
+- **top_companies:** Google;NVIDIA;Deloitte;Accenture
+- **required_skills:** Power BI;Machine Learning;Cybersecurity;LangChain;Docker;Java
+- **recommended_certifications:** IBM AI Engineering;Microsoft Azure Administrator;Oracle Java SE
+- **remote_opportunities:** Limited
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 1960
+- **market_outlook:** Stable
+- **last_updated:** 2026-05-12
+
+## TR067
+- **trend_id:** TR067
+- **role_id:** ROLE013
+- **industry:** Data Analytics
+- **technology:** Kubernetes
+- **trend_title:** Kubernetes Innovation 67
+- **trend_description:** Kubernetes adoption is transforming the data analytics sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Moderate
+- **future_growth:** Excellent
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 8
+- **average_salary_global_usd:** 156522
+- **top_companies:** Google;Wipro;Infosys;Microsoft
+- **required_skills:** Cybersecurity;Linux;Azure;Java;Python;AWS
+- **recommended_certifications:** Oracle Java SE;AWS Certified Solutions Architect;Google Professional Data Engineer
+- **remote_opportunities:** Limited
+- **experience_level:** Fresher
+- **job_openings_estimate:** 5993
+- **market_outlook:** Emerging
+- **last_updated:** 2025-11-28
+
+## TR068
+- **trend_id:** TR068
+- **role_id:** ROLE038
+- **industry:** Cybersecurity
+- **technology:** Python
+- **trend_title:** Python Innovation 68
+- **trend_description:** Python adoption is transforming the cybersecurity sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 33
+- **average_salary_global_usd:** 195400
+- **top_companies:** Deloitte;Google;TCS;Microsoft
+- **required_skills:** Cybersecurity;Docker;TensorFlow;Kubernetes;Deep Learning;Power BI
+- **recommended_certifications:** Google Professional Data Engineer;Microsoft Azure Administrator;Cisco CCNA
+- **remote_opportunities:** Moderate
+- **experience_level:** Fresher
+- **job_openings_estimate:** 69348
+- **market_outlook:** Booming
+- **last_updated:** 2025-08-19
+
+## TR069
+- **trend_id:** TR069
+- **role_id:** ROLE038
+- **industry:** EdTech
+- **technology:** Java
+- **trend_title:** Java Innovation 69
+- **trend_description:** Java adoption is transforming the edtech sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Moderate
+- **future_growth:** Good
+- **automation_risk:** High
+- **average_salary_india_lpa:** 23
+- **average_salary_global_usd:** 210850
+- **top_companies:** Wipro;Cisco;Deloitte;Microsoft
+- **required_skills:** React;Docker;Python;AWS;Java;Git
+- **recommended_certifications:** Microsoft Azure Administrator;Cisco CCNA;CompTIA Security+
+- **remote_opportunities:** Moderate
+- **experience_level:** Fresher
+- **job_openings_estimate:** 53019
+- **market_outlook:** Growing
+- **last_updated:** 2026-01-19
+
+## TR070
+- **trend_id:** TR070
+- **role_id:** ROLE037
+- **industry:** Healthcare
+- **technology:** React
+- **trend_title:** React Innovation 70
+- **trend_description:** React adoption is transforming the healthcare sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Moderate
+- **future_growth:** Good
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 4
+- **average_salary_global_usd:** 97390
+- **top_companies:** NVIDIA;Cisco;Amazon;Wipro
+- **required_skills:** Cybersecurity;Azure;Node.js;Kubernetes;Linux;Git
+- **recommended_certifications:** Cisco CCNA;IBM AI Engineering;CompTIA Security+
+- **remote_opportunities:** High
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 17671
+- **market_outlook:** Emerging
+- **last_updated:** 2025-11-18
+
+## TR071
+- **trend_id:** TR071
+- **role_id:** ROLE037
+- **industry:** EdTech
+- **technology:** Node.js
+- **trend_title:** Node.js Innovation 71
+- **trend_description:** Node.js adoption is transforming the edtech sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Excellent
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 35
+- **average_salary_global_usd:** 145343
+- **top_companies:** Wipro;Google;IBM;Infosys
+- **required_skills:** AWS;Linux;SQL;Machine Learning;Deep Learning;TensorFlow
+- **recommended_certifications:** AWS Certified Solutions Architect;Cisco CCNA;CompTIA Security+
+- **remote_opportunities:** Limited
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 37602
+- **market_outlook:** Booming
+- **last_updated:** 2026-03-26
+
+## TR072
+- **trend_id:** TR072
+- **role_id:** ROLE050
+- **industry:** Cloud Computing
+- **technology:** DevOps
+- **trend_title:** DevOps Innovation 72
+- **trend_description:** DevOps adoption is transforming the cloud computing sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 31
+- **average_salary_global_usd:** 173512
+- **top_companies:** Amazon;TCS;Google;Wipro
+- **required_skills:** Cybersecurity;TensorFlow;RAG;Machine Learning;Git;Python
+- **recommended_certifications:** TensorFlow Developer;Microsoft Azure Administrator;Cisco CCNA
+- **remote_opportunities:** Limited
+- **experience_level:** Fresher
+- **job_openings_estimate:** 46755
+- **market_outlook:** Stable
+- **last_updated:** 2026-07-15
+
+## TR073
+- **trend_id:** TR073
+- **role_id:** ROLE001
+- **industry:** Healthcare
+- **technology:** MLOps
+- **trend_title:** MLOps Innovation 73
+- **trend_description:** MLOps adoption is transforming the healthcare sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Excellent
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 9
+- **average_salary_global_usd:** 84178
+- **top_companies:** TCS;OpenAI;Cisco;NVIDIA
+- **required_skills:** Machine Learning;AWS;SQL;Docker;Deep Learning;Java
+- **recommended_certifications:** TensorFlow Developer;Google Professional Data Engineer;Oracle Java SE
+- **remote_opportunities:** High
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 49714
+- **market_outlook:** Emerging
+- **last_updated:** 2025-08-07
+
+## TR074
+- **trend_id:** TR074
+- **role_id:** ROLE014
+- **industry:** E-commerce
+- **technology:** Blockchain
+- **trend_title:** Blockchain Innovation 74
+- **trend_description:** Blockchain adoption is transforming the e-commerce sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Moderate
+- **automation_risk:** High
+- **average_salary_india_lpa:** 15
+- **average_salary_global_usd:** 63056
+- **top_companies:** Capgemini;Wipro;Google;Microsoft
+- **required_skills:** Kubernetes;LangChain;Deep Learning;Power BI;RAG;Azure
+- **recommended_certifications:** Cisco CCNA;Google Professional Data Engineer;CompTIA Security+
+- **remote_opportunities:** High
+- **experience_level:** Fresher
+- **job_openings_estimate:** 12755
+- **market_outlook:** Booming
+- **last_updated:** 2025-05-28
+
+## TR075
+- **trend_id:** TR075
+- **role_id:** ROLE008
+- **industry:** Cloud Computing
+- **technology:** RAG
+- **trend_title:** RAG Innovation 75
+- **trend_description:** RAG adoption is transforming the cloud computing sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Excellent
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 20
+- **average_salary_global_usd:** 202417
+- **top_companies:** NVIDIA;OpenAI;Wipro;Cisco
+- **required_skills:** Kubernetes;LangChain;Linux;Python;Cybersecurity;SQL
+- **recommended_certifications:** IBM AI Engineering;TensorFlow Developer;Google Professional Data Engineer
+- **remote_opportunities:** High
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 54784
+- **market_outlook:** Stable
+- **last_updated:** 2026-12-03
+
+## TR076
+- **trend_id:** TR076
+- **role_id:** ROLE045
+- **industry:** Gaming
+- **technology:** LangChain
+- **trend_title:** LangChain Innovation 76
+- **trend_description:** LangChain adoption is transforming the gaming sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Moderate
+- **automation_risk:** High
+- **average_salary_india_lpa:** 35
+- **average_salary_global_usd:** 165485
+- **top_companies:** Accenture;Wipro;Deloitte;Microsoft
+- **required_skills:** Azure;React;Kubernetes;Deep Learning;AWS;Machine Learning
+- **recommended_certifications:** Oracle Java SE;TensorFlow Developer;CompTIA Security+
+- **remote_opportunities:** High
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 52485
+- **market_outlook:** Booming
+- **last_updated:** 2025-03-15
+
+## TR077
+- **trend_id:** TR077
+- **role_id:** ROLE057
+- **industry:** Healthcare
+- **technology:** Power BI
+- **trend_title:** Power BI Innovation 77
+- **trend_description:** Power BI adoption is transforming the healthcare sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 19
+- **average_salary_global_usd:** 177577
+- **top_companies:** NVIDIA;TCS;Deloitte;Infosys
+- **required_skills:** Deep Learning;Docker;RAG;Power BI;TensorFlow;Java
+- **recommended_certifications:** IBM AI Engineering;Microsoft Azure Administrator;CompTIA Security+
+- **remote_opportunities:** High
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 43862
+- **market_outlook:** Emerging
+- **last_updated:** 2025-03-24
+
+## TR078
+- **trend_id:** TR078
+- **role_id:** ROLE025
+- **industry:** Healthcare
+- **technology:** SQL
+- **trend_title:** SQL Innovation 78
+- **trend_description:** SQL adoption is transforming the healthcare sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Very Good
+- **automation_risk:** High
+- **average_salary_india_lpa:** 17
+- **average_salary_global_usd:** 216971
+- **top_companies:** Accenture;IBM;Infosys;Microsoft
+- **required_skills:** Power BI;TensorFlow;Java;AWS;Docker;SQL
+- **recommended_certifications:** TensorFlow Developer;AWS Certified Solutions Architect;CompTIA Security+
+- **remote_opportunities:** Moderate
+- **experience_level:** Fresher
+- **job_openings_estimate:** 5382
+- **market_outlook:** Growing
+- **last_updated:** 2026-09-10
+
+## TR079
+- **trend_id:** TR079
+- **role_id:** ROLE014
+- **industry:** Finance
+- **technology:** IoT
+- **trend_title:** IoT Innovation 79
+- **trend_description:** IoT adoption is transforming the finance sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Very Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 7
+- **average_salary_global_usd:** 90530
+- **top_companies:** Wipro;TCS;Oracle;Cisco
+- **required_skills:** Python;LangChain;Java;TensorFlow;AWS;Linux
+- **recommended_certifications:** TensorFlow Developer;CompTIA Security+;Oracle Java SE
+- **remote_opportunities:** Limited
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 44933
+- **market_outlook:** Emerging
+- **last_updated:** 2025-09-10
+
+## TR080
+- **trend_id:** TR080
+- **role_id:** ROLE010
+- **industry:** Cybersecurity
+- **technology:** Big Data
+- **trend_title:** Big Data Innovation 80
+- **trend_description:** Big Data adoption is transforming the cybersecurity sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Moderate
+- **future_growth:** Excellent
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 27
+- **average_salary_global_usd:** 166770
+- **top_companies:** Cisco;NVIDIA;Amazon;IBM
+- **required_skills:** SQL;LangChain;RAG;Git;Cybersecurity;Node.js
+- **recommended_certifications:** IBM AI Engineering;CompTIA Security+;TensorFlow Developer
+- **remote_opportunities:** Moderate
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 26562
+- **market_outlook:** Emerging
+- **last_updated:** 2025-05-08
+
+## TR081
+- **trend_id:** TR081
+- **role_id:** ROLE006
+- **industry:** Gaming
+- **technology:** Generative AI
+- **trend_title:** Generative AI Innovation 81
+- **trend_description:** Generative AI adoption is transforming the gaming sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 32
+- **average_salary_global_usd:** 74658
+- **top_companies:** Amazon;Infosys;NVIDIA;Capgemini
+- **required_skills:** LangChain;AWS;Node.js;RAG;Machine Learning;Azure
+- **recommended_certifications:** CompTIA Security+;Microsoft Azure Administrator;Oracle Java SE
+- **remote_opportunities:** Moderate
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 49513
+- **market_outlook:** Growing
+- **last_updated:** 2025-02-15
+
+## TR082
+- **trend_id:** TR082
+- **role_id:** ROLE050
+- **industry:** Artificial Intelligence
+- **technology:** Machine Learning
+- **trend_title:** Machine Learning Innovation 82
+- **trend_description:** Machine Learning adoption is transforming the artificial intelligence sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Very Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 17
+- **average_salary_global_usd:** 74573
+- **top_companies:** Infosys;Accenture;Google;Microsoft
+- **required_skills:** Kubernetes;Cybersecurity;LangChain;SQL;Node.js;Java
+- **recommended_certifications:** Oracle Java SE;Microsoft Azure Administrator;TensorFlow Developer
+- **remote_opportunities:** Limited
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 72209
+- **market_outlook:** Booming
+- **last_updated:** 2026-12-24
+
+## TR083
+- **trend_id:** TR083
+- **role_id:** ROLE059
+- **industry:** Finance
+- **technology:** Deep Learning
+- **trend_title:** Deep Learning Innovation 83
+- **trend_description:** Deep Learning adoption is transforming the finance sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Excellent
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 11
+- **average_salary_global_usd:** 198707
+- **top_companies:** OpenAI;NVIDIA;TCS;Cisco
+- **required_skills:** Deep Learning;SQL;Machine Learning;Azure;Node.js;Linux
+- **recommended_certifications:** CompTIA Security+;Microsoft Azure Administrator;AWS Certified Solutions Architect
+- **remote_opportunities:** Limited
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 24304
+- **market_outlook:** Growing
+- **last_updated:** 2026-09-04
+
+## TR084
+- **trend_id:** TR084
+- **role_id:** ROLE034
+- **industry:** Healthcare
+- **technology:** AWS
+- **trend_title:** AWS Innovation 84
+- **trend_description:** AWS adoption is transforming the healthcare sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Moderate
+- **automation_risk:** High
+- **average_salary_india_lpa:** 33
+- **average_salary_global_usd:** 129613
+- **top_companies:** OpenAI;Oracle;Cisco;Deloitte
+- **required_skills:** RAG;Docker;Kubernetes;Python;SQL;Power BI
+- **recommended_certifications:** TensorFlow Developer;Cisco CCNA;AWS Certified Solutions Architect
+- **remote_opportunities:** Moderate
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 47346
+- **market_outlook:** Stable
+- **last_updated:** 2026-02-16
+
+## TR085
+- **trend_id:** TR085
+- **role_id:** ROLE037
+- **industry:** E-commerce
+- **technology:** Azure
+- **trend_title:** Azure Innovation 85
+- **trend_description:** Azure adoption is transforming the e-commerce sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 14
+- **average_salary_global_usd:** 77487
+- **top_companies:** Oracle;Infosys;Wipro;Accenture
+- **required_skills:** AWS;Linux;React;Machine Learning;Docker;Node.js
+- **recommended_certifications:** TensorFlow Developer;AWS Certified Solutions Architect;Oracle Java SE
+- **remote_opportunities:** Limited
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 56745
+- **market_outlook:** Stable
+- **last_updated:** 2025-02-09
+
+## TR086
+- **trend_id:** TR086
+- **role_id:** ROLE002
+- **industry:** E-commerce
+- **technology:** Docker
+- **trend_title:** Docker Innovation 86
+- **trend_description:** Docker adoption is transforming the e-commerce sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Very Good
+- **automation_risk:** High
+- **average_salary_india_lpa:** 33
+- **average_salary_global_usd:** 204080
+- **top_companies:** Deloitte;Oracle;OpenAI;IBM
+- **required_skills:** LangChain;Linux;Docker;React;Kubernetes;Machine Learning
+- **recommended_certifications:** Microsoft Azure Administrator;Oracle Java SE;CompTIA Security+
+- **remote_opportunities:** Moderate
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 5141
+- **market_outlook:** Stable
+- **last_updated:** 2026-06-22
+
+## TR087
+- **trend_id:** TR087
+- **role_id:** ROLE056
+- **industry:** EdTech
+- **technology:** Kubernetes
+- **trend_title:** Kubernetes Innovation 87
+- **trend_description:** Kubernetes adoption is transforming the edtech sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 6
+- **average_salary_global_usd:** 209156
+- **top_companies:** Infosys;Google;Amazon;OpenAI
+- **required_skills:** LangChain;Java;Deep Learning;Azure;AWS;Linux
+- **recommended_certifications:** AWS Certified Solutions Architect;TensorFlow Developer;Google Professional Data Engineer
+- **remote_opportunities:** Limited
+- **experience_level:** 0-2 Years
+- **job_openings_estimate:** 13325
+- **market_outlook:** Growing
+- **last_updated:** 2026-10-27
+
+## TR088
+- **trend_id:** TR088
+- **role_id:** ROLE028
+- **industry:** Cloud Computing
+- **technology:** Python
+- **trend_title:** Python Innovation 88
+- **trend_description:** Python adoption is transforming the cloud computing sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 8
+- **average_salary_global_usd:** 91709
+- **top_companies:** Microsoft;Infosys;Wipro;NVIDIA
+- **required_skills:** Linux;SQL;Azure;AWS;Machine Learning;Python
+- **recommended_certifications:** Oracle Java SE;IBM AI Engineering;Microsoft Azure Administrator
+- **remote_opportunities:** Limited
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 43975
+- **market_outlook:** Booming
+- **last_updated:** 2025-02-10
+
+## TR089
+- **trend_id:** TR089
+- **role_id:** ROLE014
+- **industry:** Finance
+- **technology:** Java
+- **trend_title:** Java Innovation 89
+- **trend_description:** Java adoption is transforming the finance sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Moderate
+- **future_growth:** Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 23
+- **average_salary_global_usd:** 189192
+- **top_companies:** TCS;Infosys;Accenture;OpenAI
+- **required_skills:** AWS;Linux;Cybersecurity;Python;Power BI;Git
+- **recommended_certifications:** TensorFlow Developer;Cisco CCNA;Google Professional Data Engineer
+- **remote_opportunities:** High
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 67921
+- **market_outlook:** Growing
+- **last_updated:** 2025-03-20
+
+## TR090
+- **trend_id:** TR090
+- **role_id:** ROLE028
+- **industry:** Healthcare
+- **technology:** React
+- **trend_title:** React Innovation 90
+- **trend_description:** React adoption is transforming the healthcare sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Very High
+- **future_growth:** Excellent
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 18
+- **average_salary_global_usd:** 112614
+- **top_companies:** Microsoft;Amazon;IBM;Deloitte
+- **required_skills:** Git;AWS;Node.js;React;Docker;Cybersecurity
+- **recommended_certifications:** Microsoft Azure Administrator;CompTIA Security+;IBM AI Engineering
+- **remote_opportunities:** Moderate
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 4419
+- **market_outlook:** Booming
+- **last_updated:** 2026-08-03
+
+## TR091
+- **trend_id:** TR091
+- **role_id:** ROLE019
+- **industry:** EdTech
+- **technology:** Node.js
+- **trend_title:** Node.js Innovation 91
+- **trend_description:** Node.js adoption is transforming the edtech sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Moderate
+- **automation_risk:** High
+- **average_salary_india_lpa:** 26
+- **average_salary_global_usd:** 122703
+- **top_companies:** Accenture;Microsoft;Google;IBM
+- **required_skills:** Kubernetes;Python;Deep Learning;Machine Learning;RAG;Java
+- **recommended_certifications:** CompTIA Security+;Google Professional Data Engineer;TensorFlow Developer
+- **remote_opportunities:** Moderate
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 62562
+- **market_outlook:** Booming
+- **last_updated:** 2026-01-22
+
+## TR092
+- **trend_id:** TR092
+- **role_id:** ROLE059
+- **industry:** EdTech
+- **technology:** DevOps
+- **trend_title:** DevOps Innovation 92
+- **trend_description:** DevOps adoption is transforming the edtech sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Moderate
+- **future_growth:** Very Good
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 18
+- **average_salary_global_usd:** 156639
+- **top_companies:** TCS;Microsoft;Oracle;OpenAI
+- **required_skills:** Java;TensorFlow;Node.js;AWS;Kubernetes;Azure
+- **recommended_certifications:** IBM AI Engineering;Cisco CCNA;AWS Certified Solutions Architect
+- **remote_opportunities:** High
+- **experience_level:** Fresher
+- **job_openings_estimate:** 32691
+- **market_outlook:** Booming
+- **last_updated:** 2025-06-22
+
+## TR093
+- **trend_id:** TR093
+- **role_id:** ROLE048
+- **industry:** Cybersecurity
+- **technology:** MLOps
+- **trend_title:** MLOps Innovation 93
+- **trend_description:** MLOps adoption is transforming the cybersecurity sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Excellent
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 5
+- **average_salary_global_usd:** 64408
+- **top_companies:** Amazon;IBM;Google;OpenAI
+- **required_skills:** Node.js;Linux;Azure;Java;Python;Power BI
+- **recommended_certifications:** AWS Certified Solutions Architect;Oracle Java SE;Microsoft Azure Administrator
+- **remote_opportunities:** Limited
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 33360
+- **market_outlook:** Emerging
+- **last_updated:** 2025-03-19
+
+## TR094
+- **trend_id:** TR094
+- **role_id:** ROLE052
+- **industry:** Cloud Computing
+- **technology:** Blockchain
+- **trend_title:** Blockchain Innovation 94
+- **trend_description:** Blockchain adoption is transforming the cloud computing sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Growing
+- **future_growth:** Good
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 16
+- **average_salary_global_usd:** 108792
+- **top_companies:** Accenture;Amazon;Cisco;Wipro
+- **required_skills:** AWS;React;Python;SQL;Node.js;RAG
+- **recommended_certifications:** AWS Certified Solutions Architect;IBM AI Engineering;Oracle Java SE
+- **remote_opportunities:** High
+- **experience_level:** Fresher
+- **job_openings_estimate:** 72213
+- **market_outlook:** Booming
+- **last_updated:** 2026-06-13
+
+## TR095
+- **trend_id:** TR095
+- **role_id:** ROLE049
+- **industry:** Cybersecurity
+- **technology:** RAG
+- **trend_title:** RAG Innovation 95
+- **trend_description:** RAG adoption is transforming the cybersecurity sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Moderate
+- **automation_risk:** High
+- **average_salary_india_lpa:** 29
+- **average_salary_global_usd:** 188591
+- **top_companies:** OpenAI;Wipro;TCS;Google
+- **required_skills:** RAG;Python;LangChain;Java;Git;TensorFlow
+- **recommended_certifications:** Google Professional Data Engineer;TensorFlow Developer;AWS Certified Solutions Architect
+- **remote_opportunities:** Moderate
+- **experience_level:** 2-5 Years
+- **job_openings_estimate:** 3218
+- **market_outlook:** Booming
+- **last_updated:** 2026-01-12
+
+## TR096
+- **trend_id:** TR096
+- **role_id:** ROLE053
+- **industry:** E-commerce
+- **technology:** LangChain
+- **trend_title:** LangChain Innovation 96
+- **trend_description:** LangChain adoption is transforming the e-commerce sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** High
+- **future_growth:** Very Good
+- **automation_risk:** High
+- **average_salary_india_lpa:** 6
+- **average_salary_global_usd:** 219476
+- **top_companies:** Microsoft;Deloitte;Google;Capgemini
+- **required_skills:** Machine Learning;Java;Linux;Deep Learning;SQL;Python
+- **recommended_certifications:** AWS Certified Solutions Architect;TensorFlow Developer;Google Professional Data Engineer
+- **remote_opportunities:** High
+- **experience_level:** Fresher
+- **job_openings_estimate:** 26519
+- **market_outlook:** Stable
+- **last_updated:** 2025-04-28
+
+## TR097
+- **trend_id:** TR097
+- **role_id:** ROLE007
+- **industry:** Cybersecurity
+- **technology:** Power BI
+- **trend_title:** Power BI Innovation 97
+- **trend_description:** Power BI adoption is transforming the cybersecurity sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Moderate
+- **automation_risk:** High
+- **average_salary_india_lpa:** 29
+- **average_salary_global_usd:** 106175
+- **top_companies:** OpenAI;NVIDIA;Amazon;Infosys
+- **required_skills:** RAG;SQL;AWS;Power BI;Python;Deep Learning
+- **recommended_certifications:** CompTIA Security+;Oracle Java SE;Cisco CCNA
+- **remote_opportunities:** Moderate
+- **experience_level:** Fresher
+- **job_openings_estimate:** 68279
+- **market_outlook:** Emerging
+- **last_updated:** 2025-03-15
+
+## TR098
+- **trend_id:** TR098
+- **role_id:** ROLE002
+- **industry:** E-commerce
+- **technology:** SQL
+- **trend_title:** SQL Innovation 98
+- **trend_description:** SQL adoption is transforming the e-commerce sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Good
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 15
+- **average_salary_global_usd:** 199318
+- **top_companies:** Google;Amazon;Cisco;Capgemini
+- **required_skills:** Cybersecurity;Power BI;AWS;Machine Learning;Kubernetes;Node.js
+- **recommended_certifications:** IBM AI Engineering;Google Professional Data Engineer;Cisco CCNA
+- **remote_opportunities:** Limited
+- **experience_level:** Fresher
+- **job_openings_estimate:** 34239
+- **market_outlook:** Stable
+- **last_updated:** 2025-11-15
+
+## TR099
+- **trend_id:** TR099
+- **role_id:** ROLE011
+- **industry:** E-commerce
+- **technology:** IoT
+- **trend_title:** IoT Innovation 99
+- **trend_description:** IoT adoption is transforming the e-commerce sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Good
+- **automation_risk:** Medium
+- **average_salary_india_lpa:** 13
+- **average_salary_global_usd:** 183189
+- **top_companies:** Oracle;Amazon;Deloitte;Microsoft
+- **required_skills:** Linux;RAG;Cybersecurity;Machine Learning;Git;Node.js
+- **recommended_certifications:** CompTIA Security+;Google Professional Data Engineer;Oracle Java SE
+- **remote_opportunities:** Limited
+- **experience_level:** Fresher
+- **job_openings_estimate:** 49690
+- **market_outlook:** Emerging
+- **last_updated:** 2025-07-06
+
+## TR100
+- **trend_id:** TR100
+- **role_id:** ROLE011
+- **industry:** Gaming
+- **technology:** Big Data
+- **trend_title:** Big Data Innovation 100
+- **trend_description:** Big Data adoption is transforming the gaming sector. Organizations are increasing hiring for professionals with practical implementation skills.
+- **hiring_demand:** Stable
+- **future_growth:** Very Good
+- **automation_risk:** Low
+- **average_salary_india_lpa:** 20
+- **average_salary_global_usd:** 122630
+- **top_companies:** Capgemini;Wipro;Oracle;NVIDIA
+- **required_skills:** Node.js;SQL;Deep Learning;Azure;Docker;Git
+- **recommended_certifications:** TensorFlow Developer;AWS Certified Solutions Architect;CompTIA Security+
+- **remote_opportunities:** Moderate
+- **experience_level:** 5+ Years
+- **job_openings_estimate:** 55713
+- **market_outlook:** Booming
+- **last_updated:** 2025-07-30
+

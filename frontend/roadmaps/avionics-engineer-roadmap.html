@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Avionics Engineer Roadmap</title>
+<style>
+  :root{
+    --bg:#0f172a; --panel:#0b1220; --line:#2b78e4; --yellow:#fdff00;
+    --sub:#ffe599; --card:#ffffff; --ink:#111827; --muted:#64748b;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#f8fafc;color:var(--ink);}
+  header{background:#0f172a;color:#fff;padding:22px 28px;}
+  header h1{margin:0;font-size:28px;}
+  header p{margin:6px 0 0;color:#94a3b8;font-size:14px;}
+  .toolbar{display:flex;gap:8px;padding:10px 16px;background:#fff;border-bottom:1px solid #e2e8f0;align-items:center;position:sticky;top:0;z-index:50;}
+  .toolbar button{border:1px solid #cbd5e1;background:#f1f5f9;border-radius:6px;padding:6px 12px;cursor:pointer;font-size:13px;}
+  .toolbar button:hover{background:#e2e8f0;}
+  .toolbar .hint{margin-left:auto;color:#64748b;font-size:12px;}
+  #viewport{width:100%;height:calc(100vh - 108px);overflow:hidden;position:relative;background:
+     radial-gradient(circle,#e2e8f0 1px,transparent 1px) 0 0/22px 22px, #f8fafc;
+     cursor:grab;}
+  #viewport.dragging{cursor:grabbing;}
+  #canvas{position:absolute;top:0;left:0;transform-origin:0 0;}
+  svg#edges{position:absolute;top:0;left:0;overflow:visible;pointer-events:none;}
+  .node{
+     position:absolute;border:2px solid #111;border-radius:6px;padding:10px 14px;
+     font-size:14px;font-weight:600;cursor:pointer;background:var(--sub);
+     box-shadow:1px 2px 0 rgba(0,0,0,.15);user-select:none;white-space:nowrap;
+  }
+  .node.title{background:var(--yellow);font-size:16px;}
+  .node.section{background:#fff;border-color:#94a3b8;font-weight:700;color:#334155;font-size:13px;padding:6px 10px;}
+  .node:hover{filter:brightness(0.95);transform:translateY(-1px);}
+  .node.expanded{outline:3px solid var(--line);}
+  .label{position:absolute;font-size:13px;font-weight:700;color:#334155;}
+  #overlay{display:none;position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:100;align-items:center;justify-content:center;}
+  #overlay.show{display:flex;}
+  #modal{background:#fff;border-radius:10px;max-width:560px;width:90%;max-height:80vh;overflow:auto;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.3);}
+  #modal h2{margin:0 0 6px;font-size:20px;}
+  #modal h4{margin:16px 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);}
+  #modal p{margin:0;font-size:14px;line-height:1.5;color:#334155;}
+  #modal ul{margin:4px 0;padding-left:18px;font-size:14px;color:#334155;}
+  #modal a{color:#2563eb;text-decoration:none;}
+  #modal a:hover{text-decoration:underline;}
+  #modal .close{float:right;border:none;background:none;font-size:20px;cursor:pointer;color:#64748b;}
+  footer{padding:26px 28px 60px;background:#0f172a;color:#cbd5e1;}
+  footer h2{color:#fff;font-size:20px;margin-top:0;}
+  footer h3{color:#fff;font-size:15px;margin-bottom:6px;}
+  footer ol{font-size:13px;line-height:1.7;padding-left:20px;}
+  footer a{color:#93c5fd;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>📡 Avionics Engineer Roadmap</h1>
+  <p>An interactive, pan &amp; zoom guide — beginner to advanced — for becoming an Avionics Engineer</p>
+</header>
+
+<div class="toolbar">
+  <button id="zoomIn">➕ Zoom In</button>
+  <button id="zoomOut">➖ Zoom Out</button>
+  <button id="reset">⤢ Reset View</button>
+  <span class="hint">Drag to pan · Scroll to zoom · Click any node for details</span>
+</div>
+
+<div id="viewport">
+  <div id="canvas">
+    <svg id="edges" width="2000" height="3600"></svg>
+  </div>
+</div>
+
+<div id="overlay">
+  <div id="modal">
+    <button class="close" onclick="closeModal()">✕</button>
+    <h2 id="mTitle"></h2>
+    <p id="mDesc"></p>
+    <h4>Prerequisites</h4>
+    <ul id="mPre"></ul>
+    <h4>Learning Resources</h4>
+    <ul id="mRes"></ul>
+  </div>
+</div>
+
+<footer>
+  <h2>📚 Bibliography &amp; References</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;">
+    <div>
+      <h3>IEEE</h3>
+      <ol>
+        <li>IEEE Transactions on Aerospace and Electronic Systems</li>
+        <li>IEEE Aerospace and Electronic Systems Magazine</li>
+        <li>IEEE/AIAA Digital Avionics Systems Conference (DASC)</li>
+      </ol>
+    </div>
+    <div>
+      <h3>NPTEL</h3>
+      <ol>
+        <li>NPTEL — Avionics (IIT Kharagpur)</li>
+        <li>NPTEL — Digital Signal Processing</li>
+        <li>NPTEL — Embedded Systems Design</li>
+      </ol>
+    </div>
+    <div>
+      <h3>Regulatory & Standards Bodies</h3>
+      <ol>
+        <li>RTCA — DO-178C / DO-254 standards</li>
+        <li>FAA Advisory Circulars on avionics certification</li>
+        <li>ARINC specifications (ARINC 429/664)</li>
+      </ol>
+    </div>
+    <div>
+      <h3>Standard Textbooks</h3>
+      <ol>
+        <li>R.P.G. Collinson — <i>Introduction to Avionics Systems</i></li>
+        <li>Mike Tooley & David Wyatt — <i>Aircraft Electrical and Electronic Systems</i></li>
+        <li>Cary R. Spitzer — <i>Digital Avionics Handbook</i></li>
+        <li>E.H.J. Pallett — <i>Aircraft Instruments and Integrated Systems</i></li>
+      </ol>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ---------- DATA ----------
+const sections = [
+  {id:"sec1", title:"1. Electronics & Math Foundations", items:[
+    {id:"circuits", title:"Circuit Theory & Analog Electronics",
+      desc:"Ohm's law, RLC circuits, amplifiers — the electrical basis for every avionics box.",
+      pre:[], res:["MIT 6.002 Circuits and Electronics"]},
+    {id:"digitallogic", title:"Digital Logic Design",
+      desc:"Boolean algebra, logic gates, flip-flops, and combinational/sequential circuits.",
+      pre:["Circuit Theory & Analog Electronics"], res:["MIT 6.004 Computation Structures"]},
+    {id:"signalsmath", title:"Signals & Systems Math",
+      desc:"Fourier and Laplace transforms — the mathematical toolkit for signal processing.",
+      pre:["Digital Logic Design"], res:["MIT 6.003 Signals and Systems"]},
+    {id:"controltheory", title:"Control Theory Basics",
+      desc:"Feedback loops, stability, and transfer functions used in flight control systems.",
+      pre:["Signals & Systems Math"], res:["MIT 6.302 Feedback Systems"]},
+  ]},
+  {id:"sec2", title:"2. Embedded Systems & Digital Electronics", items:[
+    {id:"microcontrollers", title:"Microcontrollers & Embedded C",
+      desc:"Programming bare-metal firmware for real-time embedded avionics hardware.",
+      pre:["Control Theory Basics"], res:["ARM Cortex-M programming guides"]},
+    {id:"rtos", title:"Real-Time Operating Systems (RTOS)",
+      desc:"Task scheduling, interrupts, and determinism required for flight-critical software.",
+      pre:["Microcontrollers & Embedded C"], res:["FreeRTOS documentation"]},
+    {id:"buses", title:"Avionics Data Buses (ARINC 429/664, MIL-STD-1553)",
+      desc:"Communication protocols connecting avionics line-replaceable units (LRUs).",
+      pre:["Real-Time Operating Systems (RTOS)"], res:["ARINC 429/664 specifications"]},
+    {id:"fpga", title:"FPGAs & Hardware Description Languages",
+      desc:"VHDL/Verilog design for high-reliability, hardware-accelerated avionics functions.",
+      pre:["Avionics Data Buses (ARINC 429/664, MIL-STD-1553)"], res:["Xilinx Vivado documentation"]},
+  ]},
+  {id:"sec3", title:"3. Communication & Navigation Systems", items:[
+    {id:"rf", title:"RF & Antenna Fundamentals",
+      desc:"Radio propagation, antenna types, and link budgets for avionics communication.",
+      pre:["FPGAs & Hardware Description Languages"], res:["Balanis — Antenna Theory"]},
+    {id:"commsystems", title:"Communication Systems (VHF, SATCOM)",
+      desc:"Voice and data link systems connecting aircraft to ATC and ground networks.",
+      pre:["RF & Antenna Fundamentals"], res:["Collinson — Introduction to Avionics Systems Ch. 8"]},
+    {id:"navsystems", title:"Navigation Systems (GPS, INS, VOR/ILS)",
+      desc:"Satellite and inertial navigation systems that determine aircraft position.",
+      pre:["Communication Systems (VHF, SATCOM)"], res:["Kayton & Fried — Avionics Navigation Systems"]},
+    {id:"surveillance", title:"Surveillance Systems (TCAS, ADS-B)",
+      desc:"Collision avoidance and automatic dependent surveillance broadcast systems.",
+      pre:["Navigation Systems (GPS, INS, VOR/ILS)"], res:["FAA ADS-B guidance"]},
+  ]},
+  {id:"sec4", title:"4. Flight Control & Autopilot Systems", items:[
+    {id:"flightcontrols", title:"Flight Control Fundamentals",
+      desc:"Mechanical, hydro-mechanical, and fly-by-wire control architectures.",
+      pre:["Surveillance Systems (TCAS, ADS-B)"], res:["Collinson Ch. 12-13"]},
+    {id:"autopilot", title:"Autopilot & Autothrottle Systems",
+      desc:"Control laws and modes that automate pitch, roll, and thrust management.",
+      pre:["Flight Control Fundamentals"], res:["Pallett — Automatic Flight Control"]},
+    {id:"fbw", title:"Fly-by-Wire & Redundancy Design",
+      desc:"Triplex/quadruplex redundancy and voting logic for flight-critical control laws.",
+      pre:["Autopilot & Autothrottle Systems"], res:["AIAA fly-by-wire design papers"]},
+    {id:"flightmanagement", title:"Flight Management Systems (FMS)",
+      desc:"Route planning, performance optimization, and integration with navigation databases.",
+      pre:["Fly-by-Wire & Redundancy Design"], res:["Collinson Ch. 14"]},
+  ]},
+  {id:"sec5", title:"5. Avionics Software & Standards", items:[
+    {id:"do178c", title:"DO-178C Software Certification",
+      desc:"Software development assurance levels and lifecycle processes for airborne software.",
+      pre:["Flight Management Systems (FMS)"], res:["RTCA DO-178C standard"]},
+    {id:"do254", title:"DO-254 Hardware Certification",
+      desc:"Design assurance guidance for complex electronic hardware in aircraft.",
+      pre:["DO-178C Software Certification"], res:["RTCA DO-254 standard"]},
+    {id:"modelbased", title:"Model-Based Design (Simulink/Stateflow)",
+      desc:"Modeling control laws and auto-generating verified flight software.",
+      pre:["DO-254 Hardware Certification"], res:["MathWorks Simulink documentation"]},
+    {id:"softwaretesting", title:"Software Verification & Testing",
+      desc:"Requirements-based testing, code coverage, and traceability for certified software.",
+      pre:["Model-Based Design (Simulink/Stateflow)"], res:["RTCA DO-178C Annex A"]},
+  ]},
+  {id:"sec6", title:"6. Sensors & Signal Processing", items:[
+    {id:"sensors", title:"Avionics Sensors",
+      desc:"Gyroscopes, accelerometers, air data sensors, and their integration into systems.",
+      pre:["Software Verification & Testing"], res:["Pallett — Aircraft Instruments and Integrated Systems"]},
+    {id:"dsp", title:"Digital Signal Processing",
+      desc:"Filtering, sampling, and processing sensor and communication signals digitally.",
+      pre:["Avionics Sensors"], res:["Oppenheim — Discrete-Time Signal Processing"]},
+    {id:"sensorfusion", title:"Sensor Fusion & Kalman Filtering",
+      desc:"Combining multiple noisy sensor inputs into accurate state estimates.",
+      pre:["Digital Signal Processing"], res:["Grewal & Andrews — Kalman Filtering"]},
+    {id:"hmi", title:"Cockpit Displays & Human-Machine Interface",
+      desc:"Glass cockpit design, symbology standards, and pilot workload considerations.",
+      pre:["Sensor Fusion & Kalman Filtering"], res:["ARINC 661 Cockpit Display standard"]},
+  ]},
+  {id:"sec7", title:"7. Integration, Testing & Certification", items:[
+    {id:"integrationbasics", title:"Systems Integration Lab (SIL) Testing",
+      desc:"Bench-testing avionics boxes together before installing them on an aircraft.",
+      pre:["Cockpit Displays & Human-Machine Interface"], res:["SAE avionics integration standards"]},
+    {id:"hitl", title:"Hardware-in-the-Loop (HIL) Simulation",
+      desc:"Testing avionics against simulated aircraft dynamics in real time.",
+      pre:["Systems Integration Lab (SIL) Testing"], res:["dSPACE HIL documentation"]},
+    {id:"emc", title:"EMI/EMC & Environmental Qualification",
+      desc:"Ensuring avionics tolerate electromagnetic interference, vibration, and temperature extremes.",
+      pre:["Hardware-in-the-Loop (HIL) Simulation"], res:["RTCA DO-160 environmental standard"]},
+    {id:"flighttest", title:"Flight Test Support",
+      desc:"Instrumenting and validating avionics systems during certification flight testing.",
+      pre:["EMI/EMC & Environmental Qualification"], res:["AIAA flight test standards"]},
+  ]},
+  {id:"sec8", title:"8. Career & Certifications", items:[
+    {id:"projects", title:"Portfolio Projects",
+      desc:"Build a small flight-controller or drone avionics stack as a showcase project.",
+      pre:["Flight Test Support"], res:["Open-source autopilot projects (ArduPilot, PX4)"]},
+    {id:"internships", title:"Internships & Co-ops",
+      desc:"Hands-on experience at avionics OEMs, airlines, or research labs during study.",
+      pre:["Portfolio Projects"], res:["IEEE AESS career resources"]},
+    {id:"interview", title:"Interview Preparation",
+      desc:"Technical interviews covering embedded systems, signal processing, and certification.",
+      pre:["Internships & Co-ops"], res:["Avionics engineering interview guides"]},
+    {id:"careers", title:"Career Paths",
+      desc:"Avionics Systems Engineer, Embedded Software Engineer, Flight Test Engineer, Certification Engineer.",
+      pre:["Interview Preparation"], res:["IEEE AESS career pathways"]},
+  ]},
+];
+
+// ---------- LAYOUT ENGINE (balanced 2-column grid) ----------
+const COL_W = 300, COL_GAP = 60, ROW_H = 54, ROW_GAP = 10;
+const LEFT_X = 70, RIGHT_X = LEFT_X + COL_W + COL_GAP;
+const CANVAS_CENTER = LEFT_X + (COL_W*2 + COL_GAP)/2;
+const SECTION_GAP = 46;
+
+const nodes = [];
+const edges = [];
+let cursorY = 90;
+
+nodes.push({id:"title", x:CANVAS_CENTER-140, y:20, w:280, h:50, type:"title", title:"Avionics Engineer"});
+let prevSectionLastId = "title";
+
+sections.forEach(sec=>{
+  nodes.push({id:sec.id, x:LEFT_X, y:cursorY, w:COL_W*2+COL_GAP, h:28, type:"section", title:sec.title});
+  edges.push([prevSectionLastId, sec.id]);
+  cursorY += 28 + 14;
+
+  let prevInSection = sec.id;
+  sec.items.forEach((item, i)=>{
+    const col = i % 2;
+    const row = Math.floor(i / 2);
+    const x = col===0 ? LEFT_X : RIGHT_X;
+    const y = cursorY + row*(ROW_H+ROW_GAP);
+    nodes.push({id:item.id, x, y, w:COL_W, h:ROW_H, type:"node",
+      title:item.title, desc:item.desc, pre:item.pre, res:item.res});
+    edges.push([prevInSection, item.id]);
+    prevInSection = item.id;
+  });
+
+  const rows = Math.ceil(sec.items.length/2);
+  cursorY += rows*(ROW_H+ROW_GAP) + SECTION_GAP;
+  prevSectionLastId = prevInSection;
+});
+
+// ---------- RENDER ----------
+const canvas = document.getElementById('canvas');
+const svg = document.getElementById('edges');
+
+function centerY(n){ return n.y + n.h/2; }
+function centerX(n){ return n.x + n.w/2; }
+function byId(id){ return nodes.find(n=>n.id===id); }
+
+nodes.forEach(n=>{
+  const div = document.createElement('div');
+  div.className = 'node ' + (n.type||'node');
+  div.style.left = n.x+'px';
+  div.style.top = n.y+'px';
+  div.style.width = n.w+'px';
+  div.style.minHeight = n.h+'px';
+  div.style.display='flex';
+  div.style.alignItems='center';
+  div.style.justifyContent = n.type==='section' ? 'flex-start' : 'center';
+  div.textContent = n.title;
+  div.dataset.id = n.id;
+  if(n.type!=='section' && n.type!=='title'){
+    div.addEventListener('click', ()=>openModal(n));
+  }
+  canvas.appendChild(div);
+});
+
+let svgHtml = '';
+edges.forEach(([a,b])=>{
+  const A = byId(a), B = byId(b);
+  if(!A||!B) return;
+  const x1 = centerX(A), y1 = A.y+A.h, x2 = centerX(B), y2 = B.y;
+  const midY = (y1+y2)/2;
+  svgHtml += `<path d="M ${x1} ${y1} C ${x1} ${midY}, ${x2} ${midY}, ${x2} ${y2}" fill="none" stroke="#2b78e4" stroke-width="2.5" stroke-dasharray="0.8 6" stroke-linecap="round"/>`;
+});
+svg.innerHTML = svgHtml;
+
+let maxX=0, maxY=0;
+nodes.forEach(n=>{ maxX=Math.max(maxX,n.x+n.w+80); maxY=Math.max(maxY,n.y+n.h+80); });
+svg.setAttribute('width', maxX);
+svg.setAttribute('height', maxY);
+canvas.style.width = maxX+'px';
+canvas.style.height = maxY+'px';
+
+// ---------- PAN & ZOOM ----------
+const viewport = document.getElementById('viewport');
+let scale = 0.85, panX = 40, panY = 20;
+let isDragging=false, startX=0, startY=0, startPanX=0, startPanY=0;
+
+function applyTransform(){
+  canvas.style.transform = `translate(${panX}px,${panY}px) scale(${scale})`;
+}
+applyTransform();
+
+viewport.addEventListener('mousedown', e=>{
+  isDragging = true;
+  viewport.classList.add('dragging');
+  startX = e.clientX; startY = e.clientY;
+  startPanX = panX; startPanY = panY;
+});
+window.addEventListener('mousemove', e=>{
+  if(!isDragging) return;
+  panX = startPanX + (e.clientX - startX);
+  panY = startPanY + (e.clientY - startY);
+  applyTransform();
+});
+window.addEventListener('mouseup', ()=>{ isDragging=false; viewport.classList.remove('dragging'); });
+
+viewport.addEventListener('wheel', e=>{
+  e.preventDefault();
+  const delta = e.deltaY > 0 ? -0.08 : 0.08;
+  const newScale = Math.min(2.2, Math.max(0.3, scale + delta));
+  scale = newScale;
+  applyTransform();
+}, {passive:false});
+
+document.getElementById('zoomIn').onclick = ()=>{ scale = Math.min(2.2, scale+0.15); applyTransform(); };
+document.getElementById('zoomOut').onclick = ()=>{ scale = Math.max(0.3, scale-0.15); applyTransform(); };
+document.getElementById('reset').onclick = ()=>{ scale=0.85; panX=40; panY=20; applyTransform(); };
+
+// ---------- MODAL ----------
+function openModal(n){
+  document.getElementById('mTitle').textContent = n.title;
+  document.getElementById('mDesc').textContent = n.desc || '';
+  const pre = document.getElementById('mPre');
+  pre.innerHTML = (n.pre&&n.pre.length) ? n.pre.map(p=>`<li>${p}</li>`).join('') : '<li>None</li>';
+  const res = document.getElementById('mRes');
+  res.innerHTML = (n.res&&n.res.length) ? n.res.map(r=>`<li>${r}</li>`).join('') : '<li>—</li>';
+  document.getElementById('overlay').classList.add('show');
+}
+function closeModal(){ document.getElementById('overlay').classList.remove('show'); }
+document.getElementById('overlay').addEventListener('click', e=>{
+  if(e.target.id==='overlay') closeModal();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Career Guidance — Placement Insights</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="../css/main.css">
+<style>
+  .insights-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    height: 100%;
+    min-height: 0;
+    overflow-y: auto;
+    padding-bottom: 20px;
+  }
+  .insights-card {
+    background: #fff;
+    border: 1px solid #ECEDF3;
+    border-radius: 14px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-height: 0;
+  }
+  .metric-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 8px;
+    background: #F9FAFB;
+    border: 1px solid #ECEDF3;
+    font-size: 11.5px;
+  }
+  .metric-bar-wrap {
+    margin-top: 4px;
+    height: 5px;
+    background: #EEF0F5;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .metric-bar-fill {
+    height: 100%;
+    background: #4F46E5;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- SIDEBAR (Dynamic) -->
+  <div class="sidebar"></div>
+
+  <!-- MAIN Shell -->
+  <div class="main">
+    <!-- TOPBAR (Dynamic) -->
+    <div class="topbar">
+      <div>
+        <h1>Placement & Mentor Insights</h1>
+        <p>College placement statistics and aggregated learning analytics.</p>
+      </div>
+    </div>
+
+    <!-- Insights Workspace -->
+    <div class="insights-grid reveal">
+      
+      <!-- Student Branch Distribution -->
+      <div class="panel">
+        <div class="panel-head"><h3>Student Branch Distribution</h3></div>
+        <div style="display:flex; flex-direction:column; gap:10px;" id="branchDistContainer">
+          <!-- Filled Dynamically -->
+        </div>
+      </div>
+
+      <!-- Top Career Aspirations -->
+      <div class="panel">
+        <div class="panel-head"><h3>Top Career Aspirations</h3></div>
+        <div style="display:flex; flex-direction:column; gap:10px;" id="topAspirationsContainer">
+          <!-- Filled Dynamically -->
+        </div>
+      </div>
+
+      <!-- Common Skill Gaps -->
+      <div class="panel">
+        <div class="panel-head"><h3>Common College-wide Gaps</h3></div>
+        <div style="display:flex; flex-direction:column; gap:10px;" id="commonGapsContainer">
+          <!-- Filled Dynamically -->
+        </div>
+      </div>
+
+      <!-- Student Feedback Logs -->
+      <div class="panel">
+        <div class="panel-head"><h3>Assistant Feedback Logs</h3></div>
+        <div style="overflow-y:auto; max-height:220px; display:flex; flex-direction:column; gap:8px;" id="feedbackLogsContainer">
+          <p style="font-size:11.5px; color:#9CA3AF; text-align:center; margin:30px 0;">No student feedback has been logged yet.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"><i class="ti ti-circle-check"></i><span id="toastMsg">Saved</span></div>
+
+</body>
+</html>

@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electric Vehicles Engineer Roadmap</title>
+<style>
+  :root{
+    --gray-950:#0b1220; --gray-900:#0f172a; --gray-800:#1e293b; --gray-700:#334155;
+    --gray-500:#64748b; --gray-400:#94a3b8; --gray-100:#f1f5f9; --gray-50:#f8fafc;
+    --topic-fill:#fdff00; --sub-fill:#ffe599; --line-blue:#2b78e4;
+    --purple:#874efe; --green:#4f7a28; --grey-dot:#929292;
+    --radius:6px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--gray-50);color:#111;}
+  a{color:inherit;}
+
+  /* ---------- Top navbar ---------- */
+  .navbar{background:var(--gray-950);color:#fff;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:600;font-size:17px;}
+  .brand .bolt{width:30px;height:30px;border-radius:7px;background:linear-gradient(135deg,#22d3ee,#2b78e4);display:flex;align-items:center;justify-content:center;font-size:16px;}
+  .navlinks{display:flex;gap:18px;font-size:14px;color:var(--gray-400);flex-wrap:wrap;}
+  .navlinks a{text-decoration:none;}
+  .navlinks a:hover{color:#fff;}
+  .pill-btn{background:#eab308;color:#111;border:none;border-radius:6px;padding:7px 14px;font-size:13px;font-weight:600;cursor:pointer;}
+  .pill-btn.dark{background:#1e293b;color:#fff;}
+
+  /* ---------- Header / hero ---------- */
+  .hero{max-width:1100px;margin:0 auto;padding:34px 20px 10px;}
+  .hero h1{font-size:2.4rem;margin:0 0 6px;font-weight:800;}
+  .hero p{color:#556;font-size:1.05rem;margin:0 0 18px;max-width:760px;}
+  .tabs{display:flex;gap:6px;border-bottom:1px solid #e2e8f0;padding-bottom:0;}
+  .tab{padding:8px 14px;font-size:13.5px;font-weight:500;color:#64748b;border-bottom:2px solid transparent;cursor:default;}
+  .tab.active{color:#111;border-color:#111;font-weight:600;}
+
+  /* ---------- Toolbar ---------- */
+  .toolbar{max-width:1100px;margin:14px auto 0;padding:0 20px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;}
+  .toolbar-left, .toolbar-right{display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+  .search-box{position:relative;}
+  .search-box input{padding:8px 12px 8px 32px;border:1px solid #dbe2ea;border-radius:8px;font-size:13.5px;width:230px;background:#fff;}
+  .search-box svg{position:absolute;left:9px;top:9px;width:15px;height:15px;color:#94a3b8;}
+  .zoom-controls{display:flex;background:#fff;border:1px solid #dbe2ea;border-radius:8px;overflow:hidden;}
+  .zoom-controls button{border:none;background:#fff;padding:7px 11px;cursor:pointer;font-size:15px;color:#334155;}
+  .zoom-controls button:hover{background:#f1f5f9;}
+  .zoom-controls button + button{border-left:1px solid #dbe2ea;}
+  .progress-badge{background:#111827;color:#fff;border-radius:20px;padding:6px 14px;font-size:12.5px;font-weight:600;display:flex;align-items:center;gap:6px;}
+  .progress-badge .bar{width:70px;height:5px;border-radius:3px;background:#374151;overflow:hidden;}
+  .progress-badge .bar > span{display:block;height:100%;background:#22c55e;}
+
+  /* ---------- Canvas / viewport ---------- */
+  .viewport{max-width:1100px;margin:16px auto 0;padding:0 20px;}
+  .canvas-frame{position:relative;border:1px solid #e2e8f0;border-radius:12px;background:#fff;overflow:hidden;height:74vh;min-height:520px;cursor:grab;}
+  .canvas-frame.grabbing{cursor:grabbing;}
+  .canvas-inner{position:absolute;top:0;left:0;transform-origin:0 0;}
+  .hint{position:absolute;bottom:10px;left:10px;background:rgba(15,23,42,.85);color:#fff;font-size:11.5px;padding:6px 10px;border-radius:20px;pointer-events:none;}
+
+  svg .node-rect{stroke-width:2.6px;cursor:pointer;transition:filter .15s;}
+  svg .node-rect:hover{filter:brightness(0.95);}
+  svg .node-rect.done{fill:#c6f6d5 !important;stroke:#16a34a !important;}
+  svg .node-rect.dim{opacity:.18;}
+  svg .node-text{font-size:15.5px;pointer-events:none;user-select:none;}
+  svg .node-text.dim{opacity:.18;}
+  svg .node-text.sub{font-size:14px;}
+  svg .check{cursor:pointer;}
+  svg .check circle{fill:#fff;stroke:#94a3b8;stroke-width:1.6;}
+  svg .check.done circle{fill:#16a34a;stroke:#16a34a;}
+  svg .check path{stroke:#16a34a;stroke-width:2;fill:none;opacity:0;}
+  svg .check.done path{stroke:#fff;opacity:1;}
+  svg .phase-label{font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;fill:#94a3b8;font-weight:700;}
+
+  /* ---------- Legend ---------- */
+  .legend{position:absolute;top:14px;left:14px;background:#fff;border:1px solid #e2e8f0;border-radius:8px;padding:12px 14px;font-size:12.5px;box-shadow:0 2px 10px rgba(0,0,0,.05);}
+  .legend div{display:flex;align-items:center;gap:8px;margin:4px 0;}
+  .legend .dot{width:11px;height:11px;border-radius:50%;flex-shrink:0;}
+
+  /* ---------- Side panel ---------- */
+  .panel-overlay{position:fixed;inset:0;background:rgba(15,23,42,.35);z-index:60;display:none;}
+  .panel-overlay.open{display:block;}
+  .side-panel{position:fixed;top:0;right:0;height:100%;width:380px;max-width:92vw;background:#fff;box-shadow:-10px 0 30px rgba(0,0,0,.15);z-index:61;transform:translateX(100%);transition:transform .25s ease;padding:22px;overflow-y:auto;}
+  .side-panel.open{transform:translateX(0);}
+  .side-panel .tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:#eef2ff;color:#4338ca;padding:3px 9px;border-radius:20px;margin-bottom:10px;}
+  .side-panel h2{margin:2px 0 10px;font-size:1.3rem;}
+  .side-panel h4{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:#64748b;margin:18px 0 8px;}
+  .side-panel p{font-size:14.5px;line-height:1.6;color:#334155;margin:0;}
+  .chip-row{display:flex;flex-wrap:wrap;gap:6px;}
+  .chip{background:#f1f5f9;border-radius:20px;padding:4px 10px;font-size:12.5px;color:#334155;}
+  .res-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;}
+  .res-list li{font-size:13.5px;padding:9px 11px;background:#f8fafc;border:1px solid #eef2f6;border-radius:8px;display:flex;gap:8px;align-items:flex-start;}
+  .res-list li .src{font-size:10.5px;font-weight:700;text-transform:uppercase;color:#2b78e4;letter-spacing:.03em;display:block;margin-bottom:2px;}
+  .close-btn{position:absolute;top:16px;right:16px;border:none;background:#f1f5f9;width:30px;height:30px;border-radius:50%;cursor:pointer;font-size:16px;color:#334155;}
+  .mark-done-btn{margin-top:18px;width:100%;padding:10px;border:1px solid #16a34a;color:#16a34a;background:#fff;border-radius:8px;font-weight:600;cursor:pointer;font-size:13.5px;}
+  .mark-done-btn.done{background:#16a34a;color:#fff;}
+
+  /* ---------- Bottom sections ---------- */
+  .section-wrap{max-width:1100px;margin:44px auto;padding:0 20px;}
+  .section-wrap h2{font-size:1.5rem;margin-bottom:6px;}
+  .section-wrap>p.lead{color:#556;margin-top:0;margin-bottom:18px;}
+  .accordion-item{border:1px solid #e2e8f0;border-radius:8px;margin-bottom:8px;background:#fff;overflow:hidden;}
+  .accordion-item button.acc-head{width:100%;text-align:left;padding:13px 16px;background:none;border:none;font-size:14.5px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center;}
+  .accordion-item .acc-body{max-height:0;overflow:hidden;transition:max-height .25s ease;padding:0 16px;}
+  .accordion-item.open .acc-body{max-height:600px;padding:0 16px 16px;}
+  .accordion-item .acc-body ul{margin:0;padding-left:18px;font-size:13.8px;line-height:1.7;color:#334155;}
+  .accordion-item .acc-body ul li{margin-bottom:4px;}
+  .chevron{transition:transform .2s;color:#94a3b8;}
+  .accordion-item.open .chevron{transform:rotate(180deg);}
+
+  .footer{background:var(--gray-950);color:#94a3b8;padding:30px 20px;text-align:center;font-size:12.5px;margin-top:40px;}
+  .footer strong{color:#fff;}
+
+  @media (max-width:640px){
+    .side-panel{width:100%;}
+    .canvas-frame{height:64vh;}
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="brand"><span class="bolt">⚡</span> EV Engineer Roadmap</div>
+  <div class="navlinks">
+    <a href="#roadmap">Roadmap</a>
+    <a href="#projects">Projects</a>
+    <a href="#gate">GATE Prep</a>
+    <a href="#careers">Careers</a>
+    <a href="#bibliography">Bibliography</a>
+  </div>
+  <button class="pill-btn">Track my progress</button>
+</div>
+
+<div class="hero" id="roadmap">
+  <h1>Electric Vehicles Engineer</h1>
+  <p>A community-style, step-by-step guide to becoming an Electric Vehicle (EV) engineer — from core electrical
+  engineering fundamentals through motors, power electronics, batteries, charging infrastructure, GATE prep and
+  career paths. Click any box for a description, prerequisites and curated resources. Drag to pan, scroll/pinch or
+  use the buttons to zoom.</p>
+  <div class="tabs">
+    <div class="tab active">Roadmap</div>
+    <div class="tab">Projects</div>
+    <div class="tab">GATE Prep</div>
+    <div class="tab">Bibliography</div>
+  </div>
+</div>
+
+<div class="toolbar">
+  <div class="toolbar-left">
+    <div class="search-box">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="searchInput" placeholder="Search topics (e.g. BMS, GATE, motor)…">
+    </div>
+    <div class="progress-badge">
+      <span id="progressLabel">0 / 0 topics</span>
+      <div class="bar"><span id="progressBar" style="width:0%"></span></div>
+    </div>
+  </div>
+  <div class="toolbar-right">
+    <div class="zoom-controls">
+      <button id="zoomOut" title="Zoom out">−</button>
+      <button id="zoomReset" title="Reset zoom">⤢</button>
+      <button id="zoomIn" title="Zoom in">+</button>
+    </div>
+  </div>
+</div>
+
+<div class="viewport">
+  <div class="canvas-frame" id="canvasFrame">
+    <div class="legend">
+      <div><span class="dot" style="background:#fdff00;border:1.5px solid #000"></span> Core phase / topic</div>
+      <div><span class="dot" style="background:#ffe599;border:1.5px solid #000"></span> Sub-topic</div>
+      <div><span class="dot" style="background:#874efe"></span> Essential resource</div>
+      <div><span class="dot" style="background:#4f7a28"></span> Alternative / optional</div>
+      <div><span class="dot" style="background:#16a34a"></span> Marked as done</div>
+    </div>
+    <div class="canvas-inner" id="canvasInner">
+      <svg id="svgRoot" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+    <div class="hint">Drag to pan · Scroll to zoom · Click a box for details</div>
+  </div>
+</div>
+
+<div class="section-wrap" id="gate">
+  <h2>GATE Preparation &amp; Career Snapshot</h2>
+  <p class="lead">The roadmap above includes dedicated GATE-EE and Careers/Projects phases — expand them on the canvas
+  for full detail. Quick reference below.</p>
+  <div class="accordion-item">
+    <button class="acc-head">GATE Electrical Engineering — Subject Weightage <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+    <div class="acc-body"><ul>
+      <li>Engineering Mathematics — ~13%</li>
+      <li>Electric Circuits &amp; Networks — ~9%</li>
+      <li>Electromagnetic Fields — ~6%</li>
+      <li>Signals &amp; Systems — ~8%</li>
+      <li>Electrical Machines — ~10%</li>
+      <li>Power Systems — ~10%</li>
+      <li>Control Systems — ~8%</li>
+      <li>Power Electronics — ~8%</li>
+      <li>Analog &amp; Digital Electronics — ~8%</li>
+      <li>General Aptitude — ~15%</li>
+    </ul></div>
+  </div>
+  <div class="accordion-item">
+    <button class="acc-head">Recommended GATE Prep Sequence <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+    <div class="acc-body"><ul>
+      <li>Build strong fundamentals (Circuits, Machines, Power Systems, Control) subject-by-subject.</li>
+      <li>Solve standard textbook problems + previous 15 years' GATE papers subject-wise.</li>
+      <li>Take weekly full-length mock tests once syllabus is 70% complete.</li>
+      <li>Revise formula sheets and short notes in the final 45 days.</li>
+      <li>Analyse every mock test — track weak topics and re-attempt only those.</li>
+    </ul></div>
+  </div>
+</div>
+
+<div class="section-wrap" id="careers">
+  <h2>Where this roadmap leads</h2>
+  <p class="lead">Common destinations after completing this roadmap.</p>
+  <div class="accordion-item">
+    <button class="acc-head">Industry career paths <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+    <div class="acc-body"><ul>
+      <li>EV Powertrain / Traction Motor Design Engineer</li>
+      <li>Battery Management System (BMS) Engineer</li>
+      <li>Power Electronics / Traction Inverter Engineer</li>
+      <li>Charging Infrastructure &amp; Grid Integration Engineer</li>
+      <li>Automotive Embedded Software / Functional Safety Engineer</li>
+      <li>R&amp;D Engineer / Graduate Engineer Trainee at a PSU (via GATE)</li>
+      <li>Higher studies — M.Tech / MS in Power Electronics, EV Systems, or Energy Storage</li>
+    </ul></div>
+  </div>
+</div>
+
+<div class="section-wrap" id="bibliography">
+  <h2>Bibliography &amp; Further Reading</h2>
+  <p class="lead">Reference material grouped by source type. Use these alongside the resource links inside each
+  roadmap node.</p>
+
+  <div class="accordion-item">
+    <button class="acc-head">NPTEL Courses <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+    <div class="acc-body"><ul>
+      <li>NPTEL — "Introduction to Hybrid and Electric Vehicles", IIT Guwahati</li>
+      <li>NPTEL — "Electric Vehicles: Design Fundamentals and Modelling", IIT Madras</li>
+      <li>NPTEL — "Power Electronics", IIT Kharagpur</li>
+      <li>NPTEL — "Electrical Machines I &amp; II", IIT Kharagpur</li>
+      <li>NPTEL — "Control Systems", IIT Madras</li>
+      <li>NPTEL — "Basic Electrical Circuits", IIT Kharagpur</li>
+      <li>NPTEL — "Battery Technologies and Management Systems", IIT Kharagpur</li>
+    </ul></div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="acc-head">MIT OpenCourseWare <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+    <div class="acc-body"><ul>
+      <li>MIT 6.002 — Circuits and Electronics</li>
+      <li>MIT 6.061 / 6.690 — Introduction to Electric Power Systems</li>
+      <li>MIT 6.007 — Signals and Systems</li>
+      <li>MIT 2.671 — Measurement and Instrumentation</li>
+      <li>MIT 2.14 — Analysis and Design of Feedback Control Systems</li>
+      <li>MIT 6.541J / 2.813 — Electric Machines / Electrochemical Energy Systems</li>
+    </ul></div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="acc-head">IEEE Standards &amp; Papers <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+    <div class="acc-body"><ul>
+      <li>IEEE 2030.1 — Guide for Electric-Sourced Transportation Infrastructure</li>
+      <li>IEEE 1547 — Standard for Interconnecting Distributed Resources with Electric Power Systems</li>
+      <li>IEEE Transactions on Transportation Electrification (journal)</li>
+      <li>IEEE Transactions on Power Electronics (journal)</li>
+      <li>IEEE Transactions on Vehicular Technology (journal)</li>
+      <li>IEEE Std 1188 — Recommended Practice for Maintenance of VRLA Batteries</li>
+    </ul></div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="acc-head">Standard Textbooks <svg class="chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
+    <div class="acc-body"><ul>
+      <li>C. K. Alexander &amp; M. Sadiku — <em>Fundamentals of Electric Circuits</em></li>
+      <li>A. Sedra &amp; K. Smith — <em>Microelectronic Circuits</em></li>
+      <li>N. Nise — <em>Control Systems Engineering</em></li>
+      <li>S. Chapman — <em>Electric Machinery Fundamentals</em></li>
+      <li>Fitzgerald, Kingsley, Umans — <em>Electric Machinery</em></li>
+      <li>M. Ehsani, Y. Gao, S. Longo, K. Ebrahimi — <em>Modern Electric, Hybrid Electric, and Fuel Cell Vehicles</em></li>
+      <li>I. Husain — <em>Electric and Hybrid Vehicles: Design Fundamentals</em></li>
+      <li>J. Larminie &amp; J. Lowry — <em>Electric Vehicle Technology Explained</em></li>
+      <li>G. Plett — <em>Battery Management Systems, Vol. 1 &amp; 2</em></li>
+      <li>N. Mohan, T. Undeland, W. Robbins — <em>Power Electronics: Converters, Applications and Design</em></li>
+      <li>C. C. Chan &amp; K. T. Chau — <em>Modern Electric Vehicle Technology</em></li>
+    </ul></div>
+  </div>
+</div>
+
+<div class="footer">
+  Built as a modified version of the roadmap.sh "Frontend Developer" layout — re-themed for
+  <strong>Electric Vehicle Engineering</strong>. Educational reference only.
+</div>
+
+<div class="panel-overlay" id="overlay"></div>
+<div class="side-panel" id="sidePanel">
+  <button class="close-btn" id="closePanel">✕</button>
+  <span class="tag" id="panelTag">Topic</span>
+  <h2 id="panelTitle">—</h2>
+  <p id="panelDesc">—</p>
+  <h4>Prerequisites</h4>
+  <div class="chip-row" id="panelPrereqs"></div>
+  <h4>Resources</h4>
+  <ul class="res-list" id="panelResources"></ul>
+  <button class="mark-done-btn" id="markDoneBtn">Mark as done</button>
+</div>
+
+<script>
+/* ============================================================
+   DATA: Electrical Engineering → EV curriculum
+   Each phase = a "topic" node on the central spine.
+   Each phase has an array of "subtopics" that branch off it.
+   ============================================================ */
+const phases = [
+  { id:'math', title:'Engineering Mathematics', side:'right',
+    desc:'The mathematical toolkit every electrical/EV engineer relies on: linear algebra for circuit & state-space equations, calculus & differential equations for dynamic systems, transforms for signal and control analysis.',
+    prereqs:['12th grade mathematics'],
+    resources:[{s:'NPTEL',t:'Mathematical Methods and its Applications',u:'nptel.ac.in'},{s:'Textbook',t:'Erwin Kreyszig — Advanced Engineering Mathematics',u:''}],
+    subs:[
+      {id:'math-la', title:'Linear Algebra', desc:'Matrices, eigenvalues/eigenvectors — used in state-space modelling of motors and control systems.', resources:[{s:'MIT OCW',t:'18.06 Linear Algebra',u:'ocw.mit.edu'}]},
+      {id:'math-calc', title:'Calculus & ODEs', desc:'Differentiation, integration and ordinary differential equations describing circuit transients.', resources:[{s:'Textbook',t:'Kreyszig — Advanced Engineering Mathematics',u:''}]},
+      {id:'math-complex', title:'Complex Numbers & Phasors', desc:'Phasor representation for AC circuit analysis and impedance calculations.', resources:[{s:'NPTEL',t:'Basic Electrical Circuits, Module 3',u:'nptel.ac.in'}]},
+      {id:'math-prob', title:'Probability & Statistics', desc:'Reliability analysis, sensor noise modelling and battery-life statistics.', resources:[{s:'MIT OCW',t:'6.041 Probabilistic Systems Analysis',u:'ocw.mit.edu'}]},
+      {id:'math-transforms', title:'Laplace & Fourier Transforms', desc:'Core tools for transfer functions, frequency response and signal analysis.', resources:[{s:'NPTEL',t:'Transform Calculus',u:'nptel.ac.in'}]},
+      {id:'math-numerical', title:'Numerical Methods', desc:'Iterative solvers used inside SPICE/Simulink for solving nonlinear circuit equations.', resources:[{s:'Textbook',t:'S. S. Sastry — Introductory Methods of Numerical Analysis',u:''}]}
+    ]},
+
+  { id:'physics', title:'Applied Physics Foundations', side:'left',
+    desc:'Physical principles underpinning electrical machines, semiconductors and vehicle dynamics.',
+    prereqs:['Engineering Mathematics'],
+    resources:[{s:'NPTEL',t:'Engineering Physics',u:'nptel.ac.in'}],
+    subs:[
+      {id:'phy-em', title:'Electromagnetism Basics', desc:"Coulomb's & Faraday's laws, magnetic circuits — the basis of transformers and motors.", resources:[{s:'MIT OCW',t:'8.02 Physics II: Electricity & Magnetism',u:'ocw.mit.edu'}]},
+      {id:'phy-semi', title:'Semiconductor Physics', desc:'Band theory, PN junctions — foundation for power devices (IGBT, MOSFET, SiC).', resources:[{s:'NPTEL',t:'Semiconductor Devices',u:'nptel.ac.in'}]},
+      {id:'phy-thermo', title:'Thermodynamics & Heat Transfer', desc:'Essential for battery and motor thermal management system design.', resources:[{s:'MIT OCW',t:'2.51 Intro to Heat Transfer',u:'ocw.mit.edu'}]},
+      {id:'phy-mech', title:'Mechanics & Kinematics', desc:'Newtonian mechanics used in vehicle dynamics and drivetrain load calculations.', resources:[{s:'Textbook',t:'Thomas D. Gillespie — Fundamentals of Vehicle Dynamics',u:''}]}
+    ]},
+
+  { id:'circuits', title:'Basic Electrical Circuits', side:'right',
+    desc:'DC/AC circuit analysis — Ohm & Kirchhoff laws, network theorems, transient response, and three-phase systems.',
+    prereqs:['Applied Physics Foundations'],
+    resources:[{s:'NPTEL',t:'Basic Electrical Circuits',u:'nptel.ac.in'},{s:'Textbook',t:'Sadiku — Fundamentals of Electric Circuits',u:''}],
+    subs:[
+      {id:'cir-ohm', title:"Ohm's & Kirchhoff's Laws", desc:'Foundational laws for any circuit analysis.', resources:[{s:'MIT OCW',t:'6.002 Circuits and Electronics',u:'ocw.mit.edu'}]},
+      {id:'cir-dc', title:'DC Circuit Analysis', desc:'Node/mesh analysis, Thevenin & Norton equivalents.', resources:[{s:'Textbook',t:'Sadiku — Fundamentals of Electric Circuits',u:''}]},
+      {id:'cir-ac', title:'AC Circuit Analysis', desc:'Impedance, power factor, resonance in single-phase AC circuits.', resources:[{s:'NPTEL',t:'Basic Electrical Circuits, Module 5',u:'nptel.ac.in'}]},
+      {id:'cir-theorems', title:'Network Theorems', desc:'Superposition, maximum power transfer, reciprocity.', resources:[{s:'Textbook',t:'Sadiku — Fundamentals of Electric Circuits',u:''}]},
+      {id:'cir-transient', title:'Transient Analysis', desc:'RL/RC/RLC step response — critical for switching converter design.', resources:[{s:'MIT OCW',t:'6.002 Circuits and Electronics',u:'ocw.mit.edu'}]},
+      {id:'cir-3ph', title:'Three-Phase Systems', desc:'Star/delta configurations used across power grids and traction systems.', resources:[{s:'NPTEL',t:'Basic Electrical Circuits, Module 8',u:'nptel.ac.in'}]}
+    ]},
+
+  { id:'analog', title:'Analog Electronics', side:'left',
+    desc:'Diodes, transistors, op-amps and amplifier/power-supply design — the building blocks of every power-electronic circuit.',
+    prereqs:['Basic Electrical Circuits'],
+    resources:[{s:'Textbook',t:'Sedra & Smith — Microelectronic Circuits',u:''}],
+    subs:[
+      {id:'an-diode', title:'Diodes & Rectifiers', desc:'Half/full-wave rectification, freewheeling diodes in converters.', resources:[{s:'NPTEL',t:'Analog Electronic Circuits',u:'nptel.ac.in'}]},
+      {id:'an-bjt', title:'BJT & MOSFET', desc:'Switching devices used as the building blocks of inverters and choppers.', resources:[{s:'Textbook',t:'Sedra & Smith — Microelectronic Circuits',u:''}]},
+      {id:'an-opamp', title:'Operational Amplifiers', desc:'Signal conditioning circuits used in current/voltage sensing for BMS.', resources:[{s:'MIT OCW',t:'6.002 Circuits and Electronics',u:'ocw.mit.edu'}]},
+      {id:'an-power', title:'Linear Power Supplies', desc:'Regulated DC supply design for control boards.', resources:[{s:'Textbook',t:'Sedra & Smith — Microelectronic Circuits',u:''}]}
+    ]},
+
+  { id:'digital', title:'Digital Electronics', side:'right',
+    desc:'Boolean logic through sequential design and programmable logic — used for control boards, BMS logic and FPGA-based drives.',
+    prereqs:['Analog Electronics'],
+    resources:[{s:'NPTEL',t:'Digital Circuits and Systems',u:'nptel.ac.in'}],
+    subs:[
+      {id:'dig-bool', title:'Boolean Algebra & Logic Gates', desc:'Fundamental digital logic building blocks.', resources:[{s:'NPTEL',t:'Digital Circuits and Systems, Module 1',u:'nptel.ac.in'}]},
+      {id:'dig-comb', title:'Combinational Circuits', desc:'Multiplexers, decoders, adders used in control logic.', resources:[{s:'Textbook',t:'Morris Mano — Digital Design',u:''}]},
+      {id:'dig-seq', title:'Sequential Circuits', desc:'Flip-flops, counters, state machines for controller design.', resources:[{s:'Textbook',t:'Morris Mano — Digital Design',u:''}]},
+      {id:'dig-fpga', title:'FPGA & VHDL Basics', desc:'Hardware description languages used in high-speed motor control loops.', resources:[{s:'NPTEL',t:'Hardware Modeling using Verilog',u:'nptel.ac.in'}]}
+    ]},
+
+  { id:'emf', title:'Electromagnetic Fields & Machines', side:'left',
+    desc:"Maxwell's equations and rotating-machine theory — transformers, DC, induction, synchronous and special machines.",
+    prereqs:['Applied Physics Foundations','Basic Electrical Circuits'],
+    resources:[{s:'NPTEL',t:'Electrical Machines I & II',u:'nptel.ac.in'},{s:'Textbook',t:'Fitzgerald, Kingsley, Umans — Electric Machinery',u:''}],
+    subs:[
+      {id:'emf-maxwell', title:"Maxwell's Equations", desc:'Field theory basis for motor and transformer design.', resources:[{s:'MIT OCW',t:'8.02 Physics II',u:'ocw.mit.edu'}]},
+      {id:'emf-transformer', title:'Transformers', desc:'Turns ratio, equivalent circuit, efficiency — used in on-board chargers.', resources:[{s:'Textbook',t:'Chapman — Electric Machinery Fundamentals',u:''}]},
+      {id:'emf-dc', title:'DC Machines', desc:'Classic DC motor/generator theory, still relevant for small EV auxiliaries.', resources:[{s:'NPTEL',t:'Electrical Machines I',u:'nptel.ac.in'}]},
+      {id:'emf-induction', title:'Induction Machines', desc:'Squirrel-cage induction motors — used as EV traction motors (e.g. early Tesla Model S).', resources:[{s:'NPTEL',t:'Electrical Machines II',u:'nptel.ac.in'}]},
+      {id:'emf-sync', title:'Synchronous Machines', desc:'Theory behind PMSM traction motors used in most modern EVs.', resources:[{s:'Textbook',t:'Fitzgerald, Kingsley, Umans — Electric Machinery',u:''}]},
+      {id:'emf-special', title:'Special Machines (BLDC/SRM)', desc:'Brushless DC and switched-reluctance machines common in e-bikes and low-cost EVs.', resources:[{s:'IEEE',t:'IEEE Trans. on Industrial Electronics — SRM drives',u:'ieeexplore.ieee.org'}]}
+    ]},
+
+  { id:'signals', title:'Signals & Systems', side:'right',
+    desc:'Continuous & discrete signal representation, convolution, frequency response and sampling — needed for control and DSP-based motor control.',
+    prereqs:['Engineering Mathematics'],
+    resources:[{s:'MIT OCW',t:'6.007 Signals and Systems',u:'ocw.mit.edu'}],
+    subs:[
+      {id:'sig-cont', title:'Continuous & Discrete Signals', desc:'Signal classification and basic operations.', resources:[{s:'MIT OCW',t:'6.007 Signals and Systems',u:'ocw.mit.edu'}]},
+      {id:'sig-conv', title:'Convolution & LTI Systems', desc:'Impulse response modelling of linear systems.', resources:[{s:'NPTEL',t:'Signals and Systems',u:'nptel.ac.in'}]},
+      {id:'sig-freq', title:'Frequency Response', desc:'Bode analysis foundation for control-loop design.', resources:[{s:'NPTEL',t:'Signals and Systems, Module 6',u:'nptel.ac.in'}]},
+      {id:'sig-sample', title:'Sampling & Z-Transform', desc:'Discretisation theory behind digital motor controllers.', resources:[{s:'Textbook',t:'Oppenheim & Willsky — Signals and Systems',u:''}]}
+    ]},
+
+  { id:'control', title:'Control Systems', side:'left',
+    desc:'Transfer functions, stability, state-space and modern control — directly used in motor-drive current/speed loops and BMS balancing control.',
+    prereqs:['Signals & Systems'],
+    resources:[{s:'NPTEL',t:'Control Systems',u:'nptel.ac.in'},{s:'Textbook',t:'Nise — Control Systems Engineering',u:''}],
+    subs:[
+      {id:'ctl-tf', title:'Transfer Functions & Block Diagrams', desc:'Modelling dynamic systems for analysis.', resources:[{s:'Textbook',t:'Nise — Control Systems Engineering',u:''}]},
+      {id:'ctl-response', title:'Time & Frequency Response', desc:'Step response, Bode & Nyquist plots.', resources:[{s:'MIT OCW',t:'2.14 Feedback Control Systems',u:'ocw.mit.edu'}]},
+      {id:'ctl-stability', title:'Stability Analysis', desc:'Routh-Hurwitz criterion, root locus, Nyquist stability.', resources:[{s:'NPTEL',t:'Control Systems, Module 5',u:'nptel.ac.in'}]},
+      {id:'ctl-state', title:'State-Space Methods', desc:'Modern control representation used in motor & battery models.', resources:[{s:'Textbook',t:'Ogata — Modern Control Engineering',u:''}]},
+      {id:'ctl-pid', title:'PID & Field-Oriented Control', desc:'Practical control loops implemented in EV motor drives.', resources:[{s:'IEEE',t:'IEEE Trans. Industrial Electronics — FOC of PMSM',u:'ieeexplore.ieee.org'}]}
+    ]},
+
+  { id:'power-systems', title:'Power Systems & Power Electronics Basics', side:'right',
+    desc:'Generation/transmission fundamentals plus rectifiers, inverters, choppers and PWM — the electronics that move energy in and out of an EV.',
+    prereqs:['Electromagnetic Fields & Machines','Control Systems'],
+    resources:[{s:'NPTEL',t:'Power Electronics',u:'nptel.ac.in'},{s:'Textbook',t:'Mohan, Undeland, Robbins — Power Electronics',u:''}],
+    subs:[
+      {id:'ps-gen', title:'Generation & Transmission Basics', desc:'Grid structure — relevant for understanding charging-station grid interaction.', resources:[{s:'MIT OCW',t:'6.061 Intro to Electric Power Systems',u:'ocw.mit.edu'}]},
+      {id:'ps-quality', title:'Power Quality', desc:'Harmonics, THD — important for charger and inverter design compliance.', resources:[{s:'IEEE',t:'IEEE Std 519 — Harmonic Control',u:'ieeexplore.ieee.org'}]},
+      {id:'ps-rect', title:'Rectifiers & Inverters', desc:'AC-DC and DC-AC conversion — core of traction drives and chargers.', resources:[{s:'Textbook',t:'Mohan, Undeland, Robbins — Power Electronics',u:''}]},
+      {id:'ps-chopper', title:'DC-DC Converters (Choppers)', desc:'Buck/boost topologies used in battery and auxiliary power stages.', resources:[{s:'NPTEL',t:'Power Electronics, Module 4',u:'nptel.ac.in'}]},
+      {id:'ps-pwm', title:'PWM Techniques', desc:'Sine-triangle & space-vector PWM used to drive traction inverters.', resources:[{s:'IEEE',t:'IEEE Trans. Power Electronics — SVPWM techniques',u:'ieeexplore.ieee.org'}]}
+    ]},
+
+  { id:'embedded', title:'Microprocessors & Embedded Systems', side:'left',
+    desc:'Microcontroller programming, RTOS concepts and automotive communication buses used to implement real-time EV control software.',
+    prereqs:['Digital Electronics'],
+    resources:[{s:'NPTEL',t:'Embedded Systems',u:'nptel.ac.in'}],
+    subs:[
+      {id:'emb-arm', title:'8051 / ARM Microcontroller Basics', desc:'Register architecture, peripherals, interrupts.', resources:[{s:'NPTEL',t:'Embedded Systems Design',u:'nptel.ac.in'}]},
+      {id:'emb-c', title:'Embedded C Programming', desc:'Low-level firmware programming for motor & BMS controllers.', resources:[{s:'Textbook',t:'Michael Barr — Programming Embedded Systems',u:''}]},
+      {id:'emb-rtos', title:'RTOS Concepts', desc:'Task scheduling for real-time control loops.', resources:[{s:'NPTEL',t:'Real Time Operating Systems',u:'nptel.ac.in'}]},
+      {id:'emb-can', title:'CAN Bus & Automotive Protocols', desc:'CAN, LIN, FlexRay — the backbone of in-vehicle communication.', resources:[{s:'IEEE',t:'IEEE Trans. Vehicular Technology — In-vehicle networks',u:'ieeexplore.ieee.org'}]},
+      {id:'emb-sensors', title:'Sensors & Actuator Interfacing', desc:'Current/voltage/temperature sensors, hall sensors, encoders.', resources:[{s:'Textbook',t:'Michael Barr — Programming Embedded Systems',u:''}]}
+    ]},
+
+  { id:'tools', title:'Software & Simulation Tools', side:'right',
+    desc:'The essential simulation, PCB-design and coding tools used across the EV industry for modelling, control design and prototyping.',
+    prereqs:['Microprocessors & Embedded Systems','Power Systems & Power Electronics Basics'],
+    resources:[],
+    subs:[
+      {id:'tool-matlab', title:'MATLAB / Simulink', desc:'Industry-standard for control design and EV powertrain simulation.', resources:[{s:'MathWorks',t:'Simulink Onramp (free course)',u:'mathworks.com'}]},
+      {id:'tool-plecs', title:'PLECS / PSIM', desc:'Specialised power-electronics circuit simulators.', resources:[{s:'Vendor Docs',t:'PLECS User Manual',u:'plexim.com'}]},
+      {id:'tool-spice', title:'PSpice / LTspice', desc:'SPICE-based analog & power circuit simulation.', resources:[{s:'Vendor Docs',t:'LTspice Getting Started Guide',u:'analog.com'}]},
+      {id:'tool-pcb', title:'Altium / KiCad PCB Design', desc:'PCB layout for control boards and BMS hardware.', resources:[{s:'KiCad',t:'KiCad Official Documentation',u:'kicad.org'}]},
+      {id:'tool-python', title:'Python for Engineers', desc:'Data analysis, battery-model scripting, automation.', resources:[{s:'NPTEL',t:'Python for Data Science',u:'nptel.ac.in'}]},
+      {id:'tool-fea', title:'ANSYS / COMSOL (FEA)', desc:'Finite-element simulation for motor electromagnetics & thermal design.', resources:[{s:'Vendor Docs',t:'ANSYS Motor-CAD Overview',u:'ansys.com'}]}
+    ]},
+
+  { id:'ev-fund', title:'EV Fundamentals & Architecture', side:'left',
+    desc:'The starting point of EV-specific study: vehicle types, powertrain architecture, drive-cycle analysis and regenerative braking.',
+    prereqs:['Electromagnetic Fields & Machines','Power Systems & Power Electronics Basics'],
+    resources:[{s:'NPTEL',t:'Introduction to Hybrid and Electric Vehicles',u:'nptel.ac.in'},{s:'Textbook',t:'Ehsani, Gao, Longo, Ebrahimi — Modern Electric, Hybrid Electric and Fuel Cell Vehicles',u:''}],
+    subs:[
+      {id:'ev-types', title:'EV Types: BEV / HEV / PHEV / FCEV', desc:'Classification and architecture comparison of electrified vehicles.', resources:[{s:'Textbook',t:'Larminie & Lowry — Electric Vehicle Technology Explained',u:''}]},
+      {id:'ev-arch', title:'Powertrain Architecture', desc:'Motor, inverter, battery and transmission layout choices.', resources:[{s:'Textbook',t:'Husain — Electric and Hybrid Vehicles: Design Fundamentals',u:''}]},
+      {id:'ev-drivecycle', title:'Drive Cycles & Range Estimation', desc:'WLTP/NEDC cycles used to estimate energy consumption and range.', resources:[{s:'IEEE',t:'IEEE Trans. Vehicular Technology — Range estimation models',u:'ieeexplore.ieee.org'}]},
+      {id:'ev-regen', title:'Regenerative Braking', desc:'Energy recovery strategies during deceleration.', resources:[{s:'NPTEL',t:'Introduction to Hybrid and Electric Vehicles, Module 6',u:'nptel.ac.in'}]}
+    ]},
+
+  { id:'motors', title:'Electric Motors for EVs', side:'right',
+    desc:'Deep-dive into traction motor technologies: PMSM, induction, BLDC and SRM design and control considerations.',
+    prereqs:['EV Fundamentals & Architecture'],
+    resources:[{s:'Textbook',t:'Chan & Chau — Modern Electric Vehicle Technology',u:''}],
+    subs:[
+      {id:'mot-pmsm', title:'PMSM Design & Control', desc:'Most widely used EV traction motor — high efficiency & power density.', resources:[{s:'IEEE',t:'IEEE Trans. Industry Applications — PMSM traction drives',u:'ieeexplore.ieee.org'}]},
+      {id:'mot-induction', title:'Induction Motor Drives', desc:'Robust, low-cost motor option used by several EV makers.', resources:[{s:'NPTEL',t:'Electrical Machines II',u:'nptel.ac.in'}]},
+      {id:'mot-bldc', title:'BLDC Motors', desc:'Common in two/three-wheeler EVs for simplicity and cost.', resources:[{s:'Textbook',t:'Chan & Chau — Modern Electric Vehicle Technology',u:''}]},
+      {id:'mot-srm', title:'Switched Reluctance Motors', desc:'Rare-earth-free alternative gaining EV industry interest.', resources:[{s:'IEEE',t:'IEEE Trans. Industrial Electronics — SRM drives',u:'ieeexplore.ieee.org'}]},
+      {id:'mot-thermal', title:'Motor Sizing & Thermal Design', desc:'Torque/power sizing and cooling strategy for continuous operation.', resources:[{s:'Vendor Docs',t:'ANSYS Motor-CAD Thermal Guide',u:'ansys.com'}]}
+    ]},
+
+  { id:'pe-ev', title:'Power Electronics for EVs', side:'left',
+    desc:'Traction inverters, on-board chargers, DC-DC converters and wide-bandgap devices that convert & control electrical energy inside an EV.',
+    prereqs:['Electric Motors for EVs'],
+    resources:[{s:'NPTEL',t:'Power Electronics for Electric Vehicles',u:'nptel.ac.in'}],
+    subs:[
+      {id:'pe-inverter', title:'Traction Inverters', desc:'3-phase inverters converting battery DC to AC for the traction motor.', resources:[{s:'IEEE',t:'IEEE Trans. Power Electronics — Traction inverter design',u:'ieeexplore.ieee.org'}]},
+      {id:'pe-obc', title:'On-Board Chargers (OBC)', desc:'AC-DC conversion stage that charges the battery from the grid.', resources:[{s:'IEEE',t:'IEEE Trans. Transportation Electrification — OBC topologies',u:'ieeexplore.ieee.org'}]},
+      {id:'pe-dcdc', title:'DC-DC Converters', desc:'Step down high-voltage battery power to 12V auxiliary systems.', resources:[{s:'Textbook',t:'Mohan, Undeland, Robbins — Power Electronics',u:''}]},
+      {id:'pe-sic', title:'Wide-Bandgap Devices (SiC/GaN)', desc:'Next-gen semiconductors enabling higher efficiency & power density.', resources:[{s:'IEEE',t:'IEEE Trans. Power Electronics — SiC MOSFET applications',u:'ieeexplore.ieee.org'}]},
+      {id:'pe-foc', title:'Motor Control Algorithms (FOC/DTC)', desc:'Field-oriented and direct-torque control strategies for traction motors.', resources:[{s:'IEEE',t:'IEEE Trans. Industrial Electronics — FOC vs DTC comparison',u:'ieeexplore.ieee.org'}]}
+    ]},
+
+  { id:'battery', title:'Battery Technology & BMS', side:'right',
+    desc:'Cell chemistry, state estimation, thermal management and battery-management-system design — arguably the heart of a modern EV.',
+    prereqs:['Power Electronics for EVs'],
+    resources:[{s:'NPTEL',t:'Battery Technologies and Management Systems',u:'nptel.ac.in'},{s:'Textbook',t:'Plett — Battery Management Systems, Vol. 1 & 2',u:''}],
+    subs:[
+      {id:'bat-chem', title:'Battery Chemistry (Li-ion / LFP / Solid-State)', desc:'Electrochemistry fundamentals behind modern EV cells.', resources:[{s:'MIT OCW',t:'2.813 Electrochemical Energy Systems',u:'ocw.mit.edu'}]},
+      {id:'bat-model', title:'Cell Modeling & SOC/SOH Estimation', desc:'Equivalent-circuit and electrochemical models used to estimate charge/health state.', resources:[{s:'Textbook',t:'Plett — Battery Management Systems, Vol. 1',u:''}]},
+      {id:'bat-bms', title:'BMS Hardware & Software Design', desc:'Cell balancing, protection circuits, communication with the vehicle controller.', resources:[{s:'IEEE',t:'IEEE Trans. Power Electronics — BMS architectures',u:'ieeexplore.ieee.org'}]},
+      {id:'bat-thermal', title:'Battery Thermal Management', desc:'Air/liquid cooling strategies to keep cells within safe operating range.', resources:[{s:'IEEE',t:'IEEE Trans. Transportation Electrification — Thermal management review',u:'ieeexplore.ieee.org'}]},
+      {id:'bat-pack', title:'Pack Design & Safety', desc:'Mechanical design, thermal-runaway prevention and crash safety of battery packs.', resources:[{s:'Standard',t:'ISO 6469 — Electric Road Vehicle Safety Specification',u:''}]}
+    ]},
+
+  { id:'charging', title:'Charging Infrastructure', side:'left',
+    desc:'Standards, protocols and technologies that connect the EV to the grid — from AC/DC charging to wireless and V2G systems.',
+    prereqs:['Battery Technology & BMS'],
+    resources:[{s:'IEEE',t:'IEEE 2030.1 — EV Charging Infrastructure Guide',u:'ieeexplore.ieee.org'}],
+    subs:[
+      {id:'chg-standards', title:'Charging Standards (CCS, CHAdeMO, GB/T)', desc:'Regional DC fast-charging connector & communication standards.', resources:[{s:'Standard',t:'IEC 61851 — EV Conductive Charging System',u:''}]},
+      {id:'chg-ocpp', title:'OCPP & Communication Protocols', desc:'Open Charge Point Protocol used between charging stations and management systems.', resources:[{s:'OCA',t:'Open Charge Alliance — OCPP Specification',u:'openchargealliance.org'}]},
+      {id:'chg-wireless', title:'Wireless Charging', desc:'Inductive power transfer for static and dynamic EV charging.', resources:[{s:'IEEE',t:'IEEE Trans. Transportation Electrification — Wireless charging review',u:'ieeexplore.ieee.org'}]},
+      {id:'chg-v2g', title:'V2G / V2H Technology', desc:'Vehicle-to-grid and vehicle-to-home bidirectional power flow concepts.', resources:[{s:'IEEE',t:'IEEE 1547 — Interconnecting Distributed Resources',u:'ieeexplore.ieee.org'}]},
+      {id:'chg-station', title:'Charging Station Design', desc:'Power electronics and layout considerations for public charging hubs.', resources:[{s:'NPTEL',t:'Introduction to Hybrid and Electric Vehicles, Module 10',u:'nptel.ac.in'}]}
+    ]},
+
+  { id:'dynamics', title:'Vehicle Dynamics, Thermal & ADAS', side:'right',
+    desc:'System-level EV engineering: dynamics & load modelling, cabin/pack thermal systems, ADAS sensing and functional safety.',
+    prereqs:['Charging Infrastructure'],
+    resources:[{s:'Textbook',t:'Thomas D. Gillespie — Fundamentals of Vehicle Dynamics',u:''}],
+    subs:[
+      {id:'dyn-vehicle', title:'Vehicle Dynamics & Load Modeling', desc:'Rolling resistance, aerodynamic drag and grade force affecting motor sizing.', resources:[{s:'Textbook',t:'Gillespie — Fundamentals of Vehicle Dynamics',u:''}]},
+      {id:'dyn-thermal', title:'EV Thermal Management Systems', desc:'Integrated cooling loops for battery, motor and power electronics.', resources:[{s:'IEEE',t:'IEEE Trans. Transportation Electrification — Integrated thermal systems',u:'ieeexplore.ieee.org'}]},
+      {id:'dyn-adas', title:'ADAS Sensors (Radar / LiDAR / Camera)', desc:'Perception hardware enabling driver-assistance features.', resources:[{s:'IEEE',t:'IEEE Trans. Intelligent Transportation Systems',u:'ieeexplore.ieee.org'}]},
+      {id:'dyn-auto', title:'Autonomous Driving Basics', desc:'Sensor fusion and path-planning fundamentals.', resources:[{s:'NPTEL',t:'Autonomous Vehicle Systems',u:'nptel.ac.in'}]},
+      {id:'dyn-safety', title:'Functional Safety (ISO 26262)', desc:'Automotive safety-integrity-level (ASIL) process for safety-critical EV systems.', resources:[{s:'Standard',t:'ISO 26262 — Road Vehicles Functional Safety',u:''}]}
+    ]},
+
+  { id:'standards', title:'EV Standards, Safety & Regulations', side:'left',
+    desc:'The regulatory landscape every EV product must comply with, spanning charging, safety, EMC and regional vehicle-approval norms.',
+    prereqs:['Vehicle Dynamics, Thermal & ADAS'],
+    resources:[],
+    subs:[
+      {id:'std-iec', title:'IEC 61851 — Conductive Charging', desc:'International standard governing EV charging systems.', resources:[{s:'Standard',t:'IEC 61851-1',u:''}]},
+      {id:'std-iso6469', title:'ISO 6469 — EV Safety Specification', desc:'On-board electrical safety requirements for electric road vehicles.', resources:[{s:'Standard',t:'ISO 6469-1/2/3',u:''}]},
+      {id:'std-ais', title:'AIS Standards (India)', desc:'Automotive Industry Standards for EV battery & charging safety in India.', resources:[{s:'ARAI',t:'AIS-156 — EV Battery Safety',u:''}]},
+      {id:'std-unece', title:'UN ECE Regulations', desc:'International vehicle-type-approval regulations relevant to EVs.', resources:[{s:'UNECE',t:'UN R100 — Electric Power Train Vehicles',u:''}]},
+      {id:'std-emc', title:'EMC/EMI Compliance', desc:'Electromagnetic compatibility testing for power-electronic subsystems.', resources:[{s:'IEEE',t:'IEEE Std 1846 — EMC in Power Electronics',u:'ieeexplore.ieee.org'}]}
+    ]},
+
+  { id:'gate', title:'GATE Preparation (Electrical Engineering)', side:'right',
+    desc:'A focused revision & practice track for the GATE-EE exam, useful for PSU recruitment and M.Tech admission.',
+    prereqs:['Core subjects: Circuits, Machines, Power Systems, Control, Power Electronics'],
+    resources:[{s:'Books',t:'GATE Previous 15 Years Solved Papers — Electrical Engineering',u:''}],
+    subs:[
+      {id:'gate-weightage', title:'Subject Weightage & Strategy', desc:'Understand marks distribution to prioritise study time.', resources:[]},
+      {id:'gate-books', title:'Standard Books & Previous Papers', desc:'Subject-wise standard references plus 15 years of solved papers.', resources:[{s:'Textbook',t:'V. K. Mehta — Principles of Electrical Engineering',u:''}]},
+      {id:'gate-mock', title:'Mock Tests & Time Management', desc:'Full-length mock tests once syllabus completion crosses 70%.', resources:[]},
+      {id:'gate-emath', title:'Engineering Mathematics for GATE', desc:'~13% weightage — often the highest-scoring, most consistent section.', resources:[]},
+      {id:'gate-post', title:'Post-GATE Opportunities (PSU / M.Tech)', desc:'NTPC, PGCIL, BHEL, ONGC, and IIT/NIT M.Tech admissions via GATE score.', resources:[]}
+    ]},
+
+  { id:'career', title:'Internships, Projects & Careers', side:'left',
+    desc:'Hands-on application: build projects, gain internship experience and choose a specialised EV career track.',
+    prereqs:['GATE Preparation (Electrical Engineering)','EV-specific phases'],
+    resources:[],
+    subs:[
+      {id:'proj-beginner', title:'Beginner Projects', desc:'DC motor speed controller, battery charge indicator, simple BLDC driver.', resources:[]},
+      {id:'proj-intermediate', title:'Intermediate Projects', desc:'Li-ion BMS with cell balancing, single-phase inverter, CAN-based dashboard.', resources:[]},
+      {id:'proj-advanced', title:'Advanced / Capstone Projects', desc:'Full traction inverter with FOC control, EV powertrain simulation in Simulink, wireless charging pad prototype.', resources:[]},
+      {id:'career-roles', title:'Career Roles', desc:'EV Powertrain Engineer, BMS Engineer, Charging Infra Engineer, Automotive Embedded Engineer, R&D/Academia.', resources:[]},
+      {id:'career-higher', title:'Certifications & Higher Studies', desc:'M.Tech/MS in Power Electronics or Energy Storage, industry certifications (AutoCAD Electrical, MATLAB, Functional Safety).', resources:[]}
+    ]}
+];
+
+/* ============================================================
+   LAYOUT ENGINE — pure model math, renders one big SVG
+   ============================================================ */
+const TOPIC_W = 300, TOPIC_H = 64;
+const SUB_W = 300, SUB_H = 54, SUB_GAP = 14;
+const BRANCH_GAP = 90;      // horizontal gap between spine and branch column
+const PHASE_GAP = 70;       // vertical gap between phases
+const SPINE_X = 560;        // left x of the topic box (center column)
+const CANVAS_W = 1500;
+
+const nodeData = {}; // id -> {title, desc, prereqs, resources, type}
+let svgWidth = CANVAS_W, svgHeight = 0;
+const svgParts = [];
+
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+
+function addRect(x,y,w,h,fill,id,extraClass){
+  svgParts.push(`<rect class="node-rect ${extraClass||''}" data-id="${id}" x="${x}" y="${y}" width="${w}" height="${h}" rx="6" fill="${fill}" stroke="#000"></rect>`);
+}
+function addText(x,y,text,cls){
+  svgParts.push(`<text class="node-text ${cls||''}" data-id="" x="${x}" y="${y}" text-anchor="middle" dominant-baseline="middle">${esc(text)}</text>`);
+}
+function addCheck(x,y,id){
+  svgParts.push(`<g class="check" data-id="${id}" data-check="1"><circle cx="${x}" cy="${y}" r="9"></circle><path d="M${x-4} ${y} l3 3 l6 -7"></path></g>`);
+}
+function addLine(x1,y1,x2,y2,dashed){
+  svgParts.push(`<path d="M${x1} ${y1} C${(x1+x2)/2} ${y1} ${(x1+x2)/2} ${y2} ${x2} ${y2}" fill="none" stroke="#2b78e4" stroke-width="3" ${dashed? 'stroke-dasharray="1 8"':''} stroke-linecap="round"></path>`);
+}
+
+let cursorY = 40;
+let prevBottomCenter = null; // {x,y}
+
+phases.forEach((phase, idx)=>{
+  const topicY = cursorY;
+  const topicCX = SPINE_X + TOPIC_W/2;
+
+  nodeData[phase.id] = { title:phase.title, desc:phase.desc, prereqs:phase.prereqs||[], resources:phase.resources||[], type:'Phase' };
+
+  // vertical spine connector from previous phase
+  if(prevBottomCenter){
+    addLine(prevBottomCenter.x, prevBottomCenter.y, topicCX, topicY, false);
+  }
+
+  addRect(SPINE_X, topicY, TOPIC_W, TOPIC_H, 'var(--topic-fill)'.includes('var')? '#fdff00':'#fdff00', phase.id);
+  addText(topicCX, topicY + TOPIC_H/2, phase.title, '');
+  addCheck(SPINE_X + TOPIC_W - 16, topicY + 16, phase.id);
+
+  // subtopics column
+  const subs = phase.subs || [];
+  const subTotalH = subs.length * (SUB_H + SUB_GAP) - SUB_GAP;
+  let subStartY = topicY + TOPIC_H/2 - subTotalH/2;
+  if(subStartY < 20) subStartY = 20;
+
+  const subX = phase.side === 'left' ? (SPINE_X - BRANCH_GAP - SUB_W) : (SPINE_X + TOPIC_W + BRANCH_GAP);
+  const topicEdgeX = phase.side === 'left' ? SPINE_X : SPINE_X + TOPIC_W;
+
+  subs.forEach((sub, i)=>{
+    const sy = subStartY + i*(SUB_H+SUB_GAP);
+    const scx = subX + SUB_W/2;
+    nodeData[sub.id] = { title:sub.title, desc:sub.desc, prereqs:[phase.title], resources:sub.resources||[], type:'Sub-topic' };
+    addLine(topicEdgeX, topicY + TOPIC_H/2, phase.side==='left'? subX+SUB_W : subX, sy + SUB_H/2, true);
+    addRect(subX, sy, SUB_W, SUB_H, '#ffe599', sub.id);
+    addText(scx, sy + SUB_H/2, sub.title, 'sub');
+    addCheck(subX + SUB_W - 14, sy + 13, sub.id);
+  });
+
+  const branchBottom = subStartY + subTotalH;
+  const phaseBottom = Math.max(topicY + TOPIC_H, branchBottom);
+  cursorY = phaseBottom + PHASE_GAP;
+  prevBottomCenter = { x: topicCX, y: phaseBottom };
+
+  // track canvas width needed
+  const leftMost = phase.side==='left' ? subX : SPINE_X;
+  const rightMost = phase.side==='left' ? SPINE_X+TOPIC_W : subX+SUB_W;
+  svgWidth = Math.max(svgWidth, rightMost + 60);
+});
+svgHeight = cursorY + 20;
+
+const svgRoot = document.getElementById('svgRoot');
+svgRoot.setAttribute('viewBox', `0 0 ${svgWidth} ${svgHeight}`);
+svgRoot.setAttribute('width', svgWidth);
+svgRoot.setAttribute('height', svgHeight);
+svgRoot.innerHTML = svgParts.join('\n');
+
+/* ============================================================
+   PROGRESS TRACKING (localStorage)
+   ============================================================ */
+const STORAGE_KEY = 'ev-roadmap-progress-v1';
+let doneSet = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
+const totalNodes = Object.keys(nodeData).length;
+
+function saveProgress(){
+  localStorage.setItem(STORAGE_KEY, JSON.stringify([...doneSet]));
+  updateProgressUI();
+}
+function updateProgressUI(){
+  document.getElementById('progressLabel').textContent = `${doneSet.size} / ${totalNodes} topics`;
+  document.getElementById('progressBar').style.width = (doneSet.size/totalNodes*100)+'%';
+  Object.keys(nodeData).forEach(id=>{
+    const rect = svgRoot.querySelector(`rect.node-rect[data-id="${id}"]`);
+    const chk = svgRoot.querySelector(`g.check[data-id="${id}"]`);
+    if(rect) rect.classList.toggle('done', doneSet.has(id));
+    if(chk) chk.classList.toggle('done', doneSet.has(id));
+  });
+}
+updateProgressUI();
+
+function toggleDone(id){
+  if(doneSet.has(id)) doneSet.delete(id); else doneSet.add(id);
+  saveProgress();
+}
+
+/* ============================================================
+   PANEL (click a node → details)
+   ============================================================ */
+const overlay = document.getElementById('overlay');
+const sidePanel = document.getElementById('sidePanel');
+let activeId = null;
+
+function openPanel(id){
+  const d = nodeData[id];
+  if(!d) return;
+  activeId = id;
+  document.getElementById('panelTag').textContent = d.type;
+  document.getElementById('panelTitle').textContent = d.title;
+  document.getElementById('panelDesc').textContent = d.desc || 'No description yet.';
+  const preWrap = document.getElementById('panelPrereqs');
+  preWrap.innerHTML = (d.prereqs && d.prereqs.length) ? d.prereqs.map(p=>`<span class="chip">${esc(p)}</span>`).join('') : '<span class="chip">None</span>';
+  const resWrap = document.getElementById('panelResources');
+  resWrap.innerHTML = (d.resources && d.resources.length) ? d.resources.map(r=>`<li><div><span class="src">${esc(r.s)}</span>${esc(r.t)}</div></li>`).join('') : '<li>No linked resource yet — check the Bibliography section below the roadmap.</li>';
+  const btn = document.getElementById('markDoneBtn');
+  btn.textContent = doneSet.has(id) ? '✓ Marked as done' : 'Mark as done';
+  btn.classList.toggle('done', doneSet.has(id));
+  overlay.classList.add('open');
+  sidePanel.classList.add('open');
+}
+function closePanel(){
+  overlay.classList.remove('open');
+  sidePanel.classList.remove('open');
+  activeId = null;
+}
+document.getElementById('closePanel').addEventListener('click', closePanel);
+overlay.addEventListener('click', closePanel);
+document.getElementById('markDoneBtn').addEventListener('click', ()=>{
+  if(activeId){
+    toggleDone(activeId);
+    const btn = document.getElementById('markDoneBtn');
+    btn.textContent = doneSet.has(activeId) ? '✓ Marked as done' : 'Mark as done';
+    btn.classList.toggle('done', doneSet.has(activeId));
+  }
+});
+
+svgRoot.addEventListener('click', (e)=>{
+  const checkEl = e.target.closest('[data-check]');
+  if(checkEl){
+    e.stopPropagation();
+    toggleDone(checkEl.getAttribute('data-id'));
+    return;
+  }
+  const target = e.target.closest('[data-id]');
+  if(target){
+    openPanel(target.getAttribute('data-id'));
+  }
+});
+
+/* ============================================================
+   PAN & ZOOM
+   ============================================================ */
+const frame = document.getElementById('canvasFrame');
+const inner = document.getElementById('canvasInner');
+let scale = 0.62, tx = 20, ty = 20;
+let isDragging = false, lastX=0, lastY=0;
+
+function applyTransform(){
+  inner.style.transform = `translate(${tx}px, ${ty}px) scale(${scale})`;
+}
+function centerInitial(){
+  // roughly center horizontally
+  const frameW = frame.clientWidth;
+  tx = (frameW - svgWidth*scale)/2;
+  ty = 20;
+  applyTransform();
+}
+window.addEventListener('load', centerInitial);
+setTimeout(centerInitial, 50);
+
+frame.addEventListener('mousedown', (e)=>{
+  isDragging = true; lastX = e.clientX; lastY = e.clientY;
+  frame.classList.add('grabbing');
+});
+window.addEventListener('mousemove', (e)=>{
+  if(!isDragging) return;
+  tx += (e.clientX-lastX); ty += (e.clientY-lastY);
+  lastX = e.clientX; lastY = e.clientY;
+  applyTransform();
+});
+window.addEventListener('mouseup', ()=>{ isDragging=false; frame.classList.remove('grabbing'); });
+
+frame.addEventListener('wheel', (e)=>{
+  e.preventDefault();
+  const rect = frame.getBoundingClientRect();
+  const mx = e.clientX-rect.left, my = e.clientY-rect.top;
+  const prevScale = scale;
+  scale = Math.min(2.2, Math.max(0.22, scale * (e.deltaY<0 ? 1.1 : 0.9)));
+  // zoom towards cursor
+  tx = mx - (mx-tx) * (scale/prevScale);
+  ty = my - (my-ty) * (scale/prevScale);
+  applyTransform();
+}, {passive:false});
+
+document.getElementById('zoomIn').addEventListener('click', ()=>{ scale=Math.min(2.2,scale*1.2); applyTransform(); });
+document.getElementById('zoomOut').addEventListener('click', ()=>{ scale=Math.max(0.22,scale*0.8); applyTransform(); });
+document.getElementById('zoomReset').addEventListener('click', centerInitial);
+
+/* ============================================================
+   SEARCH / FILTER
+   ============================================================ */
+document.getElementById('searchInput').addEventListener('input', (e)=>{
+  const q = e.target.value.trim().toLowerCase();
+  Object.keys(nodeData).forEach(id=>{
+    const match = !q || nodeData[id].title.toLowerCase().includes(q) || (nodeData[id].desc||'').toLowerCase().includes(q);
+    const rect = svgRoot.querySelector(`rect.node-rect[data-id="${id}"]`);
+    const txts = svgRoot.querySelectorAll(`text[data-id="${id}"]`);
+    if(rect) rect.classList.toggle('dim', !match);
+  });
+});
+
+/* ============================================================
+   ACCORDION (bibliography / GATE / careers sections)
+   ============================================================ */
+document.querySelectorAll('.accordion-item .acc-head').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    btn.parentElement.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>

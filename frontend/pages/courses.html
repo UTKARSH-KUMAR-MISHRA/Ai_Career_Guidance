@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Career Guidance — Courses</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="../css/main.css">
+<style>
+  .courses-shell {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .search-row {
+    background: #fff;
+    border: 1px solid #ECEDF3;
+    border-radius: 12px;
+    padding: 10px 16px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .search-input-wrap {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid #ECEDF3;
+    border-radius: 8px;
+    padding: 6px 12px;
+    background: #F9FAFB;
+  }
+  .search-input-wrap input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 12px;
+    width: 100%;
+  }
+  .courses-grid-scroller {
+    flex: 1;
+    overflow-y: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    padding-bottom: 20px;
+    min-height: 0;
+  }
+  .course-catalog-card {
+    background: #fff;
+    border: 1px solid #ECEDF3;
+    border-radius: 12px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform .2s, border-color .2s;
+  }
+  .course-catalog-card:hover {
+    transform: translateY(-2px);
+    border-color: #D8D6FF;
+  }
+  .platform-lbl {
+    font-size: 9px;
+    font-weight: 700;
+    color: #4F46E5;
+    background: #EEF0FF;
+    padding: 2px 6px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- SIDEBAR (Dynamic) -->
+  <div class="sidebar"></div>
+
+  <!-- MAIN Shell -->
+  <div class="main">
+    <!-- TOPBAR (Dynamic) -->
+    <div class="topbar">
+      <div>
+        <h1>Courses & Certifications</h1>
+        <p>Browse courses mapped to essential engineering skills.</p>
+      </div>
+    </div>
+
+    <!-- Courses Workspace -->
+    <div class="courses-shell reveal">
+      
+      <!-- Search Filter -->
+      <div class="search-row">
+        <div class="search-input-wrap">
+          <i class="ti ti-search" style="color:#9CA3AF; font-size:15px;"></i>
+          <input type="text" id="courseSearch" placeholder="Search courses by name or skill (e.g. Python, ML)...">
+        </div>
+      </div>
+
+      <!-- Scroller Grid -->
+      <div class="courses-grid-scroller" id="coursesCatalogGrid">
+        <div style="grid-column: span 3; text-align: center; padding: 40px; color: #9CA3AF;">
+          <i class="ti ti-loader" style="font-size: 32px; animation: spin 1s linear infinite;"></i>
+          <p style="margin-top: 10px;">Querying catalog database...</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"><i class="ti ti-circle-check"></i><span id="toastMsg">Saved</span></div>
+
+<script src="../js/navigation.js"></script>
+</body>
+</html>

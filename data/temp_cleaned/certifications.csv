@@ -1,0 +1,151 @@
+cert_id,certificate_name,provider,difficulty,duration,exam_fee,validity,skills_covered,recognized_by_industry,related_role
+CERT001,Professional Certification 1,Google,Beginner,4 Weeks,₹2000,Lifetime,"SK001, SK007",Yes,ROLE001
+CERT002,Professional Certification 2,Microsoft,Intermediate,5 Weeks,₹3000,2 Years,"SK002, SK008",Yes,ROLE002
+CERT003,Professional Certification 3,AWS,Advanced,6 Weeks,₹4000,3 Years,"SK003, SK009",Yes,ROLE003
+CERT004,Professional Certification 4,IBM,Beginner,7 Weeks,₹5000,Lifetime,"SK004, SK010",Yes,ROLE004
+CERT005,Professional Certification 5,Oracle,Intermediate,8 Weeks,₹6000,2 Years,"SK005, SK011",Yes,ROLE005
+CERT006,Professional Certification 6,Cisco,Advanced,9 Weeks,₹7000,3 Years,"SK006, SK012",Yes,ROLE006
+CERT007,Professional Certification 7,CompTIA,Beginner,10 Weeks,₹8000,Lifetime,"SK007, SK013",Yes,ROLE007
+CERT008,Professional Certification 8,Salesforce,Intermediate,11 Weeks,₹9000,2 Years,"SK008, SK014",Yes,ROLE008
+CERT009,Professional Certification 9,Meta,Advanced,12 Weeks,₹10000,3 Years,"SK009, SK015",Yes,ROLE009
+CERT010,Professional Certification 10,Databricks,Beginner,4 Weeks,₹11000,Lifetime,"SK010, SK016",Yes,ROLE010
+CERT011,Professional Certification 11,Google,Intermediate,5 Weeks,₹2000,2 Years,"SK011, SK017",Yes,ROLE011
+CERT012,Professional Certification 12,Microsoft,Advanced,6 Weeks,₹3000,3 Years,"SK012, SK018",Yes,ROLE012
+CERT013,Professional Certification 13,AWS,Beginner,7 Weeks,₹4000,Lifetime,"SK013, SK019",Yes,ROLE013
+CERT014,Professional Certification 14,IBM,Intermediate,8 Weeks,₹5000,2 Years,"SK014, SK020",Yes,ROLE014
+CERT015,Professional Certification 15,Oracle,Advanced,9 Weeks,₹6000,3 Years,"SK015, SK021",Yes,ROLE015
+CERT016,Professional Certification 16,Cisco,Beginner,10 Weeks,₹7000,Lifetime,"SK016, SK022",Yes,ROLE016
+CERT017,Professional Certification 17,CompTIA,Intermediate,11 Weeks,₹8000,2 Years,"SK017, SK023",Yes,ROLE017
+CERT018,Professional Certification 18,Salesforce,Advanced,12 Weeks,₹9000,3 Years,"SK018, SK024",Yes,ROLE018
+CERT019,Professional Certification 19,Meta,Beginner,4 Weeks,₹10000,Lifetime,"SK019, SK025",Yes,ROLE019
+CERT020,Professional Certification 20,Databricks,Intermediate,5 Weeks,₹11000,2 Years,"SK020, SK026",Yes,ROLE020
+CERT021,Professional Certification 21,Google,Advanced,6 Weeks,₹2000,3 Years,"SK021, SK027",Yes,ROLE021
+CERT022,Professional Certification 22,Microsoft,Beginner,7 Weeks,₹3000,Lifetime,"SK022, SK028",Yes,ROLE022
+CERT023,Professional Certification 23,AWS,Intermediate,8 Weeks,₹4000,2 Years,"SK023, SK029",Yes,ROLE023
+CERT024,Professional Certification 24,IBM,Advanced,9 Weeks,₹5000,3 Years,"SK024, SK030",Yes,ROLE024
+CERT025,Professional Certification 25,Oracle,Beginner,10 Weeks,₹6000,Lifetime,"SK025, SK031",Yes,ROLE025
+CERT026,Professional Certification 26,Cisco,Intermediate,11 Weeks,₹7000,2 Years,"SK026, SK032",Yes,ROLE026
+CERT027,Professional Certification 27,CompTIA,Advanced,12 Weeks,₹8000,3 Years,"SK027, SK033",Yes,ROLE027
+CERT028,Professional Certification 28,Salesforce,Beginner,4 Weeks,₹9000,Lifetime,"SK028, SK034",Yes,ROLE028
+CERT029,Professional Certification 29,Meta,Intermediate,5 Weeks,₹10000,2 Years,"SK029, SK035",Yes,ROLE029
+CERT030,Professional Certification 30,Databricks,Advanced,6 Weeks,₹11000,3 Years,"SK030, SK036",Yes,ROLE030
+CERT031,Professional Certification 31,Google,Beginner,7 Weeks,₹2000,Lifetime,"SK031, SK037",Yes,ROLE031
+CERT032,Professional Certification 32,Microsoft,Intermediate,8 Weeks,₹3000,2 Years,"SK032, SK038",Yes,ROLE032
+CERT033,Professional Certification 33,AWS,Advanced,9 Weeks,₹4000,3 Years,"SK033, SK039",Yes,ROLE033
+CERT034,Professional Certification 34,IBM,Beginner,10 Weeks,₹5000,Lifetime,"SK034, SK040",Yes,ROLE034
+CERT035,Professional Certification 35,Oracle,Intermediate,11 Weeks,₹6000,2 Years,"SK035, SK041",Yes,ROLE035
+CERT036,Professional Certification 36,Cisco,Advanced,12 Weeks,₹7000,3 Years,"SK036, SK042",Yes,ROLE036
+CERT037,Professional Certification 37,CompTIA,Beginner,4 Weeks,₹8000,Lifetime,"SK037, SK043",Yes,ROLE037
+CERT038,Professional Certification 38,Salesforce,Intermediate,5 Weeks,₹9000,2 Years,"SK038, SK044",Yes,ROLE038
+CERT039,Professional Certification 39,Meta,Advanced,6 Weeks,₹10000,3 Years,"SK039, SK045",Yes,ROLE039
+CERT040,Professional Certification 40,Databricks,Beginner,7 Weeks,₹11000,Lifetime,"SK040, SK046",Yes,ROLE040
+CERT041,Professional Certification 41,Google,Intermediate,8 Weeks,₹2000,2 Years,"SK041, SK047",Yes,ROLE041
+CERT042,Professional Certification 42,Microsoft,Advanced,9 Weeks,₹3000,3 Years,"SK042, SK048",Yes,ROLE042
+CERT043,Professional Certification 43,AWS,Beginner,10 Weeks,₹4000,Lifetime,"SK043, SK049",Yes,ROLE043
+CERT044,Professional Certification 44,IBM,Intermediate,11 Weeks,₹5000,2 Years,"SK044, SK050",Yes,ROLE044
+CERT045,Professional Certification 45,Oracle,Advanced,12 Weeks,₹6000,3 Years,"SK045, SK051",Yes,ROLE045
+CERT046,Professional Certification 46,Cisco,Beginner,4 Weeks,₹7000,Lifetime,"SK046, SK052",Yes,ROLE046
+CERT047,Professional Certification 47,CompTIA,Intermediate,5 Weeks,₹8000,2 Years,"SK047, SK053",Yes,ROLE047
+CERT048,Professional Certification 48,Salesforce,Advanced,6 Weeks,₹9000,3 Years,"SK048, SK054",Yes,ROLE048
+CERT049,Professional Certification 49,Meta,Beginner,7 Weeks,₹10000,Lifetime,"SK049, SK055",Yes,ROLE049
+CERT050,Professional Certification 50,Databricks,Intermediate,8 Weeks,₹11000,2 Years,"SK050, SK056",Yes,ROLE050
+CERT051,Professional Certification 51,Google,Advanced,9 Weeks,₹2000,3 Years,"SK051, SK057",Yes,ROLE051
+CERT052,Professional Certification 52,Microsoft,Beginner,10 Weeks,₹3000,Lifetime,"SK052, SK058",Yes,ROLE052
+CERT053,Professional Certification 53,AWS,Intermediate,11 Weeks,₹4000,2 Years,"SK053, SK059",Yes,ROLE053
+CERT054,Professional Certification 54,IBM,Advanced,12 Weeks,₹5000,3 Years,"SK054, SK060",Yes,ROLE054
+CERT055,Professional Certification 55,Oracle,Beginner,4 Weeks,₹6000,Lifetime,"SK055, SK061",Yes,ROLE055
+CERT056,Professional Certification 56,Cisco,Intermediate,5 Weeks,₹7000,2 Years,"SK056, SK062",Yes,ROLE056
+CERT057,Professional Certification 57,CompTIA,Advanced,6 Weeks,₹8000,3 Years,"SK057, SK063",Yes,ROLE057
+CERT058,Professional Certification 58,Salesforce,Beginner,7 Weeks,₹9000,Lifetime,"SK058, SK064",Yes,ROLE058
+CERT059,Professional Certification 59,Meta,Intermediate,8 Weeks,₹10000,2 Years,"SK059, SK065",Yes,ROLE059
+CERT060,Professional Certification 60,Databricks,Advanced,9 Weeks,₹11000,3 Years,"SK060, SK066",Yes,ROLE060
+CERT061,Professional Certification 61,Google,Beginner,10 Weeks,₹2000,Lifetime,"SK061, SK067",Yes,ROLE001
+CERT062,Professional Certification 62,Microsoft,Intermediate,11 Weeks,₹3000,2 Years,"SK062, SK068",Yes,ROLE002
+CERT063,Professional Certification 63,AWS,Advanced,12 Weeks,₹4000,3 Years,"SK063, SK069",Yes,ROLE003
+CERT064,Professional Certification 64,IBM,Beginner,4 Weeks,₹5000,Lifetime,"SK064, SK070",Yes,ROLE004
+CERT065,Professional Certification 65,Oracle,Intermediate,5 Weeks,₹6000,2 Years,"SK065, SK071",Yes,ROLE005
+CERT066,Professional Certification 66,Cisco,Advanced,6 Weeks,₹7000,3 Years,"SK066, SK072",Yes,ROLE006
+CERT067,Professional Certification 67,CompTIA,Beginner,7 Weeks,₹8000,Lifetime,"SK067, SK073",Yes,ROLE007
+CERT068,Professional Certification 68,Salesforce,Intermediate,8 Weeks,₹9000,2 Years,"SK068, SK074",Yes,ROLE008
+CERT069,Professional Certification 69,Meta,Advanced,9 Weeks,₹10000,3 Years,"SK069, SK075",Yes,ROLE009
+CERT070,Professional Certification 70,Databricks,Beginner,10 Weeks,₹11000,Lifetime,"SK070, SK076",Yes,ROLE010
+CERT071,Professional Certification 71,Google,Intermediate,11 Weeks,₹2000,2 Years,"SK071, SK077",Yes,ROLE011
+CERT072,Professional Certification 72,Microsoft,Advanced,12 Weeks,₹3000,3 Years,"SK072, SK078",Yes,ROLE012
+CERT073,Professional Certification 73,AWS,Beginner,4 Weeks,₹4000,Lifetime,"SK073, SK079",Yes,ROLE013
+CERT074,Professional Certification 74,IBM,Intermediate,5 Weeks,₹5000,2 Years,"SK074, SK080",Yes,ROLE014
+CERT075,Professional Certification 75,Oracle,Advanced,6 Weeks,₹6000,3 Years,"SK075, SK081",Yes,ROLE015
+CERT076,Professional Certification 76,Cisco,Beginner,7 Weeks,₹7000,Lifetime,"SK076, SK082",Yes,ROLE016
+CERT077,Professional Certification 77,CompTIA,Intermediate,8 Weeks,₹8000,2 Years,"SK077, SK083",Yes,ROLE017
+CERT078,Professional Certification 78,Salesforce,Advanced,9 Weeks,₹9000,3 Years,"SK078, SK084",Yes,ROLE018
+CERT079,Professional Certification 79,Meta,Beginner,10 Weeks,₹10000,Lifetime,"SK079, SK085",Yes,ROLE019
+CERT080,Professional Certification 80,Databricks,Intermediate,11 Weeks,₹11000,2 Years,"SK080, SK086",Yes,ROLE020
+CERT081,Professional Certification 81,Google,Advanced,12 Weeks,₹2000,3 Years,"SK081, SK087",Yes,ROLE021
+CERT082,Professional Certification 82,Microsoft,Beginner,4 Weeks,₹3000,Lifetime,"SK082, SK088",Yes,ROLE022
+CERT083,Professional Certification 83,AWS,Intermediate,5 Weeks,₹4000,2 Years,"SK083, SK089",Yes,ROLE023
+CERT084,Professional Certification 84,IBM,Advanced,6 Weeks,₹5000,3 Years,"SK084, SK090",Yes,ROLE024
+CERT085,Professional Certification 85,Oracle,Beginner,7 Weeks,₹6000,Lifetime,"SK085, SK091",Yes,ROLE025
+CERT086,Professional Certification 86,Cisco,Intermediate,8 Weeks,₹7000,2 Years,"SK086, SK092",Yes,ROLE026
+CERT087,Professional Certification 87,CompTIA,Advanced,9 Weeks,₹8000,3 Years,"SK087, SK093",Yes,ROLE027
+CERT088,Professional Certification 88,Salesforce,Beginner,10 Weeks,₹9000,Lifetime,"SK088, SK094",Yes,ROLE028
+CERT089,Professional Certification 89,Meta,Intermediate,11 Weeks,₹10000,2 Years,"SK089, SK095",Yes,ROLE029
+CERT090,Professional Certification 90,Databricks,Advanced,12 Weeks,₹11000,3 Years,"SK090, SK096",Yes,ROLE030
+CERT091,Professional Certification 91,Google,Beginner,4 Weeks,₹2000,Lifetime,"SK091, SK097",Yes,ROLE031
+CERT092,Professional Certification 92,Microsoft,Intermediate,5 Weeks,₹3000,2 Years,"SK092, SK098",Yes,ROLE032
+CERT093,Professional Certification 93,AWS,Advanced,6 Weeks,₹4000,3 Years,"SK093, SK099",Yes,ROLE033
+CERT094,Professional Certification 94,IBM,Beginner,7 Weeks,₹5000,Lifetime,"SK094, SK100",Yes,ROLE034
+CERT095,Professional Certification 95,Oracle,Intermediate,8 Weeks,₹6000,2 Years,"SK095, SK101",Yes,ROLE035
+CERT096,Professional Certification 96,Cisco,Advanced,9 Weeks,₹7000,3 Years,"SK096, SK102",Yes,ROLE036
+CERT097,Professional Certification 97,CompTIA,Beginner,10 Weeks,₹8000,Lifetime,"SK097, SK103",Yes,ROLE037
+CERT098,Professional Certification 98,Salesforce,Intermediate,11 Weeks,₹9000,2 Years,"SK098, SK104",Yes,ROLE038
+CERT099,Professional Certification 99,Meta,Advanced,12 Weeks,₹10000,3 Years,"SK099, SK105",Yes,ROLE039
+CERT100,Professional Certification 100,Databricks,Beginner,4 Weeks,₹11000,Lifetime,"SK100, SK106",Yes,ROLE040
+CERT101,Professional Certification 101,Google,Intermediate,5 Weeks,₹2000,2 Years,"SK101, SK107",Yes,ROLE041
+CERT102,Professional Certification 102,Microsoft,Advanced,6 Weeks,₹3000,3 Years,"SK102, SK108",Yes,ROLE042
+CERT103,Professional Certification 103,AWS,Beginner,7 Weeks,₹4000,Lifetime,"SK103, SK109",Yes,ROLE043
+CERT104,Professional Certification 104,IBM,Intermediate,8 Weeks,₹5000,2 Years,"SK104, SK110",Yes,ROLE044
+CERT105,Professional Certification 105,Oracle,Advanced,9 Weeks,₹6000,3 Years,"SK105, SK111",Yes,ROLE045
+CERT106,Professional Certification 106,Cisco,Beginner,10 Weeks,₹7000,Lifetime,"SK106, SK112",Yes,ROLE046
+CERT107,Professional Certification 107,CompTIA,Intermediate,11 Weeks,₹8000,2 Years,"SK107, SK113",Yes,ROLE047
+CERT108,Professional Certification 108,Salesforce,Advanced,12 Weeks,₹9000,3 Years,"SK108, SK114",Yes,ROLE048
+CERT109,Professional Certification 109,Meta,Beginner,4 Weeks,₹10000,Lifetime,"SK109, SK115",Yes,ROLE049
+CERT110,Professional Certification 110,Databricks,Intermediate,5 Weeks,₹11000,2 Years,"SK110, SK116",Yes,ROLE050
+CERT111,Professional Certification 111,Google,Advanced,6 Weeks,₹2000,3 Years,"SK111, SK117",Yes,ROLE051
+CERT112,Professional Certification 112,Microsoft,Beginner,7 Weeks,₹3000,Lifetime,"SK112, SK118",Yes,ROLE052
+CERT113,Professional Certification 113,AWS,Intermediate,8 Weeks,₹4000,2 Years,"SK113, SK119",Yes,ROLE053
+CERT114,Professional Certification 114,IBM,Advanced,9 Weeks,₹5000,3 Years,"SK114, SK120",Yes,ROLE054
+CERT115,Professional Certification 115,Oracle,Beginner,10 Weeks,₹6000,Lifetime,"SK115, SK121",Yes,ROLE055
+CERT116,Professional Certification 116,Cisco,Intermediate,11 Weeks,₹7000,2 Years,"SK116, SK122",Yes,ROLE056
+CERT117,Professional Certification 117,CompTIA,Advanced,12 Weeks,₹8000,3 Years,"SK117, SK123",Yes,ROLE057
+CERT118,Professional Certification 118,Salesforce,Beginner,4 Weeks,₹9000,Lifetime,"SK118, SK124",Yes,ROLE058
+CERT119,Professional Certification 119,Meta,Intermediate,5 Weeks,₹10000,2 Years,"SK119, SK125",Yes,ROLE059
+CERT120,Professional Certification 120,Databricks,Advanced,6 Weeks,₹11000,3 Years,"SK120, SK126",Yes,ROLE060
+CERT121,Professional Certification 121,Google,Beginner,7 Weeks,₹2000,Lifetime,"SK121, SK127",Yes,ROLE001
+CERT122,Professional Certification 122,Microsoft,Intermediate,8 Weeks,₹3000,2 Years,"SK122, SK128",Yes,ROLE002
+CERT123,Professional Certification 123,AWS,Advanced,9 Weeks,₹4000,3 Years,"SK123, SK129",Yes,ROLE003
+CERT124,Professional Certification 124,IBM,Beginner,10 Weeks,₹5000,Lifetime,"SK124, SK130",Yes,ROLE004
+CERT125,Professional Certification 125,Oracle,Intermediate,11 Weeks,₹6000,2 Years,"SK125, SK131",Yes,ROLE005
+CERT126,Professional Certification 126,Cisco,Advanced,12 Weeks,₹7000,3 Years,"SK126, SK132",Yes,ROLE006
+CERT127,Professional Certification 127,CompTIA,Beginner,4 Weeks,₹8000,Lifetime,"SK127, SK133",Yes,ROLE007
+CERT128,Professional Certification 128,Salesforce,Intermediate,5 Weeks,₹9000,2 Years,"SK128, SK134",Yes,ROLE008
+CERT129,Professional Certification 129,Meta,Advanced,6 Weeks,₹10000,3 Years,"SK129, SK135",Yes,ROLE009
+CERT130,Professional Certification 130,Databricks,Beginner,7 Weeks,₹11000,Lifetime,"SK130, SK136",Yes,ROLE010
+CERT131,Professional Certification 131,Google,Intermediate,8 Weeks,₹2000,2 Years,"SK131, SK137",Yes,ROLE011
+CERT132,Professional Certification 132,Microsoft,Advanced,9 Weeks,₹3000,3 Years,"SK132, SK138",Yes,ROLE012
+CERT133,Professional Certification 133,AWS,Beginner,10 Weeks,₹4000,Lifetime,"SK133, SK139",Yes,ROLE013
+CERT134,Professional Certification 134,IBM,Intermediate,11 Weeks,₹5000,2 Years,"SK134, SK140",Yes,ROLE014
+CERT135,Professional Certification 135,Oracle,Advanced,12 Weeks,₹6000,3 Years,"SK135, SK141",Yes,ROLE015
+CERT136,Professional Certification 136,Cisco,Beginner,4 Weeks,₹7000,Lifetime,"SK136, SK142",Yes,ROLE016
+CERT137,Professional Certification 137,CompTIA,Intermediate,5 Weeks,₹8000,2 Years,"SK137, SK143",Yes,ROLE017
+CERT138,Professional Certification 138,Salesforce,Advanced,6 Weeks,₹9000,3 Years,"SK138, SK144",Yes,ROLE018
+CERT139,Professional Certification 139,Meta,Beginner,7 Weeks,₹10000,Lifetime,"SK139, SK145",Yes,ROLE019
+CERT140,Professional Certification 140,Databricks,Intermediate,8 Weeks,₹11000,2 Years,"SK140, SK146",Yes,ROLE020
+CERT141,Professional Certification 141,Google,Advanced,9 Weeks,₹2000,3 Years,"SK141, SK147",Yes,ROLE021
+CERT142,Professional Certification 142,Microsoft,Beginner,10 Weeks,₹3000,Lifetime,"SK142, SK148",Yes,ROLE022
+CERT143,Professional Certification 143,AWS,Intermediate,11 Weeks,₹4000,2 Years,"SK143, SK149",Yes,ROLE023
+CERT144,Professional Certification 144,IBM,Advanced,12 Weeks,₹5000,3 Years,"SK144, SK150",Yes,ROLE024
+CERT145,Professional Certification 145,Oracle,Beginner,4 Weeks,₹6000,Lifetime,"SK145, SK151",Yes,ROLE025
+CERT146,Professional Certification 146,Cisco,Intermediate,5 Weeks,₹7000,2 Years,"SK146, SK152",Yes,ROLE026
+CERT147,Professional Certification 147,CompTIA,Advanced,6 Weeks,₹8000,3 Years,"SK147, SK153",Yes,ROLE027
+CERT148,Professional Certification 148,Salesforce,Beginner,7 Weeks,₹9000,Lifetime,"SK148, SK154",Yes,ROLE028
+CERT149,Professional Certification 149,Meta,Intermediate,8 Weeks,₹10000,2 Years,"SK149, SK155",Yes,ROLE029
+CERT150,Professional Certification 150,Databricks,Advanced,9 Weeks,₹11000,3 Years,"SK150, SK156",Yes,ROLE030

@@ -1,0 +1,82 @@
+<div class="topbar">
+  <div><h1 id="dashboardWelcomeTitle">AI Engineering & Career Development Portal</h1><div class="sub" id="dashboardWelcomeSub">Empowering Technical Education, Skill Gap Mastery & Career Readiness</div></div>
+  <div class="topbar-right">
+    <button class="voice-btn" id="voiceBtn"><i class="ti ti-microphone"></i> <span id="voiceLabel">Voice Assistant</span></button>
+    <div class="icon-btn" id="bellBtn"><i class="ti ti-bell"></i><span class="dot" id="bellDot">3</span></div>
+    <div class="profile" id="topbarProfileBtn">
+      <div class="avatar" id="topbarAvatar">U</div>
+      <div><div class="profile-name" id="topbarName">User</div><div class="profile-sub" id="topbarSub">B.Tech · CSE</div></div>
+      <i class="ti ti-chevron-down" style="color:var(--text-3)"></i>
+    </div>
+  </div>
+</div>
+
+<div class="stats reveal">
+  <div class="stat-card">
+    <div class="stat-top"><div class="stat-icon purple"><i class="ti ti-briefcase"></i></div><div class="stat-label">Recommended<br>Careers</div></div>
+    <div class="stat-value" id="statRecCount">--</div><div class="stat-link" onclick="window.navigateTo('recommendation')">View details <i class="ti ti-arrow-right"></i></div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-top"><div class="stat-icon green"><i class="ti ti-target"></i></div><div class="stat-label">Skill Match<br>Score</div></div>
+    <div class="stat-value" id="statMatchScore">--%</div><div class="progress-track"><div class="progress-fill" id="statMatchProgress" data-target="0" style="width: 0%"></div></div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-top"><div class="stat-icon amber"><i class="ti ti-bookmark"></i></div><div class="stat-label">Learning<br>Resources</div></div>
+    <div class="stat-value" id="statResourcesCount">--</div><div class="stat-link" onclick="window.navigateTo('roadmap')">Explore now <i class="ti ti-arrow-right"></i></div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-top"><div class="stat-icon blue"><i class="ti ti-chart-line"></i></div><div class="stat-label">Interview<br>Questions</div></div>
+    <div class="stat-value" id="statInterviewCount">--</div><div class="stat-link" onclick="window.navigateTo('interview')">Practice now <i class="ti ti-arrow-right"></i></div>
+  </div>
+</div>
+
+<div class="content">
+  <div class="left-col">
+    <div class="panel nextstep-panel reveal">
+      <div class="panel-head"><h3>Structured Learning Modules</h3><span class="view-all" onclick="window.navigateTo('profile')">Edit <i class="ti ti-pencil"></i></span></div>
+      <div class="ns-track">
+        <div class="ns-step" onclick="window.toggleModuleAccordion(0)"><div class="ns-medal">🥇</div><div class="lbl" id="ns-role-1">Module 1</div><div class="sub-lbl">Week 1 • Expand</div></div>
+        <div class="ns-step" onclick="window.toggleModuleAccordion(1)"><div class="ns-medal">🥈</div><div class="lbl" id="ns-role-2">Module 2</div><div class="sub-lbl">Week 2 • Expand</div></div>
+        <div class="ns-step" onclick="window.toggleModuleAccordion(2)"><div class="ns-medal">🥉</div><div class="lbl" id="ns-role-3">Module 3</div><div class="sub-lbl">Week 3 • Expand</div></div>
+        <div class="ns-step" onclick="window.toggleModuleAccordion(3)"><div class="ns-medal">🏆</div><div class="lbl" id="ns-role-4">Module 4</div><div class="sub-lbl">Week 4 • Expand</div></div>
+      </div>
+      <div id="moduleAccordionPanel" class="module-accordion" style="display:none;"></div>
+    </div>
+
+    <div class="row3">
+      <div class="panel">
+        <div class="panel-head"><h3 style="font-size:13.5px">Upcoming Tasks</h3><span class="view-all" onclick="window.navigateTo('roadmap')" style="font-size:11px">Explore</span></div>
+        <div id="dashboardTasksList">
+          <div class="task-row"><button class="task-check unchecked"><i class="ti ti-check"></i></button><div class="task-info"><div class="t">Solve Coding Assignments</div><div class="s">Standard tasks</div></div></div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3 style="font-size:13.5px">Interview Prep</h3><span class="view-all" onclick="window.navigateTo('interview')" style="font-size:11px">Practice</span></div>
+        <div class="ip-top">
+          <div><div class="ip-num" id="ipCount">18</div><div class="ip-sub">Questions<br>available</div></div>
+          <svg width="48" height="48" viewBox="0 0 76 76">
+            <circle cx="38" cy="38" r="30" fill="none" stroke="#EEF0F5" stroke-width="12"/>
+            <circle cx="38" cy="38" r="30" fill="none" stroke="#6C63FF" stroke-width="12" stroke-dasharray="104.7 188.5" stroke-linecap="round" transform="rotate(-90 38 38)"/>
+          </svg>
+        </div>
+        <button class="start-btn" onclick="window.navigateTo('interview')">Start Practice <i class="ti ti-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="right-col reveal">
+    <div class="chat-head"><div><h3>AI Career Assistant</h3><div class="status"><span class="dot"></span>Online</div></div><i class="ti ti-dots-vertical" style="color:#9CA3AF;cursor:pointer"></i></div>
+    <div class="chat-body" id="chatBody">
+      <div class="msg bot">Hello! 👋 Ask me anything about engineering roadmaps, skills, certifications, resume building, or interview prep. How can I guide you today?</div>
+    </div>
+    <div class="chip-row">
+      <div class="chip" data-msg="Show me my learning roadmap">Show roadmap</div>
+      <div class="chip" data-msg="Analyze my skill gap">Skill gap</div>
+      <div class="chip" data-msg="What are the best courses for me?">Best courses</div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="chatInput" placeholder="Type your message...">
+      <button class="send-btn" id="sendBtn"><i class="ti ti-send"></i></button>
+    </div>
+  </div>
+</div>

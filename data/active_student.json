@@ -1,0 +1,17 @@
+{
+  "student_id": "STU0003",
+  "branch": "Mechanical",
+  "year": 2,
+  "cgpa": 9.0,
+  "known_skills": "SK159, SK010, SK059, SK161, SK119",
+  "projects_completed": 1,
+  "internship_status": "No",
+  "preferred_domain": "DevOps",
+  "preferred_role": "ROLE047",
+  "coding_level": "Intermediate",
+  "communication_level": "Intermediate",
+  "english_level": "Fluent",
+  "daily_learning_hours": 2,
+  "career_goal": "AI Engineer",
+  "is_excel": false
+}

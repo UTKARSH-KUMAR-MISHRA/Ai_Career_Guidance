@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/auth.css">
+<style>
+  /* Localized styles for Auth Screen and Profile Wizard */
+  #auth-screen, #wizard-screen {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100vw; height: 100vh;
+    background: linear-gradient(135deg, #0F172A 0%, #1E1B4B 100%);
+    z-index: 9999;
+    overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    padding: 35px;
+    width: 100%;
+    max-width: 460px;
+    color: #F8FAFC;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    animation: fadeIn 0.5s ease;
+  }
+
+  .wizard-card {
+    max-width: 720px;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .auth-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-align: center;
+    background: linear-gradient(to right, #A5B4FC, #818CF8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .auth-sub {
+    font-size: 13.5px;
+    color: #94A3B8;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .form-group {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .form-group label {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #CBD5E1;
+  }
+
+  .form-input {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #F8FAFC;
+    outline: none;
+    transition: all 0.2s ease;
+  }
+
+  .form-input:focus {
+    border-color: #818CF8;
+    box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.25);
+  }
+
+  .form-select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2394a3b8'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+    padding-right: 36px;
+  }
+
+  .auth-btn {
+    background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    padding: 11px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .auth-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+  }
+
+  .auth-toggle {
+    text-align: center;
+    font-size: 13px;
+    color: #94A3B8;
+    margin-top: 20px;
+  }
+
+  .auth-toggle span {
+    color: #818CF8;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .auth-toggle span:hover {
+    text-decoration: underline;
+  }
+
+  .auth-error {
+    background: rgba(239, 68, 68, 0.15);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    color: #FCA5A5;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 12.5px;
+    margin-bottom: 15px;
+    display: none;
+  }
+
+  /* Wizard Steps */
+  .wizard-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 25px;
+  }
+
+  @media (max-width: 640px) {
+    .wizard-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Dark mode global variables override */
+  body.dark-mode {
+    --bg: #0B0F19;
+    --card: rgba(20, 26, 42, 0.7);
+    --border: rgba(255, 255, 255, 0.08);
+    --text: #F3F4F6;
+    --text-2: #9CA3AF;
+  }
+</style>
+<!-- Load Mermaid.js from CDN as an ES module and expose it to window.mermaid -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ 
+    startOnLoad: false, 
+    theme: 'neutral',
+    securityLevel: 'loose'
+  });
+  window.mermaid = mermaid;
+</script>
+</head>
+<body>
+
+<!-- 1. AUTHENTICATION MODULE -->
+<div id="auth-screen">
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+  <div class="toast-stack" id="toastStack"></div>
+  
+  <div class="stage">
+    <!-- top tab flap -->
+    <div class="tabflap">
+      <button type="button" id="tabToggle" aria-current="false">Join</button>
+    </div>
+
+    <div class="card" id="card">
+      <!-- ============ FORM SIDE ============ -->
+      <div class="form-side">
+        <div class="logo">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="12" cy="12" r="10" stroke="url(#g1)" stroke-width="1.6"/>
+            <path d="M12 6 L15 12 L12 18 L9 12 Z" fill="url(#g1)"/>
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="24" y2="24">
+                <stop offset="0" stop-color="#2F72C2"/>
+                <stop offset="1" stop-color="#12A192"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          Pathway
+        </div>
+
+        <!-- ---------- LOGIN ---------- -->
+        <div class="panel-auth" id="panel-login">
+          <span class="eyebrow">Start for free</span>
+          <h2>Sign in</h2>
+          <p class="sub">Don't have an account? <a href="#" id="linkToRegister">Create one</a></p>
+
+          <form id="loginForm" novalidate>
+            <div class="field" id="li-email-field">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></svg>
+              <input type="email" id="li-email" placeholder=" " autocomplete="email" required>
+              <label for="li-email">Email address</label>
+              <div class="err-msg" role="alert" id="li-email-err"></div>
+            </div>
+
+            <div class="field" id="li-pass-field">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              <input type="password" id="li-pass" placeholder=" " autocomplete="current-password" required>
+              <label for="li-pass">Password</label>
+              <button type="button" class="toggle-eye" data-target="li-pass" aria-label="Show password">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+              </button>
+              <div class="err-msg" role="alert" id="li-pass-err"></div>
+            </div>
+
+            <div class="row-between">
+              <label class="remember"><input type="checkbox"> Remember me</label>
+              <a href="#" onclick="return false;">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="cta" id="loginBtn">
+              <span class="btn-label">Sign in</span>
+            </button>
+          </form>
+
+          <div class="switch-line">
+            New to Pathway? <button type="button" id="toRegister">Create an account</button>
+          </div>
+        </div>
+
+        <!-- ---------- REGISTER ---------- -->
+        <div class="panel-auth" id="panel-register" style="display: none; opacity: 0; pointer-events: none;">
+          <span class="eyebrow">Start for free</span>
+          <h2>Create new account</h2>
+          <p class="sub">Already a member? <a href="#" id="linkToLogin">Sign in</a></p>
+
+          <form id="registerForm" novalidate>
+            <div class="name-row">
+              <div class="field" id="re-fname-field">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+                <input type="text" id="re-fname" placeholder=" " autocomplete="given-name" required>
+                <label for="re-fname">First name</label>
+                <div class="err-msg" role="alert" id="re-fname-err"></div>
+              </div>
+              <div class="field" id="re-lname-field">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
+                <input type="text" id="re-lname" placeholder=" " autocomplete="family-name" required>
+                <label for="re-lname">Last name</label>
+                <div class="err-msg" role="alert" id="re-lname-err"></div>
+              </div>
+            </div>
+
+            <div class="field" id="re-email-field">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></svg>
+              <input type="email" id="re-email" placeholder=" " autocomplete="email" required>
+              <label for="re-email">Email address</label>
+              <div class="err-msg" role="alert" id="re-email-err"></div>
+            </div>
+
+            <div class="field" id="re-pass-field">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              <input type="password" id="re-pass" placeholder=" " autocomplete="new-password" required>
+              <label for="re-pass">Password</label>
+              <button type="button" class="toggle-eye" data-target="re-pass" aria-label="Show password">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+              </button>
+              <div class="strength" aria-hidden="true"><div class="strength-bar" id="strengthBar"></div></div>
+              <div class="err-msg" role="alert" id="re-pass-err"></div>
+            </div>
+
+            <div class="field" id="re-confirm-field">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>
+              <input type="password" id="re-confirm" placeholder=" " autocomplete="new-password" required>
+              <label for="re-confirm">Confirm password</label>
+              <button type="button" class="toggle-eye" data-target="re-confirm" aria-label="Show password">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7-11-7-11-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+              </button>
+              <div class="err-msg" role="alert" id="re-confirm-err"></div>
+            </div>
+
+            <button type="submit" class="cta" id="registerBtn">
+              <span class="btn-label">Create account</span>
+            </button>
+          </form>
+
+          <div class="switch-line">
+            Already have an account? <button type="button" id="toLogin">Sign in</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ============ ART SIDE ============ -->
+      <div class="art-side">
+        <div class="art-inner" id="artInner">
+          <img src="img/bg_image.jpg" alt="Illustration of a mentor and student in a career guidance conversation">
+          <div class="tint"></div>
+          <div class="vignette"></div>
+          <div class="art-badge"><span class="dot"></span> Live guidance engine</div>
+          <div class="art-copy">
+            <h3>Every query, one step closer to the right role.</h3>
+            <p>Grounded recommendations, skill-gap roadmaps, and real course matches — built for Tier-2/Tier-3 engineering students.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 2. USER PROFILE SETUP WIZARD -->
+<div id="wizard-screen">
+  <div class="glass-card wizard-card">
+    <div class="auth-title" style="text-align: left;">Configure Your Profile</div>
+    <div class="auth-sub" style="text-align: left; margin-bottom: 25px;">Enter your academic details to personalize the AI guidance engine.</div>
+    
+    <form id="wizardForm" style="display: flex; flex-direction: column;">
+      <div class="wizard-grid">
+        <div class="form-group">
+          <label for="wizardName">Full Name</label>
+          <input type="text" id="wizardName" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="wizardEmail">Email (Locked)</label>
+          <input type="email" id="wizardEmail" class="form-input" readonly style="opacity: 0.7;">
+        </div>
+        <div class="form-group">
+          <label for="wizardPhone">Phone Number</label>
+          <input type="text" id="wizardPhone" class="form-input" required placeholder="+91 9999999999">
+        </div>
+        <div class="form-group">
+          <label for="wizardCollege">College / Institute</label>
+          <input type="text" id="wizardCollege" class="form-input" required placeholder="IIT Delhi, NIT Trichy, etc.">
+        </div>
+        <div class="form-group">
+          <label for="wizardUniversity">Affiliated University</label>
+          <input type="text" id="wizardUniversity" class="form-input" required placeholder="Delhi Technological University">
+        </div>
+        <div class="form-group">
+          <label for="wizardDegree">Degree</label>
+          <select id="wizardDegree" class="form-input form-select" required>
+            <option value="B.Tech">B.Tech / B.E.</option>
+            <option value="M.Tech">M.Tech / M.E.</option>
+            <option value="MCA">MCA</option>
+            <option value="B.Sc">B.Sc Computer Science</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="wizardBranch">Branch of Study</label>
+          <select id="wizardBranch" class="form-input form-select" required>
+            <option value="Computer Science">Computer Science & Eng (CSE)</option>
+            <option value="Electronics & Communication">Electronics & Communication (ECE)</option>
+            <option value="Mechanical Engineering">Mechanical Engineering (ME)</option>
+            <option value="Civil Engineering">Civil Engineering (CE)</option>
+            <option value="Electrical Engineering">Electrical Engineering (EE)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="wizardYear">Year of Study</label>
+          <select id="wizardYear" class="form-input form-select" required>
+            <option value="1">1st Year</option>
+            <option value="2">2nd Year</option>
+            <option value="3" selected>3rd Year</option>
+            <option value="4">4th Year</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="wizardSkills">Current Skills (Comma Separated)</label>
+          <input type="text" id="wizardSkills" class="form-input" required placeholder="Python, C++, HTML, SQL">
+        </div>
+        <div class="form-group">
+          <label for="wizardInterests">Interests (Comma Separated)</label>
+          <input type="text" id="wizardInterests" class="form-input" required placeholder="Web Development, Machine Learning">
+        </div>
+        <div class="form-group">
+          <label for="wizardGoal">Career Goal / Target Role</label>
+          <select id="wizardGoal" class="form-input form-select" required>
+            <option value="ROLE001">Data Scientist</option>
+            <option value="ROLE002">Software Development Engineer (SDE)</option>
+            <option value="ROLE003">Full Stack Developer</option>
+            <option value="ROLE004">Cloud Engineer</option>
+            <option value="ROLE005">AI / ML Engineer</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="wizardIndustry">Preferred Industry</label>
+          <input type="text" id="wizardIndustry" class="form-input" required placeholder="Finance, Healthcare, E-Commerce">
+        </div>
+      </div>
+      <button type="submit" class="auth-btn" style="align-self: flex-end; width: 220px; margin-top: 20px;">Save Profile & Enter <i class="ti ti-login"></i></button>
+    </form>
+  </div>
+</div>
+
+<!-- 3. MAIN DASHBOARD CONTENT VIEWPORT (SPA SHELL) -->
+<div class="app">
+
+  <!-- Shared Sidebar -->
+  <div class="sidebar">
+    <div class="brand">
+      <div class="logo"><i class="ti ti-school"></i></div>
+      <div>ENGINEERING CAREER<br><small>DEVELOPMENT PORTAL</small></div>
+    </div>
+    <ul class="nav">
+      <li class="active" data-page="dashboard"><i class="ti ti-layout-dashboard"></i>Dashboard</li>
+      <li data-page="profile"><i class="ti ti-user"></i>Profile</li>
+      <li data-page="recommendation"><i class="ti ti-target-arrow"></i>Recommendations</li>
+      <li data-page="skill-gap"><i class="ti ti-chart-radar"></i>Skill Gap Analysis</li>
+      <li data-page="roadmap"><i class="ti ti-map"></i>Roadmap</li>
+      <li data-page="courses"><i class="ti ti-brain"></i>Courses & Certifications</li>
+      <li data-page="soft-skills"><i class="ti ti-mood-smile"></i>Soft Skills</li>
+      <li data-page="resume"><i class="ti ti-file-text"></i>Resume Analysis</li>
+      <li data-page="career-comparison"><i class="ti ti-arrows-left-right"></i>Career Comparison</li>
+      <li data-page="chatbot"><i class="ti ti-message-chatbot"></i>AI Career Chatbot</li>
+      <li data-page="interview"><i class="ti ti-users"></i>Interview Prep</li>
+      <li data-page="resources"><i class="ti ti-chart-line"></i>Placement Insights</li>
+    </ul>
+    
+    <div class="help-card">
+      <div class="bot"><i class="ti ti-robot"></i></div>
+      <h4>Need help?</h4>
+      <p>Chat with our RAG career chatbot anytime!</p>
+      <button>Ask chatbot <i class="ti ti-arrow-right"></i></button>
+    </div>
+    
+    <!-- Logout button added for session management -->
+    <button class="voice-btn" onclick="window.logoutUser()" style="background: rgba(239, 68, 68, 0.15); color: #EF4444; border: 1px solid rgba(239, 68, 68, 0.2); width: 100%; justify-content: center; margin-top: 15px; border-radius: 9px; padding: 10px;">
+      <i class="ti ti-logout"></i> Sign Out
+    </button>
+  </div>
+
+  <!-- Dynamic Content Main Viewport -->
+  <div class="main">
+    <!-- Loaded dynamically by router.js -->
+  </div>
+</div>
+
+<div class="toast" id="toast"><i class="ti ti-circle-check"></i><span id="toastMsg">Saved</span></div>
+
+<!-- SPA Scripts Router -->
+<script>
+function sendQuickMessage(msg) {
+    if (window.navigateTo) {
+        window.navigateTo("chatbot");
+        let retries = 0;
+        const interval = setInterval(() => {
+            const chatInput = document.getElementById("chatbotInput") || document.getElementById("chatInput");
+            if (chatInput) {
+                clearInterval(interval);
+                chatInput.value = msg;
+                const sendBtn = document.getElementById("chatbotSendBtn") || document.getElementById("sendBtn");
+                if (sendBtn) sendBtn.click();
+            } else {
+                retries++;
+                if (retries > 10) clearInterval(interval);
+            }
+        }, 200);
+    }
+}
+window.sendQuickMessage = sendQuickMessage;
+</script>
+<script src="js/router.js?v=3"></script>
+</body>
+</html>

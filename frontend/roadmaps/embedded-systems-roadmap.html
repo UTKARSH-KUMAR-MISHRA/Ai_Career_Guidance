@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Embedded Systems / Electrical Engineering Roadmap</title>
+<style>
+  :root{
+    --blue:#2b78e4;
+    --yellow:#fdff00;
+    --yellow-hover:#d6d700;
+    --tan:#ffe599;
+    --tan-hover:#f3c950;
+    --ink:#111318;
+    --paper:#f7f7f5;
+    --line:#000;
+    --muted:#6b7280;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family: "Trebuchet MS","Segoe UI",Verdana, sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+  }
+
+  /* ---------- top bar ---------- */
+  .topbar{
+    background:#0f1117;
+    color:#fff;
+    padding:16px 24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;}
+  .brand .chip{
+    width:28px;height:28px;border-radius:8px;background:var(--blue);
+    display:flex;align-items:center;justify-content:center;font-size:14px;
+  }
+  .topbar nav{display:flex;gap:18px;flex-wrap:wrap;}
+  .topbar nav a{color:#b7bcc7;text-decoration:none;font-size:14px;}
+  .topbar nav a:hover{color:#fff;}
+  .top-actions{display:flex;gap:8px;}
+  .top-actions button{
+    background:#fdff00;color:#111;border:none;border-radius:6px;
+    padding:8px 14px;font-size:13px;font-weight:600;cursor:pointer;
+  }
+  .top-actions button.ghost{background:#232323;color:#fff;}
+
+  /* ---------- header / hero ---------- */
+  .hero{
+    max-width:1100px;margin:0 auto;padding:36px 20px 12px;
+  }
+  .hero h1{font-size:40px;margin:0 0 8px;}
+  .hero p{color:var(--muted);font-size:16px;max-width:700px;margin:0 0 18px;}
+  .hero .tabs{display:flex;gap:6px;border-bottom:1px solid #e5e5e5;}
+  .hero .tabs button{
+    background:none;border:none;padding:10px 14px;font-size:14px;cursor:pointer;
+    border-bottom:2px solid transparent;color:var(--muted);font-weight:500;
+  }
+  .hero .tabs button.active{border-bottom-color:#000;color:#000;}
+
+  /* ---------- legend / toolbar ---------- */
+  .toolbar{
+    max-width:1100px;margin:14px auto 0;padding:0 20px;
+    display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;
+  }
+  .legend{
+    display:flex;gap:16px;flex-wrap:wrap;font-size:13px;background:#fff;
+    border:2.7px solid #000;border-radius:8px;padding:10px 14px;
+  }
+  .legend span{display:flex;align-items:center;gap:6px;}
+  .legend i{width:12px;height:12px;border-radius:50%;display:inline-block;}
+  .dot-core{background:var(--yellow);border:2px solid #000;}
+  .dot-sub{background:var(--tan);border:2px solid #000;}
+  .dot-tool{background:#c9d8ff;border:2px solid #000;}
+  .zoom-controls{display:flex;gap:6px;}
+  .zoom-controls button{
+    width:34px;height:34px;border-radius:6px;border:2px solid #000;background:#fff;
+    font-size:16px;cursor:pointer;
+  }
+
+  /* ---------- canvas (pan & zoom) ---------- */
+  .canvas-wrap{
+    max-width:1100px;margin:16px auto 0;border:2.7px solid #000;border-radius:10px;
+    overflow:hidden;background:#fff;position:relative;height:78vh;cursor:grab;
+  }
+  .canvas-wrap.grabbing{cursor:grabbing;}
+  .canvas{
+    transform-origin:0 0;
+    position:absolute;top:0;left:0;
+    padding:60px 60px 60px 60px;
+  }
+  .hint{
+    position:absolute;bottom:10px;right:14px;background:rgba(0,0,0,.75);color:#fff;
+    font-size:12px;padding:6px 10px;border-radius:6px;pointer-events:none;
+  }
+
+  /* ---------- spine / section layout ---------- */
+  .section{
+    display:flex;flex-direction:column;align-items:flex-start;margin-bottom:46px;position:relative;
+  }
+  .section::before{ /* vertical spine line */
+    content:"";position:absolute;left:118px;top:46px;bottom:-46px;width:3px;background:var(--blue);
+    opacity:.55;
+  }
+  .section:last-child::before{display:none;}
+  .section-title{
+    font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--blue);
+    font-weight:700;margin:0 0 10px 0;
+  }
+  .topic-row{display:flex;align-items:flex-start;gap:26px;position:relative;}
+  .node{
+    border:2.7px solid #000;border-radius:6px;padding:10px 16px;font-size:15px;font-weight:600;
+    cursor:pointer;white-space:nowrap;user-select:none;transition:transform .12s ease, background .12s ease;
+    position:relative;z-index:2;
+  }
+  .node:hover{transform:translateY(-2px);}
+  .node.topic{background:var(--yellow);min-width:230px;}
+  .node.topic:hover{background:var(--yellow-hover);}
+  .node.tool{background:#c9d8ff;}
+  .node.tool:hover{background:#a9c1ff;}
+  .subtopics{display:flex;flex-wrap:wrap;gap:10px;max-width:640px;padding-top:2px;}
+  .node.sub{background:var(--tan);font-size:14px;font-weight:500;}
+  .node.sub:hover{background:var(--tan-hover);}
+  .connector{width:26px;height:2px;background:var(--blue);opacity:.55;margin-top:20px;flex:none;}
+
+  /* ---------- detail panel ---------- */
+  .overlay{
+    position:fixed;inset:0;background:rgba(0,0,0,.35);display:none;z-index:50;
+  }
+  .overlay.open{display:block;}
+  .panel{
+    position:fixed;top:0;right:-420px;width:400px;max-width:92vw;height:100%;
+    background:#fff;box-shadow:-8px 0 30px rgba(0,0,0,.25);z-index:60;
+    transition:right .25s ease;overflow-y:auto;padding:26px 24px;
+  }
+  .panel.open{right:0;}
+  .panel h2{margin:0 0 6px;font-size:22px;}
+  .panel .kicker{color:var(--blue);font-size:12px;text-transform:uppercase;font-weight:700;letter-spacing:.05em;margin-bottom:10px;}
+  .panel p.desc{color:#333;line-height:1.55;font-size:15px;}
+  .panel h3{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin:22px 0 8px;}
+  .panel ul{margin:0;padding-left:20px;font-size:14px;line-height:1.7;}
+  .panel a{color:var(--blue);text-decoration:underline;}
+  .panel .close{
+    position:absolute;top:18px;right:18px;border:none;background:#f0f0f0;border-radius:50%;
+    width:32px;height:32px;cursor:pointer;font-size:16px;
+  }
+  .badge{
+    display:inline-block;background:#eef3ff;color:var(--blue);border-radius:999px;
+    padding:3px 10px;font-size:12px;font-weight:600;margin-right:6px;
+  }
+
+  /* ---------- bibliography ---------- */
+  .biblio{max-width:1100px;margin:50px auto 0;padding:0 20px 60px;}
+  .biblio h2{font-size:26px;margin-bottom:6px;}
+  .biblio p.sub{color:var(--muted);margin-top:0;margin-bottom:22px;}
+  .biblio-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;}
+  .biblio-card{
+    border:2px solid #000;border-radius:8px;padding:16px 18px;background:#fff;
+  }
+  .biblio-card h4{margin:0 0 8px;font-size:15px;}
+  .biblio-card ul{margin:0;padding-left:18px;font-size:13.5px;line-height:1.7;}
+  .biblio-card a{color:var(--blue);}
+  .source-tag{
+    display:inline-block;font-size:11px;font-weight:700;color:#fff;background:var(--blue);
+    border-radius:4px;padding:2px 8px;margin-bottom:8px;letter-spacing:.03em;
+  }
+
+  footer.page-footer{
+    background:#0f1117;color:#9aa0ab;padding:26px 20px;text-align:center;font-size:13px;
+  }
+
+  @media (max-width:640px){
+    .hero h1{font-size:28px;}
+    .canvas-wrap{height:70vh;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand"><span class="chip">⚡</span> EE Roadmap</div>
+  <nav>
+    <a href="#roadmap">Roadmap</a>
+    <a href="#projects">Projects</a>
+    <a href="#careers">Careers</a>
+    <a href="#biblio">Bibliography</a>
+  </nav>
+  <div class="top-actions">
+    <button class="ghost" id="resetBtn">Reset View</button>
+    <button id="downloadBtn">Download</button>
+  </div>
+</div>
+
+<div class="hero">
+  <h1>Embedded Systems &amp; Electrical Engineering</h1>
+  <p>A step-by-step, community-style guide for going from electrical engineering fundamentals to a career in embedded systems, VLSI, power systems, or core EE roles — including GATE prep, internships, and industry-ready tools.</p>
+  <div class="tabs">
+    <button class="active">Roadmap</button>
+    <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">Projects</button>
+    <button onclick="document.getElementById('careers').scrollIntoView({behavior:'smooth'})">Careers</button>
+    <button onclick="document.getElementById('biblio').scrollIntoView({behavior:'smooth'})">Bibliography</button>
+  </div>
+</div>
+
+<div class="toolbar">
+  <div class="legend">
+    <span><i class="dot-core"></i> Core Topic</span>
+    <span><i class="dot-sub"></i> Sub-topic</span>
+    <span><i class="dot-tool"></i> Tool / Software</span>
+  </div>
+  <div class="zoom-controls">
+    <button id="zoomOut">−</button>
+    <button id="zoomReset">⤢</button>
+    <button id="zoomIn">+</button>
+  </div>
+</div>
+
+<div id="roadmap" class="canvas-wrap">
+  <div class="canvas" id="canvas"></div>
+  <div class="hint">Scroll to zoom · Drag to pan · Click a box for details</div>
+</div>
+
+<div id="projects" class="biblio" style="margin-top:50px;">
+  <h2>Hands-on Projects</h2>
+  <p class="sub">Build these roughly in order — each stage assumes the skills from the sections before it.</p>
+  <div class="biblio-grid" id="projectsGrid"></div>
+</div>
+
+<div id="careers" class="biblio" style="margin-top:10px;">
+  <h2>Career Paths</h2>
+  <p class="sub">Electrical/embedded engineering branches into several distinct careers — pick a direction once you've covered the fundamentals.</p>
+  <div class="biblio-grid" id="careersGrid"></div>
+</div>
+
+<div id="biblio" class="biblio">
+  <h2>Bibliography &amp; References</h2>
+  <p class="sub">Curated references from IEEE, NPTEL, MIT OpenCourseWare, and standard textbooks used throughout this roadmap.</p>
+  <div class="biblio-grid">
+    <div class="biblio-card">
+      <span class="source-tag">NPTEL</span>
+      <h4>NPTEL Courses (IITs / IISc)</h4>
+      <ul>
+        <li><a href="https://nptel.ac.in/courses/108105064" target="_blank" rel="noopener">Basic Electrical Circuits</a></li>
+        <li><a href="https://nptel.ac.in/courses/108108113" target="_blank" rel="noopener">Analog Electronic Circuits</a></li>
+        <li><a href="https://nptel.ac.in/courses/117106086" target="_blank" rel="noopener">Digital System Design</a></li>
+        <li><a href="https://nptel.ac.in/courses/108105157" target="_blank" rel="noopener">Control Systems</a></li>
+        <li><a href="https://nptel.ac.in/courses/108105129" target="_blank" rel="noopener">Power Systems Analysis</a></li>
+        <li><a href="https://nptel.ac.in/courses/108107132" target="_blank" rel="noopener">Embedded Systems</a></li>
+      </ul>
+    </div>
+    <div class="biblio-card">
+      <span class="source-tag">MIT OCW</span>
+      <h4>MIT OpenCourseWare</h4>
+      <ul>
+        <li><a href="https://ocw.mit.edu/courses/6-002-circuits-and-electronics-spring-2007/" target="_blank" rel="noopener">6.002 Circuits and Electronics</a></li>
+        <li><a href="https://ocw.mit.edu/courses/6-013-electromagnetics-and-applications-spring-2009/" target="_blank" rel="noopener">6.013 Electromagnetics and Applications</a></li>
+        <li><a href="https://ocw.mit.edu/courses/6-004-computation-structures-spring-2017/" target="_blank" rel="noopener">6.004 Computation Structures</a></li>
+        <li><a href="https://ocw.mit.edu/courses/6-01sc-introduction-to-electrical-engineering-and-computer-science-i-spring-2011/" target="_blank" rel="noopener">6.01SC Intro to EECS I</a></li>
+        <li><a href="https://ocw.mit.edu/courses/6-302-feedback-systems-spring-2007/" target="_blank" rel="noopener">6.302 Feedback Systems</a></li>
+      </ul>
+    </div>
+    <div class="biblio-card">
+      <span class="source-tag">IEEE</span>
+      <h4>IEEE Standards &amp; Resources</h4>
+      <ul>
+        <li><a href="https://ieeexplore.ieee.org/xpl/standards" target="_blank" rel="noopener">IEEE Xplore Digital Library — Standards</a></li>
+        <li><a href="https://www.ieee.org/education/ieee-education-programs.html" target="_blank" rel="noopener">IEEE Education Programs</a></li>
+        <li><a href="https://spectrum.ieee.org/" target="_blank" rel="noopener">IEEE Spectrum (industry news &amp; trends)</a></li>
+        <li><a href="https://standards.ieee.org/ieee/1149.1/900/" target="_blank" rel="noopener">IEEE 1149.1 (JTAG Boundary Scan)</a></li>
+        <li><a href="https://standards.ieee.org/ieee/802.15.4/6316/" target="_blank" rel="noopener">IEEE 802.15.4 (Low-Rate Wireless / IoT)</a></li>
+      </ul>
+    </div>
+    <div class="biblio-card">
+      <span class="source-tag">Textbooks</span>
+      <h4>Standard Electrical Engineering Textbooks</h4>
+      <ul>
+        <li>Sedra &amp; Smith — <em>Microelectronic Circuits</em></li>
+        <li>Boylestad — <em>Electronic Devices and Circuit Theory</em></li>
+        <li>Nagrath &amp; Gopal — <em>Control Systems Engineering</em></li>
+        <li>Muhammad H. Rashid — <em>Power Electronics</em></li>
+        <li>Morris Mano — <em>Digital Design</em></li>
+        <li>Michael Barr — <em>Programming Embedded Systems in C and C++</em></li>
+        <li>William Stallings — <em>Wireless Communications and Networks</em></li>
+        <li>Wentworth — <em>Fundamentals of Electromagnetics with Engineering Applications</em></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<footer class="page-footer">
+  Community-style Embedded Systems / Electrical Engineering Roadmap — built for self-paced learners preparing for GATE, PSU exams, internships, and core industry roles.
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<div class="panel" id="panel">
+  <button class="close" id="panelClose">✕</button>
+  <div class="kicker" id="panelKicker">Topic</div>
+  <h2 id="panelTitle">Title</h2>
+  <p class="desc" id="panelDesc">Description</p>
+  <h3>Prerequisites</h3>
+  <ul id="panelPrereq"></ul>
+  <h3>Learning Resources</h3>
+  <ul id="panelResources"></ul>
+</div>
+
+<script>
+/* ============ DATA ============ */
+const roadmap = [
+  {
+    section: "1. Foundations",
+    topics: [
+      {
+        title: "Mathematics for EE",
+        type: "topic",
+        desc: "Calculus, linear algebra, differential equations and probability form the language used to describe circuits, signals and control systems.",
+        prereq: ["High-school algebra & trigonometry"],
+        resources: ["MIT OCW 18.03 Differential Equations", "Khan Academy: Linear Algebra", "NPTEL: Engineering Mathematics"],
+        subtopics: [
+          {title:"Calculus & Differential Equations", desc:"Used to model circuit transients, signal behavior, and system dynamics.", prereq:["Algebra"], resources:["MIT OCW 18.03","Schaum's Outline of Differential Equations"]},
+          {title:"Linear Algebra", desc:"Matrices and vector spaces underpin circuit node analysis, state-space control, and DSP.", prereq:["Calculus basics"], resources:["MIT OCW 18.06 Linear Algebra"]},
+          {title:"Probability & Statistics", desc:"Needed for noise analysis, communication systems, and reliability engineering.", prereq:["Calculus"], resources:["NPTEL: Probability & Statistics"]},
+          {title:"Complex Numbers & Phasors", desc:"Core tool for AC circuit analysis and frequency-domain reasoning.", prereq:["Trigonometry"], resources:["Boylestad Ch.1"]}
+        ]
+      },
+      {
+        title: "Physics Fundamentals",
+        type: "topic",
+        desc: "Electromagnetism and basic mechanics explain how electric and magnetic fields produce the voltages, currents and forces engineers manipulate.",
+        prereq: ["Basic mathematics"],
+        resources: ["MIT OCW 6.013 Electromagnetics", "Wentworth: Fundamentals of Electromagnetics"],
+        subtopics: [
+          {title:"Electrostatics & Magnetism", desc:"Fields, Coulomb's law, Gauss's law, magnetic flux — the basis of motors, transformers and sensors.", prereq:["Calculus"], resources:["MIT OCW 6.013"]},
+          {title:"Maxwell's Equations", desc:"Unifying framework for EM fields, essential for antennas and high-speed PCB design.", prereq:["Vector calculus"], resources:["Wentworth Ch.5-9"]},
+          {title:"Semiconductor Physics", desc:"Band theory, doping, and carrier behavior that explain diode/transistor operation.", prereq:["Electrostatics"], resources:["Sedra & Smith Appendix"]}
+        ]
+      },
+      {
+        title: "Programming Basics",
+        type: "topic",
+        desc: "C is the primary language for embedded firmware; Python is used for scripting, data analysis, and automation tooling.",
+        prereq: [],
+        resources: ["Learn C the Hard Way", "Automate the Boring Stuff with Python"],
+        subtopics: [
+          {title:"C Programming", desc:"Pointers, structs, memory management — critical for writing firmware.", prereq:[], resources:["K&R: The C Programming Language"]},
+          {title:"Python for Engineers", desc:"Used for data logging, test automation, and quick prototyping/scripting.", prereq:[], resources:["Automate the Boring Stuff"]},
+          {title:"Version Control (Git)", desc:"Track firmware and hardware-design-file changes collaboratively.", prereq:[], resources:["Git & GitHub Roadmap (roadmap.sh)"]}
+        ]
+      }
+    ]
+  },
+  {
+    section: "2. Circuit Theory & Analog Electronics",
+    topics: [
+      {
+        title: "Circuit Analysis",
+        type:"topic",
+        desc:"DC and AC network analysis using Kirchhoff's laws, Thevenin/Norton equivalents, and the Laplace transform for transient response.",
+        prereq:["Physics Fundamentals","Complex Numbers"],
+        resources:["NPTEL: Basic Electrical Circuits","MIT OCW 6.002"],
+        subtopics:[
+          {title:"KVL / KCL & Network Theorems", desc:"Fundamental laws for solving any linear circuit.", prereq:[], resources:["Boylestad Ch.2-4"]},
+          {title:"Thevenin / Norton Equivalents", desc:"Simplify complex networks into a single source and resistance.", prereq:["KVL/KCL"], resources:["NPTEL Lecture 8"]},
+          {title:"AC Steady-State & Phasors", desc:"Analyze circuits driven by sinusoidal sources using impedance.", prereq:["Complex Numbers"], resources:["Sedra & Smith Ch.1"]},
+          {title:"Laplace Transform & Transients", desc:"Solve RLC transient responses and derive transfer functions.", prereq:["Differential Equations"], resources:["MIT OCW 18.03"]},
+          {title:"Two-Port Networks", desc:"Model circuits as black boxes using Z, Y, H, ABCD parameters.", prereq:["Network Theorems"], resources:["NPTEL Lecture 20"]}
+        ]
+      },
+      {
+        title:"Analog Electronics",
+        type:"topic",
+        desc:"Diodes, BJTs, MOSFETs and operational amplifiers form the building blocks of amplification, rectification and signal conditioning.",
+        prereq:["Circuit Analysis","Semiconductor Physics"],
+        resources:["NPTEL: Analog Electronic Circuits","Sedra & Smith"],
+        subtopics:[
+          {title:"Diodes & Rectifiers", desc:"Convert AC to DC; used in power supplies and signal clipping.", prereq:[], resources:["Boylestad Ch.1-2"]},
+          {title:"BJT & MOSFET Amplifiers", desc:"Transistor biasing and small-signal amplifier design.", prereq:["Diodes"], resources:["Sedra & Smith Ch.4-5"]},
+          {title:"Operational Amplifiers", desc:"Op-amp configurations: inverting, non-inverting, integrators, comparators.", prereq:["Transistor basics"], resources:["NPTEL Lecture 15"]},
+          {title:"Active & Passive Filters", desc:"Low-pass, high-pass, band-pass filter design for signal conditioning.", prereq:["Op-Amps"], resources:["Sedra & Smith Ch.17"]},
+          {title:"Power Supply Design", desc:"Linear & switching regulators for reliable DC power delivery.", prereq:["Rectifiers"], resources:["Rashid: Power Electronics Ch.1"]}
+        ]
+      }
+    ]
+  },
+  {
+    section: "3. Digital Electronics & Microcontrollers",
+    topics: [
+      {
+        title:"Digital Logic Design",
+        type:"topic",
+        desc:"Boolean algebra, combinational and sequential logic form the basis of all digital hardware, from simple gates to processors.",
+        prereq:["Analog Electronics"],
+        resources:["NPTEL: Digital System Design","Morris Mano: Digital Design"],
+        subtopics:[
+          {title:"Boolean Algebra & Logic Gates", desc:"Fundamental building blocks of digital circuits.", prereq:[], resources:["Morris Mano Ch.2"]},
+          {title:"Combinational Circuits", desc:"Multiplexers, encoders, adders — logic with no memory.", prereq:["Boolean Algebra"], resources:["Morris Mano Ch.4"]},
+          {title:"Sequential Circuits & FSMs", desc:"Flip-flops, counters, and finite state machines — logic with memory.", prereq:["Combinational Circuits"], resources:["Morris Mano Ch.5-6"]},
+          {title:"HDL: Verilog / VHDL", desc:"Describe digital hardware in code for simulation and FPGA synthesis.", prereq:["Sequential Circuits"], resources:["NPTEL: Verilog HDL"]},
+          {title:"FPGA Fundamentals", desc:"Reconfigurable logic used for prototyping and high-speed parallel processing.", prereq:["HDL"], resources:["Xilinx Vivado Docs"]}
+        ]
+      },
+      {
+        title:"Microcontrollers & Embedded C",
+        type:"topic",
+        desc:"Microcontrollers integrate a CPU, memory, and peripherals on one chip — the heart of every embedded system.",
+        prereq:["Digital Logic Design","C Programming"],
+        resources:["NPTEL: Embedded Systems","Michael Barr: Programming Embedded Systems"],
+        subtopics:[
+          {title:"8051 / AVR / PIC Basics", desc:"Classic 8-bit microcontroller architectures — great for learning fundamentals.", prereq:[], resources:["Mazidi: 8051 Microcontroller"]},
+          {title:"ARM Cortex-M (STM32)", desc:"Industry-standard 32-bit MCU family used in most modern embedded products.", prereq:["8-bit MCU basics"], resources:["STM32 Reference Manual"]},
+          {title:"GPIO, Timers & Interrupts", desc:"Core peripherals for reading sensors, generating PWM, and handling real-time events.", prereq:["ARM Cortex-M"], resources:["STM32CubeIDE Tutorials"]},
+          {title:"Communication Protocols (UART/SPI/I2C)", desc:"Standard buses for talking to sensors, displays, and other chips.", prereq:["GPIO & Timers"], resources:["Sparkfun: I2C vs SPI vs UART"]},
+          {title:"ADC / DAC & PWM", desc:"Bridge the analog and digital worlds — sensor reading and motor/LED control.", prereq:["GPIO & Timers"], resources:["STM32 ADC App Note"]}
+        ]
+      }
+    ]
+  },
+  {
+    section: "4. Embedded Systems Design",
+    topics: [
+      {
+        title:"RTOS & Firmware Architecture",
+        type:"topic",
+        desc:"Real-time operating systems (RTOS) let embedded firmware manage multiple concurrent tasks with strict timing guarantees.",
+        prereq:["Microcontrollers & Embedded C"],
+        resources:["FreeRTOS Documentation","NPTEL: Real-Time Systems"],
+        subtopics:[
+          {title:"FreeRTOS Basics", desc:"Tasks, queues, semaphores and scheduling on a lightweight RTOS.", prereq:[], resources:["FreeRTOS.org tutorials"]},
+          {title:"Interrupt-Driven Design", desc:"Writing safe, efficient ISRs and managing priority.", prereq:["FreeRTOS Basics"], resources:["ARM Cortex-M NVIC Guide"]},
+          {title:"Memory Management", desc:"Stack/heap sizing, static allocation, and avoiding fragmentation in constrained systems.", prereq:[], resources:["Barr Group: Embedded C Coding Standard"]},
+          {title:"Bootloaders & Firmware Updates", desc:"Safely flashing and updating firmware in the field (OTA).", prereq:["Memory Management"], resources:["STM32 Bootloader App Note"]}
+        ]
+      },
+      {
+        title:"PCB Design & Hardware",
+        type:"topic",
+        desc:"Turning a schematic into a manufacturable circuit board — footprint selection, routing, and signal integrity.",
+        prereq:["Analog Electronics","Digital Logic Design"],
+        resources:["KiCad Documentation","Altium Designer Academy"],
+        subtopics:[
+          {title:"Schematic Capture", desc:"Represent a circuit design formally before laying out the board.", prereq:[], resources:["KiCad Getting Started Guide"]},
+          {title:"PCB Layout & Routing", desc:"Placement, trace routing, and layer stack-up decisions.", prereq:["Schematic Capture"], resources:["Altium: PCB Design Basics"]},
+          {title:"Signal Integrity & EMI/EMC", desc:"Managing noise, crosstalk, and regulatory compliance in high-speed designs.", prereq:["PCB Layout"], resources:["IEEE EMC Society Resources"]},
+          {title:"Component Selection & Datasheets", desc:"Reading datasheets to choose the right part for power, tolerance, and package.", prereq:[], resources:["Digi-Key Tech Resources"]}
+        ]
+      }
+    ]
+  },
+  {
+    section: "5. Signal Processing & Control Systems",
+    topics: [
+      {
+        title:"Control Systems",
+        type:"topic",
+        desc:"Feedback theory used to design stable, responsive systems — from motor speed control to industrial automation.",
+        prereq:["Circuit Analysis","Differential Equations"],
+        resources:["NPTEL: Control Systems","Nagrath & Gopal: Control Systems Engineering"],
+        subtopics:[
+          {title:"Transfer Functions & Block Diagrams", desc:"Model system behavior in the frequency domain.", prereq:[], resources:["MIT OCW 6.302"]},
+          {title:"Stability Analysis (Bode/Nyquist)", desc:"Determine whether a feedback system will remain stable.", prereq:["Transfer Functions"], resources:["Nagrath & Gopal Ch.7"]},
+          {title:"PID Controllers", desc:"The most widely used control algorithm in industry.", prereq:["Stability Analysis"], resources:["MATLAB PID Tuning Guide"]},
+          {title:"State-Space Control", desc:"Modern control representation used for MIMO and optimal control.", prereq:["Linear Algebra"], resources:["MIT OCW 6.302 Ch.10"]}
+        ]
+      },
+      {
+        title:"Digital Signal Processing",
+        type:"topic",
+        desc:"Processing sampled signals digitally — filtering, transforms, and spectral analysis used in audio, communications, and sensor fusion.",
+        prereq:["Linear Algebra","Circuit Analysis"],
+        resources:["NPTEL: Digital Signal Processing","Oppenheim & Schafer: Discrete-Time Signal Processing"],
+        subtopics:[
+          {title:"Sampling & Quantization", desc:"Nyquist theorem and the effects of converting analog to digital.", prereq:[], resources:["Oppenheim Ch.4"]},
+          {title:"Fourier Transform / FFT", desc:"Move signals between time and frequency domains.", prereq:["Sampling"], resources:["MIT OCW 6.003 Signals & Systems"]},
+          {title:"Digital Filters (FIR/IIR)", desc:"Design filters implemented in software or DSP hardware.", prereq:["FFT"], resources:["NPTEL Lecture 25"]}
+        ]
+      }
+    ]
+  },
+  {
+    section: "6. Power Systems & Machines",
+    topics: [
+      {
+        title:"Electrical Machines",
+        type:"topic",
+        desc:"DC and AC motors/generators, and transformers — the electromechanical energy conversion devices behind industry and EVs.",
+        prereq:["Physics Fundamentals","Circuit Analysis"],
+        resources:["NPTEL: Electrical Machines I & II"],
+        subtopics:[
+          {title:"Transformers", desc:"Voltage step-up/step-down for efficient power transmission.", prereq:[], resources:["NPTEL Lecture 5"]},
+          {title:"DC Motors & Generators", desc:"Basic electromechanical conversion, still used in robotics.", prereq:[], resources:["NPTEL: Electrical Machines I"]},
+          {title:"Induction & Synchronous Machines", desc:"The workhorses of industrial power — pumps, fans, generators.", prereq:["DC Machines"], resources:["NPTEL: Electrical Machines II"]}
+        ]
+      },
+      {
+        title:"Power Systems & Power Electronics",
+        type:"topic",
+        desc:"Generation, transmission and distribution of electrical power, plus the switching converters that shape it.",
+        prereq:["Electrical Machines"],
+        resources:["NPTEL: Power Systems Analysis","Rashid: Power Electronics"],
+        subtopics:[
+          {title:"Power System Analysis", desc:"Load flow, fault analysis, and grid stability.", prereq:[], resources:["NPTEL Lecture 10"]},
+          {title:"Power Electronic Converters", desc:"AC-DC, DC-DC and DC-AC converters (rectifiers, buck/boost, inverters).", prereq:["Analog Electronics"], resources:["Rashid Ch.3-6"]},
+          {title:"Renewable Energy Systems", desc:"Solar/wind integration, MPPT, and grid-tied inverters.", prereq:["Power Converters"], resources:["NPTEL: Solar Photovoltaic Technology"]},
+          {title:"Protection & Switchgear", desc:"Relays, circuit breakers, and fault protection schemes.", prereq:["Power System Analysis"], resources:["IEEE Power & Energy Society resources"]}
+        ]
+      }
+    ]
+  },
+  {
+    section: "7. Communication Systems & IoT",
+    topics: [
+      {
+        title:"Communication Systems",
+        type:"topic",
+        desc:"How information is modulated, transmitted, and received over wired and wireless channels.",
+        prereq:["Digital Signal Processing"],
+        resources:["NPTEL: Principles of Communication Systems","Stallings: Wireless Communications and Networks"],
+        subtopics:[
+          {title:"Analog & Digital Modulation", desc:"AM/FM and ASK/FSK/PSK — encoding information onto a carrier.", prereq:[], resources:["NPTEL Lecture 12"]},
+          {title:"Antennas & RF Basics", desc:"Radiating and receiving electromagnetic energy efficiently.", prereq:["Maxwell's Equations"], resources:["IEEE Antennas & Propagation resources"]},
+          {title:"Wireless Protocols (WiFi/BLE/LoRa)", desc:"Short and long-range wireless standards used in connected devices.", prereq:["Modulation"], resources:["IEEE 802.15.4 Standard"]}
+        ]
+      },
+      {
+        title:"IoT & Embedded Networking",
+        type:"topic",
+        desc:"Connecting embedded devices to the internet and cloud platforms for monitoring and control.",
+        prereq:["Microcontrollers & Embedded C","Communication Systems"],
+        resources:["MQTT.org Documentation","AWS IoT Core Docs"],
+        subtopics:[
+          {title:"MQTT / CoAP Protocols", desc:"Lightweight messaging protocols designed for constrained devices.", prereq:[], resources:["MQTT Essentials series"]},
+          {title:"Cloud Integration (AWS/Azure IoT)", desc:"Sending device data to the cloud for storage, dashboards, and alerts.", prereq:["MQTT/CoAP"], resources:["AWS IoT Core Getting Started"]},
+          {title:"Edge Computing & Sensor Fusion", desc:"Processing data locally on the device before sending it upstream.", prereq:[], resources:["ARM: Introduction to Edge AI"]}
+        ]
+      }
+    ]
+  },
+  {
+    section: "8. VLSI & Chip Design (Advanced Track)",
+    topics: [
+      {
+        title:"Digital VLSI Design",
+        type:"topic",
+        desc:"Designing integrated circuits at the transistor and gate level — the path into chip design careers.",
+        prereq:["Digital Logic Design","Analog Electronics"],
+        resources:["NPTEL: VLSI Design","Weste & Harris: CMOS VLSI Design"],
+        subtopics:[
+          {title:"CMOS Fundamentals", desc:"The dominant transistor technology behind modern chips.", prereq:[], resources:["Weste & Harris Ch.1-2"]},
+          {title:"RTL Design (Verilog/SystemVerilog)", desc:"Describe digital hardware for synthesis into silicon.", prereq:["HDL basics"], resources:["NPTEL: RTL Design"]},
+          {title:"ASIC Design Flow", desc:"Synthesis, place & route, timing closure, and tape-out.", prereq:["RTL Design"], resources:["Synopsys / Cadence Academic resources"]},
+          {title:"Static Timing Analysis", desc:"Verifying a chip meets its speed requirements before fabrication.", prereq:["ASIC Flow"], resources:["NPTEL: Timing Analysis"]}
+        ]
+      }
+    ]
+  },
+  {
+    section: "9. Software & Simulation Tools",
+    topics: [
+      {
+        title:"EDA & Simulation Tools",
+        type:"tool",
+        desc:"Industry-standard software used across analog design, embedded firmware, and PCB layout.",
+        prereq:[],
+        resources:["Each tool below links to its official documentation"],
+        subtopics:[
+          {title:"MATLAB / Simulink", desc:"Modeling, simulation, and control system design.", prereq:[], resources:["MathWorks Documentation"]},
+          {title:"LTspice", desc:"Free SPICE simulator for analog circuit design.", prereq:[], resources:["Analog Devices LTspice Guide"]},
+          {title:"Proteus", desc:"Circuit simulation combined with microcontroller firmware testing.", prereq:[], resources:["Labcenter Electronics Docs"]},
+          {title:"KiCad / Altium Designer", desc:"Schematic capture and PCB layout tools (KiCad free, Altium industry-standard).", prereq:[], resources:["KiCad Docs","Altium Academy"]},
+          {title:"Keil uVision / STM32CubeIDE", desc:"IDEs for writing, debugging and flashing embedded C firmware.", prereq:[], resources:["Keil Docs","ST STM32CubeIDE Docs"]},
+          {title:"Arduino IDE", desc:"Beginner-friendly environment for rapid prototyping.", prereq:[], resources:["Arduino Reference"]}
+        ]
+      }
+    ]
+  }
+];
+
+const projects = [
+  {level:"Beginner", title:"LED Blinker & Button Debounce", items:["Blink an LED with a timer interrupt","Read a push-button with software debouncing","Build a simple traffic-light controller"]},
+  {level:"Beginner", title:"Sensor Data Logger", items:["Read temperature/humidity over I2C","Log readings to UART/serial monitor","Display values on an LCD"]},
+  {level:"Intermediate", title:"Smart Home IoT Node", items:["Connect an ESP32 to WiFi","Publish sensor data via MQTT","Build a simple dashboard (Node-RED / cloud)"]},
+  {level:"Intermediate", title:"DC Motor Speed Control", items:["Drive a motor with PWM + H-bridge","Implement closed-loop PID speed control","Tune gains using a step response"]},
+  {level:"Advanced", title:"RTOS-based Multi-Sensor System", items:["Use FreeRTOS tasks & queues","Handle multiple sensors + a communication task","Add an OTA firmware update mechanism"]},
+  {level:"Advanced", title:"Autonomous Line-Follower / SCADA Mini-project", items:["Sensor fusion + control loop","Wireless telemetry back to a base station","Basic fault detection and logging"]}
+];
+
+const careers = [
+  {title:"GATE Preparation", desc:"Postgraduate entrance exam covering circuits, signals, control systems, power systems, and digital logic — required for M.Tech and many PSU jobs in India.", tags:["Exam"]},
+  {title:"PSU / Core Industry Roles", desc:"Public sector and manufacturing companies hiring for power systems, plant electrical maintenance, and design engineering roles.", tags:["Core EE"]},
+  {title:"Embedded Software Engineer", desc:"Writes firmware for microcontrollers, RTOS-based systems, and device drivers across consumer, automotive, and industrial products.", tags:["Embedded"]},
+  {title:"VLSI / Chip Design Engineer", desc:"Works on RTL design, verification, physical design, or DFT for semiconductor companies.", tags:["VLSI"]},
+  {title:"IoT / Hardware Product Engineer", desc:"Builds connected devices end-to-end: PCB, firmware, cloud integration, and manufacturing test.", tags:["IoT"]},
+  {title:"Internships & Higher Studies", desc:"Summer internships (design/test/firmware) or MS/PhD research in power electronics, control, communications, or VLSI.", tags:["Internship","MS/PhD"]}
+];
+
+/* ============ RENDER ROADMAP ============ */
+const canvas = document.getElementById('canvas');
+roadmap.forEach(sec => {
+  const secEl = document.createElement('div');
+  secEl.className = 'section';
+  const h = document.createElement('div');
+  h.className = 'section-title';
+  h.textContent = sec.section;
+  secEl.appendChild(h);
+
+  sec.topics.forEach(topic => {
+    const row = document.createElement('div');
+    row.className = 'topic-row';
+
+    const topicNode = document.createElement('div');
+    topicNode.className = 'node ' + (topic.type === 'tool' ? 'tool' : 'topic');
+    topicNode.textContent = topic.title;
+    topicNode.addEventListener('click', () => openPanel(topic.type === 'tool' ? 'Tool' : 'Core Topic', topic));
+    row.appendChild(topicNode);
+
+    if (topic.subtopics && topic.subtopics.length) {
+      const conn = document.createElement('div');
+      conn.className = 'connector';
+      row.appendChild(conn);
+
+      const subWrap = document.createElement('div');
+      subWrap.className = 'subtopics';
+      topic.subtopics.forEach(sub => {
+        const subNode = document.createElement('div');
+        subNode.className = 'node sub';
+        subNode.textContent = sub.title;
+        subNode.addEventListener('click', () => openPanel('Sub-topic', sub));
+        subWrap.appendChild(subNode);
+      });
+      row.appendChild(subWrap);
+    }
+
+    secEl.appendChild(row);
+    row.style.marginBottom = '14px';
+  });
+
+  canvas.appendChild(secEl);
+});
+
+/* ============ RENDER PROJECTS ============ */
+const projectsGrid = document.getElementById('projectsGrid');
+projects.forEach(p => {
+  const card = document.createElement('div');
+  card.className = 'biblio-card';
+  card.innerHTML = `<span class="source-tag" style="background:${p.level==='Beginner'?'#4f7a28':p.level==='Intermediate'?'#a9720c':'#874efe'}">${p.level}</span>
+    <h4>${p.title}</h4>
+    <ul>${p.items.map(i=>`<li>${i}</li>`).join('')}</ul>`;
+  projectsGrid.appendChild(card);
+});
+
+/* ============ RENDER CAREERS ============ */
+const careersGrid = document.getElementById('careersGrid');
+careers.forEach(c => {
+  const card = document.createElement('div');
+  card.className = 'biblio-card';
+  card.innerHTML = `${c.tags.map(t=>`<span class="badge">${t}</span>`).join('')}
+    <h4 style="margin-top:8px;">${c.title}</h4>
+    <p style="font-size:13.5px;color:#333;line-height:1.6;">${c.desc}</p>`;
+  careersGrid.appendChild(card);
+});
+
+/* ============ DETAIL PANEL ============ */
+const overlay = document.getElementById('overlay');
+const panel = document.getElementById('panel');
+function openPanel(kicker, data){
+  document.getElementById('panelKicker').textContent = kicker;
+  document.getElementById('panelTitle').textContent = data.title;
+  document.getElementById('panelDesc').textContent = data.desc || 'No description available yet.';
+  const prereqEl = document.getElementById('panelPrereq');
+  const resEl = document.getElementById('panelResources');
+  prereqEl.innerHTML = (data.prereq && data.prereq.length)
+    ? data.prereq.map(p=>`<li>${p}</li>`).join('')
+    : '<li>None — good starting point</li>';
+  resEl.innerHTML = (data.resources && data.resources.length)
+    ? data.resources.map(r=>`<li>${r}</li>`).join('')
+    : '<li>Coming soon</li>';
+  overlay.classList.add('open');
+  panel.classList.add('open');
+}
+function closePanel(){
+  overlay.classList.remove('open');
+  panel.classList.remove('open');
+}
+document.getElementById('panelClose').addEventListener('click', closePanel);
+overlay.addEventListener('click', closePanel);
+
+/* ============ PAN & ZOOM ============ */
+const wrap = document.getElementById('roadmap');
+let scale = 0.85, panX = 20, panY = 20;
+let isDragging = false, startX = 0, startY = 0;
+
+function applyTransform(){
+  canvas.style.transform = `translate(${panX}px, ${panY}px) scale(${scale})`;
+}
+applyTransform();
+
+wrap.addEventListener('wheel', (e) => {
+  e.preventDefault();
+  const delta = e.deltaY > 0 ? -0.08 : 0.08;
+  const newScale = Math.min(2, Math.max(0.35, scale + delta));
+  scale = newScale;
+  applyTransform();
+}, {passive:false});
+
+wrap.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  wrap.classList.add('grabbing');
+  startX = e.clientX - panX;
+  startY = e.clientY - panY;
+});
+window.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
+  panX = e.clientX - startX;
+  panY = e.clientY - startY;
+  applyTransform();
+});
+window.addEventListener('mouseup', () => {
+  isDragging = false;
+  wrap.classList.remove('grabbing');
+});
+
+document.getElementById('zoomIn').addEventListener('click', ()=>{ scale = Math.min(2, scale+0.1); applyTransform(); });
+document.getElementById('zoomOut').addEventListener('click', ()=>{ scale = Math.max(0.35, scale-0.1); applyTransform(); });
+document.getElementById('zoomReset').addEventListener('click', ()=>{ scale = 0.85; panX = 20; panY = 20; applyTransform(); });
+document.getElementById('resetBtn').addEventListener('click', ()=>{ scale = 0.85; panX = 20; panY = 20; applyTransform(); });
+document.getElementById('downloadBtn').addEventListener('click', ()=>{
+  window.print();
+});
+</script>
+</body>
+</html>

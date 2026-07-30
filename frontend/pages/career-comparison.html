@@ -1,0 +1,99 @@
+<div class="topbar">
+  <div><h1>Career Comparison Dashboard</h1><div class="sub">Compare entry requirements, salaries, and future growth of different tech roles.</div></div>
+</div>
+
+<div class="content" style="display: flex; flex-direction: column; gap: 20px;">
+  <!-- Selector Panel -->
+  <div class="panel reveal" style="padding: 25px; display: flex; align-items: center; justify-content: center; gap: 20px; flex-wrap: wrap;">
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      <label for="compareRole1" style="font-weight: 700; font-size: 12.5px; color: var(--text-2);">Select First Role:</label>
+      <select id="compareRole1" class="form-input form-select" style="min-width: 250px;">
+        <option value="ROLE001" selected>Data Scientist</option>
+        <option value="ROLE002">Software Development Engineer (SDE)</option>
+        <option value="ROLE003">Full Stack Developer</option>
+        <option value="ROLE004">Cloud Engineer</option>
+        <option value="ROLE005">AI / ML Engineer</option>
+      </select>
+    </div>
+    
+    <div style="font-size: 20px; font-weight: 800; color: var(--indigo); align-self: flex-end; padding-bottom: 8px;">VS</div>
+
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      <label for="compareRole2" style="font-weight: 700; font-size: 12.5px; color: var(--text-2);">Select Second Role:</label>
+      <select id="compareRole2" class="form-input form-select" style="min-width: 250px;">
+        <option value="ROLE001">Data Scientist</option>
+        <option value="ROLE002" selected>Software Development Engineer (SDE)</option>
+        <option value="ROLE003">Full Stack Developer</option>
+        <option value="ROLE004">Cloud Engineer</option>
+        <option value="ROLE005">AI / ML Engineer</option>
+      </select>
+    </div>
+
+    <button class="start-btn" onclick="triggerComparison()" style="width: auto; padding: 11px 24px; align-self: flex-end; display: flex; align-items: center; gap: 8px;">
+      Compare <i class="ti ti-arrows-left-right"></i>
+    </button>
+  </div>
+
+  <!-- Comparison Results Panel -->
+  <div id="comparisonResultsPanel" class="panel reveal" style="display: none; padding: 30px;">
+    <h3 style="margin-bottom: 25px; text-align: center; font-size: 18px;" id="comparisonTitle">Comparing Careers</h3>
+    
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px;" id="comparisonGrid">
+      <!-- Role Left Col -->
+      <div style="border-right: 1px solid var(--border); padding-right: 15px;">
+        <h4 id="role1Name" style="color: var(--indigo); font-size: 20px; font-weight: 800; margin-bottom: 15px;">Role 1</h4>
+        <div style="margin-bottom: 20px;">
+          <h5 style="font-size: 13.5px; color: var(--text-2); margin-bottom: 5px;">Required Skills & Technologies:</h5>
+          <div id="role1Skills" style="display: flex; flex-wrap: wrap; gap: 6px;">
+            <!-- Filled dynamically -->
+          </div>
+        </div>
+      </div>
+      
+      <!-- Role Right Col -->
+      <div>
+        <h4 id="role2Name" style="color: var(--indigo); font-size: 20px; font-weight: 800; margin-bottom: 15px;">Role 2</h4>
+        <div style="margin-bottom: 20px;">
+          <h5 style="font-size: 13.5px; color: var(--text-2); margin-bottom: 5px;">Required Skills & Technologies:</h5>
+          <div id="role2Skills" style="display: flex; flex-wrap: wrap; gap: 6px;">
+            <!-- Filled dynamically -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Comparison Details Rows -->
+    <div style="margin-top: 30px; border-top: 1px solid var(--border); padding-top: 25px; display: flex; flex-direction: column; gap: 20px;">
+      <div style="display: grid; grid-template-columns: 180px 1fr; font-size: 13.5px;">
+        <strong style="color: var(--text-2);"><i class="ti ti-cash"></i> Salary Outlook:</strong>
+        <span id="salaryCompareText" style="color: var(--text);">Loading...</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 180px 1fr; font-size: 13.5px;">
+        <strong style="color: var(--text-2);"><i class="ti ti-chart-line"></i> Job Growth Rate:</strong>
+        <span id="growthCompareText" style="color: var(--text);">Loading...</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 180px 1fr; font-size: 13.5px;">
+        <strong style="color: var(--text-2);"><i class="ti ti-hourglass-empty"></i> Entry Difficulty:</strong>
+        <span id="difficultyCompareText" style="color: var(--text);">Loading...</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 180px 1fr; font-size: 13.5px;">
+        <strong style="color: var(--text-2);"><i class="ti ti-device-laptop"></i> Remote Work:</strong>
+        <span id="remoteCompareText" style="color: var(--text);">Loading...</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 180px 1fr; font-size: 13.5px;">
+        <strong style="color: var(--text-2);"><i class="ti ti-thumb-up"></i> Work-Life Balance:</strong>
+        <span id="balanceCompareText" style="color: var(--text);">Loading...</span>
+      </div>
+      <div style="display: grid; grid-template-columns: 180px 1fr; font-size: 13.5px;">
+        <strong style="color: var(--text-2);"><i class="ti ti-heart"></i> Best Suited For:</strong>
+        <span id="bestForText" style="color: var(--text);">Loading...</span>
+      </div>
+    </div>
+
+    <!-- AI Guidance Summary Box -->
+    <div style="margin-top: 30px; background: var(--indigo-light); border: 1px solid rgba(99, 102, 241, 0.2); border-radius: var(--radius); padding: 20px;">
+      <h4 style="color: var(--indigo); font-weight: 700; margin-bottom: 8px;"><i class="ti ti-bulb"></i> AI Mentor Comparison Summary</h4>
+      <p id="comparisonSummaryText" style="color: var(--text-2); font-size: 13.5px; line-height: 1.5;">Select two roles to compare their detailed pathways and career expectations.</p>
+    </div>
+  </div>
+</div>

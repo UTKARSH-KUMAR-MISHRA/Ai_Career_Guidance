@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Space Systems Engineer Roadmap</title>
+<style>
+  :root{
+    --bg:#0f172a; --panel:#0b1220; --line:#2b78e4; --yellow:#fdff00;
+    --sub:#ffe599; --card:#ffffff; --ink:#111827; --muted:#64748b;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#f8fafc;color:var(--ink);}
+  header{background:#0f172a;color:#fff;padding:22px 28px;}
+  header h1{margin:0;font-size:28px;}
+  header p{margin:6px 0 0;color:#94a3b8;font-size:14px;}
+  .toolbar{display:flex;gap:8px;padding:10px 16px;background:#fff;border-bottom:1px solid #e2e8f0;align-items:center;position:sticky;top:0;z-index:50;}
+  .toolbar button{border:1px solid #cbd5e1;background:#f1f5f9;border-radius:6px;padding:6px 12px;cursor:pointer;font-size:13px;}
+  .toolbar button:hover{background:#e2e8f0;}
+  .toolbar .hint{margin-left:auto;color:#64748b;font-size:12px;}
+  #viewport{width:100%;height:calc(100vh - 108px);overflow:hidden;position:relative;background:
+     radial-gradient(circle,#e2e8f0 1px,transparent 1px) 0 0/22px 22px, #f8fafc;
+     cursor:grab;}
+  #viewport.dragging{cursor:grabbing;}
+  #canvas{position:absolute;top:0;left:0;transform-origin:0 0;}
+  svg#edges{position:absolute;top:0;left:0;overflow:visible;pointer-events:none;}
+  .node{
+     position:absolute;border:2px solid #111;border-radius:6px;padding:10px 14px;
+     font-size:14px;font-weight:600;cursor:pointer;background:var(--sub);
+     box-shadow:1px 2px 0 rgba(0,0,0,.15);user-select:none;white-space:nowrap;
+  }
+  .node.title{background:var(--yellow);font-size:16px;}
+  .node.section{background:#fff;border-color:#94a3b8;font-weight:700;color:#334155;font-size:13px;padding:6px 10px;}
+  .node:hover{filter:brightness(0.95);transform:translateY(-1px);}
+  .node.expanded{outline:3px solid var(--line);}
+  .label{position:absolute;font-size:13px;font-weight:700;color:#334155;}
+  #overlay{display:none;position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:100;align-items:center;justify-content:center;}
+  #overlay.show{display:flex;}
+  #modal{background:#fff;border-radius:10px;max-width:560px;width:90%;max-height:80vh;overflow:auto;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.3);}
+  #modal h2{margin:0 0 6px;font-size:20px;}
+  #modal h4{margin:16px 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);}
+  #modal p{margin:0;font-size:14px;line-height:1.5;color:#334155;}
+  #modal ul{margin:4px 0;padding-left:18px;font-size:14px;color:#334155;}
+  #modal a{color:#2563eb;text-decoration:none;}
+  #modal a:hover{text-decoration:underline;}
+  #modal .close{float:right;border:none;background:none;font-size:20px;cursor:pointer;color:#64748b;}
+  footer{padding:26px 28px 60px;background:#0f172a;color:#cbd5e1;}
+  footer h2{color:#fff;font-size:20px;margin-top:0;}
+  footer h3{color:#fff;font-size:15px;margin-bottom:6px;}
+  footer ol{font-size:13px;line-height:1.7;padding-left:20px;}
+  footer a{color:#93c5fd;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🛰️ Space Systems Engineer Roadmap</h1>
+  <p>An interactive, pan &amp; zoom guide — beginner to advanced — for becoming a Space Systems Engineer</p>
+</header>
+
+<div class="toolbar">
+  <button id="zoomIn">➕ Zoom In</button>
+  <button id="zoomOut">➖ Zoom Out</button>
+  <button id="reset">⤢ Reset View</button>
+  <span class="hint">Drag to pan · Scroll to zoom · Click any node for details</span>
+</div>
+
+<div id="viewport">
+  <div id="canvas">
+    <svg id="edges" width="2000" height="3600"></svg>
+  </div>
+</div>
+
+<div id="overlay">
+  <div id="modal">
+    <button class="close" onclick="closeModal()">✕</button>
+    <h2 id="mTitle"></h2>
+    <p id="mDesc"></p>
+    <h4>Prerequisites</h4>
+    <ul id="mPre"></ul>
+    <h4>Learning Resources</h4>
+    <ul id="mRes"></ul>
+  </div>
+</div>
+
+<footer>
+  <h2>📚 Bibliography &amp; References</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;">
+    <div>
+      <h3>AIAA</h3>
+      <ol>
+        <li>Journal of Spacecraft and Rockets</li>
+        <li>Journal of Guidance, Control, and Dynamics</li>
+        <li>AIAA Journal — arc.aiaa.org</li>
+      </ol>
+    </div>
+    <div>
+      <h3>NPTEL</h3>
+      <ol>
+        <li>NPTEL — Satellite Communication (IIT Kharagpur)</li>
+        <li>NPTEL — Spacecraft Dynamics and Control</li>
+        <li>NPTEL — Rocket Propulsion</li>
+      </ol>
+    </div>
+    <div>
+      <h3>Agency & Standards References</h3>
+      <ol>
+        <li>NASA Systems Engineering Handbook</li>
+        <li>ECSS (European Cooperation for Space Standardization)</li>
+        <li>NASA Technical Reports Server (NTRS)</li>
+      </ol>
+    </div>
+    <div>
+      <h3>Standard Textbooks</h3>
+      <ol>
+        <li>Wiley J. Larson & James R. Wertz — <i>Space Mission Analysis and Design (SMAD)</i></li>
+        <li>David A. Vallado — <i>Fundamentals of Astrodynamics and Applications</i></li>
+        <li>James R. Wertz — <i>Spacecraft Attitude Determination and Control</i></li>
+        <li>George P. Sutton — <i>Rocket Propulsion Elements</i></li>
+      </ol>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ---------- DATA ----------
+const sections = [
+  {id:"sec1", title:"1. Math & Physics Foundations", items:[
+    {id:"calculus", title:"Calculus & Differential Equations",
+      desc:"Multivariable calculus and ODEs — foundational for orbital and attitude dynamics.",
+      pre:[], res:["MIT 18.03 Differential Equations"]},
+    {id:"linalg", title:"Linear Algebra",
+      desc:"Vectors, matrices, and rotations — the language of spacecraft attitude and orbits.",
+      pre:["Calculus & Differential Equations"], res:["MIT 18.06 Linear Algebra"]},
+    {id:"mechanics", title:"Classical Mechanics",
+      desc:"Newtonian and Lagrangian mechanics underlying orbital motion and rigid-body dynamics.",
+      pre:["Linear Algebra"], res:["MIT 8.01 Classical Mechanics"]},
+    {id:"thermo", title:"Thermodynamics & Heat Transfer",
+      desc:"Thermal balance principles needed for spacecraft thermal control design.",
+      pre:["Classical Mechanics"], res:["MIT 2.005 Thermal-Fluids Engineering"]},
+  ]},
+  {id:"sec2", title:"2. Orbital Mechanics & Astrodynamics", items:[
+    {id:"twobody", title:"Two-Body Orbital Mechanics",
+      desc:"Kepler's laws, orbital elements, and the fundamentals of satellite motion.",
+      pre:["Thermodynamics & Heat Transfer"], res:["Vallado — Fundamentals of Astrodynamics and Applications"]},
+    {id:"maneuvers", title:"Orbital Maneuvers & Transfers",
+      desc:"Hohmann transfers, plane changes, and delta-v budgeting for mission design.",
+      pre:["Two-Body Orbital Mechanics"], res:["Vallado Ch. 6"]},
+    {id:"perturbations", title:"Orbital Perturbations",
+      desc:"J2 effects, drag, and third-body perturbations that alter real-world orbits.",
+      pre:["Orbital Maneuvers & Transfers"], res:["Vallado Ch. 9"]},
+    {id:"interplanetary", title:"Interplanetary Trajectories",
+      desc:"Patched-conic approximations and gravity-assist trajectory design.",
+      pre:["Orbital Perturbations"], res:["Vallado Ch. 12"]},
+  ]},
+  {id:"sec3", title:"3. Spacecraft Subsystems", items:[
+    {id:"structures", title:"Spacecraft Structures & Mechanisms",
+      desc:"Launch load survival, deployables, and structural design for the space environment.",
+      pre:["Interplanetary Trajectories"], res:["SMAD Ch. 11"]},
+    {id:"power", title:"Power Systems",
+      desc:"Solar arrays, batteries, and power budgeting across eclipse and sunlit phases.",
+      pre:["Spacecraft Structures & Mechanisms"], res:["SMAD Ch. 10"]},
+    {id:"thermal", title:"Thermal Control Systems",
+      desc:"Radiators, MLI, and heaters that keep spacecraft components within operating limits.",
+      pre:["Power Systems"], res:["SMAD Ch. 11"]},
+    {id:"adcs", title:"Attitude Determination & Control (ADCS)",
+      desc:"Sensors, reaction wheels, and control laws for pointing spacecraft accurately.",
+      pre:["Thermal Control Systems"], res:["Wertz — Spacecraft Attitude Determination and Control"]},
+  ]},
+  {id:"sec4", title:"4. Space Environment & Effects", items:[
+    {id:"spaceenv", title:"Space Environment",
+      desc:"Vacuum, thermal cycling, and micrometeoroid/debris hazards spacecraft must survive.",
+      pre:["Attitude Determination & Control (ADCS)"], res:["SMAD Ch. 8"]},
+    {id:"radiation", title:"Radiation Effects",
+      desc:"Total ionizing dose, single-event effects, and radiation-hardened design practices.",
+      pre:["Space Environment"], res:["NASA radiation effects handbook"]},
+    {id:"debris", title:"Orbital Debris & Collision Avoidance",
+      desc:"Tracking conjunctions and designing for post-mission disposal compliance.",
+      pre:["Radiation Effects"], res:["NASA Orbital Debris Program Office guidance"]},
+    {id:"emc", title:"EMI/EMC in Spacecraft Design",
+      desc:"Managing electromagnetic interference between densely packed spacecraft electronics.",
+      pre:["Orbital Debris & Collision Avoidance"], res:["MIL-STD-461 EMC standard"]},
+  ]},
+  {id:"sec5", title:"5. Systems Engineering & Mission Design", items:[
+    {id:"sysengbasics", title:"Systems Engineering Fundamentals",
+      desc:"Requirements flow-down, trade studies, and the systems engineering V-model.",
+      pre:["EMI/EMC in Spacecraft Design"], res:["NASA Systems Engineering Handbook"]},
+    {id:"missiondesign", title:"Mission Architecture & Design",
+      desc:"Defining mission objectives, orbit selection, and overall spacecraft concept.",
+      pre:["Systems Engineering Fundamentals"], res:["SMAD Ch. 1-3"]},
+    {id:"budgets", title:"Mass, Power & Link Budgets",
+      desc:"Balancing competing resource constraints across every spacecraft subsystem.",
+      pre:["Mission Architecture & Design"], res:["SMAD Ch. 20-21"]},
+    {id:"riskmgmt", title:"Risk Management & Reviews",
+      desc:"PDR/CDR review processes and risk tracking across a mission lifecycle.",
+      pre:["Mass, Power & Link Budgets"], res:["NASA Systems Engineering Handbook Ch. 6"]},
+  ]},
+  {id:"sec6", title:"6. Space Propulsion & Power", items:[
+    {id:"proptypes", title:"Spacecraft Propulsion Types",
+      desc:"Chemical, electric, and cold-gas propulsion trade-offs for different missions.",
+      pre:["Risk Management & Reviews"], res:["Sutton — Rocket Propulsion Elements"]},
+    {id:"launchvehicles", title:"Launch Vehicle Fundamentals",
+      desc:"Staging, payload fairings, and launch vehicle selection for a given mission.",
+      pre:["Spacecraft Propulsion Types"], res:["SMAD Ch. 18"]},
+    {id:"electricprop", title:"Electric Propulsion",
+      desc:"Ion and Hall-effect thrusters used for efficient station-keeping and orbit raising.",
+      pre:["Launch Vehicle Fundamentals"], res:["Jahn — Physics of Electric Propulsion"]},
+    {id:"gnc", title:"Guidance, Navigation & Control (GNC)",
+      desc:"Integrating propulsion, sensors, and control algorithms for autonomous maneuvers.",
+      pre:["Electric Propulsion"], res:["AIAA GNC conference papers"]},
+  ]},
+  {id:"sec7", title:"7. Ground Systems, Testing & Operations", items:[
+    {id:"groundsystems", title:"Ground Segment & Communications",
+      desc:"Ground stations, telemetry, tracking, and command (TT&C) architectures.",
+      pre:["Guidance, Navigation & Control (GNC)"], res:["SMAD Ch. 13"]},
+    {id:"envtesting", title:"Environmental Test Campaigns",
+      desc:"Vibration, thermal-vacuum, and EMI testing to qualify flight hardware.",
+      pre:["Ground Segment & Communications"], res:["NASA GEVS environmental test standard"]},
+    {id:"integration", title:"Assembly, Integration & Test (AIT)",
+      desc:"Building up a spacecraft from subsystems and verifying it meets requirements.",
+      pre:["Environmental Test Campaigns"], res:["ECSS AIT standards"]},
+    {id:"operations", title:"Mission Operations",
+      desc:"Commanding, anomaly resolution, and day-to-day spacecraft operations post-launch.",
+      pre:["Assembly, Integration & Test (AIT)"], res:["NASA mission operations references"]},
+  ]},
+  {id:"sec8", title:"8. Career & Certifications", items:[
+    {id:"projects", title:"Portfolio Projects",
+      desc:"Design or build a CubeSat/small-satellite subsystem as a hands-on showcase project.",
+      pre:["Mission Operations"], res:["AIAA/university CubeSat programs"]},
+    {id:"internships", title:"Internships & Co-ops",
+      desc:"Hands-on experience at space agencies, primes, or New Space companies.",
+      pre:["Portfolio Projects"], res:["NASA/ESA internship programs"]},
+    {id:"interview", title:"Interview Preparation",
+      desc:"Technical interviews covering orbital mechanics, subsystems, and mission trade-offs.",
+      pre:["Internships & Co-ops"], res:["Space systems engineering interview guides"]},
+    {id:"careers", title:"Career Paths",
+      desc:"Systems Engineer, ADCS Engineer, Mission Design Engineer, Spacecraft Operations Engineer.",
+      pre:["Interview Preparation"], res:["AIAA career pathways"]},
+  ]},
+];
+
+// ---------- LAYOUT ENGINE (balanced 2-column grid) ----------
+const COL_W = 300, COL_GAP = 60, ROW_H = 54, ROW_GAP = 10;
+const LEFT_X = 70, RIGHT_X = LEFT_X + COL_W + COL_GAP;
+const CANVAS_CENTER = LEFT_X + (COL_W*2 + COL_GAP)/2;
+const SECTION_GAP = 46;
+
+const nodes = [];
+const edges = [];
+let cursorY = 90;
+
+nodes.push({id:"title", x:CANVAS_CENTER-140, y:20, w:280, h:50, type:"title", title:"Space Systems Engineer"});
+let prevSectionLastId = "title";
+
+sections.forEach(sec=>{
+  nodes.push({id:sec.id, x:LEFT_X, y:cursorY, w:COL_W*2+COL_GAP, h:28, type:"section", title:sec.title});
+  edges.push([prevSectionLastId, sec.id]);
+  cursorY += 28 + 14;
+
+  let prevInSection = sec.id;
+  sec.items.forEach((item, i)=>{
+    const col = i % 2;
+    const row = Math.floor(i / 2);
+    const x = col===0 ? LEFT_X : RIGHT_X;
+    const y = cursorY + row*(ROW_H+ROW_GAP);
+    nodes.push({id:item.id, x, y, w:COL_W, h:ROW_H, type:"node",
+      title:item.title, desc:item.desc, pre:item.pre, res:item.res});
+    edges.push([prevInSection, item.id]);
+    prevInSection = item.id;
+  });
+
+  const rows = Math.ceil(sec.items.length/2);
+  cursorY += rows*(ROW_H+ROW_GAP) + SECTION_GAP;
+  prevSectionLastId = prevInSection;
+});
+
+// ---------- RENDER ----------
+const canvas = document.getElementById('canvas');
+const svg = document.getElementById('edges');
+
+function centerY(n){ return n.y + n.h/2; }
+function centerX(n){ return n.x + n.w/2; }
+function byId(id){ return nodes.find(n=>n.id===id); }
+
+nodes.forEach(n=>{
+  const div = document.createElement('div');
+  div.className = 'node ' + (n.type||'node');
+  div.style.left = n.x+'px';
+  div.style.top = n.y+'px';
+  div.style.width = n.w+'px';
+  div.style.minHeight = n.h+'px';
+  div.style.display='flex';
+  div.style.alignItems='center';
+  div.style.justifyContent = n.type==='section' ? 'flex-start' : 'center';
+  div.textContent = n.title;
+  div.dataset.id = n.id;
+  if(n.type!=='section' && n.type!=='title'){
+    div.addEventListener('click', ()=>openModal(n));
+  }
+  canvas.appendChild(div);
+});
+
+let svgHtml = '';
+edges.forEach(([a,b])=>{
+  const A = byId(a), B = byId(b);
+  if(!A||!B) return;
+  const x1 = centerX(A), y1 = A.y+A.h, x2 = centerX(B), y2 = B.y;
+  const midY = (y1+y2)/2;
+  svgHtml += `<path d="M ${x1} ${y1} C ${x1} ${midY}, ${x2} ${midY}, ${x2} ${y2}" fill="none" stroke="#2b78e4" stroke-width="2.5" stroke-dasharray="0.8 6" stroke-linecap="round"/>`;
+});
+svg.innerHTML = svgHtml;
+
+let maxX=0, maxY=0;
+nodes.forEach(n=>{ maxX=Math.max(maxX,n.x+n.w+80); maxY=Math.max(maxY,n.y+n.h+80); });
+svg.setAttribute('width', maxX);
+svg.setAttribute('height', maxY);
+canvas.style.width = maxX+'px';
+canvas.style.height = maxY+'px';
+
+// ---------- PAN & ZOOM ----------
+const viewport = document.getElementById('viewport');
+let scale = 0.85, panX = 40, panY = 20;
+let isDragging=false, startX=0, startY=0, startPanX=0, startPanY=0;
+
+function applyTransform(){
+  canvas.style.transform = `translate(${panX}px,${panY}px) scale(${scale})`;
+}
+applyTransform();
+
+viewport.addEventListener('mousedown', e=>{
+  isDragging = true;
+  viewport.classList.add('dragging');
+  startX = e.clientX; startY = e.clientY;
+  startPanX = panX; startPanY = panY;
+});
+window.addEventListener('mousemove', e=>{
+  if(!isDragging) return;
+  panX = startPanX + (e.clientX - startX);
+  panY = startPanY + (e.clientY - startY);
+  applyTransform();
+});
+window.addEventListener('mouseup', ()=>{ isDragging=false; viewport.classList.remove('dragging'); });
+
+viewport.addEventListener('wheel', e=>{
+  e.preventDefault();
+  const delta = e.deltaY > 0 ? -0.08 : 0.08;
+  const newScale = Math.min(2.2, Math.max(0.3, scale + delta));
+  scale = newScale;
+  applyTransform();
+}, {passive:false});
+
+document.getElementById('zoomIn').onclick = ()=>{ scale = Math.min(2.2, scale+0.15); applyTransform(); };
+document.getElementById('zoomOut').onclick = ()=>{ scale = Math.max(0.3, scale-0.15); applyTransform(); };
+document.getElementById('reset').onclick = ()=>{ scale=0.85; panX=40; panY=20; applyTransform(); };
+
+// ---------- MODAL ----------
+function openModal(n){
+  document.getElementById('mTitle').textContent = n.title;
+  document.getElementById('mDesc').textContent = n.desc || '';
+  const pre = document.getElementById('mPre');
+  pre.innerHTML = (n.pre&&n.pre.length) ? n.pre.map(p=>`<li>${p}</li>`).join('') : '<li>None</li>';
+  const res = document.getElementById('mRes');
+  res.innerHTML = (n.res&&n.res.length) ? n.res.map(r=>`<li>${r}</li>`).join('') : '<li>—</li>';
+  document.getElementById('overlay').classList.add('show');
+}
+function closeModal(){ document.getElementById('overlay').classList.remove('show'); }
+document.getElementById('overlay').addEventListener('click', e=>{
+  if(e.target.id==='overlay') closeModal();
+});
+</script>
+</body>
+</html>

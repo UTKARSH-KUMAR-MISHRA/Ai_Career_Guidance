@@ -1,0 +1,280 @@
+skill_id,skill_name,skill_category,skill_type,difficulty_level,estimated_learning_hours,prerequisite_skill,industry_demand,description,certification_available
+SK001,Python,Programming,Technical,Beginner,40,Unknown,Very High,Python skill used in programming domain.,Yes
+SK002,Java,Programming,Technical,Intermediate,60,Unknown,Very High,Java skill used in programming domain.,Yes
+SK003,C,Programming,Technical,Advanced,20,Unknown,Very High,C skill used in programming domain.,Yes
+SK004,C++,Programming,Technical,Beginner,40,Unknown,Very High,C++ skill used in programming domain.,Yes
+SK005,C#,Programming,Technical,Intermediate,60,C++,Very High,C# skill used in programming domain.,Yes
+SK006,JavaScript,Programming,Technical,Advanced,20,C#,Very High,JavaScript skill used in programming domain.,Yes
+SK007,TypeScript,Programming,Technical,Beginner,40,JavaScript,Very High,TypeScript skill used in programming domain.,Yes
+SK008,Go,Programming,Technical,Intermediate,60,TypeScript,Very High,Go skill used in programming domain.,Yes
+SK009,Rust,Programming,Technical,Advanced,20,Go,Very High,Rust skill used in programming domain.,Yes
+SK010,PHP,Programming,Technical,Beginner,40,Rust,Very High,PHP skill used in programming domain.,Yes
+SK011,Kotlin,Programming,Technical,Intermediate,60,PHP,Very High,Kotlin skill used in programming domain.,Yes
+SK012,Swift,Programming,Technical,Advanced,20,Kotlin,Very High,Swift skill used in programming domain.,Yes
+SK013,R,Programming,Technical,Beginner,40,Swift,Very High,R skill used in programming domain.,Yes
+SK014,MATLAB,Programming,Technical,Intermediate,60,R,Very High,MATLAB skill used in programming domain.,Yes
+SK015,Scala,Programming,Technical,Advanced,20,MATLAB,Very High,Scala skill used in programming domain.,Yes
+SK016,Dart,Programming,Technical,Beginner,40,Scala,Very High,Dart skill used in programming domain.,Yes
+SK017,Ruby,Programming,Technical,Intermediate,60,Dart,Very High,Ruby skill used in programming domain.,Yes
+SK018,Perl,Programming,Technical,Advanced,20,Ruby,Very High,Perl skill used in programming domain.,Yes
+SK019,Shell Scripting,Programming,Technical,Beginner,40,Perl,Very High,Shell Scripting skill used in programming domain.,Yes
+SK020,Bash,Programming,Technical,Intermediate,60,Shell Scripting,Very High,Bash skill used in programming domain.,Yes
+SK021,HTML,Web Development,Technical,Advanced,20,Bash,High,HTML skill used in web development domain.,Yes
+SK022,CSS,Web Development,Technical,Beginner,40,HTML,High,CSS skill used in web development domain.,Yes
+SK023,Bootstrap,Web Development,Technical,Intermediate,60,CSS,High,Bootstrap skill used in web development domain.,Yes
+SK024,Tailwind CSS,Web Development,Technical,Advanced,20,Bootstrap,High,Tailwind CSS skill used in web development domain.,Yes
+SK025,React,Web Development,Technical,Beginner,40,Tailwind CSS,High,React skill used in web development domain.,Yes
+SK026,Angular,Web Development,Technical,Intermediate,60,React,High,Angular skill used in web development domain.,Yes
+SK027,Vue.js,Web Development,Technical,Advanced,20,Angular,High,Vue.js skill used in web development domain.,Yes
+SK028,Next.js,Web Development,Technical,Beginner,40,Vue.js,High,Next.js skill used in web development domain.,Yes
+SK029,Express.js,Web Development,Technical,Intermediate,60,Next.js,High,Express.js skill used in web development domain.,Yes
+SK030,Node.js,Web Development,Technical,Advanced,20,Express.js,High,Node.js skill used in web development domain.,Yes
+SK031,REST API,Web Development,Technical,Beginner,40,Node.js,High,REST API skill used in web development domain.,Yes
+SK032,GraphQL,Web Development,Technical,Intermediate,60,REST API,High,GraphQL skill used in web development domain.,Yes
+SK033,AJAX,Web Development,Technical,Advanced,20,GraphQL,High,AJAX skill used in web development domain.,Yes
+SK034,JSON,Web Development,Technical,Beginner,40,AJAX,High,JSON skill used in web development domain.,Yes
+SK035,XML,Web Development,Technical,Intermediate,60,JSON,High,XML skill used in web development domain.,Yes
+SK036,JWT,Web Development,Technical,Advanced,20,XML,High,JWT skill used in web development domain.,Yes
+SK037,OAuth,Web Development,Technical,Beginner,40,JWT,High,OAuth skill used in web development domain.,Yes
+SK038,Redux,Web Development,Technical,Intermediate,60,OAuth,High,Redux skill used in web development domain.,Yes
+SK039,Webpack,Web Development,Technical,Advanced,20,Redux,High,Webpack skill used in web development domain.,Yes
+SK040,Vite,Web Development,Technical,Beginner,40,Webpack,High,Vite skill used in web development domain.,Yes
+SK041,Responsive Design,Web Development,Technical,Intermediate,60,Vite,High,Responsive Design skill used in web development domain.,Yes
+SK042,Web Security,Web Development,Technical,Advanced,20,Responsive Design,High,Web Security skill used in web development domain.,Yes
+SK043,Authentication,Web Development,Technical,Beginner,40,Web Security,High,Authentication skill used in web development domain.,Yes
+SK044,Authorization,Web Development,Technical,Intermediate,60,Authentication,High,Authorization skill used in web development domain.,Yes
+SK045,SSR,Web Development,Technical,Advanced,20,Authorization,High,SSR skill used in web development domain.,Yes
+SK046,SPA,Web Development,Technical,Beginner,40,SSR,High,SPA skill used in web development domain.,Yes
+SK047,Micro Frontends,Web Development,Technical,Intermediate,60,SPA,High,Micro Frontends skill used in web development domain.,Yes
+SK048,PWA,Web Development,Technical,Advanced,20,Micro Frontends,High,PWA skill used in web development domain.,Yes
+SK049,Nginx,Web Development,Technical,Beginner,40,PWA,High,Nginx skill used in web development domain.,Yes
+SK050,Apache,Web Development,Technical,Intermediate,60,Nginx,High,Apache skill used in web development domain.,Yes
+SK051,Machine Learning,AI/ML,Technical,Advanced,20,Apache,Very High,Machine Learning skill used in ai/ml domain.,Yes
+SK052,Deep Learning,AI/ML,Technical,Beginner,40,Machine Learning,Very High,Deep Learning skill used in ai/ml domain.,Yes
+SK053,NLP,AI/ML,Technical,Intermediate,60,Deep Learning,Very High,NLP skill used in ai/ml domain.,Yes
+SK054,Computer Vision,AI/ML,Technical,Advanced,20,NLP,Very High,Computer Vision skill used in ai/ml domain.,Yes
+SK055,Generative AI,AI/ML,Technical,Beginner,40,Computer Vision,Very High,Generative AI skill used in ai/ml domain.,Yes
+SK056,Prompt Engineering,AI/ML,Technical,Intermediate,60,Generative AI,Very High,Prompt Engineering skill used in ai/ml domain.,Yes
+SK057,LLMs,AI/ML,Technical,Advanced,20,Prompt Engineering,Very High,LLMs skill used in ai/ml domain.,Yes
+SK058,RAG,AI/ML,Technical,Beginner,40,LLMs,Very High,RAG skill used in ai/ml domain.,Yes
+SK059,LangChain,AI/ML,Technical,Intermediate,60,RAG,Very High,LangChain skill used in ai/ml domain.,Yes
+SK060,LlamaIndex,AI/ML,Technical,Advanced,20,LangChain,Very High,LlamaIndex skill used in ai/ml domain.,Yes
+SK061,Vector Database,AI/ML,Technical,Beginner,40,LlamaIndex,Very High,Vector Database skill used in ai/ml domain.,Yes
+SK062,Embeddings,AI/ML,Technical,Intermediate,60,Vector Database,Very High,Embeddings skill used in ai/ml domain.,Yes
+SK063,Neural Networks,AI/ML,Technical,Advanced,20,Embeddings,Very High,Neural Networks skill used in ai/ml domain.,Yes
+SK064,TensorFlow,AI/ML,Technical,Beginner,40,Neural Networks,Very High,TensorFlow skill used in ai/ml domain.,Yes
+SK065,PyTorch,AI/ML,Technical,Intermediate,60,TensorFlow,Very High,PyTorch skill used in ai/ml domain.,Yes
+SK066,Keras,AI/ML,Technical,Advanced,20,PyTorch,Very High,Keras skill used in ai/ml domain.,Yes
+SK067,Scikit-learn,AI/ML,Technical,Beginner,40,Keras,Very High,Scikit-learn skill used in ai/ml domain.,Yes
+SK068,XGBoost,AI/ML,Technical,Intermediate,60,Scikit-learn,Very High,XGBoost skill used in ai/ml domain.,Yes
+SK069,LightGBM,AI/ML,Technical,Advanced,20,XGBoost,Very High,LightGBM skill used in ai/ml domain.,Yes
+SK070,OpenCV,AI/ML,Technical,Beginner,40,LightGBM,Very High,OpenCV skill used in ai/ml domain.,Yes
+SK071,Hugging Face,AI/ML,Technical,Intermediate,60,OpenCV,Very High,Hugging Face skill used in ai/ml domain.,Yes
+SK072,Transformers,AI/ML,Technical,Advanced,20,Hugging Face,Very High,Transformers skill used in ai/ml domain.,Yes
+SK073,Model Fine-tuning,AI/ML,Technical,Beginner,40,Transformers,Very High,Model Fine-tuning skill used in ai/ml domain.,Yes
+SK074,RLHF,AI/ML,Technical,Intermediate,60,Model Fine-tuning,Very High,RLHF skill used in ai/ml domain.,Yes
+SK075,Diffusion Models,AI/ML,Technical,Advanced,20,RLHF,Very High,Diffusion Models skill used in ai/ml domain.,Yes
+SK076,GAN,AI/ML,Technical,Beginner,40,Diffusion Models,Very High,GAN skill used in ai/ml domain.,Yes
+SK077,Recommendation Systems,AI/ML,Technical,Intermediate,60,GAN,Very High,Recommendation Systems skill used in ai/ml domain.,Yes
+SK078,Time Series,AI/ML,Technical,Advanced,20,Recommendation Systems,Very High,Time Series skill used in ai/ml domain.,Yes
+SK079,Feature Engineering,AI/ML,Technical,Beginner,40,Time Series,Very High,Feature Engineering skill used in ai/ml domain.,Yes
+SK080,Model Evaluation,AI/ML,Technical,Intermediate,60,Feature Engineering,Very High,Model Evaluation skill used in ai/ml domain.,Yes
+SK081,Hyperparameter Tuning,AI/ML,Technical,Advanced,20,Model Evaluation,Very High,Hyperparameter Tuning skill used in ai/ml domain.,Yes
+SK082,MLOps,AI/ML,Technical,Beginner,40,Hyperparameter Tuning,Very High,MLOps skill used in ai/ml domain.,Yes
+SK083,MLflow,AI/ML,Technical,Intermediate,60,MLOps,Very High,MLflow skill used in ai/ml domain.,Yes
+SK084,FastAPI,AI/ML,Technical,Advanced,20,MLflow,Very High,FastAPI skill used in ai/ml domain.,Yes
+SK085,ONNX,AI/ML,Technical,Beginner,40,FastAPI,Very High,ONNX skill used in ai/ml domain.,Yes
+SK086,AI Ethics,AI/ML,Technical,Intermediate,60,ONNX,Very High,AI Ethics skill used in ai/ml domain.,Yes
+SK087,Responsible AI,AI/ML,Technical,Advanced,20,AI Ethics,Very High,Responsible AI skill used in ai/ml domain.,Yes
+SK088,Explainable AI,AI/ML,Technical,Beginner,40,Responsible AI,Very High,Explainable AI skill used in ai/ml domain.,Yes
+SK089,Speech Recognition,AI/ML,Technical,Intermediate,60,Explainable AI,Very High,Speech Recognition skill used in ai/ml domain.,Yes
+SK090,OCR,AI/ML,Technical,Advanced,20,Speech Recognition,Very High,OCR skill used in ai/ml domain.,Yes
+SK091,NumPy,Data,Technical,Beginner,40,OCR,High,NumPy skill used in data domain.,Yes
+SK092,Pandas,Data,Technical,Intermediate,60,NumPy,High,Pandas skill used in data domain.,Yes
+SK093,Matplotlib,Data,Technical,Advanced,20,Pandas,High,Matplotlib skill used in data domain.,Yes
+SK094,Seaborn,Data,Technical,Beginner,40,Matplotlib,High,Seaborn skill used in data domain.,Yes
+SK095,Power BI,Data,Technical,Intermediate,60,Seaborn,High,Power BI skill used in data domain.,Yes
+SK096,Tableau,Data,Technical,Advanced,20,Power BI,High,Tableau skill used in data domain.,Yes
+SK097,Excel,Data,Technical,Beginner,40,Tableau,High,Excel skill used in data domain.,Yes
+SK098,Statistics,Data,Technical,Intermediate,60,Excel,High,Statistics skill used in data domain.,Yes
+SK099,Probability,Data,Technical,Advanced,20,Statistics,High,Probability skill used in data domain.,Yes
+SK100,Linear Algebra,Data,Technical,Beginner,40,Probability,High,Linear Algebra skill used in data domain.,Yes
+SK101,Calculus,Data,Technical,Intermediate,60,Linear Algebra,High,Calculus skill used in data domain.,Yes
+SK102,Data Cleaning,Data,Technical,Advanced,20,Calculus,High,Data Cleaning skill used in data domain.,Yes
+SK103,EDA,Data,Technical,Beginner,40,Data Cleaning,High,EDA skill used in data domain.,Yes
+SK104,Feature Selection,Data,Technical,Intermediate,60,EDA,High,Feature Selection skill used in data domain.,Yes
+SK105,Data Visualization,Data,Technical,Advanced,20,Feature Selection,High,Data Visualization skill used in data domain.,Yes
+SK106,Hypothesis Testing,Data,Technical,Beginner,40,Data Visualization,High,Hypothesis Testing skill used in data domain.,Yes
+SK107,Regression,Data,Technical,Intermediate,60,Hypothesis Testing,High,Regression skill used in data domain.,Yes
+SK108,Classification,Data,Technical,Advanced,20,Regression,High,Classification skill used in data domain.,Yes
+SK109,Clustering,Data,Technical,Beginner,40,Classification,High,Clustering skill used in data domain.,Yes
+SK110,Dimensionality Reduction,Data,Technical,Intermediate,60,Clustering,High,Dimensionality Reduction skill used in data domain.,Yes
+SK111,Big Data,Data,Technical,Advanced,20,Dimensionality Reduction,High,Big Data skill used in data domain.,Yes
+SK112,Spark,Data,Technical,Beginner,40,Big Data,High,Spark skill used in data domain.,Yes
+SK113,Hadoop,Data,Technical,Intermediate,60,Spark,High,Hadoop skill used in data domain.,Yes
+SK114,Airflow,Data,Technical,Advanced,20,Hadoop,High,Airflow skill used in data domain.,Yes
+SK115,Snowflake,Data,Technical,Beginner,40,Airflow,High,Snowflake skill used in data domain.,Yes
+SK116,Redshift,Data,Technical,Intermediate,60,Snowflake,High,Redshift skill used in data domain.,Yes
+SK117,ETL,Data,Technical,Advanced,20,Redshift,High,ETL skill used in data domain.,Yes
+SK118,Data Warehouse,Data,Technical,Beginner,40,ETL,High,Data Warehouse skill used in data domain.,Yes
+SK119,Data Mining,Data,Technical,Intermediate,60,Data Warehouse,High,Data Mining skill used in data domain.,Yes
+SK120,Business Analytics,Data,Technical,Advanced,20,Data Mining,High,Business Analytics skill used in data domain.,Yes
+SK121,AWS,Cloud,Technical,Beginner,40,Business Analytics,Very High,AWS skill used in cloud domain.,Yes
+SK122,Azure,Cloud,Technical,Intermediate,60,AWS,Very High,Azure skill used in cloud domain.,Yes
+SK123,Google Cloud,Cloud,Technical,Advanced,20,Azure,Very High,Google Cloud skill used in cloud domain.,Yes
+SK124,Docker,Cloud,Technical,Beginner,40,Google Cloud,Very High,Docker skill used in cloud domain.,Yes
+SK125,Kubernetes,Cloud,Technical,Intermediate,60,Docker,Very High,Kubernetes skill used in cloud domain.,Yes
+SK126,Jenkins,Cloud,Technical,Advanced,20,Kubernetes,Very High,Jenkins skill used in cloud domain.,Yes
+SK127,GitHub Actions,Cloud,Technical,Beginner,40,Jenkins,Very High,GitHub Actions skill used in cloud domain.,Yes
+SK128,Terraform,Cloud,Technical,Intermediate,60,GitHub Actions,Very High,Terraform skill used in cloud domain.,Yes
+SK129,Ansible,Cloud,Technical,Advanced,20,Terraform,Very High,Ansible skill used in cloud domain.,Yes
+SK130,Linux,Cloud,Technical,Beginner,40,Ansible,Very High,Linux skill used in cloud domain.,Yes
+SK131,Ubuntu,Cloud,Technical,Intermediate,60,Linux,Very High,Ubuntu skill used in cloud domain.,Yes
+SK132,CentOS,Cloud,Technical,Advanced,20,Ubuntu,Very High,CentOS skill used in cloud domain.,Yes
+SK133,CI/CD,Cloud,Technical,Beginner,40,CentOS,Very High,CI/CD skill used in cloud domain.,Yes
+SK134,Cloud Security,Cloud,Technical,Intermediate,60,CI/CD,Very High,Cloud Security skill used in cloud domain.,Yes
+SK135,Load Balancing,Cloud,Technical,Advanced,20,Cloud Security,Very High,Load Balancing skill used in cloud domain.,Yes
+SK136,Virtualization,Cloud,Technical,Beginner,40,Load Balancing,Very High,Virtualization skill used in cloud domain.,Yes
+SK137,EC2,Cloud,Technical,Intermediate,60,Virtualization,Very High,EC2 skill used in cloud domain.,Yes
+SK138,S3,Cloud,Technical,Advanced,20,EC2,Very High,S3 skill used in cloud domain.,Yes
+SK139,Lambda,Cloud,Technical,Beginner,40,S3,Very High,Lambda skill used in cloud domain.,Yes
+SK140,CloudFormation,Cloud,Technical,Intermediate,60,Lambda,Very High,CloudFormation skill used in cloud domain.,Yes
+SK141,Prometheus,Cloud,Technical,Advanced,20,CloudFormation,Very High,Prometheus skill used in cloud domain.,Yes
+SK142,Grafana,Cloud,Technical,Beginner,40,Prometheus,Very High,Grafana skill used in cloud domain.,Yes
+SK143,ELK Stack,Cloud,Technical,Intermediate,60,Grafana,Very High,ELK Stack skill used in cloud domain.,Yes
+SK144,Kafka,Cloud,Technical,Advanced,20,ELK Stack,Very High,Kafka skill used in cloud domain.,Yes
+SK145,RabbitMQ,Cloud,Technical,Beginner,40,Kafka,Very High,RabbitMQ skill used in cloud domain.,Yes
+SK146,Redis,Cloud,Technical,Intermediate,60,RabbitMQ,Very High,Redis skill used in cloud domain.,Yes
+SK147,MongoDB Atlas,Cloud,Technical,Advanced,20,Redis,Very High,MongoDB Atlas skill used in cloud domain.,Yes
+SK148,Helm,Cloud,Technical,Beginner,40,MongoDB Atlas,Very High,Helm skill used in cloud domain.,Yes
+SK149,Istio,Cloud,Technical,Intermediate,60,Helm,Very High,Istio skill used in cloud domain.,Yes
+SK150,OpenShift,Cloud,Technical,Advanced,20,Istio,Very High,OpenShift skill used in cloud domain.,Yes
+SK151,HAProxy,Cloud,Technical,Beginner,40,OpenShift,Very High,HAProxy skill used in cloud domain.,Yes
+SK152,Vault,Cloud,Technical,Intermediate,60,HAProxy,Very High,Vault skill used in cloud domain.,Yes
+SK153,IAM,Cloud,Technical,Advanced,20,Vault,Very High,IAM skill used in cloud domain.,Yes
+SK154,Cloud Monitoring,Cloud,Technical,Beginner,40,IAM,Very High,Cloud Monitoring skill used in cloud domain.,Yes
+SK155,Autoscaling,Cloud,Technical,Intermediate,60,Cloud Monitoring,Very High,Autoscaling skill used in cloud domain.,Yes
+SK156,Disaster Recovery,Cloud,Technical,Advanced,20,Autoscaling,Very High,Disaster Recovery skill used in cloud domain.,Yes
+SK157,Container Security,Cloud,Technical,Beginner,40,Disaster Recovery,Very High,Container Security skill used in cloud domain.,Yes
+SK158,DevSecOps,Cloud,Technical,Intermediate,60,Container Security,Very High,DevSecOps skill used in cloud domain.,Yes
+SK159,ArgoCD,Cloud,Technical,Advanced,20,DevSecOps,Very High,ArgoCD skill used in cloud domain.,Yes
+SK160,SQL,Database,Technical,Beginner,40,ArgoCD,High,SQL skill used in database domain.,Yes
+SK161,MySQL,Database,Technical,Intermediate,60,SQL,High,MySQL skill used in database domain.,Yes
+SK162,PostgreSQL,Database,Technical,Advanced,20,MySQL,High,PostgreSQL skill used in database domain.,Yes
+SK163,Oracle,Database,Technical,Beginner,40,PostgreSQL,High,Oracle skill used in database domain.,Yes
+SK164,SQLite,Database,Technical,Intermediate,60,Oracle,High,SQLite skill used in database domain.,Yes
+SK165,MongoDB,Database,Technical,Advanced,20,SQLite,High,MongoDB skill used in database domain.,Yes
+SK166,Redis DB,Database,Technical,Beginner,40,MongoDB,High,Redis DB skill used in database domain.,Yes
+SK167,Cassandra,Database,Technical,Intermediate,60,Redis DB,High,Cassandra skill used in database domain.,Yes
+SK168,Neo4j,Database,Technical,Advanced,20,Cassandra,High,Neo4j skill used in database domain.,Yes
+SK169,Firebase,Database,Technical,Beginner,40,Neo4j,High,Firebase skill used in database domain.,Yes
+SK170,Supabase,Database,Technical,Intermediate,60,Firebase,High,Supabase skill used in database domain.,Yes
+SK171,DynamoDB,Database,Technical,Advanced,20,Supabase,High,DynamoDB skill used in database domain.,Yes
+SK172,ElasticSearch,Database,Technical,Beginner,40,DynamoDB,High,ElasticSearch skill used in database domain.,Yes
+SK173,MariaDB,Database,Technical,Intermediate,60,ElasticSearch,High,MariaDB skill used in database domain.,Yes
+SK174,SQL Server,Database,Technical,Advanced,20,MariaDB,High,SQL Server skill used in database domain.,Yes
+SK175,InfluxDB,Database,Technical,Beginner,40,SQL Server,High,InfluxDB skill used in database domain.,Yes
+SK176,ClickHouse,Database,Technical,Intermediate,60,InfluxDB,High,ClickHouse skill used in database domain.,Yes
+SK177,BigQuery,Database,Technical,Advanced,20,ClickHouse,High,BigQuery skill used in database domain.,Yes
+SK178,Hive,Database,Technical,Beginner,40,BigQuery,High,Hive skill used in database domain.,Yes
+SK179,HBase,Database,Technical,Intermediate,60,Hive,High,HBase skill used in database domain.,Yes
+SK180,Ethical Hacking,Cyber Security,Technical,Advanced,20,HBase,High,Ethical Hacking skill used in cyber security domain.,Yes
+SK181,Penetration Testing,Cyber Security,Technical,Beginner,40,Ethical Hacking,High,Penetration Testing skill used in cyber security domain.,Yes
+SK182,Network Security,Cyber Security,Technical,Intermediate,60,Penetration Testing,High,Network Security skill used in cyber security domain.,Yes
+SK183,Cryptography,Cyber Security,Technical,Advanced,20,Network Security,High,Cryptography skill used in cyber security domain.,Yes
+SK184,Firewalls,Cyber Security,Technical,Beginner,40,Cryptography,High,Firewalls skill used in cyber security domain.,Yes
+SK185,SIEM,Cyber Security,Technical,Intermediate,60,Firewalls,High,SIEM skill used in cyber security domain.,Yes
+SK186,SOC,Cyber Security,Technical,Advanced,20,SIEM,High,SOC skill used in cyber security domain.,Yes
+SK187,Burp Suite,Cyber Security,Technical,Beginner,40,SOC,High,Burp Suite skill used in cyber security domain.,Yes
+SK188,Metasploit,Cyber Security,Technical,Intermediate,60,Burp Suite,High,Metasploit skill used in cyber security domain.,Yes
+SK189,Nmap,Cyber Security,Technical,Advanced,20,Metasploit,High,Nmap skill used in cyber security domain.,Yes
+SK190,Wireshark,Cyber Security,Technical,Beginner,40,Nmap,High,Wireshark skill used in cyber security domain.,Yes
+SK191,OWASP,Cyber Security,Technical,Intermediate,60,Wireshark,High,OWASP skill used in cyber security domain.,Yes
+SK192,Linux Security,Cyber Security,Technical,Advanced,20,OWASP,High,Linux Security skill used in cyber security domain.,Yes
+SK193,IAM Security,Cyber Security,Technical,Beginner,40,Linux Security,High,IAM Security skill used in cyber security domain.,Yes
+SK194,Zero Trust,Cyber Security,Technical,Intermediate,60,IAM Security,High,Zero Trust skill used in cyber security domain.,Yes
+SK195,Incident Response,Cyber Security,Technical,Advanced,20,Zero Trust,High,Incident Response skill used in cyber security domain.,Yes
+SK196,Malware Analysis,Cyber Security,Technical,Beginner,40,Incident Response,High,Malware Analysis skill used in cyber security domain.,Yes
+SK197,Digital Forensics,Cyber Security,Technical,Intermediate,60,Malware Analysis,High,Digital Forensics skill used in cyber security domain.,Yes
+SK198,Threat Hunting,Cyber Security,Technical,Advanced,20,Digital Forensics,High,Threat Hunting skill used in cyber security domain.,Yes
+SK199,Security Auditing,Cyber Security,Technical,Beginner,40,Threat Hunting,High,Security Auditing skill used in cyber security domain.,Yes
+SK200,Risk Assessment,Cyber Security,Technical,Intermediate,60,Security Auditing,High,Risk Assessment skill used in cyber security domain.,Yes
+SK201,Compliance,Cyber Security,Technical,Advanced,20,Risk Assessment,High,Compliance skill used in cyber security domain.,Yes
+SK202,Vulnerability Assessment,Cyber Security,Technical,Beginner,40,Compliance,High,Vulnerability Assessment skill used in cyber security domain.,Yes
+SK203,PKI,Cyber Security,Technical,Intermediate,60,Vulnerability Assessment,High,PKI skill used in cyber security domain.,Yes
+SK204,SSL/TLS,Cyber Security,Technical,Advanced,20,PKI,High,SSL/TLS skill used in cyber security domain.,Yes
+SK205,Flutter,Mobile,Technical,Beginner,40,SSL/TLS,High,Flutter skill used in mobile domain.,Yes
+SK206,React Native,Mobile,Technical,Intermediate,60,Flutter,High,React Native skill used in mobile domain.,Yes
+SK207,Android Studio,Mobile,Technical,Advanced,20,React Native,High,Android Studio skill used in mobile domain.,Yes
+SK208,SwiftUI,Mobile,Technical,Beginner,40,Android Studio,High,SwiftUI skill used in mobile domain.,Yes
+SK209,Jetpack Compose,Mobile,Technical,Intermediate,60,SwiftUI,High,Jetpack Compose skill used in mobile domain.,Yes
+SK210,Firebase Mobile,Mobile,Technical,Advanced,20,Jetpack Compose,High,Firebase Mobile skill used in mobile domain.,Yes
+SK211,Room Database,Mobile,Technical,Beginner,40,Firebase Mobile,High,Room Database skill used in mobile domain.,Yes
+SK212,SQLite Mobile,Mobile,Technical,Intermediate,60,Room Database,High,SQLite Mobile skill used in mobile domain.,Yes
+SK213,Push Notifications,Mobile,Technical,Advanced,20,SQLite Mobile,High,Push Notifications skill used in mobile domain.,Yes
+SK214,Google Maps API,Mobile,Technical,Beginner,40,Push Notifications,High,Google Maps API skill used in mobile domain.,Yes
+SK215,REST API Integration,Mobile,Technical,Intermediate,60,Google Maps API,High,REST API Integration skill used in mobile domain.,Yes
+SK216,Material Design,Mobile,Technical,Advanced,20,REST API Integration,High,Material Design skill used in mobile domain.,Yes
+SK217,App Publishing,Mobile,Technical,Beginner,40,Material Design,High,App Publishing skill used in mobile domain.,Yes
+SK218,Play Store Deployment,Mobile,Technical,Intermediate,60,App Publishing,High,Play Store Deployment skill used in mobile domain.,Yes
+SK219,State Management,Mobile,Technical,Advanced,20,Play Store Deployment,High,State Management skill used in mobile domain.,Yes
+SK220,Selenium,Testing,Technical,Beginner,40,State Management,High,Selenium skill used in testing domain.,Yes
+SK221,JUnit,Testing,Technical,Intermediate,60,Selenium,High,JUnit skill used in testing domain.,Yes
+SK222,PyTest,Testing,Technical,Advanced,20,JUnit,High,PyTest skill used in testing domain.,Yes
+SK223,Cypress,Testing,Technical,Beginner,40,PyTest,High,Cypress skill used in testing domain.,Yes
+SK224,Playwright,Testing,Technical,Intermediate,60,Cypress,High,Playwright skill used in testing domain.,Yes
+SK225,Manual Testing,Testing,Technical,Advanced,20,Playwright,High,Manual Testing skill used in testing domain.,Yes
+SK226,Automation Testing,Testing,Technical,Beginner,40,Manual Testing,High,Automation Testing skill used in testing domain.,Yes
+SK227,API Testing,Testing,Technical,Intermediate,60,Automation Testing,High,API Testing skill used in testing domain.,Yes
+SK228,Performance Testing,Testing,Technical,Advanced,20,API Testing,High,Performance Testing skill used in testing domain.,Yes
+SK229,Load Testing,Testing,Technical,Beginner,40,Performance Testing,High,Load Testing skill used in testing domain.,Yes
+SK230,JMeter,Testing,Technical,Intermediate,60,Load Testing,High,JMeter skill used in testing domain.,Yes
+SK231,Postman,Testing,Technical,Advanced,20,JMeter,High,Postman skill used in testing domain.,Yes
+SK232,Unit Testing,Testing,Technical,Beginner,40,Postman,High,Unit Testing skill used in testing domain.,Yes
+SK233,Integration Testing,Testing,Technical,Intermediate,60,Unit Testing,High,Integration Testing skill used in testing domain.,Yes
+SK234,Regression Testing,Testing,Technical,Advanced,20,Integration Testing,High,Regression Testing skill used in testing domain.,Yes
+SK235,Communication,Soft Skills,Soft Skill,Beginner,40,Regression Testing,High,Communication skill used in soft skills domain.,Yes
+SK236,Leadership,Soft Skills,Soft Skill,Intermediate,60,Communication,High,Leadership skill used in soft skills domain.,Yes
+SK237,Problem Solving,Soft Skills,Soft Skill,Advanced,20,Leadership,High,Problem Solving skill used in soft skills domain.,Yes
+SK238,Critical Thinking,Soft Skills,Soft Skill,Beginner,40,Problem Solving,High,Critical Thinking skill used in soft skills domain.,Yes
+SK239,Analytical Thinking,Soft Skills,Soft Skill,Intermediate,60,Critical Thinking,High,Analytical Thinking skill used in soft skills domain.,Yes
+SK240,Teamwork,Soft Skills,Soft Skill,Advanced,20,Analytical Thinking,High,Teamwork skill used in soft skills domain.,Yes
+SK241,Presentation Skills,Soft Skills,Soft Skill,Beginner,40,Teamwork,High,Presentation Skills skill used in soft skills domain.,Yes
+SK242,Negotiation,Soft Skills,Soft Skill,Intermediate,60,Presentation Skills,High,Negotiation skill used in soft skills domain.,Yes
+SK243,Public Speaking,Soft Skills,Soft Skill,Advanced,20,Negotiation,High,Public Speaking skill used in soft skills domain.,Yes
+SK244,Time Management,Soft Skills,Soft Skill,Beginner,40,Public Speaking,High,Time Management skill used in soft skills domain.,Yes
+SK245,Adaptability,Soft Skills,Soft Skill,Intermediate,60,Time Management,High,Adaptability skill used in soft skills domain.,Yes
+SK246,Creativity,Soft Skills,Soft Skill,Advanced,20,Adaptability,High,Creativity skill used in soft skills domain.,Yes
+SK247,Decision Making,Soft Skills,Soft Skill,Beginner,40,Creativity,High,Decision Making skill used in soft skills domain.,Yes
+SK248,Conflict Resolution,Soft Skills,Soft Skill,Intermediate,60,Decision Making,High,Conflict Resolution skill used in soft skills domain.,Yes
+SK249,Emotional Intelligence,Soft Skills,Soft Skill,Advanced,20,Conflict Resolution,High,Emotional Intelligence skill used in soft skills domain.,Yes
+SK250,Active Listening,Soft Skills,Soft Skill,Beginner,40,Emotional Intelligence,High,Active Listening skill used in soft skills domain.,Yes
+SK251,Documentation,Soft Skills,Soft Skill,Intermediate,60,Active Listening,High,Documentation skill used in soft skills domain.,Yes
+SK252,Research Skills,Soft Skills,Soft Skill,Advanced,20,Documentation,High,Research Skills skill used in soft skills domain.,Yes
+SK253,Mentoring,Soft Skills,Soft Skill,Beginner,40,Research Skills,High,Mentoring skill used in soft skills domain.,Yes
+SK254,Networking,Soft Skills,Soft Skill,Intermediate,60,Mentoring,High,Networking skill used in soft skills domain.,Yes
+SK255,Customer Handling,Soft Skills,Soft Skill,Advanced,20,Networking,High,Customer Handling skill used in soft skills domain.,Yes
+SK256,Business Communication,Soft Skills,Soft Skill,Beginner,40,Customer Handling,High,Business Communication skill used in soft skills domain.,Yes
+SK257,Professional Ethics,Soft Skills,Soft Skill,Intermediate,60,Business Communication,High,Professional Ethics skill used in soft skills domain.,Yes
+SK258,Project Planning,Soft Skills,Soft Skill,Advanced,20,Professional Ethics,High,Project Planning skill used in soft skills domain.,Yes
+SK259,Agile Mindset,Soft Skills,Soft Skill,Beginner,40,Project Planning,High,Agile Mindset skill used in soft skills domain.,Yes
+SK260,Figma,Design,Technical,Intermediate,60,Agile Mindset,High,Figma skill used in design domain.,Yes
+SK261,Adobe XD,Design,Technical,Advanced,20,Figma,High,Adobe XD skill used in design domain.,Yes
+SK262,Photoshop,Design,Technical,Beginner,40,Adobe XD,High,Photoshop skill used in design domain.,Yes
+SK263,Illustrator,Design,Technical,Intermediate,60,Photoshop,High,Illustrator skill used in design domain.,Yes
+SK264,Canva,Design,Technical,Advanced,20,Illustrator,High,Canva skill used in design domain.,Yes
+SK265,Wireframing,Design,Technical,Beginner,40,Canva,High,Wireframing skill used in design domain.,Yes
+SK266,Prototyping,Design,Technical,Intermediate,60,Wireframing,High,Prototyping skill used in design domain.,Yes
+SK267,UX Research,Design,Technical,Advanced,20,Prototyping,High,UX Research skill used in design domain.,Yes
+SK268,UI Design,Design,Technical,Beginner,40,UX Research,High,UI Design skill used in design domain.,Yes
+SK269,Design Systems,Design,Technical,Intermediate,60,UI Design,High,Design Systems skill used in design domain.,Yes
+SK270,Color Theory,Design,Technical,Advanced,20,Design Systems,High,Color Theory skill used in design domain.,Yes
+SK271,Typography,Design,Technical,Beginner,40,Color Theory,High,Typography skill used in design domain.,Yes
+SK272,Accessibility,Design,Technical,Intermediate,60,Typography,High,Accessibility skill used in design domain.,Yes
+SK273,Responsive Design Design,Design,Technical,Advanced,20,Accessibility,High,Responsive Design Design skill used in design domain.,Yes
+SK274,Animation,Design,Technical,Beginner,40,Responsive Design Design,High,Animation skill used in design domain.,Yes
+SK275,Motion Design,Design,Technical,Intermediate,60,Animation,High,Motion Design skill used in design domain.,Yes
+SK276,User Journey Mapping,Design,Technical,Advanced,20,Motion Design,High,User Journey Mapping skill used in design domain.,Yes
+SK277,Usability Testing,Design,Technical,Beginner,40,User Journey Mapping,High,Usability Testing skill used in design domain.,Yes
+SK278,Information Architecture,Design,Technical,Intermediate,60,Usability Testing,High,Information Architecture skill used in design domain.,Yes
+SK279,Interaction Design,Design,Technical,Advanced,20,Information Architecture,High,Interaction Design skill used in design domain.,Yes

@@ -1,0 +1,1101 @@
+/* =====================================================
+   PROFILE PAGE - AI CAREER GUIDANCE
+   ===================================================== */
+
+:root{
+    --primary:#4F46E5;
+    --primary-dark:#3730A3;
+    --primary-light:#EEF0FF;
+
+    --bg:#F5F6FA;
+    --card:#FFFFFF;
+    --border:#ECEDF3;
+
+    --text:#111827;
+    --text2:#6B7280;
+    --text3:#9CA3AF;
+
+    --green:#16A34A;
+    --red:#EF4444;
+    --yellow:#F59E0B;
+
+    --radius:14px;
+
+    --shadow:
+        0 10px 25px rgba(17,24,39,.06);
+
+    --transition:.25s ease;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:var(--bg);
+
+    font-family:
+    "Segoe UI",
+    sans-serif;
+
+    color:var(--text);
+
+}
+
+a{
+
+    text-decoration:none;
+
+}
+
+button{
+
+    cursor:pointer;
+
+}
+
+.app{
+
+    display:grid;
+
+    grid-template-columns:220px 1fr;
+
+    min-height:100vh;
+
+}
+
+/* =======================
+SIDEBAR
+======================= */
+
+.sidebar{
+
+    background:#181B33;
+
+    color:white;
+
+    padding:20px;
+
+}
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:40px;
+
+}
+
+.logo{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:12px;
+
+    background:linear-gradient(
+        135deg,
+        #6C63FF,
+        #4338CA
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:20px;
+
+}
+
+.brand small{
+
+    display:block;
+
+    color:#9CA3AF;
+
+}
+
+.nav{
+
+    list-style:none;
+
+}
+
+.nav li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:13px;
+
+    border-radius:12px;
+
+    margin-bottom:8px;
+
+    transition:var(--transition);
+
+}
+
+.nav li:hover{
+
+    background:#2C315D;
+
+}
+
+.nav li.active{
+
+    background:var(--primary);
+
+}
+
+/* =======================
+MAIN
+======================= */
+
+.main{
+
+    padding:30px;
+
+}
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+}
+
+.topbar h1{
+
+    font-size:32px;
+
+}
+
+.topbar p{
+
+    color:var(--text2);
+
+    margin-top:5px;
+
+}
+
+/* =======================
+SAVE BUTTON
+======================= */
+
+.save-btn{
+
+    background:var(--primary);
+
+    color:white;
+
+    border:none;
+
+    padding:13px 24px;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.save-btn:hover{
+
+    background:var(--primary-dark);
+
+}
+
+/* =======================
+LAYOUT
+======================= */
+
+.profile-container{
+
+    display:grid;
+
+    grid-template-columns:
+
+        330px
+
+        1fr;
+
+    gap:25px;
+
+}
+
+.left-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.right-column{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+/* =======================
+CARD
+======================= */
+
+.card{
+
+    background:white;
+
+    border-radius:16px;
+
+    padding:25px;
+
+    box-shadow:var(--shadow);
+
+    border:1px solid var(--border);
+
+}
+
+.card h2{
+
+    font-size:22px;
+
+    margin-bottom:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+.card h3{
+
+    font-size:20px;
+
+    margin-bottom:18px;
+
+}
+
+.card h4{
+
+    margin-top:20px;
+
+    margin-bottom:12px;
+
+    color:var(--text2);
+
+}
+
+/* =======================
+PROFILE CARD
+======================= */
+
+.profile-card{
+
+    text-align:center;
+
+}
+
+.profile-image{
+
+    width:150px;
+
+    height:150px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    border:5px solid var(--primary-light);
+
+}
+
+.profile-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.upload-btn{
+
+    margin-top:20px;
+
+    padding:10px 18px;
+
+    background:var(--primary-light);
+
+    color:var(--primary);
+
+    border:none;
+
+    border-radius:10px;
+
+    font-weight:600;
+
+}
+
+.progress{
+
+    margin-top:20px;
+
+    width:100%;
+
+    height:12px;
+
+    background:#ECECF4;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    width:20%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        var(--primary),
+        #7C72FF
+    );
+
+}
+
+.percentage{
+
+    display:block;
+
+    margin-top:12px;
+
+    color:var(--text2);
+
+}
+/* =====================================================
+   FORM ELEMENTS
+===================================================== */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.input-group label{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:var(--text2);
+
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    background:#fff;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:var(--transition);
+
+}
+
+.input-group textarea{
+
+    resize:vertical;
+
+    min-height:120px;
+
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(79,70,229,.08);
+
+}
+
+/* ==========================
+SECTION HEADER
+========================== */
+
+.section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.small-btn{
+
+    background:var(--primary-light);
+
+    color:var(--primary);
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:10px 18px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.small-btn:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/* ==========================
+SKILL CHIPS
+========================== */
+
+.chips{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:10px;
+
+}
+
+.chip{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:12px 18px;
+
+    border:1px solid var(--border);
+
+    border-radius:50px;
+
+    background:#fff;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+    font-size:14px;
+
+}
+
+.chip:hover{
+
+    background:var(--primary-light);
+
+    border-color:var(--primary);
+
+    transform:translateY(-2px);
+
+}
+
+.chip input{
+
+    accent-color:var(--primary);
+
+}
+
+/* ==========================
+RESUME BOX
+========================== */
+
+.resume-box{
+
+    border:2px dashed var(--border);
+
+    border-radius:18px;
+
+    padding:45px;
+
+    text-align:center;
+
+    transition:var(--transition);
+
+}
+
+.resume-box:hover{
+
+    border-color:var(--primary);
+
+    background:var(--primary-light);
+
+}
+
+.resume-box i{
+
+    font-size:50px;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.resume-box p{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+}
+
+.resume-box span{
+
+    color:var(--text2);
+
+    display:block;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================
+TOGGLE LIST
+========================== */
+
+.toggle-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.toggle-list label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+}
+
+.toggle-list input{
+
+    width:18px;
+
+    height:18px;
+
+    accent-color:var(--primary);
+
+}
+
+/* ==========================
+SAVE SECTION
+========================== */
+
+.save-section{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-top:10px;
+
+}
+
+.save-btn.large{
+
+    padding:15px 40px;
+
+    font-size:16px;
+
+}
+
+/* ==========================
+HOVER EFFECTS
+========================== */
+
+.card{
+
+    transition:all .25s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+}
+
+.upload-btn,
+.save-btn,
+.small-btn{
+
+    transition:all .25s ease;
+
+}
+
+.upload-btn:hover,
+.save-btn:hover,
+.small-btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================
+ICONS
+========================== */
+
+.card h2 i{
+
+    color:var(--primary);
+
+}
+
+.card h3 i{
+
+    color:var(--primary);
+
+}
+/* =====================================================
+   FORM ELEMENTS
+===================================================== */
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.input-group label{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+    color:var(--text2);
+
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    background:#fff;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:var(--transition);
+
+}
+
+.input-group textarea{
+
+    resize:vertical;
+
+    min-height:120px;
+
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(79,70,229,.08);
+
+}
+
+/* ==========================
+SECTION HEADER
+========================== */
+
+.section-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.small-btn{
+
+    background:var(--primary-light);
+
+    color:var(--primary);
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:10px 18px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.small-btn:hover{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+/* ==========================
+SKILL CHIPS
+========================== */
+
+.chips{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:10px;
+
+}
+
+.chip{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:12px 18px;
+
+    border:1px solid var(--border);
+
+    border-radius:50px;
+
+    background:#fff;
+
+    cursor:pointer;
+
+    transition:var(--transition);
+
+    font-size:14px;
+
+}
+
+.chip:hover{
+
+    background:var(--primary-light);
+
+    border-color:var(--primary);
+
+    transform:translateY(-2px);
+
+}
+
+.chip input{
+
+    accent-color:var(--primary);
+
+}
+
+/* ==========================
+RESUME BOX
+========================== */
+
+.resume-box{
+
+    border:2px dashed var(--border);
+
+    border-radius:18px;
+
+    padding:45px;
+
+    text-align:center;
+
+    transition:var(--transition);
+
+}
+
+.resume-box:hover{
+
+    border-color:var(--primary);
+
+    background:var(--primary-light);
+
+}
+
+.resume-box i{
+
+    font-size:50px;
+
+    color:var(--primary);
+
+    margin-bottom:20px;
+
+}
+
+.resume-box p{
+
+    font-size:18px;
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+}
+
+.resume-box span{
+
+    color:var(--text2);
+
+    display:block;
+
+    margin-bottom:20px;
+
+}
+
+/* ==========================
+TOGGLE LIST
+========================== */
+
+.toggle-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.toggle-list label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:15px;
+
+    cursor:pointer;
+
+}
+
+.toggle-list input{
+
+    width:18px;
+
+    height:18px;
+
+    accent-color:var(--primary);
+
+}
+
+/* ==========================
+SAVE SECTION
+========================== */
+
+.save-section{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    margin-top:10px;
+
+}
+
+.save-btn.large{
+
+    padding:15px 40px;
+
+    font-size:16px;
+
+}
+
+/* ==========================
+HOVER EFFECTS
+========================== */
+
+.card{
+
+    transition:all .25s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+}
+
+.upload-btn,
+.save-btn,
+.small-btn{
+
+    transition:all .25s ease;
+
+}
+
+.upload-btn:hover,
+.save-btn:hover,
+.small-btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================
+ICONS
+========================== */
+
+.card h2 i{
+
+    color:var(--primary);
+
+}
+
+.card h3 i{
+
+    color:var(--primary);
+
+}
+.toast{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    background:#4F46E5;
+    color:#fff;
+    padding:14px 22px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    opacity:0;
+    transform:translateY(20px);
+    transition:.3s;
+    z-index:9999;
+}
+
+.toast.show{
+    opacity:1;
+    transform:translateY(0);
+}

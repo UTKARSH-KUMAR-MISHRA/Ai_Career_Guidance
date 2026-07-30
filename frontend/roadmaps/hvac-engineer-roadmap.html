@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HVAC Engineer Roadmap</title>
+<style>
+  :root{
+    --bg:#0f172a; --panel:#0b1220; --line:#2b78e4; --yellow:#fdff00;
+    --sub:#ffe599; --card:#ffffff; --ink:#111827; --muted:#64748b;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#f8fafc;color:var(--ink);}
+  header{background:#0f172a;color:#fff;padding:22px 28px;}
+  header h1{margin:0;font-size:28px;}
+  header p{margin:6px 0 0;color:#94a3b8;font-size:14px;}
+  .toolbar{display:flex;gap:8px;padding:10px 16px;background:#fff;border-bottom:1px solid #e2e8f0;align-items:center;position:sticky;top:0;z-index:50;}
+  .toolbar button{border:1px solid #cbd5e1;background:#f1f5f9;border-radius:6px;padding:6px 12px;cursor:pointer;font-size:13px;}
+  .toolbar button:hover{background:#e2e8f0;}
+  .toolbar .hint{margin-left:auto;color:#64748b;font-size:12px;}
+  #viewport{width:100%;height:calc(100vh - 108px);overflow:hidden;position:relative;background:
+     radial-gradient(circle,#e2e8f0 1px,transparent 1px) 0 0/22px 22px, #f8fafc;
+     cursor:grab;}
+  #viewport.dragging{cursor:grabbing;}
+  #canvas{position:absolute;top:0;left:0;transform-origin:0 0;}
+  svg#edges{position:absolute;top:0;left:0;overflow:visible;pointer-events:none;}
+  .node{
+     position:absolute;border:2px solid #111;border-radius:6px;padding:10px 14px;
+     font-size:14px;font-weight:600;cursor:pointer;background:var(--sub);
+     box-shadow:1px 2px 0 rgba(0,0,0,.15);user-select:none;white-space:nowrap;
+  }
+  .node.title{background:var(--yellow);font-size:16px;}
+  .node.section{background:#fff;border-color:#94a3b8;font-weight:700;color:#334155;font-size:13px;padding:6px 10px;}
+  .node:hover{filter:brightness(0.95);transform:translateY(-1px);}
+  .node.expanded{outline:3px solid var(--line);}
+  .label{position:absolute;font-size:13px;font-weight:700;color:#334155;}
+  #overlay{display:none;position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:100;align-items:center;justify-content:center;}
+  #overlay.show{display:flex;}
+  #modal{background:#fff;border-radius:10px;max-width:560px;width:90%;max-height:80vh;overflow:auto;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.3);}
+  #modal h2{margin:0 0 6px;font-size:20px;}
+  #modal h4{margin:16px 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);}
+  #modal p{margin:0;font-size:14px;line-height:1.5;color:#334155;}
+  #modal ul{margin:4px 0;padding-left:18px;font-size:14px;color:#334155;}
+  #modal a{color:#2563eb;text-decoration:none;}
+  #modal a:hover{text-decoration:underline;}
+  #modal .close{float:right;border:none;background:none;font-size:20px;cursor:pointer;color:#64748b;}
+  footer{padding:26px 28px 60px;background:#0f172a;color:#cbd5e1;}
+  footer h2{color:#fff;font-size:20px;margin-top:0;}
+  footer h3{color:#fff;font-size:15px;margin-bottom:6px;}
+  footer ol{font-size:13px;line-height:1.7;padding-left:20px;}
+  footer a{color:#93c5fd;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>❄️ HVAC Engineer Roadmap</h1>
+  <p>An interactive, pan &amp; zoom guide — beginner to advanced — for becoming an HVAC Engineer</p>
+</header>
+
+<div class="toolbar">
+  <button id="zoomIn">➕ Zoom In</button>
+  <button id="zoomOut">➖ Zoom Out</button>
+  <button id="reset">⤢ Reset View</button>
+  <span class="hint">Drag to pan · Scroll to zoom · Click any node for details</span>
+</div>
+
+<div id="viewport">
+  <div id="canvas">
+    <svg id="edges" width="2000" height="3600"></svg>
+  </div>
+</div>
+
+<div id="overlay">
+  <div id="modal">
+    <button class="close" onclick="closeModal()">✕</button>
+    <h2 id="mTitle"></h2>
+    <p id="mDesc"></p>
+    <h4>Prerequisites</h4>
+    <ul id="mPre"></ul>
+    <h4>Learning Resources</h4>
+    <ul id="mRes"></ul>
+  </div>
+</div>
+
+<footer>
+  <h2>📚 Bibliography &amp; References</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;">
+    <div>
+      <h3>ASHRAE</h3>
+      <ol>
+        <li>ASHRAE Handbook — Fundamentals</li>
+        <li>ASHRAE Handbook — HVAC Systems and Equipment</li>
+        <li>ASHRAE 90.1 Energy Standard for Buildings</li>
+      </ol>
+    </div>
+    <div>
+      <h3>NPTEL</h3>
+      <ol>
+        <li>NPTEL — Refrigeration and Air Conditioning (IIT Kharagpur)</li>
+        <li>NPTEL — Heat Transfer</li>
+        <li>NPTEL — Fluid Mechanics</li>
+      </ol>
+    </div>
+    <div>
+      <h3>MIT OpenCourseWare</h3>
+      <ol>
+        <li>2.51 Heat and Mass Transfer</li>
+        <li>2.006 Thermal-Fluids Engineering</li>
+        <li>4.401 Environmental Technologies in Buildings</li>
+      </ol>
+    </div>
+    <div>
+      <h3>Standard Textbooks</h3>
+      <ol>
+        <li>Pita — <i>Air Conditioning Principles and Systems</i></li>
+        <li>McQuiston, Parker & Spitler — <i>Heating, Ventilating, and Air Conditioning: Analysis and Design</i></li>
+        <li>Stoecker & Jones — <i>Refrigeration and Air Conditioning</i></li>
+        <li>Cengel & Ghajar — <i>Heat and Mass Transfer</i></li>
+      </ol>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ---------- DATA ----------
+const sections = [
+  {id:"sec1", title:"1. Math & Physics Foundations", items:[
+    {id:"calculus", title:"Calculus & Differential Equations",
+      desc:"Multivariable calculus and ODEs — the mathematical basis for thermal and fluid analysis.",
+      pre:[], res:["MIT 18.03 Differential Equations"]},
+    {id:"thermo", title:"Thermodynamics",
+      desc:"Energy balances, refrigeration cycles, and psychrometric processes central to HVAC design.",
+      pre:["Calculus & Differential Equations"], res:["Cengel — Thermodynamics: An Engineering Approach"]},
+    {id:"fluidmech", title:"Fluid Mechanics",
+      desc:"Airflow and fluid flow behavior in ducts, pipes, and air handling equipment.",
+      pre:["Thermodynamics"], res:["MIT 2.25 Advanced Fluid Mechanics"]},
+    {id:"heattransfer", title:"Heat Transfer",
+      desc:"Conduction, convection, and radiation principles governing building heating and cooling loads.",
+      pre:["Fluid Mechanics"], res:["Cengel & Ghajar — Heat and Mass Transfer"]},
+  ]},
+  {id:"sec2", title:"2. Engineering Drawing & CAD", items:[
+    {id:"sketching", title:"Technical Sketching",
+      desc:"Freehand sketching to quickly explore and communicate ductwork and piping layouts.",
+      pre:["Heat Transfer"], res:["Engineering Design Graphics (textbook)"]},
+    {id:"drawingstd", title:"Engineering Drawing Standards",
+      desc:"Orthographic projections and drawing conventions used in mechanical building drawings.",
+      pre:["Technical Sketching"], res:["ASME Y14.5 GD&T standard"]},
+    {id:"hvaccad", title:"HVAC CAD Tools (AutoCAD MEP/Revit MEP)",
+      desc:"Building information modeling and 2D/3D drafting tools specific to mechanical systems.",
+      pre:["Engineering Drawing Standards"], res:["Autodesk Revit MEP documentation"]},
+    {id:"pidductwork", title:"P&ID and Ductwork Drawings",
+      desc:"Reading and producing piping & instrumentation diagrams and ductwork layout drawings.",
+      pre:["HVAC CAD Tools (AutoCAD MEP/Revit MEP)"], res:["ASHRAE ductwork design guide"]},
+  ]},
+  {id:"sec3", title:"3. Psychrometrics & Load Calculations", items:[
+    {id:"psychrometrics", title:"Psychrometrics Fundamentals",
+      desc:"Understanding air properties — humidity, enthalpy, and dew point — for comfort conditioning.",
+      pre:["P&ID and Ductwork Drawings"], res:["ASHRAE Handbook — Fundamentals Ch. 1"]},
+    {id:"loadcalc", title:"Cooling & Heating Load Calculations",
+      desc:"Manual J/N-style calculations to size HVAC equipment for a building's thermal loads.",
+      pre:["Psychrometrics Fundamentals"], res:["ACCA Manual J / ASHRAE load calculation methods"]},
+    {id:"envelope", title:"Building Envelope & Insulation",
+      desc:"How walls, windows, and roofs affect heat gain/loss and overall system sizing.",
+      pre:["Cooling & Heating Load Calculations"], res:["ASHRAE 90.1 building envelope requirements"]},
+    {id:"iaq", title:"Indoor Air Quality Standards",
+      desc:"Ventilation rates and filtration requirements for healthy, comfortable indoor spaces.",
+      pre:["Building Envelope & Insulation"], res:["ASHRAE 62.1 Ventilation for Acceptable IAQ"]},
+  ]},
+  {id:"sec4", title:"4. HVAC Systems & Equipment", items:[
+    {id:"refrigeration", title:"Refrigeration Cycle & Refrigerants",
+      desc:"Vapor-compression cycles and refrigerant properties that underlie cooling equipment.",
+      pre:["Indoor Air Quality Standards"], res:["Stoecker & Jones — Refrigeration and Air Conditioning"]},
+    {id:"chillersboilers", title:"Chillers & Boilers",
+      desc:"Central plant equipment for large-scale heating and cooling of buildings.",
+      pre:["Refrigeration Cycle & Refrigerants"], res:["ASHRAE Handbook — HVAC Systems and Equipment"]},
+    {id:"ahuductdesign", title:"Air Handling Units & Ductwork Design",
+      desc:"Selecting AHUs and sizing ductwork to deliver conditioned air efficiently.",
+      pre:["Chillers & Boilers"], res:["SMACNA duct design manual"]},
+    {id:"heatpumpsvrf", title:"Heat Pumps & VRF Systems",
+      desc:"Reversible heat pump and variable refrigerant flow systems for efficient zone control.",
+      pre:["Air Handling Units & Ductwork Design"], res:["ASHRAE VRF systems design guide"]},
+  ]},
+  {id:"sec5", title:"5. Controls & Automation", items:[
+    {id:"controlsfund", title:"HVAC Controls Fundamentals",
+      desc:"Thermostats, dampers, and valves that regulate temperature and airflow.",
+      pre:["Heat Pumps & VRF Systems"], res:["ASHRAE Fundamentals of HVAC Control Systems"]},
+    {id:"bas", title:"Building Automation Systems (BAS/BMS)",
+      desc:"Centralized systems for monitoring and controlling building HVAC equipment.",
+      pre:["HVAC Controls Fundamentals"], res:["BACnet / Niagara framework documentation"]},
+    {id:"sensorsactuators", title:"Sensors & Actuators for HVAC",
+      desc:"Temperature, humidity, and pressure sensors paired with dampers and valve actuators.",
+      pre:["Building Automation Systems (BAS/BMS)"], res:["ASHRAE sensor and controls guide"]},
+    {id:"energymgmt", title:"Energy Management Systems",
+      desc:"Monitoring and optimizing building energy use through automated control strategies.",
+      pre:["Sensors & Actuators for HVAC"], res:["ASHRAE Energy Management guide"]},
+  ]},
+  {id:"sec6", title:"6. Design & Simulation Tools", items:[
+    {id:"ductsizing", title:"Duct & Pipe Sizing Software",
+      desc:"Software tools for sizing ductwork and piping runs to meet airflow and pressure targets.",
+      pre:["Energy Management Systems"], res:["SMACNA / Elite Software duct sizing tools"]},
+    {id:"energymodeling", title:"Energy Modeling (eQUEST/EnergyPlus)",
+      desc:"Whole-building energy simulation to predict and optimize energy performance.",
+      pre:["Duct & Pipe Sizing Software"], res:["EnergyPlus documentation"]},
+    {id:"cfdairflow", title:"CFD for Airflow Analysis",
+      desc:"Simulating airflow patterns for comfort, contamination control, and system design.",
+      pre:["Energy Modeling (eQUEST/EnergyPlus)"], res:["ANSYS Fluent documentation"]},
+    {id:"loadsimsoftware", title:"Load Simulation Software (HAP/Trace)",
+      desc:"Industry-standard software for detailed heating and cooling load simulations.",
+      pre:["CFD for Airflow Analysis"], res:["Carrier HAP / Trane Trace 3D documentation"]},
+  ]},
+  {id:"sec7", title:"7. Codes, Standards & Sustainability", items:[
+    {id:"ashraestd", title:"ASHRAE Standards",
+      desc:"The core set of standards governing HVAC design, ventilation, and energy performance.",
+      pre:["Load Simulation Software (HAP/Trace)"], res:["ASHRAE Standards catalog"]},
+    {id:"buildingcodes", title:"Local Building & Mechanical Codes",
+      desc:"Jurisdiction-specific codes that HVAC designs must comply with.",
+      pre:["ASHRAE Standards"], res:["International Mechanical Code (IMC)"]},
+    {id:"leed", title:"LEED & Green Building Certification",
+      desc:"Sustainable building certification frameworks that influence HVAC system design choices.",
+      pre:["Local Building & Mechanical Codes"], res:["USGBC LEED reference guide"]},
+    {id:"sustainability", title:"Energy Efficiency & Sustainability Practices",
+      desc:"Strategies for reducing energy use and carbon footprint in HVAC system design.",
+      pre:["LEED & Green Building Certification"], res:["ASHRAE Advanced Energy Design Guides"]},
+  ]},
+  {id:"sec8", title:"8. Career & Certifications", items:[
+    {id:"projects", title:"Portfolio Projects",
+      desc:"Design a complete HVAC system for a building as a showcase project.",
+      pre:["Energy Efficiency & Sustainability Practices"], res:["ASHRAE student design competitions"]},
+    {id:"certs", title:"Certifications (LEED, PE, NATE)",
+      desc:"Industry certifications that validate HVAC design and technical competence.",
+      pre:["Portfolio Projects"], res:["NATE / LEED AP / PE licensure requirements"]},
+    {id:"interview", title:"Interview Preparation",
+      desc:"Technical interviews on load calculations, system selection, and design trade-off reasoning.",
+      pre:["Certifications (LEED, PE, NATE)"], res:["HVAC engineering interview guides"]},
+    {id:"careers", title:"Career Paths",
+      desc:"HVAC Design Engineer, Mechanical/MEP Engineer, Energy Consultant, Controls Engineer.",
+      pre:["Interview Preparation"], res:["ASHRAE career pathways"]},
+  ]},
+];
+
+// ---------- LAYOUT ENGINE (balanced 2-column grid) ----------
+const COL_W = 300, COL_GAP = 60, ROW_H = 54, ROW_GAP = 10;
+const LEFT_X = 70, RIGHT_X = LEFT_X + COL_W + COL_GAP;
+const CANVAS_CENTER = LEFT_X + (COL_W*2 + COL_GAP)/2;
+const SECTION_GAP = 46;
+
+const nodes = [];
+const edges = [];
+let cursorY = 90;
+
+nodes.push({id:"title", x:CANVAS_CENTER-100, y:20, w:200, h:50, type:"title", title:"HVAC Engineer"});
+let prevSectionLastId = "title";
+
+sections.forEach(sec=>{
+  nodes.push({id:sec.id, x:LEFT_X, y:cursorY, w:COL_W*2+COL_GAP, h:28, type:"section", title:sec.title});
+  edges.push([prevSectionLastId, sec.id]);
+  cursorY += 28 + 14;
+
+  let prevInSection = sec.id;
+  sec.items.forEach((item, i)=>{
+    const col = i % 2;
+    const row = Math.floor(i / 2);
+    const x = col===0 ? LEFT_X : RIGHT_X;
+    const y = cursorY + row*(ROW_H+ROW_GAP);
+    nodes.push({id:item.id, x, y, w:COL_W, h:ROW_H, type:"node",
+      title:item.title, desc:item.desc, pre:item.pre, res:item.res});
+    edges.push([prevInSection, item.id]);
+    prevInSection = item.id;
+  });
+
+  const rows = Math.ceil(sec.items.length/2);
+  cursorY += rows*(ROW_H+ROW_GAP) + SECTION_GAP;
+  prevSectionLastId = prevInSection;
+});
+
+// ---------- RENDER ----------
+const canvas = document.getElementById('canvas');
+const svg = document.getElementById('edges');
+
+function centerY(n){ return n.y + n.h/2; }
+function centerX(n){ return n.x + n.w/2; }
+function byId(id){ return nodes.find(n=>n.id===id); }
+
+nodes.forEach(n=>{
+  const div = document.createElement('div');
+  div.className = 'node ' + (n.type||'node');
+  div.style.left = n.x+'px';
+  div.style.top = n.y+'px';
+  div.style.width = n.w+'px';
+  div.style.minHeight = n.h+'px';
+  div.style.display='flex';
+  div.style.alignItems='center';
+  div.style.justifyContent = n.type==='section' ? 'flex-start' : 'center';
+  div.textContent = n.title;
+  div.dataset.id = n.id;
+  if(n.type!=='section' && n.type!=='title'){
+    div.addEventListener('click', ()=>openModal(n));
+  }
+  canvas.appendChild(div);
+});
+
+let svgHtml = '';
+edges.forEach(([a,b])=>{
+  const A = byId(a), B = byId(b);
+  if(!A||!B) return;
+  const x1 = centerX(A), y1 = A.y+A.h, x2 = centerX(B), y2 = B.y;
+  const midY = (y1+y2)/2;
+  svgHtml += `<path d="M ${x1} ${y1} C ${x1} ${midY}, ${x2} ${midY}, ${x2} ${y2}" fill="none" stroke="#2b78e4" stroke-width="2.5" stroke-dasharray="0.8 6" stroke-linecap="round"/>`;
+});
+svg.innerHTML = svgHtml;
+
+let maxX=0, maxY=0;
+nodes.forEach(n=>{ maxX=Math.max(maxX,n.x+n.w+80); maxY=Math.max(maxY,n.y+n.h+80); });
+svg.setAttribute('width', maxX);
+svg.setAttribute('height', maxY);
+canvas.style.width = maxX+'px';
+canvas.style.height = maxY+'px';
+
+// ---------- PAN & ZOOM ----------
+const viewport = document.getElementById('viewport');
+let scale = 0.85, panX = 40, panY = 20;
+let isDragging=false, startX=0, startY=0, startPanX=0, startPanY=0;
+
+function applyTransform(){
+  canvas.style.transform = `translate(${panX}px,${panY}px) scale(${scale})`;
+}
+applyTransform();
+
+viewport.addEventListener('mousedown', e=>{
+  isDragging = true;
+  viewport.classList.add('dragging');
+  startX = e.clientX; startY = e.clientY;
+  startPanX = panX; startPanY = panY;
+});
+window.addEventListener('mousemove', e=>{
+  if(!isDragging) return;
+  panX = startPanX + (e.clientX - startX);
+  panY = startPanY + (e.clientY - startY);
+  applyTransform();
+});
+window.addEventListener('mouseup', ()=>{ isDragging=false; viewport.classList.remove('dragging'); });
+
+viewport.addEventListener('wheel', e=>{
+  e.preventDefault();
+  const delta = e.deltaY > 0 ? -0.08 : 0.08;
+  const newScale = Math.min(2.2, Math.max(0.3, scale + delta));
+  scale = newScale;
+  applyTransform();
+}, {passive:false});
+
+document.getElementById('zoomIn').onclick = ()=>{ scale = Math.min(2.2, scale+0.15); applyTransform(); };
+document.getElementById('zoomOut').onclick = ()=>{ scale = Math.max(0.3, scale-0.15); applyTransform(); };
+document.getElementById('reset').onclick = ()=>{ scale=0.85; panX=40; panY=20; applyTransform(); };
+
+// ---------- MODAL ----------
+function openModal(n){
+  document.getElementById('mTitle').textContent = n.title;
+  document.getElementById('mDesc').textContent = n.desc || '';
+  const pre = document.getElementById('mPre');
+  pre.innerHTML = (n.pre&&n.pre.length) ? n.pre.map(p=>`<li>${p}</li>`).join('') : '<li>None</li>';
+  const res = document.getElementById('mRes');
+  res.innerHTML = (n.res&&n.res.length) ? n.res.map(r=>`<li>${r}</li>`).join('') : '<li>—</li>';
+  document.getElementById('overlay').classList.add('show');
+}
+function closeModal(){ document.getElementById('overlay').classList.remove('show'); }
+document.getElementById('overlay').addEventListener('click', e=>{
+  if(e.target.id==='overlay') closeModal();
+});
+</script>
+</body>
+</html>

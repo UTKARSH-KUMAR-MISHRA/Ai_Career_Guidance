@@ -1,0 +1,78 @@
+<div class="topbar">
+  <div><h1>Resume Analysis & ATS Score</h1><div class="sub">Upload your resume and receive immediate optimization feedback.</div></div>
+</div>
+
+<div class="resume-scroll-container" style="display: flex; flex-direction: column; gap: 20px; width: 100%; height: calc(100vh - 120px); overflow-y: auto; padding-right: 8px; box-sizing: border-box;">
+  <div class="content" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; min-height: auto; align-items: start;">
+    <!-- Left Side: Upload Area and Score Card -->
+    <div class="left-col" style="display: flex; flex-direction: column; gap: 20px; width: 100%;">
+      <!-- Drag and Drop Panel -->
+      <div class="panel reveal" style="padding: 30px; text-align: center; border: 2px dashed rgba(108, 99, 255, 0.4); border-radius: var(--radius); background: rgba(255, 255, 255, 0.6); transition: all 0.3s ease;">
+        <div id="dropzone" style="cursor: pointer; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 15px;">
+          <i class="ti ti-cloud-upload" style="font-size: 55px; color: var(--indigo);"></i>
+          <h3>Drag & Drop Resume</h3>
+          <p style="color: var(--text-2); font-size: 13px;">Supports PDF and Plain Text formats (Max 5MB)</p>
+          <button class="start-btn" style="width: auto; padding: 10px 20px; font-size: 13px;" onclick="document.getElementById('fileInput').click()">Choose File</button>
+          <input type="file" id="fileInput" accept=".pdf,.txt" style="display: none;">
+        </div>
+        <div id="uploadStatus" style="margin-top: 15px; font-weight: 600; color: var(--green); display: none;">
+          <i class="ti ti-circle-check"></i> File selected! Analyzing...
+        </div>
+      </div>
+
+      <!-- Score Panel (Hidden by default until analyzed) -->
+      <div id="scorePanel" class="panel reveal" style="display: none; padding: 25px; align-items: center; justify-content: space-around; gap: 20px;">
+        <div style="text-align: center;">
+          <h3 style="margin-bottom: 15px;">ATS Compatibility Score</h3>
+          <svg width="120" height="120" viewBox="0 0 120 120" style="transform: rotate(-90deg);">
+            <circle cx="60" cy="60" r="50" fill="none" stroke="#EEF0F5" stroke-width="12"/>
+            <circle id="atsCircle" cx="60" cy="60" r="50" fill="none" stroke="var(--indigo)" stroke-width="12" stroke-dasharray="314.16" stroke-dashoffset="314.16" stroke-linecap="round" style="transition: stroke-dashoffset 1.5s ease-out;"/>
+          </svg>
+          <div id="scoreNumber" style="font-size: 36px; font-weight: 800; margin-top: -85px; text-align: center; color: var(--text); padding-bottom: 30px;">0%</div>
+        </div>
+        <div style="flex: 1; margin-left: 20px;">
+          <h4 id="scoreLabel" style="color: var(--indigo); font-weight: 700; font-size: 16px; margin-bottom: 5px;">Excellent Candidate</h4>
+          <p id="scoreFeedback" style="color: var(--text-2); font-size: 12.5px; line-height: 1.45;">Your resume has high compatibility with standard placement expectations.</p>
+          <div style="margin-top: 15px; font-size: 12px; color: var(--text-2);">
+            <div><i class="ti ti-mail" style="color: var(--indigo);"></i> <span id="parsedEmail">--</span></div>
+            <div style="margin-top: 5px;"><i class="ti ti-phone" style="color: var(--indigo);"></i> <span id="parsedPhone">--</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Side: Suggestions and Recommendations -->
+    <div class="right-col reveal" style="display: flex; flex-direction: column; gap: 20px; width: 100%; min-height: auto; background: transparent; border: none; padding: 0;">
+      <!-- Missing Skills Panel -->
+      <div id="skillsPanel" class="panel" style="display: none; padding: 25px; flex: 1;">
+        <h3>Skill Analysis</h3>
+        
+        <h4 style="margin: 15px 0 8px; color: var(--green); font-size: 13.5px;"><i class="ti ti-circle-check-filled"></i> Matched Skills</h4>
+        <div id="matchedSkillsList" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 15px;">
+          <span class="badge notstarted" style="padding: 6px 12px;">None detected yet</span>
+        </div>
+
+        <h4 style="margin: 10px 0 8px; color: var(--red); font-size: 13.5px;"><i class="ti ti-circle-x-filled"></i> Missing Required Skills</h4>
+        <div id="missingSkillsList" style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span class="badge notstarted" style="padding: 6px 12px;">None detected yet</span>
+        </div>
+      </div>
+
+      <!-- Optimization Suggestions -->
+      <div id="suggestionsPanel" class="panel" style="display: none; padding: 25px; flex: 1;">
+        <h3>Actionable Feedback</h3>
+        <ul id="suggestionsList" style="padding-left: 20px; line-height: 1.6; margin-top: 15px; font-size: 13px; color: var(--text-2);">
+          <li>Upload your resume to see suggestions.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Panel: Courses Recommendation Grid -->
+  <div id="coursesPanel" class="panel reveal" style="display: none; margin-top: 10px; padding: 25px;">
+    <h3>Recommended Learning Pathways for Missing Skills</h3>
+    <div id="recommendedCoursesGrid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px; margin-top: 15px;">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</div>

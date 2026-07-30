@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>VLSI Design Roadmap — Career Path 2026</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  :root{
+    --bg:#f7f7f5;
+    --panel:#ffffff;
+    --ink:#111318;
+    --sub:#5b616e;
+    --line:#2b78e4;
+    --topic:#fdff00;
+    --subtopic:#ffe599;
+    --border:#000000;
+    --accent:#0a33ff;
+    --green:#4f7a28;
+    --purple:#874efe;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background:var(--bg); color:var(--ink);
+  }
+  header{
+    background:#0f1115; color:#fff; padding:22px 28px;
+    display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px;
+  }
+  header h1{margin:0; font-size:22px; font-weight:700; letter-spacing:.2px;}
+  header p{margin:2px 0 0; color:#9aa0ab; font-size:13px;}
+  .toolbar{display:flex; gap:8px; flex-wrap:wrap;}
+  .toolbar button{
+    background:#1c2029; color:#e7e9ee; border:1px solid #33394a; border-radius:8px;
+    padding:8px 12px; font-size:13px; cursor:pointer; transition:.15s;
+  }
+  .toolbar button:hover{background:#2a3040;}
+  #stage-wrap{
+    position:relative; height:calc(100vh - 92px); overflow:hidden; background:
+      radial-gradient(circle at 1px 1px, #e3e3e0 1px, transparent 1px) 0 0/22px 22px, var(--bg);
+    cursor:grab;
+  }
+  #stage-wrap.grabbing{cursor:grabbing;}
+  #canvas{
+    position:absolute; top:0; left:0; transform-origin:0 0;
+  }
+  .node rect{
+    stroke:var(--border); stroke-width:2.2; rx:6; cursor:pointer;
+    transition: filter .12s, transform .12s;
+  }
+  .node:hover rect{filter:brightness(0.94);}
+  .node text{
+    font-size:15px; pointer-events:none; font-weight:600; fill:#000;
+  }
+  .subtopic text{font-weight:500; font-size:14px;}
+  .section-label text{font-size:19px; font-weight:800; fill:#111;}
+  .title-label text{font-size:30px; font-weight:800; fill:#111;}
+  .edge{fill:none; stroke:var(--line); stroke-width:3; stroke-linecap:round;}
+  .edge.dashed{stroke-dasharray:1 8;}
+  .legend rect{fill:#fff; stroke:#000; stroke-width:2;}
+  .legend circle{stroke:#fff; stroke-width:2;}
+  .legend text{font-size:15px; fill:#111;}
+  .paragraph rect{fill:#fff; stroke:#fff;}
+  .paragraph text{font-size:16px; fill:#222;}
+  .cta rect{fill:#2a79e4; stroke:#2a79e4;}
+  .cta text{fill:#fff; font-weight:700;}
+  .cta.dark rect{fill:#1b1e26; stroke:#1b1e26;}
+
+  /* Side panel */
+  #panel{
+    position:fixed; top:0; right:-420px; width:400px; height:100%;
+    background:var(--panel); box-shadow:-8px 0 24px rgba(0,0,0,.15);
+    transition:right .25s ease; z-index:50; overflow-y:auto; padding:22px;
+    border-left:1px solid #e5e5e5;
+  }
+  #panel.open{right:0;}
+  #panel h2{margin:0 0 4px; font-size:20px;}
+  #panel .badge{
+    display:inline-block; font-size:11px; text-transform:uppercase; letter-spacing:.06em;
+    background:#111; color:#fff; padding:3px 8px; border-radius:20px; margin-bottom:10px;
+  }
+  #panel h3{font-size:13px; text-transform:uppercase; color:var(--sub); margin:18px 0 6px; letter-spacing:.05em;}
+  #panel p{font-size:14.5px; line-height:1.55; color:#222; margin:0 0 8px;}
+  #panel ul{margin:4px 0 0; padding-left:18px;}
+  #panel li{font-size:14px; line-height:1.6; margin-bottom:4px;}
+  #panel a{color:var(--accent); text-decoration:underline;}
+  #panel .close{
+    position:absolute; top:16px; right:16px; background:#eee; border:none; border-radius:50%;
+    width:28px; height:28px; cursor:pointer; font-size:16px; color:#555;
+  }
+  #panel .close:hover{background:#ddd;}
+
+  #bib{
+    background:#fff; border-top:3px solid #111; padding:40px 8vw 80px;
+  }
+  #bib h2{font-size:26px; margin-bottom:6px;}
+  #bib p.sub{color:var(--sub); margin-top:0; margin-bottom:28px;}
+  .bib-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:22px;}
+  .bib-card{border:1px solid #e2e2e2; border-radius:10px; padding:18px 20px; background:#fbfbfa;}
+  .bib-card h3{margin:0 0 10px; font-size:15px; display:flex; align-items:center; gap:8px;}
+  .bib-card h3 .tag{font-size:10px; background:#111; color:#fff; padding:2px 7px; border-radius:20px; text-transform:uppercase;}
+  .bib-card ul{margin:0; padding-left:18px;}
+  .bib-card li{font-size:13.3px; line-height:1.6; margin-bottom:7px; color:#333;}
+  .bib-card a{color:var(--accent);}
+  #hint{
+    position:fixed; bottom:14px; left:50%; transform:translateX(-50%);
+    background:#111; color:#fff; padding:8px 16px; border-radius:20px; font-size:12.5px;
+    opacity:.85; z-index:20; pointer-events:none;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>⚡ VLSI Design Roadmap</h1>
+    <p>Step-by-step guide to becoming a VLSI Design Engineer — 2026</p>
+  </div>
+  <div class="toolbar">
+    <button onclick="zoomBy(1.15)">＋ Zoom in</button>
+    <button onclick="zoomBy(0.87)">－ Zoom out</button>
+    <button onclick="resetView()">Reset view</button>
+    <button onclick="document.getElementById('bib').scrollIntoView({behavior:'smooth'})">Bibliography ↓</button>
+  </div>
+</header>
+
+<div id="stage-wrap">
+  <div id="canvas">
+    <svg id="svgroot" xmlns="http://www.w3.org/2000/svg" width="1700" height="4600" viewBox="0 0 1700 4600">
+      <!-- edges will be injected by JS for maintainability, but drawn first (under nodes) -->
+      <g id="edges-layer"></g>
+      <g id="nodes-layer"></g>
+    </svg>
+  </div>
+</div>
+
+<div id="hint">Scroll / pinch to zoom · Drag to pan · Click a box for details</div>
+
+<div id="panel">
+  <button class="close" onclick="closePanel()">✕</button>
+  <div id="panel-body"></div>
+</div>
+
+<section id="bib">
+  <h2>📚 Bibliography &amp; References</h2>
+  <p class="sub">Curated references for every stage of the VLSI journey — standards bodies, open courseware, and the textbooks practicing engineers actually keep on their desks.</p>
+  <div class="bib-grid">
+
+    <div class="bib-card">
+      <h3><span class="tag">IEEE</span> Standards &amp; Papers</h3>
+      <ul>
+        <li>IEEE Std 1364 — Verilog HDL Language Reference Manual</li>
+        <li>IEEE Std 1800 — SystemVerilog LRM (Design &amp; Verification)</li>
+        <li>IEEE Std 1076 — VHDL Language Reference Manual</li>
+        <li>IEEE Std 1801 (UPF) — Unified Power Format</li>
+        <li>IEEE Xplore Digital Library — <a href="https://ieeexplore.ieee.org" target="_blank">ieeexplore.ieee.org</a> (search "static timing analysis", "low power design", "physical design")</li>
+        <li>IEEE Journal of Solid-State Circuits (JSSC)</li>
+        <li>IEEE Transactions on VLSI Systems (TVLSI)</li>
+      </ul>
+    </div>
+
+    <div class="bib-card">
+      <h3><span class="tag">NPTEL</span> Free Courses (IIT Faculty)</h3>
+      <ul>
+        <li>VLSI Design — Prof. S. Srinivasan / IIT Madras</li>
+        <li>CMOS Digital VLSI Design — Prof. Amitava Dasgupta, IIT Madras</li>
+        <li>Digital VLSI Testing — Prof. Santanu Chattopadhyay, IIT Kharagpur</li>
+        <li>Digital Circuits &amp; Systems — IIT Kharagpur</li>
+        <li>VLSI Physical Design Automation — Prof. Indranil Sengupta</li>
+        <li>Basic Electronics — IIT Madras (prerequisite course)</li>
+        <li>All courses free at <a href="https://nptel.ac.in" target="_blank">nptel.ac.in</a>, certification optional</li>
+      </ul>
+    </div>
+
+    <div class="bib-card">
+      <h3><span class="tag">MIT OCW</span> Open Courseware</h3>
+      <ul>
+        <li>6.004 Computation Structures</li>
+        <li>6.012 Microelectronic Devices and Circuits</li>
+        <li>6.374 Analog–Digital VLSI Circuit Design</li>
+        <li>6.775 VLSI: From Microprocessors to Nanometers</li>
+        <li>6.111 Introductory Digital Systems Laboratory</li>
+        <li>All available free at <a href="https://ocw.mit.edu" target="_blank">ocw.mit.edu</a> with lecture notes, problem sets and exams</li>
+      </ul>
+    </div>
+
+    <div class="bib-card">
+      <h3><span class="tag">Textbook</span> Digital &amp; Logic Design</h3>
+      <ul>
+        <li>M. Morris Mano &amp; Michael Ciletti — <em>Digital Design</em></li>
+        <li>John P. Uyemura — <em>Introduction to VLSI Circuits and Systems</em></li>
+        <li>Neil H.E. Weste &amp; David Money Harris — <em>CMOS VLSI Design: A Circuits and Systems Perspective</em></li>
+        <li>Jan M. Rabaey — <em>Digital Integrated Circuits: A Design Perspective</em></li>
+      </ul>
+    </div>
+
+    <div class="bib-card">
+      <h3><span class="tag">Textbook</span> Analog &amp; Devices</h3>
+      <ul>
+        <li>Adel S. Sedra &amp; Kenneth C. Smith — <em>Microelectronic Circuits</em></li>
+        <li>Behzad Razavi — <em>Design of Analog CMOS Integrated Circuits</em></li>
+        <li>Donald A. Neamen — <em>Semiconductor Physics and Devices</em></li>
+        <li>Paul R. Gray et al. — <em>Analysis and Design of Analog Integrated Circuits</em></li>
+      </ul>
+    </div>
+
+    <div class="bib-card">
+      <h3><span class="tag">Textbook</span> Verification &amp; Testing</h3>
+      <ul>
+        <li>Janick Bergeron — <em>Writing Testbenches: Functional Verification of HDL Models</em></li>
+        <li>Chris Spear &amp; Greg Tumbush — <em>SystemVerilog for Verification</em></li>
+        <li>Michael Keating &amp; Pierre Bricaud — <em>Reuse Methodology Manual</em></li>
+        <li>M.L. Bushnell &amp; V.D. Agrawal — <em>Essentials of Electronic Testing for Digital, Memory and Mixed-Signal VLSI Circuits</em></li>
+      </ul>
+    </div>
+
+    <div class="bib-card">
+      <h3><span class="tag">Textbook</span> Physical Design &amp; STA</h3>
+      <ul>
+        <li>Andrew B. Kahng et al. — <em>VLSI Physical Design: From Graph Partitioning to Timing Closure</em></li>
+        <li>J. Bhasker &amp; Rakesh Chadha — <em>Static Timing Analysis for Nanometer Designs</em></li>
+        <li>Sung Kyu Lim — <em>Practical Problems in VLSI Physical Design Automation</em></li>
+      </ul>
+    </div>
+
+    <div class="bib-card">
+      <h3><span class="tag">GATE</span> Exam Preparation</h3>
+      <ul>
+        <li>GATE EC/EE official syllabus &amp; previous papers — <a href="https://gate2027.iisc.ac.in" target="_blank">GATE official site</a></li>
+        <li>R.K. Kanodia — <em>GATE Electronics &amp; Communication</em> (multi-volume series)</li>
+        <li>Made Easy / ACE Academy GATE handbooks (Digital &amp; Analog Electronics)</li>
+        <li>NPTEL GATE-aligned playlists for Digital Circuits, Signals &amp; Systems, Analog Circuits</li>
+      </ul>
+    </div>
+
+    <div class="bib-card">
+      <h3><span class="tag">Tools</span> Vendor Documentation</h3>
+      <ul>
+        <li>Synopsys — Design Compiler, PrimeTime, VCS User Guides (via SolvNet)</li>
+        <li>Cadence — Virtuoso, Innovus, Xcelium documentation (via Cadence Learning)</li>
+        <li>Siemens EDA (Mentor) — Calibre, Questa documentation</li>
+        <li>Xilinx/AMD &amp; Intel FPGA design guides for RTL prototyping</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<script>
+/* ===================== DATA MODEL ===================== */
+/* Node types: title, section, topic, subtopic, cta, paragraph, legend */
+
+const nodes = [];
+const edges = [];
+let nid = 0;
+function N(o){ o.id = 'n'+(nid++); nodes.push(o); return o.id; }
+function E(a,b,dashed=true){ edges.push({a,b,dashed}); }
+
+/* geometry constants */
+const COL = { title:60, topic:60, sub:400, career:760 };
+const TOPIC_W = 240, TOPIC_H = 48;
+const SUB_W = 300, SUB_H = 48;
+
+/* ---- Column layout helper: stacks topics vertically ---- */
+function stack(items, x, startY, w, h, gap, type, extra){
+  let y = startY;
+  const ids = [];
+  for(const it of items){
+    ids.push(N(Object.assign({type, x, y, w, h, title:it.title, desc:it.desc,
+      prereq:it.prereq, resources:it.resources}, extra||{})));
+    y += h + gap;
+  }
+  return {ids, endY:y - gap};
+}
+
+/* ============ TITLE ============ */
+N({type:'title', x:60, y:20, title:'VLSI Design'});
+
+/* ============ SECTION 1: FOUNDATIONS ============ */
+N({type:'section-label', x:60, y:100, title:'1 · Foundations'});
+const foundations = stack([
+  {title:'Number Systems & Boolean Algebra',
+   desc:'Binary/hex/octal systems, Boolean algebra, De Morgan\'s theorems — the mathematical basis of digital logic.',
+   prereq:'Basic algebra',
+   resources:['NPTEL: Digital Circuits & Systems (IIT Kgp)','Morris Mano — Digital Design, Ch.1-2']},
+  {title:'Digital Logic Design',
+   desc:'Combinational & sequential circuits: gates, multiplexers, flip-flops, counters, FSMs.',
+   prereq:'Number systems',
+   resources:['NPTEL: VLSI Design — Prof. Srinivasan','Morris Mano — Digital Design']},
+  {title:'Semiconductor Physics',
+   desc:'PN junctions, band theory, carrier transport — the physics that MOSFETs are built on.',
+   prereq:'Basic physics/chemistry',
+   resources:['Donald Neamen — Semiconductor Physics and Devices','MIT OCW 6.012']},
+  {title:'MOSFET Fundamentals',
+   desc:'MOS capacitor, threshold voltage, I-V characteristics, short-channel effects.',
+   prereq:'Semiconductor physics',
+   resources:['MIT OCW 6.012 Microelectronic Devices','Sedra & Smith — Microelectronic Circuits']},
+  {title:'Computer Architecture Basics',
+   desc:'Instruction sets, pipelines, memory hierarchy — context for why chips are designed the way they are.',
+   prereq:'Digital logic',
+   resources:['MIT OCW 6.004 Computation Structures']},
+], 60, 150, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<foundations.ids.length-1;i++) E(foundations.ids[i], foundations.ids[i+1], false);
+
+/* ============ SECTION 2: PROGRAMMING & HDL ============ */
+let y2 = foundations.endY + 90;
+N({type:'section-label', x:60, y:y2, title:'2 · Programming & HDL'});
+y2 += 50;
+const hdl = stack([
+  {title:'C / C++ Programming',
+   desc:'Essential for writing testbenches, scripting EDA flows, and understanding synthesizable constructs.',
+   prereq:'None',
+   resources:['MIT OCW 6.100','GeeksforGeeks C++ tutorials']},
+  {title:'Linux & Shell Scripting',
+   desc:'Almost all EDA tools run on Linux; shell/Perl/Python scripting automates repetitive flow tasks.',
+   prereq:'Basic OS concepts',
+   resources:['roadmap.sh/linux','roadmap.sh/shell-bash']},
+  {title:'Verilog HDL',
+   desc:'The most widely used HDL for RTL design; behavioral & structural modeling, synthesis-friendly coding.',
+   prereq:'Digital logic design',
+   resources:['IEEE Std 1364','Samir Palnitkar — Verilog HDL']},
+  {title:'VHDL',
+   desc:'Strongly-typed HDL popular in aerospace/defense and European industry; concurrent statement modeling.',
+   prereq:'Digital logic design',
+   resources:['IEEE Std 1076','Peter Ashenden — The Designer\'s Guide to VHDL']},
+  {title:'SystemVerilog',
+   desc:'Superset of Verilog adding OOP constructs, used heavily for both design and verification (UVM).',
+   prereq:'Verilog HDL',
+   resources:['IEEE Std 1800','Chris Spear — SystemVerilog for Verification']},
+  {title:'TCL Scripting',
+   desc:'Scripting language used to drive Synopsys/Cadence tool flows (constraints, automation).',
+   prereq:'Basic programming',
+   resources:['Synopsys TCL scripting guides']},
+], 60, y2, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<hdl.ids.length-1;i++) E(hdl.ids[i], hdl.ids[i+1], false);
+
+/* ============ SECTION 3: RTL / DIGITAL DESIGN ============ */
+let y3 = hdl.endY + 90;
+N({type:'section-label', x:60, y:y3, title:'3 · RTL & Digital Design'});
+y3 += 50;
+const rtl = stack([
+  {title:'RTL Design Fundamentals',
+   desc:'Register-transfer-level coding style, synthesizable constructs, coding guidelines for clean synthesis.',
+   prereq:'Verilog/VHDL',
+   resources:['Weste & Harris — CMOS VLSI Design']},
+  {title:'FSM Design',
+   desc:'Mealy/Moore state machines — the backbone of control logic in digital systems.',
+   prereq:'RTL fundamentals',
+   resources:['Morris Mano — Digital Design, Ch.9']},
+  {title:'Clock Domain Crossing (CDC)',
+   desc:'Techniques (synchronizers, FIFOs) to safely pass signals between asynchronous clock domains.',
+   prereq:'FSM design',
+   resources:['Clifford Cummings — CDC papers (SNUG)']},
+  {title:'Low Power Design (UPF/CPF)',
+   desc:'Power gating, clock gating, multi-voltage design captured via Unified Power Format.',
+   prereq:'RTL fundamentals',
+   resources:['IEEE Std 1801 (UPF)']},
+  {title:'Synthesis',
+   desc:'Translating RTL into a gate-level netlist mapped to a standard-cell library, optimizing area/power/timing.',
+   prereq:'RTL fundamentals',
+   resources:['Synopsys Design Compiler User Guide']},
+], 60, y3, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<rtl.ids.length-1;i++) E(rtl.ids[i], rtl.ids[i+1], false);
+
+/* ---- STA branch to the right of Synthesis ---- */
+const staId = N({type:'subtopic', x:400, y:rtl.ids.length? nodes.find(n=>n.id===rtl.ids[4]).y : y3, w:SUB_W, h:SUB_H,
+  title:'Static Timing Analysis (STA)',
+  desc:'Verifying that all paths meet setup/hold timing without simulation, using slack analysis on the netlist.',
+  prereq:'Synthesis',
+  resources:['J. Bhasker & Chadha — Static Timing Analysis for Nanometer Designs','Synopsys PrimeTime docs']});
+E(rtl.ids[4], staId);
+
+const dftId = N({type:'subtopic', x:400, y:nodes.find(n=>n.id===staId).y+70, w:SUB_W, h:SUB_H,
+  title:'Design for Test (DFT)',
+  desc:'Scan chains, ATPG, BIST — inserting testability structures so manufactured chips can be tested for defects.',
+  prereq:'Synthesis',
+  resources:['Bushnell & Agrawal — Essentials of Electronic Testing']});
+E(staId, dftId);
+
+/* ============ SECTION 4: VERIFICATION ============ */
+let y4 = rtl.endY + 90;
+N({type:'section-label', x:60, y:y4, title:'4 · Functional Verification'});
+y4 += 50;
+const ver = stack([
+  {title:'Testbench Architecture',
+   desc:'Directed and constrained-random testbenches; drivers, monitors, scoreboards.',
+   prereq:'SystemVerilog',
+   resources:['Janick Bergeron — Writing Testbenches']},
+  {title:'SystemVerilog Assertions (SVA)',
+   desc:'Temporal assertions to formally specify and check design behavior during simulation.',
+   prereq:'SystemVerilog',
+   resources:['IEEE Std 1800 Ch.16-17']},
+  {title:'UVM (Universal Verification Methodology)',
+   desc:'Industry-standard class library and methodology for building reusable, layered testbenches.',
+   prereq:'SystemVerilog OOP',
+   resources:['Accellera UVM User Guide','Chris Spear — SystemVerilog for Verification']},
+  {title:'Formal Verification',
+   desc:'Mathematically proving properties of a design (e.g. equivalence checking, model checking) without simulation.',
+   prereq:'SVA basics',
+   resources:['Synopsys VC Formal / Cadence JasperGold docs']},
+  {title:'Coverage & Regression',
+   desc:'Functional & code coverage metrics, regression suites to track verification closure.',
+   prereq:'UVM basics',
+   resources:['Accellera UCIS standard']},
+], 60, y4, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<ver.ids.length-1;i++) E(ver.ids[i], ver.ids[i+1], false);
+
+/* ============ SECTION 5: ANALOG / MIXED SIGNAL ============ */
+let y5 = ver.endY + 90;
+N({type:'section-label', x:60, y:y5, title:'5 · Analog & Mixed-Signal Design'});
+y5 += 50;
+const analog = stack([
+  {title:'CMOS Circuit Design',
+   desc:'Inverters, current mirrors, differential pairs — building blocks of analog CMOS.',
+   prereq:'MOSFET fundamentals',
+   resources:['Razavi — Design of Analog CMOS ICs']},
+  {title:'Op-Amps & Comparators',
+   desc:'Single/multi-stage amplifiers, gain-bandwidth trade-offs, offset & noise analysis.',
+   prereq:'CMOS circuit design',
+   resources:['Gray, Hurst, Lewis, Meyer — Analysis & Design of Analog ICs']},
+  {title:'Data Converters (ADC/DAC)',
+   desc:'SAR, pipeline, delta-sigma converters — bridging analog and digital domains.',
+   prereq:'Op-amps',
+   resources:['Razavi — Principles of Data Conversion System Design']},
+  {title:'PLLs & Clock Generation',
+   desc:'Phase-locked loops for clock synthesis and recovery in high-speed systems.',
+   prereq:'Op-amps',
+   resources:['Razavi — RF Microelectronics (PLL chapters)']},
+  {title:'Custom Layout Design',
+   desc:'Drawing transistor-level layout with matching, guard rings, and DRC-clean geometry using Virtuoso.',
+   prereq:'CMOS circuit design',
+   resources:['Cadence Virtuoso Layout Suite docs']},
+  {title:'SPICE Simulation',
+   desc:'Transistor-level simulation (DC/AC/transient) to verify analog circuit performance pre-layout.',
+   prereq:'CMOS circuit design',
+   resources:['Cadence Spectre / Synopsys HSPICE user guides']},
+], 60, y5, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<analog.ids.length-1;i++) E(analog.ids[i], analog.ids[i+1], false);
+
+/* ============ SECTION 6: PHYSICAL DESIGN ============ */
+let y6 = analog.endY + 90;
+N({type:'section-label', x:60, y:y6, title:'6 · Physical Design (Back-End)'});
+y6 += 50;
+const pd = stack([
+  {title:'Floorplanning',
+   desc:'Placing macros/blocks, defining core & I/O area, power planning at chip level.',
+   prereq:'Synthesis output (netlist)',
+   resources:['Kahng et al. — VLSI Physical Design']},
+  {title:'Placement',
+   desc:'Legal, timing- and congestion-aware placement of standard cells.',
+   prereq:'Floorplanning',
+   resources:['Cadence Innovus / Synopsys ICC2 docs']},
+  {title:'Clock Tree Synthesis (CTS)',
+   desc:'Building a balanced clock distribution network to minimize skew and insertion delay.',
+   prereq:'Placement',
+   resources:['Innovus CTS user guide']},
+  {title:'Routing',
+   desc:'Global & detailed routing of all nets while honoring design rules and timing constraints.',
+   prereq:'CTS',
+   resources:['Kahng et al. — VLSI Physical Design']},
+  {title:'Physical Verification (DRC/LVS)',
+   desc:'Design Rule Check and Layout-vs-Schematic verification to ensure manufacturability & correctness.',
+   prereq:'Routing complete',
+   resources:['Siemens Calibre nmDRC/nmLVS docs']},
+  {title:'Sign-off (STA, IR-drop, EM)',
+   desc:'Final timing, power-integrity (IR drop) and electromigration checks before tapeout.',
+   prereq:'Physical verification',
+   resources:['Synopsys PrimeTime & Redhawk docs']},
+], 60, y6, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<pd.ids.length-1;i++) E(pd.ids[i], pd.ids[i+1], false);
+
+/* ============ SECTION 7: EDA TOOLS (side column) ============ */
+let y7 = 150;
+N({type:'section-label', x:760, y:y7-40, title:'7 · Industry EDA Tools'});
+const tools = stack([
+  {title:'Cadence Virtuoso', desc:'Custom/analog schematic capture & layout editor — the industry standard for analog IC design.', prereq:'CMOS design basics', resources:['Cadence Virtuoso documentation']},
+  {title:'Synopsys Design Compiler', desc:'RTL-to-gate logic synthesis tool used across the industry.', prereq:'RTL design', resources:['Synopsys DC User Guide']},
+  {title:'Cadence Innovus', desc:'Place-and-route (physical implementation) tool for digital back-end flows.', prereq:'Synthesis output', resources:['Cadence Innovus docs']},
+  {title:'Synopsys PrimeTime', desc:'Gold-standard signoff static timing analysis tool.', prereq:'STA fundamentals', resources:['Synopsys PrimeTime User Guide']},
+  {title:'Mentor / Siemens Calibre', desc:'Physical verification suite: DRC, LVS, and parasitic extraction.', prereq:'Physical design basics', resources:['Siemens Calibre docs']},
+  {title:'Cadence Xcelium / Questa', desc:'HDL simulators used for RTL simulation and UVM-based verification.', prereq:'SystemVerilog/UVM', resources:['Cadence Xcelium / Siemens Questa docs']},
+  {title:'MATLAB / Python for EDA', desc:'Scripting & modeling for signal processing, data analysis of simulation results.', prereq:'Basic programming', resources:['MathWorks MATLAB docs']},
+], 760, y7, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<tools.ids.length-1;i++) E(tools.ids[i], tools.ids[i+1], false);
+
+/* ============ SECTION 8: CAREER PATHS (side column) ============ */
+let y8 = tools.endY + 90;
+N({type:'section-label', x:760, y:y8, title:'8 · Career Paths'});
+y8 += 50;
+const careers = stack([
+  {title:'RTL / Design Engineer', desc:'Writes and optimizes synthesizable HDL for chip functionality.', prereq:'HDL + digital design mastery', resources:['roadmap.sh/computer-science']},
+  {title:'Verification Engineer', desc:'Builds testbenches and verification environments to prove RTL correctness before tapeout.', prereq:'SystemVerilog/UVM', resources:['Verification Academy (Siemens)']},
+  {title:'Physical Design Engineer', desc:'Takes gate-level netlist to a manufacturable, timing-clean layout (place & route, signoff).', prereq:'Synthesis + STA + PD tools', resources:['Kahng et al. — VLSI Physical Design']},
+  {title:'Analog / Mixed-Signal Design Engineer', desc:'Designs transistor-level analog circuits: amplifiers, converters, PLLs.', prereq:'Analog design fundamentals', resources:['Razavi textbooks']},
+  {title:'DFT Engineer', desc:'Ensures manufactured silicon is testable via scan/ATPG/BIST insertion.', prereq:'Digital design + DFT concepts', resources:['Bushnell & Agrawal textbook']},
+  {title:'Application/Product Engineer', desc:'Bridges chip design and customer applications, debug post-silicon issues.', prereq:'Broad VLSI knowledge', resources:['Industry app-notes from Synopsys/Cadence']},
+], 760, y8, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<careers.ids.length-1;i++) E(careers.ids[i], careers.ids[i+1], false);
+
+/* ============ SECTION 9: PROJECTS (side column) ============ */
+let y9 = careers.endY + 90;
+N({type:'section-label', x:760, y:y9, title:'9 · Hands-on Projects'});
+y9 += 50;
+const projects = stack([
+  {title:'8-bit RISC Processor (RTL)', desc:'Design and simulate a simple RISC CPU core in Verilog — datapath + control unit.', prereq:'RTL fundamentals', resources:['MIT OCW 6.004 labs']},
+  {title:'UART / SPI / I2C Controller', desc:'Classic beginner IP block projects that exercise FSM design and protocol timing.', prereq:'FSM design', resources:['OpenCores.org reference designs']},
+  {title:'UVM Testbench for an FIFO', desc:'Build a full UVM environment (agent, scoreboard, coverage) around a simple DUT.', prereq:'UVM basics', resources:['Verification Academy tutorials']},
+  {title:'Standard-cell Inverter Layout', desc:'Design, DRC/LVS-clean layout of a CMOS inverter as a first analog/layout project.', prereq:'CMOS design + Virtuoso basics', resources:['Cadence Virtuoso tutorials']},
+  {title:'ASIC Flow: RTL to GDSII (open-source)', desc:'Run a full open-source RTL-to-GDSII flow (e.g. OpenLane/Sky130) to see the entire pipeline end-to-end.', prereq:'RTL + synthesis + PD basics', resources:['OpenLane / SkyWater Sky130 PDK docs']},
+], 760, y9, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<projects.ids.length-1;i++) E(projects.ids[i], projects.ids[i+1], false);
+
+/* ============ SECTION 10: GATE PREP (side column) ============ */
+let y10 = projects.endY + 90;
+N({type:'section-label', x:760, y:y10, title:'10 · GATE Preparation (EC/EE)'});
+y10 += 50;
+const gate = stack([
+  {title:'GATE Syllabus Mapping', desc:'Align this roadmap with GATE EC/EE syllabus sections: Digital, Analog, Signals & Systems, EDC.', prereq:'Foundations complete', resources:['GATE official syllabus']},
+  {title:'Previous Year Papers', desc:'Solve 15+ years of previous GATE papers topic-wise to identify recurring question patterns.', prereq:'Syllabus mapping', resources:['GATE Overflow (community solutions)']},
+  {title:'Mock Tests & Time Management', desc:'Full-length timed mocks to build exam stamina and question-selection strategy.', prereq:'Syllabus coverage', resources:['Made Easy / ACE Academy test series']},
+  {title:'Standard GATE Books', desc:'R.K. Kanodia series, Made Easy handbooks for Digital & Analog Electronics.', prereq:'None', resources:['R.K. Kanodia — GATE ECE volumes']},
+], 760, y10, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<gate.ids.length-1;i++) E(gate.ids[i], gate.ids[i+1], false);
+
+/* ============ SECTION 11: INTERNSHIPS & INDUSTRY SKILLS ============ */
+let y11 = gate.endY + 90;
+N({type:'section-label', x:760, y:y11, title:'11 · Internships & Industry Skills'});
+y11 += 50;
+const intern = stack([
+  {title:'Finding VLSI Internships', desc:'Target semiconductor companies (Intel, Qualcomm, NVIDIA, Texas Instruments, MediaTek) and EDA vendors (Synopsys, Cadence, Siemens) for internships.', prereq:'Solid HDL + tool basics', resources:['LinkedIn, company career pages, campus placement cells']},
+  {title:'Resume & Portfolio Building', desc:'Showcase RTL/verification/PD projects with GitHub repos, waveforms, and clear documentation.', prereq:'At least 1-2 completed projects', resources:['roadmap.sh/frontend/web-developer-portfolio (format inspiration)']},
+  {title:'Technical Interview Prep', desc:'Practice common VLSI interview questions: CMOS logic, timing analysis, verification concepts, coding (Verilog/Python).', prereq:'Core VLSI knowledge', resources:['ASIC World interview Q&A','VLSI Concepts blog']},
+  {title:'Soft Skills & Team Collaboration', desc:'Communication, documentation, and cross-team collaboration (design ↔ verification ↔ physical design) skills.', prereq:'None', resources:['General professional development resources']},
+  {title:'Staying Current', desc:'Follow semiconductor industry trends: chiplets, 3nm/2nm nodes, AI accelerators, RISC-V.', prereq:'Core VLSI knowledge', resources:['IEEE Spectrum, SemiWiki, EE Times']},
+], 760, y11, TOPIC_W, TOPIC_H, 22, 'topic');
+for(let i=0;i<intern.ids.length-1;i++) E(intern.ids[i], intern.ids[i+1], false);
+
+/* Cross-links between major sections (like the original's connecting lines) */
+E(foundations.ids[3], hdl.ids[2]); // MOSFET -> Verilog path (learn HDL after basics)
+E(hdl.ids[2], rtl.ids[0]);          // Verilog -> RTL fundamentals
+E(rtl.ids[0], ver.ids[0]);          // RTL -> Testbench
+E(analog.ids[0], pd.ids[0]);        // Analog CMOS -> Floorplanning (physical awareness)
+E(rtl.ids[4], tools.ids[1]);        // Synthesis -> Design Compiler
+E(pd.ids[5], tools.ids[4]);         // Sign-off -> Calibre
+E(ver.ids[2], tools.ids[5]);        // UVM -> Xcelium/Questa
+
+/* Legend */
+N({type:'legend', x:60, y:y11 + intern.ids.length*(TOPIC_H+22) + 60});
+
+/* ============ RENDER ============ */
+const edgesLayer = document.getElementById('edges-layer');
+const nodesLayer = document.getElementById('nodes-layer');
+const svgroot = document.getElementById('svgroot');
+
+function nodeById(id){ return nodes.find(n=>n.id===id); }
+
+function drawEdges(){
+  for(const e of edges){
+    const a = nodeById(e.a), b = nodeById(e.b);
+    if(!a || !b) continue;
+    const ax = a.x + a.w, ay = a.y + a.h/2;
+    const bx = b.x, by = b.y + b.h/2;
+    const midx = (ax+bx)/2;
+    const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+    const d = ax === bx && ay !== by
+      ? `M${ax} ${ay} L${bx} ${by}`
+      : `M${ax} ${ay} C${midx} ${ay}, ${midx} ${by}, ${bx} ${by}`;
+    path.setAttribute('d', d);
+    path.setAttribute('class', 'edge' + (e.dashed ? ' dashed' : ''));
+    edgesLayer.appendChild(path);
+  }
+}
+
+function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;'); }
+
+function drawNodes(){
+  let maxY = 0, maxX = 0;
+  for(const n of nodes){
+    const g = document.createElementNS('http://www.w3.org/2000/svg','g');
+    g.setAttribute('class','node ' + n.type);
+    g.setAttribute('data-id', n.id);
+
+    if(n.type === 'title'){
+      const t = document.createElementNS('http://www.w3.org/2000/svg','text');
+      t.setAttribute('x', n.x); t.setAttribute('y', n.y+30);
+      t.setAttribute('class','title-label-text');
+      t.textContent = n.title;
+      g.setAttribute('class','node title-label');
+      g.appendChild(t);
+    } else if(n.type === 'section-label'){
+      const t = document.createElementNS('http://www.w3.org/2000/svg','text');
+      t.setAttribute('x', n.x); t.setAttribute('y', n.y+18);
+      t.textContent = n.title;
+      g.setAttribute('class','node section-label');
+      g.appendChild(t);
+    } else if(n.type === 'legend'){
+      const items = [
+        ['#fdff00','Topic — core subject / competency'],
+        ['#ffe599','Sub-topic — specific skill or tool'],
+        ['#2a79e4','Direct link / roadmap jump'],
+      ];
+      const rect = document.createElementNS('http://www.w3.org/2000/svg','rect');
+      rect.setAttribute('x', n.x); rect.setAttribute('y', n.y);
+      rect.setAttribute('width', 380); rect.setAttribute('height', items.length*32+22);
+      rect.setAttribute('rx',6);
+      g.appendChild(rect);
+      items.forEach((it,i)=>{
+        const c = document.createElementNS('http://www.w3.org/2000/svg','rect');
+        c.setAttribute('x', n.x+16); c.setAttribute('y', n.y+16+i*32);
+        c.setAttribute('width',18); c.setAttribute('height',18); c.setAttribute('rx',4);
+        c.setAttribute('fill', it[0]); c.setAttribute('stroke','#000'); c.setAttribute('stroke-width','1.5');
+        g.appendChild(c);
+        const t = document.createElementNS('http://www.w3.org/2000/svg','text');
+        t.setAttribute('x', n.x+44); t.setAttribute('y', n.y+30+i*32);
+        t.textContent = it[1];
+        g.appendChild(t);
+      });
+    } else {
+      const rect = document.createElementNS('http://www.w3.org/2000/svg','rect');
+      rect.setAttribute('x', n.x); rect.setAttribute('y', n.y);
+      rect.setAttribute('width', n.w); rect.setAttribute('height', n.h);
+      rect.setAttribute('rx', 6);
+      rect.setAttribute('fill', n.type === 'subtopic' ? '#ffe599' : '#fdff00');
+      g.appendChild(rect);
+
+      const t = document.createElementNS('http://www.w3.org/2000/svg','text');
+      t.setAttribute('x', n.x + n.w/2); t.setAttribute('y', n.y + n.h/2 + 5);
+      t.setAttribute('text-anchor','middle');
+      t.textContent = n.title;
+      g.appendChild(t);
+
+      g.style.cursor='pointer';
+      g.addEventListener('click', ()=> openPanel(n));
+      maxY = Math.max(maxY, n.y + n.h);
+      maxX = Math.max(maxX, n.x + n.w);
+    }
+    nodesLayer.appendChild(g);
+  }
+  svgroot.setAttribute('height', Math.max(4600, maxY + 400));
+  svgroot.setAttribute('viewBox', `0 0 1700 ${Math.max(4600, maxY + 400)}`);
+}
+
+drawEdges();
+drawNodes();
+
+/* ===================== PANEL ===================== */
+function openPanel(n){
+  const body = document.getElementById('panel-body');
+  const typeLabel = n.type === 'subtopic' ? 'Sub-topic' : 'Topic';
+  body.innerHTML = `
+    <span class="badge">${typeLabel}</span>
+    <h2>${esc(n.title)}</h2>
+    <h3>Description</h3>
+    <p>${esc(n.desc || 'No description available yet.')}</p>
+    <h3>Prerequisites</h3>
+    <p>${esc(n.prereq || 'None — good starting point.')}</p>
+    <h3>Learning Resources</h3>
+    <ul>${(n.resources||[]).map(r=>`<li>${esc(r)}</li>`).join('')}</ul>
+  `;
+  document.getElementById('panel').classList.add('open');
+}
+function closePanel(){ document.getElementById('panel').classList.remove('open'); }
+
+/* ===================== PAN & ZOOM ===================== */
+const wrap = document.getElementById('stage-wrap');
+const canvas = document.getElementById('canvas');
+let scale = 0.62, panX = 20, panY = 20;
+let isPanning = false, startX, startY;
+
+function applyTransform(){
+  canvas.style.transform = `translate(${panX}px, ${panY}px) scale(${scale})`;
+}
+function zoomBy(f, cx, cy){
+  const rect = wrap.getBoundingClientRect();
+  cx = cx ?? rect.width/2; cy = cy ?? rect.height/2;
+  const wx = (cx - panX) / scale, wy = (cy - panY) / scale;
+  scale = Math.min(2.2, Math.max(0.25, scale * f));
+  panX = cx - wx*scale; panY = cy - wy*scale;
+  applyTransform();
+}
+function resetView(){ scale = 0.62; panX = 20; panY = 20; applyTransform(); }
+
+wrap.addEventListener('wheel', (e)=>{
+  e.preventDefault();
+  const rect = wrap.getBoundingClientRect();
+  const cx = e.clientX - rect.left, cy = e.clientY - rect.top;
+  zoomBy(e.deltaY < 0 ? 1.08 : 0.93, cx, cy);
+}, {passive:false});
+
+wrap.addEventListener('mousedown', (e)=>{
+  if(e.target.closest('.node') && e.target.closest('.node').classList.contains('legend')) return;
+  isPanning = true; startX = e.clientX - panX; startY = e.clientY - panY;
+  wrap.classList.add('grabbing');
+});
+window.addEventListener('mousemove', (e)=>{
+  if(!isPanning) return;
+  panX = e.clientX - startX; panY = e.clientY - startY;
+  applyTransform();
+});
+window.addEventListener('mouseup', ()=>{ isPanning=false; wrap.classList.remove('grabbing'); });
+
+/* touch support */
+let lastTouchDist = null, lastTouch = null;
+wrap.addEventListener('touchstart', (e)=>{
+  if(e.touches.length===1){ lastTouch = {x:e.touches[0].clientX-panX, y:e.touches[0].clientY-panY}; }
+  else if(e.touches.length===2){ lastTouchDist = dist(e.touches); }
+}, {passive:true});
+wrap.addEventListener('touchmove', (e)=>{
+  if(e.touches.length===1 && lastTouch){
+    panX = e.touches[0].clientX - lastTouch.x; panY = e.touches[0].clientY - lastTouch.y;
+    applyTransform();
+  } else if(e.touches.length===2){
+    const d = dist(e.touches);
+    if(lastTouchDist){ zoomBy(d/lastTouchDist); }
+    lastTouchDist = d;
+  }
+}, {passive:true});
+function dist(t){ const dx=t[0].clientX-t[1].clientX, dy=t[0].clientY-t[1].clientY; return Math.sqrt(dx*dx+dy*dy); }
+
+applyTransform();
+
+/* close panel on escape */
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closePanel(); });
+</script>
+</body>
+</html>

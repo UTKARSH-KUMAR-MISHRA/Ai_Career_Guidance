@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Engineer Roadmap</title>
+<style>
+  :root{
+    --bg:#0f172a; --panel:#0b1220; --line:#2b78e4; --yellow:#fdff00;
+    --sub:#ffe599; --card:#ffffff; --ink:#111827; --muted:#64748b;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#f8fafc;color:var(--ink);}
+  header{background:#0f172a;color:#fff;padding:22px 28px;}
+  header h1{margin:0;font-size:28px;}
+  header p{margin:6px 0 0;color:#94a3b8;font-size:14px;}
+  .toolbar{display:flex;gap:8px;padding:10px 16px;background:#fff;border-bottom:1px solid #e2e8f0;align-items:center;position:sticky;top:0;z-index:50;}
+  .toolbar button{border:1px solid #cbd5e1;background:#f1f5f9;border-radius:6px;padding:6px 12px;cursor:pointer;font-size:13px;}
+  .toolbar button:hover{background:#e2e8f0;}
+  .toolbar .hint{margin-left:auto;color:#64748b;font-size:12px;}
+  #viewport{width:100%;height:calc(100vh - 108px);overflow:hidden;position:relative;background:
+     radial-gradient(circle,#e2e8f0 1px,transparent 1px) 0 0/22px 22px, #f8fafc;
+     cursor:grab;}
+  #viewport.dragging{cursor:grabbing;}
+  #canvas{position:absolute;top:0;left:0;transform-origin:0 0;}
+  svg#edges{position:absolute;top:0;left:0;overflow:visible;pointer-events:none;}
+  .node{
+     position:absolute;border:2px solid #111;border-radius:6px;padding:10px 14px;
+     font-size:14px;font-weight:600;cursor:pointer;background:var(--sub);
+     box-shadow:1px 2px 0 rgba(0,0,0,.15);user-select:none;white-space:nowrap;
+  }
+  .node.title{background:var(--yellow);font-size:16px;}
+  .node.section{background:#fff;border-color:#94a3b8;font-weight:700;color:#334155;font-size:13px;padding:6px 10px;}
+  .node:hover{filter:brightness(0.95);transform:translateY(-1px);}
+  .node.expanded{outline:3px solid var(--line);}
+  .label{position:absolute;font-size:13px;font-weight:700;color:#334155;}
+  /* detail modal */
+  #overlay{display:none;position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:100;align-items:center;justify-content:center;}
+  #overlay.show{display:flex;}
+  #modal{background:#fff;border-radius:10px;max-width:560px;width:90%;max-height:80vh;overflow:auto;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.3);}
+  #modal h2{margin:0 0 6px;font-size:20px;}
+  #modal h4{margin:16px 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);}
+  #modal p{margin:0;font-size:14px;line-height:1.5;color:#334155;}
+  #modal ul{margin:4px 0;padding-left:18px;font-size:14px;color:#334155;}
+  #modal a{color:#2563eb;text-decoration:none;}
+  #modal a:hover{text-decoration:underline;}
+  #modal .close{float:right;border:none;background:none;font-size:20px;cursor:pointer;color:#64748b;}
+  footer{padding:26px 28px 60px;background:#0f172a;color:#cbd5e1;}
+  footer h2{color:#fff;font-size:20px;margin-top:0;}
+  footer h3{color:#fff;font-size:15px;margin-bottom:6px;}
+  footer ol{font-size:13px;line-height:1.7;padding-left:20px;}
+  footer a{color:#93c5fd;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🤖 AI Engineer Roadmap</h1>
+  <p>An interactive, pan &amp; zoom guide — beginner to advanced — for becoming an AI Engineer</p>
+</header>
+
+<div class="toolbar">
+  <button id="zoomIn">➕ Zoom In</button>
+  <button id="zoomOut">➖ Zoom Out</button>
+  <button id="reset">⤢ Reset View</button>
+  <span class="hint">Drag to pan · Scroll to zoom · Click any node for details</span>
+</div>
+
+<div id="viewport">
+  <div id="canvas">
+    <svg id="edges" width="2000" height="3600"></svg>
+  </div>
+</div>
+
+<div id="overlay">
+  <div id="modal">
+    <button class="close" onclick="closeModal()">✕</button>
+    <h2 id="mTitle"></h2>
+    <p id="mDesc"></p>
+    <h4>Prerequisites</h4>
+    <ul id="mPre"></ul>
+    <h4>Learning Resources</h4>
+    <ul id="mRes"></ul>
+  </div>
+</div>
+
+<footer>
+  <h2>📚 Bibliography &amp; References</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;">
+    <div>
+      <h3>IEEE</h3>
+      <ol>
+        <li>IEEE Transactions on Neural Networks and Learning Systems — ieeexplore.ieee.org</li>
+        <li>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</li>
+        <li>IEEE Spectrum — AI &amp; Machine Learning coverage</li>
+      </ol>
+    </div>
+    <div>
+      <h3>NPTEL</h3>
+      <ol>
+        <li>NPTEL — Introduction to Machine Learning (IIT Madras)</li>
+        <li>NPTEL — Deep Learning (IIT Ropar / IIT Kharagpur)</li>
+        <li>NPTEL — Natural Language Processing</li>
+      </ol>
+    </div>
+    <div>
+      <h3>MIT OpenCourseWare</h3>
+      <ol>
+        <li>6.036 Introduction to Machine Learning</li>
+        <li>6.S191 Introduction to Deep Learning</li>
+        <li>6.864 Advanced Natural Language Processing</li>
+      </ol>
+    </div>
+    <div>
+      <h3>Standard Textbooks</h3>
+      <ol>
+        <li>Goodfellow, Bengio, Courville — <i>Deep Learning</i> (MIT Press)</li>
+        <li>Christopher Bishop — <i>Pattern Recognition and Machine Learning</i></li>
+        <li>Russell &amp; Norvig — <i>Artificial Intelligence: A Modern Approach</i></li>
+        <li>Jurafsky &amp; Martin — <i>Speech and Language Processing</i></li>
+      </ol>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ---------- DATA ----------
+// Content model: each section holds an ordered list of topic nodes.
+// Layout is generated automatically below as a balanced 2-column grid
+// (left + right) per section, so the canvas fills evenly on both sides.
+const sections = [
+  {id:"sec1", title:"1. Foundations", items:[
+    {id:"prog", title:"Programming (Python)",
+      desc:"Core language for AI work: syntax, data structures, OOP, virtual environments, and package management.",
+      pre:["Basic computer literacy"], res:["Python.org tutorial","Automate the Boring Stuff with Python (book)","NPTEL: Programming in Python (IIT Madras)"]},
+    {id:"math", title:"Math for AI",
+      desc:"Linear algebra, probability & statistics, calculus (gradients), and optimization basics that underlie ML.",
+      pre:["High-school algebra"], res:["MIT OCW 18.06 Linear Algebra","NPTEL Probability & Statistics","3Blue1Brown: Essence of Linear Algebra / Calculus"]},
+    {id:"dsalgo", title:"Data Structures & Algorithms",
+      desc:"Arrays, hash maps, trees, graphs, complexity analysis — needed for efficient AI system design.",
+      pre:["Programming (Python)"], res:["CLRS textbook","NPTEL DSA (IIT Delhi)","LeetCode practice"]},
+    {id:"git", title:"Git & Version Control",
+      desc:"Track changes, branch, collaborate on code — essential for any engineering workflow.",
+      pre:[], res:["Pro Git (free book)","GitHub Docs"]},
+  ]},
+  {id:"sec2", title:"2. Machine Learning Core", items:[
+    {id:"mlbasics", title:"ML Fundamentals",
+      desc:"Supervised/unsupervised learning, regression, classification, bias-variance tradeoff, evaluation metrics.",
+      pre:["Math for AI","Programming (Python)"], res:["NPTEL: Introduction to Machine Learning (IIT Madras)","Bishop — Pattern Recognition and Machine Learning","Andrew Ng's Machine Learning course"]},
+    {id:"mlalgos", title:"Classical Algorithms",
+      desc:"Linear/logistic regression, decision trees, SVMs, k-NN, ensemble methods (random forest, boosting).",
+      pre:["ML Fundamentals"], res:["scikit-learn documentation","Hastie, Tibshirani, Friedman — Elements of Statistical Learning"]},
+    {id:"dl", title:"Deep Learning",
+      desc:"Neural networks, backpropagation, CNNs, RNNs, optimization (SGD, Adam), regularization.",
+      pre:["ML Fundamentals"], res:["Goodfellow, Bengio, Courville — Deep Learning","MIT 6.S191 Intro to Deep Learning","NPTEL Deep Learning (IIT Ropar)"]},
+    {id:"frameworks", title:"ML Frameworks",
+      desc:"PyTorch and TensorFlow: tensors, autograd, model training loops, GPU acceleration.",
+      pre:["Deep Learning"], res:["PyTorch official tutorials","TensorFlow guide"]},
+  ]},
+  {id:"sec3", title:"3. LLMs & Generative AI", items:[
+    {id:"transformers", title:"Transformer Architecture",
+      desc:"Self-attention, positional encoding, encoder/decoder — the backbone of modern LLMs.",
+      pre:["Deep Learning"], res:["'Attention Is All You Need' paper (arXiv)","IEEE TPAMI survey papers on Transformers","Jurafsky & Martin — Speech and Language Processing"]},
+    {id:"llmbasics", title:"LLM Fundamentals",
+      desc:"Tokens, context windows, inference vs training, sampling parameters (temperature, top-k/top-p).",
+      pre:["Transformer Architecture"], res:["OpenAI documentation","Anthropic model docs"]},
+    {id:"prompt", title:"Prompt Engineering",
+      desc:"Zero/few-shot prompting, chain-of-thought, system prompts, structured outputs, function calling.",
+      pre:["LLM Fundamentals"], res:["roadmap.sh Prompt Engineering guide","Anthropic prompt engineering docs"]},
+    {id:"embeddings", title:"Embeddings",
+      desc:"Vector representations of text for semantic search, classification, and recommendation.",
+      pre:["LLM Fundamentals"], res:["OpenAI Embeddings API docs","Sentence-Transformers library"]},
+    {id:"vectordb", title:"Vector Databases",
+      desc:"Store & query embeddings efficiently: Chroma, Pinecone, Weaviate, FAISS, Qdrant.",
+      pre:["Embeddings"], res:["Pinecone docs","FAISS GitHub"]},
+    {id:"rag", title:"Retrieval-Augmented Generation (RAG)",
+      desc:"Chunk, embed, retrieve, and generate — grounding LLM answers in external data.",
+      pre:["Vector Databases"], res:["LangChain RAG tutorial","LlamaIndex docs"]},
+    {id:"finetune", title:"Fine-tuning",
+      desc:"Adapting pre-trained models to specific tasks: full fine-tune, LoRA, QLoRA.",
+      pre:["LLM Fundamentals"], res:["Hugging Face fine-tuning guide","QLoRA paper (arXiv)"]},
+  ]},
+  {id:"sec4", title:"4. Agents & Tooling", items:[
+    {id:"agents", title:"AI Agents",
+      desc:"Systems that reason, plan, and take actions using tools; ReAct pattern, multi-step tasks.",
+      pre:["Prompt Engineering"], res:["roadmap.sh AI Agents guide","ReAct paper (arXiv)"]},
+    {id:"toolcalling", title:"Tool / Function Calling",
+      desc:"Let models call external functions/APIs with structured arguments.",
+      pre:["AI Agents"], res:["OpenAI function calling docs","Anthropic tool use docs"]},
+    {id:"multiagent", title:"Multi-Agent Systems",
+      desc:"Coordinating multiple specialized agents to solve complex workflows.",
+      pre:["AI Agents"], res:["AutoGen framework docs","CrewAI docs"]},
+    {id:"mcp", title:"Model Context Protocol (MCP)",
+      desc:"Standard protocol for connecting LLMs to external data sources & tools (host, client, server).",
+      pre:["Tool / Function Calling"], res:["MCP specification (modelcontextprotocol.io)"]},
+    {id:"orchestration", title:"Orchestration Frameworks",
+      desc:"LangChain, LlamaIndex, Haystack — building blocks for chaining LLM calls & retrieval.",
+      pre:["RAG"], res:["LangChain docs","LlamaIndex docs"]},
+  ]},
+  {id:"sec5", title:"5. Multimodal AI", items:[
+    {id:"vision", title:"Image Understanding & Generation",
+      desc:"Vision-language models, image captioning, diffusion-based generation.",
+      pre:["Deep Learning"], res:["OpenAI Vision API docs","Stable Diffusion paper (arXiv)"]},
+    {id:"audio", title:"Speech & Audio",
+      desc:"Speech-to-text, text-to-speech, audio embeddings.",
+      pre:["Deep Learning"], res:["Whisper paper (arXiv)","Hugging Face audio models"]},
+  ]},
+  {id:"sec6", title:"6. Safety, Evaluation & Ops", items:[
+    {id:"safety", title:"AI Safety & Ethics",
+      desc:"Prompt injection defense, bias/fairness, privacy, content moderation, robust system design.",
+      pre:["LLM Fundamentals"], res:["IEEE papers on AI Ethics & Fairness","Anthropic's Responsible Scaling Policy"]},
+    {id:"eval", title:"LLM Evaluation",
+      desc:"Deterministic, model-based, and human evaluations; regression testing for LLM apps.",
+      pre:["Prompt Engineering"], res:["RAGAS docs","DeepEval docs"]},
+    {id:"observability", title:"LLM Observability",
+      desc:"Tracing, logging, cost & latency monitoring in production.",
+      pre:["LLM Evaluation"], res:["LangSmith docs","Langfuse docs"]},
+    {id:"deploy", title:"Deployment & MLOps",
+      desc:"Serving models, CI/CD for ML, containerization, scaling inference.",
+      pre:["ML Frameworks"], res:["Docker docs","Kubernetes docs","MLOps NPTEL course"]},
+  ]},
+  {id:"sec7", title:"7. Career & Projects", items:[
+    {id:"projects", title:"Portfolio Projects",
+      desc:"Build: a RAG chatbot, an autonomous agent, a fine-tuned classifier, a multimodal app.",
+      pre:["RAG","AI Agents"], res:["roadmap.sh AI Engineer Projects"]},
+    {id:"internship", title:"Internships & Open Source",
+      desc:"Apply skills in real settings; contribute to open-source AI tooling repos.",
+      pre:["Portfolio Projects"], res:["GitHub 'good first issue' labels in AI repos"]},
+    {id:"careers", title:"Career Paths",
+      desc:"AI Engineer, ML Engineer, Applied Scientist, Prompt/Forward-Deployed Engineer, MLOps Engineer.",
+      pre:["Internships & Open Source"], res:["LinkedIn AI job market reports"]},
+  ]},
+];
+
+// ---------- LAYOUT ENGINE (balanced 2-column grid) ----------
+const COL_W = 300, COL_GAP = 60, ROW_H = 54, ROW_GAP = 10;
+const LEFT_X = 70, RIGHT_X = LEFT_X + COL_W + COL_GAP; // 70, 430
+const CANVAS_CENTER = LEFT_X + (COL_W*2 + COL_GAP)/2;  // center for headers/title
+const SECTION_GAP = 46;
+
+const nodes = [];
+const edges = [];
+let cursorY = 90;
+
+nodes.push({id:"title", x:CANVAS_CENTER-140, y:20, w:280, h:50, type:"title", title:"AI Engineer"});
+let prevSectionLastId = "title";
+
+sections.forEach(sec=>{
+  // section header spans both columns
+  nodes.push({id:sec.id, x:LEFT_X, y:cursorY, w:COL_W*2+COL_GAP, h:28, type:"section", title:sec.title});
+  edges.push([prevSectionLastId, sec.id]);
+  cursorY += 28 + 14;
+
+  let prevInSection = sec.id;
+  sec.items.forEach((item, i)=>{
+    const col = i % 2;              // 0 = left, 1 = right
+    const row = Math.floor(i / 2);
+    const x = col===0 ? LEFT_X : RIGHT_X;
+    const y = cursorY + row*(ROW_H+ROW_GAP);
+    nodes.push({id:item.id, x, y, w:COL_W, h:ROW_H, type:"node",
+      title:item.title, desc:item.desc, pre:item.pre, res:item.res});
+    edges.push([prevInSection, item.id]);
+    prevInSection = item.id;
+  });
+
+  const rows = Math.ceil(sec.items.length/2);
+  cursorY += rows*(ROW_H+ROW_GAP) + SECTION_GAP;
+  prevSectionLastId = prevInSection;
+});
+
+// ---------- RENDER ----------
+const canvas = document.getElementById('canvas');
+const svg = document.getElementById('edges');
+
+function centerY(n){ return n.y + n.h/2; }
+function centerX(n){ return n.x + n.w/2; }
+function byId(id){ return nodes.find(n=>n.id===id); }
+
+nodes.forEach(n=>{
+  const div = document.createElement('div');
+  div.className = 'node ' + (n.type||'node');
+  div.style.left = n.x+'px';
+  div.style.top = n.y+'px';
+  div.style.width = n.w+'px';
+  div.style.minHeight = n.h+'px';
+  div.style.display='flex';
+  div.style.alignItems='center';
+  div.style.justifyContent = n.type==='section' ? 'flex-start' : 'center';
+  div.textContent = n.title;
+  div.dataset.id = n.id;
+  if(n.type!=='section' && n.type!=='title'){
+    div.addEventListener('click', ()=>openModal(n));
+  }
+  canvas.appendChild(div);
+});
+
+// draw edges
+let svgHtml = '';
+edges.forEach(([a,b])=>{
+  const A = byId(a), B = byId(b);
+  if(!A||!B) return;
+  const x1 = centerX(A), y1 = A.y+A.h, x2 = centerX(B), y2 = B.y;
+  const midY = (y1+y2)/2;
+  svgHtml += `<path d="M ${x1} ${y1} C ${x1} ${midY}, ${x2} ${midY}, ${x2} ${y2}" fill="none" stroke="#2b78e4" stroke-width="2.5" stroke-dasharray="0.8 6" stroke-linecap="round"/>`;
+});
+svg.innerHTML = svgHtml;
+
+// size canvas/svg to content
+let maxX=0, maxY=0;
+nodes.forEach(n=>{ maxX=Math.max(maxX,n.x+n.w+80); maxY=Math.max(maxY,n.y+n.h+80); });
+svg.setAttribute('width', maxX);
+svg.setAttribute('height', maxY);
+canvas.style.width = maxX+'px';
+canvas.style.height = maxY+'px';
+
+// ---------- PAN & ZOOM ----------
+const viewport = document.getElementById('viewport');
+let scale = 0.85, panX = 40, panY = 20;
+let isDragging=false, startX=0, startY=0, startPanX=0, startPanY=0;
+
+function applyTransform(){
+  canvas.style.transform = `translate(${panX}px,${panY}px) scale(${scale})`;
+}
+applyTransform();
+
+viewport.addEventListener('mousedown', e=>{
+  isDragging = true;
+  viewport.classList.add('dragging');
+  startX = e.clientX; startY = e.clientY;
+  startPanX = panX; startPanY = panY;
+});
+window.addEventListener('mousemove', e=>{
+  if(!isDragging) return;
+  panX = startPanX + (e.clientX - startX);
+  panY = startPanY + (e.clientY - startY);
+  applyTransform();
+});
+window.addEventListener('mouseup', ()=>{ isDragging=false; viewport.classList.remove('dragging'); });
+
+viewport.addEventListener('wheel', e=>{
+  e.preventDefault();
+  const delta = e.deltaY > 0 ? -0.08 : 0.08;
+  const newScale = Math.min(2.2, Math.max(0.3, scale + delta));
+  scale = newScale;
+  applyTransform();
+}, {passive:false});
+
+document.getElementById('zoomIn').onclick = ()=>{ scale = Math.min(2.2, scale+0.15); applyTransform(); };
+document.getElementById('zoomOut').onclick = ()=>{ scale = Math.max(0.3, scale-0.15); applyTransform(); };
+document.getElementById('reset').onclick = ()=>{ scale=0.85; panX=40; panY=20; applyTransform(); };
+
+// ---------- MODAL ----------
+function openModal(n){
+  document.getElementById('mTitle').textContent = n.title;
+  document.getElementById('mDesc').textContent = n.desc || '';
+  const pre = document.getElementById('mPre');
+  pre.innerHTML = (n.pre&&n.pre.length) ? n.pre.map(p=>`<li>${p}</li>`).join('') : '<li>None</li>';
+  const res = document.getElementById('mRes');
+  res.innerHTML = (n.res&&n.res.length) ? n.res.map(r=>`<li>${r}</li>`).join('') : '<li>—</li>';
+  document.getElementById('overlay').classList.add('show');
+}
+function closeModal(){ document.getElementById('overlay').classList.remove('show'); }
+document.getElementById('overlay').addEventListener('click', e=>{
+  if(e.target.id==='overlay') closeModal();
+});
+</script>
+</body>
+</html>

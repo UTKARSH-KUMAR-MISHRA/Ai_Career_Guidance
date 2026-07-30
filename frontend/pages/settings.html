@@ -1,0 +1,61 @@
+<div class="topbar">
+  <div><h1>Account & Application Settings</h1><div class="sub">Configure user profile parameters, select system UI color themes, and manage security settings.</div></div>
+</div>
+
+<div class="content" style="display: flex; flex-direction: column; gap: 20px;">
+  <!-- Theme Configuration -->
+  <div class="panel reveal" style="padding: 24px;">
+    <h3>Select Interface Theme</h3>
+    <p style="color: var(--text-2); font-size: 13px; margin-bottom: 16px;">Customize your career assistant with glassmorphic presets matching your mood.</p>
+    
+    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; width: 100%;">
+      <!-- Professional Default -->
+      <div class="theme-card active" data-theme="default" style="border: 2px solid var(--border); border-radius: var(--radius); padding: 14px; cursor: pointer; text-align: center; background: var(--bg-page); transition: transform 0.2s;">
+        <div style="width: 100%; height: 50px; border-radius: 8px; background: linear-gradient(135deg, #4f46e5, #a855f7); margin-bottom: 8px;"></div>
+        <span style="font-size: 13px; font-weight: 700;">Professional</span>
+      </div>
+      <!-- Cool Ocean -->
+      <div class="theme-card" data-theme="cool" style="border: 2px solid var(--border); border-radius: var(--radius); padding: 14px; cursor: pointer; text-align: center; background: var(--bg-page); transition: transform 0.2s;">
+        <div style="width: 100%; height: 50px; border-radius: 8px; background: linear-gradient(135deg, #06b6d4, #3b82f6); margin-bottom: 8px;"></div>
+        <span style="font-size: 13px; font-weight: 700;">Cool Ocean</span>
+      </div>
+      <!-- Cute Pink -->
+      <div class="theme-card" data-theme="cute" style="border: 2px solid var(--border); border-radius: var(--radius); padding: 14px; cursor: pointer; text-align: center; background: var(--bg-page); transition: transform 0.2s;">
+        <div style="width: 100%; height: 50px; border-radius: 8px; background: linear-gradient(135deg, #ff85a1, #b388eb); margin-bottom: 8px;"></div>
+        <span style="font-size: 13px; font-weight: 700;">Lavender Cute</span>
+      </div>
+      <!-- Nature -->
+      <div class="theme-card" data-theme="nature" style="border: 2px solid var(--border); border-radius: var(--radius); padding: 14px; cursor: pointer; text-align: center; background: var(--bg-page); transition: transform 0.2s;">
+        <div style="width: 100%; height: 50px; border-radius: 8px; background: linear-gradient(135deg, #22c55e, #10b981); margin-bottom: 8px;"></div>
+        <span style="font-size: 13px; font-weight: 700;">Forest Nature</span>
+      </div>
+      <!-- Sunset -->
+      <div class="theme-card" data-theme="sunset" style="border: 2px solid var(--border); border-radius: var(--radius); padding: 14px; cursor: pointer; text-align: center; background: var(--bg-page); transition: transform 0.2s;">
+        <div style="width: 100%; height: 50px; border-radius: 8px; background: linear-gradient(135deg, #f97316, #f43f5e); margin-bottom: 8px;"></div>
+        <span style="font-size: 13px; font-weight: 700;">Sunset Glow</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Security Settings -->
+  <div class="panel reveal" style="padding: 24px; max-width: 500px;">
+    <h3>Update Password</h3>
+    <p style="color: var(--text-2); font-size: 13px; margin-bottom: 16px;">Modify your credentials to protect your student profile details.</p>
+    
+    <form id="settingsPasswordForm" style="display: flex; flex-direction: column; gap: 14px;">
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <label for="setOldPass" style="font-size: 12px; font-weight: 600; color: var(--text-2);">Current Password</label>
+        <input type="password" id="setOldPass" style="padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-page); color: var(--text); outline: none;" required placeholder="••••••••">
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <label for="setNewPass" style="font-size: 12px; font-weight: 600; color: var(--text-2);">New Password</label>
+        <input type="password" id="setNewPass" style="padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-page); color: var(--text); outline: none;" required placeholder="••••••••">
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 4px;">
+        <label for="setConfirmPass" style="font-size: 12px; font-weight: 600; color: var(--text-2);">Confirm New Password</label>
+        <input type="password" id="setConfirmPass" style="padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border); background: var(--bg-page); color: var(--text); outline: none;" required placeholder="••••••••">
+      </div>
+      <button type="submit" class="start-btn" style="padding: 12px; margin-top: 6px;">Update Password <i class="ti ti-lock"></i></button>
+    </form>
+  </div>
+</div>

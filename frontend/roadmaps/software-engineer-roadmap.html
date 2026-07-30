@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Software Engineer Roadmap</title>
+<style>
+  :root{
+    --bg:#0f172a; --panel:#0b1220; --line:#2b78e4; --yellow:#fdff00;
+    --sub:#ffe599; --card:#ffffff; --ink:#111827; --muted:#64748b;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:#f8fafc;color:var(--ink);}
+  header{background:#0f172a;color:#fff;padding:22px 28px;}
+  header h1{margin:0;font-size:28px;}
+  header p{margin:6px 0 0;color:#94a3b8;font-size:14px;}
+  .toolbar{display:flex;gap:8px;padding:10px 16px;background:#fff;border-bottom:1px solid #e2e8f0;align-items:center;position:sticky;top:0;z-index:50;}
+  .toolbar button{border:1px solid #cbd5e1;background:#f1f5f9;border-radius:6px;padding:6px 12px;cursor:pointer;font-size:13px;}
+  .toolbar button:hover{background:#e2e8f0;}
+  .toolbar .hint{margin-left:auto;color:#64748b;font-size:12px;}
+  #viewport{width:100%;height:calc(100vh - 108px);overflow:hidden;position:relative;background:
+     radial-gradient(circle,#e2e8f0 1px,transparent 1px) 0 0/22px 22px, #f8fafc;
+     cursor:grab;}
+  #viewport.dragging{cursor:grabbing;}
+  #canvas{position:absolute;top:0;left:0;transform-origin:0 0;}
+  svg#edges{position:absolute;top:0;left:0;overflow:visible;pointer-events:none;}
+  .node{
+     position:absolute;border:2px solid #111;border-radius:6px;padding:10px 14px;
+     font-size:14px;font-weight:600;cursor:pointer;background:var(--sub);
+     box-shadow:1px 2px 0 rgba(0,0,0,.15);user-select:none;white-space:nowrap;
+  }
+  .node.title{background:var(--yellow);font-size:16px;}
+  .node.section{background:#fff;border-color:#94a3b8;font-weight:700;color:#334155;font-size:13px;padding:6px 10px;}
+  .node:hover{filter:brightness(0.95);transform:translateY(-1px);}
+  .node.expanded{outline:3px solid var(--line);}
+  .label{position:absolute;font-size:13px;font-weight:700;color:#334155;}
+  #overlay{display:none;position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:100;align-items:center;justify-content:center;}
+  #overlay.show{display:flex;}
+  #modal{background:#fff;border-radius:10px;max-width:560px;width:90%;max-height:80vh;overflow:auto;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.3);}
+  #modal h2{margin:0 0 6px;font-size:20px;}
+  #modal h4{margin:16px 0 6px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);}
+  #modal p{margin:0;font-size:14px;line-height:1.5;color:#334155;}
+  #modal ul{margin:4px 0;padding-left:18px;font-size:14px;color:#334155;}
+  #modal a{color:#2563eb;text-decoration:none;}
+  #modal a:hover{text-decoration:underline;}
+  #modal .close{float:right;border:none;background:none;font-size:20px;cursor:pointer;color:#64748b;}
+  footer{padding:26px 28px 60px;background:#0f172a;color:#cbd5e1;}
+  footer h2{color:#fff;font-size:20px;margin-top:0;}
+  footer h3{color:#fff;font-size:15px;margin-bottom:6px;}
+  footer ol{font-size:13px;line-height:1.7;padding-left:20px;}
+  footer a{color:#93c5fd;}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>💻 Software Engineer Roadmap</h1>
+  <p>An interactive, pan &amp; zoom guide — beginner to advanced — for becoming a Software Engineer</p>
+</header>
+
+<div class="toolbar">
+  <button id="zoomIn">➕ Zoom In</button>
+  <button id="zoomOut">➖ Zoom Out</button>
+  <button id="reset">⤢ Reset View</button>
+  <span class="hint">Drag to pan · Scroll to zoom · Click any node for details</span>
+</div>
+
+<div id="viewport">
+  <div id="canvas">
+    <svg id="edges" width="2000" height="3600"></svg>
+  </div>
+</div>
+
+<div id="overlay">
+  <div id="modal">
+    <button class="close" onclick="closeModal()">✕</button>
+    <h2 id="mTitle"></h2>
+    <p id="mDesc"></p>
+    <h4>Prerequisites</h4>
+    <ul id="mPre"></ul>
+    <h4>Learning Resources</h4>
+    <ul id="mRes"></ul>
+  </div>
+</div>
+
+<footer>
+  <h2>📚 Bibliography &amp; References</h2>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;">
+    <div>
+      <h3>IEEE</h3>
+      <ol>
+        <li>IEEE Software — ieeexplore.ieee.org</li>
+        <li>IEEE Transactions on Software Engineering</li>
+        <li>IEEE Computer Magazine</li>
+      </ol>
+    </div>
+    <div>
+      <h3>NPTEL</h3>
+      <ol>
+        <li>NPTEL — Programming, Data Structures and Algorithms (IIT Madras)</li>
+        <li>NPTEL — Design and Analysis of Algorithms</li>
+        <li>NPTEL — Software Engineering</li>
+      </ol>
+    </div>
+    <div>
+      <h3>MIT OpenCourseWare</h3>
+      <ol>
+        <li>6.006 Introduction to Algorithms</li>
+        <li>6.102 Software Construction</li>
+        <li>6.033 Computer System Engineering</li>
+      </ol>
+    </div>
+    <div>
+      <h3>Standard Textbooks</h3>
+      <ol>
+        <li>Thomas H. Cormen et al. — <i>Introduction to Algorithms</i> (CLRS)</li>
+        <li>Robert C. Martin — <i>Clean Code</i></li>
+        <li>Gayle Laakmann McDowell — <i>Cracking the Coding Interview</i></li>
+        <li>Erich Gamma et al. — <i>Design Patterns</i> (Gang of Four)</li>
+      </ol>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ---------- DATA ----------
+const sections = [
+  {id:"sec1", title:"1. Programming Foundations", items:[
+    {id:"pickLang", title:"Choose a Language (Python / Java / C++)",
+      desc:"Pick one general-purpose language to build fluency in first — syntax, standard library, tooling.",
+      pre:[], res:["Official language docs","roadmap.sh Computer Science Roadmap"]},
+    {id:"progBasics", title:"Programming Basics",
+      desc:"Variables, control flow, functions, recursion, and basic error handling.",
+      pre:["Choose a Language (Python / Java / C++)"], res:["CS50 (Harvard)","Automate the Boring Stuff"]},
+    {id:"oop", title:"Object-Oriented Programming",
+      desc:"Classes, inheritance, polymorphism, encapsulation — modeling problems as objects.",
+      pre:["Programming Basics"], res:["MIT 6.031 lecture notes"]},
+    {id:"termbasics", title:"Basic Terminal Usage",
+      desc:"Navigating the filesystem, running scripts, and managing processes from the command line.",
+      pre:[], res:["The Linux Command Line (free book)"]},
+  ]},
+  {id:"sec2", title:"2. Data Structures & Algorithms", items:[
+    {id:"arrstr", title:"Arrays, Strings & Hashing",
+      desc:"The building blocks: contiguous memory, string manipulation, hash maps and sets.",
+      pre:["Object-Oriented Programming"], res:["NeetCode DSA roadmap","CLRS Ch. 11"]},
+    {id:"linkedlist", title:"Linked Lists, Stacks & Queues",
+      desc:"Pointer-based structures and their use in parsing, undo systems, and scheduling.",
+      pre:["Arrays, Strings & Hashing"], res:["CLRS Ch. 10"]},
+    {id:"treesgraphs", title:"Trees & Graphs",
+      desc:"Binary trees, BSTs, heaps, graph traversal (BFS/DFS), shortest paths.",
+      pre:["Linked Lists, Stacks & Queues"], res:["CLRS Ch. 12, 22, 24"]},
+    {id:"sortsearch", title:"Sorting & Searching",
+      desc:"Comparison sorts, binary search, and when to reach for each.",
+      pre:["Trees & Graphs"], res:["CLRS Ch. 2, 6-8"]},
+  ]},
+  {id:"sec3", title:"3. Computer Science Fundamentals", items:[
+    {id:"bigo", title:"Algorithmic Complexity (Big-O)",
+      desc:"Reasoning about time and space complexity to compare solutions.",
+      pre:["Sorting & Searching"], res:["MIT 6.006 Introduction to Algorithms"]},
+    {id:"os", title:"Operating Systems Basics",
+      desc:"Processes, threads, memory management, scheduling, concurrency primitives.",
+      pre:["Algorithmic Complexity (Big-O)"], res:["OSTEP (free book)"]},
+    {id:"networks", title:"Computer Networks Basics",
+      desc:"TCP/IP, HTTP, sockets — how programs talk to each other over a network.",
+      pre:["Operating Systems Basics"], res:["Computer Networking: A Top-Down Approach"]},
+    {id:"db", title:"Databases & SQL",
+      desc:"Relational modeling, joins, transactions, indexing fundamentals.",
+      pre:["Computer Networks Basics"], res:["roadmap.sh SQL Roadmap"]},
+  ]},
+  {id:"sec4", title:"4. Software Design & Architecture", items:[
+    {id:"designpatterns", title:"Design Patterns",
+      desc:"Reusable solutions: Factory, Singleton, Observer, Strategy, and more.",
+      pre:["Databases & SQL"], res:["Design Patterns (Gang of Four)"]},
+    {id:"solid", title:"SOLID Principles",
+      desc:"Guidelines for writing maintainable, extensible object-oriented code.",
+      pre:["Design Patterns"], res:["Clean Architecture (Robert C. Martin)"]},
+    {id:"sysdesignbasics", title:"System Design Basics",
+      desc:"Scalability, load balancing, caching, and database sharding at a conceptual level.",
+      pre:["SOLID Principles"], res:["Designing Data-Intensive Applications"]},
+    {id:"apidesign", title:"API Design (REST / GraphQL)",
+      desc:"Designing clean, versioned interfaces between services and clients.",
+      pre:["System Design Basics"], res:["REST API design guide"]},
+  ]},
+  {id:"sec5", title:"5. Version Control & Collaboration", items:[
+    {id:"git", title:"Git & GitHub",
+      desc:"Commits, branches, merges, pull requests, and collaborative workflows.",
+      pre:["API Design (REST / GraphQL)"], res:["Pro Git (free book)","GitHub Docs"]},
+    {id:"codereview", title:"Code Review Practices",
+      desc:"Giving and receiving feedback, writing reviewable diffs, style guides.",
+      pre:["Git & GitHub"], res:["Google Engineering Practices docs"]},
+    {id:"agile", title:"Agile & Scrum",
+      desc:"Sprints, standups, backlogs — how software teams plan and ship iteratively.",
+      pre:["Code Review Practices"], res:["Scrum Guide (scrumguides.org)"]},
+    {id:"docs", title:"Documentation",
+      desc:"Writing READMEs, ADRs, and API docs that keep a codebase understandable.",
+      pre:["Agile & Scrum"], res:["Write the Docs guide"]},
+  ]},
+  {id:"sec6", title:"6. Testing & Quality", items:[
+    {id:"unittest", title:"Unit Testing",
+      desc:"Isolating and verifying small units of logic with frameworks like JUnit/pytest/Jest.",
+      pre:["Documentation"], res:["pytest documentation","Jest documentation"]},
+    {id:"e2etest", title:"Integration & E2E Testing",
+      desc:"Testing how components work together and simulating real user flows.",
+      pre:["Unit Testing"], res:["Playwright documentation"]},
+    {id:"debugging", title:"Debugging Techniques",
+      desc:"Using debuggers, logs, and systematic hypothesis testing to find root causes.",
+      pre:["Integration & E2E Testing"], res:["Debugging (David Agans)"]},
+    {id:"cicdbasics", title:"CI/CD Basics",
+      desc:"Automating build, test, and deploy pipelines with GitHub Actions or similar tools.",
+      pre:["Debugging Techniques"], res:["GitHub Actions documentation"]},
+  ]},
+  {id:"sec7", title:"7. Career & Growth", items:[
+    {id:"projects", title:"Portfolio Projects",
+      desc:"Build 2-3 end-to-end projects that show range: a service, a tool, a UI.",
+      pre:["CI/CD Basics"], res:["roadmap.sh Projects"]},
+    {id:"dsainterview", title:"Interview Preparation (DSA)",
+      desc:"Practicing data structures & algorithms problems under time constraints.",
+      pre:["Portfolio Projects"], res:["Cracking the Coding Interview","NeetCode 150"]},
+    {id:"sysdesigninterview", title:"System Design Interviews",
+      desc:"Practicing whiteboard-style architecture discussions for senior roles.",
+      pre:["Interview Preparation (DSA)"], res:["System Design Interview (Alex Xu)"]},
+    {id:"careers", title:"Career Paths",
+      desc:"Software Engineer, SDE, Backend/Frontend specialist — how these roles differ and overlap.",
+      pre:["System Design Interviews"], res:["roadmap.sh: Software Engineer career paths"]},
+  ]},
+];
+
+// ---------- LAYOUT ENGINE (balanced 2-column grid) ----------
+const COL_W = 300, COL_GAP = 60, ROW_H = 54, ROW_GAP = 10;
+const LEFT_X = 70, RIGHT_X = LEFT_X + COL_W + COL_GAP;
+const CANVAS_CENTER = LEFT_X + (COL_W*2 + COL_GAP)/2;
+const SECTION_GAP = 46;
+
+const nodes = [];
+const edges = [];
+let cursorY = 90;
+
+nodes.push({id:"title", x:CANVAS_CENTER-140, y:20, w:280, h:50, type:"title", title:"Software Engineer"});
+let prevSectionLastId = "title";
+
+sections.forEach(sec=>{
+  nodes.push({id:sec.id, x:LEFT_X, y:cursorY, w:COL_W*2+COL_GAP, h:28, type:"section", title:sec.title});
+  edges.push([prevSectionLastId, sec.id]);
+  cursorY += 28 + 14;
+
+  let prevInSection = sec.id;
+  sec.items.forEach((item, i)=>{
+    const col = i % 2;
+    const row = Math.floor(i / 2);
+    const x = col===0 ? LEFT_X : RIGHT_X;
+    const y = cursorY + row*(ROW_H+ROW_GAP);
+    nodes.push({id:item.id, x, y, w:COL_W, h:ROW_H, type:"node",
+      title:item.title, desc:item.desc, pre:item.pre, res:item.res});
+    edges.push([prevInSection, item.id]);
+    prevInSection = item.id;
+  });
+
+  const rows = Math.ceil(sec.items.length/2);
+  cursorY += rows*(ROW_H+ROW_GAP) + SECTION_GAP;
+  prevSectionLastId = prevInSection;
+});
+
+// ---------- RENDER ----------
+const canvas = document.getElementById('canvas');
+const svg = document.getElementById('edges');
+
+function centerY(n){ return n.y + n.h/2; }
+function centerX(n){ return n.x + n.w/2; }
+function byId(id){ return nodes.find(n=>n.id===id); }
+
+nodes.forEach(n=>{
+  const div = document.createElement('div');
+  div.className = 'node ' + (n.type||'node');
+  div.style.left = n.x+'px';
+  div.style.top = n.y+'px';
+  div.style.width = n.w+'px';
+  div.style.minHeight = n.h+'px';
+  div.style.display='flex';
+  div.style.alignItems='center';
+  div.style.justifyContent = n.type==='section' ? 'flex-start' : 'center';
+  div.textContent = n.title;
+  div.dataset.id = n.id;
+  if(n.type!=='section' && n.type!=='title'){
+    div.addEventListener('click', ()=>openModal(n));
+  }
+  canvas.appendChild(div);
+});
+
+let svgHtml = '';
+edges.forEach(([a,b])=>{
+  const A = byId(a), B = byId(b);
+  if(!A||!B) return;
+  const x1 = centerX(A), y1 = A.y+A.h, x2 = centerX(B), y2 = B.y;
+  const midY = (y1+y2)/2;
+  svgHtml += `<path d="M ${x1} ${y1} C ${x1} ${midY}, ${x2} ${midY}, ${x2} ${y2}" fill="none" stroke="#2b78e4" stroke-width="2.5" stroke-dasharray="0.8 6" stroke-linecap="round"/>`;
+});
+svg.innerHTML = svgHtml;
+
+let maxX=0, maxY=0;
+nodes.forEach(n=>{ maxX=Math.max(maxX,n.x+n.w+80); maxY=Math.max(maxY,n.y+n.h+80); });
+svg.setAttribute('width', maxX);
+svg.setAttribute('height', maxY);
+canvas.style.width = maxX+'px';
+canvas.style.height = maxY+'px';
+
+// ---------- PAN & ZOOM ----------
+const viewport = document.getElementById('viewport');
+let scale = 0.85, panX = 40, panY = 20;
+let isDragging=false, startX=0, startY=0, startPanX=0, startPanY=0;
+
+function applyTransform(){
+  canvas.style.transform = `translate(${panX}px,${panY}px) scale(${scale})`;
+}
+applyTransform();
+
+viewport.addEventListener('mousedown', e=>{
+  isDragging = true;
+  viewport.classList.add('dragging');
+  startX = e.clientX; startY = e.clientY;
+  startPanX = panX; startPanY = panY;
+});
+window.addEventListener('mousemove', e=>{
+  if(!isDragging) return;
+  panX = startPanX + (e.clientX - startX);
+  panY = startPanY + (e.clientY - startY);
+  applyTransform();
+});
+window.addEventListener('mouseup', ()=>{ isDragging=false; viewport.classList.remove('dragging'); });
+
+viewport.addEventListener('wheel', e=>{
+  e.preventDefault();
+  const delta = e.deltaY > 0 ? -0.08 : 0.08;
+  const newScale = Math.min(2.2, Math.max(0.3, scale + delta));
+  scale = newScale;
+  applyTransform();
+}, {passive:false});
+
+document.getElementById('zoomIn').onclick = ()=>{ scale = Math.min(2.2, scale+0.15); applyTransform(); };
+document.getElementById('zoomOut').onclick = ()=>{ scale = Math.max(0.3, scale-0.15); applyTransform(); };
+document.getElementById('reset').onclick = ()=>{ scale=0.85; panX=40; panY=20; applyTransform(); };
+
+// ---------- MODAL ----------
+function openModal(n){
+  document.getElementById('mTitle').textContent = n.title;
+  document.getElementById('mDesc').textContent = n.desc || '';
+  const pre = document.getElementById('mPre');
+  pre.innerHTML = (n.pre&&n.pre.length) ? n.pre.map(p=>`<li>${p}</li>`).join('') : '<li>None</li>';
+  const res = document.getElementById('mRes');
+  res.innerHTML = (n.res&&n.res.length) ? n.res.map(r=>`<li>${r}</li>`).join('') : '<li>—</li>';
+  document.getElementById('overlay').classList.add('show');
+}
+function closeModal(){ document.getElementById('overlay').classList.remove('show'); }
+document.getElementById('overlay').addEventListener('click', e=>{
+  if(e.target.id==='overlay') closeModal();
+});
+</script>
+</body>
+</html>

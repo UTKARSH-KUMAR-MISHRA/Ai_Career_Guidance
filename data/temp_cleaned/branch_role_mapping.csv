@@ -1,0 +1,201 @@
+mapping_id,branch_name,branch_code,role_id,role_name,priority,recommended,bridge_skills,higher_studies_option,career_path,industry,notes
+BRM001,Information Technology,IT,ROLE027,UI/UX Designer,Medium,Yes,Git;DSA;AWS;Java,M.Tech,Specialist,E-commerce,Suitable based on curriculum alignment.
+BRM002,Electronics and Communication,ECE,ROLE038,NLP Engineer,Low,Yes,Machine Learning;Git;Java;Networking,MS,Entry Level,IT,Suitable based on curriculum alignment.
+BRM003,Data Science,DS,ROLE040,AR/VR Developer,Low,Yes,Networking;DSA;Machine Learning;AWS,MBA,Architect,Manufacturing,Suitable based on curriculum alignment.
+BRM004,Data Science,DS,ROLE041,SAP Consultant,Low,Yes,Networking;DSA;Linux;Python,Unknown,Entry Level,Telecom,Suitable based on curriculum alignment.
+BRM005,Mechanical Engineering,ME,ROLE048,CRM Developer,Medium,Yes,Git;SQL;AWS;Python,Unknown,Specialist,E-commerce,Suitable based on curriculum alignment.
+BRM006,Computer Science and Engineering,CSE,ROLE040,AR/VR Developer,Low,Yes,Java;Git;Machine Learning;Linux,MBA,Specialist,Finance,Suitable based on curriculum alignment.
+BRM007,Electrical Engineering,EE,ROLE045,Technical Writer,Low,Yes,Git;AWS;Networking;Linux,M.Tech,Technical Lead,Healthcare,Suitable based on curriculum alignment.
+BRM008,Computer Science and Engineering,CSE,ROLE006,Backend Developer,Low,No,SQL;Machine Learning;DSA;Linux,MBA,Entry Level,Finance,Suitable based on curriculum alignment.
+BRM009,Data Science,DS,ROLE024,Robotics Engineer,Low,No,Java;Machine Learning;Networking;Git,Unknown,Specialist,IT,Suitable based on curriculum alignment.
+BRM010,Mechanical Engineering,ME,ROLE060,Web Developer,High,No,Networking;Python;DSA;SQL,Unknown,Technical Lead,Healthcare,Suitable based on curriculum alignment.
+BRM011,Computer Science and Engineering,CSE,ROLE005,Business Analyst,Medium,Yes,Git;Machine Learning;DSA;Java,Unknown,Technical Lead,IT,Suitable based on curriculum alignment.
+BRM012,Information Technology,IT,ROLE025,UI Designer,Medium,Yes,SQL;Networking;Linux;Python,MS,Technical Lead,E-commerce,Suitable based on curriculum alignment.
+BRM013,Information Technology,IT,ROLE026,UX Designer,Low,No,DSA;Git;Java;AWS,Unknown,Entry Level,E-commerce,Suitable based on curriculum alignment.
+BRM014,Mechanical Engineering,ME,ROLE027,UI/UX Designer,Medium,Yes,Python;DSA;AWS;SQL,Unknown,Entry Level,IT,Suitable based on curriculum alignment.
+BRM015,Computer Science and Engineering,CSE,ROLE054,Storage Engineer,Low,Yes,Networking;AWS;SQL;Java,MS,Architect,Finance,Suitable based on curriculum alignment.
+BRM016,Electrical Engineering,EE,ROLE004,Data Analyst,Medium,Yes,Machine Learning;Git;AWS;Java,MS,Entry Level,Healthcare,Suitable based on curriculum alignment.
+BRM017,Computer Science and Engineering,CSE,ROLE020,Game Developer,Medium,Yes,Git;Machine Learning;AWS;Networking,Unknown,Architect,Healthcare,Suitable based on curriculum alignment.
+BRM018,Mechanical Engineering,ME,ROLE035,BI Developer,Low,Yes,Java;Machine Learning;Networking;Python,Unknown,Specialist,Telecom,Suitable based on curriculum alignment.
+BRM019,Data Science,DS,ROLE056,Scrum Master,Low,No,Networking;AWS;Git;Python,Unknown,Specialist,Healthcare,Suitable based on curriculum alignment.
+BRM020,Data Science,DS,ROLE005,Business Analyst,Medium,No,SQL;Java;Networking;Linux,MS,Entry Level,IT,Suitable based on curriculum alignment.
+BRM021,Electronics and Communication,ECE,ROLE025,UI Designer,High,Yes,Git;Machine Learning;Python;SQL,MS,Specialist,E-commerce,Suitable based on curriculum alignment.
+BRM022,Electrical Engineering,EE,ROLE022,IoT Engineer,Low,No,Python;DSA;Linux;Java,M.Tech,Entry Level,Healthcare,Suitable based on curriculum alignment.
+BRM023,Information Technology,IT,ROLE046,Cloud Security Engineer,High,No,Java;DSA;Networking;SQL,MBA,Architect,E-commerce,Suitable based on curriculum alignment.
+BRM024,Information Technology,IT,ROLE015,Android Developer,Low,No,Networking;Linux;Git;AWS,M.Tech,Technical Lead,Telecom,Suitable based on curriculum alignment.
+BRM025,Computer Science and Engineering,CSE,ROLE056,Scrum Master,High,Yes,Networking;SQL;Machine Learning;Java,MBA,Entry Level,IT,Suitable based on curriculum alignment.
+BRM026,Data Science,DS,ROLE039,Computer Vision Engineer,Medium,No,Java;Git;AWS;Machine Learning,MS,Entry Level,Healthcare,Suitable based on curriculum alignment.
+BRM027,Electronics and Communication,ECE,ROLE024,Robotics Engineer,Medium,Yes,DSA;Python;Linux;SQL,MBA,Specialist,Manufacturing,Suitable based on curriculum alignment.
+BRM028,Electronics and Communication,ECE,ROLE001,Data Scientist,Medium,No,Java;SQL;Git;AWS,Unknown,Technical Lead,Finance,Suitable based on curriculum alignment.
+BRM029,Electronics and Communication,ECE,ROLE048,CRM Developer,Low,No,AWS;Git;Linux;Python,Unknown,Specialist,Healthcare,Suitable based on curriculum alignment.
+BRM030,Civil Engineering,CE,ROLE045,Technical Writer,Medium,Yes,Python;Networking;DSA;Java,MBA,Technical Lead,Manufacturing,Suitable based on curriculum alignment.
+BRM031,Electronics and Communication,ECE,ROLE027,UI/UX Designer,Low,Yes,Machine Learning;Git;Linux;Networking,M.Tech,Specialist,Finance,Suitable based on curriculum alignment.
+BRM032,Civil Engineering,CE,ROLE008,Full Stack Developer,High,No,Python;AWS;SQL;DSA,Unknown,Architect,E-commerce,Suitable based on curriculum alignment.
+BRM033,Electrical Engineering,EE,ROLE035,BI Developer,High,No,Python;SQL;Git;DSA,Unknown,Specialist,Finance,Suitable based on curriculum alignment.
+BRM034,Artificial Intelligence & Data Science,AIDS,ROLE054,Storage Engineer,Low,No,Python;SQL;Linux;AWS,Unknown,Technical Lead,Manufacturing,Suitable based on curriculum alignment.
+BRM035,Information Technology,IT,ROLE028,Product Manager,High,Yes,AWS;DSA;Python;Machine Learning,MS,Architect,Telecom,Suitable based on curriculum alignment.
+BRM036,Civil Engineering,CE,ROLE043,Digital Marketing Analyst,Low,No,Python;Linux;Java;Networking,M.Tech,Entry Level,Telecom,Suitable based on curriculum alignment.
+BRM037,Electronics and Communication,ECE,ROLE046,Cloud Security Engineer,Medium,No,Machine Learning;Networking;Java;Python,MBA,Entry Level,Telecom,Suitable based on curriculum alignment.
+BRM038,Computer Science and Engineering,CSE,ROLE050,Power BI Developer,High,No,Python;Linux;Networking;DSA,MS,Entry Level,Finance,Suitable based on curriculum alignment.
+BRM039,Mechanical Engineering,ME,ROLE045,Technical Writer,Low,No,Machine Learning;DSA;Linux;Git,MS,Architect,Manufacturing,Suitable based on curriculum alignment.
+BRM040,Information Technology,IT,ROLE001,Data Scientist,High,Yes,Linux;SQL;Networking;AWS,MBA,Specialist,Finance,Suitable based on curriculum alignment.
+BRM041,Civil Engineering,CE,ROLE029,Technical Support Engineer,Medium,Yes,Networking;Git;AWS;SQL,MBA,Entry Level,Manufacturing,Suitable based on curriculum alignment.
+BRM042,Artificial Intelligence & Data Science,AIDS,ROLE034,Solutions Architect,Low,No,Linux;DSA;Machine Learning;Python,M.Tech,Architect,Telecom,Suitable based on curriculum alignment.
+BRM043,Mechanical Engineering,ME,ROLE034,Solutions Architect,Low,No,Machine Learning;Java;Git;DSA,M.Tech,Entry Level,Telecom,Suitable based on curriculum alignment.
+BRM044,Electrical Engineering,EE,ROLE005,Business Analyst,Low,No,Machine Learning;DSA;Git;Python,Unknown,Specialist,Healthcare,Suitable based on curriculum alignment.
+BRM045,Mechanical Engineering,ME,ROLE007,Frontend Developer,Medium,Yes,Linux;Git;Networking;Java,MBA,Architect,Manufacturing,Suitable based on curriculum alignment.
+BRM046,Information Technology,IT,ROLE025,UI Designer,High,Yes,SQL;DSA;Networking;AWS,Unknown,Entry Level,Finance,Suitable based on curriculum alignment.
+BRM047,Electrical Engineering,EE,ROLE058,Data Governance Analyst,Low,Yes,Linux;Networking;Machine Learning;AWS,MS,Specialist,Manufacturing,Suitable based on curriculum alignment.
+BRM048,Civil Engineering,CE,ROLE013,Security Engineer,High,No,Java;Networking;Linux;Git,MS,Entry Level,Telecom,Suitable based on curriculum alignment.
+BRM049,Information Technology,IT,ROLE012,Cyber Security Analyst,High,No,Linux;Git;DSA;SQL,M.Tech,Architect,Telecom,Suitable based on curriculum alignment.
+BRM050,Mechanical Engineering,ME,ROLE002,Machine Learning Engineer,Medium,Yes,Networking;DSA;Git;AWS,Unknown,Entry Level,Manufacturing,Suitable based on curriculum alignment.
+BRM051,Civil Engineering,CE,ROLE023,Embedded Systems Engineer,Low,No,Git;Python;AWS;Networking,M.Tech,Entry Level,Healthcare,Suitable based on curriculum alignment.
+BRM052,Artificial Intelligence & Data Science,AIDS,ROLE010,DevOps Engineer,High,No,Git;Python;Java;DSA,MBA,Technical Lead,Manufacturing,Suitable based on curriculum alignment.
+BRM053,Artificial Intelligence & Data Science,AIDS,ROLE016,iOS Developer,High,Yes,Machine Learning;DSA;Linux;AWS,Unknown,Technical Lead,Telecom,Suitable based on curriculum alignment.
+BRM054,Artificial Intelligence & Data Science,AIDS,ROLE046,Cloud Security Engineer,Low,No,Machine Learning;Git;Python;AWS,MS,Architect,Telecom,Suitable based on curriculum alignment.
+BRM055,Electronics and Communication,ECE,ROLE014,Ethical Hacker,Medium,No,Git;Java;Python;Networking,Unknown,Specialist,IT,Suitable based on curriculum alignment.
+BRM056,Electronics and Communication,ECE,ROLE050,Power BI Developer,Low,No,Python;DSA;SQL;Linux,MBA,Architect,Healthcare,Suitable based on curriculum alignment.
+BRM057,Mechanical Engineering,ME,ROLE050,Power BI Developer,High,Yes,Machine Learning;SQL;Java;AWS,M.Tech,Technical Lead,Finance,Suitable based on curriculum alignment.
+BRM058,Electronics and Communication,ECE,ROLE037,Generative AI Engineer,Low,No,Linux;Python;Git;SQL,MS,Technical Lead,Finance,Suitable based on curriculum alignment.
+BRM059,Civil Engineering,CE,ROLE017,Flutter Developer,High,No,AWS;Linux;Machine Learning;Git,MBA,Architect,Manufacturing,Suitable based on curriculum alignment.
+BRM060,Electrical Engineering,EE,ROLE046,Cloud Security Engineer,Low,No,SQL;Git;Machine Learning;Python,MBA,Entry Level,IT,Suitable based on curriculum alignment.
+BRM061,Mechanical Engineering,ME,ROLE014,Ethical Hacker,High,No,Networking;Linux;Machine Learning;DSA,Unknown,Architect,E-commerce,Suitable based on curriculum alignment.
+BRM062,Civil Engineering,CE,ROLE023,Embedded Systems Engineer,Low,Yes,Machine Learning;Git;AWS;Linux,MS,Architect,Finance,Suitable based on curriculum alignment.
+BRM063,Data Science,DS,ROLE011,Cloud Engineer,Medium,Yes,AWS;Networking;DSA;Machine Learning,MBA,Technical Lead,E-commerce,Suitable based on curriculum alignment.
+BRM064,Electronics and Communication,ECE,ROLE009,Software Engineer,Low,Yes,Java;Linux;Machine Learning;Git,M.Tech,Entry Level,E-commerce,Suitable based on curriculum alignment.
+BRM065,Electronics and Communication,ECE,ROLE054,Storage Engineer,Medium,Yes,DSA;Machine Learning;Linux;SQL,M.Tech,Specialist,Manufacturing,Suitable based on curriculum alignment.
+BRM066,Data Science,DS,ROLE054,Storage Engineer,High,Yes,Machine Learning;AWS;Networking;Python,MS,Architect,Telecom,Suitable based on curriculum alignment.
+BRM067,Computer Science and Engineering,CSE,ROLE029,Technical Support Engineer,High,No,SQL;Machine Learning;Linux;AWS,MS,Technical Lead,E-commerce,Suitable based on curriculum alignment.
+BRM068,Electronics and Communication,ECE,ROLE013,Security Engineer,High,Yes,Git;DSA;Python;Linux,MS,Architect,Telecom,Suitable based on curriculum alignment.
+BRM069,Civil Engineering,CE,ROLE041,SAP Consultant,High,Yes,SQL;Networking;Machine Learning;Java,MS,Architect,Manufacturing,Suitable based on curriculum alignment.
+BRM070,Information Technology,IT,ROLE020,Game Developer,Low,No,Python;Networking;Java;Machine Learning,M.Tech,Entry Level,Finance,Suitable based on curriculum alignment.
+BRM071,Electrical Engineering,EE,ROLE006,Backend Developer,Low,No,Git;Java;DSA;Machine Learning,MS,Entry Level,E-commerce,Suitable based on curriculum alignment.
+BRM072,Computer Science and Engineering,CSE,ROLE034,Solutions Architect,Medium,Yes,Git;AWS;Linux;Python,M.Tech,Specialist,Manufacturing,Suitable based on curriculum alignment.
+BRM073,Artificial Intelligence & Data Science,AIDS,ROLE050,Power BI Developer,Low,Yes,Python;Networking;Java;DSA,MBA,Architect,E-commerce,Suitable based on curriculum alignment.
+BRM074,Data Science,DS,ROLE004,Data Analyst,High,Yes,Linux;Machine Learning;Python;Networking,M.Tech,Specialist,IT,Suitable based on curriculum alignment.
+BRM075,Information Technology,IT,ROLE051,Systems Administrator,High,No,Git;DSA;Networking;AWS,MS,Entry Level,E-commerce,Suitable based on curriculum alignment.
+BRM076,Computer Science and Engineering,CSE,ROLE018,QA Engineer,High,No,Networking;Machine Learning;DSA;AWS,MBA,Architect,IT,Suitable based on curriculum alignment.
+BRM077,Mechanical Engineering,ME,ROLE044,SEO Analyst,Medium,Yes,SQL;AWS;DSA;Java,Unknown,Architect,Finance,Suitable based on curriculum alignment.
+BRM078,Electronics and Communication,ECE,ROLE003,AI Engineer,Medium,Yes,Networking;SQL;Machine Learning;AWS,MS,Specialist,E-commerce,Suitable based on curriculum alignment.
+BRM079,Data Science,DS,ROLE051,Systems Administrator,Low,No,SQL;DSA;Machine Learning;Networking,MBA,Specialist,Manufacturing,Suitable based on curriculum alignment.
+BRM080,Information Technology,IT,ROLE032,Site Reliability Engineer,Medium,Yes,AWS;Git;Java;DSA,MS,Entry Level,Telecom,Suitable based on curriculum alignment.
+BRM081,Civil Engineering,CE,ROLE035,BI Developer,High,Yes,DSA;Machine Learning;Networking;AWS,MS,Entry Level,Telecom,Suitable based on curriculum alignment.
+BRM082,Mechanical Engineering,ME,ROLE034,Solutions Architect,Medium,Yes,DSA;AWS;Linux;Python,MS,Architect,E-commerce,Suitable based on curriculum alignment.
+BRM083,Computer Science and Engineering,CSE,ROLE022,IoT Engineer,High,No,AWS;Machine Learning;Networking;Linux,MBA,Technical Lead,Healthcare,Suitable based on curriculum alignment.
+BRM084,Information Technology,IT,ROLE048,CRM Developer,High,Yes,Machine Learning;AWS;Linux;Networking,M.Tech,Specialist,IT,Suitable based on curriculum alignment.
+BRM085,Electronics and Communication,ECE,ROLE013,Security Engineer,High,No,Networking;DSA;AWS;Git,MBA,Architect,Finance,Suitable based on curriculum alignment.
+BRM086,Electronics and Communication,ECE,ROLE017,Flutter Developer,Medium,No,Machine Learning;Java;SQL;Python,M.Tech,Technical Lead,Finance,Suitable based on curriculum alignment.
+BRM087,Computer Science and Engineering,CSE,ROLE045,Technical Writer,Medium,No,Java;Networking;Linux;DSA,MS,Technical Lead,Healthcare,Suitable based on curriculum alignment.
+BRM088,Information Technology,IT,ROLE022,IoT Engineer,High,Yes,Python;Networking;Git;AWS,M.Tech,Architect,E-commerce,Suitable based on curriculum alignment.
+BRM089,Artificial Intelligence & Data Science,AIDS,ROLE032,Site Reliability Engineer,High,Yes,AWS;Git;Machine Learning;Networking,M.Tech,Technical Lead,Telecom,Suitable based on curriculum alignment.
+BRM090,Data Science,DS,ROLE021,Blockchain Developer,Low,No,Git;Networking;Java;AWS,Unknown,Technical Lead,E-commerce,Suitable based on curriculum alignment.
+BRM091,Electrical Engineering,EE,ROLE026,UX Designer,High,Yes,Java;Git;Networking;Python,MBA,Technical Lead,E-commerce,Suitable based on curriculum alignment.
+BRM092,Information Technology,IT,ROLE045,Technical Writer,Medium,No,Python;Machine Learning;Linux;SQL,M.Tech,Entry Level,Manufacturing,Suitable based on curriculum alignment.
+BRM093,Computer Science and Engineering,CSE,ROLE008,Full Stack Developer,Medium,Yes,Machine Learning;SQL;AWS;Python,MBA,Architect,Manufacturing,Suitable based on curriculum alignment.
+BRM094,Electronics and Communication,ECE,ROLE004,Data Analyst,High,No,Machine Learning;Linux;Java;Python,MBA,Technical Lead,Telecom,Suitable based on curriculum alignment.
+BRM095,Artificial Intelligence & Data Science,AIDS,ROLE012,Cyber Security Analyst,High,Yes,Java;Networking;Linux;Git,Unknown,Entry Level,E-commerce,Suitable based on curriculum alignment.
+BRM096,Civil Engineering,CE,ROLE037,Generative AI Engineer,High,No,Git;Networking;Linux;Machine Learning,M.Tech,Entry Level,E-commerce,Suitable based on curriculum alignment.
+BRM097,Electrical Engineering,EE,ROLE044,SEO Analyst,Medium,No,Machine Learning;SQL;Python;Linux,Unknown,Entry Level,IT,Suitable based on curriculum alignment.
+BRM098,Data Science,DS,ROLE056,Scrum Master,High,Yes,Machine Learning;AWS;Python;Git,Unknown,Architect,Healthcare,Suitable based on curriculum alignment.
+BRM099,Electrical Engineering,EE,ROLE025,UI Designer,Medium,Yes,Networking;Machine Learning;SQL;DSA,M.Tech,Technical Lead,Healthcare,Suitable based on curriculum alignment.
+BRM100,Electronics and Communication,ECE,ROLE056,Scrum Master,Low,Yes,DSA;SQL;Java;Linux,MBA,Entry Level,Manufacturing,Suitable based on curriculum alignment.
+BRM101,Information Technology,IT,ROLE017,Flutter Developer,Low,No,Networking;DSA;Machine Learning;Linux,MS,Architect,Telecom,Suitable based on curriculum alignment.
+BRM102,Mechanical Engineering,ME,ROLE041,SAP Consultant,High,No,Networking;Git;SQL;Linux,Unknown,Specialist,Manufacturing,Suitable based on curriculum alignment.
+BRM103,Electrical Engineering,EE,ROLE033,Network Engineer,Medium,Yes,AWS;Machine Learning;Java;Networking,Unknown,Entry Level,Healthcare,Suitable based on curriculum alignment.
+BRM104,Computer Science and Engineering,CSE,ROLE056,Scrum Master,Medium,Yes,Networking;Machine Learning;AWS;DSA,MBA,Architect,Telecom,Suitable based on curriculum alignment.
+BRM105,Artificial Intelligence & Data Science,AIDS,ROLE044,SEO Analyst,Low,Yes,Machine Learning;Java;SQL;Networking,Unknown,Entry Level,E-commerce,Suitable based on curriculum alignment.
+BRM106,Computer Science and Engineering,CSE,ROLE045,Technical Writer,High,Yes,Machine Learning;Python;Linux;SQL,M.Tech,Architect,Telecom,Suitable based on curriculum alignment.
+BRM107,Data Science,DS,ROLE021,Blockchain Developer,Medium,No,Git;Networking;Machine Learning;DSA,M.Tech,Entry Level,Telecom,Suitable based on curriculum alignment.
+BRM108,Information Technology,IT,ROLE008,Full Stack Developer,High,Yes,Machine Learning;DSA;Networking;Python,M.Tech,Technical Lead,E-commerce,Suitable based on curriculum alignment.
+BRM109,Electrical Engineering,EE,ROLE035,BI Developer,Medium,No,Java;Git;Networking;Python,M.Tech,Entry Level,E-commerce,Suitable based on curriculum alignment.
+BRM110,Artificial Intelligence & Data Science,AIDS,ROLE009,Software Engineer,High,No,AWS;Machine Learning;SQL;Networking,MBA,Technical Lead,Finance,Suitable based on curriculum alignment.
+BRM111,Electronics and Communication,ECE,ROLE038,NLP Engineer,Low,No,DSA;Linux;Networking;AWS,M.Tech,Entry Level,IT,Suitable based on curriculum alignment.
+BRM112,Artificial Intelligence & Data Science,AIDS,ROLE028,Product Manager,High,Yes,AWS;SQL;DSA;Python,Unknown,Entry Level,Finance,Suitable based on curriculum alignment.
+BRM113,Civil Engineering,CE,ROLE049,Salesforce Developer,High,Yes,Machine Learning;Linux;Git;Java,MBA,Architect,IT,Suitable based on curriculum alignment.
+BRM114,Computer Science and Engineering,CSE,ROLE008,Full Stack Developer,High,No,Java;DSA;AWS;Linux,M.Tech,Specialist,Finance,Suitable based on curriculum alignment.
+BRM115,Mechanical Engineering,ME,ROLE053,Firmware Engineer,High,Yes,AWS;Java;Machine Learning;DSA,MBA,Entry Level,Healthcare,Suitable based on curriculum alignment.
+BRM116,Artificial Intelligence & Data Science,AIDS,ROLE003,AI Engineer,Low,No,SQL;DSA;Linux;Git,Unknown,Entry Level,Manufacturing,Suitable based on curriculum alignment.
+BRM117,Mechanical Engineering,ME,ROLE017,Flutter Developer,Medium,Yes,Java;Networking;Machine Learning;SQL,M.Tech,Entry Level,E-commerce,Suitable based on curriculum alignment.
+BRM118,Civil Engineering,CE,ROLE058,Data Governance Analyst,High,No,DSA;Machine Learning;Java;Git,MBA,Architect,IT,Suitable based on curriculum alignment.
+BRM119,Artificial Intelligence & Data Science,AIDS,ROLE015,Android Developer,High,No,AWS;Machine Learning;DSA;Python,M.Tech,Entry Level,Telecom,Suitable based on curriculum alignment.
+BRM120,Electronics and Communication,ECE,ROLE042,ERP Consultant,Medium,Yes,Linux;SQL;Java;Machine Learning,M.Tech,Specialist,E-commerce,Suitable based on curriculum alignment.
+BRM121,Mechanical Engineering,ME,ROLE011,Cloud Engineer,High,Yes,DSA;Java;Networking;AWS,Unknown,Architect,Healthcare,Suitable based on curriculum alignment.
+BRM122,Computer Science and Engineering,CSE,ROLE046,Cloud Security Engineer,Medium,No,Java;Machine Learning;Python;Networking,Unknown,Architect,Healthcare,Suitable based on curriculum alignment.
+BRM123,Computer Science and Engineering,CSE,ROLE044,SEO Analyst,High,Yes,Machine Learning;AWS;SQL;DSA,MS,Entry Level,Manufacturing,Suitable based on curriculum alignment.
+BRM124,Artificial Intelligence & Data Science,AIDS,ROLE014,Ethical Hacker,Medium,Yes,Git;Linux;Networking;Java,MBA,Architect,IT,Suitable based on curriculum alignment.
+BRM125,Artificial Intelligence & Data Science,AIDS,ROLE008,Full Stack Developer,Medium,Yes,Python;SQL;Linux;Java,M.Tech,Specialist,IT,Suitable based on curriculum alignment.
+BRM126,Electrical Engineering,EE,ROLE049,Salesforce Developer,Medium,Yes,DSA;AWS;Linux;Networking,Unknown,Specialist,IT,Suitable based on curriculum alignment.
+BRM127,Data Science,DS,ROLE044,SEO Analyst,Medium,Yes,SQL;Linux;Python;Networking,M.Tech,Architect,Healthcare,Suitable based on curriculum alignment.
+BRM128,Information Technology,IT,ROLE002,Machine Learning Engineer,High,Yes,Python;Linux;SQL;Git,MBA,Entry Level,Manufacturing,Suitable based on curriculum alignment.
+BRM129,Data Science,DS,ROLE057,IT Support Specialist,High,Yes,SQL;Python;DSA;Linux,Unknown,Technical Lead,Telecom,Suitable based on curriculum alignment.
+BRM130,Computer Science and Engineering,CSE,ROLE015,Android Developer,Medium,Yes,DSA;Linux;Machine Learning;Networking,M.Tech,Architect,Telecom,Suitable based on curriculum alignment.
+BRM131,Data Science,DS,ROLE003,AI Engineer,Medium,No,Networking;Linux;Java;Python,M.Tech,Specialist,Finance,Suitable based on curriculum alignment.
+BRM132,Electronics and Communication,ECE,ROLE014,Ethical Hacker,Medium,No,Java;Machine Learning;Git;Python,Unknown,Technical Lead,Finance,Suitable based on curriculum alignment.
+BRM133,Data Science,DS,ROLE041,SAP Consultant,Medium,Yes,Git;Linux;Java;Machine Learning,MS,Technical Lead,Manufacturing,Suitable based on curriculum alignment.
+BRM134,Computer Science and Engineering,CSE,ROLE031,Data Engineer,Low,Yes,AWS;Machine Learning;Git;Java,MBA,Architect,Finance,Suitable based on curriculum alignment.
+BRM135,Information Technology,IT,ROLE025,UI Designer,Medium,No,Linux;Networking;Python;Machine Learning,MBA,Specialist,Manufacturing,Suitable based on curriculum alignment.
+BRM136,Data Science,DS,ROLE053,Firmware Engineer,Medium,No,DSA;Java;Machine Learning;Git,MBA,Entry Level,Telecom,Suitable based on curriculum alignment.
+BRM137,Civil Engineering,CE,ROLE020,Game Developer,High,Yes,Python;DSA;SQL;Networking,MS,Specialist,E-commerce,Suitable based on curriculum alignment.
+BRM138,Artificial Intelligence & Data Science,AIDS,ROLE019,Automation Test Engineer,Medium,No,Python;SQL;Java;Git,Unknown,Technical Lead,Manufacturing,Suitable based on curriculum alignment.
+BRM139,Civil Engineering,CE,ROLE011,Cloud Engineer,Low,No,SQL;Git;Networking;AWS,Unknown,Architect,Healthcare,Suitable based on curriculum alignment.
+BRM140,Mechanical Engineering,ME,ROLE052,Automation Engineer,Medium,Yes,Linux;Java;Machine Learning;DSA,Unknown,Entry Level,Finance,Suitable based on curriculum alignment.
+BRM141,Electronics and Communication,ECE,ROLE003,AI Engineer,Low,Yes,Machine Learning;Java;Linux;SQL,MBA,Specialist,Finance,Suitable based on curriculum alignment.
+BRM142,Electronics and Communication,ECE,ROLE019,Automation Test Engineer,High,Yes,DSA;Git;Machine Learning;SQL,Unknown,Specialist,Finance,Suitable based on curriculum alignment.
+BRM143,Artificial Intelligence & Data Science,AIDS,ROLE022,IoT Engineer,High,No,SQL;Git;AWS;Linux,M.Tech,Entry Level,Healthcare,Suitable based on curriculum alignment.
+BRM144,Data Science,DS,ROLE012,Cyber Security Analyst,High,No,AWS;Linux;Java;Machine Learning,MBA,Specialist,Healthcare,Suitable based on curriculum alignment.
+BRM145,Artificial Intelligence & Data Science,AIDS,ROLE034,Solutions Architect,Medium,Yes,Git;Linux;SQL;DSA,Unknown,Entry Level,Manufacturing,Suitable based on curriculum alignment.
+BRM146,Artificial Intelligence & Data Science,AIDS,ROLE047,Penetration Tester,Medium,No,AWS;Networking;DSA;Java,MBA,Architect,E-commerce,Suitable based on curriculum alignment.
+BRM147,Artificial Intelligence & Data Science,AIDS,ROLE018,QA Engineer,Low,No,DSA;Linux;Python;Networking,Unknown,Entry Level,IT,Suitable based on curriculum alignment.
+BRM148,Data Science,DS,ROLE010,DevOps Engineer,High,No,Networking;AWS;Linux;Java,Unknown,Entry Level,Telecom,Suitable based on curriculum alignment.
+BRM149,Civil Engineering,CE,ROLE038,NLP Engineer,Medium,Yes,Java;Python;Git;Networking,Unknown,Technical Lead,Finance,Suitable based on curriculum alignment.
+BRM150,Information Technology,IT,ROLE014,Ethical Hacker,Low,Yes,Python;Machine Learning;DSA;SQL,MBA,Entry Level,Manufacturing,Suitable based on curriculum alignment.
+BRM151,Electrical Engineering,EE,ROLE001,Data Scientist,Medium,Yes,AWS;Python;DSA;Linux,Unknown,Technical Lead,Manufacturing,Suitable based on curriculum alignment.
+BRM152,Artificial Intelligence & Data Science,AIDS,ROLE008,Full Stack Developer,Medium,No,SQL;Git;Python;Networking,MS,Architect,Finance,Suitable based on curriculum alignment.
+BRM153,Electrical Engineering,EE,ROLE058,Data Governance Analyst,High,No,SQL;Java;Python;DSA,Unknown,Entry Level,Healthcare,Suitable based on curriculum alignment.
+BRM154,Information Technology,IT,ROLE008,Full Stack Developer,Low,Yes,SQL;Java;DSA;Machine Learning,MBA,Entry Level,Finance,Suitable based on curriculum alignment.
+BRM155,Data Science,DS,ROLE004,Data Analyst,Medium,No,Networking;Python;Machine Learning;SQL,M.Tech,Entry Level,Telecom,Suitable based on curriculum alignment.
+BRM156,Civil Engineering,CE,ROLE057,IT Support Specialist,Medium,Yes,Git;SQL;Networking;Python,Unknown,Technical Lead,Telecom,Suitable based on curriculum alignment.
+BRM157,Data Science,DS,ROLE049,Salesforce Developer,High,No,Python;SQL;DSA;Git,M.Tech,Technical Lead,Healthcare,Suitable based on curriculum alignment.
+BRM158,Mechanical Engineering,ME,ROLE020,Game Developer,High,No,Networking;AWS;Git;Machine Learning,MBA,Specialist,Healthcare,Suitable based on curriculum alignment.
+BRM159,Electrical Engineering,EE,ROLE032,Site Reliability Engineer,Medium,No,DSA;Java;Git;SQL,M.Tech,Technical Lead,E-commerce,Suitable based on curriculum alignment.
+BRM160,Information Technology,IT,ROLE033,Network Engineer,Medium,Yes,Java;DSA;Machine Learning;Python,M.Tech,Technical Lead,Finance,Suitable based on curriculum alignment.
+BRM161,Computer Science and Engineering,CSE,ROLE003,AI Engineer,High,Yes,DSA;Networking;Machine Learning;Java,Unknown,Entry Level,Healthcare,Suitable based on curriculum alignment.
+BRM162,Information Technology,IT,ROLE043,Digital Marketing Analyst,Medium,No,AWS;SQL;DSA;Networking,M.Tech,Specialist,Healthcare,Suitable based on curriculum alignment.
+BRM163,Electronics and Communication,ECE,ROLE041,SAP Consultant,Medium,Yes,DSA;Linux;Java;Machine Learning,M.Tech,Architect,IT,Suitable based on curriculum alignment.
+BRM164,Electrical Engineering,EE,ROLE001,Data Scientist,High,No,Linux;AWS;SQL;Git,MS,Specialist,Finance,Suitable based on curriculum alignment.
+BRM165,Electronics and Communication,ECE,ROLE046,Cloud Security Engineer,High,Yes,AWS;Java;Machine Learning;Linux,Unknown,Technical Lead,Finance,Suitable based on curriculum alignment.
+BRM166,Information Technology,IT,ROLE026,UX Designer,Medium,Yes,Java;AWS;Linux;SQL,MS,Technical Lead,Finance,Suitable based on curriculum alignment.
+BRM167,Data Science,DS,ROLE014,Ethical Hacker,Low,No,Java;Networking;Git;Python,MBA,Architect,IT,Suitable based on curriculum alignment.
+BRM168,Electrical Engineering,EE,ROLE009,Software Engineer,Low,No,Git;Java;SQL;Machine Learning,MS,Technical Lead,Healthcare,Suitable based on curriculum alignment.
+BRM169,Artificial Intelligence & Data Science,AIDS,ROLE010,DevOps Engineer,Low,No,Python;Machine Learning;Networking;Git,MS,Technical Lead,Healthcare,Suitable based on curriculum alignment.
+BRM170,Computer Science and Engineering,CSE,ROLE022,IoT Engineer,Low,No,Java;Linux;Git;SQL,MS,Architect,Manufacturing,Suitable based on curriculum alignment.
+BRM171,Electronics and Communication,ECE,ROLE010,DevOps Engineer,Medium,Yes,Linux;Java;AWS;DSA,MS,Architect,Healthcare,Suitable based on curriculum alignment.
+BRM172,Mechanical Engineering,ME,ROLE032,Site Reliability Engineer,Low,Yes,AWS;DSA;SQL;Java,M.Tech,Technical Lead,E-commerce,Suitable based on curriculum alignment.
+BRM173,Information Technology,IT,ROLE021,Blockchain Developer,Medium,Yes,Networking;SQL;Machine Learning;AWS,MBA,Specialist,Manufacturing,Suitable based on curriculum alignment.
+BRM174,Mechanical Engineering,ME,ROLE054,Storage Engineer,High,Yes,Machine Learning;Linux;Git;Java,Unknown,Architect,IT,Suitable based on curriculum alignment.
+BRM175,Computer Science and Engineering,CSE,ROLE041,SAP Consultant,Low,Yes,Python;Java;Linux;Git,MS,Technical Lead,Telecom,Suitable based on curriculum alignment.
+BRM176,Data Science,DS,ROLE034,Solutions Architect,Low,No,Machine Learning;Git;SQL;Networking,MBA,Entry Level,Healthcare,Suitable based on curriculum alignment.
+BRM177,Data Science,DS,ROLE049,Salesforce Developer,Medium,No,Java;DSA;AWS;Python,MS,Entry Level,Telecom,Suitable based on curriculum alignment.
+BRM178,Information Technology,IT,ROLE052,Automation Engineer,Low,No,DSA;Linux;Git;Networking,Unknown,Technical Lead,Manufacturing,Suitable based on curriculum alignment.
+BRM179,Electrical Engineering,EE,ROLE012,Cyber Security Analyst,High,Yes,DSA;AWS;Java;SQL,Unknown,Entry Level,Finance,Suitable based on curriculum alignment.
+BRM180,Artificial Intelligence & Data Science,AIDS,ROLE015,Android Developer,High,Yes,Linux;Python;Networking;Git,MS,Specialist,Telecom,Suitable based on curriculum alignment.
+BRM181,Civil Engineering,CE,ROLE059,Platform Engineer,Low,Yes,Linux;Python;Machine Learning;Git,Unknown,Architect,Telecom,Suitable based on curriculum alignment.
+BRM182,Artificial Intelligence & Data Science,AIDS,ROLE052,Automation Engineer,High,No,Java;Python;AWS;DSA,MS,Technical Lead,Healthcare,Suitable based on curriculum alignment.
+BRM183,Electronics and Communication,ECE,ROLE001,Data Scientist,Low,Yes,Git;Python;DSA;SQL,M.Tech,Architect,Healthcare,Suitable based on curriculum alignment.
+BRM184,Mechanical Engineering,ME,ROLE006,Backend Developer,Medium,Yes,AWS;Java;SQL;Git,Unknown,Technical Lead,IT,Suitable based on curriculum alignment.
+BRM185,Information Technology,IT,ROLE024,Robotics Engineer,Low,Yes,Machine Learning;SQL;AWS;DSA,MBA,Architect,Manufacturing,Suitable based on curriculum alignment.
+BRM186,Electronics and Communication,ECE,ROLE007,Frontend Developer,Low,Yes,Linux;SQL;DSA;Java,M.Tech,Entry Level,Telecom,Suitable based on curriculum alignment.
+BRM187,Electronics and Communication,ECE,ROLE042,ERP Consultant,Medium,Yes,AWS;Linux;Git;Python,M.Tech,Architect,Telecom,Suitable based on curriculum alignment.
+BRM188,Information Technology,IT,ROLE045,Technical Writer,Low,No,Machine Learning;SQL;Python;Git,Unknown,Architect,Manufacturing,Suitable based on curriculum alignment.
+BRM189,Information Technology,IT,ROLE059,Platform Engineer,High,No,AWS;Machine Learning;Java;DSA,Unknown,Specialist,Telecom,Suitable based on curriculum alignment.
+BRM190,Artificial Intelligence & Data Science,AIDS,ROLE038,NLP Engineer,Low,No,Java;Python;AWS;Linux,Unknown,Entry Level,Manufacturing,Suitable based on curriculum alignment.
+BRM191,Data Science,DS,ROLE034,Solutions Architect,Medium,Yes,AWS;Linux;DSA;Networking,M.Tech,Specialist,Manufacturing,Suitable based on curriculum alignment.
+BRM192,Data Science,DS,ROLE028,Product Manager,Medium,No,Git;AWS;Machine Learning;Java,MBA,Architect,E-commerce,Suitable based on curriculum alignment.
+BRM193,Computer Science and Engineering,CSE,ROLE026,UX Designer,Low,Yes,Networking;DSA;Python;Java,Unknown,Technical Lead,Manufacturing,Suitable based on curriculum alignment.
+BRM194,Artificial Intelligence & Data Science,AIDS,ROLE033,Network Engineer,High,Yes,Git;Networking;SQL;AWS,MS,Entry Level,Manufacturing,Suitable based on curriculum alignment.
+BRM195,Data Science,DS,ROLE015,Android Developer,Low,No,Linux;AWS;DSA;Machine Learning,MS,Specialist,Finance,Suitable based on curriculum alignment.
+BRM196,Electronics and Communication,ECE,ROLE043,Digital Marketing Analyst,High,No,AWS;DSA;Networking;Java,MS,Entry Level,Healthcare,Suitable based on curriculum alignment.
+BRM197,Mechanical Engineering,ME,ROLE038,NLP Engineer,High,Yes,Python;Linux;Java;DSA,MS,Specialist,IT,Suitable based on curriculum alignment.
+BRM198,Artificial Intelligence & Data Science,AIDS,ROLE007,Frontend Developer,Medium,No,DSA;Java;Python;AWS,M.Tech,Specialist,E-commerce,Suitable based on curriculum alignment.
+BRM199,Information Technology,IT,ROLE001,Data Scientist,Low,Yes,Machine Learning;Linux;Java;Python,M.Tech,Architect,Telecom,Suitable based on curriculum alignment.
+BRM200,Civil Engineering,CE,ROLE029,Technical Support Engineer,Low,No,DSA;Java;Git;Linux,M.Tech,Architect,Manufacturing,Suitable based on curriculum alignment.

@@ -1,0 +1,270 @@
+{
+  "database_name": "career_guidance.db",
+  "description": "Main database storing role schemas, student profiles, skill maps, roadmaps, and course listings.",
+  "tables": {
+    "roles": {
+      "description": "Job roles descriptions, difficulty, and salaries.",
+      "columns": [
+        "role_id",
+        "role_name",
+        "role_family",
+        "description",
+        "difficulty_level",
+        "average_learning_time",
+        "entry_level",
+        "salary_range",
+        "future_scope",
+        "required_degree",
+        "work_mode",
+        "roadmap_available"
+      ]
+    },
+    "skills": {
+      "description": "Technical and core engineering skills repository.",
+      "columns": [
+        "skill_id",
+        "skill_name",
+        "skill_category",
+        "skill_type",
+        "difficulty_level",
+        "estimated_learning_hours",
+        "prerequisite_skill",
+        "industry_demand",
+        "description",
+        "certification_available"
+      ]
+    },
+    "branch_role_mapping": {
+      "description": "Maps engineering branches (CSE, ECE, ME, CE, etc.) to target career roles.",
+      "columns": [
+        "mapping_id",
+        "branch_name",
+        "branch_code",
+        "role_id",
+        "role_name",
+        "priority",
+        "recommended",
+        "bridge_skills",
+        "higher_studies_option",
+        "career_path",
+        "industry",
+        "notes"
+      ]
+    },
+    "learning_resources": {
+      "description": "Reference materials, books, and articles indexed by skill and role.",
+      "columns": [
+        "resource_id",
+        "resource_name",
+        "resource_type",
+        "platform",
+        "topic",
+        "difficulty",
+        "language",
+        "duration",
+        "free_paid",
+        "skill_id",
+        "role_id",
+        "url"
+      ]
+    },
+    "courses": {
+      "description": "Online courses from Coursera, Udemy, etc., mapped to skills.",
+      "columns": [
+        "course_id",
+        "course_name",
+        "platform",
+        "provider",
+        "difficulty",
+        "duration_hours",
+        "language",
+        "certificate",
+        "price",
+        "rating",
+        "skill_id",
+        "role_id",
+        "course_url"
+      ]
+    },
+    "projects": {
+      "description": "Practical projects for students to build up portfolios, mapped to skills.",
+      "columns": [
+        "project_id",
+        "project_name",
+        "project_domain",
+        "difficulty",
+        "estimated_duration",
+        "description",
+        "required_skills",
+        "github_available",
+        "dataset_required",
+        "portfolio_value",
+        "related_role"
+      ]
+    },
+    "roadmap": {
+      "description": "Weekly task roadmaps (30/60/90 days) mapped to specific roles and resources.",
+      "columns": [
+        "roadmap_id",
+        "role_id",
+        "roadmap_type",
+        "week_number",
+        "day_range",
+        "topic",
+        "skill_id",
+        "course_id",
+        "project_id",
+        "milestone",
+        "estimated_hours"
+      ]
+    },
+    "role_skill_mapping": {
+      "description": "Detailed skill requirements and proficiency targets for each role.",
+      "columns": [
+        "mapping_id",
+        "role_id",
+        "skill_id",
+        "importance",
+        "minimum_proficiency",
+        "mandatory",
+        "recommended_learning_order"
+      ]
+    },
+    "soft_skills": {
+      "description": "Interpersonal and workplace soft skills details.",
+      "columns": [
+        "soft_skill_id",
+        "skill_name",
+        "category",
+        "description",
+        "importance",
+        "recommended_roles",
+        "assessment_method",
+        "improvement_resources",
+        "practice_activity",
+        "industry_relevance"
+      ]
+    },
+    "student_profiles": {
+      "description": "Synthesized student profile templates representing branches, skills, and goals.",
+      "columns": [
+        "student_id",
+        "branch",
+        "year",
+        "cgpa",
+        "known_skills",
+        "projects_completed",
+        "internship_status",
+        "preferred_domain",
+        "preferred_role",
+        "coding_level",
+        "communication_level",
+        "english_level",
+        "daily_learning_hours",
+        "career_goal"
+      ]
+    },
+    "excel_student_profiles": {
+      "description": "Student profile data with Indian names loaded from Excel sheet.",
+      "columns": [
+        "name",
+        "email_id",
+        "year",
+        "current_course",
+        "technical_skills",
+        "programming_languages",
+        "coding_rating",
+        "soft_skills",
+        "soft_skill_rating",
+        "projects",
+        "job_role_aspiration",
+        "challenges_faced",
+        "career_support_needed",
+        "preferred_learning_method"
+      ]
+    },
+    "certifications": {
+      "description": "Professional certifications mapped to roles and skills.",
+      "columns": [
+        "cert_id",
+        "certificate_name",
+        "provider",
+        "difficulty",
+        "duration",
+        "exam_fee",
+        "validity",
+        "skills_covered",
+        "recognized_by_industry",
+        "related_role"
+      ]
+    },
+    "career_comparison": {
+      "description": "Direct comparison parameters between pairs of roles.",
+      "columns": [
+        "comparison_id",
+        "role_1_id",
+        "role_1_name",
+        "role_2_id",
+        "role_2_name",
+        "comparison_category",
+        "role_1_details",
+        "role_2_details",
+        "verdict"
+      ]
+    },
+    "career_faq": {
+      "description": "Common questions and answers regarding branches, job trends, and skilling.",
+      "columns": [
+        "faq_id",
+        "question",
+        "answer",
+        "category",
+        "related_role",
+        "related_skill",
+        "difficulty",
+        "keywords"
+      ]
+    },
+    "industry_trends": {
+      "description": "Market demand, hiring outlook, and salary levels for different roles.",
+      "columns": [
+        "trend_id",
+        "role_id",
+        "industry",
+        "technology",
+        "trend_title",
+        "trend_description",
+        "hiring_demand",
+        "future_growth",
+        "automation_risk",
+        "average_salary_india_lpa",
+        "average_salary_global_usd",
+        "top_companies",
+        "required_skills",
+        "recommended_certifications",
+        "remote_opportunities",
+        "experience_level",
+        "job_openings_estimate",
+        "market_outlook",
+        "last_updated"
+      ]
+    },
+    "resume_checklist": {
+      "description": "Actionable ATS-friendly resume checkpoints for different positions.",
+      "columns": [
+        "checklist_id",
+        "role_id",
+        "role_name",
+        "section",
+        "item",
+        "importance",
+        "description",
+        "common_mistakes",
+        "ats_required",
+        "fresher_required",
+        "experienced_required",
+        "example"
+      ]
+    }
+  }
+}

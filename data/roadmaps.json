@@ -1,0 +1,209 @@
+[
+  {
+    "id": 1001,
+    "role_id": 2,
+    "phase": 30,
+    "topic": "Python for Data Science",
+    "resource_url": "https://www.kaggle.com/learn/python",
+    "project_idea": "Analyze Titanic dataset using Pandas",
+    "est_hours": 20
+  },
+  {
+    "id": 1002,
+    "role_id": 2,
+    "phase": 30,
+    "topic": "SQL for Data Analysis",
+    "resource_url": "https://www.w3schools.com/sql/",
+    "project_idea": "Design a sales database and run complex queries",
+    "est_hours": 15
+  },
+  {
+    "id": 1003,
+    "role_id": 2,
+    "phase": 60,
+    "topic": "Machine Learning with Scikit-Learn",
+    "resource_url": "https://scikit-learn.org/stable/tutorial/",
+    "project_idea": "Build a customer churn prediction model",
+    "est_hours": 30
+  },
+  {
+    "id": 1004,
+    "role_id": 2,
+    "phase": 60,
+    "topic": "Data Visualization with Tableau",
+    "resource_url": "https://www.tableau.com/learn",
+    "project_idea": "Create an interactive sales dashboard",
+    "est_hours": 15
+  },
+  {
+    "id": 1005,
+    "role_id": 2,
+    "phase": 90,
+    "topic": "Deep Learning with TensorFlow",
+    "resource_url": "https://www.tensorflow.org/tutorials",
+    "project_idea": "Build an image classifier using CNN",
+    "est_hours": 40
+  },
+  {
+    "id": 1006,
+    "role_id": 2,
+    "phase": 90,
+    "topic": "MLOps & Model Deployment",
+    "resource_url": "https://www.analyticsvidhya.com/blog/2020/12/mlops/",
+    "project_idea": "Deploy a model using Flask and Docker",
+    "est_hours": 20
+  },
+  {
+    "id": 2001,
+    "role_id": 1,
+    "phase": 30,
+    "topic": "Core Java & OOPs",
+    "resource_url": "https://www.javatpoint.com/java-tutorial",
+    "project_idea": "Build a Library Management System",
+    "est_hours": 25
+  },
+  {
+    "id": 2002,
+    "role_id": 1,
+    "phase": 30,
+    "topic": "Data Structures & Algorithms",
+    "resource_url": "https://www.geeksforgeeks.org/data-structures/",
+    "project_idea": "Solve 20 LeetCode medium problems",
+    "est_hours": 30
+  },
+  {
+    "id": 2003,
+    "role_id": 1,
+    "phase": 60,
+    "topic": "Database Design & SQL",
+    "resource_url": "https://www.coursera.org/learn/sql-for-data-science",
+    "project_idea": "Design an e-commerce database schema",
+    "est_hours": 20
+  },
+  {
+    "id": 2004,
+    "role_id": 1,
+    "phase": 60,
+    "topic": "Version Control with Git",
+    "resource_url": "https://www.atlassian.com/git/tutorials",
+    "project_idea": "Open source contribution to a GitHub project",
+    "est_hours": 10
+  },
+  {
+    "id": 2005,
+    "role_id": 1,
+    "phase": 90,
+    "topic": "System Design & Microservices",
+    "resource_url": "https://www.educative.io/courses/grokking-system-design",
+    "project_idea": "Design a URL shortener like bit.ly",
+    "est_hours": 35
+  },
+  {
+    "id": 3001,
+    "role_id": 11,
+    "phase": 30,
+    "topic": "Aerodynamics & Fluid Mechanics",
+    "resource_url": "https://www.nasa.gov/aerodynamics",
+    "project_idea": "Simulate airflow over a wing in MATLAB",
+    "est_hours": 25
+  },
+  {
+    "id": 3002,
+    "role_id": 11,
+    "phase": 30,
+    "topic": "CAD for Aerospace (Catia/SolidWorks)",
+    "resource_url": "https://www.solidworks.com/learn",
+    "project_idea": "Design a drone chassis",
+    "est_hours": 20
+  },
+  {
+    "id": 3003,
+    "role_id": 11,
+    "phase": 60,
+    "topic": "Finite Element Analysis (FEA)",
+    "resource_url": "https://www.ansys.com/",
+    "project_idea": "Perform stress analysis on an aircraft wing",
+    "est_hours": 30
+  },
+  {
+    "id": 3004,
+    "role_id": 11,
+    "phase": 60,
+    "topic": "Materials Science for Aerospace",
+    "resource_url": "https://www.nptel.ac.in/courses/112106130",
+    "project_idea": "Research composites used in Airbus/Boeing",
+    "est_hours": 15
+  },
+  {
+    "id": 3005,
+    "role_id": 11,
+    "phase": 90,
+    "topic": "Spacecraft Design & Orbital Mechanics",
+    "resource_url": "https://www.nasa.gov/smallsat-institute",
+    "project_idea": "Design a CubeSat mission",
+    "est_hours": 40
+  },
+  {
+    "id": 4001,
+    "role_id": 7,
+    "phase": 30,
+    "topic": "Digital Electronics & Verilog",
+    "resource_url": "https://www.chipverify.com/verilog",
+    "project_idea": "Design a 4-bit ALU",
+    "est_hours": 25
+  },
+  {
+    "id": 4002,
+    "role_id": 7,
+    "phase": 30,
+    "topic": "FPGA Design with Xilinx",
+    "resource_url": "https://www.xilinx.com/support.html",
+    "project_idea": "Implement a traffic light controller",
+    "est_hours": 20
+  },
+  {
+    "id": 4003,
+    "role_id": 7,
+    "phase": 60,
+    "topic": "ASIC Design Flow & Synthesis",
+    "resource_url": "https://www.synopsys.com/",
+    "project_idea": "Synthesize a RISC-V processor core",
+    "est_hours": 35
+  },
+  {
+    "id": 5001,
+    "role_id": 22,
+    "phase": 30,
+    "topic": "Structural Analysis & RCC Design",
+    "resource_url": "https://www.nptel.ac.in/courses/105105104",
+    "project_idea": "Design a 3-story building frame",
+    "est_hours": 25
+  },
+  {
+    "id": 5002,
+    "role_id": 22,
+    "phase": 30,
+    "topic": "AutoCAD for Civil Engineering",
+    "resource_url": "https://www.autodesk.com/learn",
+    "project_idea": "Create a residential floor plan",
+    "est_hours": 15
+  },
+  {
+    "id": 5003,
+    "role_id": 22,
+    "phase": 60,
+    "topic": "STAAD Pro / Etabs",
+    "resource_url": "https://www.bentley.com/software/staad/",
+    "project_idea": "Analyze a high-rise steel structure",
+    "est_hours": 30
+  },
+  {
+    "id": 5004,
+    "role_id": 22,
+    "phase": 90,
+    "topic": "Earthquake-Resistant Design",
+    "resource_url": "https://www.nptel.ac.in/courses/105101099",
+    "project_idea": "Design a seismic-resistant bridge",
+    "est_hours": 25
+  }
+]

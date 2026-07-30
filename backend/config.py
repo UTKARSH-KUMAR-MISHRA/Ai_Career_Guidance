@@ -5,7 +5,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 VECTOR_DB_DIR = os.path.join(DATA_DIR, "vector_db")
 
-EMBEDDING_MODEL = "all-MiniLM-L6-v2"  # SentenceTransformer automatically downloads this model
+EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"  # BAAI BGE Small 384-dimensional dense embedding model
 
 COLLECTIONS = {
     "career": "career",

@@ -210,10 +210,11 @@ async function loadStudentOptions() {
                 });
                 
                 if (postRes.ok) {
-                    // Save local state copy too for safety
                     const activeData = await postRes.json();
                     showToast("Switched student profile!");
-                    setTimeout(() => window.location.reload(), 800);
+                    if (typeof window.navigateTo === 'function') {
+                        window.navigateTo("dashboard");
+                    }
                 }
             }
         } catch (err) {

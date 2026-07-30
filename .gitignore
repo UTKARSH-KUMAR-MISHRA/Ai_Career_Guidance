@@ -13,6 +13,9 @@ __pycache__/
 # Model & Cache data
 data/.cache/
 data/temp_audio/
+data/temp_resumes/
+data/vector_db/
+scratch/
 
 # Environment / Secrets
 .env

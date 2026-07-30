@@ -1,0 +1,407 @@
+[
+  {
+    "id": 1,
+    "title": "Software Engineer",
+    "family": "Development",
+    "required_skills": ["Python", "Java", "Data Structures", "Algorithms", "SQL", "Git"],
+    "difficulty": "Entry",
+    "branch_relevance": {
+      "BR001": 1.0,
+      "BR002": 0.7,
+      "BR003": 0.2,
+      "BR004": 0.1,
+      "BR005": 0.2
+    },
+    "description": "Designs, develops, tests, and maintains software applications using object-oriented programming."
+  },
+  {
+    "id": 2,
+    "title": "Data Scientist",
+    "family": "AI/ML",
+    "required_skills": ["Python", "SQL", "Machine Learning", "Statistics", "Data Visualization", "Deep Learning"],
+    "difficulty": "Advanced",
+    "branch_relevance": {
+      "BR001": 1.0,
+      "BR002": 0.8,
+      "BR003": 0.2,
+      "BR004": 0.1,
+      "BR005": 0.2
+    },
+    "description": "Builds predictive models, extracts insights from data, and deploys ML solutions."
+  },
+  {
+    "id": 3,
+    "title": "AI / Machine Learning Engineer",
+    "family": "AI/ML",
+    "required_skills": ["Python", "Machine Learning", "Deep Learning", "TensorFlow", "PyTorch", "SQL"],
+    "difficulty": "Advanced",
+    "branch_relevance": {
+      "BR001": 1.0,
+      "BR002": 0.8,
+      "BR003": 0.2,
+      "BR004": 0.1,
+      "BR005": 0.3
+    },
+    "description": "Develops, trains, and deploys AI/ML models at scale in production environments."
+  },
+  {
+    "id": 4,
+    "title": "Cybersecurity Analyst",
+    "family": "Security",
+    "required_skills": ["Linux", "Networking", "Python", "SIEM", "Firewalls", "Vulnerability Assessment"],
+    "difficulty": "Intermediate",
+    "branch_relevance": {
+      "BR001": 1.0,
+      "BR002": 0.8,
+      "BR003": 0.1,
+      "BR004": 0.1,
+      "BR005": 0.2
+    },
+    "description": "Monitors, protects, and defends IT infrastructure against cyber threats."
+  },
+  {
+    "id": 5,
+    "title": "Cloud Engineer",
+    "family": "Infrastructure",
+    "required_skills": ["AWS", "Linux", "Docker", "Kubernetes", "Terraform", "Python"],
+    "difficulty": "Intermediate",
+    "branch_relevance": {
+      "BR001": 1.0,
+      "BR002": 0.8,
+      "BR003": 0.1,
+      "BR004": 0.1,
+      "BR005": 0.2
+    },
+    "description": "Designs, implements, and manages scalable cloud infrastructure and deployment pipelines."
+  },
+  {
+    "id": 6,
+    "title": "Full Stack Developer",
+    "family": "Development",
+    "required_skills": ["JavaScript", "React.js", "Node.js", "SQL", "MongoDB", "Git", "REST APIs"],
+    "difficulty": "Intermediate",
+    "branch_relevance": {
+      "BR001": 1.0,
+      "BR002": 0.7,
+      "BR003": 0.2,
+      "BR004": 0.1,
+      "BR005": 0.2
+    },
+    "description": "Builds end-to-end web applications, handling both frontend and backend development."
+  },
+  {
+    "id": 7,
+    "title": "VLSI / Semiconductor Engineer",
+    "family": "Hardware",
+    "required_skills": ["Verilog", "VHDL", "FPGA", "ASIC Design", "Python", "Electronics"],
+    "difficulty": "Advanced",
+    "branch_relevance": {
+      "BR001": 0.6,
+      "BR002": 1.0,
+      "BR003": 0.2,
+      "BR004": 0.1,
+      "BR005": 0.3
+    },
+    "description": "Designs and verifies integrated circuits, chips, and semiconductor components."
+  },
+  {
+    "id": 8,
+    "title": "Embedded Systems Engineer",
+    "family": "Hardware",
+    "required_skills": ["C", "Embedded C", "Microcontrollers", "RTOS", "Python", "Electronics"],
+    "difficulty": "Intermediate",
+    "branch_relevance": {
+      "BR001": 0.7,
+      "BR002": 1.0,
+      "BR003": 0.4,
+      "BR004": 0.1,
+      "BR005": 0.5
+    },
+    "description": "Develops firmware and software for microcontrollers and embedded devices."
+  },
+  {
+    "id": 9,
+    "title": "Robotics Engineer",
+    "family": "Robotics",
+    "required_skills": ["Python", "C++", "ROS", "Control Systems", "Electronics", "Mechanics"],
+    "difficulty": "Advanced",
+    "branch_relevance": {
+      "BR001": 0.6,
+      "BR002": 0.8,
+      "BR003": 1.0,
+      "BR004": 0.2,
+      "BR005": 0.7
+    },
+    "description": "Designs, builds, and programs robotic systems for automation and industrial applications."
+  },
+  {
+    "id": 10,
+    "title": "Telecommunications Engineer",
+    "family": "Networking",
+    "required_skills": ["Networking", "Signal Processing", "Wireless", "Python", "MATLAB", "RF"],
+    "difficulty": "Intermediate",
+    "branch_relevance": {
+      "BR001": 0.6,
+      "BR002": 1.0,
+      "BR003": 0.2,
+      "BR004": 0.1,
+      "BR005": 0.4
+    },
+    "description": "Designs and manages communication networks, wireless systems, and signal transmission."
+  },
+  {
+    "id": 11,
+    "title": "Aerospace Design Engineer",
+    "family": "Core Engineering",
+    "required_skills": ["Aerodynamics", "CAD", "Finite Element Analysis", "MATLAB", "Mechanics"],
+    "difficulty": "Advanced",
+    "branch_relevance": {
+      "BR001": 0.2,
+      "BR002": 0.3,
+      "BR003": 0.6,
+      "BR004": 0.1,
+      "BR005": 1.0
+    },
+    "description": "Designs aircraft, spacecraft, and aerodynamic structures."
+  },
+  {
+    "id": 12,
+    "title": "Aircraft Maintenance Engineer",
+    "family": "Core Engineering",
+    "required_skills": ["Mechanics", "Aircraft Systems", "Troubleshooting", "Safety Compliance", "Documentation"],
+    "difficulty": "Entry",
+    "branch_relevance": {
+      "BR001": 0.1,
+      "BR002": 0.4,
+      "BR003": 0.7,
+      "BR004": 0.1,
+      "BR005": 1.0
+    },
+    "description": "Inspects, repairs, and maintains aircraft to ensure airworthiness and safety."
+  },
+  {
+    "id": 13,
+    "title": "Propulsion Engineer",
+    "family": "Core Engineering",
+    "required_skills": ["Thermodynamics", "Fluid Mechanics", "Combustion", "MATLAB", "CAD"],
+    "difficulty": "Advanced",
+    "branch_relevance": {
+      "BR001": 0.1,
+      "BR002": 0.3,
+      "BR003": 0.8,
+      "BR004": 0.1,
+      "BR005": 1.0
+    },
+    "description": "Develops engines and propulsion systems for aircraft, rockets, and spacecraft."
+  },
+  {
+    "id": 14,
+    "title": "Avionics Engineer",
+    "family": "Core Engineering",
+    "required_skills": ["Electronics", "Control Systems", "Communication", "MATLAB", "C", "Signal Processing"],
+    "difficulty": "Intermediate",
+    "branch_relevance": {
+      "BR001": 0.4,
+      "BR002": 0.8,
+      "BR003": 0.3,
+      "BR004": 0.1,
+      "BR005": 1.0
+    },
+    "description": "Designs electronic systems for aviation, including navigation, communication, and flight controls."
+  },
+  {
+    "id": 15,
+    "title": "Flight Test Engineer",
+    "family": "Core Engineering",
+    "required_skills": ["Aerodynamics", "Data Analysis", "Instrumentation", "MATLAB", "Python"],
+    "difficulty": "Intermediate",
+    "branch_relevance": {
+      "BR001": 0.2,
+      "BR002": 0.4,
+      "BR003": 0.6,
+      "BR004": 0.1,
+      "BR005": 1.0
+    },
+    "description": "Plans and executes flight tests, collecting and analyzing data to validate aircraft performance."
+  },
+  {
+    "id": 16,
+    "title": "Space Systems Engineer",
+    "family": "Core Engineering",
+    "required_skills": ["Satellite Systems", "Aerodynamics", "MATLAB", "CAD", "Orbital Mechanics"],
+    "difficulty": "Advanced",
+    "branch_relevance": {
+      "BR001": 0.2,
+      "BR002": 0.5,
+      "BR003": 0.5,
+      "BR004": 0.1,
+      "BR005": 1.0
+    },
+    "description": "Designs and integrates spacecraft, satellites, and space mission systems."
+  },
+  {
+    "id": 17,
+    "title": "Design Engineer (Mechanical)",
+    "family": "Core Engineering",
+    "required_skills": ["CAD", "SolidWorks", "Finite Element Analysis", "Materials Science", "Mechanics"],
+    "difficulty": "Entry",
+    "branch_relevance": {
+      "BR001": 0.1,
+      "BR002": 0.2,
+      "BR003": 1.0,
+      "BR004": 0.3,
+      "BR005": 0.6
+    },
+    "description": "Creates mechanical components, assemblies, and product designs using engineering software."
+  },
+  {
+    "id": 18,
+    "title": "Manufacturing Engineer",
+    "family": "Core Engineering",
+    "required_skills": ["CAD", "CNC", "Lean Manufacturing", "Six Sigma", "Materials Science", "Python"],
+    "difficulty": "Entry",
+    "branch_relevance": {
+      "BR001": 0.1,
+      "BR002": 0.2,
+      "BR003": 1.0,
+      "BR004": 0.2,
+      "BR005": 0.4
+    },
+    "description": "Optimizes production processes, improves efficiency, and manages manufacturing operations."
+  },
+  {
+    "id": 19,
+    "title": "Automotive Engineer",
+    "family": "Core Engineering",
+    "required_skills": ["CAD", "Thermodynamics", "Fluid Mechanics", "Control Systems", "Python"],
+    "difficulty": "Intermediate",
+    "branch_relevance": {
+      "BR001": 0.2,
+      "BR002": 0.4,
+      "BR003": 1.0,
+      "BR004": 0.1,
+      "BR005": 0.5
+    },
+    "description": "Designs and develops vehicle components, powertrains, and automotive systems."
+  },
+  {
+    "id": 20,
+    "title": "HVAC Engineer",
+    "family": "Core Engineering",
+    "required_skills": ["Thermodynamics", "Fluid Mechanics", "AutoCAD", "Revit", "Building Systems"],
+    "difficulty": "Entry",
+    "branch_relevance": {
+      "BR001": 0.1,
+      "BR002": 0.2,
+      "BR003": 0.8,
+      "BR004": 0.7,
+      "BR005": 0.1
+    },
+    "description": "Designs heating, ventilation, and air conditioning systems for buildings and infrastructure."
+  },
+  {
+    "id": 21,
+    "title": "Maintenance Engineer",
+    "family": "Core Engineering",
+    "required_skills": ["Mechanics", "Troubleshooting", "Planned Maintenance", "Safety", "Documentation"],
+    "difficulty": "Entry",
+    "branch_relevance": {
+      "BR001": 0.1,
+      "BR002": 0.4,
+      "BR003": 1.0,
+      "BR004": 0.3,
+      "BR005": 0.5
+    },
+    "description": "Ensures reliability and uptime of industrial machinery and plant equipment."
+  },
+  {
+    "id": 22,
+    "title": "Structural Engineer",
+    "family": "Core Engineering",
+    "required_skills": ["AutoCAD", "STAAD Pro", "RCC Design", "Steel Design", "Structural Analysis"],
+    "difficulty": "Intermediate",
+    "branch_relevance": {
+      "BR001": 0.1,
+      "BR002": 0.2,
+      "BR003": 0.3,
+      "BR004": 1.0,
+      "BR005": 0.1
+    },
+    "description": "Designs buildings, bridges, and infrastructure using concrete, steel, and composite materials."
+  },
+  {
+    "id": 23,
+    "title": "Construction Project Engineer",
+    "family": "Core Engineering",
+    "required_skills": ["Project Management", "AutoCAD", "Cost Estimation", "Scheduling", "Safety"],
+    "difficulty": "Entry",
+    "branch_relevance": {
+      "BR001": 0.1,
+      "BR002": 0.2,
+      "BR003": 0.3,
+      "BR004": 1.0,
+      "BR005": 0.1
+    },
+    "description": "Manages construction projects, budgets, timelines, and on-site coordination."
+  },
+  {
+    "id": 24,
+    "title": "Transportation Engineer",
+    "family": "Core Engineering",
+    "required_skills": ["AutoCAD", "Civil 3D", "Traffic Analysis", "Urban Planning", "Surveying"],
+    "difficulty": "Intermediate",
+    "branch_relevance": {
+      "BR001": 0.1,
+      "BR002": 0.2,
+      "BR003": 0.2,
+      "BR004": 1.0,
+      "BR005": 0.1
+    },
+    "description": "Plans and designs transportation systems, highways, and traffic management."
+  },
+  {
+    "id": 25,
+    "title": "Geotechnical Engineer",
+    "family": "Core Engineering",
+    "required_skills": ["Soil Mechanics", "Foundation Engineering", "Geological Mapping", "AutoCAD", "Rock Mechanics"],
+    "difficulty": "Intermediate",
+    "branch_relevance": {
+      "BR001": 0.1,
+      "BR002": 0.2,
+      "BR003": 0.2,
+      "BR004": 1.0,
+      "BR005": 0.1
+    },
+    "description": "Analyzes soil and rock properties to design foundations, tunnels, and earth structures."
+  },
+  {
+    "id": 26,
+    "title": "Environmental Engineer",
+    "family": "Core Engineering",
+    "required_skills": ["AutoCAD", "Fluid Mechanics", "Environmental Regulations", "Waste Management", "GIS"],
+    "difficulty": "Entry",
+    "branch_relevance": {
+      "BR001": 0.1,
+      "BR002": 0.2,
+      "BR003": 0.3,
+      "BR004": 1.0,
+      "BR005": 0.1
+    },
+    "description": "Designs systems to manage pollution, waste, and environmental impact."
+  },
+  {
+    "id": 27,
+    "title": "Urban Planner",
+    "family": "Core Engineering",
+    "required_skills": ["GIS", "AutoCAD", "Urban Design", "Policy", "Surveying"],
+    "difficulty": "Entry",
+    "branch_relevance": {
+      "BR001": 0.1,
+      "BR002": 0.2,
+      "BR003": 0.2,
+      "BR004": 1.0,
+      "BR005": 0.1
+    },
+    "description": "Develops land use plans and urban development strategies for sustainable growth."
+  }
+]

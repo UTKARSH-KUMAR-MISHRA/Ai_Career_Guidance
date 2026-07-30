@@ -338,6 +338,25 @@ function initDashboardChat() {
     
     if (!chatInput || !sendBtn || !chatBody) return;
     
+    function scrollDashboardChatToBottom(smooth = true) {
+        if (!chatBody) return;
+        requestAnimationFrame(() => {
+            chatBody.scrollTo({
+                top: chatBody.scrollHeight,
+                behavior: smooth ? 'smooth' : 'auto'
+            });
+            chatBody.scrollTop = chatBody.scrollHeight;
+        });
+    }
+
+    if (chatBody && !chatBody._hasScrollObserver) {
+        chatBody._hasScrollObserver = true;
+        const scrollObserver = new MutationObserver(() => {
+            scrollDashboardChatToBottom(false);
+        });
+        scrollObserver.observe(chatBody, { childList: true, subtree: true, characterData: true });
+    }
+
     sendBtn.addEventListener("click", handleChatSend);
     chatInput.addEventListener("keydown", (e) => {
         if (e.key === "Enter") handleChatSend();
@@ -368,7 +387,7 @@ function initDashboardChat() {
         
         msgDiv.innerHTML = `${text}<time>${timeStr}</time>`;
         chatBody.appendChild(msgDiv);
-        chatBody.scrollTop = chatBody.scrollHeight;
+        scrollDashboardChatToBottom(true);
     }
     
     async function getBotReply(query) {
@@ -574,5 +593,49 @@ window.toggleModuleAccordion = function(idx) {
     `;
     panel.style.display = "block";
 };
+
+function parseMarkdown(text) {
+    if (!text) return "";
+    
+    // Protect Mermaid code blocks
+    const mermaidBlocks = [];
+    let textCleaned = text.replace(/```mermaid\n([\s\S]*?)```/gi, (match, code) => {
+        const placeholder = `<!--MERMAID_PLACEHOLDER_${mermaidBlocks.length}-->`;
+        mermaidBlocks.push(code.trim());
+        return placeholder;
+    });
+    
+    let html = textCleaned.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    
+    // Citation badges transformer for [1], [2], [roles.csv], [courses.csv], [projects.csv], [interview_questions.csv], etc.
+    html = html.replace(/\[(\d+|[\w\.-]+\.csv|web_search_[\w\.-]+)\]/gi, (match, citeId) => {
+        return `<span class="rag-citation-badge" title="Retrieved Database Citation: ${citeId}" style="display:inline-flex; align-items:center; gap:3px; background:#EEF2FF; color:#4F46E5; border:1px solid #C7D2FE; font-size:11px; font-weight:700; padding:1px 7px; border-radius:12px; margin:0 3px; cursor:pointer; vertical-align:middle; box-shadow:0 1px 2px rgba(79,70,229,0.12);">📚 [${citeId}]</span>`;
+    });
+    
+    // Bold
+    html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    // Italic
+    html = html.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+    // Headers
+    html = html.replace(/^### (.*$)/gim, '<h3 style="margin-top:12px; margin-bottom:6px; font-weight:700;">$1</h3>');
+    html = html.replace(/^## (.*$)/gim, '<h2 style="margin-top:15px; margin-bottom:8px; font-weight:700;">$1</h2>');
+    html = html.replace(/^# (.*$)/gim, '<h1 style="margin-top:18px; margin-bottom:10px; font-weight:700;">$1</h1>');
+    
+    // Lists
+    html = html.replace(/^\s*-\s+(.*)$/gim, '<ul><li style="margin-bottom:4px;">$1</li></ul>');
+    html = html.replace(/<\/ul>\s*<ul>/g, '');
+    
+    html = html.replace(/\n/g, '<br>');
+    
+    // Restore Mermaid placeholders
+    for (let i = 0; i < mermaidBlocks.length; i++) {
+        let cleanMermaid = mermaidBlocks[i].replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+        let escapedMermaid = cleanMermaid.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+        html = html.replace(`&lt;!--MERMAID_PLACEHOLDER_${i}--&gt;`, `<div class="mermaid">${escapedMermaid}</div>`);
+        html = html.replace(`<!--MERMAID_PLACEHOLDER_${i}-->`, `<div class="mermaid">${escapedMermaid}</div>`);
+    }
+    
+    return html;
+}
 
 })();

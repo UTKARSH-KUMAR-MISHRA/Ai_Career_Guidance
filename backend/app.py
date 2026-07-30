@@ -1,10 +1,9 @@
 import os
-os.environ["HF_HUB_OFFLINE"] = "1"
 import json
 import sqlite3
 import re
 import time
-from flask import Flask, request, jsonify, Response
+from flask import Flask, request, jsonify, Response, send_from_directory
 from flask_cors import CORS
 from werkzeug.security import generate_password_hash, check_password_hash
 from pypdf import PdfReader
@@ -15,15 +14,40 @@ import adaptive_rag
 from retriever import safe_print
 
 # Paths
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_DIR = os.path.join(BASE_DIR, "data")
+BASE_DIR = os.path.abspath(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+FRONTEND_DIR = os.path.abspath(os.path.join(BASE_DIR, "frontend"))
+DATA_DIR = os.path.abspath(os.path.join(BASE_DIR, "data"))
 DB_PATH = os.path.join(DATA_DIR, "career_guidance.db")
 ACTIVE_PROFILE_PATH = os.path.join(DATA_DIR, "active_student.json")
 FEEDBACK_PATH = os.path.join(DATA_DIR, "feedback.json")
 
-# Initialize Flask
-app = Flask(__name__)
-CORS(app) # Enable CORS for all routes to support local files calling localhost
+# Initialize Flask with frontend static folder
+app = Flask(__name__, static_folder=FRONTEND_DIR)
+# Real-Time Terminal Visibility Middleware for all incoming Frontend Requests & API Calls
+@app.before_request
+def log_frontend_request():
+    if request.path.startswith('/static') or any(request.path.endswith(ext) for ext in ['.css', '.js', '.png', '.jpg', '.ico', '.woff2']):
+        return
+    safe_print("\n" + "►"*85)
+    safe_print(f"[FRONTEND REQUEST RECEIVED] {request.method} {request.path}")
+    safe_print(f"  - Client IP: {request.remote_addr}")
+    if request.is_json and request.json:
+        safe_print(f"  - JSON Payload: {json.dumps(request.json, ensure_ascii=False)[:300]}")
+    elif request.args:
+        safe_print(f"  - Query Args: {dict(request.args)}")
+    safe_print("►"*85)
+
+@app.after_request
+def log_frontend_response(response):
+    if request.path.startswith('/static') or any(request.path.endswith(ext) for ext in ['.css', '.js', '.png', '.jpg', '.ico', '.woff2']):
+        return response
+    safe_print(f"[FRONTEND RESPONSE SENT] {request.method} {request.path} -> Status Code: {response.status_code}\n")
+    return response
+
+# Unified Frontend Static Serving Routes
+@app.route('/')
+def serve_index():
+    return send_from_directory(FRONTEND_DIR, 'index.html')
 
 def get_db_connection():
     conn = sqlite3.connect(DB_PATH)
@@ -769,7 +793,10 @@ def chat():
         
         # Post-processing disclaimer
         disclaimer = "\n\n*Disclaimer: Guidance is based on historical database placements.*"
-        response_en_full = response_en + disclaimer
+        if "Disclaimer:" not in response_en:
+            response_en_full = response_en + disclaimer
+        else:
+            response_en_full = response_en
         
         # Translate response back to the user's selected language
         final_answer = response_en_full
@@ -1190,6 +1217,13 @@ def extract_text_from_image_api():
         return jsonify({'error': str(e), 'text': ''}), 500
 
 
+@app.route('/<path:filename>')
+def serve_static(filename):
+    target = os.path.join(FRONTEND_DIR, filename)
+    if os.path.exists(target) and not os.path.isdir(target):
+        return send_from_directory(FRONTEND_DIR, filename)
+    return send_from_directory(FRONTEND_DIR, 'index.html')
+
 if __name__ == '__main__':
     # Initialize SQLite chat history DB table
     init_chat_history_db()
@@ -1209,5 +1243,22 @@ if __name__ == '__main__':
         with open(ACTIVE_PROFILE_PATH, 'w', encoding='utf-8') as f:
             json.dump(default_student, f, indent=2)
             
-    print("Starting Flask Backend Server on http://localhost:5000")
+    safe_print("\n" + "=" * 80)
+    safe_print("[STARTUP] UNIFIED AI CAREER GUIDANCE PORTAL STARTED")
+    safe_print("================================================================================")
+    safe_print("[PORTAL URL] Serving Unified Application (Frontend + Backend) at: http://localhost:5000")
+    safe_print("[LOGGING] All Requests, API Calls, & Terminal RAG Logs active in this window.")
+    safe_print("================================================================================\n")
+    
+    # Auto-open browser window after server initializes
+    import webbrowser, threading
+    def auto_open_browser():
+        time.sleep(1.5)
+        try:
+            webbrowser.open("http://localhost:5000")
+        except Exception:
+            pass
+            
+    threading.Thread(target=auto_open_browser, daemon=True).start()
+    
     app.run(host='0.0.0.0', port=5000, debug=True, use_reloader=False, threaded=True)

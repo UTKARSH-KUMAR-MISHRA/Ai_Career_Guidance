@@ -2,17 +2,28 @@ import os
 import pandas as pd
 from sentence_transformers import SentenceTransformer
 import chromadb
-from config import VECTOR_DB_DIR, DATA_DIR
+import sys
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+from config import VECTOR_DB_DIR, DATA_DIR, EMBEDDING_MODEL
+from retriever import safe_print
 
 def ingest_chroma():
-    # Cache folder inside data directory to avoid permission/download issues
+    safe_print("\n" + "="*90)
+    safe_print("[CHROMA INGESTION PIPELINE] DATASET PARSING & VECTOR INDEXING")
+    safe_print("="*90)
+    
     cache_folder = os.path.join(DATA_DIR, ".cache")
     os.makedirs(cache_folder, exist_ok=True)
     
-    print("Loading SentenceTransformer model ('all-MiniLM-L6-v2')...")
-    model = SentenceTransformer("all-MiniLM-L6-v2", cache_folder=cache_folder)
+    model_name = EMBEDDING_MODEL
+    safe_print(f"[EMBEDDING MODEL] Loading SentenceTransformer model '{model_name}' (cache: {cache_folder})...")
+    model = SentenceTransformer(model_name, cache_folder=cache_folder)
+    vector_dim = getattr(model, "get_embedding_dimension", None) or getattr(model, "get_sentence_embedding_dimension", None)
+    vector_dim_val = vector_dim() if vector_dim else 384
+    safe_print(f"[EMBEDDING MODEL] Loaded successfully! Vector dimension: {vector_dim_val}")
     
-    print(f"Connecting to Chroma PersistentClient at {VECTOR_DB_DIR}...")
+    safe_print(f"[VECTOR DB] Connecting to Chroma PersistentClient at: '{VECTOR_DB_DIR}'")
     client = chromadb.PersistentClient(path=VECTOR_DB_DIR)
     
     tasks = [
@@ -50,16 +61,18 @@ def ingest_chroma():
     for task in tasks:
         csv_path = os.path.join(csv_dir, task["csv"])
         if not os.path.exists(csv_path):
-            print(f"CSV file not found: {csv_path}. Skipping.")
+            safe_print(f"[CSV WARNING] CSV file not found: {csv_path}. Skipping collection '{task['collection']}'.")
             continue
             
-        print(f"Ingesting {task['csv']} into collection '{task['collection']}'...")
+        safe_print(f"\n[DATASET CHUNKING] Reading CSV: '{task['csv']}' -> Target Collection: '{task['collection']}'")
         try:
             df = pd.read_csv(csv_path)
+            row_count = len(df)
+            safe_print(f"  - Read {row_count} rows from '{task['csv']}'")
             
-            # Delete old collection if exists
             try:
                 client.delete_collection(name=task["collection"])
+                safe_print(f"  - Reset existing ChromaDB collection '{task['collection']}'.")
             except Exception:
                 pass
             collection = client.create_collection(name=task["collection"])
@@ -72,17 +85,22 @@ def ingest_chroma():
                 doc_text = task["format"](row)
                 documents.append(doc_text)
                 ids.append(f"doc_{task['collection']}_{idx}")
-                metadatas.append({"source": task["csv"]})
+                metadatas.append({"source": task["csv"], "char_count": len(doc_text)})
                 
-            # Batch uploads of size 100
+            chunk_sizes = [len(d) for d in documents]
+            safe_print(f"  - Chunk Size Stats for '{task['collection']}': Min={min(chunk_sizes)} chars, Max={max(chunk_sizes)} chars, Avg={sum(chunk_sizes)//len(chunk_sizes)} chars")
+            
             batch_size = 100
+            total_batches = (len(documents) + batch_size - 1) // batch_size
+            safe_print(f"  - Generating embeddings in {total_batches} batches using '{model_name}'...")
+            
             for i in range(0, len(documents), batch_size):
                 batch_docs = documents[i:i+batch_size]
                 batch_ids = ids[i:i+batch_size]
                 batch_metas = metadatas[i:i+batch_size]
                 
-                # Generate embeddings
                 batch_embeddings = model.encode(batch_docs).tolist()
+                batch_num = (i // batch_size) + 1
                 
                 collection.add(
                     embeddings=batch_embeddings,
@@ -90,12 +108,14 @@ def ingest_chroma():
                     ids=batch_ids,
                     metadatas=batch_metas
                 )
+                safe_print(f"    * Batch [{batch_num}/{total_batches}] stored {len(batch_docs)} vectors (Vector dim: {len(batch_embeddings[0])})")
                 
-            print(f"Successfully loaded {len(documents)} documents into '{task['collection']}' collection.")
+            safe_print(f"[VECTOR STORAGE] Collection '{task['collection']}' successfully created & loaded with {collection.count()} vectors.")
         except Exception as e:
-            print(f"Error loading {task['csv']}: {e}")
+            safe_print(f"[INGESTION ERROR] Error loading '{task['csv']}': {e}")
             
-    print("Vector database ingestion complete!")
+    safe_print("\n[CHROMA INGESTION PIPELINE] Vector database ingestion complete!")
+    safe_print("="*90 + "\n")
 
 if __name__ == "__main__":
     ingest_chroma()

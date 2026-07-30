@@ -1,11 +1,12 @@
 import json
 from sarvam_client import SarvamClient
+from retriever import safe_print
 
 def route_query(question):
-    print("\n" + "="*80)
-    print(f"[RAG PIPELINE] STAGE 1: ROUTING QUERY")
-    print(f"[RAG PIPELINE] Input query: '{question}'")
-    print("="*80)
+    safe_print("\n" + "="*90)
+    safe_print(f"[RAG PIPELINE] STAGE 1: ROUTING QUERY TO VECTOR COLLECTIONS")
+    safe_print(f"[RAG ROUTER] Input Query: '{question}'")
+    safe_print("="*90)
     
     prompt = f"""
 You are an AI Router for an Adaptive RAG system.
@@ -38,7 +39,7 @@ Question:
 {question}
 """
     try:
-        print("[RAG PIPELINE] Invoking Sarvam VLM Router model...")
+        safe_print("[RAG ROUTER] Invoking Router Classifier...")
         client = SarvamClient()
         response = client.chat([
             {
@@ -47,9 +48,8 @@ Question:
             }
         ])
         
-        print(f"[RAG PIPELINE] Raw router VLM response:\n{response}")
+        safe_print(f"[RAG ROUTER] Classifier Response:\n{response}")
         
-        # Parse JSON, cleaning markdown code blocks if the model outputs them
         clean_response = response.strip()
         if clean_response.startswith("```json"):
             clean_response = clean_response[7:]
@@ -58,18 +58,18 @@ Question:
         clean_response = clean_response.strip()
         
         result = json.loads(clean_response)
-        print(f"[RAG PIPELINE] Route successfully determined:")
-        print(f"  - Intent: '{result.get('intent', 'unknown')}'")
-        print(f"  - Target Collections: {result.get('collections', [])}")
-        print("="*80 + "\n")
+        safe_print(f"[RAG ROUTER] Route classification complete:")
+        safe_print(f"  - Intent: '{result.get('intent', 'unknown')}'")
+        safe_print(f"  - Selected Collections: {result.get('collections', [])}")
+        safe_print("="*90 + "\n")
         return result
     except Exception as e:
-        print(f"[RAG PIPELINE] WARNING: Router classification failed: {e}. Falling back to default collections.")
+        safe_print(f"[RAG ROUTER] Classifier note/fallback ({e}). Using default collections.")
         fallback = {
             "intent": "career_guidance",
-            "collections": ["career", "courses"]
+            "collections": ["career", "courses", "projects", "interview", "education"]
         }
-        print(f"  - Intent (Fallback): '{fallback['intent']}'")
-        print(f"  - Target Collections (Fallback): {fallback['collections']}")
-        print("="*80 + "\n")
+        safe_print(f"  - Intent (Fallback): '{fallback['intent']}'")
+        safe_print(f"  - Selected Collections (Fallback): {fallback['collections']}")
+        safe_print("="*90 + "\n")
         return fallback

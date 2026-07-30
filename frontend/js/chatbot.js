@@ -384,6 +384,25 @@ function initChatbot() {
         queryChatbotAPI(query);
     }
     
+    function scrollToBottom(smooth = true) {
+        if (!chatBody) return;
+        requestAnimationFrame(() => {
+            chatBody.scrollTo({
+                top: chatBody.scrollHeight,
+                behavior: smooth ? 'smooth' : 'auto'
+            });
+            chatBody.scrollTop = chatBody.scrollHeight;
+        });
+    }
+
+    if (chatBody && !chatBody._hasScrollObserver) {
+        chatBody._hasScrollObserver = true;
+        const scrollObserver = new MutationObserver(() => {
+            scrollToBottom(false);
+        });
+        scrollObserver.observe(chatBody, { childList: true, subtree: true, characterData: true });
+    }
+
     function appendUserMessage(text) {
         const msgContainer = document.createElement("div");
         msgContainer.className = "msg-container user";
@@ -396,7 +415,7 @@ function initChatbot() {
         msgContainer.appendChild(msgDiv);
         
         chatBody.appendChild(msgContainer);
-        chatBody.scrollTop = chatBody.scrollHeight;
+        scrollToBottom(true);
     }
     
     async function queryChatbotAPI(query) {
@@ -609,6 +628,11 @@ function parseMarkdown(text) {
     
     // Inline code
     html = html.replace(/`([^`]+)`/g, '<code style="background:rgba(0,0,0,0.05); padding:2px 5px; border-radius:4px;">$1</code>');
+    
+    // Citation badges transformer for [1], [2], [roles.csv], [courses.csv], [projects.csv], [interview_questions.csv], etc.
+    html = html.replace(/\[(\d+|[\w\.-]+\.csv|web_search_[\w\.-]+)\]/gi, (match, citeId) => {
+        return `<span class="rag-citation-badge" title="Retrieved Database Citation: ${citeId}" style="display:inline-flex; align-items:center; gap:3px; background:#EEF2FF; color:#4F46E5; border:1px solid #C7D2FE; font-size:11px; font-weight:700; padding:1px 7px; border-radius:12px; margin:0 3px; cursor:pointer; vertical-align:middle; box-shadow:0 1px 2px rgba(79,70,229,0.12);">📚 [${citeId}]</span>`;
+    });
     
     // Bold
     html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');

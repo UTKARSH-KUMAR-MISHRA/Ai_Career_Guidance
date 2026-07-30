@@ -167,10 +167,9 @@ async function handleProfileSave() {
         
         if (res.ok) {
             showToast("Profile Saved Successfully!");
-            // Reload page to reflect styling/metrics
-            setTimeout(() => {
-                window.location.reload();
-            }, 800);
+            if (typeof window.navigateTo === 'function') {
+                window.navigateTo("dashboard");
+            }
         } else {
             showToast("Failed to save profile on backend.");
         }

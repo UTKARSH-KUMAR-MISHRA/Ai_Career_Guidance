@@ -6,12 +6,11 @@ from prompt_builder import build_prompt
 from sarvam_client import SarvamClient
 
 def get_wiki_summary(query):
-    print("\n" + "="*80)
-    print(f"[RAG PIPELINE] WEB SEARCH FALLBACK (WIKIPEDIA)")
-    print(f"[RAG PIPELINE] Parsing query for technical terms: '{query}'")
-    print("="*80)
+    safe_print("\n" + "="*90)
+    safe_print(f"[RAG PIPELINE] WEB SEARCH FALLBACK CHECK (WIKIPEDIA)")
+    safe_print(f"[RAG WEB SEARCH] Parsing query for technical terms: '{query}'")
+    safe_print("="*90)
     
-    # Clean query to get core terms
     keywords = [
         "kubeflow", "mlflow", "bayesian optimization", "xgboost", "random forest", 
         "mops", "mlops", "transformer", "bert", "gpt", "cnn", "lstm", "rnn", 
@@ -40,38 +39,38 @@ def get_wiki_summary(query):
              
     if matched_term:
         target = matched_term.title().replace(" ", "_")
-        print(f"[RAG PIPELINE] Matched keyword term: '{matched_term}' -> Wikipedia Target Page: '{target}'")
+        safe_print(f"[RAG WEB SEARCH] Matched technical term: '{matched_term}' -> Target Page: '{target}'")
         try:
             url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{target}"
             headers = {"User-Agent": "Mozilla/5.0"}
-            print(f"[RAG PIPELINE] Sending API request to: {url}")
+            safe_print(f"[RAG WEB SEARCH] Requesting URL: {url}")
             response = requests.get(url, headers=headers, timeout=5)
             if response.status_code == 200:
                 data = response.json()
                 extract = data.get("extract", "")
                 if extract:
-                    print(f"[RAG PIPELINE] Wikipedia fetch successful! Snippet length: {len(extract)} chars.")
-                    print(f"  Snippet: {extract[:120]}...")
-                    print("="*80 + "\n")
+                    safe_print(f"[RAG WEB SEARCH] Wikipedia fetch successful! Snippet length: {len(extract)} chars.")
+                    safe_print(f"  Snippet: {extract[:120]}...")
+                    safe_print("="*90 + "\n")
                     return {
                         "text": f"External Web Search Summary for {matched_term.upper()}: {extract}",
                         "source": f"web_search_{matched_term}.json",
                         "page": 1
                     }
-            print(f"[RAG PIPELINE] Wikipedia page summary not found for target '{target}'. Status code: {response.status_code}")
+            safe_print(f"[RAG WEB SEARCH] Wikipedia page summary not found for target '{target}'. Status: {response.status_code}")
         except Exception as e:
-            print(f"[RAG PIPELINE] Wikipedia search fallback failed for target '{target}': {e}")
+            safe_print(f"[RAG WEB SEARCH] Search fallback failed for target '{target}': {e}")
     else:
-        print("[RAG PIPELINE] No matching technical keyword found for Wikipedia search fallback.")
-    print("="*80 + "\n")
+        safe_print("[RAG WEB SEARCH] No extra technical keyword trigger matched.")
+    safe_print("="*90 + "\n")
     return None
 
 def ask(question, profile, history=None):
     safe_print("\n" + "#"*100)
     safe_print(f"[RAG PIPELINE] STARTING ADAPTIVE RAG ASK INVOCATION")
-    safe_print(f"[RAG PIPELINE] Input query: '{question}'")
-    safe_print(f"[RAG PIPELINE] Student profile details: {profile}")
-    safe_print(f"[RAG PIPELINE] Conversation history turns: {len(history) if history else 0}")
+    safe_print(f"[RAG PIPELINE] Input Query: '{question}'")
+    safe_print(f"[RAG PIPELINE] Profile: Name={profile.get('name')}, Branch={profile.get('branch')}, Goal={profile.get('career_goal')}")
+    safe_print(f"[RAG PIPELINE] History Turns: {len(history) if history else 0}")
     safe_print("#"*100)
     
     # 1. Routing
@@ -97,54 +96,24 @@ def ask(question, profile, history=None):
         })
         
     # 5. Assembling Prompt
-    safe_print("\n" + "="*80)
-    safe_print("[RAG PIPELINE] STAGE 3: PROMPT ASSEMBLY")
     prompt = build_prompt(question, docs, profile)
-    safe_print(f"[RAG PIPELINE] Assembled prompt text length: {len(prompt)} characters.")
-    safe_print("="*80)
     
-    # 6. Structuring conversation history
-    safe_print("\n" + "="*80)
-    safe_print("[RAG PIPELINE] STAGE 4: PREPARING CONVERSATION LOGS FOR MODEL")
+    # 6. Structuring conversation history & system instruction
+    safe_print("\n" + "="*90)
+    safe_print("[RAG PIPELINE] PREPARING CONVERSATION LOGS & SYSTEM INSTRUCTION")
     system_instruction = (
         "You are a professional AI Career Mentor and an elite Machine Learning & Data Science Expert. "
         "Format your output nicely in Markdown. Ground your answers strictly on the retrieved context, "
-        "and seamlessly incorporate advanced technical concepts on ML/DL pipelines, hyperparameter tuning, "
-        "spatial-temporal climate models, network architectures, and MLOps when relevant.\n\n"
+        "and seamlessly incorporate advanced technical concepts when relevant.\n\n"
         "Formatting Guidelines:\n"
         "1. If the user asks about a roadmap, career steps, learning path, or workflow hierarchy, you MUST construct "
-        "a visual flowchart using Mermaid.js syntax inside a code block. Always wrap node labels in double quotes. "
-        "For subgraphs, always use the syntax `subgraph \"Title\"` with quotes and no separate ID to avoid parser errors:\n"
+        "a visual flowchart using Mermaid.js syntax inside a code block:\n"
         "```mermaid\n"
         "graph TD\n"
         "    A[\"Start\"] --> B[\"Step 1\"]\n"
         "    B --> C[\"Step 2\"]\n"
-        "    subgraph \"Phase 1\"\n"
-        "        B\n"
-        "    end\n"
         "```\n"
-        "2. When presenting multi-column structures (such as challenges vs recommendations, comparisons, or side-by-side layouts), "
-        "wrap them in raw HTML flex columns (do NOT wrap in markdown code blocks):\n"
-        "<div style=\"display: flex; gap: 12px; margin: 12px 0;\">\n"
-        "  <div style=\"flex: 1; border: 1px solid #ECEDF3; padding: 10px; border-radius: 8px; background: #F9FAFB;\">\n"
-        "    <strong>Column 1</strong>\n"
-        "    <p>Content...</p>\n"
-        "  </div>\n"
-        "  <div style=\"flex: 1; border: 1px solid #ECEDF3; padding: 10px; border-radius: 8px; background: #F9FAFB;\">\n"
-        "    <strong>Column 2</strong>\n"
-        "    <p>Content...</p>\n"
-        "  </div>\n"
-        "</div>\n"
-        "3. When presenting statistics or metrics, render them visually as styled progress bar blocks using raw inline HTML (do NOT wrap in markdown code blocks):\n"
-        "<div style=\"margin: 8px 0; font-size: 11.5px; font-family: sans-serif;\">\n"
-        "  <strong>Metric Name</strong> (percentage%)\n"
-        "  <div style=\"background: #E5E7EB; border-radius: 4px; height: 8px; width: 100%; margin-top: 4px;\">\n"
-        "    <div style=\"background: #4F46E5; height: 8px; border-radius: 4px; width: percentage%;\"></div>\n"
-        "  </div>\n"
-        "</div>\n"
-        "4. Use Markdown tables for quantitative data comparisons.\n"
-        "5. Cleanly cite the sources and page numbers when quoting from PDF documents.\n"
-        "6. DO NOT repeat yourself. Keep the response clean, well-formatted, and cohesive."
+        "2. Keep response structured and clean."
     )
     
     messages = [
@@ -155,7 +124,7 @@ def ask(question, profile, history=None):
     ]
     
     if history:
-        safe_print(f"[RAG PIPELINE] Appending {len(history)} recent conversation history turns to chat history payload:")
+        safe_print(f"[RAG PIPELINE] Appending {len(history)} conversation history turns:")
         for turn in history:
             role = "user" if turn["role"] == "user" else "assistant"
             safe_print(f"  - [{role.upper()}] Snippet: {turn['content'][:80]}...")
@@ -164,21 +133,24 @@ def ask(question, profile, history=None):
                 "content": turn["content"]
             })
             
-    # Append the newly engineered user query
     messages.append({
         "role": "user",
         "content": prompt
     })
-    safe_print("="*80)
+    
+    safe_print("\n" + "="*90)
+    safe_print("[RAG PIPELINE] STAGE 5: FULL AUGMENTED PROMPT SENT TO MODEL")
+    safe_print("="*90)
+    safe_print(prompt)
+    safe_print("="*90)
     
     # 7. Model Inference Call
-    safe_print("\n" + "="*80)
-    safe_print("[RAG PIPELINE] STAGE 5: LLM INFERENCE (SARVAM API)")
+    safe_print("\n" + "="*90)
+    safe_print("[RAG PIPELINE] STAGE 6: EXECUTING LLM INFERENCE VIA SARVAM CLIENT")
+    safe_print("="*90)
     client = SarvamClient()
-    safe_print(f"[RAG PIPELINE] Invoking API with model endpoint...")
     answer = client.chat(messages)
     safe_print(f"[RAG PIPELINE] Model API execution successful. Returned response size: {len(answer) if answer else 0} characters.")
-    safe_print("="*80)
     
     # 8. Programmatic source resolution
     sources = []
@@ -197,3 +169,15 @@ def ask(question, profile, history=None):
     safe_print(f"[RAG PIPELINE] ADAPTIVE RAG ASK INVOCATION COMPLETED SUCCESSFULLY")
     safe_print("#"*100 + "\n")
     return answer, sources
+
+if __name__ == "__main__":
+    sample_profile = {
+        "name": "Utkarsh Mishra",
+        "branch": "Computer Science",
+        "year": 3,
+        "known_skills": "Python, Machine Learning, Data Structures",
+        "interests": "AI, Cloud Computing, MLOps",
+        "career_goal": "AI Engineer"
+    }
+    sample_query = "What is the complete roadmap and key skills required to become a successful AI Engineer?"
+    ans, src = ask(sample_query, sample_profile)

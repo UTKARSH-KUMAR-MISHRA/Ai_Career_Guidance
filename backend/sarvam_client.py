@@ -82,6 +82,12 @@ class SarvamClient:
         """
         Send a chat query to Sarvam AI completions endpoint.
         """
+        return self.call_chat_completions(messages)
+
+    def call_chat_completions(self, messages):
+        """
+        Send a chat query to Sarvam AI completions endpoint.
+        """
         api_key = os.getenv("SARVAM_API_KEY", self.api_key)
         base_url = os.getenv("SARVAM_BASE_URL", "https://api.sarvam.ai/v1")
         model = os.getenv("SARVAM_MODEL", "sarvam-30b")
@@ -98,8 +104,9 @@ class SarvamClient:
         }
         
         try:
-            safe_print(f"Calling Sarvam Chat API ({model})...")
-            response = requests.post(f"{base_url}/chat/completions", json=payload, headers=headers, timeout=30)
+            safe_print(f"\n[LLM INFERENCE] Invoking Sarvam API endpoint ({base_url}/chat/completions)...")
+            safe_print(f"  - Model: {model} | Temperature: 0.7 | Max Tokens: 3000 | Timeout: 90s")
+            response = requests.post(f"{base_url}/chat/completions", json=payload, headers=headers, timeout=90)
             if response.status_code == 200:
                 res_json = response.json()
                 msg_data = res_json.get("choices", [{}])[0].get("message", {})
@@ -107,16 +114,39 @@ class SarvamClient:
                 if not content:
                     content = msg_data.get("reasoning_content", "")
                 if content:
+                    safe_print("\n" + "="*90)
+                    safe_print("[LLM GENERATION] FINAL GENERATED RESPONSE OUTPUT")
+                    safe_print("="*90)
+                    safe_print(content)
+                    safe_print("="*90 + "\n")
                     return content
                 else:
-                    safe_print("Sarvam completions returned empty content.")
-                    return self._local_grounded_fallback(messages)
+                    safe_print("[LLM INFERENCE] Sarvam completions returned empty content. Invoking local grounded fallback...")
+                    fallback_res = self._local_grounded_fallback(messages)
+                    safe_print("\n" + "="*90)
+                    safe_print("[LLM GENERATION] GROUNDED FALLBACK RESPONSE OUTPUT")
+                    safe_print("="*90)
+                    safe_print(fallback_res)
+                    safe_print("="*90 + "\n")
+                    return fallback_res
             else:
-                safe_print(f"Sarvam Chat API error {response.status_code}: {response.text}")
-                return self._local_grounded_fallback(messages)
+                safe_print(f"[LLM INFERENCE] Sarvam Chat API notice/status {response.status_code}. Invoking local grounded fallback...")
+                fallback_res = self._local_grounded_fallback(messages)
+                safe_print("\n" + "="*90)
+                safe_print("[LLM GENERATION] GROUNDED FALLBACK RESPONSE OUTPUT")
+                safe_print("="*90)
+                safe_print(fallback_res)
+                safe_print("="*90 + "\n")
+                return fallback_res
         except Exception as e:
-            safe_print(f"Sarvam Chat API exception: {e}")
-            return self._local_grounded_fallback(messages)
+            safe_print(f"[LLM INFERENCE] Sarvam Chat API exception: {e}. Invoking local grounded fallback...")
+            fallback_res = self._local_grounded_fallback(messages)
+            safe_print("\n" + "="*90)
+            safe_print("[LLM GENERATION] GROUNDED FALLBACK RESPONSE OUTPUT")
+            safe_print("="*90)
+            safe_print(fallback_res)
+            safe_print("="*90 + "\n")
+            return fallback_res
 
     def _local_grounded_fallback(self, messages):
         """
@@ -124,7 +154,7 @@ class SarvamClient:
         to construct a high-quality answer locally if Sarvam completions API is degraded or offline.
         """
         user_content = ""
-        for msg in messages:
+        for msg in reversed(messages):
             if msg.get("role") == "user":
                 user_content = msg.get("content", "")
                 break
@@ -133,15 +163,21 @@ class SarvamClient:
         context = ""
         question = "your query"
         
-        # Simple extraction via headers in prompt_builder
+        # Extraction via prompt structure
+        if "User Question:" in user_content:
+            try:
+                question = user_content.split("User Question:")[1].split("Formatting Instructions")[0].strip()
+            except Exception:
+                question = user_content[:100]
+        elif user_content:
+            question = user_content[:100]
+            
         if "Retrieved Context" in user_content:
             try:
                 parts = user_content.split("=========================")
                 for part in parts:
                     if "Retrieved Context" in part:
                         context = part.replace("Retrieved Context", "").strip()
-                    elif "User Question" in part:
-                        question = part.replace("User Question", "").strip()
             except Exception:
                 pass
                 

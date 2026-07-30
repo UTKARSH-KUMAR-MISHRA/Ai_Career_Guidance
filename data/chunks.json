@@ -5,7 +5,8 @@
     "title": "General Info",
     "metadata": {
       "type": "role_description",
-      "title": "General Info"
+      "title": "General Info",
+      "char_count": 416
     }
   },
   {
@@ -14,7 +15,8 @@
     "title": "BR001 \u2014 Computer Science & IT",
     "metadata": {
       "type": "role_description",
-      "title": "BR001 \u2014 Computer Science & IT"
+      "title": "BR001 \u2014 Computer Science & IT",
+      "char_count": 29
     }
   },
   {
@@ -23,7 +25,8 @@
     "title": "Software Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Software Engineer"
+      "title": "Software Engineer",
+      "char_count": 791
     }
   },
   {
@@ -32,7 +35,8 @@
     "title": "Data Scientist",
     "metadata": {
       "type": "role_description",
-      "title": "Data Scientist"
+      "title": "Data Scientist",
+      "char_count": 742
     }
   },
   {
@@ -41,7 +45,8 @@
     "title": "AI / Machine Learning Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "AI / Machine Learning Engineer"
+      "title": "AI / Machine Learning Engineer",
+      "char_count": 696
     }
   },
   {
@@ -50,7 +55,8 @@
     "title": "Cybersecurity Analyst",
     "metadata": {
       "type": "role_description",
-      "title": "Cybersecurity Analyst"
+      "title": "Cybersecurity Analyst",
+      "char_count": 674
     }
   },
   {
@@ -59,7 +65,8 @@
     "title": "Cloud Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Cloud Engineer"
+      "title": "Cloud Engineer",
+      "char_count": 700
     }
   },
   {
@@ -68,7 +75,8 @@
     "title": "Full Stack Developer",
     "metadata": {
       "type": "role_description",
-      "title": "Full Stack Developer"
+      "title": "Full Stack Developer",
+      "char_count": 664
     }
   },
   {
@@ -77,7 +85,8 @@
     "title": "BR002 \u2014 Electronics & Communication",
     "metadata": {
       "type": "role_description",
-      "title": "BR002 \u2014 Electronics & Communication"
+      "title": "BR002 \u2014 Electronics & Communication",
+      "char_count": 35
     }
   },
   {
@@ -86,7 +95,8 @@
     "title": "VLSI / Semiconductor Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "VLSI / Semiconductor Engineer"
+      "title": "VLSI / Semiconductor Engineer",
+      "char_count": 657
     }
   },
   {
@@ -95,7 +105,8 @@
     "title": "Embedded Systems Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Embedded Systems Engineer"
+      "title": "Embedded Systems Engineer",
+      "char_count": 696
     }
   },
   {
@@ -104,7 +115,8 @@
     "title": "Telecommunications Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Telecommunications Engineer"
+      "title": "Telecommunications Engineer",
+      "char_count": 719
     }
   },
   {
@@ -113,7 +125,8 @@
     "title": "BR003 \u2014 Mechanical",
     "metadata": {
       "type": "role_description",
-      "title": "BR003 \u2014 Mechanical"
+      "title": "BR003 \u2014 Mechanical",
+      "char_count": 18
     }
   },
   {
@@ -122,7 +135,8 @@
     "title": "Robotics Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Robotics Engineer"
+      "title": "Robotics Engineer",
+      "char_count": 636
     }
   },
   {
@@ -131,7 +145,8 @@
     "title": "Design Engineer (Mechanical)",
     "metadata": {
       "type": "role_description",
-      "title": "Design Engineer (Mechanical)"
+      "title": "Design Engineer (Mechanical)",
+      "char_count": 681
     }
   },
   {
@@ -140,7 +155,8 @@
     "title": "Manufacturing Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Manufacturing Engineer"
+      "title": "Manufacturing Engineer",
+      "char_count": 656
     }
   },
   {
@@ -149,7 +165,8 @@
     "title": "Automotive Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Automotive Engineer"
+      "title": "Automotive Engineer",
+      "char_count": 640
     }
   },
   {
@@ -158,7 +175,8 @@
     "title": "HVAC Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "HVAC Engineer"
+      "title": "HVAC Engineer",
+      "char_count": 638
     }
   },
   {
@@ -167,7 +185,8 @@
     "title": "Maintenance Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Maintenance Engineer"
+      "title": "Maintenance Engineer",
+      "char_count": 670
     }
   },
   {
@@ -176,7 +195,8 @@
     "title": "BR004 \u2014 Civil",
     "metadata": {
       "type": "role_description",
-      "title": "BR004 \u2014 Civil"
+      "title": "BR004 \u2014 Civil",
+      "char_count": 13
     }
   },
   {
@@ -185,7 +205,8 @@
     "title": "Structural Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Structural Engineer"
+      "title": "Structural Engineer",
+      "char_count": 695
     }
   },
   {
@@ -194,7 +215,8 @@
     "title": "Construction Project Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Construction Project Engineer"
+      "title": "Construction Project Engineer",
+      "char_count": 648
     }
   },
   {
@@ -203,7 +225,8 @@
     "title": "Transportation Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Transportation Engineer"
+      "title": "Transportation Engineer",
+      "char_count": 621
     }
   },
   {
@@ -212,7 +235,8 @@
     "title": "Geotechnical Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Geotechnical Engineer"
+      "title": "Geotechnical Engineer",
+      "char_count": 669
     }
   },
   {
@@ -221,7 +245,8 @@
     "title": "Environmental Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Environmental Engineer"
+      "title": "Environmental Engineer",
+      "char_count": 630
     }
   },
   {
@@ -230,7 +255,8 @@
     "title": "Urban Planner",
     "metadata": {
       "type": "role_description",
-      "title": "Urban Planner"
+      "title": "Urban Planner",
+      "char_count": 570
     }
   },
   {
@@ -239,7 +265,8 @@
     "title": "BR005 \u2014 Aerospace",
     "metadata": {
       "type": "role_description",
-      "title": "BR005 \u2014 Aerospace"
+      "title": "BR005 \u2014 Aerospace",
+      "char_count": 17
     }
   },
   {
@@ -248,7 +275,8 @@
     "title": "Aerospace Design Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Aerospace Design Engineer"
+      "title": "Aerospace Design Engineer",
+      "char_count": 606
     }
   },
   {
@@ -257,7 +285,8 @@
     "title": "Aircraft Maintenance Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Aircraft Maintenance Engineer"
+      "title": "Aircraft Maintenance Engineer",
+      "char_count": 652
     }
   },
   {
@@ -266,7 +295,8 @@
     "title": "Propulsion Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Propulsion Engineer"
+      "title": "Propulsion Engineer",
+      "char_count": 597
     }
   },
   {
@@ -275,7 +305,8 @@
     "title": "Avionics Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Avionics Engineer"
+      "title": "Avionics Engineer",
+      "char_count": 671
     }
   },
   {
@@ -284,7 +315,8 @@
     "title": "Flight Test Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Flight Test Engineer"
+      "title": "Flight Test Engineer",
+      "char_count": 637
     }
   },
   {
@@ -293,7 +325,8 @@
     "title": "Space Systems Engineer",
     "metadata": {
       "type": "role_description",
-      "title": "Space Systems Engineer"
+      "title": "Space Systems Engineer",
+      "char_count": 770
     }
   },
   {
@@ -302,7 +335,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 418
     }
   },
   {
@@ -311,7 +345,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 439
     }
   },
   {
@@ -320,7 +355,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 434
     }
   },
   {
@@ -329,7 +365,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 376
     }
   },
   {
@@ -338,7 +375,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 386
     }
   },
   {
@@ -347,7 +385,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 407
     }
   },
   {
@@ -356,7 +395,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 311
     }
   },
   {
@@ -365,7 +405,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 346
     }
   },
   {
@@ -374,7 +415,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 356
     }
   },
   {
@@ -383,7 +425,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 373
     }
   },
   {
@@ -392,7 +435,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 301
     }
   },
   {
@@ -401,7 +445,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 381
     }
   },
   {
@@ -410,7 +455,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 431
     }
   },
   {
@@ -419,7 +465,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 451
     }
   },
   {
@@ -428,7 +475,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 368
     }
   },
   {
@@ -437,7 +485,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 350
     }
   },
   {
@@ -446,7 +495,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 348
     }
   },
   {
@@ -455,7 +505,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 331
     }
   },
   {
@@ -464,7 +515,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 350
     }
   },
   {
@@ -473,7 +525,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 305
     }
   },
   {
@@ -482,7 +535,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 341
     }
   },
   {
@@ -491,7 +545,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 325
     }
   },
   {
@@ -500,7 +555,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 304
     }
   },
   {
@@ -509,7 +565,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 295
     }
   },
   {
@@ -518,7 +575,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 403
     }
   },
   {
@@ -527,7 +585,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 315
     }
   },
   {
@@ -536,7 +595,8 @@
     "title": "Interview Prep for General Interview Prep",
     "metadata": {
       "type": "interview_question",
-      "role": "General Interview Prep"
+      "role": "General Interview Prep",
+      "char_count": 392
     }
   },
   {
@@ -545,7 +605,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 343
     }
   },
   {
@@ -554,7 +615,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 355
     }
   },
   {
@@ -563,7 +625,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 254
     }
   },
   {
@@ -572,7 +635,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 389
     }
   },
   {
@@ -581,7 +645,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 352
     }
   },
   {
@@ -590,7 +655,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 328
     }
   },
   {
@@ -599,7 +665,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 344
     }
   },
   {
@@ -608,7 +675,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 311
     }
   },
   {
@@ -617,7 +685,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 379
     }
   },
   {
@@ -626,7 +695,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 315
     }
   },
   {
@@ -635,7 +705,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 376
     }
   },
   {
@@ -644,7 +715,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 432
     }
   },
   {
@@ -653,7 +725,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 447
     }
   },
   {
@@ -662,7 +735,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 331
     }
   },
   {
@@ -671,7 +745,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 323
     }
   },
   {
@@ -680,7 +755,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 281
     }
   },
   {
@@ -689,7 +765,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 324
     }
   },
   {
@@ -698,7 +775,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 408
     }
   },
   {
@@ -707,7 +785,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 306
     }
   },
   {
@@ -716,7 +795,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 305
     }
   },
   {
@@ -725,7 +805,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 333
     }
   },
   {
@@ -734,7 +815,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 287
     }
   },
   {
@@ -743,7 +825,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 299
     }
   },
   {
@@ -752,7 +835,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 410
     }
   },
   {
@@ -761,7 +845,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 348
     }
   },
   {
@@ -770,7 +855,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 402
     }
   },
   {
@@ -779,7 +865,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 287
     }
   },
   {
@@ -788,7 +875,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 342
     }
   },
   {
@@ -797,7 +885,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 368
     }
   },
   {
@@ -806,7 +895,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 283
     }
   },
   {
@@ -815,7 +905,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 378
     }
   },
   {
@@ -824,7 +915,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 333
     }
   },
   {
@@ -833,7 +925,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 326
     }
   },
   {
@@ -842,7 +935,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 284
     }
   },
   {
@@ -851,7 +945,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 356
     }
   },
   {
@@ -860,7 +955,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 327
     }
   },
   {
@@ -869,7 +965,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 347
     }
   },
   {
@@ -878,7 +975,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 358
     }
   },
   {
@@ -887,7 +985,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 414
     }
   },
   {
@@ -896,7 +995,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 313
     }
   },
   {
@@ -905,7 +1005,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 331
     }
   },
   {
@@ -914,7 +1015,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 335
     }
   },
   {
@@ -923,7 +1025,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 331
     }
   },
   {
@@ -932,7 +1035,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 341
     }
   },
   {
@@ -941,7 +1045,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 316
     }
   },
   {
@@ -950,7 +1055,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 276
     }
   },
   {
@@ -959,7 +1065,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 270
     }
   },
   {
@@ -968,7 +1075,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 286
     }
   },
   {
@@ -977,7 +1085,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 314
     }
   },
   {
@@ -986,7 +1095,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 355
     }
   },
   {
@@ -995,7 +1105,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 379
     }
   },
   {
@@ -1004,7 +1115,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 415
     }
   },
   {
@@ -1013,7 +1125,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 353
     }
   },
   {
@@ -1022,7 +1135,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 329
     }
   },
   {
@@ -1031,7 +1145,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 281
     }
   },
   {
@@ -1040,7 +1155,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 319
     }
   },
   {
@@ -1049,7 +1165,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 307
     }
   },
   {
@@ -1058,7 +1175,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 392
     }
   },
   {
@@ -1067,7 +1185,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 317
     }
   },
   {
@@ -1076,7 +1195,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 324
     }
   },
   {
@@ -1085,7 +1205,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 325
     }
   },
   {
@@ -1094,7 +1215,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 265
     }
   },
   {
@@ -1103,7 +1225,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 409
     }
   },
   {
@@ -1112,7 +1235,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 384
     }
   },
   {
@@ -1121,7 +1245,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 428
     }
   },
   {
@@ -1130,7 +1255,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 325
     }
   },
   {
@@ -1139,7 +1265,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 355
     }
   },
   {
@@ -1148,7 +1275,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 299
     }
   },
   {
@@ -1157,7 +1285,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 378
     }
   },
   {
@@ -1166,7 +1295,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 324
     }
   },
   {
@@ -1175,7 +1305,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 287
     }
   },
   {
@@ -1184,7 +1315,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 307
     }
   },
   {
@@ -1193,7 +1325,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 346
     }
   },
   {
@@ -1202,7 +1335,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 333
     }
   },
   {
@@ -1211,7 +1345,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 355
     }
   },
   {
@@ -1220,7 +1355,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 363
     }
   },
   {
@@ -1229,7 +1365,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 356
     }
   },
   {
@@ -1238,7 +1375,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 470
     }
   },
   {
@@ -1247,7 +1385,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 372
     }
   },
   {
@@ -1256,7 +1395,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 303
     }
   },
   {
@@ -1265,7 +1405,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 309
     }
   },
   {
@@ -1274,7 +1415,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 328
     }
   },
   {
@@ -1283,7 +1425,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 315
     }
   },
   {
@@ -1292,7 +1435,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 307
     }
   },
   {
@@ -1301,7 +1445,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 329
     }
   },
   {
@@ -1310,7 +1455,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 301
     }
   },
   {
@@ -1319,7 +1465,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 313
     }
   },
   {
@@ -1328,7 +1475,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 300
     }
   },
   {
@@ -1337,7 +1485,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 370
     }
   },
   {
@@ -1346,7 +1495,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 403
     }
   },
   {
@@ -1355,7 +1505,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 422
     }
   },
   {
@@ -1364,7 +1515,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 344
     }
   },
   {
@@ -1373,7 +1525,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 349
     }
   },
   {
@@ -1382,7 +1535,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 287
     }
   },
   {
@@ -1391,7 +1545,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 322
     }
   },
   {
@@ -1400,7 +1555,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 273
     }
   },
   {
@@ -1409,7 +1565,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 383
     }
   },
   {
@@ -1418,7 +1575,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 296
     }
   },
   {
@@ -1427,7 +1585,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 295
     }
   },
   {
@@ -1436,7 +1595,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 318
     }
   },
   {
@@ -1445,7 +1605,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 307
     }
   },
   {
@@ -1454,7 +1615,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 425
     }
   },
   {
@@ -1463,7 +1625,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 376
     }
   },
   {
@@ -1472,7 +1635,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 423
     }
   },
   {
@@ -1481,7 +1645,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 299
     }
   },
   {
@@ -1490,7 +1655,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 289
     }
   },
   {
@@ -1499,7 +1665,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 246
     }
   },
   {
@@ -1508,7 +1675,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 363
     }
   },
   {
@@ -1517,7 +1685,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 358
     }
   },
   {
@@ -1526,7 +1695,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 338
     }
   },
   {
@@ -1535,7 +1705,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 325
     }
   },
   {
@@ -1544,7 +1715,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 317
     }
   },
   {
@@ -1553,7 +1725,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 339
     }
   },
   {
@@ -1562,7 +1735,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 310
     }
   },
   {
@@ -1571,7 +1745,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 394
     }
   },
   {
@@ -1580,7 +1755,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 369
     }
   },
   {
@@ -1589,7 +1765,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 411
     }
   },
   {
@@ -1598,7 +1775,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 334
     }
   },
   {
@@ -1607,7 +1785,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 332
     }
   },
   {
@@ -1616,7 +1795,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 298
     }
   },
   {
@@ -1625,7 +1805,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 296
     }
   },
   {
@@ -1634,7 +1815,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 311
     }
   },
   {
@@ -1643,7 +1825,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 300
     }
   },
   {
@@ -1652,7 +1835,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 337
     }
   },
   {
@@ -1661,7 +1845,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 304
     }
   },
   {
@@ -1670,7 +1855,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 276
     }
   },
   {
@@ -1679,7 +1865,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 346
     }
   },
   {
@@ -1688,7 +1875,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 387
     }
   },
   {
@@ -1697,7 +1885,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 361
     }
   },
   {
@@ -1706,7 +1895,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 437
     }
   },
   {
@@ -1715,7 +1905,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 292
     }
   },
   {
@@ -1724,7 +1915,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 286
     }
   },
   {
@@ -1733,7 +1925,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 299
     }
   },
   {
@@ -1742,7 +1935,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 324
     }
   },
   {
@@ -1751,7 +1945,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 296
     }
   },
   {
@@ -1760,7 +1955,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 297
     }
   },
   {
@@ -1769,7 +1965,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 331
     }
   },
   {
@@ -1778,7 +1975,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 285
     }
   },
   {
@@ -1787,7 +1985,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 295
     }
   },
   {
@@ -1796,7 +1995,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 300
     }
   },
   {
@@ -1805,7 +2005,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 399
     }
   },
   {
@@ -1814,7 +2015,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 380
     }
   },
   {
@@ -1823,7 +2025,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 356
     }
   },
   {
@@ -1832,7 +2035,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 282
     }
   },
   {
@@ -1841,7 +2045,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 296
     }
   },
   {
@@ -1850,7 +2055,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 264
     }
   },
   {
@@ -1859,7 +2065,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 330
     }
   },
   {
@@ -1868,7 +2075,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 288
     }
   },
   {
@@ -1877,7 +2085,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 312
     }
   },
   {
@@ -1886,7 +2095,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 278
     }
   },
   {
@@ -1895,7 +2105,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 323
     }
   },
   {
@@ -1904,7 +2115,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 312
     }
   },
   {
@@ -1913,7 +2125,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 290
     }
   },
   {
@@ -1922,7 +2135,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 415
     }
   },
   {
@@ -1931,7 +2145,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 414
     }
   },
   {
@@ -1940,7 +2155,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 443
     }
   },
   {
@@ -1949,7 +2165,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 349
     }
   },
   {
@@ -1958,7 +2175,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 312
     }
   },
   {
@@ -1967,7 +2185,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 276
     }
   },
   {
@@ -1976,7 +2195,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 308
     }
   },
   {
@@ -1985,7 +2205,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 287
     }
   },
   {
@@ -1994,7 +2215,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 303
     }
   },
   {
@@ -2003,7 +2225,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 301
     }
   },
   {
@@ -2012,7 +2235,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 313
     }
   },
   {
@@ -2021,7 +2245,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 288
     }
   },
   {
@@ -2030,7 +2255,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 462
     }
   },
   {
@@ -2039,7 +2265,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 404
     }
   },
   {
@@ -2048,7 +2275,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 362
     }
   },
   {
@@ -2057,7 +2285,8 @@
     "title": "Interview Prep for AI / Machine Learning Engineer",
     "metadata": {
       "type": "interview_question",
-      "role": "AI / Machine Learning Engineer"
+      "role": "AI / Machine Learning Engineer",
+      "char_count": 356
     }
   },
   {
@@ -2067,7 +2296,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0001"
+      "id": "FAQ0001",
+      "char_count": 285
     }
   },
   {
@@ -2077,7 +2307,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0002"
+      "id": "FAQ0002",
+      "char_count": 297
     }
   },
   {
@@ -2087,7 +2318,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0003"
+      "id": "FAQ0003",
+      "char_count": 273
     }
   },
   {
@@ -2097,7 +2329,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0004"
+      "id": "FAQ0004",
+      "char_count": 282
     }
   },
   {
@@ -2107,7 +2340,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0005"
+      "id": "FAQ0005",
+      "char_count": 303
     }
   },
   {
@@ -2117,7 +2351,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0006"
+      "id": "FAQ0006",
+      "char_count": 285
     }
   },
   {
@@ -2127,7 +2362,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0007"
+      "id": "FAQ0007",
+      "char_count": 294
     }
   },
   {
@@ -2137,7 +2373,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0008"
+      "id": "FAQ0008",
+      "char_count": 306
     }
   },
   {
@@ -2147,7 +2384,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0009"
+      "id": "FAQ0009",
+      "char_count": 291
     }
   },
   {
@@ -2157,7 +2395,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0010"
+      "id": "FAQ0010",
+      "char_count": 285
     }
   },
   {
@@ -2167,7 +2406,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0011"
+      "id": "FAQ0011",
+      "char_count": 285
     }
   },
   {
@@ -2177,7 +2417,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0012"
+      "id": "FAQ0012",
+      "char_count": 297
     }
   },
   {
@@ -2187,7 +2428,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0013"
+      "id": "FAQ0013",
+      "char_count": 273
     }
   },
   {
@@ -2197,7 +2439,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0014"
+      "id": "FAQ0014",
+      "char_count": 282
     }
   },
   {
@@ -2207,7 +2450,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0015"
+      "id": "FAQ0015",
+      "char_count": 303
     }
   },
   {
@@ -2217,7 +2461,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0016"
+      "id": "FAQ0016",
+      "char_count": 285
     }
   },
   {
@@ -2227,7 +2472,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0017"
+      "id": "FAQ0017",
+      "char_count": 294
     }
   },
   {
@@ -2237,7 +2483,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0018"
+      "id": "FAQ0018",
+      "char_count": 306
     }
   },
   {
@@ -2247,7 +2494,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0019"
+      "id": "FAQ0019",
+      "char_count": 291
     }
   },
   {
@@ -2257,7 +2505,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0020"
+      "id": "FAQ0020",
+      "char_count": 285
     }
   },
   {
@@ -2267,7 +2516,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0021"
+      "id": "FAQ0021",
+      "char_count": 285
     }
   },
   {
@@ -2277,7 +2527,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0022"
+      "id": "FAQ0022",
+      "char_count": 297
     }
   },
   {
@@ -2287,7 +2538,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0023"
+      "id": "FAQ0023",
+      "char_count": 273
     }
   },
   {
@@ -2297,7 +2549,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0024"
+      "id": "FAQ0024",
+      "char_count": 282
     }
   },
   {
@@ -2307,7 +2560,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0025"
+      "id": "FAQ0025",
+      "char_count": 303
     }
   },
   {
@@ -2317,7 +2571,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0026"
+      "id": "FAQ0026",
+      "char_count": 285
     }
   },
   {
@@ -2327,7 +2582,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0027"
+      "id": "FAQ0027",
+      "char_count": 294
     }
   },
   {
@@ -2337,7 +2593,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0028"
+      "id": "FAQ0028",
+      "char_count": 306
     }
   },
   {
@@ -2347,7 +2604,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0029"
+      "id": "FAQ0029",
+      "char_count": 291
     }
   },
   {
@@ -2357,7 +2615,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0030"
+      "id": "FAQ0030",
+      "char_count": 285
     }
   },
   {
@@ -2367,7 +2626,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0031"
+      "id": "FAQ0031",
+      "char_count": 285
     }
   },
   {
@@ -2377,7 +2637,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0032"
+      "id": "FAQ0032",
+      "char_count": 297
     }
   },
   {
@@ -2387,7 +2648,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0033"
+      "id": "FAQ0033",
+      "char_count": 273
     }
   },
   {
@@ -2397,7 +2659,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0034"
+      "id": "FAQ0034",
+      "char_count": 282
     }
   },
   {
@@ -2407,7 +2670,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0035"
+      "id": "FAQ0035",
+      "char_count": 303
     }
   },
   {
@@ -2417,7 +2681,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0036"
+      "id": "FAQ0036",
+      "char_count": 285
     }
   },
   {
@@ -2427,7 +2692,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0037"
+      "id": "FAQ0037",
+      "char_count": 294
     }
   },
   {
@@ -2437,7 +2703,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0038"
+      "id": "FAQ0038",
+      "char_count": 306
     }
   },
   {
@@ -2447,7 +2714,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0039"
+      "id": "FAQ0039",
+      "char_count": 291
     }
   },
   {
@@ -2457,7 +2725,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0040"
+      "id": "FAQ0040",
+      "char_count": 285
     }
   },
   {
@@ -2467,7 +2736,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0041"
+      "id": "FAQ0041",
+      "char_count": 285
     }
   },
   {
@@ -2477,7 +2747,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0042"
+      "id": "FAQ0042",
+      "char_count": 297
     }
   },
   {
@@ -2487,7 +2758,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0043"
+      "id": "FAQ0043",
+      "char_count": 273
     }
   },
   {
@@ -2497,7 +2769,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0044"
+      "id": "FAQ0044",
+      "char_count": 282
     }
   },
   {
@@ -2507,7 +2780,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0045"
+      "id": "FAQ0045",
+      "char_count": 303
     }
   },
   {
@@ -2517,7 +2791,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0046"
+      "id": "FAQ0046",
+      "char_count": 285
     }
   },
   {
@@ -2527,7 +2802,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0047"
+      "id": "FAQ0047",
+      "char_count": 294
     }
   },
   {
@@ -2537,7 +2813,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0048"
+      "id": "FAQ0048",
+      "char_count": 306
     }
   },
   {
@@ -2547,7 +2824,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0049"
+      "id": "FAQ0049",
+      "char_count": 291
     }
   },
   {
@@ -2557,7 +2835,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0050"
+      "id": "FAQ0050",
+      "char_count": 285
     }
   },
   {
@@ -2567,7 +2846,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0051"
+      "id": "FAQ0051",
+      "char_count": 285
     }
   },
   {
@@ -2577,7 +2857,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0052"
+      "id": "FAQ0052",
+      "char_count": 297
     }
   },
   {
@@ -2587,7 +2868,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0053"
+      "id": "FAQ0053",
+      "char_count": 273
     }
   },
   {
@@ -2597,7 +2879,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0054"
+      "id": "FAQ0054",
+      "char_count": 282
     }
   },
   {
@@ -2607,7 +2890,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0055"
+      "id": "FAQ0055",
+      "char_count": 303
     }
   },
   {
@@ -2617,7 +2901,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0056"
+      "id": "FAQ0056",
+      "char_count": 285
     }
   },
   {
@@ -2627,7 +2912,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0057"
+      "id": "FAQ0057",
+      "char_count": 294
     }
   },
   {
@@ -2637,7 +2923,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0058"
+      "id": "FAQ0058",
+      "char_count": 306
     }
   },
   {
@@ -2647,7 +2934,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0059"
+      "id": "FAQ0059",
+      "char_count": 291
     }
   },
   {
@@ -2657,7 +2945,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0060"
+      "id": "FAQ0060",
+      "char_count": 285
     }
   },
   {
@@ -2667,7 +2956,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0061"
+      "id": "FAQ0061",
+      "char_count": 285
     }
   },
   {
@@ -2677,7 +2967,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0062"
+      "id": "FAQ0062",
+      "char_count": 297
     }
   },
   {
@@ -2687,7 +2978,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0063"
+      "id": "FAQ0063",
+      "char_count": 273
     }
   },
   {
@@ -2697,7 +2989,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0064"
+      "id": "FAQ0064",
+      "char_count": 282
     }
   },
   {
@@ -2707,7 +3000,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0065"
+      "id": "FAQ0065",
+      "char_count": 303
     }
   },
   {
@@ -2717,7 +3011,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0066"
+      "id": "FAQ0066",
+      "char_count": 285
     }
   },
   {
@@ -2727,7 +3022,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0067"
+      "id": "FAQ0067",
+      "char_count": 294
     }
   },
   {
@@ -2737,7 +3033,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0068"
+      "id": "FAQ0068",
+      "char_count": 306
     }
   },
   {
@@ -2747,7 +3044,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0069"
+      "id": "FAQ0069",
+      "char_count": 291
     }
   },
   {
@@ -2757,7 +3055,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0070"
+      "id": "FAQ0070",
+      "char_count": 285
     }
   },
   {
@@ -2767,7 +3066,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0071"
+      "id": "FAQ0071",
+      "char_count": 285
     }
   },
   {
@@ -2777,7 +3077,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0072"
+      "id": "FAQ0072",
+      "char_count": 297
     }
   },
   {
@@ -2787,7 +3088,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0073"
+      "id": "FAQ0073",
+      "char_count": 273
     }
   },
   {
@@ -2797,7 +3099,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0074"
+      "id": "FAQ0074",
+      "char_count": 282
     }
   },
   {
@@ -2807,7 +3110,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0075"
+      "id": "FAQ0075",
+      "char_count": 303
     }
   },
   {
@@ -2817,7 +3121,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0076"
+      "id": "FAQ0076",
+      "char_count": 285
     }
   },
   {
@@ -2827,7 +3132,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0077"
+      "id": "FAQ0077",
+      "char_count": 294
     }
   },
   {
@@ -2837,7 +3143,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0078"
+      "id": "FAQ0078",
+      "char_count": 306
     }
   },
   {
@@ -2847,7 +3154,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0079"
+      "id": "FAQ0079",
+      "char_count": 291
     }
   },
   {
@@ -2857,7 +3165,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0080"
+      "id": "FAQ0080",
+      "char_count": 285
     }
   },
   {
@@ -2867,7 +3176,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0081"
+      "id": "FAQ0081",
+      "char_count": 285
     }
   },
   {
@@ -2877,7 +3187,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0082"
+      "id": "FAQ0082",
+      "char_count": 297
     }
   },
   {
@@ -2887,7 +3198,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0083"
+      "id": "FAQ0083",
+      "char_count": 273
     }
   },
   {
@@ -2897,7 +3209,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0084"
+      "id": "FAQ0084",
+      "char_count": 282
     }
   },
   {
@@ -2907,7 +3220,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0085"
+      "id": "FAQ0085",
+      "char_count": 303
     }
   },
   {
@@ -2917,7 +3231,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0086"
+      "id": "FAQ0086",
+      "char_count": 285
     }
   },
   {
@@ -2927,7 +3242,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0087"
+      "id": "FAQ0087",
+      "char_count": 294
     }
   },
   {
@@ -2937,7 +3253,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0088"
+      "id": "FAQ0088",
+      "char_count": 306
     }
   },
   {
@@ -2947,7 +3264,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0089"
+      "id": "FAQ0089",
+      "char_count": 291
     }
   },
   {
@@ -2957,7 +3275,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0090"
+      "id": "FAQ0090",
+      "char_count": 285
     }
   },
   {
@@ -2967,7 +3286,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0091"
+      "id": "FAQ0091",
+      "char_count": 285
     }
   },
   {
@@ -2977,7 +3297,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0092"
+      "id": "FAQ0092",
+      "char_count": 297
     }
   },
   {
@@ -2987,7 +3308,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0093"
+      "id": "FAQ0093",
+      "char_count": 273
     }
   },
   {
@@ -2997,7 +3319,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0094"
+      "id": "FAQ0094",
+      "char_count": 282
     }
   },
   {
@@ -3007,7 +3330,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0095"
+      "id": "FAQ0095",
+      "char_count": 303
     }
   },
   {
@@ -3017,7 +3341,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0096"
+      "id": "FAQ0096",
+      "char_count": 285
     }
   },
   {
@@ -3027,7 +3352,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0097"
+      "id": "FAQ0097",
+      "char_count": 294
     }
   },
   {
@@ -3037,7 +3363,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0098"
+      "id": "FAQ0098",
+      "char_count": 306
     }
   },
   {
@@ -3047,7 +3374,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0099"
+      "id": "FAQ0099",
+      "char_count": 291
     }
   },
   {
@@ -3057,7 +3385,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0100"
+      "id": "FAQ0100",
+      "char_count": 285
     }
   },
   {
@@ -3067,7 +3396,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0101"
+      "id": "FAQ0101",
+      "char_count": 285
     }
   },
   {
@@ -3077,7 +3407,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0102"
+      "id": "FAQ0102",
+      "char_count": 297
     }
   },
   {
@@ -3087,7 +3418,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0103"
+      "id": "FAQ0103",
+      "char_count": 273
     }
   },
   {
@@ -3097,7 +3429,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0104"
+      "id": "FAQ0104",
+      "char_count": 282
     }
   },
   {
@@ -3107,7 +3440,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0105"
+      "id": "FAQ0105",
+      "char_count": 303
     }
   },
   {
@@ -3117,7 +3451,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0106"
+      "id": "FAQ0106",
+      "char_count": 285
     }
   },
   {
@@ -3127,7 +3462,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0107"
+      "id": "FAQ0107",
+      "char_count": 294
     }
   },
   {
@@ -3137,7 +3473,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0108"
+      "id": "FAQ0108",
+      "char_count": 306
     }
   },
   {
@@ -3147,7 +3484,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0109"
+      "id": "FAQ0109",
+      "char_count": 291
     }
   },
   {
@@ -3157,7 +3495,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0110"
+      "id": "FAQ0110",
+      "char_count": 285
     }
   },
   {
@@ -3167,7 +3506,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0111"
+      "id": "FAQ0111",
+      "char_count": 285
     }
   },
   {
@@ -3177,7 +3517,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0112"
+      "id": "FAQ0112",
+      "char_count": 297
     }
   },
   {
@@ -3187,7 +3528,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0113"
+      "id": "FAQ0113",
+      "char_count": 273
     }
   },
   {
@@ -3197,7 +3539,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0114"
+      "id": "FAQ0114",
+      "char_count": 282
     }
   },
   {
@@ -3207,7 +3550,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0115"
+      "id": "FAQ0115",
+      "char_count": 303
     }
   },
   {
@@ -3217,7 +3561,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0116"
+      "id": "FAQ0116",
+      "char_count": 285
     }
   },
   {
@@ -3227,7 +3572,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0117"
+      "id": "FAQ0117",
+      "char_count": 294
     }
   },
   {
@@ -3237,7 +3583,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0118"
+      "id": "FAQ0118",
+      "char_count": 306
     }
   },
   {
@@ -3247,7 +3594,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0119"
+      "id": "FAQ0119",
+      "char_count": 291
     }
   },
   {
@@ -3257,7 +3605,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0120"
+      "id": "FAQ0120",
+      "char_count": 285
     }
   },
   {
@@ -3267,7 +3616,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0121"
+      "id": "FAQ0121",
+      "char_count": 285
     }
   },
   {
@@ -3277,7 +3627,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0122"
+      "id": "FAQ0122",
+      "char_count": 297
     }
   },
   {
@@ -3287,7 +3638,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0123"
+      "id": "FAQ0123",
+      "char_count": 273
     }
   },
   {
@@ -3297,7 +3649,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0124"
+      "id": "FAQ0124",
+      "char_count": 282
     }
   },
   {
@@ -3307,7 +3660,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0125"
+      "id": "FAQ0125",
+      "char_count": 303
     }
   },
   {
@@ -3317,7 +3671,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0126"
+      "id": "FAQ0126",
+      "char_count": 285
     }
   },
   {
@@ -3327,7 +3682,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0127"
+      "id": "FAQ0127",
+      "char_count": 294
     }
   },
   {
@@ -3337,7 +3693,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0128"
+      "id": "FAQ0128",
+      "char_count": 306
     }
   },
   {
@@ -3347,7 +3704,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0129"
+      "id": "FAQ0129",
+      "char_count": 291
     }
   },
   {
@@ -3357,7 +3715,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0130"
+      "id": "FAQ0130",
+      "char_count": 285
     }
   },
   {
@@ -3367,7 +3726,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0131"
+      "id": "FAQ0131",
+      "char_count": 285
     }
   },
   {
@@ -3377,7 +3737,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0132"
+      "id": "FAQ0132",
+      "char_count": 297
     }
   },
   {
@@ -3387,7 +3748,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0133"
+      "id": "FAQ0133",
+      "char_count": 273
     }
   },
   {
@@ -3397,7 +3759,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0134"
+      "id": "FAQ0134",
+      "char_count": 282
     }
   },
   {
@@ -3407,7 +3770,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0135"
+      "id": "FAQ0135",
+      "char_count": 303
     }
   },
   {
@@ -3417,7 +3781,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0136"
+      "id": "FAQ0136",
+      "char_count": 285
     }
   },
   {
@@ -3427,7 +3792,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0137"
+      "id": "FAQ0137",
+      "char_count": 294
     }
   },
   {
@@ -3437,7 +3803,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0138"
+      "id": "FAQ0138",
+      "char_count": 306
     }
   },
   {
@@ -3447,7 +3814,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0139"
+      "id": "FAQ0139",
+      "char_count": 291
     }
   },
   {
@@ -3457,7 +3825,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0140"
+      "id": "FAQ0140",
+      "char_count": 285
     }
   },
   {
@@ -3467,7 +3836,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0141"
+      "id": "FAQ0141",
+      "char_count": 285
     }
   },
   {
@@ -3477,7 +3847,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0142"
+      "id": "FAQ0142",
+      "char_count": 297
     }
   },
   {
@@ -3487,7 +3858,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0143"
+      "id": "FAQ0143",
+      "char_count": 273
     }
   },
   {
@@ -3497,7 +3869,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0144"
+      "id": "FAQ0144",
+      "char_count": 282
     }
   },
   {
@@ -3507,7 +3880,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0145"
+      "id": "FAQ0145",
+      "char_count": 303
     }
   },
   {
@@ -3517,7 +3891,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0146"
+      "id": "FAQ0146",
+      "char_count": 285
     }
   },
   {
@@ -3527,7 +3902,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0147"
+      "id": "FAQ0147",
+      "char_count": 294
     }
   },
   {
@@ -3537,7 +3913,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0148"
+      "id": "FAQ0148",
+      "char_count": 306
     }
   },
   {
@@ -3547,7 +3924,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0149"
+      "id": "FAQ0149",
+      "char_count": 291
     }
   },
   {
@@ -3557,7 +3935,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0150"
+      "id": "FAQ0150",
+      "char_count": 285
     }
   },
   {
@@ -3567,7 +3946,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0151"
+      "id": "FAQ0151",
+      "char_count": 285
     }
   },
   {
@@ -3577,7 +3957,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0152"
+      "id": "FAQ0152",
+      "char_count": 297
     }
   },
   {
@@ -3587,7 +3968,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0153"
+      "id": "FAQ0153",
+      "char_count": 273
     }
   },
   {
@@ -3597,7 +3979,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0154"
+      "id": "FAQ0154",
+      "char_count": 282
     }
   },
   {
@@ -3607,7 +3990,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0155"
+      "id": "FAQ0155",
+      "char_count": 303
     }
   },
   {
@@ -3617,7 +4001,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0156"
+      "id": "FAQ0156",
+      "char_count": 285
     }
   },
   {
@@ -3627,7 +4012,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0157"
+      "id": "FAQ0157",
+      "char_count": 294
     }
   },
   {
@@ -3637,7 +4023,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0158"
+      "id": "FAQ0158",
+      "char_count": 306
     }
   },
   {
@@ -3647,7 +4034,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0159"
+      "id": "FAQ0159",
+      "char_count": 291
     }
   },
   {
@@ -3657,7 +4045,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0160"
+      "id": "FAQ0160",
+      "char_count": 285
     }
   },
   {
@@ -3667,7 +4056,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0161"
+      "id": "FAQ0161",
+      "char_count": 285
     }
   },
   {
@@ -3677,7 +4067,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0162"
+      "id": "FAQ0162",
+      "char_count": 297
     }
   },
   {
@@ -3687,7 +4078,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0163"
+      "id": "FAQ0163",
+      "char_count": 273
     }
   },
   {
@@ -3697,7 +4089,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0164"
+      "id": "FAQ0164",
+      "char_count": 282
     }
   },
   {
@@ -3707,7 +4100,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0165"
+      "id": "FAQ0165",
+      "char_count": 303
     }
   },
   {
@@ -3717,7 +4111,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0166"
+      "id": "FAQ0166",
+      "char_count": 285
     }
   },
   {
@@ -3727,7 +4122,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0167"
+      "id": "FAQ0167",
+      "char_count": 294
     }
   },
   {
@@ -3737,7 +4133,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0168"
+      "id": "FAQ0168",
+      "char_count": 306
     }
   },
   {
@@ -3747,7 +4144,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0169"
+      "id": "FAQ0169",
+      "char_count": 291
     }
   },
   {
@@ -3757,7 +4155,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0170"
+      "id": "FAQ0170",
+      "char_count": 285
     }
   },
   {
@@ -3767,7 +4166,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0171"
+      "id": "FAQ0171",
+      "char_count": 285
     }
   },
   {
@@ -3777,7 +4177,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0172"
+      "id": "FAQ0172",
+      "char_count": 297
     }
   },
   {
@@ -3787,7 +4188,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0173"
+      "id": "FAQ0173",
+      "char_count": 273
     }
   },
   {
@@ -3797,7 +4199,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0174"
+      "id": "FAQ0174",
+      "char_count": 282
     }
   },
   {
@@ -3807,7 +4210,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0175"
+      "id": "FAQ0175",
+      "char_count": 303
     }
   },
   {
@@ -3817,7 +4221,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0176"
+      "id": "FAQ0176",
+      "char_count": 285
     }
   },
   {
@@ -3827,7 +4232,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0177"
+      "id": "FAQ0177",
+      "char_count": 294
     }
   },
   {
@@ -3837,7 +4243,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0178"
+      "id": "FAQ0178",
+      "char_count": 306
     }
   },
   {
@@ -3847,7 +4254,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0179"
+      "id": "FAQ0179",
+      "char_count": 291
     }
   },
   {
@@ -3857,7 +4265,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0180"
+      "id": "FAQ0180",
+      "char_count": 285
     }
   },
   {
@@ -3867,7 +4276,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0181"
+      "id": "FAQ0181",
+      "char_count": 285
     }
   },
   {
@@ -3877,7 +4287,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0182"
+      "id": "FAQ0182",
+      "char_count": 297
     }
   },
   {
@@ -3887,7 +4298,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0183"
+      "id": "FAQ0183",
+      "char_count": 273
     }
   },
   {
@@ -3897,7 +4309,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0184"
+      "id": "FAQ0184",
+      "char_count": 282
     }
   },
   {
@@ -3907,7 +4320,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0185"
+      "id": "FAQ0185",
+      "char_count": 303
     }
   },
   {
@@ -3917,7 +4331,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0186"
+      "id": "FAQ0186",
+      "char_count": 285
     }
   },
   {
@@ -3927,7 +4342,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0187"
+      "id": "FAQ0187",
+      "char_count": 294
     }
   },
   {
@@ -3937,7 +4353,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0188"
+      "id": "FAQ0188",
+      "char_count": 306
     }
   },
   {
@@ -3947,7 +4364,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0189"
+      "id": "FAQ0189",
+      "char_count": 291
     }
   },
   {
@@ -3957,7 +4375,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0190"
+      "id": "FAQ0190",
+      "char_count": 285
     }
   },
   {
@@ -3967,7 +4386,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0191"
+      "id": "FAQ0191",
+      "char_count": 285
     }
   },
   {
@@ -3977,7 +4397,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0192"
+      "id": "FAQ0192",
+      "char_count": 297
     }
   },
   {
@@ -3987,7 +4408,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0193"
+      "id": "FAQ0193",
+      "char_count": 273
     }
   },
   {
@@ -3997,7 +4419,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0194"
+      "id": "FAQ0194",
+      "char_count": 282
     }
   },
   {
@@ -4007,7 +4430,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0195"
+      "id": "FAQ0195",
+      "char_count": 303
     }
   },
   {
@@ -4017,7 +4441,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0196"
+      "id": "FAQ0196",
+      "char_count": 285
     }
   },
   {
@@ -4027,7 +4452,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0197"
+      "id": "FAQ0197",
+      "char_count": 294
     }
   },
   {
@@ -4037,7 +4463,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0198"
+      "id": "FAQ0198",
+      "char_count": 306
     }
   },
   {
@@ -4047,7 +4474,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0199"
+      "id": "FAQ0199",
+      "char_count": 291
     }
   },
   {
@@ -4057,7 +4485,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0200"
+      "id": "FAQ0200",
+      "char_count": 285
     }
   },
   {
@@ -4067,7 +4496,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0201"
+      "id": "FAQ0201",
+      "char_count": 285
     }
   },
   {
@@ -4077,7 +4507,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0202"
+      "id": "FAQ0202",
+      "char_count": 297
     }
   },
   {
@@ -4087,7 +4518,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0203"
+      "id": "FAQ0203",
+      "char_count": 273
     }
   },
   {
@@ -4097,7 +4529,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0204"
+      "id": "FAQ0204",
+      "char_count": 282
     }
   },
   {
@@ -4107,7 +4540,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0205"
+      "id": "FAQ0205",
+      "char_count": 303
     }
   },
   {
@@ -4117,7 +4551,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0206"
+      "id": "FAQ0206",
+      "char_count": 285
     }
   },
   {
@@ -4127,7 +4562,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0207"
+      "id": "FAQ0207",
+      "char_count": 294
     }
   },
   {
@@ -4137,7 +4573,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0208"
+      "id": "FAQ0208",
+      "char_count": 306
     }
   },
   {
@@ -4147,7 +4584,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0209"
+      "id": "FAQ0209",
+      "char_count": 291
     }
   },
   {
@@ -4157,7 +4595,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0210"
+      "id": "FAQ0210",
+      "char_count": 285
     }
   },
   {
@@ -4167,7 +4606,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0211"
+      "id": "FAQ0211",
+      "char_count": 285
     }
   },
   {
@@ -4177,7 +4617,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0212"
+      "id": "FAQ0212",
+      "char_count": 297
     }
   },
   {
@@ -4187,7 +4628,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0213"
+      "id": "FAQ0213",
+      "char_count": 273
     }
   },
   {
@@ -4197,7 +4639,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0214"
+      "id": "FAQ0214",
+      "char_count": 282
     }
   },
   {
@@ -4207,7 +4650,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0215"
+      "id": "FAQ0215",
+      "char_count": 303
     }
   },
   {
@@ -4217,7 +4661,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0216"
+      "id": "FAQ0216",
+      "char_count": 285
     }
   },
   {
@@ -4227,7 +4672,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0217"
+      "id": "FAQ0217",
+      "char_count": 294
     }
   },
   {
@@ -4237,7 +4683,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0218"
+      "id": "FAQ0218",
+      "char_count": 306
     }
   },
   {
@@ -4247,7 +4694,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0219"
+      "id": "FAQ0219",
+      "char_count": 291
     }
   },
   {
@@ -4257,7 +4705,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0220"
+      "id": "FAQ0220",
+      "char_count": 285
     }
   },
   {
@@ -4267,7 +4716,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0221"
+      "id": "FAQ0221",
+      "char_count": 285
     }
   },
   {
@@ -4277,7 +4727,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0222"
+      "id": "FAQ0222",
+      "char_count": 297
     }
   },
   {
@@ -4287,7 +4738,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0223"
+      "id": "FAQ0223",
+      "char_count": 273
     }
   },
   {
@@ -4297,7 +4749,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0224"
+      "id": "FAQ0224",
+      "char_count": 282
     }
   },
   {
@@ -4307,7 +4760,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0225"
+      "id": "FAQ0225",
+      "char_count": 303
     }
   },
   {
@@ -4317,7 +4771,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0226"
+      "id": "FAQ0226",
+      "char_count": 285
     }
   },
   {
@@ -4327,7 +4782,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0227"
+      "id": "FAQ0227",
+      "char_count": 294
     }
   },
   {
@@ -4337,7 +4793,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0228"
+      "id": "FAQ0228",
+      "char_count": 306
     }
   },
   {
@@ -4347,7 +4804,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0229"
+      "id": "FAQ0229",
+      "char_count": 291
     }
   },
   {
@@ -4357,7 +4815,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0230"
+      "id": "FAQ0230",
+      "char_count": 285
     }
   },
   {
@@ -4367,7 +4826,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0231"
+      "id": "FAQ0231",
+      "char_count": 285
     }
   },
   {
@@ -4377,7 +4837,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0232"
+      "id": "FAQ0232",
+      "char_count": 297
     }
   },
   {
@@ -4387,7 +4848,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0233"
+      "id": "FAQ0233",
+      "char_count": 273
     }
   },
   {
@@ -4397,7 +4859,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0234"
+      "id": "FAQ0234",
+      "char_count": 282
     }
   },
   {
@@ -4407,7 +4870,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0235"
+      "id": "FAQ0235",
+      "char_count": 303
     }
   },
   {
@@ -4417,7 +4881,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0236"
+      "id": "FAQ0236",
+      "char_count": 285
     }
   },
   {
@@ -4427,7 +4892,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0237"
+      "id": "FAQ0237",
+      "char_count": 294
     }
   },
   {
@@ -4437,7 +4903,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0238"
+      "id": "FAQ0238",
+      "char_count": 306
     }
   },
   {
@@ -4447,7 +4914,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0239"
+      "id": "FAQ0239",
+      "char_count": 291
     }
   },
   {
@@ -4457,7 +4925,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0240"
+      "id": "FAQ0240",
+      "char_count": 285
     }
   },
   {
@@ -4467,7 +4936,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0241"
+      "id": "FAQ0241",
+      "char_count": 285
     }
   },
   {
@@ -4477,7 +4947,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0242"
+      "id": "FAQ0242",
+      "char_count": 297
     }
   },
   {
@@ -4487,7 +4958,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0243"
+      "id": "FAQ0243",
+      "char_count": 273
     }
   },
   {
@@ -4497,7 +4969,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0244"
+      "id": "FAQ0244",
+      "char_count": 282
     }
   },
   {
@@ -4507,7 +4980,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0245"
+      "id": "FAQ0245",
+      "char_count": 303
     }
   },
   {
@@ -4517,7 +4991,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0246"
+      "id": "FAQ0246",
+      "char_count": 285
     }
   },
   {
@@ -4527,7 +5002,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0247"
+      "id": "FAQ0247",
+      "char_count": 294
     }
   },
   {
@@ -4537,7 +5013,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0248"
+      "id": "FAQ0248",
+      "char_count": 306
     }
   },
   {
@@ -4547,7 +5024,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0249"
+      "id": "FAQ0249",
+      "char_count": 291
     }
   },
   {
@@ -4557,7 +5035,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0250"
+      "id": "FAQ0250",
+      "char_count": 285
     }
   },
   {
@@ -4567,7 +5046,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0251"
+      "id": "FAQ0251",
+      "char_count": 285
     }
   },
   {
@@ -4577,7 +5057,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0252"
+      "id": "FAQ0252",
+      "char_count": 297
     }
   },
   {
@@ -4587,7 +5068,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0253"
+      "id": "FAQ0253",
+      "char_count": 273
     }
   },
   {
@@ -4597,7 +5079,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0254"
+      "id": "FAQ0254",
+      "char_count": 282
     }
   },
   {
@@ -4607,7 +5090,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0255"
+      "id": "FAQ0255",
+      "char_count": 303
     }
   },
   {
@@ -4617,7 +5101,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0256"
+      "id": "FAQ0256",
+      "char_count": 285
     }
   },
   {
@@ -4627,7 +5112,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0257"
+      "id": "FAQ0257",
+      "char_count": 294
     }
   },
   {
@@ -4637,7 +5123,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0258"
+      "id": "FAQ0258",
+      "char_count": 306
     }
   },
   {
@@ -4647,7 +5134,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0259"
+      "id": "FAQ0259",
+      "char_count": 291
     }
   },
   {
@@ -4657,7 +5145,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0260"
+      "id": "FAQ0260",
+      "char_count": 285
     }
   },
   {
@@ -4667,7 +5156,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0261"
+      "id": "FAQ0261",
+      "char_count": 285
     }
   },
   {
@@ -4677,7 +5167,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0262"
+      "id": "FAQ0262",
+      "char_count": 297
     }
   },
   {
@@ -4687,7 +5178,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0263"
+      "id": "FAQ0263",
+      "char_count": 273
     }
   },
   {
@@ -4697,7 +5189,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0264"
+      "id": "FAQ0264",
+      "char_count": 282
     }
   },
   {
@@ -4707,7 +5200,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0265"
+      "id": "FAQ0265",
+      "char_count": 303
     }
   },
   {
@@ -4717,7 +5211,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0266"
+      "id": "FAQ0266",
+      "char_count": 285
     }
   },
   {
@@ -4727,7 +5222,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0267"
+      "id": "FAQ0267",
+      "char_count": 294
     }
   },
   {
@@ -4737,7 +5233,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0268"
+      "id": "FAQ0268",
+      "char_count": 306
     }
   },
   {
@@ -4747,7 +5244,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0269"
+      "id": "FAQ0269",
+      "char_count": 291
     }
   },
   {
@@ -4757,7 +5255,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0270"
+      "id": "FAQ0270",
+      "char_count": 285
     }
   },
   {
@@ -4767,7 +5266,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0271"
+      "id": "FAQ0271",
+      "char_count": 285
     }
   },
   {
@@ -4777,7 +5277,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0272"
+      "id": "FAQ0272",
+      "char_count": 297
     }
   },
   {
@@ -4787,7 +5288,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0273"
+      "id": "FAQ0273",
+      "char_count": 273
     }
   },
   {
@@ -4797,7 +5299,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0274"
+      "id": "FAQ0274",
+      "char_count": 282
     }
   },
   {
@@ -4807,7 +5310,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0275"
+      "id": "FAQ0275",
+      "char_count": 303
     }
   },
   {
@@ -4817,7 +5321,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0276"
+      "id": "FAQ0276",
+      "char_count": 285
     }
   },
   {
@@ -4827,7 +5332,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0277"
+      "id": "FAQ0277",
+      "char_count": 294
     }
   },
   {
@@ -4837,7 +5343,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0278"
+      "id": "FAQ0278",
+      "char_count": 306
     }
   },
   {
@@ -4847,7 +5354,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0279"
+      "id": "FAQ0279",
+      "char_count": 291
     }
   },
   {
@@ -4857,7 +5365,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0280"
+      "id": "FAQ0280",
+      "char_count": 285
     }
   },
   {
@@ -4867,7 +5376,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0281"
+      "id": "FAQ0281",
+      "char_count": 285
     }
   },
   {
@@ -4877,7 +5387,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0282"
+      "id": "FAQ0282",
+      "char_count": 297
     }
   },
   {
@@ -4887,7 +5398,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0283"
+      "id": "FAQ0283",
+      "char_count": 273
     }
   },
   {
@@ -4897,7 +5409,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0284"
+      "id": "FAQ0284",
+      "char_count": 282
     }
   },
   {
@@ -4907,7 +5420,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0285"
+      "id": "FAQ0285",
+      "char_count": 303
     }
   },
   {
@@ -4917,7 +5431,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0286"
+      "id": "FAQ0286",
+      "char_count": 285
     }
   },
   {
@@ -4927,7 +5442,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0287"
+      "id": "FAQ0287",
+      "char_count": 294
     }
   },
   {
@@ -4937,7 +5453,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0288"
+      "id": "FAQ0288",
+      "char_count": 306
     }
   },
   {
@@ -4947,7 +5464,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0289"
+      "id": "FAQ0289",
+      "char_count": 291
     }
   },
   {
@@ -4957,7 +5475,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0290"
+      "id": "FAQ0290",
+      "char_count": 285
     }
   },
   {
@@ -4967,7 +5486,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0291"
+      "id": "FAQ0291",
+      "char_count": 285
     }
   },
   {
@@ -4977,7 +5497,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0292"
+      "id": "FAQ0292",
+      "char_count": 297
     }
   },
   {
@@ -4987,7 +5508,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0293"
+      "id": "FAQ0293",
+      "char_count": 273
     }
   },
   {
@@ -4997,7 +5519,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0294"
+      "id": "FAQ0294",
+      "char_count": 282
     }
   },
   {
@@ -5007,7 +5530,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0295"
+      "id": "FAQ0295",
+      "char_count": 303
     }
   },
   {
@@ -5017,7 +5541,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0296"
+      "id": "FAQ0296",
+      "char_count": 285
     }
   },
   {
@@ -5027,7 +5552,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0297"
+      "id": "FAQ0297",
+      "char_count": 294
     }
   },
   {
@@ -5037,7 +5563,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0298"
+      "id": "FAQ0298",
+      "char_count": 306
     }
   },
   {
@@ -5047,7 +5574,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0299"
+      "id": "FAQ0299",
+      "char_count": 291
     }
   },
   {
@@ -5057,7 +5585,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0300"
+      "id": "FAQ0300",
+      "char_count": 285
     }
   },
   {
@@ -5067,7 +5596,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0301"
+      "id": "FAQ0301",
+      "char_count": 285
     }
   },
   {
@@ -5077,7 +5607,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0302"
+      "id": "FAQ0302",
+      "char_count": 297
     }
   },
   {
@@ -5087,7 +5618,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0303"
+      "id": "FAQ0303",
+      "char_count": 273
     }
   },
   {
@@ -5097,7 +5629,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0304"
+      "id": "FAQ0304",
+      "char_count": 282
     }
   },
   {
@@ -5107,7 +5640,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0305"
+      "id": "FAQ0305",
+      "char_count": 303
     }
   },
   {
@@ -5117,7 +5651,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0306"
+      "id": "FAQ0306",
+      "char_count": 285
     }
   },
   {
@@ -5127,7 +5662,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0307"
+      "id": "FAQ0307",
+      "char_count": 294
     }
   },
   {
@@ -5137,7 +5673,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0308"
+      "id": "FAQ0308",
+      "char_count": 306
     }
   },
   {
@@ -5147,7 +5684,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0309"
+      "id": "FAQ0309",
+      "char_count": 291
     }
   },
   {
@@ -5157,7 +5695,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0310"
+      "id": "FAQ0310",
+      "char_count": 285
     }
   },
   {
@@ -5167,7 +5706,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0311"
+      "id": "FAQ0311",
+      "char_count": 285
     }
   },
   {
@@ -5177,7 +5717,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0312"
+      "id": "FAQ0312",
+      "char_count": 297
     }
   },
   {
@@ -5187,7 +5728,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0313"
+      "id": "FAQ0313",
+      "char_count": 273
     }
   },
   {
@@ -5197,7 +5739,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0314"
+      "id": "FAQ0314",
+      "char_count": 282
     }
   },
   {
@@ -5207,7 +5750,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0315"
+      "id": "FAQ0315",
+      "char_count": 303
     }
   },
   {
@@ -5217,7 +5761,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0316"
+      "id": "FAQ0316",
+      "char_count": 285
     }
   },
   {
@@ -5227,7 +5772,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0317"
+      "id": "FAQ0317",
+      "char_count": 294
     }
   },
   {
@@ -5237,7 +5783,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0318"
+      "id": "FAQ0318",
+      "char_count": 306
     }
   },
   {
@@ -5247,7 +5794,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0319"
+      "id": "FAQ0319",
+      "char_count": 291
     }
   },
   {
@@ -5257,7 +5805,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0320"
+      "id": "FAQ0320",
+      "char_count": 285
     }
   },
   {
@@ -5267,7 +5816,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0321"
+      "id": "FAQ0321",
+      "char_count": 285
     }
   },
   {
@@ -5277,7 +5827,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0322"
+      "id": "FAQ0322",
+      "char_count": 297
     }
   },
   {
@@ -5287,7 +5838,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0323"
+      "id": "FAQ0323",
+      "char_count": 273
     }
   },
   {
@@ -5297,7 +5849,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0324"
+      "id": "FAQ0324",
+      "char_count": 282
     }
   },
   {
@@ -5307,7 +5860,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0325"
+      "id": "FAQ0325",
+      "char_count": 303
     }
   },
   {
@@ -5317,7 +5871,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0326"
+      "id": "FAQ0326",
+      "char_count": 285
     }
   },
   {
@@ -5327,7 +5882,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0327"
+      "id": "FAQ0327",
+      "char_count": 294
     }
   },
   {
@@ -5337,7 +5893,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0328"
+      "id": "FAQ0328",
+      "char_count": 306
     }
   },
   {
@@ -5347,7 +5904,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0329"
+      "id": "FAQ0329",
+      "char_count": 291
     }
   },
   {
@@ -5357,7 +5915,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0330"
+      "id": "FAQ0330",
+      "char_count": 285
     }
   },
   {
@@ -5367,7 +5926,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0331"
+      "id": "FAQ0331",
+      "char_count": 285
     }
   },
   {
@@ -5377,7 +5937,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0332"
+      "id": "FAQ0332",
+      "char_count": 297
     }
   },
   {
@@ -5387,7 +5948,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0333"
+      "id": "FAQ0333",
+      "char_count": 273
     }
   },
   {
@@ -5397,7 +5959,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0334"
+      "id": "FAQ0334",
+      "char_count": 282
     }
   },
   {
@@ -5407,7 +5970,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0335"
+      "id": "FAQ0335",
+      "char_count": 303
     }
   },
   {
@@ -5417,7 +5981,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0336"
+      "id": "FAQ0336",
+      "char_count": 285
     }
   },
   {
@@ -5427,7 +5992,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0337"
+      "id": "FAQ0337",
+      "char_count": 294
     }
   },
   {
@@ -5437,7 +6003,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0338"
+      "id": "FAQ0338",
+      "char_count": 306
     }
   },
   {
@@ -5447,7 +6014,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0339"
+      "id": "FAQ0339",
+      "char_count": 291
     }
   },
   {
@@ -5457,7 +6025,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0340"
+      "id": "FAQ0340",
+      "char_count": 285
     }
   },
   {
@@ -5467,7 +6036,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0341"
+      "id": "FAQ0341",
+      "char_count": 285
     }
   },
   {
@@ -5477,7 +6047,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0342"
+      "id": "FAQ0342",
+      "char_count": 297
     }
   },
   {
@@ -5487,7 +6058,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0343"
+      "id": "FAQ0343",
+      "char_count": 273
     }
   },
   {
@@ -5497,7 +6069,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0344"
+      "id": "FAQ0344",
+      "char_count": 282
     }
   },
   {
@@ -5507,7 +6080,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0345"
+      "id": "FAQ0345",
+      "char_count": 303
     }
   },
   {
@@ -5517,7 +6091,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0346"
+      "id": "FAQ0346",
+      "char_count": 285
     }
   },
   {
@@ -5527,7 +6102,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0347"
+      "id": "FAQ0347",
+      "char_count": 294
     }
   },
   {
@@ -5537,7 +6113,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0348"
+      "id": "FAQ0348",
+      "char_count": 306
     }
   },
   {
@@ -5547,7 +6124,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0349"
+      "id": "FAQ0349",
+      "char_count": 291
     }
   },
   {
@@ -5557,7 +6135,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0350"
+      "id": "FAQ0350",
+      "char_count": 285
     }
   },
   {
@@ -5567,7 +6146,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0351"
+      "id": "FAQ0351",
+      "char_count": 285
     }
   },
   {
@@ -5577,7 +6157,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0352"
+      "id": "FAQ0352",
+      "char_count": 297
     }
   },
   {
@@ -5587,7 +6168,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0353"
+      "id": "FAQ0353",
+      "char_count": 273
     }
   },
   {
@@ -5597,7 +6179,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0354"
+      "id": "FAQ0354",
+      "char_count": 282
     }
   },
   {
@@ -5607,7 +6190,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0355"
+      "id": "FAQ0355",
+      "char_count": 303
     }
   },
   {
@@ -5617,7 +6201,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0356"
+      "id": "FAQ0356",
+      "char_count": 285
     }
   },
   {
@@ -5627,7 +6212,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0357"
+      "id": "FAQ0357",
+      "char_count": 294
     }
   },
   {
@@ -5637,7 +6223,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0358"
+      "id": "FAQ0358",
+      "char_count": 306
     }
   },
   {
@@ -5647,7 +6234,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0359"
+      "id": "FAQ0359",
+      "char_count": 291
     }
   },
   {
@@ -5657,7 +6245,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0360"
+      "id": "FAQ0360",
+      "char_count": 285
     }
   },
   {
@@ -5667,7 +6256,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0361"
+      "id": "FAQ0361",
+      "char_count": 285
     }
   },
   {
@@ -5677,7 +6267,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0362"
+      "id": "FAQ0362",
+      "char_count": 297
     }
   },
   {
@@ -5687,7 +6278,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0363"
+      "id": "FAQ0363",
+      "char_count": 273
     }
   },
   {
@@ -5697,7 +6289,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0364"
+      "id": "FAQ0364",
+      "char_count": 282
     }
   },
   {
@@ -5707,7 +6300,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0365"
+      "id": "FAQ0365",
+      "char_count": 303
     }
   },
   {
@@ -5717,7 +6311,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0366"
+      "id": "FAQ0366",
+      "char_count": 285
     }
   },
   {
@@ -5727,7 +6322,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0367"
+      "id": "FAQ0367",
+      "char_count": 294
     }
   },
   {
@@ -5737,7 +6333,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0368"
+      "id": "FAQ0368",
+      "char_count": 306
     }
   },
   {
@@ -5747,7 +6344,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0369"
+      "id": "FAQ0369",
+      "char_count": 291
     }
   },
   {
@@ -5757,7 +6355,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0370"
+      "id": "FAQ0370",
+      "char_count": 285
     }
   },
   {
@@ -5767,7 +6366,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0371"
+      "id": "FAQ0371",
+      "char_count": 285
     }
   },
   {
@@ -5777,7 +6377,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0372"
+      "id": "FAQ0372",
+      "char_count": 297
     }
   },
   {
@@ -5787,7 +6388,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0373"
+      "id": "FAQ0373",
+      "char_count": 273
     }
   },
   {
@@ -5797,7 +6399,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0374"
+      "id": "FAQ0374",
+      "char_count": 282
     }
   },
   {
@@ -5807,7 +6410,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0375"
+      "id": "FAQ0375",
+      "char_count": 303
     }
   },
   {
@@ -5817,7 +6421,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0376"
+      "id": "FAQ0376",
+      "char_count": 285
     }
   },
   {
@@ -5827,7 +6432,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0377"
+      "id": "FAQ0377",
+      "char_count": 294
     }
   },
   {
@@ -5837,7 +6443,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0378"
+      "id": "FAQ0378",
+      "char_count": 306
     }
   },
   {
@@ -5847,7 +6454,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0379"
+      "id": "FAQ0379",
+      "char_count": 291
     }
   },
   {
@@ -5857,7 +6465,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0380"
+      "id": "FAQ0380",
+      "char_count": 285
     }
   },
   {
@@ -5867,7 +6476,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0381"
+      "id": "FAQ0381",
+      "char_count": 285
     }
   },
   {
@@ -5877,7 +6487,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0382"
+      "id": "FAQ0382",
+      "char_count": 297
     }
   },
   {
@@ -5887,7 +6498,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0383"
+      "id": "FAQ0383",
+      "char_count": 273
     }
   },
   {
@@ -5897,7 +6509,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0384"
+      "id": "FAQ0384",
+      "char_count": 282
     }
   },
   {
@@ -5907,7 +6520,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0385"
+      "id": "FAQ0385",
+      "char_count": 303
     }
   },
   {
@@ -5917,7 +6531,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0386"
+      "id": "FAQ0386",
+      "char_count": 285
     }
   },
   {
@@ -5927,7 +6542,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0387"
+      "id": "FAQ0387",
+      "char_count": 294
     }
   },
   {
@@ -5937,7 +6553,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0388"
+      "id": "FAQ0388",
+      "char_count": 306
     }
   },
   {
@@ -5947,7 +6564,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0389"
+      "id": "FAQ0389",
+      "char_count": 291
     }
   },
   {
@@ -5957,7 +6575,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0390"
+      "id": "FAQ0390",
+      "char_count": 285
     }
   },
   {
@@ -5967,7 +6586,8 @@
     "metadata": {
       "type": "faq",
       "category": "Skills",
-      "id": "FAQ0391"
+      "id": "FAQ0391",
+      "char_count": 285
     }
   },
   {
@@ -5977,7 +6597,8 @@
     "metadata": {
       "type": "faq",
       "category": "Placements",
-      "id": "FAQ0392"
+      "id": "FAQ0392",
+      "char_count": 297
     }
   },
   {
@@ -5987,7 +6608,8 @@
     "metadata": {
       "type": "faq",
       "category": "AI",
-      "id": "FAQ0393"
+      "id": "FAQ0393",
+      "char_count": 273
     }
   },
   {
@@ -5997,7 +6619,8 @@
     "metadata": {
       "type": "faq",
       "category": "Cloud",
-      "id": "FAQ0394"
+      "id": "FAQ0394",
+      "char_count": 282
     }
   },
   {
@@ -6007,7 +6630,8 @@
     "metadata": {
       "type": "faq",
       "category": "Data Science",
-      "id": "FAQ0395"
+      "id": "FAQ0395",
+      "char_count": 303
     }
   },
   {
@@ -6017,7 +6641,8 @@
     "metadata": {
       "type": "faq",
       "category": "Resume",
-      "id": "FAQ0396"
+      "id": "FAQ0396",
+      "char_count": 285
     }
   },
   {
@@ -6027,7 +6652,8 @@
     "metadata": {
       "type": "faq",
       "category": "Interview",
-      "id": "FAQ0397"
+      "id": "FAQ0397",
+      "char_count": 294
     }
   },
   {
@@ -6037,7 +6663,8 @@
     "metadata": {
       "type": "faq",
       "category": "Certification",
-      "id": "FAQ0398"
+      "id": "FAQ0398",
+      "char_count": 306
     }
   },
   {
@@ -6047,7 +6674,8 @@
     "metadata": {
       "type": "faq",
       "category": "Projects",
-      "id": "FAQ0399"
+      "id": "FAQ0399",
+      "char_count": 291
     }
   },
   {
@@ -6057,7 +6685,8 @@
     "metadata": {
       "type": "faq",
       "category": "Career",
-      "id": "FAQ0400"
+      "id": "FAQ0400",
+      "char_count": 285
     }
   }
 ]

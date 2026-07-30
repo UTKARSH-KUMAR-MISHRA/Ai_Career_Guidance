@@ -2,7 +2,7 @@
    AI Career Guidance - Resume Page Controller
    ======================================================= */
 
-const API_RESUME = "http://localhost:5000/api";
+const API_RESUME = (window.getApiBaseUrl ? window.getApiBaseUrl() : (window.location.origin + "/api"));
 
 function initResumePage() {
     const dropzone = document.getElementById("dropzone");

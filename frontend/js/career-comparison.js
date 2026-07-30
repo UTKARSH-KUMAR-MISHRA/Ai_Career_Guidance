@@ -2,7 +2,7 @@
    AI Career Guidance - Career Comparison Page Controller
    ======================================================= */
 
-const API_COMPARISON = "http://localhost:5000/api";
+const API_COMPARISON = (window.getApiBaseUrl ? window.getApiBaseUrl() : (window.location.origin + "/api"));
 
 function initComparisonPage() {
     // Initial compare run on load

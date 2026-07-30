@@ -2,7 +2,15 @@
    AI Career Guidance - SPA Client-Side Router
    ======================================================= */
 
-const API_ROUTE = "http://localhost:5000/api";
+function getApiBaseUrl() {
+    if (window.location.origin && window.location.origin !== "null" && !window.location.origin.startsWith("file:")) {
+        return window.location.origin + "/api";
+    }
+    return "http://localhost:5000/api";
+}
+window.getApiBaseUrl = getApiBaseUrl;
+
+const API_ROUTE = getApiBaseUrl();
 
 // Global Fetch Interceptor to automatically append X-User-Email headers
 const originalFetch = window.fetch;
@@ -10,7 +18,8 @@ window.fetch = function(url, options) {
     options = options || {};
     options.headers = options.headers || {};
     
-    if (url.toString().includes("5000/api") || url.toString().includes("/api")) {
+    const urlStr = url.toString();
+    if (urlStr.includes("/api")) {
         const user = JSON.parse(localStorage.getItem("career_user"));
         if (user && user.email) {
             if (options.headers instanceof Headers) {
@@ -465,11 +474,16 @@ function setupAuthListeners() {
 
                 setDone(btn, "Account created!");
                 toast("success", "Welcome, " + data.user.name + "!");
+                
+                // Immediately save user session and proceed to setup wizard or dashboard
+                localStorage.setItem("career_user", JSON.stringify(data.user));
                 setTimeout(() => {
-                    setMode("login");
-                    document.getElementById("li-email").value = email.value.trim();
-                    document.getElementById("li-pass").focus();
-                }, 800);
+                    if (!data.user.is_profile_setup) {
+                        showProfileSetupWizard();
+                    } else {
+                        navigateTo("dashboard");
+                    }
+                }, 500);
             } catch (err) {
                 setLoading(btn, false, "Create account");
                 toast("error", "Could not reach the server. Is the Flask backend running?");

@@ -3,7 +3,7 @@
    ======================================================= */
 
 (() => {
-const API_SETTINGS = "http://localhost:5000/api";
+const API_SETTINGS = (window.getApiBaseUrl ? window.getApiBaseUrl() : (window.location.origin + "/api"));
 
 function initSettingsPage() {
     setupThemeCards();

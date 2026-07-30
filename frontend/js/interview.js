@@ -2,7 +2,7 @@
    AI Career Guidance - Interview Prep Page Controller
    ======================================================= */
 
-const API_ROOT_URL = "http://localhost:5000/api";
+const API_ROOT_URL = (window.getApiBaseUrl ? window.getApiBaseUrl() : (window.location.origin + "/api"));
 let currentQuestions = [];
 let activeQIdx = 0;
 

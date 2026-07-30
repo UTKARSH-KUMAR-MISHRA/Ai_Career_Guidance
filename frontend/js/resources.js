@@ -2,7 +2,7 @@
    AI Career Guidance - Resources / Insights Page Controller
    ======================================================= */
 
-const API_INSIGHTS = "http://localhost:5000/api";
+const API_INSIGHTS = (window.getApiBaseUrl ? window.getApiBaseUrl() : (window.location.origin + "/api"));
 
 function initResourcesPage() {
     loadInsights();

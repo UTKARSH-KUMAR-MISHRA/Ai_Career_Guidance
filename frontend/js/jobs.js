@@ -3,7 +3,7 @@
    ======================================================= */
 
 (() => {
-const API_JOBS_URL = "http://localhost:5000/api";
+const API_JOBS_URL = (window.getApiBaseUrl ? window.getApiBaseUrl() : (window.location.origin + "/api"));
 let allJobs = [];
 
 function initJobsPage() {

@@ -3,7 +3,7 @@
    ======================================================= */
 
 (() => {
-const API_ROOT = "http://localhost:5000/api";
+const API_ROOT = (window.getApiBaseUrl ? window.getApiBaseUrl() : (window.location.origin + "/api"));
 
 function initDashboard() {
     setTimeout(loadDashboardData, 300);
@@ -411,7 +411,7 @@ function initDashboardChat() {
         
         try {
             const user = JSON.parse(localStorage.getItem("career_user"));
-            const res = await fetch("http://localhost:5000/api/chat", {
+            const res = await fetch(`${API_ROOT}/chat`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

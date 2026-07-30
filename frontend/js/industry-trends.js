@@ -3,7 +3,7 @@
    ======================================================= */
 
 (() => {
-const API_TRENDS = "http://localhost:5000/api";
+const API_TRENDS = (window.getApiBaseUrl ? window.getApiBaseUrl() : (window.location.origin + "/api"));
 
 function initTrendsPage() {
     loadTrends();

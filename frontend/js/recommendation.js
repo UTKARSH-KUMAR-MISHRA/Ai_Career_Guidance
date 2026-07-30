@@ -3,7 +3,7 @@
    ======================================================= */
 
 (() => {
-const API_URL = "http://localhost:5000/api";
+const API_URL = (window.getApiBaseUrl ? window.getApiBaseUrl() : (window.location.origin + "/api"));
 
 function initRecommendationsPage() {
     setTimeout(loadRecommendations, 300);

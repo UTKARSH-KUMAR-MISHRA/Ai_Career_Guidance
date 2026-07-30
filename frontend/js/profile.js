@@ -3,7 +3,7 @@
    ======================================================= */
 
 (() => {
-const API_BASE_ENDPOINT = "http://localhost:5000/api";
+const API_BASE_ENDPOINT = (window.getApiBaseUrl ? window.getApiBaseUrl() : (window.location.origin + "/api"));
 
 function initProfilePage() {
     loadProfileDetails();

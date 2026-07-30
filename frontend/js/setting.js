@@ -3,7 +3,7 @@
    ======================================================= */
 
 (() => {
-const API_BASE_URL = "http://localhost:5000/api";
+const API_BASE_URL = (window.getApiBaseUrl ? window.getApiBaseUrl() : (window.location.origin + "/api"));
 
 function initSkillGapPage() {
     setTimeout(initSkillGap, 300);

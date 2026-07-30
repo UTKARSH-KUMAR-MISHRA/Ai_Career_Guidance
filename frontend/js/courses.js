@@ -3,7 +3,7 @@
    ======================================================= */
 
 (() => {
-const API_COURSES = "http://localhost:5000/api";
+const API_COURSES = (window.getApiBaseUrl ? window.getApiBaseUrl() : (window.location.origin + "/api"));
 let allCourses = [];
 
 function initCoursesPage() {

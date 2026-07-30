@@ -3,7 +3,7 @@
    ======================================================= */
 
 (() => {
-const API_SOFTSKILLS = "http://localhost:5000/api";
+const API_SOFTSKILLS = (window.getApiBaseUrl ? window.getApiBaseUrl() : (window.location.origin + "/api"));
 
 function initSoftSkillsPage() {
     loadSoftSkills();

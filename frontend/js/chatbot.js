@@ -3,7 +3,7 @@
    ======================================================= */
 
 (() => {
-const API_ENDPOINT = "http://localhost:5000/api";
+const API_ENDPOINT = (window.getApiBaseUrl ? window.getApiBaseUrl() : (window.location.origin + "/api"));
 
 function initChatbotPage() {
     initChatbot();
@@ -125,7 +125,7 @@ function initChatbot() {
                     formData.append("lang", langSelect.value || "en");
                     
                     try {
-                        const res = await fetch("http://localhost:5000/api/stt", {
+                        const res = await fetch(`${API_ENDPOINT}/stt`, {
                             method: "POST",
                             body: formData
                         });
@@ -301,7 +301,7 @@ function initChatbot() {
             
             // Try OCR text extraction on captured photo
             try {
-                const ocrRes = await fetch("http://localhost:5000/api/ocr", {
+                const ocrRes = await fetch(`${API_ENDPOINT}/ocr`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({ image_base64: dataUrl })
@@ -346,7 +346,7 @@ function initChatbot() {
             formData.append("file", file);
 
             try {
-                const res = await fetch("http://localhost:5000/api/ocr", {
+                const res = await fetch(`${API_ENDPOINT}/ocr`, {
                     method: "POST",
                     body: formData
                 });
@@ -861,7 +861,7 @@ window.speakBotResponse = async function(btn) {
     btn.style.color = "var(--text-2)";
     
     try {
-        const res = await fetch("http://localhost:5000/api/tts", {
+        const res = await fetch(`${API_ENDPOINT}/tts`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

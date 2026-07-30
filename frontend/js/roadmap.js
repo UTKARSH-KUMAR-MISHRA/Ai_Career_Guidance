@@ -3,7 +3,7 @@
    ======================================================= */
 
 (() => {
-const API = "http://localhost:5000/api";
+const API = (window.getApiBaseUrl ? window.getApiBaseUrl() : (window.location.origin + "/api"));
 let currentType = "90-Day";
 let currentRoleId = "";
 

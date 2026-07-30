@@ -2,7 +2,7 @@
    AI Career Guidance - Shared Navigation & Profile Swifter
    ======================================================= */
 
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = (window.getApiBaseUrl ? window.getApiBaseUrl() : (window.location.origin + "/api"));
 
 document.addEventListener("DOMContentLoaded", () => {
     initNavigation();

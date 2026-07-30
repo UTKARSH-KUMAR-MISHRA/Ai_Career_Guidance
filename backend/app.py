@@ -3,7 +3,7 @@ import json
 import sqlite3
 import re
 import time
-from flask import Flask, request, jsonify, Response, send_from_directory
+from flask import Flask, request, jsonify, Response, send_from_directory, session
 from flask_cors import CORS
 from werkzeug.security import generate_password_hash, check_password_hash
 from pypdf import PdfReader
@@ -23,6 +23,9 @@ FEEDBACK_PATH = os.path.join(DATA_DIR, "feedback.json")
 
 # Initialize Flask with frontend static folder
 app = Flask(__name__, static_folder=FRONTEND_DIR)
+app.secret_key = os.environ.get("SECRET_KEY", "ai_career_guidance_secret_key_2026")
+CORS(app, supports_credentials=True)
+
 # Real-Time Terminal Visibility Middleware for all incoming Frontend Requests & API Calls
 @app.before_request
 def log_frontend_request():
@@ -54,11 +57,41 @@ def get_db_connection():
     conn.row_factory = sqlite3.Row
     return conn
 
-# Helper to initialize the SQLite conversation history table
+# Helper to initialize all required SQLite tables
 def init_chat_history_db():
     conn = get_db_connection()
     cursor = conn.cursor()
     try:
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS users (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                email TEXT UNIQUE NOT NULL,
+                password_hash TEXT NOT NULL,
+                name TEXT NOT NULL,
+                is_profile_setup INTEGER DEFAULT 0,
+                created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
+        cursor.execute("""
+            CREATE TABLE IF NOT EXISTS user_profiles (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                email TEXT UNIQUE NOT NULL,
+                name TEXT,
+                phone TEXT,
+                college TEXT,
+                university TEXT,
+                degree TEXT,
+                branch TEXT,
+                year_of_study INTEGER,
+                skills TEXT,
+                interests TEXT,
+                career_goal TEXT,
+                preferred_industry TEXT,
+                resume_path TEXT,
+                photo_path TEXT,
+                last_updated DATETIME DEFAULT CURRENT_TIMESTAMP
+            )
+        """)
         cursor.execute("""
             CREATE TABLE IF NOT EXISTS chat_history (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -70,7 +103,7 @@ def init_chat_history_db():
         """)
         conn.commit()
     except Exception as e:
-        print(f"Error creating chat_history table: {e}")
+        print(f"Error initializing DB tables: {e}")
     finally:
         conn.close()
 
@@ -190,9 +223,9 @@ def get_active_student_profile():
 @app.route('/api/auth/register', methods=['POST'])
 def register():
     data = request.json or {}
-    email = data.get('email')
+    email = (data.get('email') or '').strip().lower()
     password = data.get('password')
-    name = data.get('name')
+    name = (data.get('name') or '').strip()
     
     if not name:
         return jsonify({'error': 'Full name is required', 'field': 'name'}), 400
@@ -204,14 +237,16 @@ def register():
     conn = get_db_connection()
     cursor = conn.cursor()
     try:
-        cursor.execute("SELECT email FROM users WHERE email = ?", (email,))
+        cursor.execute("SELECT email FROM users WHERE LOWER(email) = ?", (email,))
         if cursor.fetchone():
             return jsonify({'error': 'An account with this email already exists', 'field': 'email'}), 400
             
         password_hash = generate_password_hash(password)
-        cursor.execute("INSERT INTO users (email, password_hash, name) VALUES (?, ?, ?)",
+        cursor.execute("INSERT INTO users (email, password_hash, name, is_profile_setup) VALUES (?, ?, ?, 0)",
                        (email, password_hash, name))
         conn.commit()
+        
+        session['user_email'] = email
         return jsonify({
             'status': 'success', 
             'message': 'User registered successfully',
@@ -229,7 +264,7 @@ def register():
 @app.route('/api/auth/login', methods=['POST'])
 def login():
     data = request.json or {}
-    email = data.get('email')
+    email = (data.get('email') or '').strip().lower()
     password = data.get('password')
     
     if not email or not password:
@@ -238,12 +273,13 @@ def login():
     conn = get_db_connection()
     cursor = conn.cursor()
     try:
-        cursor.execute("SELECT * FROM users WHERE email = ?", (email,))
+        cursor.execute("SELECT * FROM users WHERE LOWER(email) = ?", (email,))
         user = cursor.fetchone()
         if not user or not check_password_hash(user['password_hash'], password):
             return jsonify({'error': 'Invalid email or password'}), 401
             
         is_setup = bool(user['is_profile_setup'])
+        session['user_email'] = user['email']
         
         return jsonify({
             'status': 'success',
@@ -258,16 +294,21 @@ def login():
     finally:
         conn.close()
 
+@app.route('/api/auth/logout', methods=['POST', 'GET'])
+def logout():
+    session.clear()
+    return jsonify({'status': 'success', 'message': 'Logged out successfully'}), 200
+
 @app.route('/api/auth/session', methods=['GET'])
 def check_session():
-    user_email = request.headers.get('X-User-Email')
+    user_email = request.headers.get('X-User-Email') or session.get('user_email')
     if not user_email:
         return jsonify({'authenticated': False}), 200
         
     conn = get_db_connection()
     cursor = conn.cursor()
     try:
-        cursor.execute("SELECT email, name, is_profile_setup FROM users WHERE email = ?", (user_email,))
+        cursor.execute("SELECT email, name, is_profile_setup FROM users WHERE LOWER(email) = ?", (user_email.strip().lower(),))
         user = cursor.fetchone()
         if user:
             return jsonify({

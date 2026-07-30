@@ -1,20 +1,34 @@
 """
 Root Application Launcher (app.py)
-Unified launcher for AI Career Guidance System.
-Executes backend/app.py to serve both Frontend & Backend on http://localhost:5000
+Unified WSGI & Development launcher for AI Career Guidance System.
+Serves both Frontend static assets & Backend Flask API.
 """
 import sys
 import os
 
 # Add backend directory to Python sys.path
-backend_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "backend")
-sys.path.insert(0, backend_dir)
-os.chdir(backend_dir)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+backend_dir = os.path.join(BASE_DIR, "backend")
+if backend_dir not in sys.path:
+    sys.path.insert(0, backend_dir)
+
+try:
+    os.chdir(backend_dir)
+except Exception:
+    pass
+
+import app as backend_app
+
+# Expose WSGI app object for Gunicorn / Render / Railway deployment
+app = backend_app.app
+
+# Initialize DB on import if missing
+try:
+    backend_app.init_chat_history_db()
+except Exception:
+    pass
 
 if __name__ == "__main__":
-    import app as backend_app
-    backend_app.init_chat_history_db()
-    
     if not os.path.exists(backend_app.ACTIVE_PROFILE_PATH):
         default_student = {
             "student_id": "STU0001",
@@ -26,25 +40,19 @@ if __name__ == "__main__":
             "daily_learning_hours": 3,
             "is_excel": False
         }
-        with open(backend_app.ACTIVE_PROFILE_PATH, 'w', encoding='utf-8') as f:
-            import json
-            json.dump(default_student, f, indent=2)
-            
+        try:
+            with open(backend_app.ACTIVE_PROFILE_PATH, 'w', encoding='utf-8') as f:
+                import json
+                json.dump(default_student, f, indent=2)
+        except Exception:
+            pass
+
+    port = int(os.environ.get("PORT", 5000))
     from retriever import safe_print
     safe_print("\n" + "=" * 80)
     safe_print("[STARTUP] UNIFIED AI CAREER GUIDANCE PORTAL STARTED")
     safe_print("================================================================================")
-    safe_print("[PORTAL URL] Serving Unified Application (Frontend + Backend) at: http://localhost:5000")
-    safe_print("[LOGGING] All Requests, API Calls, & Terminal RAG Logs active in this window.")
-    safe_print("================================================================ drop\n")
+    safe_print(f"[PORTAL URL] Serving Application at: http://0.0.0.0:{port}")
+    safe_print("================================================================================\n")
     
-    import webbrowser, threading, time
-    def auto_open_browser():
-        time.sleep(1.5)
-        try:
-            webbrowser.open("http://localhost:5000")
-        except Exception:
-            pass
-            
-    threading.Thread(target=auto_open_browser, daemon=True).start()
-    backend_app.app.run(host='0.0.0.0', port=5000, debug=True, use_reloader=False, threaded=True)
+    app.run(host='0.0.0.0', port=port, debug=False, threaded=True)

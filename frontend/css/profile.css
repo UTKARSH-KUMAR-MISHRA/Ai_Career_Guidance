@@ -3,28 +3,28 @@
    ===================================================== */
 
 :root{
-    --primary:#4F46E5;
-    --primary-dark:#3730A3;
-    --primary-light:#EEF0FF;
+    --primary:#2563EB;
+    --primary-dark:#1D4ED8;
+    --primary-light:#EFF6FF;
 
-    --bg:#F5F6FA;
+    --bg:#F8FAFC;
     --card:#FFFFFF;
-    --border:#ECEDF3;
+    --border:#E2E8F0;
 
-    --text:#111827;
-    --text2:#6B7280;
-    --text3:#9CA3AF;
+    --text:#0F172A;
+    --text2:#475569;
+    --text3:#94A3B8;
 
-    --green:#16A34A;
+    --green:#10B981;
     --red:#EF4444;
     --yellow:#F59E0B;
 
-    --radius:14px;
+    --radius:12px;
 
     --shadow:
-        0 10px 25px rgba(17,24,39,.06);
+        0 4px 14px -2px rgba(15,23,42,.08);
 
-    --transition:.25s ease;
+    --transition:.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 *{

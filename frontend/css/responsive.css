@@ -91,3 +91,43 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 8px 10px;
+  }
+
+  .sidebar .brand {
+    font-size: 13px;
+  }
+
+  .sidebar .nav li {
+    font-size: 11px;
+    padding: 5px 8px;
+    white-space: nowrap;
+  }
+
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .topbar-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .main {
+    padding: 10px 12px;
+  }
+
+  .stat-card {
+    padding: 12px;
+  }
+
+  #auth-screen {
+    padding: 8px;
+  }
+}
+

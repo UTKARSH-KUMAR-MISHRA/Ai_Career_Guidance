@@ -1306,6 +1306,5 @@ if __name__ == '__main__':
         except Exception:
             pass
             
-    threading.Thread(target=auto_open_browser, daemon=True).start()
-    
-    app.run(host='0.0.0.0', port=5000, debug=True, use_reloader=False, threaded=True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port, debug=False, use_reloader=False, threaded=True)

@@ -126,11 +126,14 @@ async function checkUserSession() {
         
         if (data.authenticated && data.user) {
             localStorage.setItem("career_user", JSON.stringify(data.user));
+            navigateTo("dashboard");
+        } else {
+            localStorage.removeItem("career_user");
+            showAuthScreen();
         }
-        navigateTo("dashboard");
     } catch (err) {
-        console.warn("Session check warning - proceeding to dashboard:", err);
-        navigateTo("dashboard");
+        console.warn("Session check error - directing to auth screen:", err);
+        showAuthScreen();
     }
 }
 
@@ -362,15 +365,16 @@ function setupAuthListeners() {
                 if (response.ok && data.user) {
                     setDone(btn, "Welcome back!");
                     localStorage.setItem("career_user", JSON.stringify(data.user));
+                    setTimeout(() => navigateTo(data.user.is_profile_setup ? "dashboard" : "wizard"), 150);
                 } else {
-                    const fallbackUser = { email: emailInput.value.trim(), name: emailInput.value.split("@")[0] || "User", is_profile_setup: true };
-                    localStorage.setItem("career_user", JSON.stringify(fallbackUser));
+                    setLoading(btn, false, "Sign in");
+                    showError("li-pass-field", "li-pass-err", data.error || "Invalid email or password.");
+                    toast("error", data.error || "Invalid email or password.");
                 }
-                setTimeout(() => navigateTo("dashboard"), 150);
             } catch (err) {
-                const fallbackUser = { email: emailInput.value.trim(), name: emailInput.value.split("@")[0] || "User", is_profile_setup: true };
-                localStorage.setItem("career_user", JSON.stringify(fallbackUser));
-                setTimeout(() => navigateTo("dashboard"), 150);
+                setLoading(btn, false, "Sign in");
+                showError("li-pass-field", "li-pass-err", "Server connection error. Please try again.");
+                toast("error", "Network error. Please try again.");
             }
         });
     }
@@ -444,15 +448,16 @@ function setupAuthListeners() {
                 if (response.ok && data.user) {
                     setDone(btn, "Account created!");
                     localStorage.setItem("career_user", JSON.stringify(data.user));
+                    setTimeout(() => navigateTo(data.user.is_profile_setup ? "dashboard" : "wizard"), 150);
                 } else {
-                    const fallbackUser = { email: userEmail, name: fullName, is_profile_setup: true };
-                    localStorage.setItem("career_user", JSON.stringify(fallbackUser));
+                    setLoading(btn, false, "Create Account");
+                    showError("re-email-field", "re-email-err", data.error || "Registration failed.");
+                    toast("error", data.error || "Registration failed.");
                 }
-                setTimeout(() => navigateTo("dashboard"), 150);
             } catch (err) {
-                const fallbackUser = { email: userEmail, name: fullName, is_profile_setup: true };
-                localStorage.setItem("career_user", JSON.stringify(fallbackUser));
-                setTimeout(() => navigateTo("dashboard"), 150);
+                setLoading(btn, false, "Create Account");
+                showError("re-email-field", "re-email-err", "Server connection error. Please try again.");
+                toast("error", "Network error. Please try again.");
             }
         });
     }

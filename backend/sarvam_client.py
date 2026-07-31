@@ -105,8 +105,8 @@ class SarvamClient:
         
         try:
             safe_print(f"\n[LLM INFERENCE] Invoking Sarvam API endpoint ({base_url}/chat/completions)...")
-            safe_print(f"  - Model: {model} | Temperature: 0.7 | Max Tokens: 3000 | Timeout: 90s")
-            response = requests.post(f"{base_url}/chat/completions", json=payload, headers=headers, timeout=90)
+            safe_print(f"  - Model: {model} | Temperature: 0.7 | Max Tokens: 3000 | Timeout: 6s")
+            response = requests.post(f"{base_url}/chat/completions", json=payload, headers=headers, timeout=6)
             if response.status_code == 200:
                 res_json = response.json()
                 msg_data = res_json.get("choices", [{}])[0].get("message", {})
@@ -271,7 +271,7 @@ class SarvamClient:
                     "target_language_code": "en-IN",
                     "model": "mayura:v1"
                 }
-                response = requests.post("https://api.sarvam.ai/translate", json=payload, headers=headers, timeout=10)
+                response = requests.post("https://api.sarvam.ai/translate", json=payload, headers=headers, timeout=3)
                 if response.status_code == 200:
                     return response.json().get("translated_text", text)
                 else:
@@ -346,7 +346,7 @@ class SarvamClient:
                     "target_language_code": target_code,
                     "model": "mayura:v1"
                 }
-                response = requests.post("https://api.sarvam.ai/translate", json=payload, headers=headers, timeout=10)
+                response = requests.post("https://api.sarvam.ai/translate", json=payload, headers=headers, timeout=3)
                 if response.status_code == 200:
                     translated_text = response.json().get("translated_text", protected_text)
                 else:

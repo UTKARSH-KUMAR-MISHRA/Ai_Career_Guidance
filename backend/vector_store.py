@@ -1,4 +1,6 @@
 import os
+os.environ["ANONYMOUS_TELEMETRY"] = "False"
+os.environ["CHROMA_TELEMETRY"] = "False"
 from config import VECTOR_DB_DIR
 
 _chroma_client = None

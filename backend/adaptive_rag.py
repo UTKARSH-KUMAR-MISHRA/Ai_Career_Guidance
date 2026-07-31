@@ -44,7 +44,7 @@ def get_wiki_summary(query):
             url = f"https://en.wikipedia.org/api/rest_v1/page/summary/{target}"
             headers = {"User-Agent": "Mozilla/5.0"}
             safe_print(f"[RAG WEB SEARCH] Requesting URL: {url}")
-            response = requests.get(url, headers=headers, timeout=5)
+            response = requests.get(url, headers=headers, timeout=1.5)
             if response.status_code == 200:
                 data = response.json()
                 extract = data.get("extract", "")

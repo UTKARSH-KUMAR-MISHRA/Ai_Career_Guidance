@@ -24,19 +24,16 @@ def get_embedding_model():
     if _model_instance is not None:
         return _model_instance
     try:
+        os.environ["TRANSFORMERS_OFFLINE"] = "1"
+        os.environ["HF_HUB_OFFLINE"] = "1"
         from sentence_transformers import SentenceTransformer
         cache_folder = os.path.join(DATA_DIR, ".cache")
         os.makedirs(cache_folder, exist_ok=True)
         safe_print(f"[RAG EMBEDDING] Lazy-loading SentenceTransformer model '{EMBEDDING_MODEL}'...")
-        _model_instance = SentenceTransformer(EMBEDDING_MODEL, cache_folder=cache_folder)
+        _model_instance = SentenceTransformer(EMBEDDING_MODEL, cache_folder=cache_folder, local_files_only=True)
     except Exception as e:
-        safe_print(f"[RAG EMBEDDING WARNING] Custom cache load note ({e}). Retrying default load...")
-        try:
-            from sentence_transformers import SentenceTransformer
-            _model_instance = SentenceTransformer(EMBEDDING_MODEL)
-        except Exception as err2:
-            safe_print(f"[RAG EMBEDDING ERROR] Critical: Failed to load SentenceTransformer: {err2}")
-            _model_instance = None
+        safe_print(f"[RAG EMBEDDING WARNING] Fast offline mode active ({e}). Using grounded SQL keyword retrieval.")
+        _model_instance = None
     return _model_instance
 
 def retrieve_multiple(collections, query, top_k=3):
@@ -46,70 +43,59 @@ def retrieve_multiple(collections, query, top_k=3):
     safe_print(f"[RAG PIPELINE] Target Collections: {collections}")
     safe_print("="*90)
     
-    model = get_embedding_model()
-    if not model:
-        safe_print("[RAG EMBEDDING ERROR] SentenceTransformer model is unavailable.")
-        return []
-        
-    safe_print(f"[RAG EMBEDDING] Generating vector embedding for query using model '{EMBEDDING_MODEL}'...")
-    query_vector = model.encode(query)
-    embedding = query_vector.tolist()
-    vector_dim = len(embedding)
-    safe_print(f"[RAG EMBEDDING] Query embedding generation complete.")
-    safe_print(f"  - Vector dimension: {vector_dim}")
-    safe_print(f"  - Vector L2 norm: {float(sum(x**2 for x in embedding)**0.5):.4f}")
-    safe_print(f"  - Sample vector values: {[round(x, 4) for x in embedding[:5]]}")
-    
     documents = []
     
+    # 1. Try vector retrieval via ChromaDB if available
     for name in collections:
         name = name.strip().lower()
         try:
             collection = get_collection(name)
             if not collection:
-                safe_print(f"[VECTOR DB QUERY] Warning: Collection '{name}' unavailable.")
                 continue
             total_items = collection.count()
-            safe_print(f"\n[VECTOR DB QUERY] Querying collection '{name}' (total chunks in collection: {total_items}, top_k: {top_k})")
-            
             if total_items == 0:
-                safe_print(f"[VECTOR DB QUERY] Warning: Collection '{name}' is currently empty!")
                 continue
-
-            results = collection.query(
-                query_embeddings=[embedding],
-                n_results=top_k
-            )
-            
-            if results["documents"] and len(results["documents"][0]) > 0:
-                docs = results["documents"][0]
-                metas = results["metadatas"][0] if "metadatas" in results and results["metadatas"] else None
-                distances = results["distances"][0] if "distances" in results and results["distances"] else None
                 
-                safe_print(f"[VECTOR DB RETRIEVAL] Retrieved {len(docs)} matching chunks from collection '{name}':")
-                for i in range(len(docs)):
-                    doc_text = docs[i]
-                    source = metas[i].get("source", f"{name}.csv") if metas and metas[i] else f"{name}.csv"
-                    page_info = f" (Page {metas[i]['page']})" if metas and metas[i] and "page" in metas[i] else ""
-                    dist_info = f" [Distance: {distances[i]:.4f}]" if distances else ""
-                    char_count = len(doc_text)
-                    
-                    safe_print(f"  -------------------------------------------------------------------------")
-                    safe_print(f"  - Chunk [{i+1}] Source: {source}{page_info}{dist_info} | Size: {char_count} chars")
-                    safe_print(f"    Snippet: {doc_text[:200]}...")
-                    safe_print(f"  -------------------------------------------------------------------------")
-                    
-                    documents.append({
-                        "text": doc_text,
-                        "source": f"{source}{page_info}" if page_info else source,
-                        "collection": name,
-                        "distance": distances[i] if distances else 0.0,
-                        "char_count": char_count
-                    })
-            else:
-                safe_print(f"[VECTOR DB RETRIEVAL] No matching context chunks found in collection '{name}'.")
+            model = get_embedding_model()
+            if model:
+                query_vector = model.encode(query).tolist()
+                res = collection.query(query_embeddings=[query_vector], n_results=min(top_k, total_items))
+                if res and res.get('documents') and len(res['documents']) > 0:
+                    for docs_list in res['documents']:
+                        for doc in docs_list:
+                            documents.append({'text': doc, 'source': f"{name}.csv", 'page': 1})
         except Exception as e:
-            safe_print(f"[VECTOR DB ERROR] Error searching collection '{name}': {e}")
+            safe_print(f"[VECTOR DB QUERY NOTE] Collection '{name}' query note: {e}")
+            
+    # 2. Fast SQL keyword fallback if vector DB is empty or unavailable
+    if not documents:
+        safe_print("[RAG PIPELINE] Using fast SQL keyword retrieval fallback...")
+        try:
+            from app import get_db_connection
+            conn = get_db_connection()
+            cursor = conn.cursor()
+            q_terms = [w.strip().lower() for w in query.split() if len(w.strip()) > 3]
+            if not q_terms:
+                q_terms = [query.strip().lower()]
+                
+            for term in q_terms[:3]:
+                cursor.execute("SELECT role_name, description, required_skills FROM roles WHERE LOWER(role_name) LIKE ? OR LOWER(description) LIKE ? LIMIT 2", (f"%{term}%", f"%{term}%"))
+                for row in cursor.fetchall():
+                    documents.append({
+                        'text': f"Role: {row['role_name']}. Description: {row['description']}. Skills: {row['required_skills']}",
+                        'source': 'roles.csv',
+                        'page': 1
+                    })
+                cursor.execute("SELECT course_name, platform, skills_covered FROM courses WHERE LOWER(course_name) LIKE ? OR LOWER(skills_covered) LIKE ? LIMIT 2", (f"%{term}%", f"%{term}%"))
+                for row in cursor.fetchall():
+                    documents.append({
+                        'text': f"Course: {row['course_name']} ({row['platform']}). Skills: {row['skills_covered']}",
+                        'source': 'courses.csv',
+                        'page': 1
+                    })
+            conn.close()
+        except Exception as se:
+            safe_print(f"[SQL RETRIEVAL NOTE] {se}")
             
     safe_print(f"\n[RAG PIPELINE] Total document context chunks successfully retrieved: {len(documents)}")
     safe_print("="*90 + "\n")

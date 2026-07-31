@@ -58,24 +58,24 @@ def retrieve_multiple(collections, query, top_k=3):
             q_terms = [query.strip().lower()]
             
         for term in q_terms[:3]:
-            cursor.execute("SELECT role_name, description, required_skills FROM roles WHERE LOWER(role_name) LIKE ? OR LOWER(description) LIKE ? OR LOWER(required_skills) LIKE ? LIMIT 2", (f"%{term}%", f"%{term}%", f"%{term}%"))
+            cursor.execute("SELECT role_name, description, salary_range FROM roles WHERE LOWER(role_name) LIKE ? OR LOWER(description) LIKE ? LIMIT 2", (f"%{term}%", f"%{term}%"))
             for row in cursor.fetchall():
                 documents.append({
-                    'text': f"Career Role: {row['role_name']}. Description: {row['description']}. Skills: {row['required_skills']}",
+                    'text': f"Career Role: {row['role_name']}. Description: {row['description']}. Salary: {row['salary_range']}",
                     'source': 'roles.csv',
                     'page': 1
                 })
-            cursor.execute("SELECT course_name, platform, skills_covered FROM courses WHERE LOWER(course_name) LIKE ? OR LOWER(skills_covered) LIKE ? LIMIT 2", (f"%{term}%", f"%{term}%"))
+            cursor.execute("SELECT course_name, platform, provider FROM courses WHERE LOWER(course_name) LIKE ? OR LOWER(platform) LIKE ? LIMIT 2", (f"%{term}%", f"%{term}%"))
             for row in cursor.fetchall():
                 documents.append({
-                    'text': f"Online Course: {row['course_name']} ({row['platform']}). Skills: {row['skills_covered']}",
+                    'text': f"Online Course: {row['course_name']} ({row['platform']} by {row['provider']})",
                     'source': 'courses.csv',
                     'page': 1
                 })
-            cursor.execute("SELECT project_name, domain, required_skills FROM projects WHERE LOWER(project_name) LIKE ? OR LOWER(domain) LIKE ? LIMIT 2", (f"%{term}%", f"%{term}%"))
+            cursor.execute("SELECT project_name, project_domain, required_skills FROM projects WHERE LOWER(project_name) LIKE ? OR LOWER(project_domain) LIKE ? LIMIT 2", (f"%{term}%", f"%{term}%"))
             for row in cursor.fetchall():
                 documents.append({
-                    'text': f"Practical Project: {row['project_name']} in domain {row['domain']}. Required skills: {row['required_skills']}",
+                    'text': f"Practical Project: {row['project_name']} in domain {row['project_domain']}. Required skills: {row['required_skills']}",
                     'source': 'projects.csv',
                     'page': 1
                 })

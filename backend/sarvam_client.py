@@ -89,8 +89,8 @@ class SarvamClient:
         Send a chat query to Sarvam AI completions endpoint.
         """
         api_key = os.getenv("SARVAM_API_KEY", self.api_key)
-        if not api_key or api_key == "YOUR_SARVAM_API_KEY":
-            safe_print("[LLM INFERENCE] SARVAM_API_KEY not configured. Using instant local grounded fallback.")
+        if not api_key or len(api_key.strip()) < 10 or "your_" in api_key.lower() or "dummy" in api_key.lower() or "xxx" in api_key.lower():
+            safe_print("[LLM INFERENCE] SARVAM_API_KEY unconfigured/dummy. Using instant local grounded fallback.")
             return self._local_grounded_fallback(messages)
             
         base_url = os.getenv("SARVAM_BASE_URL", "https://api.sarvam.ai/v1")

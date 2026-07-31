@@ -52,6 +52,11 @@ def log_frontend_response(response):
 def serve_index():
     return send_from_directory(FRONTEND_DIR, 'index.html')
 
+@app.route('/health')
+@app.route('/api/health')
+def health_check():
+    return jsonify({'status': 'ok', 'service': 'AI Career Guidance', 'message': 'Online'}), 200
+
 def get_db_connection():
     os.makedirs(DATA_DIR, exist_ok=True)
     conn = sqlite3.connect(DB_PATH)

@@ -18,18 +18,25 @@ def safe_print(*args, **kwargs):
         sys.stdout.write(text.encode(enc, errors='replace').decode(enc) + end)
         sys.stdout.flush()
 
-model = None
-try:
-    cache_folder = os.path.join(DATA_DIR, ".cache")
-    os.makedirs(cache_folder, exist_ok=True)
-    safe_print(f"[RAG EMBEDDING] Initializing SentenceTransformer model '{EMBEDDING_MODEL}'")
-    model = SentenceTransformer(EMBEDDING_MODEL, cache_folder=cache_folder)
-except Exception as e:
-    safe_print(f"[RAG EMBEDDING WARNING] Custom cache load note ({e}). Retrying default load...")
+_model_instance = None
+
+def get_embedding_model():
+    global _model_instance
+    if _model_instance is not None:
+        return _model_instance
     try:
-        model = SentenceTransformer(EMBEDDING_MODEL)
-    except Exception as err2:
-        safe_print(f"[RAG EMBEDDING ERROR] Critical: Failed to load SentenceTransformer: {err2}")
+        cache_folder = os.path.join(DATA_DIR, ".cache")
+        os.makedirs(cache_folder, exist_ok=True)
+        safe_print(f"[RAG EMBEDDING] Lazy-loading SentenceTransformer model '{EMBEDDING_MODEL}'...")
+        _model_instance = SentenceTransformer(EMBEDDING_MODEL, cache_folder=cache_folder)
+    except Exception as e:
+        safe_print(f"[RAG EMBEDDING WARNING] Custom cache load note ({e}). Retrying default load...")
+        try:
+            _model_instance = SentenceTransformer(EMBEDDING_MODEL)
+        except Exception as err2:
+            safe_print(f"[RAG EMBEDDING ERROR] Critical: Failed to load SentenceTransformer: {err2}")
+            _model_instance = None
+    return _model_instance
 
 def retrieve_multiple(collections, query, top_k=3):
     safe_print("\n" + "="*90)
@@ -38,6 +45,7 @@ def retrieve_multiple(collections, query, top_k=3):
     safe_print(f"[RAG PIPELINE] Target Collections: {collections}")
     safe_print("="*90)
     
+    model = get_embedding_model()
     if not model:
         safe_print("[RAG EMBEDDING ERROR] SentenceTransformer model is unavailable.")
         return []

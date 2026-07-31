@@ -7,12 +7,9 @@ import os
 import sys
 import json
 import re
-import chromadb
-from sentence_transformers import SentenceTransformer
-
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from config import VECTOR_DB_DIR, DATA_DIR, EMBEDDING_MODEL
-from retriever import retrieve_multiple, safe_print
+from retriever import retrieve_multiple, safe_print, get_embedding_model
 from prompt_builder import build_prompt
 from sarvam_client import SarvamClient
 
@@ -43,15 +40,13 @@ def detect_hallucination(answer: str, context: str) -> bool:
             return True
     return False
 
-from retriever import model as shared_model
-
 class RAGPipeline:
     def __init__(self):
         safe_print("\n" + "="*90)
         safe_print(f"[RAG INITIALIZATION] Setting up BGE RAG Core Engine ({EMBEDDING_MODEL} + ChromaDB)")
         safe_print("="*90)
         
-        self.model = shared_model
+        self.model = get_embedding_model()
         if self.model:
             dim_fn = getattr(self.model, "get_embedding_dimension", None) or getattr(self.model, "get_sentence_embedding_dimension", None)
             self.vector_dim = dim_fn() if dim_fn else 384
@@ -59,8 +54,13 @@ class RAGPipeline:
             self.vector_dim = 384
         safe_print(f"[RAG EMBEDDING] BGE Model Ready! Dimension: {self.vector_dim}")
         
-        safe_print(f"[VECTOR DB] Connecting to Chroma PersistentClient at: '{VECTOR_DB_DIR}'")
-        self.client = chromadb.PersistentClient(path=VECTOR_DB_DIR)
+        try:
+            import chromadb
+            safe_print(f"[VECTOR DB] Connecting to Chroma PersistentClient at: '{VECTOR_DB_DIR}'")
+            self.client = chromadb.PersistentClient(path=VECTOR_DB_DIR)
+        except Exception as e:
+            safe_print(f"[VECTOR DB WARNING] Could not connect to ChromaDB: {e}")
+            self.client = None
         
     def classify_intent(self, question: str) -> list:
         keywords = {

@@ -2,7 +2,6 @@ import os
 import sys
 
 os.environ["HF_HUB_OFFLINE"] = "0"
-from sentence_transformers import SentenceTransformer
 from config import EMBEDDING_MODEL, DATA_DIR
 from vector_store import get_collection
 
@@ -25,6 +24,7 @@ def get_embedding_model():
     if _model_instance is not None:
         return _model_instance
     try:
+        from sentence_transformers import SentenceTransformer
         cache_folder = os.path.join(DATA_DIR, ".cache")
         os.makedirs(cache_folder, exist_ok=True)
         safe_print(f"[RAG EMBEDDING] Lazy-loading SentenceTransformer model '{EMBEDDING_MODEL}'...")
@@ -32,6 +32,7 @@ def get_embedding_model():
     except Exception as e:
         safe_print(f"[RAG EMBEDDING WARNING] Custom cache load note ({e}). Retrying default load...")
         try:
+            from sentence_transformers import SentenceTransformer
             _model_instance = SentenceTransformer(EMBEDDING_MODEL)
         except Exception as err2:
             safe_print(f"[RAG EMBEDDING ERROR] Critical: Failed to load SentenceTransformer: {err2}")
@@ -65,6 +66,9 @@ def retrieve_multiple(collections, query, top_k=3):
         name = name.strip().lower()
         try:
             collection = get_collection(name)
+            if not collection:
+                safe_print(f"[VECTOR DB QUERY] Warning: Collection '{name}' unavailable.")
+                continue
             total_items = collection.count()
             safe_print(f"\n[VECTOR DB QUERY] Querying collection '{name}' (total chunks in collection: {total_items}, top_k: {top_k})")
             

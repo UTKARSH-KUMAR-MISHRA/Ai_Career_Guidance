@@ -108,6 +108,23 @@ def init_chat_history_db():
             )
         """)
         conn.commit()
+
+        # Seed default demo user if table is empty
+        cursor.execute("SELECT COUNT(*) FROM users")
+        user_count = cursor.fetchone()[0]
+        if user_count == 0:
+            demo_email = "demo@pathway.com"
+            demo_hash = generate_password_hash("password123")
+            cursor.execute("""
+                INSERT INTO users (email, password_hash, name, is_profile_setup)
+                VALUES (?, ?, 'Demo Student', 1)
+            """, (demo_email, demo_hash))
+            cursor.execute("""
+                INSERT OR IGNORE INTO user_profiles (
+                    email, name, college, university, degree, branch, year_of_study, skills, career_goal
+                ) VALUES (?, 'Demo Student', 'IIT Delhi', 'Delhi University', 'B.Tech', 'Computer Science', 3, 'Python, Data Structures, Machine Learning', 'ROLE001')
+            """, (demo_email,))
+            conn.commit()
     except Exception as e:
         print(f"Error initializing DB tables: {e}")
     finally:
